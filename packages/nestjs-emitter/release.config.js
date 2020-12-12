@@ -12,7 +12,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        prepareCmd: 'cd ../../ && yarn command --scope="@cenk1cenk2/nestjs-emitter" --include-dependencies'
+        prepareCmd: 'cd ../../ && yarn command build --scope="@cenk1cenk2/nestjs-emitter" --include-dependencies'
       }
     ],
     [ '@semantic-release/npm' ]
