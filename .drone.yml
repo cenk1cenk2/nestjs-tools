@@ -1,0 +1,52 @@
+kind: pipeline
+name: default
+
+trigger:
+  branch:
+    - master
+    - alpha
+    - beta
+    - rc
+  event:
+    - push
+
+steps:
+  - name: install
+    image: node:current-alpine
+    commands:
+      - yarn --frozen-lockfile
+
+  - name: lint
+    image: node:current-alpine
+    commands:
+      - yarn command lint:check --concurrency 1
+
+  - name: docs
+    image: node:current-alpine
+    commands:
+      - yarn docs:toc && yarn command docs:toc
+
+  - name: semantic-release
+    image: cenk1cenk2/drone-semantic-release
+    settings:
+      git_method: gh
+      add_modules:
+        - "@qiwi/multi-semantic-release"
+      override: multi-semantic-release
+      git_user_email:
+        from_secret: github_username
+      github_token:
+        from_secret: github_token
+      npm_token:
+        from_secret: npm_token
+    when:
+      branch:
+        - master
+        - alpha
+        - beta
+        - rc
+      event:
+        - push
+
+image_pull_secrets:
+  - dockerconfigjson

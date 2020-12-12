@@ -1,0 +1,39 @@
+{
+  "name": "root",
+  "private": true,
+  "repository": "https://github.com/cenk1cenk2/boilerplate-oclif",
+  "scripts": {
+    "ls": "lerna la",
+    "clean": "lerna clean -y && rimraf node_modules yarn.lock",
+    "exec": "lerna exec --stream",
+    "command": "lerna run --stream",
+    "docs:toc": "markdown-toc README.md --bullets='-' -i"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn command --concurrency 1 lint:staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "devDependencies": {
+    "@cenk1cenk2/cz-cc": "^1.2.8",
+    "@cenk1cenk2/eslint-config": "^0.4.28",
+    "commitizen": "^4.2.2",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.4",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.3",
+    "markdown-toc": "^1.2.0",
+    "tsc-watch": "^4.2.9",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.1.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@cenk1cenk2/cz-cc"
+    }
+  }
+}

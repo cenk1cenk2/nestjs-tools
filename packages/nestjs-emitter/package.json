@@ -1,0 +1,44 @@
+{
+  "name": "@cenk1cenk2/nestjs-emitter",
+  "version": "1.0.0",
+  "description": "A library using EventEmitter2 to have auto typing properties.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/cenk1cenk2/nestjs-tools",
+  "author": {
+    "name": "Cenk Kilic",
+    "email": "cenk@kilic.dev",
+    "url": "https://srcs.kilic.dev"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "rimraf tsconfig*.tsbuildinfo && rimraf dist/",
+    "build": "tsc -p tsconfig.build.json",
+    "postbuild": "tscpaths -p tsconfig.paths.json -s ./dist -o ./dist",
+    "dev:start": "yarn prebuild && tsc-watch --noClear --onSuccess \"yarn postbuild\"",
+    "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
+    "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
+    "lint:staged": "lint-staged",
+    "docs:toc": "markdown-toc README.md --bullets='-' -i"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">= 7.6.1 < 8",
+    "@nestjs/event-emitter": ">= 0.0.2 < 1"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.6.1",
+    "@nestjs/event-emitter": "^0.0.2"
+  },
+  "lint-staged": {
+    "./*.{ts,js,tsx,jsx}": [
+      "prettier --loglevel warn --write",
+      "eslint --fix"
+    ],
+    "./*.{json,md}": [
+      "prettier --loglevel warn --write"
+    ]
+  }
+}
