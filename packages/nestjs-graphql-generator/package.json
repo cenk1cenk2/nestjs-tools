@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@graphql-codegen/cli": "^1.19.4",
+    "@graphql-codegen/typescript": "^1.19.0",
     "delay": "^4.4.0"
   },
   "devDependencies": {
