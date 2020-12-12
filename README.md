@@ -29,3 +29,12 @@ Some general set of tools for `nest.js`.
 ## @cenk1cenk2/nestjs-utils
 
 [Read more...](./packages/nestjs-utils/README.md)
+
+## @cenk1cenk2/nestjs-auth-key-generator
+
+[Read more...](./packages/nestjs-auth-key-generator/README.md)
+
+## @cenk1cenk2/nestjs-graphql-generator
+
+[Read more...](./packages/nestjs-graphql-generator/README.md)
+

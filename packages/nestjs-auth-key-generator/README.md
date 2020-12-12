@@ -4,9 +4,9 @@
 
 # Description
 
-A basic EventEmitter jumper function where you can auto-type request-responses of events using maps provided.
+Authentication keypair generator for JWT randomability.
 
-- [Changelog](./changelog.md)
+- [Changelog](./CHANGELOG.md)
 
 <!-- toc -->
 

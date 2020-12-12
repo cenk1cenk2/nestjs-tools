@@ -6,11 +6,9 @@
 
 Set of common tools that I usually utilize in `nest.js` projects.
 
-- [Changelog](./changelog.md)
+- [Changelog](./CHANGELOG.md)
 
 <!-- toc -->
-
-
 
 <!-- tocstop -->
 

@@ -13,6 +13,7 @@ export class EventManager<
   public async emit<E extends Event = Event, MultipleResult extends boolean = false>(
     dispatch: E,
     args: EventRequest<E, Map>,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     options?: { multiple?: MultipleResult }
   ): Promise<MultipleResult extends true ? EventResponse<E, Map>[] : EventResponse<E, Map>> {
     if (this.emitter.listenerCount(dispatch) === 0) {
@@ -21,14 +22,6 @@ export class EventManager<
 
     const response = await this.emitter.emitAsync(dispatch, args)
 
-    if (!options.multiple) {
-      if (response.length === 1) {
-        return response[0]
-      } else {
-        throw new Error('Expected multiple answers but the option.multiple was not set.')
-      }
-    }
-
-    return response as MultipleResult extends true ? EventResponse<E, Map>[] : EventResponse<E, Map>
+    return response.length === 1 ? response[0]: response
   }
 }
