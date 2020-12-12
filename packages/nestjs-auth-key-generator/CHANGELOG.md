@@ -1,3 +1,18 @@
+## @cenk1cenk2/nestjs-auth-key-generator [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@1.0.0...@cenk1cenk2/nestjs-auth-key-generator@1.0.1) (2020-12-12)
+
+
+### Bug Fixes
+
+* add graphql and authkey generator ([4828eac](https://github.com/cenk1cenk2/nestjs-tools/commit/4828eaccf5690ae2c9f1d7d022eeecde6979f7aa))
+
+
+
+
+
+### Dependencies
+
+* **@cenk1cenk2/nestjs-utils:** upgraded to 1.0.2
+
 # @cenk1cenk2/nestjs-auth-key-generator 1.0.0 (2020-12-12)
 
 

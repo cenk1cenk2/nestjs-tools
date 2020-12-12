@@ -10,6 +10,8 @@ A basic EventEmitter jumper function where you can auto-type request-responses o
 
 <!-- toc -->
 
+
+
 <!-- tocstop -->
 
 ---
