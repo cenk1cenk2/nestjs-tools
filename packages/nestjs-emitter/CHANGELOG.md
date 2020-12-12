@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-emitter [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@1.0.0...@cenk1cenk2/nestjs-emitter@1.0.1) (2020-12-12)
+
+
+### Bug Fixes
+
+* update basic readmes ([2a874de](https://github.com/cenk1cenk2/nestjs-tools/commit/2a874de8c91b9c30bff02851488c5f1d2de1e312))
+
 # @cenk1cenk2/nestjs-emitter 1.0.0 (2020-12-12)
 
 
