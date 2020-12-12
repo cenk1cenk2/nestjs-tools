@@ -102,15 +102,7 @@ export class LoggerService implements LoggerServiceCommon {
     })
   }
 
-  private logMessage ({ type,
-    message: rawMessage,
-    context,
-    trace }: {
-    type: string
-    message: string | string[]
-    context?: string
-    trace?: any
-  }): void {
+  private logMessage ({ type, message: rawMessage, context, trace }: { type: string, message: string | string[], context?: string, trace?: any }): void {
     const [ message, ...splat ] = Array.isArray(rawMessage) ? rawMessage : [ rawMessage ]
 
     const sharedOptions = {

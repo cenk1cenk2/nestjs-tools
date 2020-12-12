@@ -2,18 +2,10 @@ import { Injectable, Logger, Scope, InternalServerErrorException } from '@nestjs
 import { InjectConnection } from '@nestjs/typeorm'
 import { Connection } from 'typeorm'
 
-import {
-  InitialTransaction,
-  ParallelTransaction,
-  GetTransactionType,
-  TransactionManagerOptions
-} from './transactions-manager.interface'
+import { InitialTransaction, ParallelTransaction, GetTransactionType, TransactionManagerOptions } from './transactions-manager.interface'
 
 @Injectable({ scope: Scope.REQUEST })
-export class TransactionsManager<
-  Event extends string = string,
-  Map extends Partial<Record<Event, any>> = Partial<Record<Event, any>>
-> {
+export class TransactionsManager<Event extends string = string, Map extends Partial<Record<Event, any>> = Partial<Record<Event, any>>> {
   private transactions: ParallelTransaction<Event, Map>[] = []
   private inProgressTransactions: ParallelTransaction<Event, Map>[] = []
   private initialTransactions: InitialTransaction<Event, Map>[] = []
@@ -79,8 +71,7 @@ export class TransactionsManager<
               // might not have the depends on entry at all
               !t.dependsOn ||
               // might have the depends on entry but the transaction may already be finished
-              t.dependsOn.length > 0 &&
-                t.dependsOn.every((dependent) => Object.keys(this.results).includes(dependent as string))
+              t.dependsOn.length > 0 && t.dependsOn.every((dependent) => Object.keys(this.results).includes(dependent as string))
             ) {
               // run the transaction
               if (t.token) {

@@ -2,14 +2,20 @@
 import { generate } from '@graphql-codegen/cli'
 import config from 'config'
 import delay from 'delay'
-import * as fs from 'fs'
 import { join } from 'path'
 
 import { ConfigOptions, ConfigSchema, Status } from './run.interface'
+import { getStatus } from './util'
 
 export async function runGenerator (): Promise<unknown[]> {
-  const schema = config.get<ConfigSchema[]>('schema')
-  const options = config.get<ConfigOptions>('options')
+  const schema = config.get<ConfigSchema[]>('schema') ?? []
+  const options = config.get<ConfigOptions>('options') ?? {}
+
+  if (schema.length === 0) {
+    console.error('No schema file defined. Aborting mission.')
+    process.exit(127)
+  }
+
   let status: Status[] = getStatus(schema)
 
   while (status.some((v) => v.status === false)) {
@@ -43,8 +49,4 @@ export async function runGenerator (): Promise<unknown[]> {
       )
     )
   )
-}
-
-function getStatus (schema: ConfigSchema[]): Status[] {
-  return schema.map((s) => ({ from: s.from, status: fs.existsSync(s.from) }))
 }

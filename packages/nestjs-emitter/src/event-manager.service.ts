@@ -4,10 +4,7 @@ import { EventEmitter2 } from '@nestjs/event-emitter'
 import { EventRequest, EventResponse, EventDefinition } from './event-manager.interface'
 
 @Injectable({ scope: Scope.DEFAULT })
-export class EventManager<
-  Event extends string = string,
-  Map extends Partial<Record<Event, EventDefinition>> = Partial<Record<Event, any>>
-> {
+export class EventManager<Event extends string = string, Map extends Partial<Record<Event, EventDefinition>> = Partial<Record<Event, any>>> {
   constructor (private readonly emitter: EventEmitter2) {}
 
   public async emit<E extends Event = Event, MultipleResult extends boolean = false>(
@@ -22,6 +19,6 @@ export class EventManager<
 
     const response = await this.emitter.emitAsync(dispatch, args)
 
-    return response.length === 1 ? response[0]: response
+    return response.length === 1 ? response[0] : response
   }
 }

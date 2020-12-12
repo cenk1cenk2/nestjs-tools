@@ -28,18 +28,13 @@ export interface InitialTransaction<E extends string, M extends Partial<Record<E
  * Get the type of the transaction manager given the map and keys
  */
 // this is a partial of any object since we want to make properties optional if we dont do this it will go mad
-export type GetTransactionType<E extends string, M extends Partial<Record<string, any>>> = E extends keyof M
-  ? M[E]
-  : never
+export type GetTransactionType<E extends string, M extends Partial<Record<string, any>>> = E extends keyof M ? M[E] : never
 
 /**
  * Get the transaction type to use with events
  */
 // this is a partial of any object since we want to make properties optional if we dont do this it will go mad
-export type WithTransactionManager<
-  E extends string = string,
-  M extends Partial<Record<string, any>> = Partial<Record<string, any>>
-> = E extends keyof M
+export type WithTransactionManager<E extends string = string, M extends Partial<Record<string, any>> = Partial<Record<string, any>>> = E extends keyof M
   ? {
     transactions: TransactionsManager<E, M>
   }
