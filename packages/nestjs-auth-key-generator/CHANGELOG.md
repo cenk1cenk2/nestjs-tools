@@ -1,3 +1,18 @@
+## @cenk1cenk2/nestjs-auth-key-generator [1.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@1.0.1...@cenk1cenk2/nestjs-auth-key-generator@1.0.2) (2020-12-12)
+
+
+### Bug Fixes
+
+* add default to options ([d4876b7](https://github.com/cenk1cenk2/nestjs-tools/commit/d4876b7335725dccaebbd735f10d3540df6bea1c))
+
+
+
+
+
+### Dependencies
+
+* **@cenk1cenk2/nestjs-utils:** upgraded to 1.0.3
+
 ## @cenk1cenk2/nestjs-auth-key-generator [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@1.0.0...@cenk1cenk2/nestjs-auth-key-generator@1.0.1) (2020-12-12)
 
 
