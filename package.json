@@ -7,7 +7,9 @@
     "clean": "lerna clean -y && rimraf node_modules yarn.lock",
     "exec": "lerna exec --stream",
     "command": "lerna run --stream",
-    "docs:toc": "markdown-toc README.md --bullets='-' -i"
+    "scripts:link": "./scripts/link-packages.sh",
+    "scripts:workspace": "./scripts/link-packages-to-workspace.sh",
+    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc"
   },
   "workspaces": [
     "packages/*"

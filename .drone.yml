@@ -24,7 +24,7 @@ steps:
   - name: docs
     image: node:current-alpine
     commands:
-      - yarn docs:toc && yarn command docs:toc
+      - yarn docs:toc
 
   - name: semantic-release
     image: cenk1cenk2/drone-semantic-release

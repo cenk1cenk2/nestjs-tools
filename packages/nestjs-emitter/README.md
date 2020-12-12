@@ -7,6 +7,7 @@
 A basic EventEmitter jumper function where you can auto-type request-responses of events using maps provided.
 
 - [Changelog](./changelog.md)
+
 <!-- toc -->
 
 <!-- tocstop -->
