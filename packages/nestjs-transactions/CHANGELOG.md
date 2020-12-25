@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-transactions [1.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.0.3...@cenk1cenk2/nestjs-transactions@1.0.4) (2020-12-25)
+
+
+### Bug Fixes
+
+* update type export ([7357c7b](https://github.com/cenk1cenk2/nestjs-tools/commit/7357c7b3e9c4881560b777b15c75ccade32e8fff))
+
 ## @cenk1cenk2/nestjs-transactions [1.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.0.2...@cenk1cenk2/nestjs-transactions@1.0.3) (2020-12-12)
 
 
