@@ -26,12 +26,17 @@ steps:
     commands:
       - yarn docs:toc
 
+  - name: build
+    image: node:current-alpine
+    commands:
+      - yarn command build --include-dependencies
+
   - name: semantic-release
     image: cenk1cenk2/drone-semantic-release
     settings:
       git_method: gh
       add_modules:
-        - "@qiwi/multi-semantic-release"
+        - '@qiwi/multi-semantic-release'
       override: multi-semantic-release
       git_user_email:
         from_secret: github_username

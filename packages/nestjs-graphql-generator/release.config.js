@@ -9,12 +9,6 @@ module.exports = {
         assets: [ 'CHANGELOG.md', 'package.json', 'README.md' ]
       }
     ],
-    [
-      '@semantic-release/exec',
-      {
-        prepareCmd: 'cd ../../ && yarn command build --scope="@cenk1cenk2/nestjs-graphql-generator" --include-dependencies'
-      }
-    ],
     [ '@semantic-release/npm' ]
   ]
 }
