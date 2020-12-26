@@ -14,10 +14,7 @@
     "incremental": true,
     "strictNullChecks": false,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "outDir": "./dist",
-    "rootDir": "./src/",
-    "baseUrl": "./src/"
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*"]

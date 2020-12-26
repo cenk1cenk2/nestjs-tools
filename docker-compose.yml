@@ -3,7 +3,8 @@ services:
   monorepo:
     image: cenk1cenk2/lerna-dev:latest
     environment:
-      - SERVICES=packages/nestjs-utils:packages/nestjs-transactions:packages/nestjs-utils:packages/nestjs-auth-key-generator:packages/nestjs-graphql-generator
-      - RUN_IN_BAND=packages/nestjs-utils
+      SERVICES: packages/nestjs-auth-key-generator:packages/nestjs-emitter:packages/nestjs-graphql:packages/nestjs-graphql-generator:packages/nestjs-transactions:packages/nestjs-typeorm:packages/nestjs-utils
+      RUN_IN_BAND: packages/nestjs-utils
+      RUN_IN_BAND_WAIT: 15
     volumes:
       - .:/data/app
