@@ -9,8 +9,12 @@ Some general set of tools for `nest.js`.
 <!-- toc -->
 
 - [Packages](#packages)
+  - [@cenk1cenk2/nestjs-auth-key-generator](#cenk1cenk2nestjs-auth-key-generator)
   - [@cenk1cenk2/nestjs-emitter](#cenk1cenk2nestjs-emitter)
+  - [@cenk1cenk2/nestjs-graphql](#cenk1cenk2nestjs-graphql)
+  - [@cenk1cenk2/nestjs-graphql-generator](#cenk1cenk2nestjs-graphql-generator)
   - [@cenk1cenk2/nestjs-transactions](#cenk1cenk2nestjs-transactions)
+  - [@cenk1cenk2/nestjs-typeorm](#cenk1cenk2nestjs-typeorm)
   - [@cenk1cenk2/nestjs-utils](#cenk1cenk2nestjs-utils)
 
 <!-- tocstop -->
@@ -39,10 +43,10 @@ Some general set of tools for `nest.js`.
 
 [Read more...](./packages/nestjs-transactions/README.md)
 
-#### @cenk1cenk2/nestjs-typeorm
+### @cenk1cenk2/nestjs-typeorm
 
 [Read more...](./packages/nestjs-typeorm/README.md)
 
-## @cenk1cenk2/nestjs-utils
+### @cenk1cenk2/nestjs-utils
 
 [Read more...](./packages/nestjs-utils/README.md)
