@@ -1,3 +1,10 @@
+# @cenk1cenk2/nestjs-transactions [1.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.0.4...@cenk1cenk2/nestjs-transactions@1.1.0) (2020-12-26)
+
+
+### Features
+
+* added new packages for pagination and stuff ([fa3b3ce](https://github.com/cenk1cenk2/nestjs-tools/commit/fa3b3ce8aa301e791b7131ed3cd6ee6280ef0ff0))
+
 ## @cenk1cenk2/nestjs-transactions [1.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.0.3...@cenk1cenk2/nestjs-transactions@1.0.4) (2020-12-25)
 
 
