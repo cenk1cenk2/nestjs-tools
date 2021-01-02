@@ -20,6 +20,22 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   constructor (@InjectConnection() private connection: Connection) {}
 
   /**
+   * Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such.
+   *
+   * @template ChildEvent
+   * @template ChildMap
+   * @param {Connection} connection
+   * @returns  {TransactionsManager<ChildEvent, ChildMap>}
+   * @memberof TransactionsManager
+   */
+  public createChildInstance<ChildEvent extends string = Event, ChildMap extends Partial<Record<ChildEvent, any>> = Partial<Record<ChildEvent, any>>>(): TransactionsManager<
+  ChildEvent,
+  ChildMap
+  > {
+    return new TransactionsManager<ChildEvent, ChildMap>(this.connection)
+  }
+
+  /**
    * Add a new transaction which will execute asynchronously.
    * @param transaction
    */
