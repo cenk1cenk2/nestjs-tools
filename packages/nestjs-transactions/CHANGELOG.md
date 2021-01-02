@@ -1,3 +1,10 @@
+# @cenk1cenk2/nestjs-transactions [1.2.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.1.0...@cenk1cenk2/nestjs-transactions@1.2.0) (2021-01-02)
+
+
+### Features
+
+* add creating a child instance ([b1291f6](https://github.com/cenk1cenk2/nestjs-tools/commit/b1291f6f5ad1be792c8897c193c96540947437d4))
+
 # @cenk1cenk2/nestjs-transactions [1.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.0.4...@cenk1cenk2/nestjs-transactions@1.1.0) (2020-12-26)
 
 
