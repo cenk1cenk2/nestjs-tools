@@ -1,3 +1,17 @@
+# @cenk1cenk2/nestjs-transactions [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.2.0...@cenk1cenk2/nestjs-transactions@2.0.0) (2021-01-02)
+
+
+### Features
+
+* added rollback transaction as well ([40c6508](https://github.com/cenk1cenk2/nestjs-tools/commit/40c65086e9854641d2fb4d27f57ec4abb631e431))
+
+
+### BREAKING CHANGES
+
+* - changed the handling of how the transactions are getting added to
+  list, there is now only one to add all, and it is determined by
+  typeguards which list it gets added to.
+
 # @cenk1cenk2/nestjs-transactions [1.2.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@1.1.0...@cenk1cenk2/nestjs-transactions@1.2.0) (2021-01-02)
 
 
