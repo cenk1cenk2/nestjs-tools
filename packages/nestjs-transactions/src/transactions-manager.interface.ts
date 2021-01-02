@@ -8,6 +8,11 @@ import { TransactionsManager } from './transactions-manager.service'
 export type Transaction<T, R> = (manager: EntityManager, results?: T) => Promise<R>
 
 /**
+ * A singular rollback.
+ */
+export type Rollback<T, R> = (results?: T) => Promise<R>
+
+/**
  * The type of parallel transactions which will be run after.
  */
 // made this an object too, to refactor fast between initial and parallel transaction
@@ -22,6 +27,18 @@ export interface InitialTransaction<E extends string, M extends Partial<Record<E
   token: keyof GetTransactionType<E, M>
   transaction: Transaction<GetTransactionType<E, M>, GetTransactionType<E, M>[keyof GetTransactionType<E, M>]>
   dependsOn?: (keyof GetTransactionType<E, M>)[]
+}
+
+/**
+ * A transaction rollback action.
+ *
+ * @export
+ * @interface RollbackTransactions
+ * @template E
+ * @template M
+ */
+export interface RollbackTransaction<E extends string, M extends Partial<Record<E, any>>> {
+  rollback: Rollback<GetTransactionType<E, M>, void>
 }
 
 /**

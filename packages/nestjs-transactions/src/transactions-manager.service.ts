@@ -1,14 +1,15 @@
-import { Injectable, Logger, Scope, InternalServerErrorException } from '@nestjs/common'
+import { Injectable, InternalServerErrorException, Logger, Scope } from '@nestjs/common'
 import { InjectConnection } from '@nestjs/typeorm'
 import { Connection } from 'typeorm'
 
-import { InitialTransaction, ParallelTransaction, GetTransactionType, TransactionManagerOptions } from './transactions-manager.interface'
+import { GetTransactionType, InitialTransaction, ParallelTransaction, RollbackTransaction, TransactionManagerOptions } from './transactions-manager.interface'
 
 @Injectable({ scope: Scope.REQUEST })
 export class TransactionsManager<Event extends string = string, Map extends Partial<Record<Event, any>> = Partial<Record<Event, any>>> {
   private transactions: ParallelTransaction<Event, Map>[] = []
   private inProgressTransactions: ParallelTransaction<Event, Map>[] = []
   private initialTransactions: InitialTransaction<Event, Map>[] = []
+  private rollbackTransactions: RollbackTransaction<Event, Map>[] = []
   private results: GetTransactionType<Event, Map> = {} as GetTransactionType<Event, Map>
   private logger: Logger = new Logger(this.constructor.name)
   // do not need to create a dynamic module for now, will hardcode the options
@@ -36,24 +37,29 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   }
 
   /**
-   * Add a new transaction which will execute asynchronously.
+   * Add a new transaction or rollback.
+   * Transactions with token are initial transactions and will get their result saved for further use.
+   * Transactions without any depends on and token are parallel transactions that will execute after the initial ones.
+   * Rollback transactions will get executed if something goes wrong.
+   *
    * @param transaction
    */
-  public add (transaction: ParallelTransaction<Event, Map>): void {
-    this.transactions.push(transaction)
+  public add (transaction: ParallelTransaction<Event, Map> | InitialTransaction<Event, Map> | RollbackTransaction<Event, Map>): void {
+    if (this.isInitialTransaction(transaction)) {
+      this.transactions.push(transaction)
 
-    // this.logger.debug('Injected a new transaction.')
-  }
+      // this.logger.debug('Injected a new transaction.')
+    } else if (this.isParallelTransaction(transaction)) {
+      this.transactions.push(transaction)
 
-  /**
-   * Add an initial transaction where you can map the result to a key.
-   * @param token
-   * @param transaction
-   */
-  public addInitial (transaction: InitialTransaction<Event, Map>): void {
-    this.initialTransactions.push(transaction)
+      // this.logger.debug(`Injected a new initial transaction with token ${transaction.token}.`)
+    } else if (this.isRollbackTransaction(transaction)) {
+      this.rollbackTransactions.push(transaction)
 
-    // this.logger.debug(`Injected a new preliminary transaction with token: ${transaction.token}`)
+      // this.logger.debug('Injected a new rollback transaction.')
+    } else {
+      throw new Error('Transaction type unknown.')
+    }
   }
 
   /**
@@ -89,12 +95,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
               // might have the depends on entry but the transaction may already be finished
               t.dependsOn.length > 0 && t.dependsOn.every((dependent) => Object.keys(this.results).includes(dependent as string))
             ) {
-              // run the transaction
-              if (t.token) {
-                this.results[t.token] = await t.transaction(queryRunner.manager, this.results)
-              } else {
-                await t.transaction(queryRunner.manager, this.results)
-              }
+              this.results[t.token] = await t.transaction(queryRunner.manager, this.results)
 
               // remove this transaction on queue
               this.initialTransactions.splice(index, 1)
@@ -139,6 +140,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       this.initialTransactions = []
       this.transactions = []
       this.inProgressTransactions = []
+      this.rollbackTransactions = []
 
       this.logger.debug('Commited transactions.')
 
@@ -149,6 +151,10 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       // since we have errors lets rollback the changes we made
       // this may throw error if it has not reached the start transaction yet
       try {
+        // first rollback the actions that are user defined.
+        await Promise.all(this.rollbackTransactions.map((r) => r.rollback(this.results)))
+
+        // then rollback transactions in the database
         await queryRunner.rollbackTransaction()
       } catch (e) {
         this.logger.error(e)
@@ -159,6 +165,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       this.initialTransactions = []
       this.transactions = []
       this.inProgressTransactions = []
+      this.rollbackTransactions = []
 
       await queryRunner.release()
 
@@ -167,5 +174,19 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       // throw error to catch it with the exception filter instead of handling it
       throw err
     }
+  }
+
+  // custom typeguards to determine the type of transaction
+
+  private isInitialTransaction (transaction: any): transaction is InitialTransaction<Event, Map> {
+    return 'token' in transaction && 'transaction' in transaction
+  }
+
+  private isParallelTransaction (transaction: any): transaction is ParallelTransaction<Event, Map> {
+    return !('token' in transaction) && !('dependsOn' in transaction) && 'transaction' in transaction
+  }
+
+  private isRollbackTransaction (transaction: any): transaction is RollbackTransaction<Event, Map> {
+    return 'rollback' in transaction
   }
 }
