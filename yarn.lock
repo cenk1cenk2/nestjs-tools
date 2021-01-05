@@ -1879,10 +1879,10 @@
     is-plain-object "^5.0.0"
     universal-user-agent "^6.0.0"
 
-"@octokit/openapi-types@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-2.0.1.tgz#7453d8281ce66b8ed1607f7ac7d751c3baffd2cc"
-  integrity sha512-9AuC04PUnZrjoLiw3uPtwGh9FE4Q3rTqs51oNlQ0rkwgE8ftYsOC+lsrQyvCvWm85smBbSc0FNRKKumvGyb44Q==
+"@octokit/openapi-types@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-2.2.0.tgz#123e0438a0bc718ccdac3b5a2e69b3dd00daa85b"
+  integrity sha512-274lNUDonw10kT8wHg8fCcUc1ZjZHbWv0/TbAwb0ojhBQqZYc1cQ/4yqTVTtPMDeZ//g7xVEYe/s3vURkRghPg==
 
 "@octokit/plugin-enterprise-rest@^6.0.1":
   version "6.0.1"
@@ -1971,11 +1971,11 @@
     "@types/node" ">= 8"
 
 "@octokit/types@^6.0.0", "@octokit/types@^6.0.3":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.1.2.tgz#2b3a6ae0b8b71c27c770b4ff3e9ad8f1f538af58"
-  integrity sha512-LPCpcLbcky7fWfHCTuc7tMiSHFpFlrThJqVdaHgowBTMS0ijlZFfonQC/C1PrZOjD4xRCYgBqH9yttEATGE/nw==
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.2.1.tgz#7f881fe44475ab1825776a4a59ca1ae082ed1043"
+  integrity sha512-jHs9OECOiZxuEzxMZcXmqrEO8GYraHF+UzNVH2ACYh8e/Y7YoT+hUf9ldvVd6zIvWv4p3NdxbQ0xx3ku5BnSiA==
   dependencies:
-    "@octokit/openapi-types" "^2.0.1"
+    "@octokit/openapi-types" "^2.2.0"
     "@types/node" ">= 8"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
@@ -2195,9 +2195,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/js-yaml@^3.12.5":
-  version "3.12.5"
-  resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-3.12.5.tgz#136d5e6a57a931e1cce6f9d8126aa98a9c92a6bb"
-  integrity sha512-JCcp6J0GV66Y4ZMDAQCXot4xprYB+Zfd3meK9+INSJeVZwJmHAW30BBEEkPzXswMXuiyReUGOP3GxrADc9wPww==
+  version "3.12.6"
+  resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-3.12.6.tgz#7f10c926aa41e189a2755c4c7fcf8e4573bd7ac1"
+  integrity sha512-cK4XqrLvP17X6c0C8n4iTbT59EixqyXL3Fk8/Rsk4dF3oX4dg70gYUXrXVUUHpnsGMPNlTQMqf+TVmNPX6FmSQ==
 
 "@types/json-schema@^7.0.3":
   version "7.0.6"
@@ -9969,10 +9969,15 @@ tscpaths@^0.0.9:
     commander "^2.20.0"
     globby "^9.2.0"
 
-tslib@2.0.3, tslib@>=1.9.0, tslib@^2, tslib@^2.0.0, tslib@^2.0.3, tslib@~2.0.1:
+tslib@2.0.3, tslib@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
+
+tslib@>=1.9.0, tslib@^2, tslib@^2.0.0, tslib@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tslib@^1.10.0, tslib@^1.13.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
