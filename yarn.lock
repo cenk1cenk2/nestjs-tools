@@ -2058,10 +2058,10 @@
     "@types/connect" "*"
     "@types/node" "*"
 
-"@types/config@^0.0.37":
-  version "0.0.37"
-  resolved "https://registry.yarnpkg.com/@types/config/-/config-0.0.37.tgz#95b91c7db1d940981f772da33378beb071fd29eb"
-  integrity sha512-mi2uI9O09hc2J1AoyGz92Apm5N4UkGlNTvjaRgUYHy/G/rCKbwR0fd0b51k5E/PKHIUBCuTAZJgeluh+hHqu/Q==
+"@types/config@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@types/config/-/config-0.0.38.tgz#ca30679b21b5b297299467e3a3f1c8e2e64b9170"
+  integrity sha512-z2WizAfIFgSv8SQfQ8c0LlbDAcK47D/o93XW6bxZ9t3bs4fmmfAPjk1nhAIBTG84PBBCHfSPM+8g7vhLdbFokg==
 
 "@types/connect@*":
   version "3.4.34"
@@ -2451,10 +2451,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.5.tgz#c131d88bd6713cc4d93b3bb1372edb1983225ff0"
   integrity sha512-gYsNoGkWejBxNO6SNRjOh/xKeZ0H0V+TFzaPzODfBjkAIb0aQgBuixC1brandC/CDJy1wYPwSoYrXpvul7m6yw==
 
-"@webundsoehne/nestjs-util@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-2.5.2.tgz#d211e36f28776e30753c29a08feb6e6f0525f4b4"
-  integrity sha512-xPN8rG0T28fCtyR9dGC+5R05Ojyxm4RczLrKayuaQnJg9pPntiS90DkAVJD0zoVLzQjeanJGJ6KrXGnJ7/8YDA==
+"@webundsoehne/nestjs-util@^2.5.3":
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-2.5.3.tgz#0c8c16920658569338fb34502e832f6c0a4998d5"
+  integrity sha512-kQsxjFM9aO/1Soo7duKwFTDCwiLBGNumvPU0T7BLfBDx6p9+uvpuQwqHRJJlBNXb83DlY6ZWCzuVeOfL9J9Lfw==
   dependencies:
     config "^3.2.4"
     fs-extra "^9.0.0"
