@@ -2451,10 +2451,10 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.0.5.tgz#c131d88bd6713cc4d93b3bb1372edb1983225ff0"
   integrity sha512-gYsNoGkWejBxNO6SNRjOh/xKeZ0H0V+TFzaPzODfBjkAIb0aQgBuixC1brandC/CDJy1wYPwSoYrXpvul7m6yw==
 
-"@webundsoehne/nestjs-util@^2.5.3":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-2.5.3.tgz#0c8c16920658569338fb34502e832f6c0a4998d5"
-  integrity sha512-kQsxjFM9aO/1Soo7duKwFTDCwiLBGNumvPU0T7BLfBDx6p9+uvpuQwqHRJJlBNXb83DlY6ZWCzuVeOfL9J9Lfw==
+"@webundsoehne/nestjs-util@^2.5.4":
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-2.5.4.tgz#c6d9db41b5553882056eb18d926547666b4624d0"
+  integrity sha512-HhZQ5QIIbPGDs5lyVsY15m8gy43DJfMIXEXTJe3Xznx+UhFCa2EThtsATN5xN0RLXGn0k+GfL24Kdw+ZxdGVXw==
   dependencies:
     config "^3.2.4"
     fs-extra "^9.0.0"
