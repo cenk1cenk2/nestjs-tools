@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@cenk1cenk2/nestjs-utils": "1.1.0",
-    "typeorm": "^0.2.29"
+    "typeorm": "^0.2.30"
   },
   "lint-staged": {
     "./*.{ts,js,tsx,jsx}": [
