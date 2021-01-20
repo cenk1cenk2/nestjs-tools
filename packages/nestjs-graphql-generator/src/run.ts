@@ -41,7 +41,8 @@ export async function runGenerator (): Promise<unknown[]> {
               plugins: [ 'typescript' ],
               hooks: {
                 afterOneFileWrite: [ 'prettier --write', 'eslint --fix' ]
-              }
+              },
+              ...s.options ?? {}
             }
           }
         },

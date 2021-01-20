@@ -1,2 +1,2 @@
-export * from './run.interface'
+export { Config } from './run.interface'
 export * from './run'
