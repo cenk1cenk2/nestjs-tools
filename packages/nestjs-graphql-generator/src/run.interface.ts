@@ -1,6 +1,9 @@
 import { Types } from '@graphql-codegen/plugin-helpers'
 
-export type Config = ConfigSchema[] & ConfigOptions
+export interface Config {
+  schema: ConfigSchema[]
+  options: ConfigOptions
+}
 
 export interface ConfigSchema {
   from: string
