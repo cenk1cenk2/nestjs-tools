@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-generator [1.1.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@1.1.4...@cenk1cenk2/nestjs-graphql-generator@1.1.5) (2021-01-20)
+
+
+### Bug Fixes
+
+* make options and injected options optional ([4f3ece9](https://github.com/cenk1cenk2/nestjs-tools/commit/4f3ece94e7af543937a5fdac9c4e8b59877d2f87))
+
 ## @cenk1cenk2/nestjs-graphql-generator [1.1.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@1.1.3...@cenk1cenk2/nestjs-graphql-generator@1.1.4) (2021-01-20)
 
 ### Bug Fixes
