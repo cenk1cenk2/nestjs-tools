@@ -2,7 +2,7 @@ import { Types } from '@graphql-codegen/plugin-helpers'
 
 export interface Config {
   schema: ConfigSchema[]
-  options: ConfigOptions
+  options?: ConfigOptions
 }
 
 export interface ConfigSchema {
