@@ -28,13 +28,13 @@
     "@nestjs/common": "7.6.5",
     "@nestjs/core": ">= 7.6.0",
     "class-validator": ">= 0.12.0",
-    "@cenk1cenk2/nestjs-utils": "1.1.0"
+    "@cenk1cenk2/nestjs-utils": "1.1.1"
   },
   "devDependencies": {
     "@nestjs/core": "^7.6.5",
     "@nestjs/graphql": "^7.9.5",
     "class-validator": "^0.13.1",
-    "@cenk1cenk2/nestjs-utils": "1.1.0"
+    "@cenk1cenk2/nestjs-utils": "1.1.1"
   },
   "lint-staged": {
     "./*.{ts,js,tsx,jsx}": [
