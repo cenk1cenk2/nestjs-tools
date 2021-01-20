@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-generator [1.1.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@1.1.2...@cenk1cenk2/nestjs-graphql-generator@1.1.3) (2021-01-20)
+
+
+### Bug Fixes
+
+* compile to more legacy apps node 12 es15 ([f271708](https://github.com/cenk1cenk2/nestjs-tools/commit/f27170886addb0eae7837816a45b2267fc658abe))
+
 ## @cenk1cenk2/nestjs-graphql-generator [1.1.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@1.1.1...@cenk1cenk2/nestjs-graphql-generator@1.1.2) (2021-01-20)
 
 

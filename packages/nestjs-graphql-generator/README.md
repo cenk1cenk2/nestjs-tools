@@ -10,6 +10,8 @@ GraphQL type generator from the `.gql` schemas mainly for `nestjs` and `@nrwl/nx
 
 <!-- toc -->
 
+
+
 <!-- tocstop -->
 
 ---
