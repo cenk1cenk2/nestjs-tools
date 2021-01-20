@@ -2,13 +2,13 @@ import { Types } from '@graphql-codegen/plugin-helpers'
 
 export interface Config {
   schema: ConfigSchema[]
-  options?: ConfigOptions
+  options?: Partial<ConfigOptions>
 }
 
 export interface ConfigSchema {
   from: string
   to: string
-  options?: Types.ConfiguredOutput
+  options?: Partial<Types.ConfiguredOutput>
 }
 
 export type ConfigOptions = Types.Config
