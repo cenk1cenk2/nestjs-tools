@@ -1,6 +1,6 @@
 import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
 import * as fs from 'fs'
-import keypair from 'keypair'
+import { keypair } from 'keypair'
 import { join } from 'path'
 
 import { LoggerService } from '@cenk1cenk2/nestjs-utils'

@@ -154,11 +154,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
       // we have to do it here as well to throw the error instead of finally
       // you need to release a queryRunner which was manually instantiated
-      this.checkBeforeTransaction = []
-      this.initialTransactions = []
-      this.transactions = []
-      this.inProgressTransactions = []
-      this.rollbackTransactions = []
+      this.flushTransactions()
 
       this.logger.debug('Commited transactions.')
 
@@ -170,11 +166,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
       // we have to do it here as well to throw the error instead of finally
       // you need to release a queryRunner which was manually instantiated
-      this.checkBeforeTransaction = []
-      this.initialTransactions = []
-      this.transactions = []
-      this.inProgressTransactions = []
-      this.rollbackTransactions = []
+      this.flushTransactions()
 
       // since we have errors lets rollback the changes we made
       // this may throw error if it has not reached the start transaction yet
@@ -201,6 +193,14 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       // throw error to catch it with the exception filter instead of handling it
       throw err
     }
+  }
+
+  private flushTransactions (): void {
+    this.checkBeforeTransaction = []
+    this.initialTransactions = []
+    this.transactions = []
+    this.inProgressTransactions = []
+    this.rollbackTransactions = []
   }
 
   // custom typeguards to determine the type of transaction
