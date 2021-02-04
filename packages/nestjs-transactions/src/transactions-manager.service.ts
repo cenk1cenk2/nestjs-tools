@@ -2,11 +2,19 @@ import { Injectable, InternalServerErrorException, Logger, Scope } from '@nestjs
 import { InjectConnection } from '@nestjs/typeorm'
 import { Connection } from 'typeorm'
 
-import { GetTransactionType, InitialTransaction, ParallelTransaction, RollbackTransaction, TransactionManagerOptions } from './transactions-manager.interface'
+import {
+  CheckBeforeTransaction,
+  GetTransactionType,
+  InitialTransaction,
+  ParallelTransaction,
+  RollbackTransaction,
+  TransactionManagerOptions
+} from './transactions-manager.interface'
 
 @Injectable({ scope: Scope.REQUEST })
 export class TransactionsManager<Event extends string = string, Map extends Partial<Record<Event, any>> = Partial<Record<Event, any>>> {
   private transactions: ParallelTransaction<Event, Map>[] = []
+  private checkBeforeTransaction: CheckBeforeTransaction[] = []
   private inProgressTransactions: ParallelTransaction<Event, Map>[] = []
   private initialTransactions: InitialTransaction<Event, Map>[] = []
   private rollbackTransactions: RollbackTransaction<Event, Map>[] = []
@@ -44,9 +52,15 @@ export class TransactionsManager<Event extends string = string, Map extends Part
    *
    * @param transaction
    */
-  public add (transaction: ParallelTransaction<Event, Map> | InitialTransaction<Event, Map> | RollbackTransaction<Event, Map>): void {
+  public add (transaction: (ParallelTransaction<Event, Map> | InitialTransaction<Event, Map> | RollbackTransaction<Event, Map>) & Partial<CheckBeforeTransaction>): void {
+    if (this.hasCheckBeforeTransaction(transaction)) {
+      this.checkBeforeTransaction.push({ check: transaction.check })
+
+      // this.logger.debug('Added a new check before transactions.')
+    }
+
     if (this.isInitialTransaction(transaction)) {
-      this.transactions.push(transaction)
+      this.initialTransactions.push(transaction)
 
       // this.logger.debug('Injected a new transaction.')
     } else if (this.isParallelTransaction(transaction)) {
@@ -78,6 +92,9 @@ export class TransactionsManager<Event extends string = string, Map extends Part
     try {
       // start a timeout
       const startedAt = Date.now()
+
+      // do the checks before doing anything
+      await Promise.all(this.checkBeforeTransaction.map((c) => c.check(queryRunner.manager)))
 
       // first perform the initial transactions sequentially, did not find any good way to this
       while (this.initialTransactions.length > 0) {
@@ -137,6 +154,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
       // we have to do it here as well to throw the error instead of finally
       // you need to release a queryRunner which was manually instantiated
+      this.checkBeforeTransaction = []
       this.initialTransactions = []
       this.transactions = []
       this.inProgressTransactions = []
@@ -148,28 +166,37 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
       return this.results
     } catch (err) {
-      // since we have errors lets rollback the changes we made
-      // this may throw error if it has not reached the start transaction yet
-      try {
-        // first rollback the actions that are user defined.
-        await Promise.all(this.rollbackTransactions.map((r) => r.rollback(this.results)))
-
-        // then rollback transactions in the database
-        await queryRunner.rollbackTransaction()
-      } catch (e) {
-        this.logger.error(e)
-      }
+      this.logger.warn(`Rolling back transactions: ${err}`)
 
       // we have to do it here as well to throw the error instead of finally
       // you need to release a queryRunner which was manually instantiated
+      this.checkBeforeTransaction = []
       this.initialTransactions = []
       this.transactions = []
       this.inProgressTransactions = []
       this.rollbackTransactions = []
 
-      await queryRunner.release()
+      // since we have errors lets rollback the changes we made
+      // this may throw error if it has not reached the start transaction yet
+      try {
+        // first rollback the actions that are user defined.
+        await Promise.all(this.rollbackTransactions.map((r) => r.rollback(this.results)))
+      } catch (e) {
+        this.logger.error(e)
+      }
 
-      this.logger.warn(`Rolling back transactions: ${err}`)
+      // then rollback transactions in the database
+      try {
+        await queryRunner.rollbackTransaction()
+      } catch (e) {
+        this.logger.error(e)
+      }
+
+      try {
+        await queryRunner.release()
+      } catch (e) {
+        this.logger.error(e)
+      }
 
       // throw error to catch it with the exception filter instead of handling it
       throw err
@@ -177,6 +204,10 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   }
 
   // custom typeguards to determine the type of transaction
+
+  private hasCheckBeforeTransaction (transaction: any): boolean {
+    return 'check' in transaction
+  }
 
   private isInitialTransaction (transaction: any): transaction is InitialTransaction<Event, Map> {
     return 'token' in transaction && 'transaction' in transaction

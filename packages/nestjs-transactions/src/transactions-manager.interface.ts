@@ -16,6 +16,14 @@ export type Rollback<T, R> = (results?: T) => Promise<R>
  * The type of parallel transactions which will be run after.
  */
 // made this an object too, to refactor fast between initial and parallel transaction
+export interface CheckBeforeTransaction {
+  check: Transaction<never, void>
+}
+
+/**
+ * The type of parallel transactions which will be run after.
+ */
+// made this an object too, to refactor fast between initial and parallel transaction
 export interface ParallelTransaction<E extends string, M extends Partial<Record<E, any>>> {
   transaction: Transaction<GetTransactionType<E, M>, void>
 }
