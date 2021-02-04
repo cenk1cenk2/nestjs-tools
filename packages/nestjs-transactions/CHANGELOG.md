@@ -1,3 +1,17 @@
+# @cenk1cenk2/nestjs-transactions [3.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@2.1.0...@cenk1cenk2/nestjs-transactions@3.0.0) (2021-02-04)
+
+
+### Performance Improvements
+
+* refactored a little for work ([1643cc4](https://github.com/cenk1cenk2/nestjs-tools/commit/1643cc468d8e137cd4d5fe859e0ffeb857c7327d))
+
+
+### BREAKING CHANGES
+
+* - rollback is implemented differently
+- createChildInstance is renamed to createChild with different typing.
+- scope is changed to be singleton since the idea is to create child instances
+
 # @cenk1cenk2/nestjs-transactions [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@2.0.1...@cenk1cenk2/nestjs-transactions@2.1.0) (2021-02-04)
 
 
