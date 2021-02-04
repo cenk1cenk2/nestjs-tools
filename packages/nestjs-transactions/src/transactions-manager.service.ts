@@ -11,7 +11,7 @@ import {
   TransactionManagerOptions
 } from './transactions-manager.interface'
 
-@Injectable({ scope: Scope.REQUEST })
+@Injectable({ scope: Scope.DEFAULT })
 export class TransactionsManager<Event extends string = string, Map extends Partial<Record<Event, any>> = Partial<Record<Event, any>>> {
   private transactions: ParallelTransaction<Event, Map>[] = []
   private checkBeforeTransaction: CheckBeforeTransaction[] = []
@@ -37,40 +37,44 @@ export class TransactionsManager<Event extends string = string, Map extends Part
    * @returns  {TransactionsManager<ChildEvent, ChildMap>}
    * @memberof TransactionsManager
    */
-  public createChildInstance<ChildEvent extends string = Event, ChildMap extends Partial<Record<ChildEvent, any>> = Partial<Record<ChildEvent, any>>>(): TransactionsManager<
-  ChildEvent,
-  ChildMap
-  > {
-    return new TransactionsManager<ChildEvent, ChildMap>(this.connection)
+  public createChild<ChildEvent extends Event>(): TransactionsManager<ChildEvent, Map> {
+    return new TransactionsManager<ChildEvent, Map>(this.connection)
   }
 
   /**
-   * Add a new transaction or rollback.
+   * Add a new transaction, with optional check or rollback.
+   * Checks will be executed before any transactions to check whether the operation is performable.
    * Transactions with token are initial transactions and will get their result saved for further use.
    * Transactions without any depends on and token are parallel transactions that will execute after the initial ones.
    * Rollback transactions will get executed if something goes wrong.
    *
    * @param transaction
    */
-  public add (transaction: (ParallelTransaction<Event, Map> | InitialTransaction<Event, Map> | RollbackTransaction<Event, Map>) & Partial<CheckBeforeTransaction>): void {
+  public add (transaction: (ParallelTransaction<Event, Map> | InitialTransaction<Event, Map>) & Partial<CheckBeforeTransaction & RollbackTransaction<Event, Map>>): void {
+    // check has events and add them to lists
+
     if (this.hasCheckBeforeTransaction(transaction)) {
       this.checkBeforeTransaction.push({ check: transaction.check })
 
       // this.logger.debug('Added a new check before transactions.')
     }
 
+    if (this.hasRollback(transaction)) {
+      this.rollbackTransactions.push({ rollback: transaction.rollback })
+
+      // this.logger.debug('Injected a new rollback transaction.')
+    }
+
+    // check transaction type and add it to list
+
     if (this.isInitialTransaction(transaction)) {
       this.initialTransactions.push(transaction)
 
-      // this.logger.debug('Injected a new transaction.')
+      // this.logger.debug(`Injected a new initial transaction with token ${transaction.token}.`)
     } else if (this.isParallelTransaction(transaction)) {
       this.transactions.push(transaction)
 
-      // this.logger.debug(`Injected a new initial transaction with token ${transaction.token}.`)
-    } else if (this.isRollbackTransaction(transaction)) {
-      this.rollbackTransactions.push(transaction)
-
-      // this.logger.debug('Injected a new rollback transaction.')
+      // this.logger.debug('Injected a new transaction.')
     } else {
       throw new Error('Transaction type unknown.')
     }
@@ -209,15 +213,15 @@ export class TransactionsManager<Event extends string = string, Map extends Part
     return 'check' in transaction
   }
 
+  private hasRollback (transaction: any): boolean {
+    return 'rollback' in transaction
+  }
+
   private isInitialTransaction (transaction: any): transaction is InitialTransaction<Event, Map> {
     return 'token' in transaction && 'transaction' in transaction
   }
 
   private isParallelTransaction (transaction: any): transaction is ParallelTransaction<Event, Map> {
     return !('token' in transaction) && !('dependsOn' in transaction) && 'transaction' in transaction
-  }
-
-  private isRollbackTransaction (transaction: any): transaction is RollbackTransaction<Event, Map> {
-    return 'rollback' in transaction
   }
 }
