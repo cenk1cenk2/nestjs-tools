@@ -1,3 +1,15 @@
+# @cenk1cenk2/nestjs-transactions [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@2.0.1...@cenk1cenk2/nestjs-transactions@2.1.0) (2021-02-04)
+
+
+### Bug Fixes
+
+* fix failing build ([a0be410](https://github.com/cenk1cenk2/nestjs-tools/commit/a0be410e4abc9bb10c2425a76105747f88b50493))
+
+
+### Features
+
+* update transaction manager to have check ([597e27f](https://github.com/cenk1cenk2/nestjs-tools/commit/597e27f36d0cfec3419152d3fa87bfdbfd8a8b91))
+
 ## @cenk1cenk2/nestjs-transactions [2.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@2.0.0...@cenk1cenk2/nestjs-transactions@2.0.1) (2021-01-20)
 
 
