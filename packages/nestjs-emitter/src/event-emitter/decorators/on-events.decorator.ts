@@ -23,5 +23,5 @@ export interface OnEventsMetadata {
  *
  * @param name event to subscribe to
  */
-export const OnEvents = (event: string | symbol | (string | symbol)[], options?: OnOptions): MethodDecorator =>
+export const OnEvents = (event: (string | symbol | (string | symbol))[], options?: OnOptions): MethodDecorator =>
   SetMetadata(EVENT_LISTENER_METADATA_MULTIPLE, { event, options } as OnEventsMetadata)
