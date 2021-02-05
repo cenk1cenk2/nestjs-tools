@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common'
 import { DiscoveryModule } from '@nestjs/core'
-import { EventEmitterModuleOptions } from '@nestjs/event-emitter/dist/interfaces'
+import { EventEmitterModuleOptions } from '@nestjs/event-emitter/dist/interfaces/event-emitter-options.interface'
 import { EventEmitter2 } from 'eventemitter2'
 
 import { EventMetadataAccessor } from './event-metadata.accessor'

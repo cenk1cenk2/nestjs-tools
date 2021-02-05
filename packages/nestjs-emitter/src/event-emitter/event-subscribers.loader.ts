@@ -32,23 +32,33 @@ export class EventSubscribersLoader implements OnApplicationBootstrap, OnApplica
 
         const prototype = Object.getPrototypeOf(instance)
 
-        this.metadataScanner.scanFromPrototype(instance, prototype, (methodKey: string) => this.subscribeToEventIfListener(instance, methodKey))
+        const subscribe = [ this.subscribeToEvent, this.subscribeToMultipleEvents ]
+
+        subscribe.forEach((s) => this.metadataScanner.scanFromPrototype(instance, prototype, (methodKey: string) => s(instance, methodKey)))
       })
   }
 
-  private subscribeToEventIfListener (instance: Record<string, any>, methodKey: string): void {
-    const eventListenerMetadata = this.metadataAccessor.getEventHandlerMetadata(instance[methodKey])
+  private subscribeToEvent (instance: Record<string, any>, methodKey: string): void {
+    const eventListenerMetadata = this.metadataAccessor.getOnEventMetadata(instance[methodKey])
 
     if (!eventListenerMetadata) {
       return
     }
 
-    const { event: injectedEvent, options } = eventListenerMetadata
+    const { event, options } = eventListenerMetadata
 
-    const event = Array.isArray(injectedEvent) ? injectedEvent : [ injectedEvent ]
+    this.eventEmitter.on(event, (...args: unknown[]) => instance[methodKey].call(instance, ...args), options)
+  }
 
-    event.forEach((e) => {
-      this.eventEmitter.on(e, (...args: unknown[]) => instance[methodKey].call(instance, ...args), options)
-    })
+  private subscribeToMultipleEvents (instance: Record<string, any>, methodKey: string): void {
+    const eventListenerMetadata = this.metadataAccessor.getOnEventsMetadata(instance[methodKey])
+
+    if (!eventListenerMetadata) {
+      return
+    }
+
+    const { event, options } = eventListenerMetadata
+
+    event.forEach((e) => this.eventEmitter.on(e, (...args: unknown[]) => instance[methodKey].call(instance, ...args), options))
   }
 }
