@@ -1,3 +1,10 @@
+# @cenk1cenk2/nestjs-emitter [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.2...@cenk1cenk2/nestjs-emitter@2.1.0) (2021-02-05)
+
+
+### Features
+
+* fix all problems metadata related ([4d125a5](https://github.com/cenk1cenk2/nestjs-tools/commit/4d125a5fcc593ea23a7b8be0a91c8bd874f8cac0))
+
 ## @cenk1cenk2/nestjs-emitter [2.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.1...@cenk1cenk2/nestjs-emitter@2.0.2) (2021-02-05)
 
 
