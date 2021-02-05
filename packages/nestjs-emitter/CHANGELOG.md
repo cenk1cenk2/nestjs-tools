@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-emitter [2.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.0...@cenk1cenk2/nestjs-emitter@2.0.1) (2021-02-05)
+
+
+### Bug Fixes
+
+* update to have seperate fields for multiple events ([825eb4e](https://github.com/cenk1cenk2/nestjs-tools/commit/825eb4e56a82f202c87b5efefea7589c238fe589))
+
 # @cenk1cenk2/nestjs-emitter [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@1.1.1...@cenk1cenk2/nestjs-emitter@2.0.0) (2021-02-05)
 
 
