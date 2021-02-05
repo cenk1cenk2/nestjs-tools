@@ -1,3 +1,11 @@
+## @cenk1cenk2/nestjs-emitter [2.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.1...@cenk1cenk2/nestjs-emitter@2.0.2) (2021-02-05)
+
+
+### Bug Fixes
+
+* add binding to class ([84731a2](https://github.com/cenk1cenk2/nestjs-tools/commit/84731a24cf931941d0da51e77d0c79d53109f488))
+* fix new decorator ([897ea9d](https://github.com/cenk1cenk2/nestjs-tools/commit/897ea9d989482311eb7a41df0390ba76ae1bc43c))
+
 ## @cenk1cenk2/nestjs-emitter [2.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.0...@cenk1cenk2/nestjs-emitter@2.0.1) (2021-02-05)
 
 ### Bug Fixes
