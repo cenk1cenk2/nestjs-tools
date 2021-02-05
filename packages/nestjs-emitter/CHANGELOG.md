@@ -1,3 +1,15 @@
+# @cenk1cenk2/nestjs-emitter [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@1.1.1...@cenk1cenk2/nestjs-emitter@2.0.0) (2021-02-05)
+
+
+### Performance Improvements
+
+* add own implementation for event emitter ([6bd4b89](https://github.com/cenk1cenk2/nestjs-tools/commit/6bd4b89104a3944876e3a9f02710b2cf7803be9d))
+
+
+### BREAKING CHANGES
+
+* now changes the way events are handled
+
 ## @cenk1cenk2/nestjs-emitter [1.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@1.1.0...@cenk1cenk2/nestjs-emitter@1.1.1) (2021-01-20)
 
 
