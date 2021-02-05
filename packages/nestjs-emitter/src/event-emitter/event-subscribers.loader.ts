@@ -32,9 +32,8 @@ export class EventSubscribersLoader implements OnApplicationBootstrap, OnApplica
 
         const prototype = Object.getPrototypeOf(instance)
 
-        const subscribe = [ this.subscribeToEvent, this.subscribeToMultipleEvents ]
-
-        subscribe.forEach((s) => this.metadataScanner.scanFromPrototype(instance, prototype, (methodKey: string) => s(instance, methodKey)))
+        this.metadataScanner.scanFromPrototype(instance, prototype, (methodKey: string) => this.subscribeToEvent(instance, methodKey))
+        this.metadataScanner.scanFromPrototype(instance, prototype, (methodKey: string) => this.subscribeToMultipleEvents(instance, methodKey))
       })
   }
 
