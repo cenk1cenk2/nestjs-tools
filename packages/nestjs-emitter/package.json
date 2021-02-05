@@ -40,5 +40,8 @@
     "./*.{json,md}": [
       "prettier --loglevel warn --write"
     ]
+  },
+  "dependencies": {
+    "@nestjs/event-emitter": "^0.0.2"
   }
 }
