@@ -23,7 +23,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   // do not need to create a dynamic module for now, will hardcode the options
   private options: TransactionManagerOptions = {
     // transaction timeout in 1 minute, should be enough
-    timeout: 60 * 1
+    timeout: 600 * 1
   }
 
   constructor (@InjectConnection() private connection: Connection) {}
