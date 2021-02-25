@@ -5,12 +5,12 @@ import { TransactionsManager } from './transactions-manager.service'
 /**
  * A singular transaction.
  */
-export type Transaction<T, R> = (manager: EntityManager, results?: T) => Promise<R>
+export type Transaction<T, R> = (manager: EntityManager, results?: T) => R | Promise<R>
 
 /**
  * A singular rollback.
  */
-export type Rollback<T, R> = (results?: T) => Promise<R>
+export type Rollback<T, R> = (results?: T) => R | Promise<R>
 
 /**
  * The type of parallel transactions which will be run after.
@@ -21,16 +21,23 @@ export interface CheckBeforeTransaction {
 }
 
 /**
+ * A condition to run this transaction.
+ */
+export interface BaseTransaction<E extends string, M extends Partial<Record<E, any>>> {
+  condition?: Transaction<GetTransactionType<E, M>, boolean | { condition: boolean, message: string }>
+}
+
+/**
  * The type of parallel transactions which will be run after.
  */
-export interface ParallelTransaction<E extends string, M extends Partial<Record<E, any>>> {
+export interface ParallelTransaction<E extends string, M extends Partial<Record<E, any>>> extends BaseTransaction<E, M> {
   transaction: Transaction<GetTransactionType<E, M>, void>
 }
 
 /**
  * A type of initial transaction, which will run first and can return a result.
  */
-export interface InitialTransaction<E extends string, M extends Partial<Record<E, any>>> {
+export interface InitialTransaction<E extends string, M extends Partial<Record<E, any>>> extends BaseTransaction<E, M> {
   token: keyof GetTransactionType<E, M>
   transaction: Transaction<GetTransactionType<E, M>, GetTransactionType<E, M>[keyof GetTransactionType<E, M>]>
   dependsOn?: (keyof GetTransactionType<E, M>)[]
@@ -44,7 +51,7 @@ export interface InitialTransaction<E extends string, M extends Partial<Record<E
  * @template E
  * @template M
  */
-export interface RollbackTransaction<E extends string, M extends Partial<Record<E, any>>> {
+export interface RollbackTransaction<E extends string, M extends Partial<Record<E, any>>> extends BaseTransaction<E, M> {
   rollback: Rollback<GetTransactionType<E, M>, void>
 }
 

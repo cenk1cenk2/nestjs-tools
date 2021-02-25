@@ -1,6 +1,6 @@
 import { Injectable, InternalServerErrorException, Logger, Scope } from '@nestjs/common'
 import { InjectConnection } from '@nestjs/typeorm'
-import { Connection } from 'typeorm'
+import { Connection, EntityManager } from 'typeorm'
 
 import {
   CheckBeforeTransaction,
@@ -87,6 +87,9 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   public async run (): Promise<GetTransactionType<Event, Map>> {
     this.logger.debug('Creating new instance of transactions.')
 
+    // reset results
+    this.results = {} as GetTransactionType<Event, Map>
+
     // create new query runner and transaction
     const queryRunner = this.connection.createQueryRunner()
 
@@ -116,7 +119,13 @@ export class TransactionsManager<Event extends string = string, Map extends Part
               // might have the depends on entry but the transaction may already be finished
               t.dependsOn.length > 0 && t.dependsOn.every((dependent) => Object.keys(this.results).includes(dependent as string))
             ) {
-              this.results[t.token] = await t.transaction(queryRunner.manager, this.results)
+              if (await this.checkTransactionCondition(t, queryRunner.manager)) {
+                const result = await t.transaction(queryRunner.manager, this.results)
+
+                if (t.token) {
+                  this.results[t.token] = result
+                }
+              }
 
               // remove this transaction on queue
               this.initialTransactions.splice(index, 1)
@@ -144,8 +153,10 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
         // process the transactions
         await Promise.all(
-          this.inProgressTransactions.map(async (f, index) => {
-            await f.transaction(queryRunner.manager, this.results)
+          this.inProgressTransactions.map(async (t, index) => {
+            if (await this.checkTransactionCondition(t, queryRunner.manager)) {
+              await t.transaction(queryRunner.manager, this.results)
+            }
 
             // remove the transaction in queue
             this.inProgressTransactions.splice(index, 1)
@@ -172,7 +183,17 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       // this may throw error if it has not reached the start transaction yet
       try {
         // first rollback the actions that are user defined.
-        await Promise.all(this.rollbackTransactions.map((r) => r.rollback(this.results)))
+        await Promise.all(
+          this.rollbackTransactions.map(async (r) => {
+            if (await this.checkTransactionCondition(r, queryRunner.manager)) {
+              try {
+                await r.rollback(this.results)
+              } catch (e) {
+                this.logger.error(e)
+              }
+            }
+          })
+        )
       } catch (e) {
         this.logger.error(e)
       }
@@ -197,6 +218,27 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       // throw error to catch it with the exception filter instead of handling it
       throw err
     }
+  }
+
+  private async checkTransactionCondition (
+    transaction: InitialTransaction<Event, Map> | ParallelTransaction<Event, Map> | RollbackTransaction<Event, Map>,
+    manager: EntityManager
+  ): Promise<boolean> {
+    if (typeof transaction?.condition !== 'undefined') {
+      const result = await transaction.condition(manager, this.results)
+
+      if (typeof result === 'object') {
+        if (result.condition === false) {
+          this.logger.debug(`Transaction does not meet the condition, therefore skipping: ${result.message}`)
+        }
+
+        return result.condition
+      } else {
+        return result
+      }
+    }
+
+    return true
   }
 
   private flushTransactions (): void {
