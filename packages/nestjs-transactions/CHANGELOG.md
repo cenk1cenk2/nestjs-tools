@@ -1,3 +1,10 @@
+# @cenk1cenk2/nestjs-transactions [3.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.0.2...@cenk1cenk2/nestjs-transactions@3.1.0) (2021-02-25)
+
+
+### Features
+
+* add condition feature for transactions ([6262953](https://github.com/cenk1cenk2/nestjs-tools/commit/62629531b482332b213aec9cd46004c0e97f85a4))
+
 ## @cenk1cenk2/nestjs-transactions [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.0.1...@cenk1cenk2/nestjs-transactions@3.0.2) (2021-02-25)
 
 
