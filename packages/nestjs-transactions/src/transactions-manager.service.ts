@@ -168,10 +168,6 @@ export class TransactionsManager<Event extends string = string, Map extends Part
     } catch (err) {
       this.logger.warn(`Rolling back transactions: ${err}`)
 
-      // we have to do it here as well to throw the error instead of finally
-      // you need to release a queryRunner which was manually instantiated
-      this.flushTransactions()
-
       // since we have errors lets rollback the changes we made
       // this may throw error if it has not reached the start transaction yet
       try {
@@ -193,6 +189,10 @@ export class TransactionsManager<Event extends string = string, Map extends Part
       } catch (e) {
         this.logger.error(e)
       }
+
+      // we have to do it here as well to throw the error instead of finally
+      // you need to release a queryRunner which was manually instantiated
+      this.flushTransactions()
 
       // throw error to catch it with the exception filter instead of handling it
       throw err
@@ -218,7 +218,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
   }
 
   private isInitialTransaction (transaction: any): transaction is InitialTransaction<Event, Map> {
-    return 'token' in transaction && 'transaction' in transaction
+    return ('token' in transaction || 'dependsOn' in transaction) && 'transaction' in transaction
   }
 
   private isParallelTransaction (transaction: any): transaction is ParallelTransaction<Event, Map> {
