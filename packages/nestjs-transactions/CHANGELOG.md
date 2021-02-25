@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-transactions [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.0.1...@cenk1cenk2/nestjs-transactions@3.0.2) (2021-02-25)
+
+
+### Bug Fixes
+
+* transaction rollback problem ([21d566f](https://github.com/cenk1cenk2/nestjs-tools/commit/21d566fd536c52fde07f08b48d73feeb644578cf))
+
 ## @cenk1cenk2/nestjs-transactions [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.0.0...@cenk1cenk2/nestjs-transactions@3.0.1) (2021-02-09)
 
 
