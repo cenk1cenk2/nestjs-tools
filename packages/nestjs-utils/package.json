@@ -26,7 +26,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1 < 8",
-    "@webundsoehne/nestjs-util": ">= 2.3.2 < 3",
+    "@webundsoehne/nestjs-util": ">= 2.3.2 < 4",
     "winston": ">= 3.3.3 < 4"
   },
   "devDependencies": {
