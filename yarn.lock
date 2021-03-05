@@ -557,10 +557,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.3.6":
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.6.tgz#40d9332ccd9179304bb8c768b0c9e1c2c40225d1"
-  integrity sha512-lu/zxXfKk8G6adiU+4SplE7PPz0CFiZu/PzXn6nM5hkG+isISgCyqHOnEJai50wpwKuNcEith1OCPkKdjzAqEQ==
+"@cenk1cenk2/cz-cc@^1.3.7":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.7.tgz#9d7ed74cad2fe2b7ffb313b619731d576fb7b5ae"
+  integrity sha512-bzceKfjIniZSIJW02/GFbzpPA5A5s5lwdeHh39kjGDQ2YoTxN6Y4rkRBHsa5+1gWJKmNVHnqhZUHLrlf9SUS8g==
   dependencies:
     chalk "^4.1.0"
     commitizen "^4.2.3"
@@ -569,7 +569,7 @@
     enquirer-editor "^1.0.0"
     enquirer-prompt-editor "^2.0.1"
     find-git-root "^1.0.4"
-    listr2 "^3.4.0"
+    listr2 "^3.4.1"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -6523,7 +6523,7 @@ listr2@^3.2.2:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-listr2@^3.4.0:
+listr2@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.4.1.tgz#3c90d6add087f648c7ab7173e4520ddfd10f0e21"
   integrity sha512-TYim70Kml0vISlYH7mWHqeiBytkfDwWtp4Z+HmxEXWkXCRz6sCxHisOM3b1w+OYfhLlwB7ADblC0cdZhZIriPA==
