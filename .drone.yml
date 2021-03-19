@@ -14,7 +14,7 @@ steps:
   - name: install
     image: node:current-alpine
     commands:
-      - yarn --frozen-lockfile
+      - yarn --frozen-lockfile --ignore-engines
 
   - name: lint
     image: node:current-alpine
