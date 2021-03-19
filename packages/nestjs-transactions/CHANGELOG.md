@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-transactions [3.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.1.0...@cenk1cenk2/nestjs-transactions@3.1.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* timeout ([cff4466](https://github.com/cenk1cenk2/nestjs-tools/commit/cff44669957c23ca8dbf7b3bc752562427a41af4))
+
 # @cenk1cenk2/nestjs-transactions [3.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.0.2...@cenk1cenk2/nestjs-transactions@3.1.0) (2021-02-25)
 
 
