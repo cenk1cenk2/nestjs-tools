@@ -2474,9 +2474,9 @@ ajv@^6.10.0, ajv@^6.12.3, ajv@^6.12.4:
     uri-js "^4.2.2"
 
 ajv@^7.0.2:
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.2.1.tgz#a5ac226171912447683524fa2f1248fcf8bac83d"
-  integrity sha512-+nu0HDv7kNSOua9apAVc979qd932rrZeb3WOvoiD31A/p1mIE5/9bN2027pE2rOPYEdS3UHzsvof4hY+lM9/WQ==
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.2.3.tgz#ca78d1cf458d7d36d1c3fa0794dd143406db5772"
+  integrity sha512-idv5WZvKVXDqKralOImQgPM9v6WOdLNa0IY3B3doOjw/YxRGT8I+allIJ6kd7Uaj+SF1xZUSU+nPM5aDNBVtnw==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -3229,9 +3229,9 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 caniuse-lite@^1.0.30001181:
-  version "1.0.30001203"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001203.tgz#a7a34df21a387d9deffcd56c000b8cf5ab540580"
-  integrity sha512-/I9tvnzU/PHMH7wBPrfDMSuecDeUKerjCPX7D0xBbaJZPxoT9m+yYxt0zCTkcijCkjTdim3H56Zm0i5Adxch4w==
+  version "1.0.30001204"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001204.tgz#256c85709a348ec4d175e847a3b515c66e79f2aa"
+  integrity sha512-JUdjWpcxfJ9IPamy2f5JaRDCaqJOxDzOSKtbdx4rH9VivMd1vIzoPumsJa9LoMIi4Fx2BV2KZOxWhNkBjaYivQ==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -5430,9 +5430,9 @@ header-case@^2.0.4:
     tslib "^2.0.3"
 
 highlight.js@^10.0.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.6.0.tgz#0073aa71d566906965ba6e1b7be7b2682f5e18b6"
-  integrity sha512-8mlRcn5vk/r4+QcqerapwBYTe+iPL5ih6xrNylxrnBdHQiijDETfXX7VIxC3UiCRiINBJfANBAsPzAvRQj8RpQ==
+  version "10.7.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.1.tgz#a8ec4152db24ea630c90927d6cae2a45f8ecb955"
+  integrity sha512-S6G97tHGqJ/U8DsXcEdnACbirtbx58Bx9CzIVeYli8OuswCfYI/LsXH2EiGcoGio1KAC3x4mmUwulOllJ2ZyRA==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -6375,9 +6375,9 @@ libnpmpublish@^4.0.0:
     ssri "^8.0.0"
 
 libphonenumber-js@^1.9.7:
-  version "1.9.13"
-  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.13.tgz#41ecc8635103c5af44be422f0606a518022248fd"
-  integrity sha512-DOvAj9Now6KqP+L1Q3JrM3iNhH/mXiOPTj6kxb9OnJbYsVYRlVdvRY1kCpU3Tz9VegIEi6MgDrviBaAnvB3aSw==
+  version "1.9.14"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.14.tgz#c5fd28c4c4e5139fa3459e113c1f5015a52aeb42"
+  integrity sha512-lQEHej1NQwKwmn89ixSfvj+m7Gm6AsafuxU1BMsS22VUizQPnamVslA2d5wsHHaaXOExAvlcYjUF1C7ieTzoCg==
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -9578,9 +9578,9 @@ ua-parser-js@^0.7.18:
   integrity sha512-yo+miGzQx5gakzVK3QFfN0/L9uVhosXBBO7qmnk7c2iw1IhL212wfA3zbnI54B0obGwC/5NWub/iT9sReMx+Fw==
 
 uglify-js@^3.1.4:
-  version "3.13.1"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.1.tgz#2749d4b8b5b7d67460b4a418023ff73c3fefa60a"
-  integrity sha512-EWhx3fHy3M9JbaeTnO+rEqzCe1wtyQClv6q3YWq0voOj4E+bMZBErVS1GAHPDiRGONYq34M1/d8KuQMgvi6Gjw==
+  version "3.13.2"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.2.tgz#fe10319861bccc8682bfe2e8151fbdd8aa921c44"
+  integrity sha512-SbMu4D2Vo95LMC/MetNaso1194M1htEA+JrqE9Hk+G2DhI+itfS9TRu9ZKeCahLDNa/J3n4MqUJ/fOHMzQpRWw==
 
 uid-number@0.0.6:
   version "0.0.6"
