@@ -599,10 +599,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.3.9":
-  version "1.3.9"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.9.tgz#1a6ec74c92667f36cae39684ec1382e001f1ce94"
-  integrity sha512-hH0ULWAqg0uSTTp1KSsOqJXugfoUkroiUIxdBVtJLsbbb6cPSSeQJy9OpZzQ5IgpTpQqBDa6DaeEmQeWva4fwg==
+"@cenk1cenk2/cz-cc@^1.3.10":
+  version "1.3.10"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.10.tgz#dea52b88b3f3faa1064c506ad96cd025614a4f77"
+  integrity sha512-ei9mS+XVu/RoZbwlCXKZiKhgBeX5KmFitA0XUgGiMHzoWa2GTxUwrUyeobUDYJHmPjYbJK7+S2A8qeqH5OeAFw==
   dependencies:
     chalk "^4.1.0"
     commitizen "^4.2.3"
@@ -611,11 +611,11 @@
     enquirer-editor "^1.0.0"
     enquirer-prompt-editor "^2.0.1"
     find-git-root "^1.0.4"
-    listr2 "^3.4.4"
+    listr2 "^3.4.5"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
-    "@commitlint/load" "^12.0.1"
+    "@commitlint/load" "^12.1.1"
 
 "@cenk1cenk2/eslint-config@^0.4.34":
   version "0.4.34"
@@ -638,7 +638,7 @@
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-12.1.1.tgz#8aad1d46fb78b3199e4ae36debdc93570bf765ea"
   integrity sha512-6mplMGvLCKF5LieL7BRhydpg32tm6LICnWQADrWU4S5g9PKi2utNvhiaiuNPoHUXr29RdbNaGNcyyPv8DSjJsQ==
 
-"@commitlint/load@>6.1.1", "@commitlint/load@^12.0.1":
+"@commitlint/load@>6.1.1", "@commitlint/load@^12.1.1":
   version "12.1.1"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-12.1.1.tgz#5a7fb8be11e520931d1237c5e8dc401b7cc9c6c1"
   integrity sha512-qOQtgNdJRULUQWP9jkpTwhj7aEtnqUtqeUpbQ9rjS+GIUST65HZbteNUX4S0mAEGPWqy2aK5xGd73cUfFSvuuw==
@@ -6526,10 +6526,25 @@ listr-verbose-renderer@^0.5.0:
     date-fns "^1.27.2"
     figures "^2.0.0"
 
-listr2@^3.2.2, listr2@^3.4.4:
+listr2@^3.2.2:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.4.4.tgz#5bb5e0107cc9a8787dcfb5d302c88cbddcdba248"
   integrity sha512-okQwtieCHDX5erlxcEn2xwNfVQhV+/YiD+U0v+6DQamXnknE7mc6B5fopHl96v1PuZjTpaoChctf96PB6K4XRg==
+  dependencies:
+    chalk "^4.1.0"
+    cli-truncate "^2.1.0"
+    figures "^3.2.0"
+    indent-string "^4.0.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.4.5.tgz#d2ae4d7c39550a2c37c0253431edae1959bac8a5"
+  integrity sha512-hHztBAo6Rzr884tkyNJkItrVlQc0jsnU1qoOgS/Vwy3sJExLJzzq6XUnz8JCG00wOrWmpMTnS+oQ106YPE6Epg==
   dependencies:
     chalk "^4.1.0"
     cli-truncate "^2.1.0"
