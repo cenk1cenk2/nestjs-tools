@@ -599,10 +599,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.3.10":
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.10.tgz#dea52b88b3f3faa1064c506ad96cd025614a4f77"
-  integrity sha512-ei9mS+XVu/RoZbwlCXKZiKhgBeX5KmFitA0XUgGiMHzoWa2GTxUwrUyeobUDYJHmPjYbJK7+S2A8qeqH5OeAFw==
+"@cenk1cenk2/cz-cc@^1.3.11":
+  version "1.3.11"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.11.tgz#d23a19df55c6bfa7c02707bc53b77133894a493e"
+  integrity sha512-r4SS56HVPsa1Ew/AZqtUZgjk8257/XA7sflRRlwabLW86j0v9AXog00Qcma+4P/CwU8rYEENYJghZIYz/wxTHw==
   dependencies:
     chalk "^4.1.0"
     commitizen "^4.2.3"
@@ -611,7 +611,7 @@
     enquirer-editor "^1.0.0"
     enquirer-prompt-editor "^2.0.1"
     find-git-root "^1.0.4"
-    listr2 "^3.4.5"
+    listr2 "^3.5.0"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -6526,10 +6526,25 @@ listr-verbose-renderer@^0.5.0:
     date-fns "^1.27.2"
     figures "^2.0.0"
 
-listr2@^3.2.2, listr2@^3.4.5:
+listr2@^3.2.2:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.4.5.tgz#d2ae4d7c39550a2c37c0253431edae1959bac8a5"
   integrity sha512-hHztBAo6Rzr884tkyNJkItrVlQc0jsnU1qoOgS/Vwy3sJExLJzzq6XUnz8JCG00wOrWmpMTnS+oQ106YPE6Epg==
+  dependencies:
+    chalk "^4.1.0"
+    cli-truncate "^2.1.0"
+    figures "^3.2.0"
+    indent-string "^4.0.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.5.0.tgz#09353bbf76b4f97de0b6abf099db2aa3f0ae1ef2"
+  integrity sha512-97a1ZegjnsGIKfU2PtoE/RFrbYTb7bWb5wzq8ikFOVgOwjCjkJhAaJ+lNQEH25YvrzzKRS+522WkR4OZ9mfhdA==
   dependencies:
     chalk "^4.1.0"
     cli-truncate "^2.1.0"
