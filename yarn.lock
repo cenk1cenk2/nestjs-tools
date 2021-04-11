@@ -616,13 +616,13 @@
   optionalDependencies:
     "@commitlint/load" "^12.1.1"
 
-"@cenk1cenk2/eslint-config@^0.4.35":
-  version "0.4.35"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.35.tgz#e3a6c55051f2618b067f125cbbe53fe7cab14419"
-  integrity sha512-XZYoYY4KBQRId1N0o1lCGDn7IPYUcGiBks+gIhudBsMaPSuUCUjDcFuOQpLAtEikMaLgJc2Zbfj6ptf+Jn8Log==
+"@cenk1cenk2/eslint-config@^0.4.36":
+  version "0.4.36"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.36.tgz#8adde83edc8c41ef2246bfcf982e8af07e5ca8da"
+  integrity sha512-gJVy/1yuSX2NFjTkUBkMRqw9yeaBOCbNpKXIniCelD3yrHHU9wzokymeK5TSArjV1rfS12F0NtcK9IeOcgbDvQ==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^4.20.0"
-    "@typescript-eslint/parser" "^4.20.0"
+    "@typescript-eslint/eslint-plugin" "^4.21.0"
+    "@typescript-eslint/parser" "^4.21.0"
     eslint-config-react "^1.1.7"
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
@@ -2370,7 +2370,7 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.2.tgz#808c9fa7e4517274ed555fa158f2de4b4f468e71"
   integrity sha512-HrCIVMLjE1MOozVoD86622S7aunluLb2PJdPfb3nYiEtohm8mIB/vyv0Fd37AdeMFrTUQXEunw78YloMA3Qilg==
 
-"@typescript-eslint/eslint-plugin@^4.20.0":
+"@typescript-eslint/eslint-plugin@^4.21.0":
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.21.0.tgz#3fce2bfa76d95c00ac4f33dff369cb593aab8878"
   integrity sha512-FPUyCPKZbVGexmbCFI3EQHzCZdy2/5f+jv6k2EDljGdXSRc0cKvbndd2nHZkSLqCNOPk0jB6lGzwIkglXcYVsQ==
@@ -2396,7 +2396,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^4.20.0":
+"@typescript-eslint/parser@^4.21.0":
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.21.0.tgz#a227fc2af4001668c3e3f7415d4feee5093894c1"
   integrity sha512-eyNf7QmE5O/l1smaQgN0Lj2M/1jOuNg2NrBm1dqqQN0sVngTLyw8tdCbih96ixlhbF1oINoN8fDCyEH9SjLeIA==
