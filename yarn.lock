@@ -10,7 +10,34 @@
     apollo-graphql "^0.6.0"
     lodash.xorby "^4.7.0"
 
-"@apollo/gateway@>= 0.26.1", "@apollo/gateway@^0.26.0":
+"@apollo/federation@^0.23.1":
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.23.1.tgz#bff7266a66f59b4dbf143fad6e57b450244a327e"
+  integrity sha512-yFNZN9Z1KES6OKi8rO+xAJ6gqAsbSpb2Q1AugQsLVY3g73IZQoYV7qRuEsfv6UIpM5jW56gizgUQPom20xwO2g==
+  dependencies:
+    apollo-graphql "^0.9.0"
+    lodash.xorby "^4.7.0"
+
+"@apollo/gateway@>= 0.26.2":
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.26.2.tgz#e785619e465439c7a21f7198d4e624c411d0ecf1"
+  integrity sha512-9k/a99Y38OGGwgHczNrtzj9EspzSVNgS0F4aHh7K5JXyl8QsDhGBZ15K/klnXH6ec0NUZb/xo62Er+eIpQaUww==
+  dependencies:
+    "@apollo/federation" "^0.23.1"
+    "@apollo/query-planner" "^0.1.2"
+    "@types/node-fetch" "2.5.10"
+    apollo-graphql "^0.9.0"
+    apollo-reporting-protobuf "^0.6.0"
+    apollo-server-caching "^0.6.0"
+    apollo-server-core "^2.23.0"
+    apollo-server-env "^3.0.0"
+    apollo-server-errors "^2.5.0"
+    apollo-server-types "^0.7.0"
+    loglevel "^1.6.1"
+    make-fetch-happen "^8.0.0"
+    pretty-format "^26.0.0"
+
+"@apollo/gateway@^0.26.0":
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.26.1.tgz#5d11ec02a21d72786fbe09fdf69a1dc6e0f43ac9"
   integrity sha512-T1Jchduy74Tb5cTI8Lhsy0UuGqMiN6QLhmtSf6oZXUOASl5KHCkpkRvaB1Zis6wFvcuGBSJSrqIJ46oq5GCHtg==
@@ -53,6 +80,14 @@
   resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.1.1.tgz#1d86e5de7b1e52bd6e7b6917a47e20b5393e3718"
   integrity sha512-nNajPA/hW5AybvK2GikB8Wu38mExc6GJ6WMJ6IBtoLpkbkMcQ/v8rAdlX69ZYBJzI3j52uD1UXHesFS0wCsIUQ==
   dependencies:
+    pretty-format "^26.0.0"
+
+"@apollo/query-planner@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.1.2.tgz#e6beba7ef8f3b114ceaca30f118f27720fe47512"
+  integrity sha512-RXcutdAsvKehjsE42nFaL6OD8vaYd65Jf/E+mVOMz82L3wV/k8uhWG0Sj5QcoC8ndoVG3O5xyeIIlI+iIb8u/g==
+  dependencies:
+    chalk "^4.1.0"
     pretty-format "^26.0.0"
 
 "@apollographql/apollo-tools@^0.4.3":
@@ -2224,6 +2259,14 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
+"@types/node-fetch@2.5.10":
+  version "2.5.10"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.10.tgz#9b4d4a0425562f9fcea70b12cb3fcdd946ca8132"
+  integrity sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==
+  dependencies:
+    "@types/node" "*"
+    form-data "^3.0.0"
+
 "@types/node-fetch@2.5.7":
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.7.tgz#20a2afffa882ab04d44ca786449a276f9f6bbf3c"
@@ -2607,6 +2650,14 @@ apollo-graphql@^0.6.0:
   integrity sha512-ZRXAV+k+hboCVS+FW86FW/QgnDR7gm/xMUwJPGXEbV53OLGuQQdIT0NCYK7AzzVkCfsbb7NJ3mmEclkZY9uuxQ==
   dependencies:
     apollo-env "^0.6.6"
+    lodash.sortby "^4.7.0"
+
+apollo-graphql@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/apollo-graphql/-/apollo-graphql-0.9.0.tgz#13d04cbb3e6d0656e703bc02785eb52dc0406943"
+  integrity sha512-JE9zcY2Gp9dwpfAr6kB36Gre/ntnYSpgoPJUh/44BVurjSBwTPZYyFhUVXeWllzzQsI5HHaJSIAqqTz5gVmrPw==
+  dependencies:
+    core-js-pure "^3.10.2"
     lodash.sortby "^4.7.0"
 
 apollo-link@^1.2.14:
@@ -3797,6 +3848,11 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
+
+core-js-pure@^3.10.2:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.11.0.tgz#e07f25a8f616d178ec16b0354b008ad28b20b2f0"
+  integrity sha512-PxEiQGjzC+5qbvE7ZIs5Zn6BynNeZO9zHhrrWmkRff2SZLq0CE/H5LuZOJHhmOQ8L38+eMzEHAmPYWrUtDfuDQ==
 
 core-js@^3.0.1:
   version "3.10.2"
