@@ -10,21 +10,29 @@
     apollo-graphql "^0.9.2"
     lodash.xorby "^4.7.0"
 
-"@apollo/gateway@>= 0.27.1":
-  version "0.27.1"
-  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.27.1.tgz#d76295e84cf4317de75e87a02e5172ddf245e72a"
-  integrity sha512-qXOtVYzwTFaDbLKYs3v7bQfCmepUq/QQUh8C7rRR3uBewv0NwWs+t7RpTvRkumusyz+KpoXDvneZB2Wo6MTI0Q==
+"@apollo/federation@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.24.0.tgz#c4d9641b8681decc080c47b3e97daa50c78d30ba"
+  integrity sha512-WzTAZ7023HkJz75+nGdW/7L7dsg0m/Iaj6aNoUy+HnWmkxH072BNAwMwNKlMMohJP5YAaigt4qxZ03XqXj+3Rw==
   dependencies:
-    "@apollo/federation" "^0.23.2"
-    "@apollo/query-planner" "^0.1.4"
+    apollo-graphql "^0.9.2"
+    lodash.xorby "^4.7.0"
+
+"@apollo/gateway@>= 0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.28.0.tgz#5be33030e7635cd2a246e8848c7808c262575186"
+  integrity sha512-gKr/JRNQ7xbi5RR+foKVXlAOmzOlYvfjDaccDvBJOB1RL8XknjlMOJrRUkaQTZl2yO92AiO+TQBnlb7JP+eITQ==
+  dependencies:
+    "@apollo/federation" "^0.24.0"
+    "@apollo/query-planner" "^0.2.0"
     "@types/node-fetch" "2.5.10"
     apollo-graphql "^0.9.2"
-    apollo-reporting-protobuf "^0.6.0"
-    apollo-server-caching "^0.6.0"
+    apollo-reporting-protobuf "^0.7.0"
+    apollo-server-caching "^0.7.0"
     apollo-server-core "^2.23.0"
     apollo-server-env "^3.0.0"
     apollo-server-errors "^2.5.0"
-    apollo-server-types "^0.7.0"
+    apollo-server-types "^0.8.0"
     loglevel "^1.6.1"
     make-fetch-happen "^8.0.0"
     pretty-format "^26.0.0"
@@ -67,10 +75,19 @@
     "@types/node" "^10.1.0"
     long "^4.0.0"
 
-"@apollo/query-planner@^0.1.2", "@apollo/query-planner@^0.1.4":
+"@apollo/query-planner@^0.1.2":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.1.4.tgz#f00fb89547cb03be9b91c399611a460693e0a2f7"
   integrity sha512-d/kWRBVdQlssMPlprOYc31Wq64TAc9ITah+61rJXHiQmZIN6CefwEdY6QnSa84TimEQE9gjgWz7Q96i8cuV49A==
+  dependencies:
+    chalk "^4.1.0"
+    deep-equal "^2.0.5"
+    pretty-format "^26.0.0"
+
+"@apollo/query-planner@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.2.0.tgz#dc7e7b2b89a47aeb08fb9a6a9fbd719d5928891c"
+  integrity sha512-Dd5e8Hxzo0Qhq26X5DO5tb8zolPYFIQfuBwcsCEF+pYvjpNSCNdpj/Me7DgP0yKhW0tmpm2TDWQ7HKCjb2CBaQ==
   dependencies:
     chalk "^4.1.0"
     deep-equal "^2.0.5"
