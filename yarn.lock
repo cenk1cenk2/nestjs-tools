@@ -596,13 +596,13 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.3.20":
-  version "1.3.20"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.20.tgz#8b2bc7101b1a00df3ace542f5ad841e7e09811dc"
-  integrity sha512-CvhlifmrAG66EvfS/7cdorfjrZ6UM4JKFXR+MKOPEonVqx2yL4/Fug1IHNwksaelOYTCwYowgZOfov5lht0zeQ==
+"@cenk1cenk2/cz-cc@^1.3.21":
+  version "1.3.21"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.3.21.tgz#90a796bd63b723e57f67569b3e265913aea75b56"
+  integrity sha512-DhTujIqzbKugtQmQYoY4BxrT6X50ezSh4DG38p+Z+yh6LpJwcxENVB1160TNT34vP6CeUDUT+qy6d8/llnZlpw==
   dependencies:
     chalk "^4.1.1"
-    commitizen "^4.2.3"
+    commitizen "^4.2.4"
     conventional-commit-types "^3.0.0"
     enquirer "^2.3.6"
     enquirer-editor "^1.0.0"
@@ -612,7 +612,7 @@
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
-    "@commitlint/load" "^12.1.1"
+    "@commitlint/load" "^12.1.4"
 
 "@cenk1cenk2/eslint-config@^0.4.37":
   version "0.4.37"
@@ -635,7 +635,7 @@
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-12.1.4.tgz#9973b02e9779adbf1522ae9ac207a4815ec73de1"
   integrity sha512-h2S1j8SXyNeABb27q2Ok2vD1WfxJiXvOttKuRA9Or7LN6OQoC/KtT3844CIhhWNteNMu/wE0gkTqGxDVAnJiHg==
 
-"@commitlint/load@>6.1.1", "@commitlint/load@^12.1.1":
+"@commitlint/load@>6.1.1", "@commitlint/load@^12.1.4":
   version "12.1.4"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-12.1.4.tgz#e3c2dbc0e7d8d928f57a6878bd7219909fc0acab"
   integrity sha512-Keszi0IOjRzKfxT+qES/n+KZyLrxy79RQz8wWgssCboYjKEp+wC+fLCgbiMCYjI5k31CIzIOq/16J7Ycr0C0EA==
@@ -3695,7 +3695,7 @@ commander@^7.2.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
 
-commitizen@^4.0.3, commitizen@^4.2.3, commitizen@^4.2.4:
+commitizen@^4.0.3, commitizen@^4.2.4:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.2.4.tgz#a3e5b36bd7575f6bf6e7aa19dbbf06b0d8f37165"
   integrity sha512-LlZChbDzg3Ir3O2S7jSo/cgWp5/QwylQVr59K4xayVq8S4/RdKzSyJkghAiZZHfhh5t4pxunUoyeg0ml1q/7aw==
