@@ -25,7 +25,7 @@
     "docs:toc": "markdown-toc README.md --bullets='-' -i"
   },
   "peerDependencies": {
-    "@nestjs/common": ">= 7.6.1 < 8",
+    "@nestjs/common": ">= 7.6.1 < 9",
     "@webundsoehne/nestjs-util": ">= 2.3.2 < 4",
     "winston": ">= 3.3.3 < 4"
   },
