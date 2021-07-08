@@ -1733,10 +1733,10 @@
   dependencies:
     eventemitter2 "6.4.4"
 
-"@nestjs/graphql@^8.0.1":
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-8.0.1.tgz#334f33606cd1dc5ca2130743988481f7602fc098"
-  integrity sha512-lU+uKOBSt+amgsVGYCuvBPopH/ZZVivUHcU1L0P4GfEW+g804Joczmsajj+AKRtqtigg0o7j0eDEMJ0gkTc9ZQ==
+"@nestjs/graphql@^8.0.2":
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-8.0.2.tgz#8b0d4c47f536b98902c8953e785c251fba3624a4"
+  integrity sha512-LOg5nwmX3DvU/dHH3p4w6bYeEr7IpFNe8rbODzMmwnDnby7Rp89Ug4ItdyHyqy6VirHAGHMf86uXzvF85CfCVA==
   dependencies:
     "@graphql-tools/merge" "6.2.14"
     "@graphql-tools/schema" "7.1.5"
@@ -1755,10 +1755,10 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-1.0.0.tgz#52a0441795f6da8144a35970d3ebc19281f31cfd"
   integrity sha512-26AW5jHadLXtvHs+M+Agd9KZ92dDlBrmD0rORlBlvn2KvsWs4JRaKl2mUsrW7YsdZeAu3Hc4ukqyYyDdyCmMWQ==
 
-"@nestjs/typeorm@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/typeorm/-/typeorm-8.0.0.tgz#974fd83933e44b4ecf7321fa06ed91c36da99c82"
-  integrity sha512-KbiGzkoNM+wdrJfqUZ+eJFeyNMR/HeMpE+uleHAnggt+bNqRzPWuiwY0B/ris3TpU9iUYmD4RJYvky13XD4s8w==
+"@nestjs/typeorm@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/typeorm/-/typeorm-8.0.1.tgz#2bd4acd687058aefa70f8d1d3261f662db1ac3f0"
+  integrity sha512-710zOLk4j5kkv7STkKVNPpqBaGAhFjDblLaUHllqogw9z4gkjuPv59xfnqzwle4oAex25nihh0QGqtpB21zw7w==
   dependencies:
     uuid "8.3.2"
 
