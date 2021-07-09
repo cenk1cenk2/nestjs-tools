@@ -1703,20 +1703,20 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/common@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.0.0.tgz#b87499cb6cd9ff0313a247da70ea5c5a16011fd7"
-  integrity sha512-qztj56rJRFnNPfz/ddCu2TkSwEHTpm0wi9xydyEfHk8b7QM10ZwkHoM2Of/qWxDkh3qDu8fscdxo7w1ix+EKFA==
+"@nestjs/common@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-8.0.1.tgz#275edb62cc71857cd3e57cef89c2def1837056bd"
+  integrity sha512-7v6FkqDkOEHOzV7K69ftJ/F469VMLC94+1OD0BpcNKysvizbWOdaikrCFxocqyuREuejLCfILYMfcU+keEVIow==
   dependencies:
     axios "0.21.1"
     iterare "1.2.1"
     tslib "2.3.0"
     uuid "8.3.2"
 
-"@nestjs/core@^8.0.0":
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.0.0.tgz#db609c46cb7482279bac9b1aef7bce343df38bad"
-  integrity sha512-DGlqMoPvWZmPPTXX2B2ln5l9WHMCfCPkF+/PoSmnDLuuVo/QlKBAlDbZELVRuELShpXVXiJlcManFQ579dxhOA==
+"@nestjs/core@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-8.0.1.tgz#0ec7f06325451a4b5c3a94f65ee9f61805804b8d"
+  integrity sha512-5ikIdzHp8axcodDsMxBI8Bx+Fx/1HP9opDT8eltHs5FWG1gbhUZnjjI82A7mcrrlt9PkPyoInuX6d/F4DTeuAg==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.0.7"
