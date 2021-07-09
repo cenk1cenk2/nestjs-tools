@@ -30,7 +30,7 @@
     "typeorm": ">= 0.2.29 < 1"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.0",
+    "@nestjs/common": "^8.0.1",
     "@nestjs/typeorm": "^8.0.1",
     "typeorm": "^0.2.34"
   },
