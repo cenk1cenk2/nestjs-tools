@@ -1814,10 +1814,10 @@
   dependencies:
     eventemitter2 "6.4.4"
 
-"@nestjs/graphql@^9.0.1":
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.1.tgz#895f3d2d4e49866c1afc597372d4530005117464"
-  integrity sha512-MOTJxueFs7giu3xYxWsONnsK2/67AmYVpz6W3vaJdWQl8/WNbXX00e7DvpBV8iRJ0imj67AZWNBDwDU41xpsxQ==
+"@nestjs/graphql@^9.0.2":
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.2.tgz#0dd19ffdc6968bc1b4ef797d0eb16d89015dcc70"
+  integrity sha512-GedVJfT1myVvtcZUcbv4WCQ8XP7PkiQQWPhbf1BnAFToTR2xm8DGf+5P8BxBMG2OtB3Zem1PkekWblX1hkDU/w==
   dependencies:
     "@graphql-tools/merge" "6.2.17"
     "@graphql-tools/schema" "7.1.5"
