@@ -2,22 +2,28 @@
 # yarn lockfile v1
 
 
-"@apollo/federation@^0.29.0":
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.29.0.tgz#ef06e77fff639a7fb4a6c19caef604a2aef74f94"
-  integrity sha512-QxhomJbfaGk2zzXyJSzbRTtMVCrneo5Iuok8dN1Mklmhxx3XPdZhAq4cOWU4bSl90ZphRJCPIdrz4j9CIC0k4Q==
+"@apollo/core-schema@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@apollo/core-schema/-/core-schema-0.1.0.tgz#a9444f60deaded118657eb3373ddd64ced9ba0cd"
+  integrity sha512-BwOWRnDLj1Y3mMdfjdcv8/h7jcfVnUqb+LfpWRX3siXWtGCGsrg+OTj0l7M7uJGOnN6ZM0XJyY9Pk5Lisb7q6Q==
+
+"@apollo/federation@^0.30.0":
+  version "0.30.0"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.30.0.tgz#8f21005aa35364b73283d737aeea6cac09101830"
+  integrity sha512-z255abB6EJGt7W+ffMgYwt8IGR/n3FpFv6WS6htV3F1h4IeIOynZQT5FrrJf5cuhDueMkW1ORaO96jcfmJETgg==
   dependencies:
     apollo-graphql "^0.9.3"
     apollo-server-types "^3.0.2"
     lodash.xorby "^4.7.0"
 
-"@apollo/gateway@>= 0.38.1":
-  version "0.38.1"
-  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.38.1.tgz#076166340c72643de84f4cb5587a316ce3ec4ea0"
-  integrity sha512-67pWBt+nTfd7EW+IjmUjQJBLAzZcjhjdaueV+1Tp3EU2FxmCGcaJyT4OncrHM+CfXlLwMAmlox6xXxKt4qC90w==
+"@apollo/gateway@>= 0.39.0":
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.39.0.tgz#1e8d20597f2325fe574599868c39a450f491cfda"
+  integrity sha512-YGUDyD/TYV9hvj3UqnBsRkwMcTh6iR/y3861LbmudUBvUJcwNzPmC/ZI/f5Q81cWOgUpO6G8brIhkMhmZBuIMQ==
   dependencies:
-    "@apollo/federation" "^0.29.0"
-    "@apollo/query-planner" "^0.3.2"
+    "@apollo/core-schema" "^0.1.0"
+    "@apollo/federation" "^0.30.0"
+    "@apollo/query-planner" "^0.4.0"
     "@opentelemetry/api" "^1.0.1"
     "@types/node-fetch" "2.5.12"
     apollo-graphql "^0.9.3"
@@ -50,10 +56,10 @@
     "@types/node" "^10.1.0"
     long "^4.0.0"
 
-"@apollo/query-planner@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.3.2.tgz#fdd51931a7ecf3f2a3c6c1b4909a881fc11114bb"
-  integrity sha512-/wbEL3oIKrV8iuJYfupQhhudfmozt13qByz95Mu3BrgSb97+bFgvlxq+1QKZi82DjEI4kXBnrsgLekIWm5BOUg==
+"@apollo/query-planner@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.4.0.tgz#fa261f2a04ce5a0a811efacecf44c18cbe103ced"
+  integrity sha512-7od4xSi3dwFgfMcssWkLMY9UfNCH70d2kQ2sV2q5bsTNcKqgC14qfgAeiiTDA0b+n7NjZlRz4MkFwbhdjlNb2Q==
   dependencies:
     apollo-graphql "^0.9.3"
     chalk "^4.1.0"
@@ -1808,10 +1814,10 @@
   dependencies:
     eventemitter2 "6.4.4"
 
-"@nestjs/graphql@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.0.tgz#9124f9026574f4e85e8f887a430c65dd26a22c34"
-  integrity sha512-ccKZ9QqQ1OnoRhumaauTwIbMSS8+EWOnnDrDpx3sxAE7IYPdozea84PCD3uAODyV1oPkOJ6615v1vXPGGH0rPw==
+"@nestjs/graphql@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.1.tgz#895f3d2d4e49866c1afc597372d4530005117464"
+  integrity sha512-MOTJxueFs7giu3xYxWsONnsK2/67AmYVpz6W3vaJdWQl8/WNbXX00e7DvpBV8iRJ0imj67AZWNBDwDU41xpsxQ==
   dependencies:
     "@graphql-tools/merge" "6.2.17"
     "@graphql-tools/schema" "7.1.5"
