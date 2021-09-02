@@ -917,7 +917,16 @@
     "@graphql-tools/utils" "^7.7.0"
     tslib "~2.2.0"
 
-"@graphql-tools/merge@6.2.17", "@graphql-tools/merge@^6.2.12", "@graphql-tools/merge@^6.2.14":
+"@graphql-tools/merge@6.2.5":
+  version "6.2.5"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-6.2.5.tgz#a03d6711f2a468b8de97c0fe9092469280ca66c9"
+  integrity sha512-T2UEm7L5MeS1ggbGKBkdV9kTqLqSHQM13RrjPzIAYzkFL/mK837sf+oq8h2+R8B+senuHX8akUhMTcU85kcMvw==
+  dependencies:
+    "@graphql-tools/schema" "^7.0.0"
+    "@graphql-tools/utils" "^7.0.0"
+    tslib "~2.0.1"
+
+"@graphql-tools/merge@^6.2.12", "@graphql-tools/merge@^6.2.14":
   version "6.2.17"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-6.2.17.tgz#4dedf87d8435a5e1091d7cc8d4f371ed1e029f1f"
   integrity sha512-G5YrOew39fZf16VIrc49q3c8dBqQDD0ax5LYPiNja00xsXDi0T9zsEWVt06ApjtSdSF6HDddlu5S12QjeN8Tow==
@@ -1819,12 +1828,12 @@
   dependencies:
     eventemitter2 "6.4.4"
 
-"@nestjs/graphql@^9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.2.tgz#0dd19ffdc6968bc1b4ef797d0eb16d89015dcc70"
-  integrity sha512-GedVJfT1myVvtcZUcbv4WCQ8XP7PkiQQWPhbf1BnAFToTR2xm8DGf+5P8BxBMG2OtB3Zem1PkekWblX1hkDU/w==
+"@nestjs/graphql@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.0.4.tgz#7f744da9ea3ec97e172c35e7736eecc7924e50d9"
+  integrity sha512-0Nh4iDxTp2Nc0TqC78wVA+85ej2fFj8h27MDTp1jj4B+joYSyp5Ug6AIPL3b7lxvhooLiqNjNkfZCo0Ed/1k2g==
   dependencies:
-    "@graphql-tools/merge" "6.2.17"
+    "@graphql-tools/merge" "6.2.5"
     "@graphql-tools/schema" "7.1.5"
     "@graphql-tools/utils" "7.10.0"
     "@nestjs/mapped-types" "1.0.0"
