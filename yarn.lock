@@ -2375,10 +2375,10 @@
     "@typescript-eslint/types" "4.31.1"
     eslint-visitor-keys "^2.0.0"
 
-"@webundsoehne/nestjs-util@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-4.0.0.tgz#db104c67a4d0b65fb5818ae5cf14b323a4a8d2b9"
-  integrity sha512-B36xyk0nrXqZRZ0iuYzxQU9sndjPj2GH5Ypeatwj8RKlHpQEJmQF44N49iP0E1dnYBfafoqX+qZ2gcyAU2U13w==
+"@webundsoehne/nestjs-util@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-4.0.1.tgz#f0959670c92a9d0c136810ad9d78e8faa478bb16"
+  integrity sha512-vSSqaOpgkRj1jXfWQspR3XoSrErU1039914jSJVt5OK4iYC1L0/PKbbkn4OLejGm7bkStek4J9u5Uk02Rq8EMQ==
   dependencies:
     config "^3.3.6"
     fs-extra "^10.0.0"
