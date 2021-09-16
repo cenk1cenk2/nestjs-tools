@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@cenk1cenk2/nestjs-utils": "1.1.1",
-    "@webundsoehne/nestjs-util": "^4.0.1"
+    "@webundsoehne/nestjs-util": "^4.1.0"
   },
   "lint-staged": {
     "./*.{ts,js,tsx,jsx}": [
