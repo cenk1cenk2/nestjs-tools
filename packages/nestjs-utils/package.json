@@ -26,12 +26,12 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1 < 9",
-    "@webundsoehne/nestjs-util": ">= 2.3.2 < 4",
+    "@webundsoehne/nestjs-util": ">= 2.3.2 < 5",
     "winston": ">= 3.3.3 < 4"
   },
   "devDependencies": {
-    "@nestjs/common": "^8.0.5",
-    "@webundsoehne/nestjs-util": "^3.0.5",
+    "@nestjs/common": "^8.0.10",
+    "@webundsoehne/nestjs-util": "^4.2.0",
     "winston": "^3.3.3"
   },
   "lint-staged": {

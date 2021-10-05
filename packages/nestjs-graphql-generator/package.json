@@ -29,14 +29,14 @@
     "graphql": ">= 15.4.0"
   },
   "dependencies": {
-    "@graphql-codegen/cli": "^1.21.7",
+    "@graphql-codegen/cli": "^1.21.8",
     "@graphql-codegen/typescript": "^1.23.0",
     "delay": "^5.0.0"
   },
   "devDependencies": {
     "@types/config": "^0.0.39",
     "config": "^3.3.6",
-    "graphql": "^15.5.1"
+    "graphql": "^15.6.0"
   },
   "lint-staged": {
     "./*.{ts,js,tsx,jsx}": [
