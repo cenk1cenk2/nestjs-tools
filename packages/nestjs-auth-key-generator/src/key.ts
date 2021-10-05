@@ -14,7 +14,7 @@ export class ApplicationKey {
 
   constructor (private options?: Partial<ApplicationKeyOptions>) {
     if (!ApplicationKey.instance) {
-      const configKey = options.configKey ?? 'keys'
+      const configKey = options?.configKey ?? 'keys'
       const dir = join(process.cwd(), ConfigService.get<string>(`${configKey}.dir`, 'volumes/keys'))
 
       this.options = {
