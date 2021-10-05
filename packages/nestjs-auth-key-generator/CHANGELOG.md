@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-auth-key-generator [2.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@2.0.0...@cenk1cenk2/nestjs-auth-key-generator@2.0.1) (2021-10-05)
+
+### Bug Fixes
+
+- nullable entry ([5b80da0](https://github.com/cenk1cenk2/nestjs-tools/commit/5b80da0816633ee5fdc9212fe541912086861f8b))
+
 # @cenk1cenk2/nestjs-auth-key-generator [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@1.1.3...@cenk1cenk2/nestjs-auth-key-generator@2.0.0) (2021-10-05)
 
 ### Features
