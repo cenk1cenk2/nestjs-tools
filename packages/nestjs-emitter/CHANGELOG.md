@@ -1,24 +1,35 @@
-## @cenk1cenk2/nestjs-emitter [2.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.1.0...@cenk1cenk2/nestjs-emitter@2.1.1) (2021-02-25)
-
+# @cenk1cenk2/nestjs-emitter [3.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.1.1...@cenk1cenk2/nestjs-emitter@3.0.0) (2021-10-05)
 
 ### Bug Fixes
 
-* **deps:** update dependency @nestjs/event-emitter to ^0.0.3 ([bf0023f](https://github.com/cenk1cenk2/nestjs-tools/commit/bf0023fb040cd49d198904ace1f0450900911c15))
-
-# @cenk1cenk2/nestjs-emitter [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.2...@cenk1cenk2/nestjs-emitter@2.1.0) (2021-02-05)
-
+- **deps:** update dependency @nestjs/event-emitter to ^0.0.4 ([248fe82](https://github.com/cenk1cenk2/nestjs-tools/commit/248fe82737178c79363e986711300b1d4b9b64f1))
 
 ### Features
 
-* fix all problems metadata related ([4d125a5](https://github.com/cenk1cenk2/nestjs-tools/commit/4d125a5fcc593ea23a7b8be0a91c8bd874f8cac0))
+- update dependencies to major versions, add failing dep ([492af85](https://github.com/cenk1cenk2/nestjs-tools/commit/492af8584d21475c0c7f552ce28e4eaca7421a59))
 
-## @cenk1cenk2/nestjs-emitter [2.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.1...@cenk1cenk2/nestjs-emitter@2.0.2) (2021-02-05)
+### BREAKING CHANGES
 
+- nestjs-emitter package is upgraded with a major version
+
+## @cenk1cenk2/nestjs-emitter [2.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.1.0...@cenk1cenk2/nestjs-emitter@2.1.1) (2021-02-25)
 
 ### Bug Fixes
 
-* add binding to class ([84731a2](https://github.com/cenk1cenk2/nestjs-tools/commit/84731a24cf931941d0da51e77d0c79d53109f488))
-* fix new decorator ([897ea9d](https://github.com/cenk1cenk2/nestjs-tools/commit/897ea9d989482311eb7a41df0390ba76ae1bc43c))
+- **deps:** update dependency @nestjs/event-emitter to ^0.0.3 ([bf0023f](https://github.com/cenk1cenk2/nestjs-tools/commit/bf0023fb040cd49d198904ace1f0450900911c15))
+
+# @cenk1cenk2/nestjs-emitter [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.2...@cenk1cenk2/nestjs-emitter@2.1.0) (2021-02-05)
+
+### Features
+
+- fix all problems metadata related ([4d125a5](https://github.com/cenk1cenk2/nestjs-tools/commit/4d125a5fcc593ea23a7b8be0a91c8bd874f8cac0))
+
+## @cenk1cenk2/nestjs-emitter [2.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.1...@cenk1cenk2/nestjs-emitter@2.0.2) (2021-02-05)
+
+### Bug Fixes
+
+- add binding to class ([84731a2](https://github.com/cenk1cenk2/nestjs-tools/commit/84731a24cf931941d0da51e77d0c79d53109f488))
+- fix new decorator ([897ea9d](https://github.com/cenk1cenk2/nestjs-tools/commit/897ea9d989482311eb7a41df0390ba76ae1bc43c))
 
 ## @cenk1cenk2/nestjs-emitter [2.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@2.0.0...@cenk1cenk2/nestjs-emitter@2.0.1) (2021-02-05)
 
