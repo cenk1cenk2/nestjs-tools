@@ -1,46 +1,83 @@
 import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
-import * as fs from 'fs'
-import { keypair } from 'keypair'
+import * as fs from 'fs-extra'
+import { ApplicationKeyOptions } from 'key.interface'
 import { join } from 'path'
+import selfsigned from 'selfsigned'
 
-import { LoggerService } from '@cenk1cenk2/nestjs-utils'
-
-let ApplicationKeyInstance: ApplicationKey
+import { KeypairOptions, KeypairResults } from './keypair.interface'
+import { LoggerService } from '@cenk1cenk2/nestjs-utils/dist/utils/logger/logger.service'
 
 export class ApplicationKey {
-  public key: string
+  static instance: ApplicationKey
+  public keys: KeypairResults
+  private logger: LoggerService
 
-  constructor () {
-    if (!ApplicationKeyInstance) {
-      this.getKey()
+  constructor (private options?: Partial<ApplicationKeyOptions>) {
+    if (!ApplicationKey.instance) {
+      const configKey = options.configKey ?? 'keys'
+      const dir = join(process.cwd(), ConfigService.get<string>(`${configKey}.dir`, 'volumes/keys'))
 
-      ApplicationKeyInstance = this
+      this.options = {
+        dir,
+        files: {
+          public: join(dir, ConfigService.get<string>(`${configKey}.files.public`, 'pubcert.pem')),
+          private: join(dir, ConfigService.get<string>(`${configKey}.files.private`, 'privkey.pem')),
+          cert: join(dir, ConfigService.get<string>(`${configKey}.files.cert`, 'cert.pem'))
+        },
+        attributes: undefined,
+        options: {
+          days: 365,
+          keySize: 2048,
+          algorithm: 'sha256'
+        },
+        configKey,
+        exitOnError: false,
+        logger: LoggerService,
+        ...options
+      }
+
+      this.logger = new this.options.logger('ApplicationKey')
+
+      this.generateKeys()
+
+      ApplicationKey.instance = this
     }
 
-    return ApplicationKeyInstance
+    return ApplicationKey.instance
   }
 
-  private getKey (): void {
-    const logger = new LoggerService({ context: 'AuthKey' })
-    const keyPath = join(process.cwd(), ConfigService.get('token.key', './volumes/app.key'))
-    let key: string
-
+  private generateKeys (): void {
     try {
-      key = fs.readFileSync(keyPath, { encoding: 'utf-8' })
-      logger.debug('Application key loaded.')
+      this.keys = Object.entries(this.options.files).reduce(
+        (o, [ type, path ]) => typeof type !== 'undefined' ? { ...o, [type]: fs.readFileSync(path, 'utf8') } : o,
+        {} as KeypairResults
+      )
+
+      this.logger.debug('Keypairs has been loaded.')
     } catch (e) {
       try {
-        logger.warn('Application key not found generating a new one.')
-        ;({ private: key } = keypair({ bits: ConfigService.get('token.bits', 256) }))
+        if (Object.values(this.options.files).some((key) => !fs.existsSync(key))) {
+          this.logger.warn(`Keypairs are not found in the "${this.options.dir}" directory. Generating a new set of keys.`)
 
-        fs.writeFileSync(keyPath, key)
+          this.keys = selfsigned.generate(this.options.attributes, this.options.options)
 
-        logger.debug('Application key generated.')
+          fs.mkdirpSync(this.options.dir)
+
+          Object.entries(this.options.files).forEach(([ type, path ]) => {
+            if (typeof type !== 'undefined') {
+              fs.writeFileSync(path, this.keys[type])
+            }
+          })
+        }
+
+        this.logger.debug('Keypairs has been generated.')
       } catch (e) {
-        logger.error('Unable to generate application key.')
+        if (this.options?.exitOnError) {
+          throw e
+        } else {
+          this.logger.error('Unable to generate application keypair.')
+        }
       }
-    } finally {
-      this.key = key
     }
   }
 }
