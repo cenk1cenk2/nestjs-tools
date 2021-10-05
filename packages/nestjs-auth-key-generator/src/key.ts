@@ -4,7 +4,7 @@ import { ApplicationKeyOptions } from 'key.interface'
 import { join } from 'path'
 import selfsigned from 'selfsigned'
 
-import { KeypairOptions, KeypairResults } from './keypair.interface'
+import { KeypairResults } from './keypair.interface'
 import { LoggerService } from '@cenk1cenk2/nestjs-utils/dist/utils/logger/logger.service'
 
 export class ApplicationKey {
