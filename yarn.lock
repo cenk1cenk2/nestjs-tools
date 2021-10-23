@@ -563,10 +563,10 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.4.7.tgz#843c591cf6d876c93b4aee3d06e9fd88f2aa60ba"
-  integrity sha512-WaTlqInKuAKXgTIoZFz/MBHgfFC99KYJGgkWOm4hYFJw2rUEsgXL2xStF9LFeA1SST0LvNvAXlWioEEM4tSF2Q==
+"@cenk1cenk2/cz-cc@^1.4.8":
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.4.8.tgz#79cee9a9bb46e61800b09804e5b5470469bc1e2f"
+  integrity sha512-ngidjbnZqRXFU5qcNFNtMKsHuT3jOfP/V1uztT8SKLlO4qUhS/tJLlgEPfelwigOLJSABxEIXAV4Qn0tN7CApQ==
   dependencies:
     colorette "^1.4.0"
     commitizen "^4.2.4"
@@ -575,7 +575,7 @@
     enquirer-editor "^1.0.0"
     enquirer-prompt-editor "^2.0.1"
     find-git-root "^1.0.4"
-    listr2 "^3.12.2"
+    listr2 "^3.13.0"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -3435,6 +3435,11 @@ colorette@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==
+
+colorette@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
+  integrity sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==
 
 colors@^1.2.1:
   version "1.4.0"
@@ -6389,6 +6394,19 @@ listr2@^3.12.2:
   dependencies:
     cli-truncate "^2.1.0"
     colorette "^1.4.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.13.0:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.13.1.tgz#816e8c1728d50f223795f530d72d248c7fa14602"
+  integrity sha512-pk4YBDA2cxtpM8iLHbz6oEsfZieJKHf6Pt19NlKaHZZVpqHyVs/Wqr7RfBBCeAFCJchGO7WQHVkUPZTvJMHk8w==
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^2.0.16"
     log-update "^4.0.0"
     p-map "^4.0.0"
     rxjs "^6.6.7"
