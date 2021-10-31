@@ -590,10 +590,10 @@
   optionalDependencies:
     "@commitlint/load" "^12.1.4"
 
-"@cenk1cenk2/eslint-config@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-1.0.4.tgz#a423b5e277ce9f5ae79c7e6700006b84392617e0"
-  integrity sha512-IBAYH6fk1CKo1w2kAujP1CQLx56GLkw3l/sRErEQimtHXNnpleAndt5KfffbMR0BvdFEKmMtIAQjcDTAKrYN+Q==
+"@cenk1cenk2/eslint-config@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-1.0.5.tgz#46bbb6416120dba0b41a87c80bb7635c590df4a8"
+  integrity sha512-pekngUz/+Zozr3Any/M9s5H2Zr9z/8rWBLH2mqUaWWzOZSxUlELHyt0eulk8/Zf1dwsUAVEQWeuE7bmmIcrEAA==
   dependencies:
     "@nuxtjs/eslint-config" "^7.0.0"
     "@nuxtjs/eslint-config-typescript" "^7.0.2"
