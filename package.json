@@ -21,7 +21,7 @@
     "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   },
   "devDependencies": {
-    "@cenk1cenk2/cz-cc": "^1.4.9",
+    "@cenk1cenk2/cz-cc": "^1.4.10",
     "@cenk1cenk2/eslint-config": "^1.0.5",
     "commitizen": "^4.2.4",
     "eslint": "^8.1.0",

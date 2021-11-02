@@ -572,10 +572,10 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.4.9":
-  version "1.4.9"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.4.9.tgz#0fd51afcfa857a882b6a0ab62135fa4440c4f870"
-  integrity sha512-/upXbGzKM6OrcRM4lO5j/Yw1jNJFCA9HB7MQxSQ/isUiOu1J2wmsOx2ArDfeu5UiGlAwUUmPYLWMBpzTVHKLBA==
+"@cenk1cenk2/cz-cc@^1.4.10":
+  version "1.4.10"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.4.10.tgz#c45d132aa9ad1be193e784c579c2e1ea0742c44e"
+  integrity sha512-h8F+37uJya5a6zIghQZKbVgjF3heQVd+45lAf3GciqO/IuxtFpkWlCLgCz2dk8VooEQ/UInACEGwIt9S1OwmnQ==
   dependencies:
     colorette "^1.4.0"
     commitizen "^4.2.4"
@@ -584,7 +584,7 @@
     enquirer-editor "^1.0.0"
     enquirer-prompt-editor "^2.0.1"
     find-git-root "^1.0.4"
-    listr2 "^3.13.1"
+    listr2 "^3.13.3"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -3417,6 +3417,11 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
+
+clone@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
 
 cmd-shim@^4.1.0:
   version "4.1.0"
@@ -6567,7 +6572,7 @@ listr-verbose-renderer@^0.5.0:
     date-fns "^1.27.2"
     figures "^2.0.0"
 
-listr2@^3.12.2, listr2@^3.13.1:
+listr2@^3.12.2:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.13.1.tgz#816e8c1728d50f223795f530d72d248c7fa14602"
   integrity sha512-pk4YBDA2cxtpM8iLHbz6oEsfZieJKHf6Pt19NlKaHZZVpqHyVs/Wqr7RfBBCeAFCJchGO7WQHVkUPZTvJMHk8w==
@@ -6577,6 +6582,20 @@ listr2@^3.12.2, listr2@^3.13.1:
     log-update "^4.0.0"
     p-map "^4.0.0"
     rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.13.3:
+  version "3.13.3"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.13.3.tgz#d8f6095c9371b382c9b1c2bc33c5941d8e177f11"
+  integrity sha512-VqAgN+XVfyaEjSaFewGPcDs5/3hBbWVaX1VgWv2f52MF7US45JuARlArULctiB44IIcEk3JF7GtoFCLqEdeuPA==
+  dependencies:
+    cli-truncate "^2.1.0"
+    clone "^2.1.2"
+    colorette "^2.0.16"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^7.4.0"
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
@@ -8600,6 +8619,13 @@ rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.6.0, rxjs@^6.6.7:
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
   dependencies:
     tslib "^1.9.0"
+
+rxjs@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.4.0.tgz#a12a44d7eebf016f5ff2441b87f28c9a51cebc68"
+  integrity sha512-7SQDi7xeTMCJpqViXh8gL/lebcwlp3d831F05+9B44A4B0WfsEwUQHR64gsH1kvJ+Ep/J9K2+n1hVl1CsGN23w==
+  dependencies:
+    tslib "~2.1.0"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.2, safe-buffer@^5.2.1, safe-buffer@~5.2.0:
   version "5.2.1"
