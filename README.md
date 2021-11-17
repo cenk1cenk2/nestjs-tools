@@ -50,3 +50,11 @@ Some general set of tools for `nest.js`.
 ### @cenk1cenk2/nestjs-utils
 
 [Read more...](./packages/nestjs-utils/README.md)
+
+### @cenk1cenk2/nestjs-graphql-redis-cache
+
+[Read more...](./packages/nestjs-graphql-redis-cache/README.md)
+
+### @cenk1cenk2/nestjs-graphql-redis-pubsub
+
+[Read more...](./packages/nestjs-graphql-redis-pubsub/README.md)
