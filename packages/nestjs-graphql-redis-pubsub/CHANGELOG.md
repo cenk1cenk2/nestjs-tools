@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-graphql-redis-pubsub [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.0...@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.1) (2021-11-17)
+
+### Bug Fixes
+
+- type error ([1fbab6e](https://github.com/cenk1cenk2/nestjs-tools/commit/1fbab6ecce6b22099505756c03c63d9b261bf75d))
+
 # @cenk1cenk2/nestjs-graphql-redis-pubsub 1.0.0 (2021-11-17)
 
 ### Bug Fixes
