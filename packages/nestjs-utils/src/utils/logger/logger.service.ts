@@ -1,9 +1,9 @@
 import { LoggerService as LoggerServiceCommon } from '@nestjs/common'
-import { Configurable, ConfigParam } from '@webundsoehne/nestjs-util/dist/provider/config'
 import winston, { format } from 'winston'
 
 import { LogType, LogLevel } from './logger.constants'
 import { LoggerOptions } from './logger.interface'
+import { Configurable, ConfigParam } from '@webundsoehne/nestjs-util/dist/provider/config'
 
 let logger: winston.Logger
 

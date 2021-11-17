@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": ["@cenk1cenk2/eslint-config", "@cenk1cenk2/eslint-config/typescript"],
+  extends: [ '@cenk1cenk2/eslint-config', '@cenk1cenk2/eslint-config/typescript' ],
   rules: {
     'import/order': [
       'error',
@@ -8,21 +8,16 @@ module.exports = {
           {
             pattern: '@cenk1cenk2/**',
             group: 'parent'
+          },
+          {
+            pattern: '@webundsoehne/**',
+            group: 'parent'
           }
         ],
-        pathGroupsExcludedImportTypes: [
-          'builtin'
-        ],
+        pathGroupsExcludedImportTypes: [ 'builtin' ],
         groups: [
-          [
-            'builtin',
-            'external'
-          ],
-          [
-            'index',
-            'parent',
-            'sibling'
-          ]
+          [ 'builtin', 'external' ],
+          [ 'index', 'parent', 'sibling' ]
         ],
         'newlines-between': 'always',
         alphabetize: {

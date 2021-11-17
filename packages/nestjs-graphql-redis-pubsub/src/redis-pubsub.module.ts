@@ -1,0 +1,52 @@
+import { Global, Module, DynamicModule } from '@nestjs/common'
+
+import { REDIS_PUBSUB_INSTANCE, REDIS_PUBSUB_DELIMITER } from './redis-pubsub.constants'
+import { RedisPubSubModuleOptions } from './redis-pubsub.interface'
+import { RedisPubSubService } from './redis-pubsub.service'
+import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
+
+@Global()
+@Module({
+  providers: [
+    {
+      provide: REDIS_PUBSUB_INSTANCE,
+      useFactory: (): RedisPubSubService<any, any> =>
+        new RedisPubSubService({
+          delimiter: REDIS_PUBSUB_DELIMITER,
+          options: {
+            connection: {
+              host: ConfigService.get<string>('redisPubSub.host'),
+              port: ConfigService.get<number>('redisPubSub.port')
+            }
+          }
+        })
+    }
+  ],
+  exports: [ REDIS_PUBSUB_INSTANCE ]
+})
+export class RedisPubSubModule {
+  static forRoot (options?: RedisPubSubModuleOptions): DynamicModule {
+    return {
+      global: options?.global ?? true,
+      module: RedisPubSubModule,
+      providers: [
+        {
+          provide: REDIS_PUBSUB_INSTANCE,
+          useFactory: (): RedisPubSubService<any, any> =>
+            new RedisPubSubService({
+              delimiter: options?.delimiter ?? REDIS_PUBSUB_DELIMITER,
+              options: {
+                ...options?.options ?? {
+                  connection: {
+                    host: ConfigService.get<string>('redisPubSub.host'),
+                    port: ConfigService.get<number>('redisPubSub.port')
+                  }
+                }
+              }
+            })
+        }
+      ],
+      exports: [ REDIS_PUBSUB_INSTANCE ]
+    }
+  }
+}

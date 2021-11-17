@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  monorepo:
+  nestjs_tools_monorepo:
     image: cenk1cenk2/node-fnm:latest
     environment:
       SYNC_WAIT: 15
@@ -20,5 +20,9 @@ services:
       SERVICE_5_NAME: nestjs-transactions
       SERVICE_6_CWD: packages/nestjs-typeorm
       SERVICE_6_NAME: nestjs-typeorm
+      SERVICE_7_CWD: packages/nestjs-graphql-redis-pubsub
+      SERVICE_7_NAME: nestjs-graphql-redis-pubsub
+      SERVICE_8_CWD: packages/nestjs-graphql-redis-cache
+      SERVICE_8_NAME: nestjs-graphql-redis-cache
     volumes:
       - .:/data

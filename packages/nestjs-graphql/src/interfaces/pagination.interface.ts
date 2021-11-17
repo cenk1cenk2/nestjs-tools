@@ -11,13 +11,13 @@ export class PaginationArgsInput implements PaginationInputDto {
   @IsPositive()
   @IsOptional()
   @Field(() => Int, { defaultValue: 10 })
-  limit: number
+    limit: number
 
   @IsNumber()
   @IsPositive()
   @IsOptional()
   @Field(() => Int, { defaultValue: 1 })
-  page: number
+    page: number
 }
 
 /**
@@ -28,19 +28,19 @@ export class PaginationArgs {
   @IsObject()
   @IsOptional()
   @Field(() => PaginationArgsInput, { nullable: true, defaultValue: { limit: 10, page: 1 } })
-  pagination?: PaginationArgsInput
+    pagination?: PaginationArgsInput
 }
 
 @ObjectType()
 export class PaginationOutput implements PaginationOutputDto {
   @Field(() => Int)
-  limit: number
+    limit: number
 
   @Field(() => Int)
-  page: number
+    page: number
 
   @Field(() => Int)
-  total: number
+    total: number
 }
 
 /**
@@ -51,10 +51,10 @@ export function Paginated<T> (classRef: Type<T>): any {
   @ObjectType({ isAbstract: true })
   abstract class Page {
     @Field(() => [ classRef ], { nullable: 'items' })
-    result: T[]
+      result: T[]
 
     @Field(() => PaginationOutput)
-    pagination: PaginationOutput
+      pagination: PaginationOutput
   }
 
   return Page

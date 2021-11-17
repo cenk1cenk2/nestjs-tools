@@ -1,0 +1,3 @@
+export const REDIS_PUBSUB_INSTANCE = Symbol('REDIS_PUBSUB_INSTANCE')
+
+export const REDIS_PUBSUB_DELIMITER = ':'

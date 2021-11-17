@@ -17,7 +17,7 @@
   "scripts": {
     "prebuild": "rimraf tsconfig*.tsbuildinfo && rimraf dist/",
     "build": "tsc -p tsconfig.build.json",
-    "postbuild": "tscpaths -p tsconfig.paths.json -s ./dist -o ./dist",
+    "postbuild": " tsconfig-replace-paths --project tsconfig.json",
     "dev:start": "yarn prebuild && tsc-watch --noClear --onSuccess \"yarn postbuild\"",
     "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
@@ -29,8 +29,8 @@
     "graphql": ">= 15.4.0"
   },
   "dependencies": {
-    "@graphql-codegen/cli": "^1.21.8",
-    "@graphql-codegen/typescript": "^1.23.0",
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.4.0",
     "delay": "^5.0.0"
   },
   "devDependencies": {
@@ -39,11 +39,11 @@
     "graphql": "^16.0.1"
   },
   "lint-staged": {
-    "./*.{ts,js,tsx,jsx}": [
+    "*.{ts,js,tsx,jsx}": [
       "prettier --loglevel warn --write",
       "eslint --fix"
     ],
-    "./*.{json,md}": [
+    "*.{json,md}": [
       "prettier --loglevel warn --write"
     ]
   }
