@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-graphql-redis-pubsub [1.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.1...@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.2) (2021-11-17)
+
+### Bug Fixes
+
+- missing export ([cef1a69](https://github.com/cenk1cenk2/nestjs-tools/commit/cef1a69e40e1e099dc0108c1b5dae4841fcd1eed))
+
 ## @cenk1cenk2/nestjs-graphql-redis-pubsub [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.0...@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.1) (2021-11-17)
 
 ### Bug Fixes
