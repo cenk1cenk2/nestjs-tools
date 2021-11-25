@@ -29,7 +29,7 @@
     "@webundsoehne/nestjs-util": ">= 2.3.2",
     "ioredis": ">= 4.27.9",
     "cache-manager": ">= 3.4.4",
-    "cache-manager-redis-store": ">= 2.0.0",
+    "cache-manager-ioredis": ">= 2.0.0",
     "rxjs": ">= 7.3.1"
   },
   "devDependencies": {
@@ -38,9 +38,9 @@
     "@types/ioredis": "^4.28.1",
     "@webundsoehne/nestjs-util": "^4.2.2",
     "cache-manager": "^3.6.0",
-    "cache-manager-redis-store": "^2.0.0",
+    "cache-manager-ioredis": "^2.1.0",
     "@types/cache-manager": "^3.4.2",
-    "@types/cache-manager-redis-store": "^2.0.0"
+    "@types/cache-manager-ioredis": "^2.0.2"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

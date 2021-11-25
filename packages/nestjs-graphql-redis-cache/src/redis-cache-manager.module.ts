@@ -1,5 +1,5 @@
 import { DynamicModule, CacheModule, CACHE_MANAGER, Global, Module } from '@nestjs/common'
-import * as redisStore from 'cache-manager-redis-store'
+import * as redisStore from 'cache-manager-ioredis'
 
 import { RedisCacheManagerOptions } from './redis-cache-manager.interface'
 import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
