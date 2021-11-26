@@ -24,5 +24,7 @@ services:
       SERVICE_7_NAME: nestjs-graphql-redis-pubsub
       SERVICE_8_CWD: packages/nestjs-graphql-redis-cache
       SERVICE_8_NAME: nestjs-graphql-redis-cache
+      SERVICE_9_CWD: packages/nestjs-redis-store
+      SERVICE_9_NAME: nestjs-redis-store
     volumes:
       - .:/data

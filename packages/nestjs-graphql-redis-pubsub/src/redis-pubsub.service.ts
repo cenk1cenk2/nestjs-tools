@@ -49,7 +49,7 @@ export class RedisPubSubService<RedisPubSubTopics extends string, RedisPubSubMap
     }
   }
 
-  private createTopic (pattern: string, extensions: string | string[]): string {
+  public createTopic (pattern: string, extensions: string | string[]): string {
     return [ pattern, ...extensions ].join(this.options.delimiter)
   }
 }

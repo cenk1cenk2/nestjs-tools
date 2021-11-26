@@ -1,4 +1,5 @@
 import { Global, Module, DynamicModule } from '@nestjs/common'
+import { RedisOptions } from 'ioredis'
 
 import { REDIS_PUBSUB_INSTANCE, REDIS_PUBSUB_DELIMITER } from './redis-pubsub.constants'
 import { RedisPubSubModuleOptions } from './redis-pubsub.interface'
@@ -14,10 +15,7 @@ import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/co
         new RedisPubSubService({
           delimiter: REDIS_PUBSUB_DELIMITER,
           options: {
-            connection: {
-              host: ConfigService.get<string>('redisPubSub.host'),
-              port: ConfigService.get<number>('redisPubSub.port')
-            }
+            connection: ConfigService.get<RedisOptions>('redisPubSub')
           }
         })
     }
@@ -37,10 +35,7 @@ export class RedisPubSubModule {
               delimiter: options?.delimiter ?? REDIS_PUBSUB_DELIMITER,
               options: {
                 ...options?.options ?? {
-                  connection: {
-                    host: ConfigService.get<string>('redisPubSub.host'),
-                    port: ConfigService.get<number>('redisPubSub.port')
-                  }
+                  connection: ConfigService.get<RedisOptions>('redisPubSub')
                 }
               }
             })
