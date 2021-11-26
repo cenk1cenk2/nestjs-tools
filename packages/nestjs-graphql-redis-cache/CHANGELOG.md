@@ -1,3 +1,9 @@
+# @cenk1cenk2/nestjs-graphql-redis-cache [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@2.0.0...@cenk1cenk2/nestjs-graphql-redis-cache@2.1.0) (2021-11-26)
+
+### Features
+
+- **redis:** changes how the options are handled, adds new redis package ([aee701a](https://github.com/cenk1cenk2/nestjs-tools/commit/aee701a52d5891728be4acd9e2e5e6d5bece1417))
+
 # @cenk1cenk2/nestjs-graphql-redis-cache [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@1.0.0...@cenk1cenk2/nestjs-graphql-redis-cache@2.0.0) (2021-11-25)
 
 ### Features
