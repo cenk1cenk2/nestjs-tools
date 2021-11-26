@@ -5,7 +5,7 @@ import { RedisIOSetOptions } from 'redis-io-compatability.interface'
 import { RedisPubSubModuleOptions } from './redis-store.interface'
 
 @Injectable()
-export class RedisStoreService<RedisStoreTopics extends string, RedisStoreMap extends Record<RedisStoreTopics, any> = any> implements OnApplicationBootstrap {
+export class RedisStoreService<RedisStoreTopics extends string = string, RedisStoreMap extends Record<RedisStoreTopics, any> = any> implements OnApplicationBootstrap {
   public client: RedisIO.Redis
 
   constructor (private options: RedisPubSubModuleOptions) {}

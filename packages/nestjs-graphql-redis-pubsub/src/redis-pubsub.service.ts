@@ -5,7 +5,7 @@ import type { Redis } from 'ioredis'
 import { RedisPubSubModuleOptions } from './redis-pubsub.interface'
 
 @Injectable()
-export class RedisPubSubService<RedisPubSubTopics extends string, RedisPubSubMap extends Record<RedisPubSubTopics, any> = any> implements OnApplicationBootstrap {
+export class RedisPubSubService<RedisPubSubTopics extends string = string, RedisPubSubMap extends Record<RedisPubSubTopics, any> = any> implements OnApplicationBootstrap {
   private pubSub: RedisPubSub
 
   constructor (private options: RedisPubSubModuleOptions) {}
