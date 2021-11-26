@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-redis-store [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@1.0.0...@cenk1cenk2/nestjs-redis-store@1.0.1) (2021-11-26)
+
+### Bug Fixes
+
+- service names ([09eead5](https://github.com/cenk1cenk2/nestjs-tools/commit/09eead5c581bce026d33b39a3da4de2c977b244c))
+
 # @cenk1cenk2/nestjs-redis-store 1.0.0 (2021-11-26)
 
 ### Features
