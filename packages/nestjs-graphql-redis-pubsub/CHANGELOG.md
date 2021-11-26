@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-graphql-redis-pubsub [1.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@1.1.0...@cenk1cenk2/nestjs-graphql-redis-pubsub@1.1.1) (2021-11-26)
+
+### Bug Fixes
+
+- add default types for redis stuff ([e4f0327](https://github.com/cenk1cenk2/nestjs-tools/commit/e4f0327ffcffc5f267adee364eae65b2084219c1))
+
 # @cenk1cenk2/nestjs-graphql-redis-pubsub [1.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@1.0.2...@cenk1cenk2/nestjs-graphql-redis-pubsub@1.1.0) (2021-11-26)
 
 ### Features
