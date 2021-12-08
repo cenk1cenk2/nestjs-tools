@@ -4018,9 +4018,9 @@ edit-briefly@^1.0.0:
     tempy "0.2.1"
 
 electron-to-chromium@^1.3.896:
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.12.tgz#5f73d1278c6205fc41d7a0ebd75563046b77c5d8"
-  integrity sha512-zjfhG9Us/hIy8AlQ5OzfbR/C4aBv1Dg/ak4GX35CELYlJ4tDAtoEcQivXvyBdqdNQ+R6PhlgQqV8UNPJmhkJog==
+  version "1.4.14"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
+  integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -4727,9 +4727,9 @@ fn.name@1.x.x:
   integrity sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
 
 follow-redirects@^1.14.4:
-  version "1.14.5"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
-  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
+  integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -9201,9 +9201,9 @@ unc-path-regex@^0.1.2:
   integrity sha1-5z3T17DXxe2G+6xrCufYxqadUPo=
 
 undici@^4.9.3:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-4.11.1.tgz#36c429d5aee3cdc9d5f3788ef9c1666efca5c45b"
-  integrity sha512-7oP3g5QpnPVz8qSwEygDkx7RH4TrGiThOiPooWiNAXrfUyH4jDmXVq9MidwwKV5YlpkZW66s10VoC8t2SvmPBQ==
+  version "4.11.3"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-4.11.3.tgz#c0b2423ee988b159331acc6880483906ff003817"
+  integrity sha512-bLOCH2juB9gAkqE4a4zb+eMGhI8XD4SH1tF9Qu9J3Y8TA379Xxg7lWRMiDvc36pRWV1z9/HICv05fXkeeLw1Dg==
 
 unique-filename@^1.1.1:
   version "1.1.1"
