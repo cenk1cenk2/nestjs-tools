@@ -29,8 +29,8 @@
     "graphql": ">= 15.4.0"
   },
   "dependencies": {
-    "@graphql-codegen/cli": "^2.3.0",
-    "@graphql-codegen/typescript": "^2.4.1",
+    "@graphql-codegen/cli": "^2.3.1",
+    "@graphql-codegen/typescript": "^2.4.2",
     "delay": "^5.0.0"
   },
   "devDependencies": {
