@@ -3769,9 +3769,9 @@ cross-undici-fetch@^0.0.20:
     undici "^4.9.3"
 
 cross-undici-fetch@^0.1.4:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/cross-undici-fetch/-/cross-undici-fetch-0.1.12.tgz#2985bdbb28c182eae1744832c087559083ac06db"
-  integrity sha512-JNUr0ANEwc3MEUT5xBl2fVnCJqcPa7hpQfEYNsrCG/7/M4pUH5W0nQOe6FKAQGB6SqFPyAeoEn8G375QXWxwWQ==
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/cross-undici-fetch/-/cross-undici-fetch-0.1.13.tgz#807d17ce5c524c21bc0a6486e97ecccb901c6529"
+  integrity sha512-nF+g932BrKPoK0RZQKRA9S2IKXeveGPJlaUWXyUEGjjSpAdxBhEHDrMDbiksP2iSNe8O5vn1bN3tTvrd6+yFSg==
   dependencies:
     abort-controller "^3.0.0"
     form-data-encoder "^1.7.1"
@@ -4111,9 +4111,9 @@ edit-briefly@^1.0.0:
     tempy "0.2.1"
 
 electron-to-chromium@^1.4.17:
-  version "1.4.34"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.34.tgz#7d87dc0e95c2c65cbd0687ae23146a662506d1ef"
-  integrity sha512-B7g6Y9No9XMYk1VNrQ8KAmSEo1Iltrz/5EjOGxl1DffQAb3z/XbpHRCfYKwV8D+CPXm4Q7Xg1sceSt9osNwRIA==
+  version "1.4.36"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.36.tgz#446c6184dbe5baeb5eae9a875490831e4bc5319a"
+  integrity sha512-MbLlbF39vKrXWlFEFpCgDHwdlz4O3LmHM5W4tiLRHjSmEUXjJjz8sZkMgWgvYxlZw3N1iDTmCEtOkkESb5TMCg==
 
 elegant-spinner@^1.0.1:
   version "1.0.1"
@@ -5202,9 +5202,9 @@ got@^9.6.0:
     url-parse-lax "^3.0.0"
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.3:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
-  integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
+  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
 
 graphql-config@^4.1.0:
   version "4.1.0"
@@ -5732,9 +5732,9 @@ is-ci@^2.0.0:
     ci-info "^2.0.0"
 
 is-core-module@^2.5.0, is-core-module@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.8.0.tgz#0321336c3d0925e497fd97f5d95cb114a5ccd548"
-  integrity sha512-vd15qHsaqrRL7dtH6QNuy0ndJmRDrS9HAM1CAiSifNUFv4x1a0CCVsj18hJ1mShxIG6T2i1sO78MkP56r0nYRw==
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.8.1.tgz#f59fdfca701d5879d0a6b100a40aa1560ce27211"
+  integrity sha512-SdNCUs284hr40hFTFP6l0IfZ/RSrMXF3qgoRHd3/79unUTvrFO/JoXwkGm+5J/Oe3E/b5GsnG330uUNgRpu1PA==
   dependencies:
     has "^1.0.3"
 
