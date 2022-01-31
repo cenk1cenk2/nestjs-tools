@@ -566,10 +566,10 @@
   optionalDependencies:
     "@commitlint/load" "^12.1.4"
 
-"@cenk1cenk2/eslint-config@^2.2.4":
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.2.4.tgz#bcdf11398ba2bd65f5d7e41ca031194b2f9c45b0"
-  integrity sha512-KThNXDN2udsKuufIBXyMSZSHKE2RvMmULHOPvmWdER0aWMFIVx2hMwjYyQaUAMCPxQfEow68aEYU+c/rx4PR5A==
+"@cenk1cenk2/eslint-config@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.3.2.tgz#f8703074514db8eb0462d3f357e6b1e1046e0335"
+  integrity sha512-MJE/PFGY+r5kiJOFAqE+QWRKtJ1UrsBYxngW+jvYerXFSEOQxH1pGjc/9XndRnNlU2ZWZmBb79xzAl4G41Lvnw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.9.0"
     "@typescript-eslint/parser" "^5.9.0"
