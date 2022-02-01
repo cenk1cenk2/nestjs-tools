@@ -566,14 +566,15 @@
   optionalDependencies:
     "@commitlint/load" "^12.1.4"
 
-"@cenk1cenk2/eslint-config@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.4.0.tgz#8ba5e69dbf602728001a819e3430b5e772fe7373"
-  integrity sha512-z/q8D1hHkSDrAq3mPQUnQ0DRoa5jhns5zoM/TweSlnxtJ4GFof4oLP1sp7Rsz09IOfEPsKoFWx7e1+X6THCG1Q==
+"@cenk1cenk2/eslint-config@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.5.tgz#e02b9d85567c6ce9e56b34411c0b3b35467c4c04"
+  integrity sha512-pdBmn7v7J9wZc39DI7M7MTtVceeBXhkAqTFWj9sWkZ392yEOWamlXNN79xz/5PY+npQh7BHa+gi9hH/VyEKOmg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.9.0"
     "@typescript-eslint/parser" "^5.9.0"
     eslint-plugin-import "^2.25.4"
+    load-tsconfig "^0.2.3"
 
 "@cenk1cenk2/nestjs-utils@1.1.2":
   version "1.1.2"
@@ -6226,6 +6227,11 @@ load-json-file@^6.2.0:
     parse-json "^5.0.0"
     strip-bom "^4.0.0"
     type-fest "^0.6.0"
+
+load-tsconfig@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/load-tsconfig/-/load-tsconfig-0.2.3.tgz#08af3e7744943caab0c75f8af7f1703639c3ef1f"
+  integrity sha512-iyT2MXws+dc2Wi6o3grCFtGXpeMvHmJqS27sMPGtV2eUu4PeFnG+33I8BlFK1t1NWMjOpcx9bridn5yxLDX2gQ==
 
 locate-path@^2.0.0:
   version "2.0.0"
