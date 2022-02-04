@@ -2376,19 +2376,19 @@
     "@typescript-eslint/types" "5.10.2"
     eslint-visitor-keys "^3.0.0"
 
-"@webundsoehne/deep-merge@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/deep-merge/-/deep-merge-2.0.1.tgz#5d7a949260b92b989283ce4140328f0defaa096a"
-  integrity sha512-EG8643w6Fr1CLsg1A7vbTMLuRigimhNgPrY6GlEj8JqYQ4fRUQkWHrhi5iNgltwX6HPUMZHu5gHJ7noRzu0hWw==
+"@webundsoehne/deep-merge@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/deep-merge/-/deep-merge-2.0.2.tgz#cc4f3e1aa63efde2b71766d148d17f072f3addf5"
+  integrity sha512-Pab5kDwBNhvzcLtP4Jbi7+AHp0xpUV+30BN4nlRiVIzaKd9/+UZmoOBKe1jZWL2ahW350v+pXpKOEwcKu7iooA==
   dependencies:
     deepmerge "^4.2.2"
 
-"@webundsoehne/nestjs-util@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-5.0.1.tgz#501db93a169cfde94a5e33e84cebac4b17d40239"
-  integrity sha512-2AX5eqEPoMkAdabq1tyWYWw+HBhqjivvuffI3k98aC/RWcGKDjlVX0OUl9KtMC4JCpUnNdgPEuOxQ9SeCHco1A==
+"@webundsoehne/nestjs-util@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-5.0.2.tgz#2567e3c84f7b5764bc1231aee0bb23ab32ef117c"
+  integrity sha512-KjZooazrbNsT5fwIKnXlUy0IppLGM8Eq9OoZp9s9CA0XPGUdbiergBqIQB2XPZiM7XewXXwfQhmlnEVPU9lcfQ==
   dependencies:
-    "@webundsoehne/deep-merge" "2.0.1"
+    "@webundsoehne/deep-merge" "2.0.2"
     config "^3.3.7"
     fs-extra "^10.0.0"
     js-yaml "^4.0.0"
