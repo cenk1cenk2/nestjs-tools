@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-utils [1.1.7](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.6...@cenk1cenk2/nestjs-utils@1.1.7) (2022-02-19)
+
+### Bug Fixes
+
+- add error formatter ([0ac9a18](https://github.com/cenk1cenk2/nestjs-tools/commit/0ac9a18c376a00502a0d4ce14f993a0bc61d74ee))
+
 ## @cenk1cenk2/nestjs-utils [1.1.6](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.5...@cenk1cenk2/nestjs-utils@1.1.6) (2022-02-19)
 
 ### Bug Fixes
