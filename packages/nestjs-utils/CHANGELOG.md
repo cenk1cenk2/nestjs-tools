@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-utils [1.1.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.4...@cenk1cenk2/nestjs-utils@1.1.5) (2022-02-19)
+
+### Bug Fixes
+
+- update ms ([e73c4d7](https://github.com/cenk1cenk2/nestjs-tools/commit/e73c4d7266b3fa6cb1d4c215c06583eccb223320))
+
 ## @cenk1cenk2/nestjs-utils [1.1.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.3...@cenk1cenk2/nestjs-utils@1.1.4) (2022-02-19)
 
 ### Bug Fixes
