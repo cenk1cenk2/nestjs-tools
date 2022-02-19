@@ -56,8 +56,6 @@ steps:
 
   - name: inform
     image: drillster/drone-email
-    depends_on:
-      - publish
     settings:
       host:
         from_secret: smtp_host
