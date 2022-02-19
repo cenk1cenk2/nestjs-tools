@@ -92,7 +92,9 @@ export class LoggerService implements LoggerServiceCommon {
       const printf = format.printf((data: winston.Logform.TransformableInfo) => {
         let message = `[${data.timestamp}]`
 
-        message += this.coloring(data.level as LogType, ` [${data.level}] [${data.context}] - ${data.message}`)
+        message += this.coloring(data.level as LogType, ` [${data.level}] [${data.context}]`)
+
+        message += ` - ${data.message}`
 
         if (data.ms) {
           message += ` ${colorette.dim(data.ms)}`
