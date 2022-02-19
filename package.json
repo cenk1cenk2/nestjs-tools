@@ -11,7 +11,10 @@
     "scripts:unlink": "./scripts/link-packages.sh unlink",
     "scripts:workspace:link": "./scripts/link-packages-to-workspace.sh link",
     "scripts:workspace:unlink": "./scripts/link-packages-to-workspace.sh unlink",
-    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc"
+    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc",
+    "lint": "yarn command lint --no-bail --concurrency 1",
+    "lint:check": "yarn command lint:check",
+    "build": "yarn command build --include-dependencies"
   },
   "workspaces": [
     "packages/*"

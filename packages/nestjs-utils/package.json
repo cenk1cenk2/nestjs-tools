@@ -42,5 +42,8 @@
     "*.{json,md}": [
       "prettier --loglevel warn --write"
     ]
+  },
+  "dependencies": {
+    "colorette": "^2.0.16"
   }
 }

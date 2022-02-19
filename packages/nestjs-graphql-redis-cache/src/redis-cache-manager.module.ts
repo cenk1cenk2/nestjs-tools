@@ -15,7 +15,7 @@ import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/co
   exports: [ CacheModule ]
 })
 export class RedisCacheManagerModule {
-  static forRoot (options: RedisCacheManagerOptions): DynamicModule {
+  public static forRoot (options: RedisCacheManagerOptions): DynamicModule {
     return {
       global: options?.global ?? true,
       module: RedisCacheManagerModule,

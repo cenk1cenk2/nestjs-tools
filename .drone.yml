@@ -1,4 +1,5 @@
 kind: pipeline
+type: docker
 name: default
 
 trigger:
@@ -14,12 +15,12 @@ steps:
   - name: install
     image: node:current-alpine
     commands:
-      - yarn --frozen-lockfile --ignore-engines
+      - yarn --frozen-lockfile
 
   - name: lint
     image: node:current-alpine
     commands:
-      - yarn command lint:check --concurrency 1
+      - yarn run lint-check
 
   - name: docs
     image: node:current-alpine
@@ -29,7 +30,7 @@ steps:
   - name: build
     image: node:current-alpine
     commands:
-      - yarn command build --include-dependencies
+      - yarn run build
 
   - name: semantic-release
     image: cenk1cenk2/drone-semantic-release
@@ -52,6 +53,26 @@ steps:
         - rc
       event:
         - push
+
+  - name: inform
+    image: drillster/drone-email
+    depends_on:
+      - publish
+    settings:
+      host:
+        from_secret: smtp_host
+      port:
+        from_secret: smtp_port
+      username:
+        from_secret: smtp_username
+      password:
+        from_secret: smtp_password
+      from:
+        from_secret: smtp_username
+    when:
+      status:
+        - changed
+        - failure
 
 image_pull_secrets:
   - dockerconfigjson

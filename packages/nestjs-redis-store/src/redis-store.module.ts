@@ -21,7 +21,7 @@ import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/co
   exports: [ REDIS_STORE_INSTANCE ]
 })
 export class RedisStoreModule {
-  static forRoot (options?: RedisPubSubModuleOptions): DynamicModule {
+  public static forRoot (options?: RedisPubSubModuleOptions): DynamicModule {
     return {
       global: options?.global ?? true,
       module: RedisStoreModule,

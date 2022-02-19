@@ -24,6 +24,7 @@ export class EventSubscribersLoader implements OnApplicationBootstrap, OnApplica
 
   public loadEventListeners (): void {
     const providers = this.discoveryService.getProviders()
+
     providers
       .filter((wrapper) => wrapper.isDependencyTreeStatic())
       .filter((wrapper) => wrapper.instance)

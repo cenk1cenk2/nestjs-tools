@@ -28,6 +28,7 @@ export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {
 
     if (cached) {
       this.logger.debug(`Using cache for GraphQL: ${key}`)
+
       return of(cached)
     }
 

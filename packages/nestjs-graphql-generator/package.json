@@ -26,7 +26,8 @@
   },
   "peerDependencies": {
     "config": ">= 3.3.3",
-    "graphql": ">= 15.4.0"
+    "graphql": ">= 15.4.0",
+    "@graphql-codegen/plugin-helpers": ">= 2"
   },
   "dependencies": {
     "@graphql-codegen/cli": "^2.6.2",

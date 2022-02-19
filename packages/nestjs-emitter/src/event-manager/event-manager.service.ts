@@ -10,7 +10,7 @@ export class EventManager<Event extends string = string, Map extends Partial<Rec
   public async emit<E extends Event = Event, MultipleResult extends boolean = false>(
     dispatch: E,
     args: EventRequest<E, Map>,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/naming-convention
     options?: { multiple?: MultipleResult }
   ): Promise<MultipleResult extends true ? EventResponse<E, Map>[] : EventResponse<E, Map>> {
     if (this.emitter.listenerCount(dispatch) === 0) {

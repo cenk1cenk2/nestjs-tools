@@ -8,7 +8,7 @@ import { EventSubscribersLoader } from './event-subscribers.loader'
 
 @Module({})
 export class EventEmitterModule {
-  static forRoot (options?: EventEmitterModuleOptions): DynamicModule {
+  public static forRoot (options?: EventEmitterModuleOptions): DynamicModule {
     return {
       global: options?.global ?? true,
       module: EventEmitterModule,

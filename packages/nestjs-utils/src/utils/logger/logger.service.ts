@@ -1,4 +1,5 @@
 import { LoggerService as LoggerServiceCommon } from '@nestjs/common'
+import colorette from 'colorette'
 import winston, { format } from 'winston'
 
 import { LogType, LogLevel } from './logger.constants'
@@ -8,58 +9,16 @@ import { Configurable, ConfigParam } from '@webundsoehne/nestjs-util/dist/provid
 let logger: winston.Logger
 
 export class LoggerService implements LoggerServiceCommon {
-  constructor (private readonly options?: LoggerOptions) {}
-
-  @Configurable()
-  private getLogger (@ConfigParam('logLevel', LogLevel) level?: string): winston.Logger {
-    if (!logger) {
-      const colorize = format.colorize({
-        all: true,
-        level: true,
-        colors: {
-          [LogType.error]: 'red',
-          [LogType.warn]: 'yellow',
-          [LogType.log]: 'green',
-          [LogType.verbose]: 'gray',
-          [LogType.debug]: 'cyan'
-        }
-      })
-
-      const printf = format.printf((data: winston.Logform.TransformableInfo) => {
-        return `[${data.timestamp}] [${data.level}] [${data.context}] - ${data.message}`
-      })
-
-      logger = winston.createLogger({
-        level,
-        levels: {
-          [LogType.silent]: 0,
-          [LogType.error]: 1,
-          [LogType.warn]: 2,
-          [LogType.log]: 3,
-          [LogType.verbose]: 4,
-          [LogType.debug]: 5
-        },
-        transports: [
-          new winston.transports.Console({
-            silent: level.toLowerCase() === LogType.silent,
-            stderrLevels: [ 'error' ]
-          })
-        ],
-        format: format.combine(
-          format.timestamp({
-            format: 'YYYYMMDD-HH:mm:ss'
-          }),
-          colorize,
-          format.splat(),
-          format.json(),
-          format.prettyPrint(),
-          printf
-        )
-      })
-    }
-
-    return logger
+  protected color: Record<LogType, (message: string) => string> = {
+    [LogType.silent]: (message) => message,
+    [LogType.error]: colorette.red,
+    [LogType.warn]: colorette.yellow,
+    [LogType.log]: colorette.green,
+    [LogType.verbose]: colorette.dim,
+    [LogType.debug]: colorette.cyan
   }
+
+  constructor (private readonly options?: LoggerOptions) {}
 
   public error (message: string | string[], trace?: string, context?: string): void {
     this.logMessage({
@@ -102,7 +61,11 @@ export class LoggerService implements LoggerServiceCommon {
     })
   }
 
-  private logMessage ({ type, message: rawMessage, context, trace }: { type: string, message: string | string[], context?: string, trace?: any }): void {
+  private coloring (level: LogType, message: string): string {
+    return this.color[level](message)
+  }
+
+  private logMessage ({ type, message: rawMessage, context, trace }: { type: string, message: string | string[], context?: string, trace?: any, ms?: string }): void {
     const [ message, ...splat ] = Array.isArray(rawMessage) ? rawMessage : [ rawMessage ]
 
     const sharedOptions = {
@@ -121,5 +84,51 @@ export class LoggerService implements LoggerServiceCommon {
         message: trace
       })
     }
+  }
+
+  @Configurable()
+  private getLogger (@ConfigParam('logLevel', LogLevel) level?: string): winston.Logger {
+    if (!logger) {
+      const printf = format.printf((data: winston.Logform.TransformableInfo) => {
+        let message = `[${data.timestamp}]`
+
+        message += this.coloring(data.level as LogType, ` [${data.level}] [${data.context}] - ${data.message}`)
+
+        if (data.ms) {
+          message += ` ${colorette.dim(data.ms)}`
+        }
+
+        return message
+      })
+
+      logger = winston.createLogger({
+        level,
+        levels: {
+          [LogType.silent]: 0,
+          [LogType.error]: 1,
+          [LogType.warn]: 2,
+          [LogType.log]: 3,
+          [LogType.verbose]: 4,
+          [LogType.debug]: 5
+        },
+        transports: [
+          new winston.transports.Console({
+            silent: level.toLowerCase() === LogType.silent,
+            stderrLevels: [ 'error' ]
+          })
+        ],
+        format: format.combine(
+          format.timestamp({
+            format: 'YYYYMMDD-HH:mm:ss'
+          }),
+          format.splat(),
+          format.json(),
+          format.prettyPrint(),
+          printf
+        )
+      })
+    }
+
+    return logger
   }
 }
