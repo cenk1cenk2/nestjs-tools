@@ -121,6 +121,7 @@ export class LoggerService implements LoggerServiceCommon {
           format.timestamp({
             format: 'YYYYMMDD-HH:mm:ss'
           }),
+          format.ms(),
           format.splat(),
           format.json(),
           format.prettyPrint(),
