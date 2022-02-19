@@ -13,22 +13,22 @@ trigger:
 
 steps:
   - name: install
-    image: node:current-alpine
+    image: node:16-alpine
     commands:
       - yarn --frozen-lockfile
 
   - name: lint
-    image: node:current-alpine
+    image: node:16-alpine
     commands:
       - yarn run lint-check
 
   - name: docs
-    image: node:current-alpine
+    image: node:16-alpine
     commands:
       - yarn docs:toc
 
   - name: build
-    image: node:current-alpine
+    image: node:16-alpine
     commands:
       - yarn run build
 
