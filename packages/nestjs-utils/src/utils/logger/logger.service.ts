@@ -1,5 +1,5 @@
 import { LoggerService as LoggerServiceCommon } from '@nestjs/common'
-import colorette from 'colorette'
+import * as colorette from 'colorette'
 import winston, { format } from 'winston'
 
 import { LogType, LogLevel } from './logger.constants'
