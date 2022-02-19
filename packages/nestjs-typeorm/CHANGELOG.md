@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-typeorm [1.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-typeorm@1.0.2...@cenk1cenk2/nestjs-typeorm@1.0.3) (2022-02-19)
+
+### Dependencies
+
+- **@cenk1cenk2/nestjs-utils:** upgraded to 1.1.3
+
 ## @cenk1cenk2/nestjs-typeorm [1.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-typeorm@1.0.1...@cenk1cenk2/nestjs-typeorm@1.0.2) (2021-11-17)
 
 ### Bug Fixes
