@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-graphql-redis-cache [2.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@2.1.0...@cenk1cenk2/nestjs-graphql-redis-cache@2.1.1) (2022-02-19)
+
+### Bug Fixes
+
+- update failing build, add missing dependencies ([ac7dca2](https://github.com/cenk1cenk2/nestjs-tools/commit/ac7dca229dfa99b19fd825d89687f7219950d37f))
+
 # @cenk1cenk2/nestjs-graphql-redis-cache [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@2.0.0...@cenk1cenk2/nestjs-graphql-redis-cache@2.1.0) (2021-11-26)
 
 ### Features
