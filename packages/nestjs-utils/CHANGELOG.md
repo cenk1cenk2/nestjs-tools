@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-utils [1.1.6](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.5...@cenk1cenk2/nestjs-utils@1.1.6) (2022-02-19)
+
+### Bug Fixes
+
+- remove excessive coloring ([8fcfdd9](https://github.com/cenk1cenk2/nestjs-tools/commit/8fcfdd930a31765ec8d19d89c600e0184d341f65))
+
 ## @cenk1cenk2/nestjs-utils [1.1.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@1.1.4...@cenk1cenk2/nestjs-utils@1.1.5) (2022-02-19)
 
 ### Bug Fixes
