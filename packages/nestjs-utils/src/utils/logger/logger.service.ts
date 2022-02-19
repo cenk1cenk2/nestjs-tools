@@ -125,7 +125,7 @@ export class LoggerService implements LoggerServiceCommon {
           }),
           format.ms(),
           format.splat(),
-          format.json(),
+          format.errors(),
           format.prettyPrint(),
           printf
         )
