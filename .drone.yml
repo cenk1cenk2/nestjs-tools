@@ -20,7 +20,7 @@ steps:
   - name: lint
     image: node:16-alpine
     commands:
-      - yarn run lint-check
+      - yarn run lint:check
 
   - name: docs
     image: node:16-alpine
