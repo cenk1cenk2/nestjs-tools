@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-redis-store [1.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@1.0.2...@cenk1cenk2/nestjs-redis-store@1.0.3) (2022-02-19)
+
+### Bug Fixes
+
+- update failing build, add missing dependencies ([ac7dca2](https://github.com/cenk1cenk2/nestjs-tools/commit/ac7dca229dfa99b19fd825d89687f7219950d37f))
+
 ## @cenk1cenk2/nestjs-redis-store [1.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@1.0.1...@cenk1cenk2/nestjs-redis-store@1.0.2) (2021-11-26)
 
 ### Bug Fixes
