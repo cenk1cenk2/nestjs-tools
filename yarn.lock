@@ -2343,10 +2343,10 @@
   dependencies:
     deepmerge "^4.2.2"
 
-"@webundsoehne/nestjs-util@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-5.3.0.tgz#3f3ba39435fbd50c50a64afd03fa7308489c5b69"
-  integrity sha512-zvDYr+z9Y1JVgRpQqJchgob76NpVv/Pk1z3wBKmp6Nmj324K+Ip/g9jO9yYEecxbuVCjZxTxg3HrZQ8FyTfFBQ==
+"@webundsoehne/nestjs-util@^5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-5.3.1.tgz#98e1067ebb6f95add694e46d5fb39cb69674be0c"
+  integrity sha512-tv/t7KNLS3AAJl0heaqtU8nLBgrr/hHxjX2weL5E4P2/T7DJJDharc9FPxhLXUc3LwPLVdAzVpk4eO1fQD5yzA==
   dependencies:
     "@webundsoehne/deep-merge" "2.1.0"
     colorette "^2.0.16"
