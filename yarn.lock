@@ -545,10 +545,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.1.tgz#5eaaad5611e4753cd57eb6bf18c930df777d9990"
-  integrity sha512-yXzb2/HoUFHsgKvpnJJk8uwJqMPTOoMRhpxepPUS9Qvq6HNUZbqckwizJrEJvT1x9Rf15LufrjO7np1qqkp9Vw==
+"@cenk1cenk2/cz-cc@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.2.tgz#e2e0597475b78f264240fc0d95d6d733d0eff9e9"
+  integrity sha512-CkJp8tryiqtRQzfzXaYfaDMjYrmbb8sowfB5BiK3PI0TQ/FfEpyPRUccqtOMALH9g/KGFimru81Bu1dEyYR2XA==
   dependencies:
     colorette "^2.0.16"
     commitizen "^4.2.4"
@@ -556,7 +556,7 @@
     enquirer "^2.3.6"
     enquirer-editor "^1.0.0"
     find-git-root "^1.0.4"
-    listr2 "^4.0.4"
+    listr2 "^4.0.5"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -6119,17 +6119,17 @@ listr2@^3.12.2:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-listr2@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-4.0.4.tgz#d098a1c419284fb26e184b5d5889b235e8912245"
-  integrity sha512-vJOm5KD6uZXjSsrwajr+mNacIjf87gWvlBEltPWLbTkslUscWAzquyK4xfe9Zd4RDgO5nnwFyV06FC+uVR+5mg==
+listr2@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-4.0.5.tgz#9dcc50221583e8b4c71c43f9c7dfd0ef546b75d5"
+  integrity sha512-juGHV1doQdpNT3GSTs9IUN43QJb7KHdF9uqg7Vufs/tG9VTzpFphqF4pm/ICdAABGQxsyNn9CiYA3StkI6jpwA==
   dependencies:
     cli-truncate "^2.1.0"
     colorette "^2.0.16"
     log-update "^4.0.0"
     p-map "^4.0.0"
     rfdc "^1.3.0"
-    rxjs "^7.5.4"
+    rxjs "^7.5.5"
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
@@ -8108,7 +8108,7 @@ rxjs@^6.3.3, rxjs@^6.4.0, rxjs@^6.6.0:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.2.0, rxjs@^7.5.1, rxjs@^7.5.4:
+rxjs@^7.2.0, rxjs@^7.5.1, rxjs@^7.5.5:
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz#2ebad89af0f560f460ad5cc4213219e1f7dd4e9f"
   integrity sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==
