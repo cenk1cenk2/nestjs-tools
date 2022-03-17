@@ -14,23 +14,23 @@
   resolved "https://registry.yarnpkg.com/@apollo/core-schema/-/core-schema-0.2.2.tgz#f3b704b31849c48c2dfc2cd1c725df7b971321ec"
   integrity sha512-ZsUn1HhnnWlLopVX/rv+0u7zGhUZzdMMnLeCBhb8tkFckkZ4QaQe4FaIQquDKegUwz6/DLE9O9AbldI/uklxpA==
 
-"@apollo/federation@^0.35.3":
-  version "0.35.3"
-  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.35.3.tgz#3c1bb6f0c23f8dc819e221dd91e2c86effa840af"
-  integrity sha512-UWsgRhhIW2Uvnt0FHqr+pMAwXAsPcIfgajDRLkcTxmCV2/L+SnBY9Pu83BTf5exD9rDQgwJGe9PUuao8aoHYUA==
+"@apollo/federation@^0.35.4":
+  version "0.35.4"
+  resolved "https://registry.yarnpkg.com/@apollo/federation/-/federation-0.35.4.tgz#c8bce2b0a319fe2d0fa61aadad2e3334d6f104ea"
+  integrity sha512-mZv9eyte8PmUu4PyRDEob/ub1nah3JZ131PQoOi1B90gj3ni6HOSWCme/W4+0gSdGNIKljqhB7R3j9JJeHa+/A==
   dependencies:
     "@apollo/subgraph" "^0.3.3"
     apollo-server-types "^3.0.2"
     lodash.xorby "^4.7.0"
 
-"@apollo/gateway@>= 0.48.3":
-  version "0.48.3"
-  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.48.3.tgz#e990c62109d4bf1b8094bab09ac256f1b983751e"
-  integrity sha512-svEUgdf0I2NTopbljvO+/uKnYnziadA6RgFyiZKKGh4F8vPtiQthCQzmWl/Cv+dG5PzxaFS/fths4LbnKKPCBw==
+"@apollo/gateway@>= 0.49.0":
+  version "0.49.0"
+  resolved "https://registry.yarnpkg.com/@apollo/gateway/-/gateway-0.49.0.tgz#630023b4c604be14e77bc472d567c52125dcfc8e"
+  integrity sha512-6OlSLCVvAphJP5Vr9nzLAAjmgxZLa6fxA83f7TIKen8/aMf051MDKIpt25D7u1TjHBeU7k8TQIFMS+0EqBKOLw==
   dependencies:
     "@apollo/core-schema" "^0.2.0"
-    "@apollo/federation" "^0.35.3"
-    "@apollo/query-planner" "^0.8.2"
+    "@apollo/federation" "^0.35.4"
+    "@apollo/query-planner" "^0.9.0"
     "@josephg/resolvable" "^1.0.1"
     "@opentelemetry/api" "^1.0.1"
     "@types/node-fetch" "2.6.1"
@@ -66,10 +66,10 @@
     "@types/node" "^10.1.0"
     long "^4.0.0"
 
-"@apollo/query-planner@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.8.2.tgz#aa3101feb3b939004f984da335f7dadad1dd7c70"
-  integrity sha512-ql/ZzSP1gi+4X2k134TZDYKW0EPb1XtRgpOui0ALm6ofHJMLmt1luLtbUOLhZ0LYwUdSq1uOwOC3r+aOteaWeQ==
+"@apollo/query-planner@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apollo/query-planner/-/query-planner-0.9.0.tgz#dfdb430bef660ab66fe1efd9e7f6b3e54d12d121"
+  integrity sha512-ZSWr0qk8TESiXRyo2W3nwKOF0WjETLdAa9a3v+/yPEG2W4yDAj0wjApx+oQNw1vk1IPIF5NvK+l8MSs/v3h//A==
   dependencies:
     chalk "^4.1.0"
     deep-equal "^2.0.5"
