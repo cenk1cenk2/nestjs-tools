@@ -1,10 +1,11 @@
-import { Global, Module, DynamicModule } from '@nestjs/common'
-import { RedisOptions } from 'ioredis'
+import type { DynamicModule } from '@nestjs/common'
+import { Global, Module } from '@nestjs/common'
+import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
+import type { RedisOptions } from 'ioredis'
 
 import { REDIS_STORE_INSTANCE, REDIS_STORE_DELIMITER } from './redis-store.constants'
-import { RedisPubSubModuleOptions } from './redis-store.interface'
+import type { RedisPubSubModuleOptions } from './redis-store.interface'
 import { RedisStoreService } from './redis-store.service'
-import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
 
 @Global()
 @Module({

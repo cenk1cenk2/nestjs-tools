@@ -1,4 +1,5 @@
-import { Injectable, OnApplicationBootstrap } from '@nestjs/common'
+import type { OnApplicationBootstrap } from '@nestjs/common'
+import { Injectable } from '@nestjs/common'
 import { RedisPubSub } from 'graphql-redis-subscriptions'
 import type { Redis } from 'ioredis'
 
@@ -40,7 +41,7 @@ export class RedisPubSubService<RedisPubSubTopics extends string = string, Redis
 
   public async getSubscriberCount<Pattern extends RedisPubSubTopics>(pattern: Pattern, extensions: string | string[] = []): Promise<number> {
     const topic = this.createTopic(pattern, extensions)
-    const numberOfSubs = await this.getClient().send_command('PUBSUB', [ 'NUMSUB', topic ])
+    const numberOfSubs = await this.getClient().call('PUBSUB', [ 'NUMSUB', topic ])
 
     if (Array.isArray(numberOfSubs) && numberOfSubs?.[1]) {
       return numberOfSubs[1]

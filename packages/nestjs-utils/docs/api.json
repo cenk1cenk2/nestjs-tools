@@ -1,0 +1,1132 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-utils",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 48,
+      "name": "PublicDecorator",
+      "kind": 32,
+      "kindString": "Variable",
+      "flags": {
+        "isConst": true
+      },
+      "sources": [
+        {
+          "fileName": "decorators/public/public.decorator.ts",
+          "line": 4,
+          "character": 13
+        }
+      ],
+      "type": {
+        "type": "query",
+        "queryType": {
+          "type": "reference",
+          "id": 48,
+          "name": "PublicDecorator"
+        }
+      },
+      "defaultValue": "..."
+    },
+    {
+      "id": 46,
+      "name": "Public",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "decorators/public/public.decorator.ts",
+          "line": 6,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 47,
+          "name": "Public",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "query",
+                "queryType": {
+                  "type": "reference",
+                  "id": 48,
+                  "name": "PublicDecorator"
+                }
+              }
+            ],
+            "qualifiedName": "CustomDecorator",
+            "package": "@nestjs/common",
+            "name": "CustomDecorator"
+          }
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "PaginationOutputDto",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "Output type for pagination.",
+        "tags": [
+          {
+            "tag": "export",
+            "text": ""
+          },
+          {
+            "tag": "interface",
+            "text": "PaginationOutputDto"
+          }
+        ]
+      },
+      "children": [
+        {
+          "id": 50,
+          "name": "total",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Total number of items"
+          },
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 10,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        },
+        {
+          "id": 51,
+          "name": "limit",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Limit the number of items per page."
+          },
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 21,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "inheritedFrom": {
+            "type": "reference",
+            "id": 54,
+            "name": "PaginationInputDto.limit"
+          }
+        },
+        {
+          "id": 52,
+          "name": "page",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Get page number"
+          },
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 24,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "inheritedFrom": {
+            "type": "reference",
+            "id": 55,
+            "name": "PaginationInputDto.page"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [50, 51, 52]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 8,
+          "character": 17
+        }
+      ],
+      "extendedTypes": [
+        {
+          "type": "reference",
+          "id": 53,
+          "name": "PaginationInputDto"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "PaginationInputDto",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "Input type for pagination.",
+        "tags": [
+          {
+            "tag": "export",
+            "text": ""
+          },
+          {
+            "tag": "interface",
+            "text": "PaginationInputDto\n"
+          }
+        ]
+      },
+      "children": [
+        {
+          "id": 54,
+          "name": "limit",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Limit the number of items per page."
+          },
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 21,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        },
+        {
+          "id": 55,
+          "name": "page",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Get page number"
+          },
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 24,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [54, 55]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 19,
+          "character": 17
+        }
+      ],
+      "extendedBy": [
+        {
+          "type": "reference",
+          "id": 49,
+          "name": "PaginationOutputDto"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "LoggerService",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "children": [
+        {
+          "id": 5,
+          "name": "color",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isProtected": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 12,
+              "character": 12
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "name": "LogType"
+              },
+              {
+                "type": "reflection",
+                "declaration": {
+                  "id": 6,
+                  "name": "__type",
+                  "kind": 65536,
+                  "kindString": "Type literal",
+                  "flags": {},
+                  "signatures": [
+                    {
+                      "id": 7,
+                      "name": "__type",
+                      "kind": 4096,
+                      "kindString": "Call signature",
+                      "flags": {},
+                      "parameters": [
+                        {
+                          "id": 8,
+                          "name": "message",
+                          "kind": 32768,
+                          "kindString": "Parameter",
+                          "flags": {},
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          },
+          "defaultValue": "..."
+        },
+        {
+          "id": 2,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 21,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 3,
+              "name": "new LoggerService",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 4,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "name": "LoggerOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 1,
+                "name": "LoggerService"
+              }
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "error",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 23,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 10,
+              "name": "error",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 11,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 12,
+                  "name": "trace",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 13,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "LoggerServiceCommon.error"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "LoggerServiceCommon.error"
+          }
+        },
+        {
+          "id": 14,
+          "name": "log",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 32,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 15,
+              "name": "log",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 16,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 17,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "LoggerServiceCommon.log"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "LoggerServiceCommon.log"
+          }
+        },
+        {
+          "id": 18,
+          "name": "warn",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 40,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 19,
+              "name": "warn",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 20,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 21,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "LoggerServiceCommon.warn"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "LoggerServiceCommon.warn"
+          }
+        },
+        {
+          "id": 22,
+          "name": "debug",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 48,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 23,
+              "name": "debug",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 24,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 25,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "LoggerServiceCommon.debug"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "LoggerServiceCommon.debug"
+          }
+        },
+        {
+          "id": 26,
+          "name": "verbose",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 56,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 27,
+              "name": "verbose",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 28,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 29,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "LoggerServiceCommon.verbose"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "LoggerServiceCommon.verbose"
+          }
+        },
+        {
+          "id": 30,
+          "name": "coloring",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 64,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 31,
+              "name": "coloring",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 32,
+                  "name": "level",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "name": "LogType"
+                  }
+                },
+                {
+                  "id": 33,
+                  "name": "message",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "logMessage",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 68,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 35,
+              "name": "logMessage",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 36,
+                  "name": "__namedParameters",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 37,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 38,
+                          "name": "type",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "utils/logger/logger.service.ts",
+                              "line": 68,
+                              "character": 71
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 39,
+                          "name": "message",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "utils/logger/logger.service.ts",
+                              "line": 68,
+                              "character": 85
+                            }
+                          ],
+                          "type": {
+                            "type": "union",
+                            "types": [
+                              {
+                                "type": "intrinsic",
+                                "name": "string"
+                              },
+                              {
+                                "type": "array",
+                                "elementType": {
+                                  "type": "intrinsic",
+                                  "name": "string"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "id": 40,
+                          "name": "context",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "sources": [
+                            {
+                              "fileName": "utils/logger/logger.service.ts",
+                              "line": 68,
+                              "character": 113
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        },
+                        {
+                          "id": 41,
+                          "name": "trace",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "sources": [
+                            {
+                              "fileName": "utils/logger/logger.service.ts",
+                              "line": 68,
+                              "character": 131
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        },
+                        {
+                          "id": 42,
+                          "name": "ms",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "sources": [
+                            {
+                              "fileName": "utils/logger/logger.service.ts",
+                              "line": 68,
+                              "character": 144
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [38, 39, 40, 41, 42]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "getLogger",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "decorators": [
+            {
+              "name": "Configurable",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Configurable",
+                "package": "@webundsoehne/nestjs-util",
+                "name": "Configurable"
+              },
+              "arguments": {}
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "utils/logger/logger.service.ts",
+              "line": 90,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 44,
+              "name": "getLogger",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 45,
+                  "name": "level",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "decorators": [
+                    {
+                      "name": "ConfigParam",
+                      "type": {
+                        "type": "reference",
+                        "qualifiedName": "ConfigParam",
+                        "package": "@webundsoehne/nestjs-util",
+                        "name": "ConfigParam"
+                      },
+                      "arguments": {
+                        "path": "'logLevel'",
+                        "defaultValue": "LogLevel"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "winston.Logger",
+                "package": "winston",
+                "name": "Logger"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [5]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [2]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [9, 14, 18, 22, 26, 30, 34, 43]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "utils/logger/logger.service.ts",
+          "line": 11,
+          "character": 13
+        }
+      ],
+      "implementedTypes": [
+        {
+          "type": "reference",
+          "qualifiedName": "LoggerService",
+          "package": "@nestjs/common",
+          "name": "LoggerService"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Variables",
+      "kind": 32,
+      "children": [48]
+    },
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [46]
+    },
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [49, 53]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [1]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 {
   "name": "root",
   "private": true,
-  "repository": "https://github.com/cenk1cenk2/boilerplate-oclif",
+  "repository": "https://github.com/cenk1cenk2/nestjs-tools",
+  "type": "module",
   "scripts": {
     "ls": "lerna la",
     "clean": "lerna clean -y && rimraf node_modules yarn.lock",
@@ -11,10 +12,11 @@
     "scripts:unlink": "./scripts/link-packages.sh unlink",
     "scripts:workspace:link": "./scripts/link-packages-to-workspace.sh link",
     "scripts:workspace:unlink": "./scripts/link-packages-to-workspace.sh unlink",
-    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc",
     "lint": "yarn command lint --no-bail --concurrency 1",
     "lint:check": "yarn command lint:check",
-    "build": "yarn command build --include-dependencies"
+    "build": "yarn command build --include-dependencies",
+    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc",
+    "docs:api": "yarn command --no-bail docs:api"
   },
   "workspaces": [
     "packages/*"
@@ -24,6 +26,7 @@
     "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   },
   "devDependencies": {
+    "@anatine/esbuild-decorators": "^0.2.19",
     "@cenk1cenk2/cz-cc": "^1.5.2",
     "@cenk1cenk2/eslint-config": "^2.5.8",
     "commitizen": "^4.2.4",
@@ -35,6 +38,9 @@
     "simple-git-hooks": "^2.7.0",
     "tsc-watch": "^5.0.3",
     "tsconfig-replace-paths": "^0.0.11",
+    "tsup": "^5.12.6",
+    "typedoc": "^0.22.15",
+    "typedoc-plugin-markdown": "^3.12.1",
     "typescript": "^4.6.3"
   },
   "config": {

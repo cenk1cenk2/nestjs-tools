@@ -1,6 +1,7 @@
-import { Injectable, OnApplicationBootstrap, OnApplicationShutdown } from '@nestjs/common'
+import type { OnApplicationBootstrap, OnApplicationShutdown } from '@nestjs/common'
+import { Injectable } from '@nestjs/common'
 import { DiscoveryService, MetadataScanner } from '@nestjs/core'
-import { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper'
+import type { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper'
 import { EventEmitter2 } from 'eventemitter2'
 
 import { EventMetadataAccessor } from './event-metadata.accessor'

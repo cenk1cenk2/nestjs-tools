@@ -1,6 +1,6 @@
 # @cenk1cenk2/nestjs-tools
 
-[![Build Status](https://drone.kilic.dev/api/badges/cenk1cenk2/nestjs-tools/status.svg)](https://drone.kilic.dev/cenk1cenk2/nestjs-tools)
+[![pipeline status](https://gitlab.kilic.dev/libraries/nestjs-tools/badges/master/pipeline.svg)](https://gitlab.kilic.dev/libraries/nestjs-tools/-/commits/master)
 
 ## Description
 

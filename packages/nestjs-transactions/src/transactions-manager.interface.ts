@@ -1,6 +1,6 @@
-import { EntityManager } from 'typeorm'
+import type { EntityManager } from 'typeorm'
 
-import { TransactionsManager } from './transactions-manager.service'
+import type { TransactionsManager } from './transactions-manager.service'
 
 /**
  * A singular transaction.

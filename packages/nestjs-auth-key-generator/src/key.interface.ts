@@ -1,5 +1,5 @@
-import { KeypairOptions, KeypairResults } from './keypair.interface'
-import { LoggerService } from '@cenk1cenk2/nestjs-utils'
+import type { KeypairOptions, KeypairResults } from './keypair.interface'
+import type { LoggerService } from '@cenk1cenk2/nestjs-utils'
 
 export interface ApplicationKeyOptions {
   configKey?: string

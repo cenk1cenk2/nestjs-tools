@@ -1,4 +1,4 @@
-import { PaginationOutputDto } from '@cenk1cenk2/nestjs-utils'
+import type { PaginationOutputDto } from '@cenk1cenk2/nestjs-utils'
 
 /**
  * Pagination result for typing the functions.

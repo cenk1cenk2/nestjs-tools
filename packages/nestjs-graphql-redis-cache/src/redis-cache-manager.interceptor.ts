@@ -1,7 +1,9 @@
-import { CACHE_TTL_METADATA, CallHandler, Injectable, Logger, NestInterceptor } from '@nestjs/common'
+import type { CallHandler, NestInterceptor } from '@nestjs/common'
+import { CACHE_TTL_METADATA, Injectable, Logger } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
-import { GraphQLExecutionContext } from '@nestjs/graphql'
-import { Observable, of } from 'rxjs'
+import type { GraphQLExecutionContext } from '@nestjs/graphql'
+import type { Observable } from 'rxjs'
+import { of } from 'rxjs'
 import { tap } from 'rxjs/operators'
 
 import { InjectRedisCacheManager } from './decorator/inject.decorator'

@@ -1,12 +1,14 @@
-import { Injectable, OnApplicationBootstrap } from '@nestjs/common'
+import type { OnApplicationBootstrap } from '@nestjs/common'
+import { Injectable } from '@nestjs/common'
+import type { Redis } from 'ioredis'
 import RedisIO from 'ioredis'
-import { RedisIOSetOptions } from 'redis-io-compatability.interface'
 
+import type { RedisIOSetOptions } from './redis-io-compatability.interface'
 import { RedisPubSubModuleOptions } from './redis-store.interface'
 
 @Injectable()
 export class RedisStoreService<RedisStoreTopics extends string = string, RedisStoreMap extends Record<RedisStoreTopics, any> = any> implements OnApplicationBootstrap {
-  public client: RedisIO.Redis
+  public client: Redis
 
   constructor (private options: RedisPubSubModuleOptions) {}
 
@@ -22,7 +24,13 @@ export class RedisStoreService<RedisStoreTopics extends string = string, RedisSt
   ): Promise<void> {
     const topic = this.createTopic(pattern, extensions)
 
-    const result = await this.client.set(topic, payload, options?.expiryMode, options?.time, options?.setMode)
+    let result: string
+
+    if (options?.ttl) {
+      result = await this.client.setex(topic, options.ttl, payload)
+    } else {
+      result = await this.client.set(topic, payload)
+    }
 
     if (result !== 'OK') {
       throw new Error(`Can not set store key: ${topic}`)
@@ -59,7 +67,7 @@ export class RedisStoreService<RedisStoreTopics extends string = string, RedisSt
     return this.client.del(topic)
   }
 
-  public getClient (): RedisIO.Redis {
+  public getClient (): Redis {
     return this.client
   }
 

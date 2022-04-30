@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "lib": ["esnext"],
-    "module": "commonjs",
+    "target": "ES2021",
+    "lib": ["ESNext"],
+    "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "declaration": true,
@@ -11,10 +11,11 @@
     "noUnusedLocals": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "incremental": true,
+    "incremental": false,
     "strictNullChecks": false,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*"]

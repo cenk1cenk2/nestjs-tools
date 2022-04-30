@@ -1,10 +1,10 @@
-import { LoggerService as LoggerServiceCommon } from '@nestjs/common'
+import type { LoggerService as LoggerServiceCommon } from '@nestjs/common'
+import { Configurable, ConfigParam } from '@webundsoehne/nestjs-util/dist/provider/config'
 import * as colorette from 'colorette'
 import winston, { format } from 'winston'
 
 import { LogType, LogLevel } from './logger.constants'
-import { LoggerOptions } from './logger.interface'
-import { Configurable, ConfigParam } from '@webundsoehne/nestjs-util/dist/provider/config'
+import type { LoggerOptions } from './logger.interface'
 
 let logger: winston.Logger
 

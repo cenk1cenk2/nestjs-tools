@@ -1,4 +1,4 @@
-import { Cache, CacheOptions } from 'cache-manager'
+import type { Cache, CacheOptions } from 'cache-manager'
 
 export type RedisCacheManagerProvider = Cache
 

@@ -1,0 +1,24 @@
+stages:
+  - install
+  - build
+  - docs
+  - publish
+
+variables:
+  RUN_MULTI: 'true'
+  NODE_VERSION: 16-alpine
+  TYPEDOC_PATTERNS: 'packages/*/'
+  MARKDOWN_TOC_PATTERNS: 'README.md,./packages/*/README.md'
+
+include:
+  - project: devops/pipes
+    file: /templates/node.gitlab-ci.yml
+
+  - project: devops/pipes
+    file: /templates/markdown-toc.gitlab-ci.yml
+
+  - project: devops/pipes
+    file: /templates/node-typedoc.gitlab-ci.yml
+
+  - project: devops/pipes
+    file: /templates/semantic-release.gitlab-ci.yml

@@ -1,8 +1,9 @@
 import { Injectable, InternalServerErrorException, Logger, Scope } from '@nestjs/common'
 import { InjectConnection } from '@nestjs/typeorm'
-import { Connection, EntityManager } from 'typeorm'
+import type { EntityManager } from 'typeorm'
+import { Connection } from 'typeorm'
 
-import {
+import type {
   CheckBeforeTransaction,
   GetTransactionType,
   InitialTransaction,
