@@ -1,0 +1,3034 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-transactions",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 46,
+      "name": "Transaction",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 8,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 51,
+          "name": "T",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {}
+        },
+        {
+          "id": 52,
+          "name": "R",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {}
+        }
+      ],
+      "type": {
+        "type": "reflection",
+        "declaration": {
+          "id": 47,
+          "name": "__type",
+          "kind": 65536,
+          "kindString": "Type literal",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 8,
+              "character": 32
+            }
+          ],
+          "signatures": [
+            {
+              "id": 48,
+              "name": "__type",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "A singular transaction."
+              },
+              "parameters": [
+                {
+                  "id": 49,
+                  "name": "manager",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "EntityManager",
+                    "package": "typeorm",
+                    "name": "EntityManager"
+                  }
+                },
+                {
+                  "id": 50,
+                  "name": "results",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "id": 51,
+                    "name": "T"
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 52,
+                    "name": "R"
+                  },
+                  {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 52,
+                        "name": "R"
+                      }
+                    ],
+                    "qualifiedName": "Promise",
+                    "package": "typescript",
+                    "name": "Promise"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 53,
+      "name": "Rollback",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 13,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 57,
+          "name": "T",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {}
+        },
+        {
+          "id": 58,
+          "name": "R",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {}
+        }
+      ],
+      "type": {
+        "type": "reflection",
+        "declaration": {
+          "id": 54,
+          "name": "__type",
+          "kind": 65536,
+          "kindString": "Type literal",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 13,
+              "character": 29
+            }
+          ],
+          "signatures": [
+            {
+              "id": 55,
+              "name": "__type",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "A singular rollback."
+              },
+              "parameters": [
+                {
+                  "id": 56,
+                  "name": "results",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "id": 57,
+                    "name": "T"
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 58,
+                    "name": "R"
+                  },
+                  {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 58,
+                        "name": "R"
+                      }
+                    ],
+                    "qualifiedName": "Promise",
+                    "package": "typescript",
+                    "name": "Promise"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "CheckBeforeTransaction",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "The type of parallel transactions which will be run after."
+      },
+      "children": [
+        {
+          "id": 60,
+          "name": "check",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 20,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "never"
+              },
+              {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            ],
+            "name": "Transaction"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [60]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 19,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "BaseTransaction",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "A condition to run this transaction."
+      },
+      "children": [
+        {
+          "id": 62,
+          "name": "condition",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 27,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 66,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 67,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 63,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 64,
+                          "name": "condition",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 64
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "boolean"
+                          }
+                        },
+                        {
+                          "id": 65,
+                          "name": "message",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 84
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [64, 65]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "Transaction"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [62]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 26,
+          "character": 17
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 66,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 67,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 66,
+                    "name": "E"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "extendedBy": [
+        {
+          "type": "reference",
+          "id": 68,
+          "name": "ParallelTransaction"
+        },
+        {
+          "type": "reference",
+          "id": 76,
+          "name": "InitialTransaction"
+        },
+        {
+          "type": "reference",
+          "id": 86,
+          "name": "RollbackTransaction"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "ParallelTransaction",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "The type of parallel transactions which will be run after."
+      },
+      "children": [
+        {
+          "id": 70,
+          "name": "condition",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 27,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 74,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 75,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 71,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 72,
+                          "name": "condition",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 64
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "boolean"
+                          }
+                        },
+                        {
+                          "id": 73,
+                          "name": "message",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 84
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [72, 73]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "Transaction"
+          },
+          "inheritedFrom": {
+            "type": "reference",
+            "id": 62,
+            "name": "BaseTransaction.condition"
+          }
+        },
+        {
+          "id": 69,
+          "name": "transaction",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 34,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 74,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 75,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            ],
+            "name": "Transaction"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [70, 69]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 33,
+          "character": 17
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 74,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 75,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 74,
+                    "name": "E"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "extendedTypes": [
+        {
+          "type": "reference",
+          "id": 61,
+          "typeArguments": [
+            {
+              "type": "reference",
+              "id": 74,
+              "name": "E"
+            },
+            {
+              "type": "reference",
+              "id": 75,
+              "name": "M"
+            }
+          ],
+          "name": "BaseTransaction"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "InitialTransaction",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "A type of initial transaction, which will run first and can return a result."
+      },
+      "children": [
+        {
+          "id": 80,
+          "name": "condition",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 27,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 84,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 85,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 81,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 82,
+                          "name": "condition",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 64
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "boolean"
+                          }
+                        },
+                        {
+                          "id": 83,
+                          "name": "message",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 84
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [82, 83]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "Transaction"
+          },
+          "inheritedFrom": {
+            "type": "reference",
+            "id": 62,
+            "name": "BaseTransaction.condition"
+          }
+        },
+        {
+          "id": 77,
+          "name": "token",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 41,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "typeOperator",
+            "operator": "keyof",
+            "target": {
+              "type": "reference",
+              "id": 94,
+              "typeArguments": [
+                {
+                  "type": "reference",
+                  "id": 84,
+                  "name": "E"
+                },
+                {
+                  "type": "reference",
+                  "id": 85,
+                  "name": "M"
+                }
+              ],
+              "name": "GetTransactionType"
+            }
+          }
+        },
+        {
+          "id": 78,
+          "name": "transaction",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 42,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 84,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 85,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "indexedAccess",
+                "indexType": {
+                  "type": "typeOperator",
+                  "operator": "keyof",
+                  "target": {
+                    "type": "reference",
+                    "id": 94,
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 84,
+                        "name": "E"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 85,
+                        "name": "M"
+                      }
+                    ],
+                    "name": "GetTransactionType"
+                  }
+                },
+                "objectType": {
+                  "type": "reference",
+                  "id": 94,
+                  "typeArguments": [
+                    {
+                      "type": "reference",
+                      "id": 84,
+                      "name": "E"
+                    },
+                    {
+                      "type": "reference",
+                      "id": 85,
+                      "name": "M"
+                    }
+                  ],
+                  "name": "GetTransactionType"
+                }
+              }
+            ],
+            "name": "Transaction"
+          }
+        },
+        {
+          "id": 79,
+          "name": "dependsOn",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 43,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "typeOperator",
+              "operator": "keyof",
+              "target": {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 84,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 85,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              }
+            }
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [80, 77, 78, 79]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 40,
+          "character": 17
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 84,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 85,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 84,
+                    "name": "E"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "extendedTypes": [
+        {
+          "type": "reference",
+          "id": 61,
+          "typeArguments": [
+            {
+              "type": "reference",
+              "id": 84,
+              "name": "E"
+            },
+            {
+              "type": "reference",
+              "id": 85,
+              "name": "M"
+            }
+          ],
+          "name": "BaseTransaction"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "name": "RollbackTransaction",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "A transaction rollback action.",
+        "tags": [
+          {
+            "tag": "export",
+            "text": ""
+          },
+          {
+            "tag": "interface",
+            "text": "RollbackTransactions"
+          }
+        ]
+      },
+      "children": [
+        {
+          "id": 88,
+          "name": "condition",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 27,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 46,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 92,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 93,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 89,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 90,
+                          "name": "condition",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 64
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "boolean"
+                          }
+                        },
+                        {
+                          "id": 91,
+                          "name": "message",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {},
+                          "sources": [
+                            {
+                              "fileName": "transactions-manager.interface.ts",
+                              "line": 27,
+                              "character": 84
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "string"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [90, 91]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ],
+            "name": "Transaction"
+          },
+          "inheritedFrom": {
+            "type": "reference",
+            "id": 62,
+            "name": "BaseTransaction.condition"
+          }
+        },
+        {
+          "id": 87,
+          "name": "rollback",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 55,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 53,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 94,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 92,
+                    "name": "E"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 93,
+                    "name": "M"
+                  }
+                ],
+                "name": "GetTransactionType"
+              },
+              {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            ],
+            "name": "Rollback"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [88, 87]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 54,
+          "character": 17
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 92,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "comment": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 93,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "comment": {
+            "shortText": "\n"
+          },
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 92,
+                    "name": "E"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "extendedTypes": [
+        {
+          "type": "reference",
+          "id": 61,
+          "typeArguments": [
+            {
+              "type": "reference",
+              "id": 92,
+              "name": "E"
+            },
+            {
+              "type": "reference",
+              "id": 93,
+              "name": "M"
+            }
+          ],
+          "name": "BaseTransaction"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "name": "GetTransactionType",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "Get the type of the transaction manager given the map and keys"
+      },
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 62,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 95,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 96,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 95,
+          "name": "E"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 96,
+            "name": "M"
+          }
+        },
+        "trueType": {
+          "type": "indexedAccess",
+          "indexType": {
+            "type": "reference",
+            "id": 95,
+            "name": "E"
+          },
+          "objectType": {
+            "type": "reference",
+            "id": 96,
+            "name": "M"
+          }
+        },
+        "falseType": {
+          "type": "intrinsic",
+          "name": "never"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "name": "WithTransactionManager",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "Get the transaction type to use with events"
+      },
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 68,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 102,
+          "name": "E",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 103,
+          "name": "M",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          },
+          "default": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 102,
+          "name": "E"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 103,
+            "name": "M"
+          }
+        },
+        "trueType": {
+          "type": "reflection",
+          "declaration": {
+            "id": 98,
+            "name": "__type",
+            "kind": 65536,
+            "kindString": "Type literal",
+            "flags": {},
+            "children": [
+              {
+                "id": 99,
+                "name": "transactions",
+                "kind": 1024,
+                "kindString": "Property",
+                "flags": {},
+                "sources": [
+                  {
+                    "fileName": "transactions-manager.interface.ts",
+                    "line": 70,
+                    "character": 4
+                  }
+                ],
+                "type": {
+                  "type": "reference",
+                  "id": 4,
+                  "typeArguments": [
+                    {
+                      "type": "reference",
+                      "id": 102,
+                      "name": "E"
+                    },
+                    {
+                      "type": "reference",
+                      "id": 103,
+                      "name": "M"
+                    }
+                  ],
+                  "name": "TransactionsManager"
+                }
+              }
+            ],
+            "groups": [
+              {
+                "title": "Properties",
+                "kind": 1024,
+                "children": [99]
+              }
+            ],
+            "sources": [
+              {
+                "fileName": "transactions-manager.interface.ts",
+                "line": 69,
+                "character": 4
+              }
+            ]
+          }
+        },
+        "falseType": {
+          "type": "reflection",
+          "declaration": {
+            "id": 100,
+            "name": "__type",
+            "kind": 65536,
+            "kindString": "Type literal",
+            "flags": {},
+            "children": [
+              {
+                "id": 101,
+                "name": "transactions",
+                "kind": 1024,
+                "kindString": "Property",
+                "flags": {},
+                "sources": [
+                  {
+                    "fileName": "transactions-manager.interface.ts",
+                    "line": 73,
+                    "character": 4
+                  }
+                ],
+                "type": {
+                  "type": "reference",
+                  "id": 4,
+                  "typeArguments": [
+                    {
+                      "type": "intrinsic",
+                      "name": "any"
+                    },
+                    {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  ],
+                  "name": "TransactionsManager"
+                }
+              }
+            ],
+            "groups": [
+              {
+                "title": "Properties",
+                "kind": 1024,
+                "children": [101]
+              }
+            ],
+            "sources": [
+              {
+                "fileName": "transactions-manager.interface.ts",
+                "line": 72,
+                "character": 4
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 104,
+      "name": "TransactionMap",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "For fast typing the event map."
+      },
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 79,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 105,
+          "name": "Events",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "typeArguments": [
+          {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 105,
+                "name": "Events"
+              },
+              {
+                "type": "intrinsic",
+                "name": "any"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          }
+        ],
+        "qualifiedName": "Partial",
+        "package": "typescript",
+        "name": "Partial"
+      }
+    },
+    {
+      "id": 106,
+      "name": "BaseTransactionMap",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "comment": {
+        "shortText": "Give transaction map a set of indexes to not make it go crazy when some events are missing from it.\nThey are optional after all."
+      },
+      "children": [
+        {
+          "id": 107,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 108,
+              "name": "new BaseTransactionMap",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 106,
+                "name": "BaseTransactionMap"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [107]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 85,
+          "character": 13
+        }
+      ],
+      "indexSignature": {
+        "id": 109,
+        "name": "__index",
+        "kind": 8192,
+        "kindString": "Index signature",
+        "flags": {},
+        "parameters": [
+          {
+            "id": 110,
+            "name": "k",
+            "kind": 32768,
+            "flags": {},
+            "type": {
+              "type": "intrinsic",
+              "name": "string"
+            }
+          }
+        ],
+        "type": {
+          "type": "intrinsic",
+          "name": "any"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "name": "TransactionManagerOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "Some options for the service itself."
+      },
+      "children": [
+        {
+          "id": 112,
+          "name": "timeout",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.interface.ts",
+              "line": 93,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [112]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.interface.ts",
+          "line": 92,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "TransactionManagerModule",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Global",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Global",
+            "package": "@nestjs/common",
+            "name": "Global"
+          },
+          "arguments": {}
+        },
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{\n  providers: [ TransactionsManager ],\n  exports: [ TransactionsManager ]\n}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 2,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 3,
+              "name": "new TransactionManagerModule",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 1,
+                "name": "TransactionManagerModule"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [2]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.module.ts",
+          "line": 11,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "TransactionsManager",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Injectable",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Injectable",
+            "package": "@nestjs/common",
+            "name": "Injectable"
+          },
+          "arguments": {
+            "options": "{ scope: Scope.DEFAULT }"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 10,
+          "name": "transactions",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 17,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "id": 68,
+              "typeArguments": [
+                {
+                  "type": "reference",
+                  "id": 7,
+                  "name": "Event"
+                },
+                {
+                  "type": "reference",
+                  "id": 8,
+                  "name": "Map"
+                }
+              ],
+              "name": "ParallelTransaction"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "id": 11,
+          "name": "checkBeforeTransaction",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 18,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "id": 59,
+              "name": "CheckBeforeTransaction"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "id": 12,
+          "name": "inProgressTransactions",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 19,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "id": 68,
+              "typeArguments": [
+                {
+                  "type": "reference",
+                  "id": 7,
+                  "name": "Event"
+                },
+                {
+                  "type": "reference",
+                  "id": 8,
+                  "name": "Map"
+                }
+              ],
+              "name": "ParallelTransaction"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "id": 13,
+          "name": "initialTransactions",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 20,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "id": 76,
+              "typeArguments": [
+                {
+                  "type": "reference",
+                  "id": 7,
+                  "name": "Event"
+                },
+                {
+                  "type": "reference",
+                  "id": 8,
+                  "name": "Map"
+                }
+              ],
+              "name": "InitialTransaction"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "id": 14,
+          "name": "rollbackTransactions",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 21,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "id": 86,
+              "typeArguments": [
+                {
+                  "type": "reference",
+                  "id": 7,
+                  "name": "Event"
+                },
+                {
+                  "type": "reference",
+                  "id": 8,
+                  "name": "Map"
+                }
+              ],
+              "name": "RollbackTransaction"
+            }
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "id": 15,
+          "name": "results",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 22,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 94,
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 7,
+                "name": "Event"
+              },
+              {
+                "type": "reference",
+                "id": 8,
+                "name": "Map"
+              }
+            ],
+            "name": "GetTransactionType"
+          },
+          "defaultValue": "..."
+        },
+        {
+          "id": 16,
+          "name": "logger",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 23,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Logger",
+            "package": "@nestjs/common",
+            "name": "Logger"
+          },
+          "defaultValue": "..."
+        },
+        {
+          "id": 17,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 25,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 111,
+            "name": "TransactionManagerOptions"
+          },
+          "defaultValue": "..."
+        },
+        {
+          "id": 5,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 30,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 6,
+              "name": "new TransactionsManager",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 7,
+                  "name": "Event",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 8,
+                  "name": "Map",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    ],
+                    "qualifiedName": "Partial",
+                    "package": "typescript",
+                    "name": "Partial"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    ],
+                    "qualifiedName": "Partial",
+                    "package": "typescript",
+                    "name": "Partial"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 9,
+                  "name": "connection",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "decorators": [
+                    {
+                      "name": "InjectConnection",
+                      "type": {
+                        "type": "reference",
+                        "qualifiedName": "InjectConnection",
+                        "package": "@nestjs/typeorm",
+                        "name": "InjectConnection"
+                      },
+                      "arguments": {}
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "Connection",
+                    "package": "typeorm",
+                    "name": "Connection"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 4,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 8,
+                    "name": "Map"
+                  }
+                ],
+                "name": "TransactionsManager"
+              }
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "name": "createChild",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 41,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 19,
+              "name": "createChild",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such.",
+                "tags": [
+                  {
+                    "tag": "memberof",
+                    "text": "TransactionsManager\n"
+                  }
+                ]
+              },
+              "typeParameter": [
+                {
+                  "id": 20,
+                  "name": "ChildEvent",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "comment": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 4,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 20,
+                    "name": "ChildEvent"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 8,
+                    "name": "Map"
+                  }
+                ],
+                "name": "TransactionsManager"
+              }
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "name": "add",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 54,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 22,
+              "name": "add",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "Add a new transaction, with optional check or rollback.\nChecks will be executed before any transactions to check whether the operation is performable.\nTransactions with token are initial transactions and will get their result saved for further use.\nTransactions without any depends on and token are parallel transactions that will execute after the initial ones.\nRollback transactions will get executed if something goes wrong."
+              },
+              "parameters": [
+                {
+                  "id": 23,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "comment": {
+                    "shortText": "\n"
+                  },
+                  "type": {
+                    "type": "intersection",
+                    "types": [
+                      {
+                        "type": "intersection",
+                        "types": [
+                          {
+                            "type": "reference",
+                            "id": 68,
+                            "typeArguments": [
+                              {
+                                "type": "reference",
+                                "id": 7,
+                                "name": "Event"
+                              },
+                              {
+                                "type": "reference",
+                                "id": 8,
+                                "name": "Map"
+                              }
+                            ],
+                            "name": "ParallelTransaction"
+                          },
+                          {
+                            "type": "reference",
+                            "typeArguments": [
+                              {
+                                "type": "intersection",
+                                "types": [
+                                  {
+                                    "type": "reference",
+                                    "id": 59,
+                                    "name": "CheckBeforeTransaction"
+                                  },
+                                  {
+                                    "type": "reference",
+                                    "id": 86,
+                                    "typeArguments": [
+                                      {
+                                        "type": "reference",
+                                        "id": 7,
+                                        "name": "Event"
+                                      },
+                                      {
+                                        "type": "reference",
+                                        "id": 8,
+                                        "name": "Map"
+                                      }
+                                    ],
+                                    "name": "RollbackTransaction"
+                                  }
+                                ]
+                              }
+                            ],
+                            "qualifiedName": "Partial",
+                            "package": "typescript",
+                            "name": "Partial"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "intersection",
+                        "types": [
+                          {
+                            "type": "reference",
+                            "id": 76,
+                            "typeArguments": [
+                              {
+                                "type": "reference",
+                                "id": 7,
+                                "name": "Event"
+                              },
+                              {
+                                "type": "reference",
+                                "id": 8,
+                                "name": "Map"
+                              }
+                            ],
+                            "name": "InitialTransaction"
+                          },
+                          {
+                            "type": "reference",
+                            "typeArguments": [
+                              {
+                                "type": "intersection",
+                                "types": [
+                                  {
+                                    "type": "reference",
+                                    "id": 59,
+                                    "name": "CheckBeforeTransaction"
+                                  },
+                                  {
+                                    "type": "reference",
+                                    "id": 86,
+                                    "typeArguments": [
+                                      {
+                                        "type": "reference",
+                                        "id": 7,
+                                        "name": "Event"
+                                      },
+                                      {
+                                        "type": "reference",
+                                        "id": 8,
+                                        "name": "Map"
+                                      }
+                                    ],
+                                    "name": "RollbackTransaction"
+                                  }
+                                ]
+                              }
+                            ],
+                            "qualifiedName": "Partial",
+                            "package": "typescript",
+                            "name": "Partial"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "run",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 88,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 25,
+              "name": "run",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "Run all the transactions and rollback all if one has failed.\nThis will run initial transactions and wait for the result,"
+              },
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 94,
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 7,
+                        "name": "Event"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 8,
+                        "name": "Map"
+                      }
+                    ],
+                    "name": "GetTransactionType"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "name": "checkTransactionCondition",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 224,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 27,
+              "name": "checkTransactionCondition",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 28,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "reference",
+                        "id": 68,
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 8,
+                            "name": "Map"
+                          }
+                        ],
+                        "name": "ParallelTransaction"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 76,
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 8,
+                            "name": "Map"
+                          }
+                        ],
+                        "name": "InitialTransaction"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 86,
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 8,
+                            "name": "Map"
+                          }
+                        ],
+                        "name": "RollbackTransaction"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 29,
+                  "name": "manager",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "EntityManager",
+                    "package": "typeorm",
+                    "name": "EntityManager"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "name": "flushTransactions",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 245,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 31,
+              "name": "flushTransactions",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "name": "hasCheckBeforeTransaction",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 255,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 33,
+              "name": "hasCheckBeforeTransaction",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 34,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "boolean"
+              }
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "hasRollback",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 259,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 36,
+              "name": "hasRollback",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 37,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "boolean"
+              }
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "isInitialTransaction",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 263,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 39,
+              "name": "isInitialTransaction",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 40,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "type": {
+                "type": "predicate",
+                "name": "transaction",
+                "asserts": false,
+                "targetType": {
+                  "type": "reference",
+                  "id": 76,
+                  "typeArguments": [
+                    {
+                      "type": "reference",
+                      "id": 7,
+                      "name": "Event"
+                    },
+                    {
+                      "type": "reference",
+                      "id": 8,
+                      "name": "Map"
+                    }
+                  ],
+                  "name": "InitialTransaction"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "isParallelTransaction",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "transactions-manager.service.ts",
+              "line": 267,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 42,
+              "name": "isParallelTransaction",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 43,
+                  "name": "transaction",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "type": {
+                "type": "predicate",
+                "name": "transaction",
+                "asserts": false,
+                "targetType": {
+                  "type": "reference",
+                  "id": 68,
+                  "typeArguments": [
+                    {
+                      "type": "reference",
+                      "id": 7,
+                      "name": "Event"
+                    },
+                    {
+                      "type": "reference",
+                      "id": 8,
+                      "name": "Map"
+                    }
+                  ],
+                  "name": "ParallelTransaction"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [10, 11, 12, 13, 14, 15, 16, 17]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [5]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [18, 21, 24, 26, 30, 32, 35, 38, 41]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "transactions-manager.service.ts",
+          "line": 16,
+          "character": 13
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 44,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 45,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          },
+          "default": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Type aliases",
+      "kind": 4194304,
+      "children": [46, 53, 94, 97, 104]
+    },
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [59, 61, 68, 76, 86, 111]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [106, 1, 4]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

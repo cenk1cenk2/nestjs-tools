@@ -1,0 +1,1259 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-graphql-redis-pubsub",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 1,
+      "name": "InjectRedisPubSubService",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "decorator/inject.decorator.ts",
+          "line": 5,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 2,
+          "name": "InjectRedisPubSubService",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "type": {
+            "type": "reflection",
+            "declaration": {
+              "id": 3,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "decorator/inject.decorator.ts",
+                  "line": 5,
+                  "character": 45
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 4,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 5,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "unknown"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "union",
+                        "types": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "symbol"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "name": "index",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "REDIS_PUBSUB_INSTANCE",
+      "kind": 32,
+      "kindString": "Variable",
+      "flags": {
+        "isConst": true
+      },
+      "sources": [
+        {
+          "fileName": "redis-pubsub.constants.ts",
+          "line": 1,
+          "character": 13
+        }
+      ],
+      "type": {
+        "type": "query",
+        "queryType": {
+          "type": "reference",
+          "id": 8,
+          "name": "REDIS_PUBSUB_INSTANCE"
+        }
+      },
+      "defaultValue": "..."
+    },
+    {
+      "id": 9,
+      "name": "REDIS_PUBSUB_DELIMITER",
+      "kind": 32,
+      "kindString": "Variable",
+      "flags": {
+        "isConst": true
+      },
+      "sources": [
+        {
+          "fileName": "redis-pubsub.constants.ts",
+          "line": 3,
+          "character": 13
+        }
+      ],
+      "type": {
+        "type": "literal",
+        "value": ":"
+      },
+      "defaultValue": "':'"
+    },
+    {
+      "id": 10,
+      "name": "RedisPubSubProvider",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "redis-pubsub.interface.ts",
+          "line": 4,
+          "character": 12
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "qualifiedName": "RedisPubSub",
+        "package": "graphql-redis-subscriptions",
+        "name": "RedisPubSub"
+      }
+    },
+    {
+      "id": 11,
+      "name": "RedisPubSubModuleOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 12,
+          "name": "global",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.interface.ts",
+              "line": 7,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 13,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.interface.ts",
+              "line": 8,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "PubSubRedisOptions",
+            "package": "graphql-redis-subscriptions",
+            "name": "PubSubRedisOptions"
+          }
+        },
+        {
+          "id": 14,
+          "name": "delimiter",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.interface.ts",
+              "line": 9,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [12, 13, 14]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-pubsub.interface.ts",
+          "line": 6,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "RedisPubSubModule",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Global",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Global",
+            "package": "@nestjs/common",
+            "name": "Global"
+          },
+          "arguments": {}
+        },
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{\n  providers: [\n    {\n      provide: REDIS_PUBSUB_INSTANCE,\n      useFactory: (): RedisPubSubService<any, any> =>\n        new RedisPubSubService({\n          delimiter: REDIS_PUBSUB_DELIMITER,\n          options: {\n            connection: ConfigService.get<RedisOptions>('redisPubSub')\n          }\n        })\n    }\n  ],\n  exports: [ REDIS_PUBSUB_INSTANCE ]\n}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 16,
+          "name": "forRoot",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true,
+            "isStatic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.module.ts",
+              "line": 27,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 17,
+              "name": "forRoot",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 18,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "id": 11,
+                    "name": "RedisPubSubModuleOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "DynamicModule",
+                "package": "@nestjs/common",
+                "name": "DynamicModule"
+              }
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 20,
+              "name": "new RedisPubSubModule",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 15,
+                "name": "RedisPubSubModule"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [16]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [19]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-pubsub.module.ts",
+          "line": 26,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "RedisPubSubService",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Injectable",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Injectable",
+            "package": "@nestjs/common",
+            "name": "Injectable"
+          },
+          "arguments": {}
+        }
+      ],
+      "children": [
+        {
+          "id": 27,
+          "name": "pubSub",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 10,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "RedisPubSub",
+            "package": "graphql-redis-subscriptions",
+            "name": "RedisPubSub"
+          }
+        },
+        {
+          "id": 22,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 12,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 23,
+              "name": "new RedisPubSubService",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 24,
+                  "name": "RedisPubSubTopics",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 25,
+                  "name": "RedisPubSubMap",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 24,
+                        "name": "RedisPubSubTopics"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "qualifiedName": "Record",
+                    "package": "typescript",
+                    "name": "Record"
+                  },
+                  "default": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 26,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 11,
+                    "name": "RedisPubSubModuleOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 21,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 24,
+                    "name": "RedisPubSubTopics"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 25,
+                    "name": "RedisPubSubMap"
+                  }
+                ],
+                "name": "RedisPubSubService"
+              }
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "name": "onApplicationBootstrap",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 14,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 29,
+              "name": "onApplicationBootstrap",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "OnApplicationBootstrap.onApplicationBootstrap"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "OnApplicationBootstrap.onApplicationBootstrap"
+          }
+        },
+        {
+          "id": 30,
+          "name": "publish",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 18,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 31,
+              "name": "publish",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 32,
+                  "name": "Pattern",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 33,
+                  "name": "Data",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 34,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 32,
+                    "name": "Pattern"
+                  }
+                },
+                {
+                  "id": 35,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "defaultValue": "[]"
+                },
+                {
+                  "id": 36,
+                  "name": "payload",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 33,
+                    "name": "Data"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "subscribe",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 22,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 38,
+              "name": "subscribe",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 39,
+                  "name": "Pattern",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 40,
+                  "name": "Data",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 41,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 39,
+                    "name": "Pattern"
+                  }
+                },
+                {
+                  "id": 42,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "defaultValue": "[]"
+                },
+                {
+                  "id": 43,
+                  "name": "onMessage",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 44,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "signatures": [
+                        {
+                          "id": 45,
+                          "name": "__type",
+                          "kind": 4096,
+                          "kindString": "Call signature",
+                          "flags": {},
+                          "parameters": [
+                            {
+                              "id": 46,
+                              "name": "message",
+                              "kind": 32768,
+                              "kindString": "Parameter",
+                              "flags": {},
+                              "type": {
+                                "type": "reference",
+                                "id": 40,
+                                "name": "Data"
+                              }
+                            }
+                          ],
+                          "type": {
+                            "type": "intrinsic",
+                            "name": "void"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "unsubscribe",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 30,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 48,
+              "name": "unsubscribe",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 49,
+                  "name": "id",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "getClient",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 34,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 51,
+              "name": "getClient",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Redis",
+                "package": "ioredis",
+                "name": "Redis"
+              }
+            }
+          ]
+        },
+        {
+          "id": 52,
+          "name": "iterator",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 38,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 53,
+              "name": "iterator",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 54,
+                  "name": "Pattern",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 55,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 54,
+                    "name": "Pattern"
+                  }
+                },
+                {
+                  "id": 56,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "defaultValue": "[]"
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "undefined"
+                  }
+                ],
+                "qualifiedName": "AsyncIterator",
+                "package": "typescript",
+                "name": "AsyncIterator"
+              }
+            }
+          ]
+        },
+        {
+          "id": 57,
+          "name": "getSubscriberCount",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 42,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 58,
+              "name": "getSubscriberCount",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 59,
+                  "name": "Pattern",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 60,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 59,
+                    "name": "Pattern"
+                  }
+                },
+                {
+                  "id": 61,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  },
+                  "defaultValue": "[]"
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 62,
+          "name": "createTopic",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-pubsub.service.ts",
+              "line": 53,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 63,
+              "name": "createTopic",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 64,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 65,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [27]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [22]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [28, 30, 37, 47, 50, 52, 57, 62]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-pubsub.service.ts",
+          "line": 9,
+          "character": 13
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 66,
+          "name": "RedisPubSubTopics",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 67,
+          "name": "RedisPubSubMap",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 24,
+                "name": "RedisPubSubTopics"
+              },
+              {
+                "type": "intrinsic",
+                "name": "any"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "any"
+          }
+        }
+      ],
+      "implementedTypes": [
+        {
+          "type": "reference",
+          "qualifiedName": "OnApplicationBootstrap",
+          "package": "@nestjs/common",
+          "name": "OnApplicationBootstrap"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [1]
+    },
+    {
+      "title": "Variables",
+      "kind": 32,
+      "children": [8, 9]
+    },
+    {
+      "title": "Type aliases",
+      "kind": 4194304,
+      "children": [10]
+    },
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [11]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [15, 21]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

@@ -1,0 +1,734 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-auth-key-generator",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 10,
+      "name": "ApplicationKeyOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 11,
+          "name": "configKey",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 5,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 12,
+          "name": "dir",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 6,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 13,
+          "name": "files",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 7,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 29,
+            "name": "KeypairResults"
+          }
+        },
+        {
+          "id": 14,
+          "name": "attributes",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 8,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "intrinsic",
+                "name": "any"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          }
+        },
+        {
+          "id": 15,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 9,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 21,
+                "name": "KeypairOptions"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        },
+        {
+          "id": 16,
+          "name": "exitOnError",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 10,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 17,
+          "name": "logger",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 11,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reflection",
+            "declaration": {
+              "id": 18,
+              "name": "__type",
+              "kind": 512,
+              "kindString": "Constructor",
+              "flags": {},
+              "signatures": [
+                {
+                  "id": 19,
+                  "name": "new ApplicationKeyOptions",
+                  "kind": 16384,
+                  "kindString": "Constructor signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 20,
+                      "name": "args",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isRest": true
+                      },
+                      "type": {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "any"
+                        }
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "LoggerService",
+                    "package": "@cenk1cenk2/nestjs-utils",
+                    "name": "LoggerService"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [11, 12, 13, 14, 15, 16, 17]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "key.interface.ts",
+          "line": 4,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "ApplicationKey",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "children": [
+        {
+          "id": 2,
+          "name": "instance",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isStatic": true
+          },
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 11,
+              "character": 9
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 1,
+            "name": "ApplicationKey"
+          }
+        },
+        {
+          "id": 6,
+          "name": "keys",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 12,
+              "character": 9
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 29,
+            "name": "KeypairResults"
+          }
+        },
+        {
+          "id": 7,
+          "name": "logger",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 13,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "LoggerService",
+            "package": "@cenk1cenk2/nestjs-utils",
+            "name": "LoggerService"
+          }
+        },
+        {
+          "id": 3,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 15,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 4,
+              "name": "new ApplicationKey",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 5,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 10,
+                        "name": "ApplicationKeyOptions"
+                      }
+                    ],
+                    "qualifiedName": "Partial",
+                    "package": "typescript",
+                    "name": "Partial"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 1,
+                "name": "ApplicationKey"
+              }
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "generateKeys",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 49,
+              "character": 10
+            }
+          ],
+          "signatures": [
+            {
+              "id": 9,
+              "name": "generateKeys",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [2, 6, 7]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [3]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [8]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "key.ts",
+          "line": 10,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "KeypairOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 22,
+          "name": "keySize",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 2,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        },
+        {
+          "id": 23,
+          "name": "days",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 3,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        },
+        {
+          "id": 24,
+          "name": "algorithm",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 4,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 25,
+          "name": "extensions",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 5,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "typeArguments": [
+                {
+                  "type": "intrinsic",
+                  "name": "string"
+                },
+                {
+                  "type": "intrinsic",
+                  "name": "any"
+                }
+              ],
+              "qualifiedName": "Record",
+              "package": "typescript",
+              "name": "Record"
+            }
+          }
+        },
+        {
+          "id": 26,
+          "name": "pkcs7",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 6,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 27,
+          "name": "clientCertificate",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 7,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 28,
+          "name": "clientCertificateCN",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 8,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "literal",
+            "value": "Cenk Kilic <cenk@kilic.dev>"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [22, 23, 24, 25, 26, 27, 28]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "keypair.interface.ts",
+          "line": 1,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "KeypairResults",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 30,
+          "name": "public",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 12,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 31,
+          "name": "private",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 13,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 32,
+          "name": "cert",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 14,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 33,
+          "name": "clientpublic",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 15,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 34,
+          "name": "clientprivate",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 16,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 35,
+          "name": "clientcert",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "keypair.interface.ts",
+              "line": 17,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [30, 31, 32, 33, 34, 35]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "keypair.interface.ts",
+          "line": 11,
+          "character": 17
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [10, 21, 29]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [1]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

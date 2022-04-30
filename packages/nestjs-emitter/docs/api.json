@@ -1,0 +1,3976 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-emitter",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 157,
+      "name": "OnEventMetadata",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {
+        "isExternal": true
+      },
+      "children": [
+        {
+          "id": 158,
+          "name": "event",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts",
+              "line": 3,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "union",
+            "types": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "intrinsic",
+                "name": "symbol"
+              },
+              {
+                "type": "array",
+                "elementType": {
+                  "type": "union",
+                  "types": [
+                    {
+                      "type": "intrinsic",
+                      "name": "string"
+                    },
+                    {
+                      "type": "intrinsic",
+                      "name": "symbol"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 159,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isExternal": true,
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts",
+              "line": 4,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "OnEventOptions",
+            "package": "@nestjs/event-emitter",
+            "name": "OnEventOptions"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [158, 159]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts",
+          "line": 2,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "name": "OnEvent",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {
+        "isExternal": true
+      },
+      "sources": [
+        {
+          "fileName": "node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts",
+          "line": 6,
+          "character": 21
+        }
+      ],
+      "signatures": [
+        {
+          "id": 161,
+          "name": "OnEvent",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {
+            "isExternal": true
+          },
+          "parameters": [
+            {
+              "id": 162,
+              "name": "event",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {
+                "isExternal": true
+              },
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "symbol"
+                  },
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "union",
+                      "types": [
+                        {
+                          "type": "intrinsic",
+                          "name": "string"
+                        },
+                        {
+                          "type": "intrinsic",
+                          "name": "symbol"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": 163,
+              "name": "options",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {
+                "isExternal": true,
+                "isOptional": true
+              },
+              "type": {
+                "type": "reference",
+                "qualifiedName": "OnEventOptions",
+                "package": "@nestjs/event-emitter",
+                "name": "OnEventOptions"
+              }
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "MethodDecorator",
+            "package": "typescript",
+            "name": "MethodDecorator"
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "EventEmitter2",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {
+        "isExternal": true
+      },
+      "children": [
+        {
+          "id": 44,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 118,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 45,
+              "name": "new EventEmitter2",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 46,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ConstructorOptions",
+                    "package": "eventemitter2",
+                    "name": "ConstructorOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "emit",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 119,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 48,
+              "name": "emit",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 49,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 50,
+                  "name": "values",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isRest": true
+                  },
+                  "type": {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "boolean"
+              }
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "emitAsync",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 120,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 52,
+              "name": "emitAsync",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 53,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 54,
+                  "name": "values",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isRest": true
+                  },
+                  "type": {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "name": "addListener",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 121,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 56,
+              "name": "addListener",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 57,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 58,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "name": "on",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 122,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 60,
+              "name": "on",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 61,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 62,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 63,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 64,
+          "name": "prependListener",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 123,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 65,
+              "name": "prependListener",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 66,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 67,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 68,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 69,
+          "name": "once",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 124,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 70,
+              "name": "once",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 71,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 72,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 73,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "literal",
+                        "value": true
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 74,
+          "name": "prependOnceListener",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 125,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 75,
+              "name": "prependOnceListener",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 76,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 77,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 78,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 79,
+          "name": "many",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 126,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 80,
+              "name": "many",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 81,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 82,
+                  "name": "timesToListen",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                },
+                {
+                  "id": 83,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 84,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 85,
+          "name": "prependMany",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 127,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 86,
+              "name": "prependMany",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 87,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 88,
+                  "name": "timesToListen",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                },
+                {
+                  "id": 89,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                },
+                {
+                  "id": 90,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "boolean"
+                      },
+                      {
+                        "type": "reference",
+                        "qualifiedName": "OnOptions",
+                        "package": "eventemitter2",
+                        "name": "OnOptions"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "union",
+                "types": [
+                  {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  },
+                  {
+                    "type": "reference",
+                    "qualifiedName": "Listener",
+                    "package": "eventemitter2",
+                    "name": "Listener"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 91,
+          "name": "onAny",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 128,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 92,
+              "name": "onAny",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 93,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "EventAndListener",
+                    "package": "eventemitter2",
+                    "name": "EventAndListener"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 94,
+          "name": "prependAny",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 129,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 95,
+              "name": "prependAny",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 96,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "EventAndListener",
+                    "package": "eventemitter2",
+                    "name": "EventAndListener"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "name": "offAny",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 130,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 98,
+              "name": "offAny",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 99,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 100,
+          "name": "removeListener",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 131,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 101,
+              "name": "removeListener",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 102,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 103,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 104,
+          "name": "off",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 132,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 105,
+              "name": "off",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 106,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 107,
+                  "name": "listener",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenerFn",
+                    "package": "eventemitter2",
+                    "name": "ListenerFn"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 108,
+          "name": "removeAllListeners",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 133,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 109,
+              "name": "removeAllListeners",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 110,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 111,
+          "name": "setMaxListeners",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 134,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 112,
+              "name": "setMaxListeners",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 113,
+                  "name": "n",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "void"
+              }
+            }
+          ]
+        },
+        {
+          "id": 114,
+          "name": "getMaxListeners",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 135,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 115,
+              "name": "getMaxListeners",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            }
+          ]
+        },
+        {
+          "id": 116,
+          "name": "eventNames",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 136,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 117,
+              "name": "eventNames",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 118,
+                  "name": "nsAsArray",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  }
+                }
+              ],
+              "type": {
+                "type": "array",
+                "elementType": {
+                  "type": "union",
+                  "types": [
+                    {
+                      "type": "intrinsic",
+                      "name": "string"
+                    },
+                    {
+                      "type": "intrinsic",
+                      "name": "symbol"
+                    },
+                    {
+                      "type": "array",
+                      "elementType": {
+                        "type": "reference",
+                        "qualifiedName": "event",
+                        "package": "eventemitter2",
+                        "name": "event"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "name": "listenerCount",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 137,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 120,
+              "name": "listenerCount",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 121,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "number"
+              }
+            }
+          ]
+        },
+        {
+          "id": 122,
+          "name": "listeners",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 138,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 123,
+              "name": "listeners",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 124,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "array",
+                "elementType": {
+                  "type": "reference",
+                  "qualifiedName": "ListenerFn",
+                  "package": "eventemitter2",
+                  "name": "ListenerFn"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 125,
+          "name": "listenersAny",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 139,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 126,
+              "name": "listenersAny",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "type": {
+                "type": "array",
+                "elementType": {
+                  "type": "reference",
+                  "qualifiedName": "ListenerFn",
+                  "package": "eventemitter2",
+                  "name": "ListenerFn"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 127,
+          "name": "waitFor",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 140,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 128,
+              "name": "waitFor",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 129,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 130,
+                  "name": "timeout",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "number"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ],
+                "qualifiedName": "CancelablePromise",
+                "package": "eventemitter2",
+                "name": "CancelablePromise"
+              }
+            },
+            {
+              "id": 131,
+              "name": "waitFor",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 132,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 133,
+                  "name": "filter",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "WaitForFilter",
+                    "package": "eventemitter2",
+                    "name": "WaitForFilter"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ],
+                "qualifiedName": "CancelablePromise",
+                "package": "eventemitter2",
+                "name": "CancelablePromise"
+              }
+            },
+            {
+              "id": 134,
+              "name": "waitFor",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 135,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 136,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "WaitForOptions",
+                    "package": "eventemitter2",
+                    "name": "WaitForOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ],
+                "qualifiedName": "CancelablePromise",
+                "package": "eventemitter2",
+                "name": "CancelablePromise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 137,
+          "name": "listenTo",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 143,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 138,
+              "name": "listenTo",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 139,
+                  "name": "target",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "GeneralEventEmitter",
+                    "package": "eventemitter2",
+                    "name": "GeneralEventEmitter"
+                  }
+                },
+                {
+                  "id": 140,
+                  "name": "events",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 141,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenToOptions",
+                    "package": "eventemitter2",
+                    "name": "ListenToOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            },
+            {
+              "id": 142,
+              "name": "listenTo",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 143,
+                  "name": "target",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "GeneralEventEmitter",
+                    "package": "eventemitter2",
+                    "name": "GeneralEventEmitter"
+                  }
+                },
+                {
+                  "id": 144,
+                  "name": "events",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "array",
+                    "elementType": {
+                      "type": "reference",
+                      "qualifiedName": "event",
+                      "package": "eventemitter2",
+                      "name": "event"
+                    }
+                  }
+                },
+                {
+                  "id": 145,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenToOptions",
+                    "package": "eventemitter2",
+                    "name": "ListenToOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            },
+            {
+              "id": 146,
+              "name": "listenTo",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 147,
+                  "name": "target",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "GeneralEventEmitter",
+                    "package": "eventemitter2",
+                    "name": "GeneralEventEmitter"
+                  }
+                },
+                {
+                  "id": 148,
+                  "name": "events",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "Object",
+                    "package": "typescript",
+                    "name": "Object"
+                  }
+                },
+                {
+                  "id": 149,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "ListenToOptions",
+                    "package": "eventemitter2",
+                    "name": "ListenToOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 37,
+                "qualifiedName": "EventEmitter2",
+                "package": "eventemitter2",
+                "name": "EventEmitter2"
+              }
+            }
+          ]
+        },
+        {
+          "id": 150,
+          "name": "stopListeningTo",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 146,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 151,
+              "name": "stopListeningTo",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 152,
+                  "name": "target",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "GeneralEventEmitter",
+                    "package": "eventemitter2",
+                    "name": "GeneralEventEmitter"
+                  }
+                },
+                {
+                  "id": 153,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Boolean",
+                "package": "typescript",
+                "name": "Boolean"
+              }
+            }
+          ]
+        },
+        {
+          "id": 154,
+          "name": "hasListeners",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 147,
+              "character": 4
+            }
+          ],
+          "signatures": [
+            {
+              "id": 155,
+              "name": "hasListeners",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 156,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "String",
+                    "package": "typescript",
+                    "name": "String"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Boolean",
+                "package": "typescript",
+                "name": "Boolean"
+              }
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "once",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isStatic": true,
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 148,
+              "character": 11
+            }
+          ],
+          "signatures": [
+            {
+              "id": 39,
+              "name": "once",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {
+                "isExternal": true
+              },
+              "parameters": [
+                {
+                  "id": 40,
+                  "name": "emitter",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  }
+                },
+                {
+                  "id": 41,
+                  "name": "event",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true
+                  },
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "reference",
+                          "qualifiedName": "event",
+                          "package": "eventemitter2",
+                          "name": "event"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 42,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isExternal": true,
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "OnceOptions",
+                    "package": "eventemitter2",
+                    "name": "OnceOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ],
+                "qualifiedName": "CancelablePromise",
+                "package": "eventemitter2",
+                "name": "CancelablePromise"
+              }
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "defaultMaxListeners",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isStatic": true,
+            "isExternal": true
+          },
+          "sources": [
+            {
+              "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+              "line": 149,
+              "character": 11
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [44]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [47, 51, 55, 59, 64, 69, 74, 79, 85, 91, 94, 97, 100, 104, 108, 111, 114, 116, 119, 122, 125, 127, 137, 150, 154, 38]
+        },
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [43]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "node_modules/eventemitter2/eventemitter2.d.ts",
+          "line": 117,
+          "character": 21
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "name": "OnEventsMetadata",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "`@OnEvent` decorator metadata"
+      },
+      "children": [
+        {
+          "id": 165,
+          "name": "event",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "comment": {
+            "shortText": "Event (name or pattern) to subscribe to."
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts",
+              "line": 13,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "array",
+            "elementType": {
+              "type": "union",
+              "types": [
+                {
+                  "type": "intrinsic",
+                  "name": "string"
+                },
+                {
+                  "type": "intrinsic",
+                  "name": "symbol"
+                },
+                {
+                  "type": "array",
+                  "elementType": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "symbol"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": 166,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "comment": {
+            "shortText": "Subscription options."
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts",
+              "line": 17,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "OnOptions",
+            "package": "eventemitter2",
+            "name": "OnOptions"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [165, 166]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts",
+          "line": 9,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "name": "OnEvents",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts",
+          "line": 26,
+          "character": 13
+        }
+      ],
+      "signatures": [
+        {
+          "id": 168,
+          "name": "OnEvents",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "comment": {
+            "shortText": "Event listener decorator.\nSubscribes to events based on the specified name(s)."
+          },
+          "parameters": [
+            {
+              "id": 169,
+              "name": "event",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {},
+              "type": {
+                "type": "array",
+                "elementType": {
+                  "type": "union",
+                  "types": [
+                    {
+                      "type": "intrinsic",
+                      "name": "string"
+                    },
+                    {
+                      "type": "intrinsic",
+                      "name": "symbol"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": 170,
+              "name": "options",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {
+                "isOptional": true
+              },
+              "type": {
+                "type": "reference",
+                "qualifiedName": "OnOptions",
+                "package": "eventemitter2",
+                "name": "OnOptions"
+              }
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "MethodDecorator",
+            "package": "typescript",
+            "name": "MethodDecorator"
+          }
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "name": "EventEmitterModule",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 172,
+          "name": "forRoot",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true,
+            "isStatic": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-emitter/event-emitter.module.ts",
+              "line": 12,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 173,
+              "name": "forRoot",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 174,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "EventEmitterModuleOptions",
+                    "package": "@nestjs/event-emitter",
+                    "name": "EventEmitterModuleOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "DynamicModule",
+                "package": "@nestjs/common",
+                "name": "DynamicModule"
+              }
+            }
+          ]
+        },
+        {
+          "id": 175,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 176,
+              "name": "new EventEmitterModule",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 171,
+                "name": "EventEmitterModule"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [172]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [175]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-emitter/event-emitter.module.ts",
+          "line": 11,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "EventDefinition",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "comment": {
+        "shortText": "A definition of a event with response-request map."
+      },
+      "children": [
+        {
+          "id": 22,
+          "name": "response",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+              "line": 5,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "any"
+          }
+        },
+        {
+          "id": 23,
+          "name": "request",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+              "line": 6,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "any"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [22, 23]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 4,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "EventRequest",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "Request type of an event."
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 13,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 25,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 26,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "reference",
+                "id": 21,
+                "name": "EventDefinition"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 25,
+          "name": "Event"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 26,
+            "name": "Map"
+          }
+        },
+        "trueType": {
+          "type": "conditional",
+          "checkType": {
+            "type": "literal",
+            "value": "request"
+          },
+          "extendsType": {
+            "type": "typeOperator",
+            "operator": "keyof",
+            "target": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 25,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 26,
+                "name": "Map"
+              }
+            }
+          },
+          "trueType": {
+            "type": "indexedAccess",
+            "indexType": {
+              "type": "literal",
+              "value": "request"
+            },
+            "objectType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 25,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 26,
+                "name": "Map"
+              }
+            }
+          },
+          "falseType": {
+            "type": "intrinsic",
+            "name": "never"
+          }
+        },
+        "falseType": {
+          "type": "intrinsic",
+          "name": "never"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "EventResponse",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "Response type of an event."
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 23,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 28,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 29,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "reference",
+                "id": 21,
+                "name": "EventDefinition"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 28,
+          "name": "Event"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 29,
+            "name": "Map"
+          }
+        },
+        "trueType": {
+          "type": "conditional",
+          "checkType": {
+            "type": "literal",
+            "value": "response"
+          },
+          "extendsType": {
+            "type": "typeOperator",
+            "operator": "keyof",
+            "target": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 28,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 29,
+                "name": "Map"
+              }
+            }
+          },
+          "trueType": {
+            "type": "indexedAccess",
+            "indexType": {
+              "type": "literal",
+              "value": "response"
+            },
+            "objectType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 28,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 29,
+                "name": "Map"
+              }
+            }
+          },
+          "falseType": {
+            "type": "intrinsic",
+            "name": "void"
+          }
+        },
+        "falseType": {
+          "type": "intrinsic",
+          "name": "never"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "EventMap",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "shortText": "For fast typing the event map."
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 32,
+          "character": 12
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 31,
+          "name": "Events",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "typeArguments": [
+          {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 31,
+                "name": "Events"
+              },
+              {
+                "type": "reference",
+                "id": 21,
+                "name": "EventDefinition"
+              }
+            ],
+            "qualifiedName": "Record",
+            "package": "typescript",
+            "name": "Record"
+          }
+        ],
+        "qualifiedName": "Partial",
+        "package": "typescript",
+        "name": "Partial"
+      }
+    },
+    {
+      "id": 32,
+      "name": "BaseEventMap",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "comment": {
+        "shortText": "Give event map a set of indexes to not make it go crazy when some events are missing from it.\nThey are optional after all."
+      },
+      "children": [
+        {
+          "id": 33,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 34,
+              "name": "new BaseEventMap",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 32,
+                "name": "BaseEventMap"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [33]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 38,
+          "character": 13
+        }
+      ],
+      "indexSignature": {
+        "id": 35,
+        "name": "__index",
+        "kind": 8192,
+        "kindString": "Index signature",
+        "flags": {},
+        "parameters": [
+          {
+            "id": 36,
+            "name": "k",
+            "kind": 32768,
+            "flags": {},
+            "type": {
+              "type": "intrinsic",
+              "name": "string"
+            }
+          }
+        ],
+        "type": {
+          "type": "intrinsic",
+          "name": "any"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "EventManagerModule",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Global",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Global",
+            "package": "@nestjs/common",
+            "name": "Global"
+          },
+          "arguments": {}
+        },
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{\n  providers: [ EventManager ],\n  exports: [ EventManager ]\n}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 2,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 3,
+              "name": "new EventManagerModule",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 1,
+                "name": "EventManagerModule"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [2]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.module.ts",
+          "line": 10,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EventManager",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Injectable",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Injectable",
+            "package": "@nestjs/common",
+            "name": "Injectable"
+          },
+          "arguments": {
+            "options": "{ scope: Scope.DEFAULT }"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 5,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+              "line": 8,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 6,
+              "name": "new EventManager",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 7,
+                  "name": "Event",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 8,
+                  "name": "Map",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 21,
+                            "name": "EventDefinition"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    ],
+                    "qualifiedName": "Partial",
+                    "package": "typescript",
+                    "name": "Partial"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 7,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    ],
+                    "qualifiedName": "Partial",
+                    "package": "typescript",
+                    "name": "Partial"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 9,
+                  "name": "emitter",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 37,
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2",
+                    "name": "EventEmitter2"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 4,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 8,
+                    "name": "Map"
+                  }
+                ],
+                "name": "EventManager"
+              }
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "emit",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+              "line": 10,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 11,
+              "name": "emit",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 12,
+                  "name": "E",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  }
+                },
+                {
+                  "id": 13,
+                  "name": "MultipleResult",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  "default": {
+                    "type": "literal",
+                    "value": false
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 14,
+                  "name": "dispatch",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 12,
+                    "name": "E"
+                  }
+                },
+                {
+                  "id": 15,
+                  "name": "args",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 24,
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 12,
+                        "name": "E"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 8,
+                        "name": "Map"
+                      }
+                    ],
+                    "name": "EventRequest"
+                  }
+                },
+                {
+                  "id": 16,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 17,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 18,
+                          "name": "multiple",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "sources": [
+                            {
+                              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+                              "line": 14,
+                              "character": 16
+                            }
+                          ],
+                          "type": {
+                            "type": "reference",
+                            "id": 13,
+                            "name": "MultipleResult"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "kind": 1024,
+                          "children": [18]
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "conditional",
+                    "checkType": {
+                      "type": "reference",
+                      "id": 13,
+                      "name": "MultipleResult"
+                    },
+                    "extendsType": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "trueType": {
+                      "type": "array",
+                      "elementType": {
+                        "type": "reference",
+                        "id": 27,
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 12,
+                            "name": "E"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 8,
+                            "name": "Map"
+                          }
+                        ],
+                        "name": "EventResponse"
+                      }
+                    },
+                    "falseType": {
+                      "type": "reference",
+                      "id": 27,
+                      "typeArguments": [
+                        {
+                          "type": "reference",
+                          "id": 12,
+                          "name": "E"
+                        },
+                        {
+                          "type": "reference",
+                          "id": 8,
+                          "name": "Map"
+                        }
+                      ],
+                      "name": "EventResponse"
+                    }
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [5]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [10]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+          "line": 7,
+          "character": 13
+        }
+      ],
+      "typeParameter": [
+        {
+          "id": 19,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 20,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 21,
+                    "name": "EventDefinition"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          },
+          "default": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 7,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "qualifiedName": "Record",
+                "package": "typescript",
+                "name": "Record"
+              }
+            ],
+            "qualifiedName": "Partial",
+            "package": "typescript",
+            "name": "Partial"
+          }
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [157, 164, 21]
+    },
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [160, 167]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [37, 171, 32, 1, 4]
+    },
+    {
+      "title": "Type aliases",
+      "kind": 4194304,
+      "children": [24, 27, 30]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "packages/nestjs-emitter/src/index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

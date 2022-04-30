@@ -1,0 +1,593 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-graphql",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 5,
+      "name": "PaginationArgsInput",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "InputType",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "InputType",
+            "package": "@nestjs/graphql",
+            "name": "InputType"
+          },
+          "arguments": {}
+        }
+      ],
+      "children": [
+        {
+          "id": 6,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 7,
+              "name": "new PaginationArgsInput",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 5,
+                "name": "PaginationArgsInput"
+              }
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "limit",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "decorators": [
+            {
+              "name": "IsNumber",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsNumber",
+                "package": "class-validator",
+                "name": "IsNumber"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "IsPositive",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsPositive",
+                "package": "class-validator",
+                "name": "IsPositive"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "IsOptional",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsOptional",
+                "package": "class-validator",
+                "name": "IsOptional"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => Int",
+                "options": "{ defaultValue: 10 }"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 14,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "implementationOf": {
+            "type": "reference",
+            "name": "PaginationInputDto.limit"
+          }
+        },
+        {
+          "id": 9,
+          "name": "page",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "decorators": [
+            {
+              "name": "IsNumber",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsNumber",
+                "package": "class-validator",
+                "name": "IsNumber"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "IsPositive",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsPositive",
+                "package": "class-validator",
+                "name": "IsPositive"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "IsOptional",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsOptional",
+                "package": "class-validator",
+                "name": "IsOptional"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => Int",
+                "options": "{ defaultValue: 1 }"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 20,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "implementationOf": {
+            "type": "reference",
+            "name": "PaginationInputDto.page"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [6]
+        },
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [8, 9]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 9,
+          "character": 13
+        }
+      ],
+      "implementedTypes": [
+        {
+          "type": "reference",
+          "qualifiedName": "PaginationInputDto",
+          "package": "@cenk1cenk2/nestjs-utils",
+          "name": "PaginationInputDto"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "PaginationArgs",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "comment": {
+        "shortText": "Input arguments for doing a pagination on multiple entries."
+      },
+      "decorators": [
+        {
+          "name": "ArgsType",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "ArgsType",
+            "package": "@nestjs/graphql",
+            "name": "ArgsType"
+          },
+          "arguments": {}
+        }
+      ],
+      "children": [
+        {
+          "id": 11,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 12,
+              "name": "new PaginationArgs",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 10,
+                "name": "PaginationArgs"
+              }
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "pagination",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "decorators": [
+            {
+              "name": "IsObject",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsObject",
+                "package": "class-validator",
+                "name": "IsObject"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "IsOptional",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "IsOptional",
+                "package": "class-validator",
+                "name": "IsOptional"
+              },
+              "arguments": {}
+            },
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => PaginationArgsInput",
+                "options": "{ nullable: true, defaultValue: { limit: 10, page: 1 } }"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 31,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 5,
+            "name": "PaginationArgsInput"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [11]
+        },
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [13]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 27,
+          "character": 13
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "PaginationOutput",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "ObjectType",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "ObjectType",
+            "package": "@nestjs/graphql",
+            "name": "ObjectType"
+          },
+          "arguments": {}
+        }
+      ],
+      "children": [
+        {
+          "id": 15,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 16,
+              "name": "new PaginationOutput",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 14,
+                "name": "PaginationOutput"
+              }
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "limit",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "decorators": [
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => Int"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 37,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "implementationOf": {
+            "type": "reference",
+            "name": "PaginationOutputDto.limit"
+          }
+        },
+        {
+          "id": 18,
+          "name": "page",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "decorators": [
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => Int"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 40,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "implementationOf": {
+            "type": "reference",
+            "name": "PaginationOutputDto.page"
+          }
+        },
+        {
+          "id": 19,
+          "name": "total",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {},
+          "decorators": [
+            {
+              "name": "Field",
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Field",
+                "package": "@nestjs/graphql",
+                "name": "Field"
+              },
+              "arguments": {
+                "returnTypeFunction": "() => Int"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "interfaces/pagination.interface.ts",
+              "line": 43,
+              "character": 4
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "number"
+          },
+          "implementationOf": {
+            "type": "reference",
+            "name": "PaginationOutputDto.total"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [15]
+        },
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [17, 18, 19]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 35,
+          "character": 13
+        }
+      ],
+      "implementedTypes": [
+        {
+          "type": "reference",
+          "qualifiedName": "PaginationOutputDto",
+          "package": "@cenk1cenk2/nestjs-utils",
+          "name": "PaginationOutputDto"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Paginated",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "interfaces/pagination.interface.ts",
+          "line": 50,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 2,
+          "name": "Paginated",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "comment": {
+            "shortText": "Paginate given output interface for graphql."
+          },
+          "typeParameter": [
+            {
+              "id": 3,
+              "name": "T",
+              "kind": 131072,
+              "kindString": "Type parameter",
+              "flags": {}
+            }
+          ],
+          "parameters": [
+            {
+              "id": 4,
+              "name": "classRef",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {},
+              "comment": {
+                "shortText": "\n"
+              },
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 3,
+                    "name": "T"
+                  }
+                ],
+                "qualifiedName": "Type",
+                "package": "@nestjs/common",
+                "name": "Type"
+              }
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "any"
+          }
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [5, 10, 14]
+    },
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [1]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

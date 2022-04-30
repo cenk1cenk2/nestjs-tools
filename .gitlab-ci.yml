@@ -18,7 +18,20 @@ include:
     file: /templates/markdown-toc.gitlab-ci.yml
 
   - project: devops/pipes
-    file: /templates/node-typedoc.gitlab-ci.yml
-
-  - project: devops/pipes
     file: /templates/semantic-release.gitlab-ci.yml
+
+typedoc:
+  stage: docs
+  image: $CI_REGISTRY/devops/pipes/gitlab-pipes-node:${NODE_VERSION}
+  script:
+    - pipe run docs:api
+  artifacts:
+    paths:
+      - docs/
+      - 'packages/*/docs/'
+  only:
+    refs:
+      - master
+      - main
+  tags:
+    - docker

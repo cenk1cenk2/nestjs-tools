@@ -1,0 +1,672 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-graphql-redis-cache",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 1,
+      "name": "InjectRedisCacheManager",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "decorates": [
+        {
+          "type": "reference",
+          "id": 21,
+          "name": "cache"
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "decorator/inject.decorator.ts",
+          "line": 3,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 2,
+          "name": "InjectRedisCacheManager",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "type": {
+            "type": "reflection",
+            "declaration": {
+              "id": 3,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "decorator/inject.decorator.ts",
+                  "line": 3,
+                  "character": 44
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 4,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 5,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "unknown"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "union",
+                        "types": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "symbol"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "name": "index",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "RedisCacheManagerGraphlQLInterceptor",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Injectable",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Injectable",
+            "package": "@nestjs/common",
+            "name": "Injectable"
+          },
+          "arguments": {}
+        }
+      ],
+      "children": [
+        {
+          "id": 23,
+          "name": "logger",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 15,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Logger",
+            "package": "@nestjs/common",
+            "name": "Logger"
+          },
+          "defaultValue": "..."
+        },
+        {
+          "id": 19,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 17,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 20,
+              "name": "new RedisCacheManagerGraphlQLInterceptor",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 21,
+                  "name": "cache",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "decorators": [
+                    {
+                      "name": "InjectRedisCacheManager",
+                      "type": {
+                        "type": "reference",
+                        "id": 1,
+                        "name": "InjectRedisCacheManager"
+                      },
+                      "arguments": {}
+                    }
+                  ],
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "Cache",
+                    "package": "@types/cache-manager",
+                    "name": "Cache"
+                  }
+                },
+                {
+                  "id": 22,
+                  "name": "reflector",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "Reflector",
+                    "package": "@nestjs/core",
+                    "name": "Reflector"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 18,
+                "name": "RedisCacheManagerGraphlQLInterceptor"
+              }
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "name": "reflector",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isProtected": true,
+            "isReadonly": true
+          },
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Reflector",
+            "package": "@nestjs/core",
+            "name": "Reflector"
+          }
+        },
+        {
+          "id": 25,
+          "name": "intercept",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 19,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 26,
+              "name": "intercept",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 27,
+                  "name": "context",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "qualifiedName": "GqlExecutionContext",
+                    "package": "@nestjs/graphql",
+                    "name": "GqlExecutionContext"
+                  }
+                },
+                {
+                  "id": 28,
+                  "name": "next",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "qualifiedName": "CallHandler",
+                    "package": "@nestjs/common",
+                    "name": "CallHandler"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "qualifiedName": "Observable",
+                    "package": "rxjs",
+                    "name": "Observable"
+                  }
+                ],
+                "qualifiedName": "Promise",
+                "package": "typescript",
+                "name": "Promise"
+              },
+              "implementationOf": {
+                "type": "reference",
+                "name": "NestInterceptor.intercept"
+              }
+            }
+          ],
+          "implementationOf": {
+            "type": "reference",
+            "name": "NestInterceptor.intercept"
+          }
+        },
+        {
+          "id": 29,
+          "name": "createTopic",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 40,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 30,
+              "name": "createTopic",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 31,
+                  "name": "pattern",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 32,
+                  "name": "extensions",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "union",
+                    "types": [
+                      {
+                        "type": "intrinsic",
+                        "name": "string"
+                      },
+                      {
+                        "type": "array",
+                        "elementType": {
+                          "type": "intrinsic",
+                          "name": "string"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "type": {
+                "type": "intrinsic",
+                "name": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [23, 24]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [19]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [25, 29]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-cache-manager.interceptor.ts",
+          "line": 14,
+          "character": 13
+        }
+      ],
+      "implementedTypes": [
+        {
+          "type": "reference",
+          "qualifiedName": "NestInterceptor",
+          "package": "@nestjs/common",
+          "name": "NestInterceptor"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "RedisCacheManagerProvider",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "redis-cache-manager.interface.ts",
+          "line": 3,
+          "character": 12
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "qualifiedName": "Cache",
+        "package": "@types/cache-manager",
+        "name": "Cache"
+      }
+    },
+    {
+      "id": 15,
+      "name": "RedisCacheManagerOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 16,
+          "name": "global",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interface.ts",
+              "line": 6,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 17,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interface.ts",
+              "line": 7,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "CacheOptions",
+            "package": "@types/cache-manager",
+            "name": "CacheOptions"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [16, 17]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-cache-manager.interface.ts",
+          "line": 5,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "RedisCacheManagerModule",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Global",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Global",
+            "package": "@nestjs/common",
+            "name": "Global"
+          },
+          "arguments": {}
+        },
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{\n  imports: [\n    CacheModule.register({\n      ...ConfigService.get<CacheModuleOptions>('redisCacheManager'),\n      store: redisStore\n    })\n  ],\n  exports: [ CacheModule ]\n}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 9,
+          "name": "forRoot",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true,
+            "isStatic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.module.ts",
+              "line": 19,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 10,
+              "name": "forRoot",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 11,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 15,
+                    "name": "RedisCacheManagerOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "DynamicModule",
+                "package": "@nestjs/common",
+                "name": "DynamicModule"
+              }
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 13,
+              "name": "new RedisCacheManagerModule",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 8,
+                "name": "RedisCacheManagerModule"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [9]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [12]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "redis-cache-manager.module.ts",
+          "line": 18,
+          "character": 13
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [1]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [18, 8]
+    },
+    {
+      "title": "Type aliases",
+      "kind": 4194304,
+      "children": [14]
+    },
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [15]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}
