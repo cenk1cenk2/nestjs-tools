@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-emitter [4.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.0...@cenk1cenk2/nestjs-emitter@4.0.1) (2022-05-05)
+
+### Bug Fixes
+
+- **deps:** update all minor dependency updates ([7fd85d8](https://github.com/cenk1cenk2/nestjs-tools/commit/7fd85d8209aec133eca95fd5bc22c1351f1a83f8))
+
 # @cenk1cenk2/nestjs-emitter [4.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@3.0.2...@cenk1cenk2/nestjs-emitter@4.0.0) (2022-04-30)
 
 ### Bug Fixes
