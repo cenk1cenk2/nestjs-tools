@@ -1,3 +1,9 @@
+# @cenk1cenk2/nestjs-s3 1.0.0 (2022-05-12)
+
+### Features
+
+- **nestjs-s3:** add new utility package ([d81546e](https://github.com/cenk1cenk2/nestjs-tools/commit/d81546e2e0cf83e0d368ec20287b21e6ff7447dc))
+
 # @cenk1cenk2/nestjs-redis-store [2.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@1.0.3...@cenk1cenk2/nestjs-redis-store@2.0.0) (2022-04-30)
 
 ### Performance Improvements

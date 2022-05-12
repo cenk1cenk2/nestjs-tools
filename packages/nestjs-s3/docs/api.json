@@ -1,0 +1,386 @@
+{
+  "id": 0,
+  "name": "@cenk1cenk2/nestjs-s3",
+  "kind": 1,
+  "kindString": "Project",
+  "flags": {},
+  "originalName": "",
+  "children": [
+    {
+      "id": 1,
+      "name": "InjectS3Service",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "decorator/s3.decorator.ts",
+          "line": 5,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 2,
+          "name": "InjectS3Service",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "type": {
+            "type": "reflection",
+            "declaration": {
+              "id": 3,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "decorator/s3.decorator.ts",
+                  "line": 5,
+                  "character": 36
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 4,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 5,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "unknown"
+                          }
+                        ],
+                        "qualifiedName": "Record",
+                        "package": "typescript",
+                        "name": "Record"
+                      }
+                    },
+                    {
+                      "id": 6,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "union",
+                        "types": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "symbol"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": 7,
+                      "name": "index",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "S3_INSTANCE",
+      "kind": 32,
+      "kindString": "Variable",
+      "flags": {
+        "isConst": true
+      },
+      "sources": [
+        {
+          "fileName": "s3.constants.ts",
+          "line": 1,
+          "character": 13
+        }
+      ],
+      "type": {
+        "type": "query",
+        "queryType": {
+          "type": "reference",
+          "id": 8,
+          "name": "S3_INSTANCE"
+        }
+      },
+      "defaultValue": "..."
+    },
+    {
+      "id": 9,
+      "name": "S3Provider",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "s3.interface.ts",
+          "line": 3,
+          "character": 12
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "qualifiedName": "S3",
+        "package": "aws-sdk",
+        "name": "S3"
+      }
+    },
+    {
+      "id": 10,
+      "name": "S3ModuleOptions",
+      "kind": 256,
+      "kindString": "Interface",
+      "flags": {},
+      "children": [
+        {
+          "id": 11,
+          "name": "global",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "s3.interface.ts",
+              "line": 6,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 12,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "s3.interface.ts",
+              "line": 7,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "qualifiedName": "S3.ClientConfiguration",
+            "package": "aws-sdk",
+            "name": "ClientConfiguration"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Properties",
+          "kind": 1024,
+          "children": [11, 12]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "s3.interface.ts",
+          "line": 5,
+          "character": 17
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "S3Module",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "decorators": [
+        {
+          "name": "Global",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Global",
+            "package": "@nestjs/common",
+            "name": "Global"
+          },
+          "arguments": {}
+        },
+        {
+          "name": "Module",
+          "type": {
+            "type": "reference",
+            "qualifiedName": "Module",
+            "package": "@nestjs/common",
+            "name": "Module"
+          },
+          "arguments": {
+            "metadata": "{\n  providers: [\n    {\n      provide: S3_INSTANCE,\n      useFactory: (): S3 => new S3(ConfigService.get<S3.Types.ClientConfiguration>('s3'))\n    }\n  ],\n  exports: [ S3_INSTANCE ]\n}"
+          }
+        }
+      ],
+      "children": [
+        {
+          "id": 14,
+          "name": "forRoot",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true,
+            "isStatic": true
+          },
+          "sources": [
+            {
+              "fileName": "s3.module.ts",
+              "line": 20,
+              "character": 16
+            }
+          ],
+          "signatures": [
+            {
+              "id": 15,
+              "name": "forRoot",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "parameters": [
+                {
+                  "id": 16,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reference",
+                    "id": 10,
+                    "name": "S3ModuleOptions"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "qualifiedName": "DynamicModule",
+                "package": "@nestjs/common",
+                "name": "DynamicModule"
+              }
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 18,
+              "name": "new S3Module",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 13,
+                "name": "S3Module"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [14]
+        },
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [17]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "s3.module.ts",
+          "line": 19,
+          "character": 13
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [1]
+    },
+    {
+      "title": "Variables",
+      "kind": 32,
+      "children": [8]
+    },
+    {
+      "title": "Type aliases",
+      "kind": 4194304,
+      "children": [9]
+    },
+    {
+      "title": "Interfaces",
+      "kind": 256,
+      "children": [10]
+    },
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [13]
+    }
+  ],
+  "sources": [
+    {
+      "fileName": "index.ts",
+      "line": 1,
+      "character": 0
+    }
+  ]
+}

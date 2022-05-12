@@ -1,0 +1,27 @@
+# Class: S3Module
+
+## Methods
+
+### forRoot
+
+▸ `Static` **forRoot**(`options?`): `DynamicModule`
+
+#### Parameters
+
+| Name       | Type                                                  |
+| :--------- | :---------------------------------------------------- |
+| `options?` | [`S3ModuleOptions`](../interfaces/S3ModuleOptions.md) |
+
+#### Returns
+
+`DynamicModule`
+
+#### Defined in
+
+s3.module.ts:20
+
+## Constructors
+
+### constructor
+
+• **new S3Module**()
