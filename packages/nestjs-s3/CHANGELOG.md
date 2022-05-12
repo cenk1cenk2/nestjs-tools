@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-s3 [1.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-s3@1.0.0...@cenk1cenk2/nestjs-s3@1.0.1) (2022-05-12)
+
+### Bug Fixes
+
+- add missing npmignore files ([2d8a4d0](https://github.com/cenk1cenk2/nestjs-tools/commit/2d8a4d0ed98c1261911628a446ec85666dd8290f))
+
 # @cenk1cenk2/nestjs-s3 1.0.0 (2022-05-12)
 
 ### Features
