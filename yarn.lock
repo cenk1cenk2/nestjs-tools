@@ -2903,10 +2903,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-sdk@^2.1139.0:
-  version "2.1139.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1139.0.tgz#8800d6cff33663f5d226f1cc51cdd83bd46d7ffe"
-  integrity sha512-aLmdIhIQuOdbf6F/QJCHm3xfr+9Esh9vWxZmOi54iEOcfHuO48VEEfa2A6NXb2JmUtWGB5AX80ssp6F90bhA6g==
+aws-sdk@^2.1140.0:
+  version "2.1140.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1140.0.tgz#7f19b821aac87dc6edf4d5ce256d496106779dfe"
+  integrity sha512-cNdq56UQrUzXmCgwo0/J5GGLmfHn+Vp38qgcK/Xd86Sch8P9v2o8tNv7J82mYU98YY2vO007BMxRylA4Sd8PkQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3186,10 +3186,10 @@ cache-manager-ioredis@^2.1.0:
   dependencies:
     ioredis "^4.14.1"
 
-cache-manager@^3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-3.6.2.tgz#79b08ec0ace3a662b6c4cbf92f570c1185d5e600"
-  integrity sha512-JEkwAFT0RmUO4C6LtqpFeEKF2d6T6ELTrosMKPGdDyv6PzZjBDTvPJcbBNFPFNbnYfD06oD1KH3qB4vs7lDBig==
+cache-manager@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-3.6.3.tgz#48052f3cf9ee4bac1cbb6adeedd69faf9da4ec04"
+  integrity sha512-dS4DnV6c6cQcVH5OxzIU1XZaACXwvVIiUPkFytnRmLOACuBGv3GQgRQ1RJGRRw4/9DF14ZK2RFlZu1TUgDniMg==
   dependencies:
     async "3.2.3"
     lodash.clonedeep "^4.5.0"
