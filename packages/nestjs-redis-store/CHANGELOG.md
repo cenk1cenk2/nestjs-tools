@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-redis-store [2.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.1.0...@cenk1cenk2/nestjs-redis-store@2.1.1) (2022-05-24)
+
+### Bug Fixes
+
+- update initiation method ([5a61b37](https://github.com/cenk1cenk2/nestjs-tools/commit/5a61b374d129108421d1c2d728e648d862dce131))
+
 # @cenk1cenk2/nestjs-redis-store [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.0.2...@cenk1cenk2/nestjs-redis-store@2.1.0) (2022-05-24)
 
 ### Features
