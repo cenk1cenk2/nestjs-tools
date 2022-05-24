@@ -1,4 +1,4 @@
-import type { OnApplicationBootstrap } from '@nestjs/common'
+import type { OnModuleInit } from '@nestjs/common'
 import { Injectable } from '@nestjs/common'
 import type { Redis } from 'ioredis'
 import RedisIO from 'ioredis'
@@ -7,12 +7,12 @@ import type { RedisIOSetOptions } from './redis-io-compatability.interface'
 import { RedisPubSubModuleOptions } from './redis-store.interface'
 
 @Injectable()
-export class RedisStoreService<RedisStoreTopics extends string = string, RedisStoreMap extends Record<RedisStoreTopics, any> = any> implements OnApplicationBootstrap {
+export class RedisStoreService<RedisStoreTopics extends string = string, RedisStoreMap extends Record<RedisStoreTopics, any> = any> implements OnModuleInit {
   public client: Redis
 
   constructor (private options: RedisPubSubModuleOptions) {}
 
-  public onApplicationBootstrap (): void {
+  public onModuleInit (): void {
     this.client = new RedisIO(this.options.options)
   }
 
