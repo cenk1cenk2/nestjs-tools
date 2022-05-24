@@ -111,7 +111,7 @@ redis-store.service.ts:19
 
 #### Defined in
 
-redis-store.service.ts:23
+redis-store.service.ts:27
 
 ---
 
@@ -139,7 +139,7 @@ redis-store.service.ts:23
 
 #### Defined in
 
-redis-store.service.ts:44
+redis-store.service.ts:48
 
 ---
 
@@ -168,7 +168,7 @@ redis-store.service.ts:44
 
 #### Defined in
 
-redis-store.service.ts:52
+redis-store.service.ts:56
 
 ---
 
@@ -195,7 +195,7 @@ redis-store.service.ts:52
 
 #### Defined in
 
-redis-store.service.ts:68
+redis-store.service.ts:72
 
 ---
 
@@ -209,7 +209,7 @@ redis-store.service.ts:68
 
 #### Defined in
 
-redis-store.service.ts:74
+redis-store.service.ts:78
 
 ---
 
@@ -230,4 +230,4 @@ redis-store.service.ts:74
 
 #### Defined in
 
-redis-store.service.ts:78
+redis-store.service.ts:82
