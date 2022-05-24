@@ -274,7 +274,7 @@
             "name": "Module"
           },
           "arguments": {
-            "metadata": "{\n  providers: [\n    {\n      provide: REDIS_STORE_INSTANCE,\n      useFactory: (): RedisStoreService<any, any> =>\n        new RedisStoreService({\n          delimiter: REDIS_STORE_DELIMITER,\n          options: ConfigService.get<RedisOptions>('redisStore')\n        })\n    }\n  ],\n  exports: [ REDIS_STORE_INSTANCE ]\n}"
+            "metadata": "{\n  providers: [\n    {\n      provide: REDIS_STORE_INSTANCE,\n      useFactory: (): RedisStoreService =>\n        new RedisStoreService({\n          delimiter: REDIS_STORE_DELIMITER,\n          options: ConfigService.get<RedisOptions>('redisStore')\n        })\n    }\n  ],\n  exports: [ REDIS_STORE_INSTANCE ]\n}"
           }
         }
       ],
@@ -389,7 +389,7 @@
       ],
       "children": [
         {
-          "id": 26,
+          "id": 24,
           "name": "client",
           "kind": 1024,
           "kindString": "Property",
@@ -399,7 +399,7 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 11,
+              "line": 10,
               "character": 9
             }
           ],
@@ -419,7 +419,7 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 13,
+              "line": 12,
               "character": 2
             }
           ],
@@ -430,54 +430,9 @@
               "kind": 16384,
               "kindString": "Constructor signature",
               "flags": {},
-              "typeParameter": [
-                {
-                  "id": 23,
-                  "name": "RedisStoreTopics",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  },
-                  "default": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                },
-                {
-                  "id": 24,
-                  "name": "RedisStoreMap",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "typeArguments": [
-                      {
-                        "type": "reference",
-                        "id": 23,
-                        "name": "RedisStoreTopics"
-                      },
-                      {
-                        "type": "intrinsic",
-                        "name": "any"
-                      }
-                    ],
-                    "qualifiedName": "Record",
-                    "package": "typescript",
-                    "name": "Record"
-                  },
-                  "default": {
-                    "type": "intrinsic",
-                    "name": "any"
-                  }
-                }
-              ],
               "parameters": [
                 {
-                  "id": 25,
+                  "id": 23,
                   "name": "options",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -492,25 +447,13 @@
               "type": {
                 "type": "reference",
                 "id": 20,
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 23,
-                    "name": "RedisStoreTopics"
-                  },
-                  {
-                    "type": "reference",
-                    "id": 24,
-                    "name": "RedisStoreMap"
-                  }
-                ],
                 "name": "RedisStoreService"
               }
             }
           ]
         },
         {
-          "id": 27,
+          "id": 25,
           "name": "onModuleInit",
           "kind": 2048,
           "kindString": "Method",
@@ -520,13 +463,13 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 15,
+              "line": 14,
               "character": 9
             }
           ],
           "signatures": [
             {
-              "id": 28,
+              "id": 26,
               "name": "onModuleInit",
               "kind": 4096,
               "kindString": "Call signature",
@@ -547,7 +490,7 @@
           }
         },
         {
-          "id": 29,
+          "id": 27,
           "name": "createChild",
           "kind": 2048,
           "kindString": "Method",
@@ -557,553 +500,27 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 19,
+              "line": 18,
               "character": 9
             }
           ],
           "signatures": [
             {
-              "id": 30,
+              "id": 28,
               "name": "createChild",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
-              "typeParameter": [
-                {
-                  "id": 31,
-                  "name": "T",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  },
-                  "default": {
-                    "type": "reference",
-                    "id": 23,
-                    "name": "RedisStoreTopics"
-                  }
-                },
-                {
-                  "id": 32,
-                  "name": "K",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "typeArguments": [
-                      {
-                        "type": "reference",
-                        "id": 31,
-                        "name": "T"
-                      },
-                      {
-                        "type": "intrinsic",
-                        "name": "any"
-                      }
-                    ],
-                    "qualifiedName": "Record",
-                    "package": "typescript",
-                    "name": "Record"
-                  },
-                  "default": {
-                    "type": "reference",
-                    "id": 24,
-                    "name": "RedisStoreMap"
-                  }
-                }
-              ],
               "type": {
                 "type": "reference",
                 "id": 20,
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 31,
-                    "name": "T"
-                  },
-                  {
-                    "type": "reference",
-                    "id": 32,
-                    "name": "K"
-                  }
-                ],
                 "name": "RedisStoreService"
               }
             }
           ]
         },
         {
-          "id": 33,
-          "name": "set",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 27,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 34,
-              "name": "set",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "typeParameter": [
-                {
-                  "id": 35,
-                  "name": "Pattern",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                },
-                {
-                  "id": 36,
-                  "name": "Data",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "any"
-                  }
-                }
-              ],
-              "parameters": [
-                {
-                  "id": 37,
-                  "name": "pattern",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 35,
-                    "name": "Pattern"
-                  }
-                },
-                {
-                  "id": 38,
-                  "name": "extensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
-                  },
-                  "defaultValue": "[]"
-                },
-                {
-                  "id": 39,
-                  "name": "payload",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 36,
-                    "name": "Data"
-                  }
-                },
-                {
-                  "id": 40,
-                  "name": "options",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {
-                    "isOptional": true
-                  },
-                  "type": {
-                    "type": "reference",
-                    "name": "RedisIOSetOptions"
-                  }
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
-              }
-            }
-          ]
-        },
-        {
-          "id": 41,
-          "name": "get",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 48,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 42,
-              "name": "get",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "typeParameter": [
-                {
-                  "id": 43,
-                  "name": "Pattern",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                },
-                {
-                  "id": 44,
-                  "name": "Data",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "any"
-                  }
-                }
-              ],
-              "parameters": [
-                {
-                  "id": 45,
-                  "name": "pattern",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 43,
-                    "name": "Pattern"
-                  }
-                },
-                {
-                  "id": 46,
-                  "name": "extensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
-                  },
-                  "defaultValue": "[]"
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 44,
-                    "name": "Data"
-                  }
-                ],
-                "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
-              }
-            }
-          ]
-        },
-        {
-          "id": 47,
-          "name": "rename",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 56,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 48,
-              "name": "rename",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "typeParameter": [
-                {
-                  "id": 49,
-                  "name": "Pattern",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                }
-              ],
-              "parameters": [
-                {
-                  "id": 50,
-                  "name": "pattern",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 49,
-                    "name": "Pattern"
-                  }
-                },
-                {
-                  "id": 51,
-                  "name": "extensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
-                  },
-                  "defaultValue": "[]"
-                },
-                {
-                  "id": 52,
-                  "name": "newPattern",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 49,
-                    "name": "Pattern"
-                  }
-                },
-                {
-                  "id": 53,
-                  "name": "newExtensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
-                  },
-                  "defaultValue": "[]"
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
-              }
-            }
-          ]
-        },
-        {
-          "id": 54,
-          "name": "del",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 72,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 55,
-              "name": "del",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "typeParameter": [
-                {
-                  "id": 56,
-                  "name": "Pattern",
-                  "kind": 131072,
-                  "kindString": "Type parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                }
-              ],
-              "parameters": [
-                {
-                  "id": 57,
-                  "name": "pattern",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 56,
-                    "name": "Pattern"
-                  }
-                },
-                {
-                  "id": 58,
-                  "name": "extensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
-                  },
-                  "defaultValue": "[]"
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "number"
-                  }
-                ],
-                "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
-              }
-            }
-          ]
-        },
-        {
-          "id": 59,
-          "name": "getClient",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 78,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 60,
-              "name": "getClient",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "qualifiedName": "Redis",
-                "package": "ioredis",
-                "name": "Redis"
-              }
-            }
-          ]
-        },
-        {
-          "id": 61,
+          "id": 29,
           "name": "createTopic",
           "kind": 2048,
           "kindString": "Method",
@@ -1113,21 +530,21 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 82,
+              "line": 26,
               "character": 9
             }
           ],
           "signatures": [
             {
-              "id": 62,
+              "id": 30,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 63,
-                  "name": "pattern",
+                  "id": 31,
+                  "name": "topic",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
@@ -1137,26 +554,19 @@
                   }
                 },
                 {
-                  "id": 64,
+                  "id": 32,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
-                  "flags": {},
+                  "flags": {
+                    "isRest": true
+                  },
                   "type": {
-                    "type": "union",
-                    "types": [
-                      {
-                        "type": "intrinsic",
-                        "name": "string"
-                      },
-                      {
-                        "type": "array",
-                        "elementType": {
-                          "type": "intrinsic",
-                          "name": "string"
-                        }
-                      }
-                    ]
+                    "type": "array",
+                    "elementType": {
+                      "type": "intrinsic",
+                      "name": "string"
+                    }
                   }
                 }
               ],
@@ -1172,7 +582,7 @@
         {
           "title": "Properties",
           "kind": 1024,
-          "children": [26]
+          "children": [24]
         },
         {
           "title": "Constructors",
@@ -1182,59 +592,14 @@
         {
           "title": "Methods",
           "kind": 2048,
-          "children": [27, 29, 33, 41, 47, 54, 59, 61]
+          "children": [25, 27, 29]
         }
       ],
       "sources": [
         {
           "fileName": "redis-store.service.ts",
-          "line": 10,
+          "line": 9,
           "character": 13
-        }
-      ],
-      "typeParameter": [
-        {
-          "id": 65,
-          "name": "RedisStoreTopics",
-          "kind": 131072,
-          "kindString": "Type parameter",
-          "flags": {},
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          },
-          "default": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 66,
-          "name": "RedisStoreMap",
-          "kind": 131072,
-          "kindString": "Type parameter",
-          "flags": {},
-          "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "reference",
-                "id": 23,
-                "name": "RedisStoreTopics"
-              },
-              {
-                "type": "intrinsic",
-                "name": "any"
-              }
-            ],
-            "qualifiedName": "Record",
-            "package": "typescript",
-            "name": "Record"
-          },
-          "default": {
-            "type": "intrinsic",
-            "name": "any"
-          }
         }
       ],
       "implementedTypes": [

@@ -1,3 +1,13 @@
+# @cenk1cenk2/nestjs-redis-store [3.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.1.1...@cenk1cenk2/nestjs-redis-store@3.0.0) (2022-05-24)
+
+### Performance Improvements
+
+- remove unnessary testingn stuff ([53ece5e](https://github.com/cenk1cenk2/nestjs-tools/commit/53ece5efe84880fed48e9624e001772a76aa61ce))
+
+### BREAKING CHANGES
+
+- this removes some stuff that might be used from the unstable api
+
 ## @cenk1cenk2/nestjs-redis-store [2.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.1.0...@cenk1cenk2/nestjs-redis-store@2.1.1) (2022-05-24)
 
 ### Bug Fixes

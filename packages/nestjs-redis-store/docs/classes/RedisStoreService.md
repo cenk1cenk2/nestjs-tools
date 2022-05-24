@@ -1,11 +1,4 @@
-# Class: RedisStoreService<RedisStoreTopics, RedisStoreMap\>
-
-## Type parameters
-
-| Name               | Type                                                 |
-| :----------------- | :--------------------------------------------------- |
-| `RedisStoreTopics` | extends `string` = `string`                          |
-| `RedisStoreMap`    | extends `Record`<`RedisStoreTopics`, `any`\> = `any` |
+# Class: RedisStoreService
 
 ## Implements
 
@@ -19,20 +12,13 @@
 
 #### Defined in
 
-redis-store.service.ts:11
+redis-store.service.ts:10
 
 ## Constructors
 
 ### constructor
 
-• **new RedisStoreService**<`RedisStoreTopics`, `RedisStoreMap`\>(`options`)
-
-#### Type parameters
-
-| Name               | Type                                                 |
-| :----------------- | :--------------------------------------------------- |
-| `RedisStoreTopics` | extends `string` = `string`                          |
-| `RedisStoreMap`    | extends `Record`<`RedisStoreTopics`, `any`\> = `any` |
+• **new RedisStoreService**(`options`)
 
 #### Parameters
 
@@ -42,7 +28,7 @@ redis-store.service.ts:11
 
 #### Defined in
 
-redis-store.service.ts:13
+redis-store.service.ts:12
 
 ## Methods
 
@@ -60,169 +46,34 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-redis-store.service.ts:15
+redis-store.service.ts:14
 
 ---
 
 ### createChild
 
-▸ **createChild**<`T`, `K`\>(): [`RedisStoreService`](RedisStoreService.md)<`T`, `K`\>
-
-#### Type parameters
-
-| Name | Type                                            |
-| :--- | :---------------------------------------------- |
-| `T`  | extends `string` = `RedisStoreTopics`           |
-| `K`  | extends `Record`<`T`, `any`\> = `RedisStoreMap` |
+▸ **createChild**(): [`RedisStoreService`](RedisStoreService.md)
 
 #### Returns
 
-[`RedisStoreService`](RedisStoreService.md)<`T`, `K`\>
+[`RedisStoreService`](RedisStoreService.md)
 
 #### Defined in
 
-redis-store.service.ts:19
-
----
-
-### set
-
-▸ **set**<`Pattern`, `Data`\>(`pattern`, `extensions?`, `payload`, `options?`): `Promise`<`void`\>
-
-#### Type parameters
-
-| Name      | Type             |
-| :-------- | :--------------- |
-| `Pattern` | extends `string` |
-| `Data`    | extends `any`    |
-
-#### Parameters
-
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
-| `payload`    | `Data`                 | `undefined`   |
-| `options?`   | `RedisIOSetOptions`    | `undefined`   |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Defined in
-
-redis-store.service.ts:27
-
----
-
-### get
-
-▸ **get**<`Pattern`, `Data`\>(`pattern`, `extensions?`): `Promise`<`Data`\>
-
-#### Type parameters
-
-| Name      | Type             |
-| :-------- | :--------------- |
-| `Pattern` | extends `string` |
-| `Data`    | extends `any`    |
-
-#### Parameters
-
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
-
-#### Returns
-
-`Promise`<`Data`\>
-
-#### Defined in
-
-redis-store.service.ts:48
-
----
-
-### rename
-
-▸ **rename**<`Pattern`\>(`pattern`, `extensions?`, `newPattern`, `newExtensions?`): `Promise`<`void`\>
-
-#### Type parameters
-
-| Name      | Type             |
-| :-------- | :--------------- |
-| `Pattern` | extends `string` |
-
-#### Parameters
-
-| Name            | Type                   | Default value |
-| :-------------- | :--------------------- | :------------ |
-| `pattern`       | `Pattern`              | `undefined`   |
-| `extensions`    | `string` \| `string`[] | `[]`          |
-| `newPattern`    | `Pattern`              | `undefined`   |
-| `newExtensions` | `string` \| `string`[] | `[]`          |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Defined in
-
-redis-store.service.ts:56
-
----
-
-### del
-
-▸ **del**<`Pattern`\>(`pattern`, `extensions?`): `Promise`<`number`\>
-
-#### Type parameters
-
-| Name      | Type             |
-| :-------- | :--------------- |
-| `Pattern` | extends `string` |
-
-#### Parameters
-
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
-
-#### Returns
-
-`Promise`<`number`\>
-
-#### Defined in
-
-redis-store.service.ts:72
-
----
-
-### getClient
-
-▸ **getClient**(): `Redis`
-
-#### Returns
-
-`Redis`
-
-#### Defined in
-
-redis-store.service.ts:78
+redis-store.service.ts:18
 
 ---
 
 ### createTopic
 
-▸ **createTopic**(`pattern`, `extensions`): `string`
+▸ **createTopic**(`topic`, ...`extensions`): `string`
 
 #### Parameters
 
-| Name         | Type                   |
-| :----------- | :--------------------- |
-| `pattern`    | `string`               |
-| `extensions` | `string` \| `string`[] |
+| Name            | Type       |
+| :-------------- | :--------- |
+| `topic`         | `string`   |
+| `...extensions` | `string`[] |
 
 #### Returns
 
@@ -230,4 +81,4 @@ redis-store.service.ts:78
 
 #### Defined in
 
-redis-store.service.ts:82
+redis-store.service.ts:26
