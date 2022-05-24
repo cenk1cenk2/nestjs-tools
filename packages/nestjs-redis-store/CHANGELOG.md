@@ -1,3 +1,9 @@
+# @cenk1cenk2/nestjs-redis-store [2.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.0.2...@cenk1cenk2/nestjs-redis-store@2.1.0) (2022-05-24)
+
+### Features
+
+- add creating child for pubsub interfaces ([9eb0567](https://github.com/cenk1cenk2/nestjs-tools/commit/9eb05677467d450871b24bf6f7fc1c37db9b9c15))
+
 ## @cenk1cenk2/nestjs-redis-store [2.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.0.1...@cenk1cenk2/nestjs-redis-store@2.0.2) (2022-05-24)
 
 ### Bug Fixes

@@ -548,7 +548,7 @@
         },
         {
           "id": 29,
-          "name": "set",
+          "name": "createChild",
           "kind": 2048,
           "kindString": "Method",
           "flags": {
@@ -558,19 +558,108 @@
             {
               "fileName": "redis-store.service.ts",
               "line": 19,
-              "character": 15
+              "character": 9
             }
           ],
           "signatures": [
             {
               "id": 30,
-              "name": "set",
+              "name": "createChild",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "typeParameter": [
                 {
                   "id": 31,
+                  "name": "T",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "id": 23,
+                    "name": "RedisStoreTopics"
+                  }
+                },
+                {
+                  "id": 32,
+                  "name": "K",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 31,
+                        "name": "T"
+                      },
+                      {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    ],
+                    "qualifiedName": "Record",
+                    "package": "typescript",
+                    "name": "Record"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "id": 24,
+                    "name": "RedisStoreMap"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 20,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 31,
+                    "name": "T"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 32,
+                    "name": "K"
+                  }
+                ],
+                "name": "RedisStoreService"
+              }
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "name": "set",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-store.service.ts",
+              "line": 23,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 34,
+              "name": "set",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 35,
                   "name": "Pattern",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -581,7 +670,7 @@
                   }
                 },
                 {
-                  "id": 32,
+                  "id": 36,
                   "name": "Data",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -594,19 +683,19 @@
               ],
               "parameters": [
                 {
-                  "id": 33,
+                  "id": 37,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 31,
+                    "id": 35,
                     "name": "Pattern"
                   }
                 },
                 {
-                  "id": 34,
+                  "id": 38,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -630,19 +719,19 @@
                   "defaultValue": "[]"
                 },
                 {
-                  "id": 35,
+                  "id": 39,
                   "name": "payload",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 32,
+                    "id": 36,
                     "name": "Data"
                   }
                 },
                 {
-                  "id": 36,
+                  "id": 40,
                   "name": "options",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -671,7 +760,7 @@
           ]
         },
         {
-          "id": 37,
+          "id": 41,
           "name": "get",
           "kind": 2048,
           "kindString": "Method",
@@ -681,20 +770,20 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 40,
+              "line": 44,
               "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 38,
+              "id": 42,
               "name": "get",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "typeParameter": [
                 {
-                  "id": 39,
+                  "id": 43,
                   "name": "Pattern",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -705,7 +794,7 @@
                   }
                 },
                 {
-                  "id": 40,
+                  "id": 44,
                   "name": "Data",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -718,19 +807,19 @@
               ],
               "parameters": [
                 {
-                  "id": 41,
+                  "id": 45,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 39,
+                    "id": 43,
                     "name": "Pattern"
                   }
                 },
                 {
-                  "id": 42,
+                  "id": 46,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -759,7 +848,7 @@
                 "typeArguments": [
                   {
                     "type": "reference",
-                    "id": 40,
+                    "id": 44,
                     "name": "Data"
                   }
                 ],
@@ -771,7 +860,7 @@
           ]
         },
         {
-          "id": 43,
+          "id": 47,
           "name": "rename",
           "kind": 2048,
           "kindString": "Method",
@@ -781,20 +870,20 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 48,
+              "line": 52,
               "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 44,
+              "id": 48,
               "name": "rename",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "typeParameter": [
                 {
-                  "id": 45,
+                  "id": 49,
                   "name": "Pattern",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -807,19 +896,19 @@
               ],
               "parameters": [
                 {
-                  "id": 46,
+                  "id": 50,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 45,
+                    "id": 49,
                     "name": "Pattern"
                   }
                 },
                 {
-                  "id": 47,
+                  "id": 51,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -843,19 +932,19 @@
                   "defaultValue": "[]"
                 },
                 {
-                  "id": 48,
+                  "id": 52,
                   "name": "newPattern",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 45,
+                    "id": 49,
                     "name": "Pattern"
                   }
                 },
                 {
-                  "id": 49,
+                  "id": 53,
                   "name": "newExtensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -895,7 +984,7 @@
           ]
         },
         {
-          "id": 50,
+          "id": 54,
           "name": "del",
           "kind": 2048,
           "kindString": "Method",
@@ -905,20 +994,20 @@
           "sources": [
             {
               "fileName": "redis-store.service.ts",
-              "line": 64,
+              "line": 68,
               "character": 9
             }
           ],
           "signatures": [
             {
-              "id": 51,
+              "id": 55,
               "name": "del",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "typeParameter": [
                 {
-                  "id": 52,
+                  "id": 56,
                   "name": "Pattern",
                   "kind": 131072,
                   "kindString": "Type parameter",
@@ -931,19 +1020,19 @@
               ],
               "parameters": [
                 {
-                  "id": 53,
+                  "id": 57,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 52,
+                    "id": 56,
                     "name": "Pattern"
                   }
                 },
                 {
-                  "id": 54,
+                  "id": 58,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -983,39 +1072,8 @@
           ]
         },
         {
-          "id": 55,
+          "id": 59,
           "name": "getClient",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "redis-store.service.ts",
-              "line": 70,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 56,
-              "name": "getClient",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "qualifiedName": "Redis",
-                "package": "ioredis",
-                "name": "Redis"
-              }
-            }
-          ]
-        },
-        {
-          "id": 57,
-          "name": "createTopic",
           "kind": 2048,
           "kindString": "Method",
           "flags": {
@@ -1030,14 +1088,45 @@
           ],
           "signatures": [
             {
-              "id": 58,
+              "id": 60,
+              "name": "getClient",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "qualifiedName": "Redis",
+                "package": "ioredis",
+                "name": "Redis"
+              }
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "name": "createTopic",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-store.service.ts",
+              "line": 78,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 62,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 59,
+                  "id": 63,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1048,7 +1137,7 @@
                   }
                 },
                 {
-                  "id": 60,
+                  "id": 64,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1093,7 +1182,7 @@
         {
           "title": "Methods",
           "kind": 2048,
-          "children": [27, 29, 37, 43, 50, 55, 57]
+          "children": [27, 29, 33, 41, 47, 54, 59, 61]
         }
       ],
       "sources": [
@@ -1105,7 +1194,7 @@
       ],
       "typeParameter": [
         {
-          "id": 61,
+          "id": 65,
           "name": "RedisStoreTopics",
           "kind": 131072,
           "kindString": "Type parameter",
@@ -1120,7 +1209,7 @@
           }
         },
         {
-          "id": 62,
+          "id": 66,
           "name": "RedisStoreMap",
           "kind": 131072,
           "kindString": "Type parameter",

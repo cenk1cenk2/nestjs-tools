@@ -64,6 +64,27 @@ redis-store.service.ts:15
 
 ---
 
+### createChild
+
+▸ **createChild**<`T`, `K`\>(): [`RedisStoreService`](RedisStoreService.md)<`T`, `K`\>
+
+#### Type parameters
+
+| Name | Type                                            |
+| :--- | :---------------------------------------------- |
+| `T`  | extends `string` = `RedisStoreTopics`           |
+| `K`  | extends `Record`<`T`, `any`\> = `RedisStoreMap` |
+
+#### Returns
+
+[`RedisStoreService`](RedisStoreService.md)<`T`, `K`\>
+
+#### Defined in
+
+redis-store.service.ts:19
+
+---
+
 ### set
 
 ▸ **set**<`Pattern`, `Data`\>(`pattern`, `extensions?`, `payload`, `options?`): `Promise`<`void`\>
@@ -90,7 +111,7 @@ redis-store.service.ts:15
 
 #### Defined in
 
-redis-store.service.ts:19
+redis-store.service.ts:23
 
 ---
 
@@ -118,7 +139,7 @@ redis-store.service.ts:19
 
 #### Defined in
 
-redis-store.service.ts:40
+redis-store.service.ts:44
 
 ---
 
@@ -147,7 +168,7 @@ redis-store.service.ts:40
 
 #### Defined in
 
-redis-store.service.ts:48
+redis-store.service.ts:52
 
 ---
 
@@ -174,7 +195,7 @@ redis-store.service.ts:48
 
 #### Defined in
 
-redis-store.service.ts:64
+redis-store.service.ts:68
 
 ---
 
@@ -188,7 +209,7 @@ redis-store.service.ts:64
 
 #### Defined in
 
-redis-store.service.ts:70
+redis-store.service.ts:74
 
 ---
 
@@ -209,4 +230,4 @@ redis-store.service.ts:70
 
 #### Defined in
 
-redis-store.service.ts:74
+redis-store.service.ts:78
