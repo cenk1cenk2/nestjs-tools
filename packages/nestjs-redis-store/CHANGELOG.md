@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-redis-store [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@3.0.0...@cenk1cenk2/nestjs-redis-store@3.0.1) (2022-05-24)
+
+### Bug Fixes
+
+- make options public for outside access to delimiter ([c3ddaf7](https://github.com/cenk1cenk2/nestjs-tools/commit/c3ddaf7182234e63b4a6a5b19a5b19f27d868af7))
+
 # @cenk1cenk2/nestjs-redis-store [3.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@2.1.1...@cenk1cenk2/nestjs-redis-store@3.0.0) (2022-05-24)
 
 ### Performance Improvements

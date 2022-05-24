@@ -454,6 +454,20 @@
         },
         {
           "id": 25,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPublic": true
+          },
+          "type": {
+            "type": "reference",
+            "id": 10,
+            "name": "RedisPubSubModuleOptions"
+          }
+        },
+        {
+          "id": 26,
           "name": "onModuleInit",
           "kind": 2048,
           "kindString": "Method",
@@ -469,7 +483,7 @@
           ],
           "signatures": [
             {
-              "id": 26,
+              "id": 27,
               "name": "onModuleInit",
               "kind": 4096,
               "kindString": "Call signature",
@@ -490,7 +504,7 @@
           }
         },
         {
-          "id": 27,
+          "id": 28,
           "name": "createChild",
           "kind": 2048,
           "kindString": "Method",
@@ -506,7 +520,7 @@
           ],
           "signatures": [
             {
-              "id": 28,
+              "id": 29,
               "name": "createChild",
               "kind": 4096,
               "kindString": "Call signature",
@@ -520,7 +534,7 @@
           ]
         },
         {
-          "id": 29,
+          "id": 30,
           "name": "createTopic",
           "kind": 2048,
           "kindString": "Method",
@@ -536,14 +550,14 @@
           ],
           "signatures": [
             {
-              "id": 30,
+              "id": 31,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 31,
+                  "id": 32,
                   "name": "topic",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -554,7 +568,7 @@
                   }
                 },
                 {
-                  "id": 32,
+                  "id": 33,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -582,7 +596,7 @@
         {
           "title": "Properties",
           "kind": 1024,
-          "children": [24]
+          "children": [24, 25]
         },
         {
           "title": "Constructors",
@@ -592,7 +606,7 @@
         {
           "title": "Methods",
           "kind": 2048,
-          "children": [25, 27, 29]
+          "children": [26, 28, 30]
         }
       ],
       "sources": [

@@ -14,6 +14,12 @@
 
 redis-store.service.ts:10
 
+---
+
+### options
+
+• **options**: [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md)
+
 ## Constructors
 
 ### constructor
