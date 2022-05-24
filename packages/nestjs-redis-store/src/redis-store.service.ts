@@ -16,6 +16,10 @@ export class RedisStoreService<RedisStoreTopics extends string = string, RedisSt
     this.client = new RedisIO(this.options.options)
   }
 
+  public createChild<T extends RedisStoreTopics = RedisStoreTopics, K extends Record<T, any> = RedisStoreMap>(): RedisStoreService<T, K> {
+    return new RedisStoreService(this.options)
+  }
+
   public async set<Pattern extends RedisStoreTopics, Data extends RedisStoreMap[Pattern]>(
     pattern: Pattern,
     extensions: string | string[] = [],
