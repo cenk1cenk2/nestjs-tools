@@ -12,7 +12,7 @@ import { RedisStoreService } from './redis-store.service'
   providers: [
     {
       provide: REDIS_STORE_INSTANCE,
-      useFactory: (): RedisStoreService<any, any> =>
+      useFactory: (): RedisStoreService =>
         new RedisStoreService({
           delimiter: REDIS_STORE_DELIMITER,
           options: ConfigService.get<RedisOptions>('redisStore')
@@ -29,7 +29,7 @@ export class RedisStoreModule {
       providers: [
         {
           provide: REDIS_STORE_INSTANCE,
-          useFactory: (): RedisStoreService<any, any> =>
+          useFactory: (): RedisStoreService =>
             new RedisStoreService({
               delimiter: options?.delimiter ?? REDIS_STORE_DELIMITER,
               options: options?.options ?? ConfigService.get<RedisOptions>('redisStore')
