@@ -9,7 +9,7 @@
 
 ## Implements
 
-- `OnApplicationBootstrap`
+- `OnModuleInit`
 
 ## Properties
 
@@ -46,9 +46,9 @@ redis-store.service.ts:13
 
 ## Methods
 
-### onApplicationBootstrap
+### onModuleInit
 
-▸ **onApplicationBootstrap**(): `void`
+▸ **onModuleInit**(): `void`
 
 #### Returns
 
@@ -56,7 +56,7 @@ redis-store.service.ts:13
 
 #### Implementation of
 
-OnApplicationBootstrap.onApplicationBootstrap
+OnModuleInit.onModuleInit
 
 #### Defined in
 
