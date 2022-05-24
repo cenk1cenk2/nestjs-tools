@@ -9,7 +9,7 @@ import { RedisPubSubModuleOptions } from './redis-store.interface'
 export class RedisStoreService implements OnModuleInit {
   public client: Redis
 
-  constructor (private options: RedisPubSubModuleOptions) {}
+  constructor (public options: RedisPubSubModuleOptions) {}
 
   public onModuleInit (): void {
     this.client = new RedisIO(this.options.options)
