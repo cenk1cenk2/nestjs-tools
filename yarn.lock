@@ -1964,10 +1964,10 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz#78b62041c7a407db4a90eb140567321602bed18e"
   integrity sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg==
 
-"@nestjs/typeorm@^8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@nestjs/typeorm/-/typeorm-8.0.4.tgz#ce6dbacb4c2a75e7d341da90a0d355bffd3149b4"
-  integrity sha512-l1Fv+XicVFs7j4EKTq32lJ6QomYLlXZwvug9zcts6IBDVd8rYYBPy28pyBMDzLtnm0zD4tcW298rpylL7eTZtQ==
+"@nestjs/typeorm@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/typeorm/-/typeorm-8.1.0.tgz#9dca441984142be23ef5855051e62e425d757f5f"
+  integrity sha512-T79Ynd6Cbm8Hop6Mo4dicXgioNKO0mIxHygPYB8RJShKB2PQ1xSS9ECrjkKK2VhElkzs7HNsCeHK+o9Bge11mg==
   dependencies:
     uuid "8.3.2"
 
