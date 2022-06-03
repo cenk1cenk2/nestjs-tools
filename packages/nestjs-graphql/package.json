@@ -39,7 +39,7 @@
     "@nestjs/core": "^8.4.6",
     "@nestjs/graphql": "^10.0.15",
     "class-validator": "^0.13.2",
-    "ts-morph": "^15.0.0"
+    "ts-morph": "^15.1.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
