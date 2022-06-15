@@ -1986,10 +1986,10 @@
   dependencies:
     eventemitter2 "6.4.5"
 
-"@nestjs/graphql@^10.0.15":
-  version "10.0.15"
-  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-10.0.15.tgz#7ebcd909f0fbf4c1b5ae466829a7a190105e9597"
-  integrity sha512-G/w21tNhHuNe9ux0a/7jFX8MbG0NQhoe0XQKfIK/zbO/RLpUqMZGYW6DpSNIkXD9AWrMSThxOhgAjipAoGhikQ==
+"@nestjs/graphql@^10.0.16":
+  version "10.0.16"
+  resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-10.0.16.tgz#b5214fcb3903204fc9c01f2eff72d003c3392aa1"
+  integrity sha512-vuGm9lqpbhpH/7TTRBEVO9DtV+TayPailtrnbpXaCy4bdjeSRqbfpZphU+Jpb+GjMmD9zEBWuwNBt8uSzmLDAQ==
   dependencies:
     "@graphql-tools/merge" "8.2.13"
     "@graphql-tools/schema" "8.3.13"
@@ -3689,12 +3689,7 @@ color@^3.1.3:
     color-convert "^1.9.3"
     color-string "^1.6.0"
 
-colorette@^2.0.16, colorette@^2.0.17:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
-  integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
-
-colorette@^2.0.19:
+colorette@^2.0.16, colorette@^2.0.17, colorette@^2.0.19:
   version "2.0.19"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
   integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
