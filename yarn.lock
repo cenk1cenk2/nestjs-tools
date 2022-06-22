@@ -2202,9 +2202,9 @@
     read-package-json-fast "^2.0.3"
 
 "@npmcli/run-script@^4.1.0":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.1.tgz#e49c93a1e94abbecf23fdb19c51c140ad31679c0"
-  integrity sha512-lMypA3pfeXm6+FDxG+pOXLzBeGT62i5WGSAFuwBuE4iy6HskVR/w3bjSWV9fBR6Ky6MPjcJbFCO1iKAb4dJgHA==
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.1.2.tgz#05847f11016139d22f7185a2003a07870bdee6cc"
+  integrity sha512-fCSOS4L4yKRjX+FoWkGHugihBgUK+EjATJn6gfmZnRCt620OqRB8Mrtu/LMv7m1dMrTFVGdywsDq8wFGpyZKDA==
   dependencies:
     "@npmcli/node-gyp" "^2.0.0"
     "@npmcli/promise-spawn" "^3.0.0"
