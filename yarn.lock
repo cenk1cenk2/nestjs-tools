@@ -3071,10 +3071,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-sdk@^2.1164.0:
-  version "2.1164.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1164.0.tgz#050ce644ed9993582bd02151bf3ac9d9ebc143f5"
-  integrity sha512-q/M9E68WabF22G8d8lFgo3NH+9RooYswSY9VG6zqN16C19RRm2sGThp8Sxtz/WUK98BAsxSnkLW1ksmy3BsP7Q==
+aws-sdk@^2.1165.0:
+  version "2.1165.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1165.0.tgz#4da669d1e9020344cef75d961882f52a7931a379"
+  integrity sha512-2oVkSuXsLeErt+H4M2OGIz4p1LPS+QRfY2WnW4QKMndASOcvHKZTfzuY8jmc9ZnDGyguiGdT3idYU8KpNg0sGw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -9653,10 +9653,10 @@ typedoc@^0.23.2:
     minimatch "^5.1.0"
     shiki "^0.10.1"
 
-typeorm@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.3.6.tgz#65203443a1b684bb746785913fe2b0877aa991c0"
-  integrity sha512-DRqgfqcelMiGgWSMbBmVoJNFN2nPNA3EeY2gC324ndr2DZoGRTb9ILtp2oGVGnlA+cu5zgQ6it5oqKFNkte7Aw==
+typeorm@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.3.7.tgz#5776ed5058f0acb75d64723b39ff458d21de64c1"
+  integrity sha512-MsPJeP6Zuwfe64c++l80+VRqpGEGxf0CkztIEnehQ+CMmQPSHjOnFbFxwBuZ2jiLqZTjLk2ZqQdVF0RmvxNF3Q==
   dependencies:
     "@sqltools/formatter" "^1.2.2"
     app-root-path "^3.0.0"
