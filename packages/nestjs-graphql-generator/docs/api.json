@@ -54,21 +54,20 @@
             "typeArguments": [
               {
                 "type": "reference",
+                "name": "Config",
                 "qualifiedName": "Types.Config",
-                "package": "@graphql-codegen/plugin-helpers",
-                "name": "Config"
+                "package": "@graphql-codegen/plugin-helpers"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [2, 3]
         }
       ],
@@ -111,9 +110,9 @@
                 }
               }
             ],
+            "name": "Promise",
             "qualifiedName": "Promise",
-            "package": "typescript",
-            "name": "Promise"
+            "package": "typescript"
           }
         }
       ]
@@ -122,12 +121,10 @@
   "groups": [
     {
       "title": "Interfaces",
-      "kind": 256,
       "children": [1]
     },
     {
       "title": "Functions",
-      "kind": 64,
       "children": [4]
     }
   ],

@@ -5,7 +5,3 @@
 #### Returns
 
 `Promise`<`unknown`[]\>
-
-#### Defined in
-
-run.ts:10
