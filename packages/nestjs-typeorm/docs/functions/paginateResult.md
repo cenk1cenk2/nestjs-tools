@@ -19,7 +19,3 @@ Paginate an existing result.
 #### Returns
 
 [`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>
-
-#### Defined in
-
-utils/pagination.util.ts:45

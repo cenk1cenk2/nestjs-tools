@@ -20,7 +20,3 @@ Find a paginated result via typeorm with get many and count.
 #### Returns
 
 `Promise`<[`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>\>
-
-#### Defined in
-
-utils/pagination.util.ts:28
