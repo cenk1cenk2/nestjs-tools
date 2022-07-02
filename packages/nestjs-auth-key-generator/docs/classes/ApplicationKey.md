@@ -42,10 +42,6 @@ key.ts:13
 | :--------- | :---------------------------------------------------------------------------- |
 | `options?` | `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\> |
 
-#### Defined in
-
-key.ts:15
-
 ## Methods
 
 ### generateKeys
@@ -55,7 +51,3 @@ key.ts:15
 #### Returns
 
 `void`
-
-#### Defined in
-
-key.ts:49
