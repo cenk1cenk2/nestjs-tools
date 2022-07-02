@@ -19,7 +19,3 @@ Paginate given output interface for graphql.
 #### Returns
 
 `any`
-
-#### Defined in
-
-interfaces/pagination.interface.ts:50

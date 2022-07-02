@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-graphql [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.1...@cenk1cenk2/nestjs-graphql@3.0.2) (2022-07-02)
+
+### Dependencies
+
+- **@cenk1cenk2/nestjs-utils:** upgraded to 2.0.1
+
 ## @cenk1cenk2/nestjs-graphql [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.0...@cenk1cenk2/nestjs-graphql@3.0.1) (2022-05-12)
 
 ### Bug Fixes
