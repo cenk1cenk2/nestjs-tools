@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-transactions [4.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@4.0.0...@cenk1cenk2/nestjs-transactions@4.0.1) (2022-07-02)
+
+### Bug Fixes
+
+- update build error ([c019c30](https://github.com/cenk1cenk2/nestjs-tools/commit/c019c30868b16a3f7729ec0270892f46ff99a102))
+
 # @cenk1cenk2/nestjs-transactions [4.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@3.1.2...@cenk1cenk2/nestjs-transactions@4.0.0) (2022-04-30)
 
 ### Performance Improvements

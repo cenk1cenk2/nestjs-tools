@@ -19,7 +19,7 @@
           "character": 12
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 51,
           "name": "T",
@@ -58,7 +58,12 @@
               "kindString": "Call signature",
               "flags": {},
               "comment": {
-                "shortText": "A singular transaction."
+                "summary": [
+                  {
+                    "kind": "text",
+                    "text": "A singular transaction."
+                  }
+                ]
               },
               "parameters": [
                 {
@@ -69,9 +74,9 @@
                   "flags": {},
                   "type": {
                     "type": "reference",
+                    "name": "EntityManager",
                     "qualifiedName": "EntityManager",
-                    "package": "typeorm",
-                    "name": "EntityManager"
+                    "package": "typeorm"
                   }
                 },
                 {
@@ -106,9 +111,9 @@
                         "name": "R"
                       }
                     ],
+                    "name": "Promise",
                     "qualifiedName": "Promise",
-                    "package": "typescript",
-                    "name": "Promise"
+                    "package": "typescript"
                   }
                 ]
               }
@@ -130,7 +135,7 @@
           "character": 12
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 57,
           "name": "T",
@@ -169,7 +174,12 @@
               "kindString": "Call signature",
               "flags": {},
               "comment": {
-                "shortText": "A singular rollback."
+                "summary": [
+                  {
+                    "kind": "text",
+                    "text": "A singular rollback."
+                  }
+                ]
               },
               "parameters": [
                 {
@@ -204,9 +214,9 @@
                         "name": "R"
                       }
                     ],
+                    "name": "Promise",
                     "qualifiedName": "Promise",
-                    "package": "typescript",
-                    "name": "Promise"
+                    "package": "typescript"
                   }
                 ]
               }
@@ -222,7 +232,12 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "The type of parallel transactions which will be run after."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "The type of parallel transactions which will be run after."
+          }
+        ]
       },
       "children": [
         {
@@ -258,7 +273,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [60]
         }
       ],
@@ -277,7 +291,12 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "A condition to run this transaction."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "A condition to run this transaction."
+          }
+        ]
       },
       "children": [
         {
@@ -372,8 +391,14 @@
                       "groups": [
                         {
                           "title": "Properties",
-                          "kind": 1024,
                           "children": [64, 65]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "transactions-manager.interface.ts",
+                          "line": 27,
+                          "character": 62
                         }
                       ]
                     }
@@ -388,7 +413,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [62]
         }
       ],
@@ -399,7 +423,7 @@
           "character": 17
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 66,
           "name": "E",
@@ -433,14 +457,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -469,7 +493,12 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "The type of parallel transactions which will be run after."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "The type of parallel transactions which will be run after."
+          }
+        ]
       },
       "children": [
         {
@@ -564,8 +593,14 @@
                       "groups": [
                         {
                           "title": "Properties",
-                          "kind": 1024,
                           "children": [72, 73]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "transactions-manager.interface.ts",
+                          "line": 27,
+                          "character": 62
                         }
                       ]
                     }
@@ -627,7 +662,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [70, 69]
         }
       ],
@@ -638,7 +672,7 @@
           "character": 17
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 74,
           "name": "E",
@@ -672,14 +706,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -710,7 +744,12 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "A type of initial transaction, which will run first and can return a result."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "A type of initial transaction, which will run first and can return a result."
+          }
+        ]
       },
       "children": [
         {
@@ -805,8 +844,14 @@
                       "groups": [
                         {
                           "title": "Properties",
-                          "kind": 1024,
                           "children": [82, 83]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "transactions-manager.interface.ts",
+                          "line": 27,
+                          "character": 62
                         }
                       ]
                     }
@@ -980,7 +1025,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [80, 77, 78, 79]
         }
       ],
@@ -991,7 +1035,7 @@
           "character": 17
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 84,
           "name": "E",
@@ -1025,14 +1069,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -1063,15 +1107,25 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "A transaction rollback action.",
-        "tags": [
+        "summary": [
           {
-            "tag": "export",
-            "text": ""
+            "kind": "text",
+            "text": "A transaction rollback action."
+          }
+        ],
+        "blockTags": [
+          {
+            "tag": "@export",
+            "content": []
           },
           {
-            "tag": "interface",
-            "text": "RollbackTransactions"
+            "tag": "@interface",
+            "content": [
+              {
+                "kind": "text",
+                "text": "RollbackTransactions"
+              }
+            ]
           }
         ]
       },
@@ -1168,8 +1222,14 @@
                       "groups": [
                         {
                           "title": "Properties",
-                          "kind": 1024,
                           "children": [90, 91]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "transactions-manager.interface.ts",
+                          "line": 27,
+                          "character": 62
                         }
                       ]
                     }
@@ -1231,7 +1291,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [88, 87]
         }
       ],
@@ -1242,14 +1301,13 @@
           "character": 17
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 92,
           "name": "E",
           "kind": 131072,
           "kindString": "Type parameter",
           "flags": {},
-          "comment": {},
           "type": {
             "type": "intrinsic",
             "name": "string"
@@ -1261,9 +1319,6 @@
           "kind": 131072,
           "kindString": "Type parameter",
           "flags": {},
-          "comment": {
-            "shortText": "\n"
-          },
           "type": {
             "type": "reference",
             "typeArguments": [
@@ -1280,14 +1335,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -1318,7 +1373,12 @@
       "kindString": "Type alias",
       "flags": {},
       "comment": {
-        "shortText": "Get the type of the transaction manager given the map and keys"
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Get the type of the transaction manager given the map and keys"
+          }
+        ]
       },
       "sources": [
         {
@@ -1327,7 +1387,7 @@
           "character": 12
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 95,
           "name": "E",
@@ -1360,14 +1420,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -1413,7 +1473,12 @@
       "kindString": "Type alias",
       "flags": {},
       "comment": {
-        "shortText": "Get the transaction type to use with events"
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Get the transaction type to use with events"
+          }
+        ]
       },
       "sources": [
         {
@@ -1422,7 +1487,7 @@
           "character": 12
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 102,
           "name": "E",
@@ -1459,14 +1524,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           },
           "default": {
             "type": "reference",
@@ -1483,14 +1548,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ],
@@ -1554,7 +1619,6 @@
             "groups": [
               {
                 "title": "Properties",
-                "kind": 1024,
                 "children": [99]
               }
             ],
@@ -1609,7 +1673,6 @@
             "groups": [
               {
                 "title": "Properties",
-                "kind": 1024,
                 "children": [101]
               }
             ],
@@ -1631,7 +1694,12 @@
       "kindString": "Type alias",
       "flags": {},
       "comment": {
-        "shortText": "For fast typing the event map."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "For fast typing the event map."
+          }
+        ]
       },
       "sources": [
         {
@@ -1640,7 +1708,7 @@
           "character": 12
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 105,
           "name": "Events",
@@ -1669,14 +1737,14 @@
                 "name": "any"
               }
             ],
+            "name": "Record",
             "qualifiedName": "Record",
-            "package": "typescript",
-            "name": "Record"
+            "package": "typescript"
           }
         ],
+        "name": "Partial",
         "qualifiedName": "Partial",
-        "package": "typescript",
-        "name": "Partial"
+        "package": "typescript"
       }
     },
     {
@@ -1686,7 +1754,12 @@
       "kindString": "Class",
       "flags": {},
       "comment": {
-        "shortText": "Give transaction map a set of indexes to not make it go crazy when some events are missing from it.\nThey are optional after all."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Give transaction map a set of indexes to not make it go crazy when some events are missing from it.\nThey are optional after all."
+          }
+        ]
       },
       "children": [
         {
@@ -1714,7 +1787,6 @@
       "groups": [
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [107]
         }
       ],
@@ -1756,7 +1828,12 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "Some options for the service itself."
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Some options for the service itself."
+          }
+        ]
       },
       "children": [
         {
@@ -1783,7 +1860,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [112]
         }
       ],
@@ -1801,30 +1877,6 @@
       "kind": 128,
       "kindString": "Class",
       "flags": {},
-      "decorators": [
-        {
-          "name": "Global",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Global",
-            "package": "@nestjs/common",
-            "name": "Global"
-          },
-          "arguments": {}
-        },
-        {
-          "name": "Module",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Module",
-            "package": "@nestjs/common",
-            "name": "Module"
-          },
-          "arguments": {
-            "metadata": "{\n  providers: [ TransactionsManager ],\n  exports: [ TransactionsManager ]\n}"
-          }
-        }
-      ],
       "children": [
         {
           "id": 2,
@@ -1851,7 +1903,6 @@
       "groups": [
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [2]
         }
       ],
@@ -1869,20 +1920,6 @@
       "kind": 128,
       "kindString": "Class",
       "flags": {},
-      "decorators": [
-        {
-          "name": "Injectable",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Injectable",
-            "package": "@nestjs/common",
-            "name": "Injectable"
-          },
-          "arguments": {
-            "options": "{ scope: Scope.DEFAULT }"
-          }
-        }
-      ],
       "children": [
         {
           "id": 10,
@@ -2108,9 +2145,9 @@
           ],
           "type": {
             "type": "reference",
+            "name": "Logger",
             "qualifiedName": "Logger",
-            "package": "@nestjs/common",
-            "name": "Logger"
+            "package": "@nestjs/common"
           },
           "defaultValue": "..."
         },
@@ -2194,14 +2231,14 @@
                             "name": "any"
                           }
                         ],
+                        "name": "Record",
                         "qualifiedName": "Record",
-                        "package": "typescript",
-                        "name": "Record"
+                        "package": "typescript"
                       }
                     ],
+                    "name": "Partial",
                     "qualifiedName": "Partial",
-                    "package": "typescript",
-                    "name": "Partial"
+                    "package": "typescript"
                   },
                   "default": {
                     "type": "reference",
@@ -2219,14 +2256,14 @@
                             "name": "any"
                           }
                         ],
+                        "name": "Record",
                         "qualifiedName": "Record",
-                        "package": "typescript",
-                        "name": "Record"
+                        "package": "typescript"
                       }
                     ],
+                    "name": "Partial",
                     "qualifiedName": "Partial",
-                    "package": "typescript",
-                    "name": "Partial"
+                    "package": "typescript"
                   }
                 }
               ],
@@ -2237,23 +2274,11 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
-                  "decorators": [
-                    {
-                      "name": "InjectConnection",
-                      "type": {
-                        "type": "reference",
-                        "qualifiedName": "InjectConnection",
-                        "package": "@nestjs/typeorm",
-                        "name": "InjectConnection"
-                      },
-                      "arguments": {}
-                    }
-                  ],
                   "type": {
                     "type": "reference",
+                    "name": "Connection",
                     "qualifiedName": "Connection",
-                    "package": "typeorm",
-                    "name": "Connection"
+                    "package": "typeorm"
                   }
                 }
               ],
@@ -2288,7 +2313,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 41,
+              "line": 39,
               "character": 9
             }
           ],
@@ -2300,11 +2325,25 @@
               "kindString": "Call signature",
               "flags": {},
               "comment": {
-                "shortText": "Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such.",
-                "tags": [
+                "summary": [
                   {
-                    "tag": "memberof",
-                    "text": "TransactionsManager\n"
+                    "kind": "text",
+                    "text": "Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such."
+                  }
+                ],
+                "blockTags": [
+                  {
+                    "tag": "@returns",
+                    "content": []
+                  },
+                  {
+                    "tag": "@memberof",
+                    "content": [
+                      {
+                        "kind": "text",
+                        "text": "TransactionsManager"
+                      }
+                    ]
                   }
                 ]
               },
@@ -2315,7 +2354,6 @@
                   "kind": 131072,
                   "kindString": "Type parameter",
                   "flags": {},
-                  "comment": {},
                   "type": {
                     "type": "intrinsic",
                     "name": "string"
@@ -2353,7 +2391,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 54,
+              "line": 52,
               "character": 9
             }
           ],
@@ -2365,7 +2403,12 @@
               "kindString": "Call signature",
               "flags": {},
               "comment": {
-                "shortText": "Add a new transaction, with optional check or rollback.\nChecks will be executed before any transactions to check whether the operation is performable.\nTransactions with token are initial transactions and will get their result saved for further use.\nTransactions without any depends on and token are parallel transactions that will execute after the initial ones.\nRollback transactions will get executed if something goes wrong."
+                "summary": [
+                  {
+                    "kind": "text",
+                    "text": "Add a new transaction, with optional check or rollback.\nChecks will be executed before any transactions to check whether the operation is performable.\nTransactions with token are initial transactions and will get their result saved for further use.\nTransactions without any depends on and token are parallel transactions that will execute after the initial ones.\nRollback transactions will get executed if something goes wrong."
+                  }
+                ]
               },
               "parameters": [
                 {
@@ -2374,9 +2417,6 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
-                  "comment": {
-                    "shortText": "\n"
-                  },
                   "type": {
                     "type": "intersection",
                     "types": [
@@ -2431,9 +2471,9 @@
                                 ]
                               }
                             ],
+                            "name": "Partial",
                             "qualifiedName": "Partial",
-                            "package": "typescript",
-                            "name": "Partial"
+                            "package": "typescript"
                           }
                         ]
                       },
@@ -2488,9 +2528,9 @@
                                 ]
                               }
                             ],
+                            "name": "Partial",
                             "qualifiedName": "Partial",
-                            "package": "typescript",
-                            "name": "Partial"
+                            "package": "typescript"
                           }
                         ]
                       }
@@ -2516,7 +2556,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 88,
+              "line": 86,
               "character": 15
             }
           ],
@@ -2528,7 +2568,12 @@
               "kindString": "Call signature",
               "flags": {},
               "comment": {
-                "shortText": "Run all the transactions and rollback all if one has failed.\nThis will run initial transactions and wait for the result,"
+                "summary": [
+                  {
+                    "kind": "text",
+                    "text": "Run all the transactions and rollback all if one has failed.\nThis will run initial transactions and wait for the result,"
+                  }
+                ]
               },
               "type": {
                 "type": "reference",
@@ -2551,9 +2596,9 @@
                     "name": "GetTransactionType"
                   }
                 ],
+                "name": "Promise",
                 "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
+                "package": "typescript"
               }
             }
           ]
@@ -2569,7 +2614,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 224,
+              "line": 222,
               "character": 16
             }
           ],
@@ -2652,9 +2697,9 @@
                   "flags": {},
                   "type": {
                     "type": "reference",
+                    "name": "EntityManager",
                     "qualifiedName": "EntityManager",
-                    "package": "typeorm",
-                    "name": "EntityManager"
+                    "package": "typeorm"
                   }
                 }
               ],
@@ -2666,9 +2711,9 @@
                     "name": "boolean"
                   }
                 ],
+                "name": "Promise",
                 "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
+                "package": "typescript"
               }
             }
           ]
@@ -2684,7 +2729,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 245,
+              "line": 243,
               "character": 10
             }
           ],
@@ -2713,7 +2758,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 255,
+              "line": 253,
               "character": 10
             }
           ],
@@ -2755,7 +2800,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 259,
+              "line": 257,
               "character": 10
             }
           ],
@@ -2797,7 +2842,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 263,
+              "line": 261,
               "character": 10
             }
           ],
@@ -2857,7 +2902,7 @@
           "sources": [
             {
               "fileName": "transactions-manager.service.ts",
-              "line": 267,
+              "line": 265,
               "character": 10
             }
           ],
@@ -2910,17 +2955,14 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [10, 11, 12, 13, 14, 15, 16, 17]
         },
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [5]
         },
         {
           "title": "Methods",
-          "kind": 2048,
           "children": [18, 21, 24, 26, 30, 32, 35, 38, 41]
         }
       ],
@@ -2931,7 +2973,7 @@
           "character": 13
         }
       ],
-      "typeParameter": [
+      "typeParameters": [
         {
           "id": 44,
           "name": "Event",
@@ -2969,14 +3011,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           },
           "default": {
             "type": "reference",
@@ -2994,14 +3036,14 @@
                     "name": "any"
                   }
                 ],
+                "name": "Record",
                 "qualifiedName": "Record",
-                "package": "typescript",
-                "name": "Record"
+                "package": "typescript"
               }
             ],
+            "name": "Partial",
             "qualifiedName": "Partial",
-            "package": "typescript",
-            "name": "Partial"
+            "package": "typescript"
           }
         }
       ]
@@ -3009,18 +3051,15 @@
   ],
   "groups": [
     {
-      "title": "Type aliases",
-      "kind": 4194304,
+      "title": "Type Aliases",
       "children": [46, 53, 94, 97, 104]
     },
     {
       "title": "Interfaces",
-      "kind": 256,
       "children": [59, 61, 68, 76, 86, 111]
     },
     {
       "title": "Classes",
-      "kind": 128,
       "children": [106, 1, 4]
     }
   ],

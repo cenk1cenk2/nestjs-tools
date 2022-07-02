@@ -106,10 +106,6 @@ transactions-manager.service.ts:25
 | :----------- | :----------- |
 | `connection` | `Connection` |
 
-#### Defined in
-
-transactions-manager.service.ts:30
-
 ## Methods
 
 ### createChild
@@ -118,7 +114,9 @@ transactions-manager.service.ts:30
 
 Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such.
 
-**`memberof`** TransactionsManager
+**`Memberof`**
+
+TransactionsManager
 
 #### Type parameters
 
@@ -129,10 +127,6 @@ Sometimes the scope.request is just too much to isolate transactions, there you 
 #### Returns
 
 [`TransactionsManager`](TransactionsManager.md)<`ChildEvent`, `Map`\>
-
-#### Defined in
-
-transactions-manager.service.ts:41
 
 ---
 
@@ -152,10 +146,6 @@ Add a new transaction, with optional check or rollback. Checks will be executed 
 
 `void`
 
-#### Defined in
-
-transactions-manager.service.ts:54
-
 ---
 
 ### run
@@ -167,10 +157,6 @@ Run all the transactions and rollback all if one has failed. This will run initi
 #### Returns
 
 `Promise`<[`GetTransactionType`](../types/GetTransactionType.md)<`Event`, `Map`\>\>
-
-#### Defined in
-
-transactions-manager.service.ts:88
 
 ---
 
@@ -189,10 +175,6 @@ transactions-manager.service.ts:88
 
 `Promise`<`boolean`\>
 
-#### Defined in
-
-transactions-manager.service.ts:224
-
 ---
 
 ### flushTransactions
@@ -202,10 +184,6 @@ transactions-manager.service.ts:224
 #### Returns
 
 `void`
-
-#### Defined in
-
-transactions-manager.service.ts:245
 
 ---
 
@@ -223,10 +201,6 @@ transactions-manager.service.ts:245
 
 `boolean`
 
-#### Defined in
-
-transactions-manager.service.ts:255
-
 ---
 
 ### hasRollback
@@ -242,10 +216,6 @@ transactions-manager.service.ts:255
 #### Returns
 
 `boolean`
-
-#### Defined in
-
-transactions-manager.service.ts:259
 
 ---
 
@@ -263,10 +233,6 @@ transactions-manager.service.ts:259
 
 transaction is InitialTransaction<Event, Map\>
 
-#### Defined in
-
-transactions-manager.service.ts:263
-
 ---
 
 ### isParallelTransaction
@@ -282,7 +248,3 @@ transactions-manager.service.ts:263
 #### Returns
 
 transaction is ParallelTransaction<Event, Map\>
-
-#### Defined in
-
-transactions-manager.service.ts:267

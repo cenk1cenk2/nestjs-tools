@@ -1,6 +1,6 @@
 # @cenk1cenk2/nestjs-transactions
 
-## Type aliases
+## Type Aliases
 
 - [Transaction](types/Transaction.md)
 - [Rollback](types/Rollback.md)

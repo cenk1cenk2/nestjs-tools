@@ -2,9 +2,11 @@
 
 A transaction rollback action.
 
-**`export`**
+**`Export`**
 
-**`interface`** RollbackTransactions
+**`Interface`**
+
+RollbackTransactions
 
 ## Type parameters
 
