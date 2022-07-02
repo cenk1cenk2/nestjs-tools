@@ -31,11 +31,9 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
   /**
    * Sometimes the scope.request is just too much to isolate transactions, there you can create a custom instance for injecting to events or such.
-   *
    * @template ChildEvent
    * @template ChildMap
-   * @param {Connection} connection
-   * @returns  {TransactionsManager<ChildEvent, ChildMap>}
+   * @returns {TransactionsManager<ChildEvent, ChildMap>}
    * @memberof TransactionsManager
    */
   public createChild<ChildEvent extends Event>(): TransactionsManager<ChildEvent, Map> {
@@ -133,7 +131,7 @@ export class TransactionsManager<Event extends string = string, Map extends Part
 
               // this.logger.debug(`Finished initial transaction: ${t.token}`)
             } else {
-              this.logger.debug(`Transaction still depends on others: ${t.token} depends on ${t.dependsOn.join(', ')}`)
+              this.logger.debug(`Transaction still depends on others: ${String(t.token)} depends on ${t.dependsOn.join(', ')}`)
             }
           })
         )
