@@ -2,9 +2,11 @@
 
 Output type for pagination.
 
-**`export`**
+**`Export`**
 
-**`interface`** PaginationOutputDto
+**`Interface`**
+
+PaginationOutputDto
 
 ## Hierarchy
 

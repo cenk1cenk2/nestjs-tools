@@ -63,9 +63,9 @@
                 }
               }
             ],
+            "name": "CustomDecorator",
             "qualifiedName": "CustomDecorator",
-            "package": "@nestjs/common",
-            "name": "CustomDecorator"
+            "package": "@nestjs/common"
           }
         }
       ]
@@ -77,15 +77,25 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "Output type for pagination.",
-        "tags": [
+        "summary": [
           {
-            "tag": "export",
-            "text": ""
+            "kind": "text",
+            "text": "Output type for pagination."
+          }
+        ],
+        "blockTags": [
+          {
+            "tag": "@export",
+            "content": []
           },
           {
-            "tag": "interface",
-            "text": "PaginationOutputDto"
+            "tag": "@interface",
+            "content": [
+              {
+                "kind": "text",
+                "text": "PaginationOutputDto"
+              }
+            ]
           }
         ]
       },
@@ -97,7 +107,12 @@
           "kindString": "Property",
           "flags": {},
           "comment": {
-            "shortText": "Total number of items"
+            "summary": [
+              {
+                "kind": "text",
+                "text": "Total number of items"
+              }
+            ]
           },
           "sources": [
             {
@@ -118,7 +133,12 @@
           "kindString": "Property",
           "flags": {},
           "comment": {
-            "shortText": "Limit the number of items per page."
+            "summary": [
+              {
+                "kind": "text",
+                "text": "Limit the number of items per page."
+              }
+            ]
           },
           "sources": [
             {
@@ -144,7 +164,12 @@
           "kindString": "Property",
           "flags": {},
           "comment": {
-            "shortText": "Get page number"
+            "summary": [
+              {
+                "kind": "text",
+                "text": "Get page number"
+              }
+            ]
           },
           "sources": [
             {
@@ -167,7 +192,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [50, 51, 52]
         }
       ],
@@ -193,15 +217,25 @@
       "kindString": "Interface",
       "flags": {},
       "comment": {
-        "shortText": "Input type for pagination.",
-        "tags": [
+        "summary": [
           {
-            "tag": "export",
-            "text": ""
+            "kind": "text",
+            "text": "Input type for pagination."
+          }
+        ],
+        "blockTags": [
+          {
+            "tag": "@export",
+            "content": []
           },
           {
-            "tag": "interface",
-            "text": "PaginationInputDto\n"
+            "tag": "@interface",
+            "content": [
+              {
+                "kind": "text",
+                "text": "PaginationInputDto"
+              }
+            ]
           }
         ]
       },
@@ -213,7 +247,12 @@
           "kindString": "Property",
           "flags": {},
           "comment": {
-            "shortText": "Limit the number of items per page."
+            "summary": [
+              {
+                "kind": "text",
+                "text": "Limit the number of items per page."
+              }
+            ]
           },
           "sources": [
             {
@@ -234,7 +273,12 @@
           "kindString": "Property",
           "flags": {},
           "comment": {
-            "shortText": "Get page number"
+            "summary": [
+              {
+                "kind": "text",
+                "text": "Get page number"
+              }
+            ]
           },
           "sources": [
             {
@@ -252,7 +296,6 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [54, 55]
         }
       ],
@@ -308,6 +351,13 @@
                   "kind": 65536,
                   "kindString": "Type literal",
                   "flags": {},
+                  "sources": [
+                    {
+                      "fileName": "utils/logger/logger.service.ts",
+                      "line": 12,
+                      "character": 35
+                    }
+                  ],
                   "signatures": [
                     {
                       "id": 7,
@@ -337,9 +387,9 @@
                 }
               }
             ],
+            "name": "Record",
             "qualifiedName": "Record",
-            "package": "typescript",
-            "name": "Record"
+            "package": "typescript"
           },
           "defaultValue": "..."
         },
@@ -977,8 +1027,14 @@
                       "groups": [
                         {
                           "title": "Properties",
-                          "kind": 1024,
                           "children": [38, 39, 40, 41, 42]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "utils/logger/logger.service.ts",
+                          "line": 68,
+                          "character": 69
                         }
                       ]
                     }
@@ -1000,18 +1056,6 @@
           "flags": {
             "isPrivate": true
           },
-          "decorators": [
-            {
-              "name": "Configurable",
-              "type": {
-                "type": "reference",
-                "qualifiedName": "Configurable",
-                "package": "@webundsoehne/nestjs-util",
-                "name": "Configurable"
-              },
-              "arguments": {}
-            }
-          ],
           "sources": [
             {
               "fileName": "utils/logger/logger.service.ts",
@@ -1035,21 +1079,6 @@
                   "flags": {
                     "isOptional": true
                   },
-                  "decorators": [
-                    {
-                      "name": "ConfigParam",
-                      "type": {
-                        "type": "reference",
-                        "qualifiedName": "ConfigParam",
-                        "package": "@webundsoehne/nestjs-util",
-                        "name": "ConfigParam"
-                      },
-                      "arguments": {
-                        "path": "'logLevel'",
-                        "defaultValue": "LogLevel"
-                      }
-                    }
-                  ],
                   "type": {
                     "type": "intrinsic",
                     "name": "string"
@@ -1058,9 +1087,9 @@
               ],
               "type": {
                 "type": "reference",
+                "name": "Logger",
                 "qualifiedName": "winston.Logger",
-                "package": "winston",
-                "name": "Logger"
+                "package": "winston"
               }
             }
           ]
@@ -1069,17 +1098,14 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [5]
         },
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [2]
         },
         {
           "title": "Methods",
-          "kind": 2048,
           "children": [9, 14, 18, 22, 26, 30, 34, 43]
         }
       ],
@@ -1093,9 +1119,9 @@
       "implementedTypes": [
         {
           "type": "reference",
+          "name": "LoggerService",
           "qualifiedName": "LoggerService",
-          "package": "@nestjs/common",
-          "name": "LoggerService"
+          "package": "@nestjs/common"
         }
       ]
     }
@@ -1103,22 +1129,18 @@
   "groups": [
     {
       "title": "Variables",
-      "kind": 32,
       "children": [48]
     },
     {
       "title": "Functions",
-      "kind": 64,
       "children": [46]
     },
     {
       "title": "Interfaces",
-      "kind": 256,
       "children": [49, 53]
     },
     {
       "title": "Classes",
-      "kind": 128,
       "children": [1]
     }
   ],

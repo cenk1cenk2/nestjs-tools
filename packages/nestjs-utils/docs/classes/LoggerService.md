@@ -26,10 +26,6 @@ utils/logger/logger.service.ts:12
 | :--------- | :-------------- |
 | `options?` | `LoggerOptions` |
 
-#### Defined in
-
-utils/logger/logger.service.ts:21
-
 ## Methods
 
 ### error
@@ -52,10 +48,6 @@ utils/logger/logger.service.ts:21
 
 LoggerServiceCommon.error
 
-#### Defined in
-
-utils/logger/logger.service.ts:23
-
 ---
 
 ### log
@@ -76,10 +68,6 @@ utils/logger/logger.service.ts:23
 #### Implementation of
 
 LoggerServiceCommon.log
-
-#### Defined in
-
-utils/logger/logger.service.ts:32
 
 ---
 
@@ -102,10 +90,6 @@ utils/logger/logger.service.ts:32
 
 LoggerServiceCommon.warn
 
-#### Defined in
-
-utils/logger/logger.service.ts:40
-
 ---
 
 ### debug
@@ -126,10 +110,6 @@ utils/logger/logger.service.ts:40
 #### Implementation of
 
 LoggerServiceCommon.debug
-
-#### Defined in
-
-utils/logger/logger.service.ts:48
 
 ---
 
@@ -152,10 +132,6 @@ utils/logger/logger.service.ts:48
 
 LoggerServiceCommon.verbose
 
-#### Defined in
-
-utils/logger/logger.service.ts:56
-
 ---
 
 ### coloring
@@ -172,10 +148,6 @@ utils/logger/logger.service.ts:56
 #### Returns
 
 `string`
-
-#### Defined in
-
-utils/logger/logger.service.ts:64
 
 ---
 
@@ -198,10 +170,6 @@ utils/logger/logger.service.ts:64
 
 `void`
 
-#### Defined in
-
-utils/logger/logger.service.ts:68
-
 ---
 
 ### getLogger
@@ -217,7 +185,3 @@ utils/logger/logger.service.ts:68
 #### Returns
 
 `Logger`
-
-#### Defined in
-
-utils/logger/logger.service.ts:90

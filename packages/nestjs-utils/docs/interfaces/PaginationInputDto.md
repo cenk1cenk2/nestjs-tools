@@ -2,9 +2,11 @@
 
 Input type for pagination.
 
-**`export`**
+**`Export`**
 
-**`interface`** PaginationInputDto
+**`Interface`**
+
+PaginationInputDto
 
 ## Hierarchy
 
