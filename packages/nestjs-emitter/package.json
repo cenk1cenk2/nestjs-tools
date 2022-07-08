@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@nestjs/common": "^9.0.1",
-    "@nestjs/event-emitter": "^1.1.1"
+    "@nestjs/event-emitter": "^1.2.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
