@@ -19,7 +19,7 @@
 - [EventManagerModule](classes/EventManagerModule.md)
 - [EventManager](classes/EventManager.md)
 
-## Type aliases
+## Type Aliases
 
 - [EventRequest](types/EventRequest.md)
 - [EventResponse](types/EventResponse.md)

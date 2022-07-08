@@ -26,10 +26,6 @@
 | :-------- | :---------------------------------- |
 | `emitter` | [`EventEmitter2`](EventEmitter2.md) |
 
-#### Defined in
-
-packages/nestjs-emitter/src/event-manager/event-manager.service.ts:8
-
 ## Methods
 
 ### emit
@@ -55,7 +51,3 @@ packages/nestjs-emitter/src/event-manager/event-manager.service.ts:8
 #### Returns
 
 `Promise`<`MultipleResult` extends `true` ? [`EventResponse`](../types/EventResponse.md)<`E`, `Map`\>[] : [`EventResponse`](../types/EventResponse.md)<`E`, `Map`\>\>
-
-#### Defined in
-
-packages/nestjs-emitter/src/event-manager/event-manager.service.ts:10
