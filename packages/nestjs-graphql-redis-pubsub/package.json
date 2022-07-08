@@ -27,7 +27,7 @@
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
   "peerDependencies": {
-    "@nestjs/common": ">= 7.6.1 < 9",
+    "@nestjs/common": ">= 7.6.1 < 10",
     "@webundsoehne/nestjs-util": ">= 2.3.2",
     "graphql-redis-subscriptions": ">= 2.4.0",
     "graphql-subscriptions": ">= 2.0.0",
