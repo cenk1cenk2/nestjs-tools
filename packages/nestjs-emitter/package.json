@@ -33,7 +33,7 @@
     "eventemitter2": ">= 6"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.0.1",
+    "@nestjs/common": "^9.0.2",
     "@nestjs/event-emitter": "^1.2.0"
   },
   "lint-staged": {
