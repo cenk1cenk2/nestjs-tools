@@ -1,138 +1,145 @@
 {
-  "id": 0,
-  "name": "@cenk1cenk2/nestjs-graphql-generator",
-  "kind": 1,
-  "kindString": "Project",
-  "flags": {},
-  "originalName": "",
-  "children": [
-    {
-      "id": 1,
-      "name": "Config",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "children": [
-        {
-          "id": 2,
-          "name": "schema",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "run.interface.ts",
-              "line": 4,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "array",
-            "elementType": {
-              "type": "reference",
-              "name": "ConfigSchema"
-            }
-          }
-        },
-        {
-          "id": 3,
-          "name": "options",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "run.interface.ts",
-              "line": 5,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "reference",
-                "name": "Config",
-                "qualifiedName": "Types.Config",
-                "package": "@graphql-codegen/plugin-helpers"
-              }
-            ],
-            "name": "Partial",
-            "qualifiedName": "Partial",
-            "package": "typescript"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [2, 3]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "run.interface.ts",
-          "line": 3,
-          "character": 17
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "runGenerator",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "run.ts",
-          "line": 10,
-          "character": 22
-        }
-      ],
-      "signatures": [
-        {
-          "id": 5,
-          "name": "runGenerator",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "array",
-                "elementType": {
-                  "type": "intrinsic",
-                  "name": "unknown"
-                }
-              }
-            ],
-            "name": "Promise",
-            "qualifiedName": "Promise",
-            "package": "typescript"
-          }
-        }
-      ]
-    }
-  ],
-  "groups": [
-    {
-      "title": "Interfaces",
-      "children": [1]
-    },
-    {
-      "title": "Functions",
-      "children": [4]
-    }
-  ],
-  "sources": [
-    {
-      "fileName": "index.ts",
-      "line": 1,
-      "character": 0
-    }
-  ]
+	"id": 0,
+	"name": "@cenk1cenk2/nestjs-graphql-generator",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "Config",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 2,
+					"name": "schema",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "run.interface.ts",
+							"line": 4,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ConfigSchema"
+						}
+					}
+				},
+				{
+					"id": 3,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "run.interface.ts",
+							"line": 5,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "Config",
+								"qualifiedName": "Types.Config",
+								"package": "@graphql-codegen/plugin-helpers"
+							}
+						],
+						"name": "Partial",
+						"qualifiedName": "Partial",
+						"package": "typescript"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						2,
+						3
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "run.interface.ts",
+					"line": 3,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "runGenerator",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "run.ts",
+					"line": 10,
+					"character": 22
+				}
+			],
+			"signatures": [
+				{
+					"id": 5,
+					"name": "runGenerator",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						],
+						"name": "Promise",
+						"qualifiedName": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				4
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
 }
