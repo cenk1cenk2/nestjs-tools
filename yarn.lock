@@ -2224,9 +2224,9 @@
     universal-user-agent "^6.0.0"
 
 "@octokit/openapi-types@^12.7.0":
-  version "12.9.0"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-12.9.0.tgz#f215e934b23cfb2cffe51f40ab40c18fae412037"
-  integrity sha512-x0wjPEnD487oMjODOSIDdVNBebyrAPE4edY0bsxp/ZX1XPPnWQWXseixbhMa5KcwpbHVdk4qbC3zzedoMdP/YQ==
+  version "12.9.1"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-12.9.1.tgz#ca9834539f75ff607ed55afae7655677be6aa00b"
+  integrity sha512-nmLbJmjKDF4Ryy+P6xP6h0UwodTFNUzCm6IzBeZd1ITJ37fDra32TdtS/0vAzSCOac/KliJIjQI8Fiz2I414WA==
 
 "@octokit/plugin-enterprise-rest@^6.0.1":
   version "6.0.1"
@@ -4188,9 +4188,9 @@ ecdsa-sig-formatter@1.0.11:
     safe-buffer "^5.0.1"
 
 electron-to-chromium@^1.4.188:
-  version "1.4.189"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.189.tgz#4e5b221dc44e09e9dddc9abbc6457857dee7ba25"
-  integrity sha512-dQ6Zn4ll2NofGtxPXaDfY2laIa6NyCQdqXYHdwH90GJQW0LpJJib0ZU/ERtbb0XkBEmUD2eJtagbOie3pdMiPg==
+  version "1.4.190"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.190.tgz#c356196bd469cec230fe78e666b4d8628f12eb8a"
+  integrity sha512-dDW9D5xT+ODGh9rlK2sQeJR0xgV1nrNn3/K4IV8k74QbmKN61dm5GKMSwerdpTpazrrkK6wwcgjGBoQ/Nx6L5A==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -7083,9 +7083,9 @@ node-gyp@^8.4.1:
     which "^2.0.2"
 
 node-gyp@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-9.0.0.tgz#e1da2067427f3eb5bb56820cb62bc6b1e4bd2089"
-  integrity sha512-Ma6p4s+XCTPxCuAMrOA/IJRmVy16R8Sdhtwl4PrCr7IBlj4cPawF0vg/l7nOT1jPbuNS7lIRJpBSvVsXwEZuzw==
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-9.1.0.tgz#c8d8e590678ea1f7b8097511dedf41fc126648f8"
+  integrity sha512-HkmN0ZpQJU7FLbJauJTHkHlSVAXlNGDAzH/VYFZGDOnFyn/Na3GlNJfkudmufOdS6/jNFhy88ObzL7ERz9es1g==
   dependencies:
     env-paths "^2.2.0"
     glob "^7.1.4"
@@ -8786,9 +8786,9 @@ subscriptions-transport-ws@0.11.0:
     ws "^5.2.0 || ^6.0.0 || ^7.0.0"
 
 sucrase@^3.20.3:
-  version "3.23.0"
-  resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.23.0.tgz#2a7fa80a04f055fb2e95d2aead03fec1dba52838"
-  integrity sha512-xgC1xboStzGhCnRywlBf/DLmkC+SkdAKqrNCDsxGrzM0phR5oUxoFKiQNrsc2D8wDdAm03iLbSZqjHDddo3IzQ==
+  version "3.24.0"
+  resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.24.0.tgz#66a8f2cc845bc441706ce5f3056de283289067b6"
+  integrity sha512-SevqflhW356TKEyWjFHg2e5f3eH+5rzmsMJxrVMDvZIEHh/goYrpzDGA6APEj4ME9MdGm8oNgIzi1eF3c3dDQA==
   dependencies:
     commander "^4.0.0"
     glob "7.1.6"
@@ -9003,9 +9003,9 @@ ts-morph@^15.1.0:
     code-block-writer "^11.0.0"
 
 ts-node@^10.8.1:
-  version "10.8.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.8.2.tgz#3185b75228cef116bf82ffe8762594f54b2a23f2"
-  integrity sha512-LYdGnoGddf1D6v8REPtIH+5iq/gTDuZqv2/UJUU7tKjuEU8xVZorBM+buCGNjj+pGEud+sOoM4CX3/YzINpENA==
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  integrity sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==
   dependencies:
     "@cspotcode/source-map-support" "^0.8.0"
     "@tsconfig/node10" "^1.0.7"
