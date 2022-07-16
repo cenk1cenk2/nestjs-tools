@@ -35,7 +35,7 @@
     "@nestjs/common": "^9.0.3",
     "@types/ioredis": "^4.28.10",
     "@webundsoehne/nestjs-util": "^5.5.3",
-    "ioredis": "^5.2.0"
+    "ioredis": "^5.2.1"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
