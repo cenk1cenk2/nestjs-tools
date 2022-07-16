@@ -3893,9 +3893,9 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     which "^2.0.1"
 
 cross-undici-fetch@^0.4.11:
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/cross-undici-fetch/-/cross-undici-fetch-0.4.11.tgz#bef38dc729a01db6e07c84fee6de1089b5d3d0a4"
-  integrity sha512-pRp+EWewyOPYIeUvwOqCIqylCFWqlBwwr6nlZB38v3PhWxS1RYfSgHUJApYTT8jm71SbL5p4qg5kUQv6ZyS24A==
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/cross-undici-fetch/-/cross-undici-fetch-0.4.12.tgz#952d8021362f1207aec3877d75813fa70a7664c6"
+  integrity sha512-p7g8sIOlnRYUIBFl7hgOCG9DUEr2R8VJchrJYxcsqwEkqcD5mci/u5YB/aeNGussihnNxSAEwpGuN5D5aNe/0Q==
   dependencies:
     abort-controller "^3.0.0"
     busboy "^1.6.0"
