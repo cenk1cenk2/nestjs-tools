@@ -669,13 +669,13 @@
   optionalDependencies:
     "@commitlint/load" "^16.2.3"
 
-"@cenk1cenk2/eslint-config@^2.5.19":
-  version "2.5.19"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.19.tgz#7d99e48d6fb4372fab522540ed10b678457c3837"
-  integrity sha512-EUJ1WahGkmL+3LKHz/X114hQxPjOcWfv0WHQpH0Vc1ExSuj39T0PlUyaUQEnfr0OdOEo9xmlm4rcux/XU+vtFA==
+"@cenk1cenk2/eslint-config@^2.5.20":
+  version "2.5.20"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.20.tgz#1f5a2efe3c12a76995b38d0756f02031ea513080"
+  integrity sha512-/NxDVCksTuD8d7ywDJDV3f8YNpmkgQK682X+qdRrD3cYVICjs3TUbawkfcAsJERGxWR/vE3y7OnXkkzIlA5zCA==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.30.5"
-    "@typescript-eslint/parser" "^5.30.5"
+    "@typescript-eslint/eslint-plugin" "^5.30.6"
+    "@typescript-eslint/parser" "^5.30.6"
     eslint-plugin-import "^2.26.0"
     load-tsconfig "^0.2.3"
 
@@ -2516,7 +2516,7 @@
   dependencies:
     "@types/node" "*"
 
-"@typescript-eslint/eslint-plugin@^5.30.5":
+"@typescript-eslint/eslint-plugin@^5.30.6":
   version "5.30.6"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.30.6.tgz#9c6017b6c1d04894141b4a87816388967f64c359"
   integrity sha512-J4zYMIhgrx4MgnZrSDD7sEnQp7FmhKNOaqaOpaoQ/SfdMfRB/0yvK74hTnvH+VQxndZynqs5/Hn4t+2/j9bADg==
@@ -2531,7 +2531,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.30.5":
+"@typescript-eslint/parser@^5.30.6":
   version "5.30.6"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.30.6.tgz#add440db038fa9d777e4ebdaf66da9e7fb7abe92"
   integrity sha512-gfF9lZjT0p2ZSdxO70Xbw8w9sPPJGfAdjK7WikEjB3fcUI/yr9maUVEdqigBjKincUYNKOmf7QBMiTf719kbrA==
