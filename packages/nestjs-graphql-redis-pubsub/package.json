@@ -39,7 +39,7 @@
     "@webundsoehne/nestjs-util": "^5.5.3",
     "graphql-redis-subscriptions": "^2.5.0",
     "graphql-subscriptions": "^2.0.0",
-    "ioredis": "^5.2.1"
+    "ioredis": "^5.2.2"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
