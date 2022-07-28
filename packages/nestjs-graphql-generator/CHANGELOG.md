@@ -1,3 +1,12 @@
+## @cenk1cenk2/nestjs-graphql-generator [2.0.10](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@2.0.9...@cenk1cenk2/nestjs-graphql-generator@2.0.10) (2022-07-28)
+
+### Bug Fixes
+
+- **deps:** update all minor dependency updates ([3d6c6eb](https://github.com/cenk1cenk2/nestjs-tools/commit/3d6c6eb5167fa37dcaccb458c17e8270a42152ae))
+- **deps:** update dependency @graphql-codegen/cli to ^2.10.0 ([d0ceed4](https://github.com/cenk1cenk2/nestjs-tools/commit/d0ceed4ad790effc24829b99f6221fb34642b477))
+- **deps:** update dependency @graphql-codegen/cli to ^2.11.2 ([5e3303d](https://github.com/cenk1cenk2/nestjs-tools/commit/5e3303d04a392a13938ec10742acb08d8c5eea9b))
+- **deps:** update dependency @graphql-codegen/cli to ^2.9.1 ([e8532b7](https://github.com/cenk1cenk2/nestjs-tools/commit/e8532b75549d24a9c3f2215edcb0f02ada6a93f3))
+
 ## @cenk1cenk2/nestjs-graphql-generator [2.0.9](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@2.0.8...@cenk1cenk2/nestjs-graphql-generator@2.0.9) (2022-07-19)
 
 ### Bug Fixes
