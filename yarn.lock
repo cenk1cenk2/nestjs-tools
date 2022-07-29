@@ -2252,11 +2252,11 @@
   integrity sha512-mLUsMkgP7K/cnFEw07kWqXGF5LKrOkD+lhCrKvPHXWDywAwuDUeDwWBpc69XK3pNX0uKiVt8g5z96PJ6z9xCFA==
 
 "@octokit/plugin-rest-endpoint-methods@^6.0.0":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-6.1.2.tgz#bbf55cfc43acf177514441ecd1d26031006f73ed"
-  integrity sha512-sAfSKtLHNq0UQ2iFuI41I6m5SK6bnKFRJ5kUjDRVbmQXiRVi4aQiIcgG4cM7bt+bhSiWL4HwnTxDkWFlKeKClA==
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-6.2.0.tgz#c06359d2f94436f8c67d345093cb02dedd31d974"
+  integrity sha512-PZ+yfkbZAuRUtqu6Y191/V3eM0KBPx+Yq7nh+ONPdpm3EX4pd5UnK2y2XgO/0AtNum5a4aJCDjqsDuUZ2hWRXw==
   dependencies:
-    "@octokit/types" "^6.40.0"
+    "@octokit/types" "^6.41.0"
     deprecation "^2.3.1"
 
 "@octokit/request-error@^3.0.0":
@@ -2290,7 +2290,7 @@
     "@octokit/plugin-request-log" "^1.0.4"
     "@octokit/plugin-rest-endpoint-methods" "^6.0.0"
 
-"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.40.0", "@octokit/types@^6.41.0":
+"@octokit/types@^6.0.3", "@octokit/types@^6.16.1", "@octokit/types@^6.41.0":
   version "6.41.0"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.41.0.tgz#e58ef78d78596d2fb7df9c6259802464b5f84a04"
   integrity sha512-eJ2jbzjdijiL3B4PrSQaSjuF2sPEQPVCPzBvTHJD9Nz+9dw2SGH4K4xeQJ77YfTq5bRQ+bD8wT11JbeDPmxmGg==
@@ -3555,9 +3555,9 @@ cmd-shim@^5.0.0:
     mkdirp-infer-owner "^2.0.0"
 
 code-block-writer@^11.0.0:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-11.0.2.tgz#263a1d5f982c640cda33d0704a8562057ae8b27d"
-  integrity sha512-goP2FghRVwp940jOvhtUrRDiSVU0h4Ah2jPX1gu2ueGW8boQmdQV4NwiHoM5MQQbUWLQuZopougO8+Ajljgpnw==
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-11.0.3.tgz#9eec2993edfb79bfae845fbc093758c0a0b73b76"
+  integrity sha512-NiujjUFB4SwScJq2bwbYUtXbZhBSlY6vYzm++3Q6oC+U+injTqfPYFK8wS9COOmb2lueqp0ZRB4nK1VYeHgNyw==
 
 coffee-script@^1.12.4:
   version "1.12.7"
@@ -3867,11 +3867,6 @@ cosmiconfig-toml-loader@1.0.0:
   dependencies:
     "@iarna/toml" "^2.2.5"
 
-cosmiconfig-typescript-loader@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-3.0.0.tgz#1925ca6f5d6c578acb6bf91d888f7cbb3d5e69f5"
-  integrity sha512-koBea9l2wvqoq4CWsoHdKb+RFyjgzTR7uw0F1CVvHrlGIHSGCMY5YwGj8+HN2iwqzpHPTst6LFUhCgTPwVOGpA==
-
 cosmiconfig-typescript-loader@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-2.0.2.tgz#7e7ce6064af041c910e1e43fb0fd9625cee56e93"
@@ -3879,6 +3874,11 @@ cosmiconfig-typescript-loader@^2.0.0:
   dependencies:
     cosmiconfig "^7"
     ts-node "^10.8.1"
+
+cosmiconfig-typescript-loader@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-3.1.1.tgz#9cdc2ae1a219cf52b0bc0647596c6691b9ab56a3"
+  integrity sha512-SR5/NciF0vyYqcGsmB9WJ4QOKkcSSSzcBPLrnT6094BYahMy0eImWvlH3zoEOYqpF2zgiyAKHtWTXTo+fqgxPg==
 
 cosmiconfig@7.0.1, cosmiconfig@^7, cosmiconfig@^7.0.0:
   version "7.0.1"
@@ -4200,9 +4200,9 @@ ecdsa-sig-formatter@1.0.11:
     safe-buffer "^5.0.1"
 
 electron-to-chromium@^1.4.202:
-  version "1.4.205"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.205.tgz#1e5180945c1415f66b2143c5a5eb983fffb2e30f"
-  integrity sha512-sSHlbfqn6CgQqD9muogEwWrw1wi2tHEQ+sunW7ex/kJ9ICucE85JW0E9ekbRDDgLP7NlpoNVUl+el0556RhFIg==
+  version "1.4.206"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.206.tgz#580ff85b54d7ec0c05f20b1e37ea0becdd7b0ee4"
+  integrity sha512-h+Fadt1gIaQ06JaIiyqPsBjJ08fV5Q7md+V8bUvQW/9OvXfL2LRICTz2EcnnCP7QzrFTS6/27MRV6Bl9Yn97zA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -5259,9 +5259,9 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
 graphql-config@^4.3.1:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-4.3.2.tgz#f25d64353b534e6df7f5655222096babf4916c0e"
-  integrity sha512-shlHjlSjpUo/pRmA5EMt9doFNQc9XCG43LkU80zOLPEvazgLpVjMpo9EPrDbQYUy8rkWRWIbzXKYypVZqmvcvg==
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/graphql-config/-/graphql-config-4.3.3.tgz#5bf0da2b1493d1eccb34c00515f02ac4587225b0"
+  integrity sha512-ju2LAbOk6GLp+8JY7mh3CrEe0iEj2AdImNKv58G0DyISBo72kDEJYNJ07hKmkHdIzhDsSHiVzaCVIyBU2LCUug==
   dependencies:
     "@graphql-tools/graphql-file-loader" "^7.3.7"
     "@graphql-tools/json-file-loader" "^7.3.7"
@@ -5271,7 +5271,7 @@ graphql-config@^4.3.1:
     "@graphql-tools/utils" "^8.6.5"
     cosmiconfig "7.0.1"
     cosmiconfig-toml-loader "1.0.0"
-    cosmiconfig-typescript-loader "3.0.0"
+    cosmiconfig-typescript-loader "^3.1.0"
     minimatch "4.2.1"
     string-env-interpolation "1.0.1"
     ts-node "^10.8.1"
