@@ -250,9 +250,9 @@
     semver "^6.3.0"
 
 "@babel/generator@^7.14.0", "@babel/generator@^7.18.10":
-  version "7.18.10"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.10.tgz#794f328bfabdcbaf0ebf9bf91b5b57b61fa77a2a"
-  integrity sha512-0+sW7e3HjQbiHbj1NeU/vN8ornohYlacAfZIaXhdoGweQqgcNy69COVciYYqEXJ/v+9OBA7Frxm4CVAuNqKeNA==
+  version "7.18.12"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.18.12.tgz#fa58daa303757bd6f5e4bbca91b342040463d9f4"
+  integrity sha512-dfQ8ebCN98SvyL7IxNMCUtZQSq5R7kxgN+r8qYTGDmmSion1hX2C0zq2yo1bsCDhXixokv1SAWTZUMYbO/V5zg==
   dependencies:
     "@babel/types" "^7.18.10"
     "@jridgewell/gen-mapping" "^0.3.2"
@@ -2184,19 +2184,19 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@14.5.2":
-  version "14.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.5.2.tgz#3608d03e55d5b15145d22f8cf2577e23688ff291"
-  integrity sha512-uriSxM33IpiBpW9kHEW3gw5OjPaQe3jHdWUMOT88TrqTlf449qe01Sys8+H2YgJMIcLTFYX0fP4V1K9jqKKZCg==
+"@nrwl/cli@14.5.4":
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.5.4.tgz#86ac4fbcd1bf079b67c420376cf696b68fcc1200"
+  integrity sha512-UYr14hxeYV8p/zt6D6z33hljZJQROJAVxSC+mm72fyVvy88Gt0sQNLfMmOARXur0p/73PSLM0jJ2Sr7Ftsuu+A==
   dependencies:
-    nx "14.5.2"
+    nx "14.5.4"
 
-"@nrwl/tao@14.5.2":
-  version "14.5.2"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.5.2.tgz#13828035314732051683709907fcda3aa4d4718b"
-  integrity sha512-SEx3SM7xQiB8mOQ/gCt7lFJKRrkq3rBX6FiV3bl+dQtuKK2zKQbyikY9r+MCZCQNqZAud3HJ2xCyKZBhK8htQg==
+"@nrwl/tao@14.5.4":
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.5.4.tgz#a67097d424bcbf7073a1944ea1a0209c4f4f859c"
+  integrity sha512-a2GCuSE8WghjehuU3GVO63KZEnZXXQiqEg137yN/Na+PxwSu68XeaX53SLyzRskTV120YwBBy1YCTNzAZxxsjg==
   dependencies:
-    nx "14.5.2"
+    nx "14.5.4"
 
 "@nuxtjs/opencollective@0.3.2":
   version "0.3.2"
@@ -7219,13 +7219,13 @@ nullthrows@^1.1.1:
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
 
-nx@14.5.2, "nx@>=14.4.3 < 16":
-  version "14.5.2"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-14.5.2.tgz#6514a38cc24cc642c2a3b54f5345791db8e4d9fb"
-  integrity sha512-I6KWVMR5Ksj/HgderkcmJmyaqHdWblQeFUeVq9to263Wr3QCIRigbvdDI3rq3ZQCBMyhUSOVP9MFXROoRVtJXQ==
+nx@14.5.4, "nx@>=14.4.3 < 16":
+  version "14.5.4"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-14.5.4.tgz#58b6e8ee798733a6ab9aff2a19180c371482fa10"
+  integrity sha512-xv1nTaQP6kqVDE4PXcB1tLlgzNAPUHE/2vlqSLgxjNb6colKf0vrEZhVTjhnbqBeJiTb33gUx50bBXkurCkN5w==
   dependencies:
-    "@nrwl/cli" "14.5.2"
-    "@nrwl/tao" "14.5.2"
+    "@nrwl/cli" "14.5.4"
+    "@nrwl/tao" "14.5.4"
     "@parcel/watcher" "2.0.4"
     chalk "4.1.0"
     chokidar "^3.5.1"
