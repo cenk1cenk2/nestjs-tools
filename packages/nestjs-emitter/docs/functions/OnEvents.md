@@ -14,3 +14,7 @@ Event listener decorator. Subscribes to events based on the specified name(s).
 #### Returns
 
 `MethodDecorator`
+
+#### Defined in
+
+packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts:26

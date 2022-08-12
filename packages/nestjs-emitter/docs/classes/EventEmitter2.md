@@ -12,6 +12,10 @@
 | :--------- | :------------------- |
 | `options?` | `ConstructorOptions` |
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:118
+
 ## Methods
 
 ### emit
@@ -28,6 +32,10 @@
 #### Returns
 
 `boolean`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:119
 
 ---
 
@@ -46,6 +54,10 @@
 
 `Promise`<`any`[]\>
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:120
+
 ---
 
 ### addListener
@@ -62,6 +74,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:121
 
 ---
 
@@ -81,6 +97,10 @@
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:122
+
 ---
 
 ### prependListener
@@ -98,6 +118,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:123
 
 ---
 
@@ -117,6 +141,10 @@
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:124
+
 ---
 
 ### prependOnceListener
@@ -134,6 +162,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:125
 
 ---
 
@@ -154,6 +186,10 @@
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:126
+
 ---
 
 ### prependMany
@@ -173,6 +209,10 @@
 
 [`EventEmitter2`](EventEmitter2.md) \| `Listener`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:127
+
 ---
 
 ### onAny
@@ -188,6 +228,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md)
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:128
 
 ---
 
@@ -205,6 +249,10 @@
 
 [`EventEmitter2`](EventEmitter2.md)
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:129
+
 ---
 
 ### offAny
@@ -220,6 +268,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md)
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:130
 
 ---
 
@@ -238,6 +290,10 @@
 
 [`EventEmitter2`](EventEmitter2.md)
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:131
+
 ---
 
 ### off
@@ -255,6 +311,10 @@
 
 [`EventEmitter2`](EventEmitter2.md)
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:132
+
 ---
 
 ### removeAllListeners
@@ -270,6 +330,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md)
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:133
 
 ---
 
@@ -287,6 +351,10 @@
 
 `void`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:134
+
 ---
 
 ### getMaxListeners
@@ -296,6 +364,10 @@
 #### Returns
 
 `number`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:135
 
 ---
 
@@ -313,6 +385,10 @@
 
 (`string` \| `symbol` \| `event`[])[]
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:136
+
 ---
 
 ### listenerCount
@@ -328,6 +404,10 @@
 #### Returns
 
 `number`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:137
 
 ---
 
@@ -345,6 +425,10 @@
 
 `ListenerFn`[]
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:138
+
 ---
 
 ### listenersAny
@@ -354,6 +438,10 @@
 #### Returns
 
 `ListenerFn`[]
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:139
 
 ---
 
@@ -372,6 +460,10 @@
 
 `CancelablePromise`<`any`[]\>
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:140
+
 ▸ **waitFor**(`event`, `filter?`): `CancelablePromise`<`any`[]\>
 
 #### Parameters
@@ -385,6 +477,10 @@
 
 `CancelablePromise`<`any`[]\>
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:141
+
 ▸ **waitFor**(`event`, `options?`): `CancelablePromise`<`any`[]\>
 
 #### Parameters
@@ -397,6 +493,10 @@
 #### Returns
 
 `CancelablePromise`<`any`[]\>
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:142
 
 ---
 
@@ -416,6 +516,10 @@
 
 [`EventEmitter2`](EventEmitter2.md)
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:143
+
 ▸ **listenTo**(`target`, `events`, `options?`): [`EventEmitter2`](EventEmitter2.md)
 
 #### Parameters
@@ -430,6 +534,10 @@
 
 [`EventEmitter2`](EventEmitter2.md)
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:144
+
 ▸ **listenTo**(`target`, `events`, `options?`): [`EventEmitter2`](EventEmitter2.md)
 
 #### Parameters
@@ -443,6 +551,10 @@
 #### Returns
 
 [`EventEmitter2`](EventEmitter2.md)
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:145
 
 ---
 
@@ -461,6 +573,10 @@
 
 `Boolean`
 
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:146
+
 ---
 
 ### hasListeners
@@ -476,6 +592,10 @@
 #### Returns
 
 `Boolean`
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:147
 
 ---
 
@@ -494,6 +614,10 @@
 #### Returns
 
 `CancelablePromise`<`any`[]\>
+
+#### Defined in
+
+node_modules/eventemitter2/eventemitter2.d.ts:148
 
 ## Properties
 
