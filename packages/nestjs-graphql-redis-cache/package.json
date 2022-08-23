@@ -44,7 +44,7 @@
     "@webundsoehne/nestjs-util": "^5.5.4",
     "cache-manager": "^4.1.0",
     "cache-manager-ioredis": "^2.1.0",
-    "ioredis": "^5.2.2"
+    "ioredis": "^5.2.3"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
