@@ -2160,19 +2160,19 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@14.6.4":
-  version "14.6.4"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.6.4.tgz#b2af7d2713c535dd9017def5236fa46e9d27cfbc"
-  integrity sha512-VkS2L3O2MOCgqYg6Fubv7FfJ4D39iKGSKYhTom6ZJLPEcQrPXTvrD1hIzMJ4Cehal5P6DYw7ZEjcJgiTATcSYA==
+"@nrwl/cli@14.6.5":
+  version "14.6.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-14.6.5.tgz#6751d7c48fff78095fb19874bda6a1f786e47ce8"
+  integrity sha512-sjT4/oMk1F4+dTpCp08IVE8hfqKsokebUECzC1hTu4pCeFo0oviIi7bQTuCIbG9w4iiHLioa6QmLRXBwVJEr9w==
   dependencies:
-    nx "14.6.4"
+    nx "14.6.5"
 
-"@nrwl/tao@14.6.4":
-  version "14.6.4"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.6.4.tgz#fdc2f14d4fac9b0a62a9c32cfc8b98bbf075e642"
-  integrity sha512-xSfcXeU8AyEbmTGiGPCwej2eK+36gU9o6smUQxcK00Yii6vb5I87n8U77jTF5tJ85TkDW0I1VoHm0Nd8f1d9Cw==
+"@nrwl/tao@14.6.5":
+  version "14.6.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-14.6.5.tgz#202d9ed3e13cb873dd7f218c0622ba8972ba8cd6"
+  integrity sha512-sSbTSN4Bfh4vQR2iCl9arNzEhJztG6paY2j+k/GwQZdN+QssX9xV32jLWYIC3rDmPJWaZ11uD3TgAyr3X7GXhw==
   dependencies:
-    nx "14.6.4"
+    nx "14.6.5"
 
 "@nuxtjs/opencollective@0.3.2":
   version "0.3.2"
@@ -2204,9 +2204,9 @@
     universal-user-agent "^6.0.0"
 
 "@octokit/endpoint@^7.0.0":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-7.0.1.tgz#cb0d03e62e8762f3c80e52b025179de81899a823"
-  integrity sha512-/wTXAJwt0HzJ2IeE4kQXO+mBScfzyCkI0hMtkIaqyXd9zg76OpOfNQfHL9FlaxAV2RsNiOXZibVWloy8EexENg==
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@octokit/endpoint/-/endpoint-7.0.2.tgz#11ee868406ba7bb1642e61bbe676d641f79f02be"
+  integrity sha512-8/AUACfE9vpRpehE6ZLfEtzkibe5nfsSwFZVMsG8qabqRt1M81qZYUFRZa1B8w8lP6cdfDJfRq9HWS+MbmR7tw==
   dependencies:
     "@octokit/types" "^7.0.0"
     is-plain-object "^5.0.0"
@@ -2383,9 +2383,9 @@
   integrity sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==
 
 "@sinclair/typebox@^0.24.1":
-  version "0.24.35"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.35.tgz#7b5ca127aefe3ed482bb60f874bebbe3143e82f5"
-  integrity sha512-iN6ehuDndiTiDz2F+Orv/+oHJR+PrGv+38oghCddpsW4YEZl5qyLsWxSwYUWrKEOfjpGtXDFW6scJtjpzSLeSw==
+  version "0.24.37"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.37.tgz#3ea4cf8f3cf8a943c17baf5bb7b33587afa5f76b"
+  integrity sha512-8xuD57tNMHs7R0YUzFp0xqIVOTJDbFHnEN/JTej5d5o/dTx4OSsURKTT9dkWl6ghMk4zs3AYe1bi7UK0NnJ4oA==
 
 "@sqltools/formatter@^1.2.2":
   version "1.2.3"
@@ -7142,13 +7142,13 @@ nullthrows@^1.1.1:
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
 
-nx@14.6.4, "nx@>=14.6.1 < 16":
-  version "14.6.4"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-14.6.4.tgz#471379334efc8258a47ec80db0915667d29aace3"
-  integrity sha512-AbUH3xQVL6faSXSMB7kPFcRtnz+FNUt4xR0UtfBBCqNSItq5kMOlHK10G7aN+VWtw8ScNy7qkWIeQ6VezvUW8A==
+nx@14.6.5, "nx@>=14.6.1 < 16":
+  version "14.6.5"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-14.6.5.tgz#13524e7355803a8247278374063d8e82b845a621"
+  integrity sha512-egV8Zrec+0m+27wTENe9W/JKRMkBDx1N0xaFzKjL0WKj5WIe4asao5uwTJEwqi9iQyiijExxUFVU5MNGuF2c+A==
   dependencies:
-    "@nrwl/cli" "14.6.4"
-    "@nrwl/tao" "14.6.4"
+    "@nrwl/cli" "14.6.5"
+    "@nrwl/tao" "14.6.5"
     "@parcel/watcher" "2.0.4"
     chalk "4.1.0"
     chokidar "^3.5.1"
