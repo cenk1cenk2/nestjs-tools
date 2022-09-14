@@ -179,25 +179,25 @@
   dependencies:
     "@babel/highlight" "^7.18.6"
 
-"@babel/compat-data@^7.18.8", "@babel/compat-data@^7.19.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.19.0.tgz#2a592fd89bacb1fcde68de31bee4f2f2dacb0e86"
-  integrity sha512-y5rqgTTPTmaF5e2nVhOxw+Ur9HDJLsWb6U/KpgUzRZEdPfE6VOubXBKLdbcUTijzRptednSBDQbYZBOSqJxpJw==
+"@babel/compat-data@^7.18.8", "@babel/compat-data@^7.19.1":
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.19.1.tgz#72d647b4ff6a4f82878d184613353af1dd0290f9"
+  integrity sha512-72a9ghR0gnESIa7jBN53U32FOVCEoztyIlKaNoU05zRhEecduGK9L9c3ww7Mp06JiR+0ls0GBPFJQwwtjn9ksg==
 
 "@babel/core@^7.14.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.0.tgz#d2f5f4f2033c00de8096be3c9f45772563e150c3"
-  integrity sha512-reM4+U7B9ss148rh2n1Qs9ASS+w94irYXga7c2jaQv9RVzpS7Mv1a9rnYYwuDa45G+DkORt9g6An2k/V4d9LbQ==
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.1.tgz#c8fa615c5e88e272564ace3d42fbc8b17bfeb22b"
+  integrity sha512-1H8VgqXme4UXCRv7/Wa1bq7RVymKOzC7znjyFM8KiEzwFqcKUKYNoQef4GhdklgNvoBXyW4gYhuBNCM5o1zImw==
   dependencies:
     "@ampproject/remapping" "^2.1.0"
     "@babel/code-frame" "^7.18.6"
     "@babel/generator" "^7.19.0"
-    "@babel/helper-compilation-targets" "^7.19.0"
+    "@babel/helper-compilation-targets" "^7.19.1"
     "@babel/helper-module-transforms" "^7.19.0"
     "@babel/helpers" "^7.19.0"
-    "@babel/parser" "^7.19.0"
+    "@babel/parser" "^7.19.1"
     "@babel/template" "^7.18.10"
-    "@babel/traverse" "^7.19.0"
+    "@babel/traverse" "^7.19.1"
     "@babel/types" "^7.19.0"
     convert-source-map "^1.7.0"
     debug "^4.1.0"
@@ -221,14 +221,14 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-compilation-targets@^7.18.9", "@babel/helper-compilation-targets@^7.19.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.19.0.tgz#537ec8339d53e806ed422f1e06c8f17d55b96bb0"
-  integrity sha512-Ai5bNWXIvwDvWM7njqsG3feMlL9hCVQsPYXodsZyLwshYkZVJt59Gftau4VrE8S9IT9asd2uSP1hG6wCNw+sXA==
+"@babel/helper-compilation-targets@^7.18.9", "@babel/helper-compilation-targets@^7.19.0", "@babel/helper-compilation-targets@^7.19.1":
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.19.1.tgz#7f630911d83b408b76fe584831c98e5395d7a17c"
+  integrity sha512-LlLkkqhCMyz2lkQPvJNdIYU7O5YjWRgC2R4omjCTpZd8u8KMQzZvX4qce+/BluN1rcQiV7BoGUpmQ0LeHerbhg==
   dependencies:
-    "@babel/compat-data" "^7.19.0"
+    "@babel/compat-data" "^7.19.1"
     "@babel/helper-validator-option" "^7.18.6"
-    browserslist "^4.20.2"
+    browserslist "^4.21.3"
     semver "^6.3.0"
 
 "@babel/helper-create-class-features-plugin@^7.18.6":
@@ -305,15 +305,15 @@
   integrity sha512-40Ryx7I8mT+0gaNxm8JGTZFUITNqdLAgdg0hXzeVZxVD6nFsdhQvip6v8dqkRHzsz1VFpFAaOCHNn0vKBL7Czw==
 
 "@babel/helper-replace-supers@^7.18.6", "@babel/helper-replace-supers@^7.18.9":
-  version "7.18.9"
-  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.18.9.tgz#1092e002feca980fbbb0bd4d51b74a65c6a500e6"
-  integrity sha512-dNsWibVI4lNT6HiuOIBr1oyxo40HvIVmbwPUm3XZ7wMh4k2WxrxTqZwSqw/eEmXDS9np0ey5M2bz9tBmO9c+YQ==
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-replace-supers/-/helper-replace-supers-7.19.1.tgz#e1592a9b4b368aa6bdb8784a711e0bcbf0612b78"
+  integrity sha512-T7ahH7wV0Hfs46SFh5Jz3s0B6+o8g3c+7TMxu7xKfmHikg7EAZ3I2Qk9LFhjxXq8sL7UkP5JflezNwoZa8WvWw==
   dependencies:
     "@babel/helper-environment-visitor" "^7.18.9"
     "@babel/helper-member-expression-to-functions" "^7.18.9"
     "@babel/helper-optimise-call-expression" "^7.18.6"
-    "@babel/traverse" "^7.18.9"
-    "@babel/types" "^7.18.9"
+    "@babel/traverse" "^7.19.1"
+    "@babel/types" "^7.19.0"
 
 "@babel/helper-simple-access@^7.18.6":
   version "7.18.6"
@@ -342,9 +342,9 @@
   integrity sha512-XtIfWmeNY3i4t7t4D2t02q50HvqHybPqW2ki1kosnvWCwuCMeo81Jf0gwr85jy/neUdg5XDdeFE/80DXiO+njw==
 
 "@babel/helper-validator-identifier@^7.18.6":
-  version "7.18.6"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.18.6.tgz#9c97e30d31b2b8c72a1d08984f2ca9b574d7a076"
-  integrity sha512-MmetCkz9ej86nJQV+sFCxoGGrUbU3q02kgLciwkrt9QqEB7cP39oKEY0PakknEO0Gu20SskMRi+AYZ3b1TpN9g==
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz#7eea834cf32901ffdc1a7ee555e2f9c27e249ca2"
+  integrity sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==
 
 "@babel/helper-validator-option@^7.18.6":
   version "7.18.6"
@@ -369,10 +369,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.14.0", "@babel/parser@^7.16.8", "@babel/parser@^7.18.10", "@babel/parser@^7.19.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.19.0.tgz#497fcafb1d5b61376959c1c338745ef0577aa02c"
-  integrity sha512-74bEXKX2h+8rrfQUfsBfuZZHzsEs6Eql4pqy/T4Nn6Y9wNPggQOqD6z6pn5Bl8ZfysKouFZT/UXEH94ummEeQw==
+"@babel/parser@^7.14.0", "@babel/parser@^7.16.8", "@babel/parser@^7.18.10", "@babel/parser@^7.19.1":
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.19.1.tgz#6f6d6c2e621aad19a92544cc217ed13f1aac5b4c"
+  integrity sha512-h7RCSorm1DdTVGJf3P2Mhj3kdnkmF/EiysUkzS2TdgAYqyjFdMQJbVuXOBej2SBJaXan/lIVtT6KkGbyyq753A==
 
 "@babel/plugin-proposal-class-properties@^7.0.0":
   version "7.18.6"
@@ -597,10 +597,10 @@
     "@babel/parser" "^7.18.10"
     "@babel/types" "^7.18.10"
 
-"@babel/traverse@^7.14.0", "@babel/traverse@^7.16.8", "@babel/traverse@^7.18.9", "@babel/traverse@^7.19.0":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.19.0.tgz#eb9c561c7360005c592cc645abafe0c3c4548eed"
-  integrity sha512-4pKpFRDh+utd2mbRC8JLnlsMUii3PMHjpL6a0SZ4NMZy7YFP9aXORxEhdMVOc9CpWtDF09IkciQLEhK7Ml7gRA==
+"@babel/traverse@^7.14.0", "@babel/traverse@^7.16.8", "@babel/traverse@^7.19.0", "@babel/traverse@^7.19.1":
+  version "7.19.1"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.19.1.tgz#0fafe100a8c2a603b4718b1d9bf2568d1d193347"
+  integrity sha512-0j/ZfZMxKukDaag2PtOPDbwuELqIar6lLskVPPJDjXMXjfLb1Obo/1yjxIGqqAJrmfaTIY3z2wFLAQ7qSkLsuA==
   dependencies:
     "@babel/code-frame" "^7.18.6"
     "@babel/generator" "^7.19.0"
@@ -608,7 +608,7 @@
     "@babel/helper-function-name" "^7.19.0"
     "@babel/helper-hoist-variables" "^7.18.6"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.19.0"
+    "@babel/parser" "^7.19.1"
     "@babel/types" "^7.19.0"
     debug "^4.1.0"
     globals "^11.1.0"
@@ -1046,11 +1046,11 @@
     tslib "^2.4.0"
 
 "@graphql-tools/prisma-loader@^7.2.7":
-  version "7.2.21"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/prisma-loader/-/prisma-loader-7.2.21.tgz#3e4e9a1ba7fba03d3d4a379b7aaa6a409056e66c"
-  integrity sha512-J96fSYZLBL60SJXJJ1IAf+vkvz5G+whl5z+UpM0gZW/+cSJ9+duvXAtXsIXLwmsxmx2jnETeXRSBrrGiz5Q91w==
+  version "7.2.22"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/prisma-loader/-/prisma-loader-7.2.22.tgz#b2b4f9d9f1af027470ec943763ba12c93642904c"
+  integrity sha512-QafvScyyJ9Nvi1r4dmYUBzk1pe5MDwhMQUlJQLIphIPHYP8so8aRHKttoycuMZgQB43uOP+9RpdK0BIPa84/dw==
   dependencies:
-    "@graphql-tools/url-loader" "7.16.1"
+    "@graphql-tools/url-loader" "7.16.2"
     "@graphql-tools/utils" "8.12.0"
     "@types/js-yaml" "^4.0.0"
     "@types/json-stable-stringify" "^1.0.32"
@@ -1099,15 +1099,15 @@
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/url-loader@7.16.1", "@graphql-tools/url-loader@^7.13.2", "@graphql-tools/url-loader@^7.9.7":
-  version "7.16.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.1.tgz#abb16ce233c27b139e6f84e1d2f3e30c4954f2c7"
-  integrity sha512-41G+NcPoRKAQxoNeAdLRttI39WFdcpmhTz8jgvwLvgLvnAzAIPaPGuteWWO9ilpMwtomkOwmwOsj2UYz3JkKDg==
+"@graphql-tools/url-loader@7.16.2", "@graphql-tools/url-loader@^7.13.2", "@graphql-tools/url-loader@^7.9.7":
+  version "7.16.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.2.tgz#4b4d9db94262aa405bca0f4b9ccd381012a9de12"
+  integrity sha512-ZVG3kDEJ88zLfqYtVmI36RUzaP/0bPBcJfBH8whMYL620tE6kizEQsON8iKsxcU1bWB5D7m9ZVFqW4eZ5EqVWw==
   dependencies:
     "@ardatan/sync-fetch" "0.0.1"
     "@graphql-tools/delegate" "9.0.6"
     "@graphql-tools/utils" "8.12.0"
-    "@graphql-tools/wrap" "9.2.0"
+    "@graphql-tools/wrap" "9.2.1"
     "@types/ws" "^8.0.0"
     "@whatwg-node/fetch" "^0.4.0"
     dset "^3.1.2"
@@ -1140,10 +1140,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/wrap@9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.0.tgz#9efdfceace595a6d251f228e9724e1d04b6a384c"
-  integrity sha512-+mX9m4x0IrI/kHIeR9LXDgp+6lVfBdHHfJ5QpbwjFEo8g++L7sIAZ1rr5a99Z/AvUNwbzLtp34TPfdlR6aKVCw==
+"@graphql-tools/wrap@9.2.1":
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.1.tgz#bc6558d31125b20acf1f4640eaa45b145a1c7a90"
+  integrity sha512-W8bzJijTZDNi8e1oM2AMG89CtvfTYaJ9lCe0dYMN+a+OPMhRfgR9+eO7ALcUa9y4MTu+YEDVjUq0ZboaSvesyA==
   dependencies:
     "@graphql-tools/delegate" "9.0.6"
     "@graphql-tools/schema" "9.0.4"
@@ -3121,7 +3121,7 @@ braces@^3.0.2, braces@~3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
-browserslist@^4.20.2:
+browserslist@^4.21.3:
   version "4.21.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.21.3.tgz#5df277694eb3c48bc5c4b05af3e8b7e09c5a6d1a"
   integrity sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==
@@ -4135,9 +4135,9 @@ ecdsa-sig-formatter@1.0.11:
     safe-buffer "^5.0.1"
 
 electron-to-chromium@^1.4.202:
-  version "1.4.249"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.249.tgz#49c34336c742ee65453dbddf4c84355e59b96e2c"
-  integrity sha512-GMCxR3p2HQvIw47A599crTKYZprqihoBL4lDSAUmr7IYekXFK5t/WgEBrGJDCa2HWIZFQEkGuMqPCi05ceYqPQ==
+  version "1.4.250"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.250.tgz#e4535fc00d17b9a719bc688352c4a185acc2a347"
+  integrity sha512-KDLKcPEKPK+Q3/LdKX6knDzqyh8B82EaHccTYuGJR2qp1ymyGAo5HMH2x2OwDgzOPHlINSLIIeVhlFdq6aJgNA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
