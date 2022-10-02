@@ -2442,9 +2442,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.7.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
-  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
+  version "18.8.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.0.tgz#b8ee8d83a99470c0661bd899417fcd77060682fe"
+  integrity sha512-u+h43R6U8xXDt2vzUaVP3VwjjLyOJk6uEciZS8OSyziUQGOwmk+l+4drxcsDboHXwyTaqS1INebghmWMRxq3LA==
 
 "@types/node@^10.1.0":
   version "10.17.60"
@@ -2591,9 +2591,9 @@
     web-streams-polyfill "^3.2.0"
 
 "@whatwg-node/fetch@^0.4.0":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.6.tgz#d846026687db76565ce8c2a56641e0fc5eb470eb"
-  integrity sha512-DyeD0lN4Bk2Pdd/n4iT7g3rt4ZvvwSq+Yl2eF/Ku+odw1nVS7foww5JlAlwaJA4ZEGiZYT5oDagltX52UWKaXg==
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.7.tgz#4cbcda3ba93d5ae15ab823aae5869eae4a0cb14b"
+  integrity sha512-+oKDMGtmUJ7H37VDL5U2Vdk+ZxsIypZxO2q6y42ytu6W3PL6OIIUYZGliNqQgWtCdtxOZ9WPQvbIAuiLpnLlUw==
   dependencies:
     "@peculiar/webcrypto" "^1.4.0"
     abort-controller "^3.0.0"
@@ -8301,9 +8301,9 @@ socks-proxy-agent@^7.0.0:
     socks "^2.6.2"
 
 socks@^2.6.2:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/socks/-/socks-2.7.0.tgz#f9225acdb841e874dca25f870e9130990f3913d0"
-  integrity sha512-scnOe9y4VuiNUULJN72GrM26BNOjVsfPXI+j+98PkyEfsIXroa5ofyjT+FzGvn/xHs73U2JtoBYAVx9Hl4quSA==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/socks/-/socks-2.7.1.tgz#d8e651247178fde79c0663043e07240196857d55"
+  integrity sha512-7maUZy1N7uo6+WVEX6psASxtNlKaNVMlGQKkG/63nEDdLOWNbiUMoLK7X4uYoLhQstau72mLgfEWcXcwsaHbYQ==
   dependencies:
     ip "^2.0.0"
     smart-buffer "^4.2.0"
@@ -9455,9 +9455,9 @@ yaml@^1.10.0, yaml@^1.10.2:
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
 yaml@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.1.1.tgz#1e06fb4ca46e60d9da07e4f786ea370ed3c3cfec"
-  integrity sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.1.2.tgz#eb0f535eb309811b60276a9cc8c02af4355db420"
+  integrity sha512-VSdf2/K3FqAetooKQv45Hcu6sA00aDgWZeGcG6V9IYJnVLTnb6988Tie79K5nx2vK7cEpf+yW8Oy+7iPAbdiHA==
 
 yargs-parser@20.2.4:
   version "20.2.4"
