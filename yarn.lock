@@ -2659,24 +2659,24 @@
     "@typescript-eslint/types" "5.39.0"
     eslint-visitor-keys "^3.3.0"
 
-"@webundsoehne/deep-merge@2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/deep-merge/-/deep-merge-2.2.2.tgz#4d630cd41146032e88d8dd7849cb68c45cd11ab2"
-  integrity sha512-hkYDZtEJyvrc5e4PwmX41joueOdMpIE5zWQw18nfzcTA8qD3yCNxyDgB54kVX8yABn4TmvLOUNn6gHgjFd5ASQ==
+"@webundsoehne/deep-merge@2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/deep-merge/-/deep-merge-2.2.3.tgz#f32bfabbd22963d299644ac675548593eb34a24f"
+  integrity sha512-Y7ivNWWY4pAHMWhdsXZtuxv214LX5Y8nn5IWXZOQR714Jd9e59WxmAwxDWmsUxz5DenbtTU4mRE0rRYCNCN7KA==
   dependencies:
     deepmerge "^4.2.2"
 
-"@webundsoehne/nestjs-util@^5.5.5":
-  version "5.5.5"
-  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-5.5.5.tgz#ea207ac6556e125c461fa4bd29c4466ff055cc81"
-  integrity sha512-oGTH4M26ZX/B3TDohKnTr0NjVnXbPmTmHJJzseBxabGdbCug58cZ4QJ48ksS6kDLvfNS/+tbgZaXzkmS20n19Q==
+"@webundsoehne/nestjs-util@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@webundsoehne/nestjs-util/-/nestjs-util-6.0.0.tgz#d720706441ca39c7b34cc561162642e3cf00e175"
+  integrity sha512-3rhD4zbBI1yF/cxZ9lFiG5LXGznaRyFdtMLdwKfBZ0t4Ln6R8N9bOHgcF51QzpYNn8USJSY8mRpGFz3FkKzFww==
   dependencies:
-    "@webundsoehne/deep-merge" "2.2.2"
-    colorette "^2.0.16"
+    "@webundsoehne/deep-merge" "2.2.3"
+    colorette "^2.0.17"
     config "^3.3.7"
-    fs-extra "^10.0.0"
+    fs-extra "^10.1.0"
     js-yaml "^4.0.0"
-    moment "^2.29.1"
+    moment "^2.29.3"
     reflect-metadata "^0.1.13"
     winston "^3.6.0"
     winston-transport "^4.5.0"
@@ -4974,7 +4974,7 @@ fs-extra@9.1.0, fs-extra@^9.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^10.0.0, fs-extra@^10.1.0:
+fs-extra@^10.1.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -6930,7 +6930,7 @@ modify-values@^1.0.0:
   resolved "https://registry.yarnpkg.com/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-moment@^2.29.1:
+moment@^2.29.3:
   version "2.29.4"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
