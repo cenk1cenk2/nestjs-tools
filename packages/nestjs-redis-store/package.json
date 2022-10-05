@@ -34,7 +34,7 @@
   "devDependencies": {
     "@nestjs/common": "^9.1.3",
     "@types/ioredis": "^4.28.10",
-    "@webundsoehne/nestjs-util": "^5.5.5",
+    "@webundsoehne/nestjs-util": "^6.0.0",
     "ioredis": "^5.2.3"
   },
   "lint-staged": {
