@@ -3203,10 +3203,10 @@ cache-manager-ioredis@^2.1.0:
   dependencies:
     ioredis "^4.14.1"
 
-cache-manager@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-5.1.0.tgz#b6e74ddd2df0791ade0bed69e855aeeca710f5fe"
-  integrity sha512-Ui6x3fZ48Qw/C26f5N835uiaNNbBEN889PwoEDaPq3OYw15F28q1ZTv9tX/MxcqHM0xzDkh4smvdGdYyCTkYiA==
+cache-manager@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-5.1.1.tgz#1e0b888f25914255f6e5631526ee0ceba9989667"
+  integrity sha512-xvbv24xOimcGNIna+LOoX0IV8ng6JrEhocYOpfaxPRx4fzyB9B91WYTj/kHcgt8ZPuDq8nt3T9XFh6NlWtA2Ew==
   dependencies:
     lodash.clonedeep "^4.5.0"
     lru-cache "^7.14.0"
