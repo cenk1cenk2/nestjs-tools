@@ -14,6 +14,16 @@
 
 utils/logger/logger.service.ts:12
 
+___
+
+### options
+
+• `Private` `Optional` `Readonly` **options**: `LoggerOptions`
+
+#### Defined in
+
+utils/logger/logger.service.ts:21
+
 ## Constructors
 
 ### constructor
@@ -22,9 +32,13 @@ utils/logger/logger.service.ts:12
 
 #### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `LoggerOptions` |
+
+#### Defined in
+
+utils/logger/logger.service.ts:21
 
 ## Methods
 
@@ -34,11 +48,11 @@ utils/logger/logger.service.ts:12
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `message`  | `string` \| `string`[] |
-| `trace?`   | `string`               |
-| `context?` | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` \| `string`[] |
+| `trace?` | `string` |
+| `context?` | `string` |
 
 #### Returns
 
@@ -48,7 +62,11 @@ utils/logger/logger.service.ts:12
 
 LoggerServiceCommon.error
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:23
+
+___
 
 ### log
 
@@ -56,10 +74,10 @@ LoggerServiceCommon.error
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `message`  | `string` \| `string`[] |
-| `context?` | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` \| `string`[] |
+| `context?` | `string` |
 
 #### Returns
 
@@ -69,7 +87,11 @@ LoggerServiceCommon.error
 
 LoggerServiceCommon.log
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:32
+
+___
 
 ### warn
 
@@ -77,10 +99,10 @@ LoggerServiceCommon.log
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `message`  | `string` \| `string`[] |
-| `context?` | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` \| `string`[] |
+| `context?` | `string` |
 
 #### Returns
 
@@ -90,7 +112,11 @@ LoggerServiceCommon.log
 
 LoggerServiceCommon.warn
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:40
+
+___
 
 ### debug
 
@@ -98,10 +124,10 @@ LoggerServiceCommon.warn
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `message`  | `string` \| `string`[] |
-| `context?` | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` \| `string`[] |
+| `context?` | `string` |
 
 #### Returns
 
@@ -111,7 +137,11 @@ LoggerServiceCommon.warn
 
 LoggerServiceCommon.debug
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:48
+
+___
 
 ### verbose
 
@@ -119,10 +149,10 @@ LoggerServiceCommon.debug
 
 #### Parameters
 
-| Name       | Type                   |
-| :--------- | :--------------------- |
-| `message`  | `string` \| `string`[] |
-| `context?` | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` \| `string`[] |
+| `context?` | `string` |
 
 #### Returns
 
@@ -132,7 +162,11 @@ LoggerServiceCommon.debug
 
 LoggerServiceCommon.verbose
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:56
+
+___
 
 ### coloring
 
@@ -140,16 +174,20 @@ LoggerServiceCommon.verbose
 
 #### Parameters
 
-| Name      | Type      |
-| :-------- | :-------- |
-| `level`   | `LogType` |
-| `message` | `string`  |
+| Name | Type |
+| :------ | :------ |
+| `level` | `LogType` |
+| `message` | `string` |
 
 #### Returns
 
 `string`
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:64
+
+___
 
 ### logMessage
 
@@ -157,20 +195,24 @@ LoggerServiceCommon.verbose
 
 #### Parameters
 
-| Name                         | Type                   |
-| :--------------------------- | :--------------------- |
-| `__namedParameters`          | `Object`               |
-| `__namedParameters.type`     | `string`               |
-| `__namedParameters.message`  | `string` \| `string`[] |
-| `__namedParameters.context?` | `string`               |
-| `__namedParameters.trace?`   | `any`                  |
-| `__namedParameters.ms?`      | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `__namedParameters` | `Object` |
+| `__namedParameters.type` | `string` |
+| `__namedParameters.message` | `string` \| `string`[] |
+| `__namedParameters.context?` | `string` |
+| `__namedParameters.trace?` | `any` |
+| `__namedParameters.ms?` | `string` |
 
 #### Returns
 
 `void`
 
----
+#### Defined in
+
+utils/logger/logger.service.ts:68
+
+___
 
 ### getLogger
 
@@ -178,10 +220,14 @@ LoggerServiceCommon.verbose
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `level?` | `string` |
 
 #### Returns
 
 `Logger`
+
+#### Defined in
+
+utils/logger/logger.service.ts:89

@@ -26,7 +26,7 @@ Total number of items
 
 interfaces/pagination.interface.ts:10
 
----
+___
 
 ### limit
 
@@ -42,7 +42,7 @@ Limit the number of items per page.
 
 interfaces/pagination.interface.ts:21
 
----
+___
 
 ### page
 

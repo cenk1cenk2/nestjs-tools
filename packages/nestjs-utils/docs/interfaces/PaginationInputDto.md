@@ -26,7 +26,7 @@ Limit the number of items per page.
 
 interfaces/pagination.interface.ts:21
 
----
+___
 
 ### page
 
