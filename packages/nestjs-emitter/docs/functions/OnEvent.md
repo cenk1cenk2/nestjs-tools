@@ -4,10 +4,10 @@
 
 #### Parameters
 
-| Name       | Type                                             |
-| :--------- | :----------------------------------------------- |
-| `event`    | `string` \| `symbol` \| (`string` \| `symbol`)[] |
-| `options?` | `OnEventOptions`                                 |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| (`string` \| `symbol`)[] |
+| `options?` | `OnEventOptions` |
 
 #### Returns
 

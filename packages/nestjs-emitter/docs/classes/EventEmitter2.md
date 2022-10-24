@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name       | Type                 |
-| :--------- | :------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `ConstructorOptions` |
 
 #### Defined in
@@ -24,10 +24,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:118
 
 #### Parameters
 
-| Name        | Type                              |
-| :---------- | :-------------------------------- |
-| `event`     | `string` \| `symbol` \| `event`[] |
-| `...values` | `any`[]                           |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `...values` | `any`[] |
 
 #### Returns
 
@@ -37,7 +37,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:118
 
 node_modules/eventemitter2/eventemitter2.d.ts:119
 
----
+___
 
 ### emitAsync
 
@@ -45,10 +45,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:119
 
 #### Parameters
 
-| Name        | Type                              |
-| :---------- | :-------------------------------- |
-| `event`     | `string` \| `symbol` \| `event`[] |
-| `...values` | `any`[]                           |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `...values` | `any`[] |
 
 #### Returns
 
@@ -58,7 +58,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:119
 
 node_modules/eventemitter2/eventemitter2.d.ts:120
 
----
+___
 
 ### addListener
 
@@ -66,10 +66,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:120
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
 
 #### Returns
 
@@ -79,7 +79,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:120
 
 node_modules/eventemitter2/eventemitter2.d.ts:121
 
----
+___
 
 ### on
 
@@ -87,11 +87,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:121
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
-| `options?` | `boolean` \| `OnOptions`          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
+| `options?` | `boolean` \| `OnOptions` |
 
 #### Returns
 
@@ -101,7 +101,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:121
 
 node_modules/eventemitter2/eventemitter2.d.ts:122
 
----
+___
 
 ### prependListener
 
@@ -109,11 +109,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:122
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
-| `options?` | `boolean` \| `OnOptions`          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
+| `options?` | `boolean` \| `OnOptions` |
 
 #### Returns
 
@@ -123,7 +123,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:122
 
 node_modules/eventemitter2/eventemitter2.d.ts:123
 
----
+___
 
 ### once
 
@@ -131,11 +131,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:123
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
-| `options?` | `true` \| `OnOptions`             |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
+| `options?` | ``true`` \| `OnOptions` |
 
 #### Returns
 
@@ -145,7 +145,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:123
 
 node_modules/eventemitter2/eventemitter2.d.ts:124
 
----
+___
 
 ### prependOnceListener
 
@@ -153,11 +153,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:124
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
-| `options?` | `boolean` \| `OnOptions`          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
+| `options?` | `boolean` \| `OnOptions` |
 
 #### Returns
 
@@ -167,7 +167,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:124
 
 node_modules/eventemitter2/eventemitter2.d.ts:125
 
----
+___
 
 ### many
 
@@ -175,12 +175,12 @@ node_modules/eventemitter2/eventemitter2.d.ts:125
 
 #### Parameters
 
-| Name            | Type                              |
-| :-------------- | :-------------------------------- |
-| `event`         | `string` \| `symbol` \| `event`[] |
-| `timesToListen` | `number`                          |
-| `listener`      | `ListenerFn`                      |
-| `options?`      | `boolean` \| `OnOptions`          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `timesToListen` | `number` |
+| `listener` | `ListenerFn` |
+| `options?` | `boolean` \| `OnOptions` |
 
 #### Returns
 
@@ -190,7 +190,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:125
 
 node_modules/eventemitter2/eventemitter2.d.ts:126
 
----
+___
 
 ### prependMany
 
@@ -198,12 +198,12 @@ node_modules/eventemitter2/eventemitter2.d.ts:126
 
 #### Parameters
 
-| Name            | Type                              |
-| :-------------- | :-------------------------------- |
-| `event`         | `string` \| `symbol` \| `event`[] |
-| `timesToListen` | `number`                          |
-| `listener`      | `ListenerFn`                      |
-| `options?`      | `boolean` \| `OnOptions`          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `timesToListen` | `number` |
+| `listener` | `ListenerFn` |
+| `options?` | `boolean` \| `OnOptions` |
 
 #### Returns
 
@@ -213,7 +213,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:126
 
 node_modules/eventemitter2/eventemitter2.d.ts:127
 
----
+___
 
 ### onAny
 
@@ -221,8 +221,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:127
 
 #### Parameters
 
-| Name       | Type               |
-| :--------- | :----------------- |
+| Name | Type |
+| :------ | :------ |
 | `listener` | `EventAndListener` |
 
 #### Returns
@@ -233,7 +233,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:127
 
 node_modules/eventemitter2/eventemitter2.d.ts:128
 
----
+___
 
 ### prependAny
 
@@ -241,8 +241,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:128
 
 #### Parameters
 
-| Name       | Type               |
-| :--------- | :----------------- |
+| Name | Type |
+| :------ | :------ |
 | `listener` | `EventAndListener` |
 
 #### Returns
@@ -253,7 +253,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:128
 
 node_modules/eventemitter2/eventemitter2.d.ts:129
 
----
+___
 
 ### offAny
 
@@ -261,8 +261,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:129
 
 #### Parameters
 
-| Name       | Type         |
-| :--------- | :----------- |
+| Name | Type |
+| :------ | :------ |
 | `listener` | `ListenerFn` |
 
 #### Returns
@@ -273,7 +273,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:129
 
 node_modules/eventemitter2/eventemitter2.d.ts:130
 
----
+___
 
 ### removeListener
 
@@ -281,10 +281,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:130
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
 
 #### Returns
 
@@ -294,7 +294,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:130
 
 node_modules/eventemitter2/eventemitter2.d.ts:131
 
----
+___
 
 ### off
 
@@ -302,10 +302,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:131
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn`                      |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn` |
 
 #### Returns
 
@@ -315,7 +315,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:131
 
 node_modules/eventemitter2/eventemitter2.d.ts:132
 
----
+___
 
 ### removeAllListeners
 
@@ -323,8 +323,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:132
 
 #### Parameters
 
-| Name     | Type                              |
-| :------- | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -335,7 +335,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:132
 
 node_modules/eventemitter2/eventemitter2.d.ts:133
 
----
+___
 
 ### setMaxListeners
 
@@ -343,9 +343,9 @@ node_modules/eventemitter2/eventemitter2.d.ts:133
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
-| `n`  | `number` |
+| Name | Type |
+| :------ | :------ |
+| `n` | `number` |
 
 #### Returns
 
@@ -355,7 +355,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:133
 
 node_modules/eventemitter2/eventemitter2.d.ts:134
 
----
+___
 
 ### getMaxListeners
 
@@ -369,7 +369,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:134
 
 node_modules/eventemitter2/eventemitter2.d.ts:135
 
----
+___
 
 ### eventNames
 
@@ -377,8 +377,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:135
 
 #### Parameters
 
-| Name         | Type      |
-| :----------- | :-------- |
+| Name | Type |
+| :------ | :------ |
 | `nsAsArray?` | `boolean` |
 
 #### Returns
@@ -389,7 +389,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:135
 
 node_modules/eventemitter2/eventemitter2.d.ts:136
 
----
+___
 
 ### listenerCount
 
@@ -397,8 +397,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:136
 
 #### Parameters
 
-| Name     | Type                              |
-| :------- | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -409,7 +409,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:136
 
 node_modules/eventemitter2/eventemitter2.d.ts:137
 
----
+___
 
 ### listeners
 
@@ -417,8 +417,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:137
 
 #### Parameters
 
-| Name     | Type                              |
-| :------- | :-------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -429,7 +429,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:137
 
 node_modules/eventemitter2/eventemitter2.d.ts:138
 
----
+___
 
 ### listenersAny
 
@@ -443,7 +443,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:138
 
 node_modules/eventemitter2/eventemitter2.d.ts:139
 
----
+___
 
 ### waitFor
 
@@ -451,10 +451,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:139
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `timeout?` | `number`                          |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `timeout?` | `number` |
 
 #### Returns
 
@@ -468,10 +468,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:140
 
 #### Parameters
 
-| Name      | Type                              |
-| :-------- | :-------------------------------- |
-| `event`   | `string` \| `symbol` \| `event`[] |
-| `filter?` | `WaitForFilter`                   |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `filter?` | `WaitForFilter` |
 
 #### Returns
 
@@ -485,10 +485,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:141
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `event`    | `string` \| `symbol` \| `event`[] |
-| `options?` | `WaitForOptions`                  |
+| Name | Type |
+| :------ | :------ |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `options?` | `WaitForOptions` |
 
 #### Returns
 
@@ -498,7 +498,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:141
 
 node_modules/eventemitter2/eventemitter2.d.ts:142
 
----
+___
 
 ### listenTo
 
@@ -506,11 +506,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:142
 
 #### Parameters
 
-| Name       | Type                              |
-| :--------- | :-------------------------------- |
-| `target`   | `GeneralEventEmitter`             |
-| `events`   | `string` \| `symbol` \| `event`[] |
-| `options?` | `ListenToOptions`                 |
+| Name | Type |
+| :------ | :------ |
+| `target` | `GeneralEventEmitter` |
+| `events` | `string` \| `symbol` \| `event`[] |
+| `options?` | `ListenToOptions` |
 
 #### Returns
 
@@ -524,11 +524,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:143
 
 #### Parameters
 
-| Name       | Type                  |
-| :--------- | :-------------------- |
-| `target`   | `GeneralEventEmitter` |
-| `events`   | `event`[]             |
-| `options?` | `ListenToOptions`     |
+| Name | Type |
+| :------ | :------ |
+| `target` | `GeneralEventEmitter` |
+| `events` | `event`[] |
+| `options?` | `ListenToOptions` |
 
 #### Returns
 
@@ -542,11 +542,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:144
 
 #### Parameters
 
-| Name       | Type                  |
-| :--------- | :-------------------- |
-| `target`   | `GeneralEventEmitter` |
-| `events`   | `Object`              |
-| `options?` | `ListenToOptions`     |
+| Name | Type |
+| :------ | :------ |
+| `target` | `GeneralEventEmitter` |
+| `events` | `Object` |
+| `options?` | `ListenToOptions` |
 
 #### Returns
 
@@ -556,7 +556,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:144
 
 node_modules/eventemitter2/eventemitter2.d.ts:145
 
----
+___
 
 ### stopListeningTo
 
@@ -564,10 +564,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:145
 
 #### Parameters
 
-| Name      | Type                              |
-| :-------- | :-------------------------------- |
-| `target?` | `GeneralEventEmitter`             |
-| `event?`  | `string` \| `symbol` \| `event`[] |
+| Name | Type |
+| :------ | :------ |
+| `target?` | `GeneralEventEmitter` |
+| `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
 
@@ -577,7 +577,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:145
 
 node_modules/eventemitter2/eventemitter2.d.ts:146
 
----
+___
 
 ### hasListeners
 
@@ -585,8 +585,8 @@ node_modules/eventemitter2/eventemitter2.d.ts:146
 
 #### Parameters
 
-| Name     | Type     |
-| :------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `event?` | `String` |
 
 #### Returns
@@ -597,7 +597,7 @@ node_modules/eventemitter2/eventemitter2.d.ts:146
 
 node_modules/eventemitter2/eventemitter2.d.ts:147
 
----
+___
 
 ### once
 
@@ -605,11 +605,11 @@ node_modules/eventemitter2/eventemitter2.d.ts:147
 
 #### Parameters
 
-| Name       | Type                                |
-| :--------- | :---------------------------------- |
-| `emitter`  | [`EventEmitter2`](EventEmitter2.md) |
-| `event`    | `string` \| `symbol` \| `event`[]   |
-| `options?` | `OnceOptions`                       |
+| Name | Type |
+| :------ | :------ |
+| `emitter` | [`EventEmitter2`](EventEmitter2.md) |
+| `event` | `string` \| `symbol` \| `event`[] |
+| `options?` | `OnceOptions` |
 
 #### Returns
 

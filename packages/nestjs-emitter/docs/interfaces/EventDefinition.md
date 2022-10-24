@@ -12,7 +12,7 @@ A definition of a event with response-request map.
 
 packages/nestjs-emitter/src/event-manager/event-manager.interface.ts:5
 
----
+___
 
 ### request
 

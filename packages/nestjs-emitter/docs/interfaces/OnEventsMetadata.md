@@ -14,7 +14,7 @@ Event (name or pattern) to subscribe to.
 
 packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts:13
 
----
+___
 
 ### options
 
