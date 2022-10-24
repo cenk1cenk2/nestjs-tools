@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name       | Type                                                  |
-| :--------- | :---------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | [`S3ModuleOptions`](../interfaces/S3ModuleOptions.md) |
 
 #### Returns

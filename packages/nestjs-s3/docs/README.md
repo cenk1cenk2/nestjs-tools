@@ -6,9 +6,9 @@
 
 ## Variables
 
-- [S3_INSTANCE](variables/S3_INSTANCE.md)
+- [S3\_INSTANCE](variables/S3_INSTANCE.md)
 
-## Type aliases
+## Type Aliases
 
 - [S3Provider](types/S3Provider.md)
 

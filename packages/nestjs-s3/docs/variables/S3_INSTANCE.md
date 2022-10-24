@@ -1,6 +1,6 @@
-# Variable: S3_INSTANCE
+# Variable: S3\_INSTANCE
 
-• `Const` **S3_INSTANCE**: typeof [`S3_INSTANCE`](S3_INSTANCE.md)
+• `Const` **S3\_INSTANCE**: typeof [`S3_INSTANCE`](S3_INSTANCE.md)
 
 #### Defined in
 
