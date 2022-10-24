@@ -29,13 +29,23 @@
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1 < 10",
     "@webundsoehne/nestjs-util": ">= 2.3.2",
-    "ioredis": ">= 4.27.9"
+    "ioredis": ">= 4.27.9",
+    "redis-om": ">= 0.3.0"
+  },
+  "peerDependenciesMeta": {
+    "redis-om": {
+      "optional": true
+    },
+    "io-redis": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@nestjs/common": "^9.1.5",
     "@types/ioredis": "^4.28.10",
     "@webundsoehne/nestjs-util": "^6.0.1",
-    "ioredis": "^5.2.3"
+    "ioredis": "^5.2.3",
+    "redis-om": "^0.3.6"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

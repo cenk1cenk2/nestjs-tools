@@ -34,7 +34,7 @@ export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {
       return of(cached)
     }
 
-    return next.handle().pipe(tap((data) => this.cache.set(key, data, { ttl })))
+    return next.handle().pipe(tap((data) => this.cache.set(key, data, ttl)))
   }
 
   public createTopic (pattern: string, extensions: string | string[]): string {

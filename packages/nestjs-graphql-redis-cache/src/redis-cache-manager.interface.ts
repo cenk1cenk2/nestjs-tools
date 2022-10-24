@@ -1,8 +1,8 @@
-import type { Cache, CacheOptions } from 'cache-manager'
+import type { Cache, Config } from 'cache-manager'
 
 export type RedisCacheManagerProvider = Cache
 
 export interface RedisCacheManagerOptions {
   global?: boolean
-  options?: CacheOptions
+  options?: Config
 }

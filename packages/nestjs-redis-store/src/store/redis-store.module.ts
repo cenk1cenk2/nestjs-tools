@@ -4,7 +4,7 @@ import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/co
 import type { RedisOptions } from 'ioredis'
 
 import { REDIS_STORE_INSTANCE, REDIS_STORE_DELIMITER } from './redis-store.constants'
-import type { RedisPubSubModuleOptions } from './redis-store.interface'
+import type { RedisStoreModuleOptions } from './redis-store.interface'
 import { RedisStoreService } from './redis-store.service'
 
 @Global()
@@ -22,7 +22,7 @@ import { RedisStoreService } from './redis-store.service'
   exports: [ REDIS_STORE_INSTANCE ]
 })
 export class RedisStoreModule {
-  public static forRoot (options?: RedisPubSubModuleOptions): DynamicModule {
+  public static forRoot (options?: RedisStoreModuleOptions): DynamicModule {
     return {
       global: options?.global ?? true,
       module: RedisStoreModule,

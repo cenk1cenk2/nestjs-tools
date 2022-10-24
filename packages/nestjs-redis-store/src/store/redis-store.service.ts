@@ -3,13 +3,13 @@ import { Injectable } from '@nestjs/common'
 import type { Redis } from 'ioredis'
 import RedisIO from 'ioredis'
 
-import { RedisPubSubModuleOptions } from './redis-store.interface'
+import { RedisStoreModuleOptions } from './redis-store.interface'
 
 @Injectable()
 export class RedisStoreService implements OnModuleInit {
   public client: Redis
 
-  constructor (public options: RedisPubSubModuleOptions) {}
+  constructor (public options: RedisStoreModuleOptions) {}
 
   public onModuleInit (): void {
     this.client = new RedisIO(this.options.options)

@@ -2,14 +2,14 @@ import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/co
 import * as fs from 'fs-extra'
 import type { ApplicationKeyOptions } from 'key.interface'
 import { join } from 'path'
+import type { GenerateResult } from 'selfsigned'
 import selfsigned from 'selfsigned'
 
-import type { KeypairResults } from './keypair.interface'
 import { LoggerService } from '@cenk1cenk2/nestjs-utils/dist/utils/logger/logger.service'
 
 export class ApplicationKey {
   static instance: ApplicationKey
-  public keys: KeypairResults
+  public keys: GenerateResult
   private logger: LoggerService
 
   constructor (private options?: Partial<ApplicationKeyOptions>) {
@@ -48,9 +48,10 @@ export class ApplicationKey {
 
   private generateKeys (): void {
     try {
-      this.keys = Object.entries(this.options.files).reduce<KeypairResults>(
+      this.keys = Object.entries(this.options.files).reduce<GenerateResult>(
         (o, [ type, path ]) => typeof type !== 'undefined' ? { ...o, [type]: fs.readFileSync(path, 'utf8') } : o,
-        {}
+        // eslint-disable-next-line @typescript-eslint/prefer-reduce-type-parameter
+        {} as GenerateResult
       )
 
       this.logger.debug('Keypairs has been loaded.')
