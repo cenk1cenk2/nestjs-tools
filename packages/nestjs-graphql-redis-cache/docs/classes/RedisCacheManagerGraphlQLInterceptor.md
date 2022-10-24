@@ -16,9 +16,23 @@ redis-cache-manager.interceptor.ts:15
 
 ---
 
+### cache
+
+• `Private` **cache**: [`RedisCacheManagerProvider`](../types/RedisCacheManagerProvider.md)
+
+#### Defined in
+
+redis-cache-manager.interceptor.ts:17
+
+---
+
 ### reflector
 
 • `Protected` `Readonly` **reflector**: `Reflector`
+
+#### Defined in
+
+redis-cache-manager.interceptor.ts:17
 
 ## Constructors
 
@@ -28,10 +42,10 @@ redis-cache-manager.interceptor.ts:15
 
 #### Parameters
 
-| Name        | Type        |
-| :---------- | :---------- |
-| `cache`     | `Cache`     |
-| `reflector` | `Reflector` |
+| Name        | Type                                                                 |
+| :---------- | :------------------------------------------------------------------- |
+| `cache`     | [`RedisCacheManagerProvider`](../types/RedisCacheManagerProvider.md) |
+| `reflector` | `Reflector`                                                          |
 
 #### Defined in
 

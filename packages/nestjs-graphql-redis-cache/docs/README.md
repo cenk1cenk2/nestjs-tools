@@ -9,7 +9,7 @@
 - [RedisCacheManagerGraphlQLInterceptor](classes/RedisCacheManagerGraphlQLInterceptor.md)
 - [RedisCacheManagerModule](classes/RedisCacheManagerModule.md)
 
-## Type aliases
+## Type Aliases
 
 - [RedisCacheManagerProvider](types/RedisCacheManagerProvider.md)
 

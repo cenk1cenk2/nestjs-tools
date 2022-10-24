@@ -1,3 +1,13 @@
+# @cenk1cenk2/nestjs-graphql-redis-cache [4.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@3.0.1...@cenk1cenk2/nestjs-graphql-redis-cache@4.0.0) (2022-10-24)
+
+### Performance Improvements
+
+- add redis-om to redis store and update failing builds ([84f796d](https://github.com/cenk1cenk2/nestjs-tools/commit/84f796d6e7043975209643d4d6f8411381511e8c))
+
+### BREAKING CHANGES
+
+- changes in nestjs versions caused managers to act differently dependencies are updated for the cache manager
+
 ## @cenk1cenk2/nestjs-graphql-redis-cache [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-cache@3.0.0...@cenk1cenk2/nestjs-graphql-redis-cache@3.0.1) (2022-05-12)
 
 ### Bug Fixes

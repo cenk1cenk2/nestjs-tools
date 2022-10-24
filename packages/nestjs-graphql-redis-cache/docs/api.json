@@ -12,13 +12,6 @@
       "kind": 64,
       "kindString": "Function",
       "flags": {},
-      "decorates": [
-        {
-          "type": "reference",
-          "id": 21,
-          "name": "cache"
-        }
-      ],
       "sources": [
         {
           "fileName": "decorator/inject.decorator.ts",
@@ -74,9 +67,9 @@
                             "name": "unknown"
                           }
                         ],
+                        "name": "Record",
                         "qualifiedName": "Record",
-                        "package": "typescript",
-                        "name": "Record"
+                        "package": "typescript"
                       }
                     },
                     {
@@ -130,18 +123,6 @@
       "kind": 128,
       "kindString": "Class",
       "flags": {},
-      "decorators": [
-        {
-          "name": "Injectable",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Injectable",
-            "package": "@nestjs/common",
-            "name": "Injectable"
-          },
-          "arguments": {}
-        }
-      ],
       "children": [
         {
           "id": 23,
@@ -160,9 +141,9 @@
           ],
           "type": {
             "type": "reference",
+            "name": "Logger",
             "qualifiedName": "Logger",
-            "package": "@nestjs/common",
-            "name": "Logger"
+            "package": "@nestjs/common"
           },
           "defaultValue": "..."
         },
@@ -193,22 +174,10 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
-                  "decorators": [
-                    {
-                      "name": "InjectRedisCacheManager",
-                      "type": {
-                        "type": "reference",
-                        "id": 1,
-                        "name": "InjectRedisCacheManager"
-                      },
-                      "arguments": {}
-                    }
-                  ],
                   "type": {
                     "type": "reference",
-                    "qualifiedName": "Cache",
-                    "package": "@types/cache-manager",
-                    "name": "Cache"
+                    "id": 14,
+                    "name": "RedisCacheManagerProvider"
                   }
                 },
                 {
@@ -219,9 +188,9 @@
                   "flags": {},
                   "type": {
                     "type": "reference",
+                    "name": "Reflector",
                     "qualifiedName": "Reflector",
-                    "package": "@nestjs/core",
-                    "name": "Reflector"
+                    "package": "@nestjs/core"
                   }
                 }
               ],
@@ -235,6 +204,27 @@
         },
         {
           "id": 24,
+          "name": "cache",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 17,
+              "character": 50
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 14,
+            "name": "RedisCacheManagerProvider"
+          }
+        },
+        {
+          "id": 25,
           "name": "reflector",
           "kind": 1024,
           "kindString": "Property",
@@ -242,15 +232,22 @@
             "isProtected": true,
             "isReadonly": true
           },
+          "sources": [
+            {
+              "fileName": "redis-cache-manager.interceptor.ts",
+              "line": 17,
+              "character": 103
+            }
+          ],
           "type": {
             "type": "reference",
+            "name": "Reflector",
             "qualifiedName": "Reflector",
-            "package": "@nestjs/core",
-            "name": "Reflector"
+            "package": "@nestjs/core"
           }
         },
         {
-          "id": 25,
+          "id": 26,
           "name": "intercept",
           "kind": 2048,
           "kindString": "Method",
@@ -266,27 +263,27 @@
           ],
           "signatures": [
             {
-              "id": 26,
+              "id": 27,
               "name": "intercept",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 27,
+                  "id": 28,
                   "name": "context",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
+                    "name": "GqlExecutionContext",
                     "qualifiedName": "GqlExecutionContext",
-                    "package": "@nestjs/graphql",
-                    "name": "GqlExecutionContext"
+                    "package": "@nestjs/graphql"
                   }
                 },
                 {
-                  "id": 28,
+                  "id": 29,
                   "name": "next",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -299,9 +296,9 @@
                         "name": "any"
                       }
                     ],
+                    "name": "CallHandler",
                     "qualifiedName": "CallHandler",
-                    "package": "@nestjs/common",
-                    "name": "CallHandler"
+                    "package": "@nestjs/common"
                   }
                 }
               ],
@@ -316,14 +313,14 @@
                         "name": "any"
                       }
                     ],
+                    "name": "Observable",
                     "qualifiedName": "Observable",
-                    "package": "rxjs",
-                    "name": "Observable"
+                    "package": "rxjs"
                   }
                 ],
+                "name": "Promise",
                 "qualifiedName": "Promise",
-                "package": "typescript",
-                "name": "Promise"
+                "package": "typescript"
               },
               "implementationOf": {
                 "type": "reference",
@@ -337,7 +334,7 @@
           }
         },
         {
-          "id": 29,
+          "id": 30,
           "name": "createTopic",
           "kind": 2048,
           "kindString": "Method",
@@ -353,14 +350,14 @@
           ],
           "signatures": [
             {
-              "id": 30,
+              "id": 31,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 31,
+                  "id": 32,
                   "name": "pattern",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -371,7 +368,7 @@
                   }
                 },
                 {
-                  "id": 32,
+                  "id": 33,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -405,18 +402,15 @@
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
-          "children": [23, 24]
+          "children": [23, 24, 25]
         },
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [19]
         },
         {
           "title": "Methods",
-          "kind": 2048,
-          "children": [25, 29]
+          "children": [26, 30]
         }
       ],
       "sources": [
@@ -429,9 +423,9 @@
       "implementedTypes": [
         {
           "type": "reference",
+          "name": "NestInterceptor",
           "qualifiedName": "NestInterceptor",
-          "package": "@nestjs/common",
-          "name": "NestInterceptor"
+          "package": "@nestjs/common"
         }
       ]
     },
@@ -450,9 +444,9 @@
       ],
       "type": {
         "type": "reference",
+        "name": "Cache",
         "qualifiedName": "Cache",
-        "package": "@types/cache-manager",
-        "name": "Cache"
+        "package": "cache-manager"
       }
     },
     {
@@ -499,16 +493,15 @@
           ],
           "type": {
             "type": "reference",
-            "qualifiedName": "CacheOptions",
-            "package": "@types/cache-manager",
-            "name": "CacheOptions"
+            "name": "Config",
+            "qualifiedName": "Config",
+            "package": "cache-manager"
           }
         }
       ],
       "groups": [
         {
           "title": "Properties",
-          "kind": 1024,
           "children": [16, 17]
         }
       ],
@@ -526,30 +519,6 @@
       "kind": 128,
       "kindString": "Class",
       "flags": {},
-      "decorators": [
-        {
-          "name": "Global",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Global",
-            "package": "@nestjs/common",
-            "name": "Global"
-          },
-          "arguments": {}
-        },
-        {
-          "name": "Module",
-          "type": {
-            "type": "reference",
-            "qualifiedName": "Module",
-            "package": "@nestjs/common",
-            "name": "Module"
-          },
-          "arguments": {
-            "metadata": "{\n  imports: [\n    CacheModule.register({\n      ...ConfigService.get<CacheModuleOptions>('redisCacheManager'),\n      store: redisStore\n    })\n  ],\n  exports: [ CacheModule ]\n}"
-          }
-        }
-      ],
       "children": [
         {
           "id": 9,
@@ -590,9 +559,9 @@
               ],
               "type": {
                 "type": "reference",
+                "name": "DynamicModule",
                 "qualifiedName": "DynamicModule",
-                "package": "@nestjs/common",
-                "name": "DynamicModule"
+                "package": "@nestjs/common"
               }
             }
           ]
@@ -622,12 +591,10 @@
       "groups": [
         {
           "title": "Methods",
-          "kind": 2048,
           "children": [9]
         },
         {
           "title": "Constructors",
-          "kind": 512,
           "children": [12]
         }
       ],
@@ -643,22 +610,18 @@
   "groups": [
     {
       "title": "Functions",
-      "kind": 64,
       "children": [1]
     },
     {
       "title": "Classes",
-      "kind": 128,
       "children": [18, 8]
     },
     {
-      "title": "Type aliases",
-      "kind": 4194304,
+      "title": "Type Aliases",
       "children": [14]
     },
     {
       "title": "Interfaces",
-      "kind": 256,
       "children": [15]
     }
   ],

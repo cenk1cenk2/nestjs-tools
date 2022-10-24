@@ -14,7 +14,7 @@ redis-cache-manager.interface.ts:6
 
 ### options
 
-• `Optional` **options**: `CacheOptions`
+• `Optional` **options**: `Config`
 
 #### Defined in
 
