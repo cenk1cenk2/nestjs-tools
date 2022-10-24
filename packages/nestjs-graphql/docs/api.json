@@ -1,389 +1,410 @@
 {
-  "id": 0,
-  "name": "@cenk1cenk2/nestjs-graphql",
-  "kind": 1,
-  "kindString": "Project",
-  "flags": {},
-  "originalName": "",
-  "children": [
-    {
-      "id": 5,
-      "name": "PaginationArgsInput",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 6,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "signatures": [
-            {
-              "id": 7,
-              "name": "new PaginationArgsInput",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 5,
-                "name": "PaginationArgsInput"
-              }
-            }
-          ]
-        },
-        {
-          "id": 8,
-          "name": "limit",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 14,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          },
-          "implementationOf": {
-            "type": "reference",
-            "name": "PaginationInputDto.limit"
-          }
-        },
-        {
-          "id": 9,
-          "name": "page",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 20,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          },
-          "implementationOf": {
-            "type": "reference",
-            "name": "PaginationInputDto.page"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Constructors",
-          "children": [6]
-        },
-        {
-          "title": "Properties",
-          "children": [8, 9]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "interfaces/pagination.interface.ts",
-          "line": 9,
-          "character": 13
-        }
-      ],
-      "implementedTypes": [
-        {
-          "type": "reference",
-          "name": "PaginationInputDto",
-          "qualifiedName": "PaginationInputDto",
-          "package": "@cenk1cenk2/nestjs-utils"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "PaginationArgs",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "comment": {
-        "summary": [
-          {
-            "kind": "text",
-            "text": "Input arguments for doing a pagination on multiple entries."
-          }
-        ]
-      },
-      "children": [
-        {
-          "id": 11,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "signatures": [
-            {
-              "id": 12,
-              "name": "new PaginationArgs",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 10,
-                "name": "PaginationArgs"
-              }
-            }
-          ]
-        },
-        {
-          "id": 13,
-          "name": "pagination",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 31,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "id": 5,
-            "name": "PaginationArgsInput"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Constructors",
-          "children": [11]
-        },
-        {
-          "title": "Properties",
-          "children": [13]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "interfaces/pagination.interface.ts",
-          "line": 27,
-          "character": 13
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "PaginationOutput",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 15,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "signatures": [
-            {
-              "id": 16,
-              "name": "new PaginationOutput",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 14,
-                "name": "PaginationOutput"
-              }
-            }
-          ]
-        },
-        {
-          "id": 17,
-          "name": "limit",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 37,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          },
-          "implementationOf": {
-            "type": "reference",
-            "name": "PaginationOutputDto.limit"
-          }
-        },
-        {
-          "id": 18,
-          "name": "page",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 40,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          },
-          "implementationOf": {
-            "type": "reference",
-            "name": "PaginationOutputDto.page"
-          }
-        },
-        {
-          "id": 19,
-          "name": "total",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 43,
-              "character": 4
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          },
-          "implementationOf": {
-            "type": "reference",
-            "name": "PaginationOutputDto.total"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Constructors",
-          "children": [15]
-        },
-        {
-          "title": "Properties",
-          "children": [17, 18, 19]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "interfaces/pagination.interface.ts",
-          "line": 35,
-          "character": 13
-        }
-      ],
-      "implementedTypes": [
-        {
-          "type": "reference",
-          "name": "PaginationOutputDto",
-          "qualifiedName": "PaginationOutputDto",
-          "package": "@cenk1cenk2/nestjs-utils"
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Paginated",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "interfaces/pagination.interface.ts",
-          "line": 50,
-          "character": 16
-        }
-      ],
-      "signatures": [
-        {
-          "id": 2,
-          "name": "Paginated",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "Paginate given output interface for graphql."
-              }
-            ]
-          },
-          "typeParameter": [
-            {
-              "id": 3,
-              "name": "T",
-              "kind": 131072,
-              "kindString": "Type parameter",
-              "flags": {}
-            }
-          ],
-          "parameters": [
-            {
-              "id": 4,
-              "name": "classRef",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 3,
-                    "name": "T"
-                  }
-                ],
-                "name": "Type",
-                "qualifiedName": "Type",
-                "package": "@nestjs/common"
-              }
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "any"
-          }
-        }
-      ]
-    }
-  ],
-  "groups": [
-    {
-      "title": "Classes",
-      "children": [5, 10, 14]
-    },
-    {
-      "title": "Functions",
-      "children": [1]
-    }
-  ],
-  "sources": [
-    {
-      "fileName": "index.ts",
-      "line": 1,
-      "character": 0
-    }
-  ]
+	"id": 0,
+	"name": "@cenk1cenk2/nestjs-graphql",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 5,
+			"name": "PaginationArgsInput",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 6,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 7,
+							"name": "new PaginationArgsInput",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 5,
+								"name": "PaginationArgsInput"
+							}
+						}
+					]
+				},
+				{
+					"id": 8,
+					"name": "limit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 14,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"implementationOf": {
+						"type": "reference",
+						"name": "PaginationInputDto.limit"
+					}
+				},
+				{
+					"id": 9,
+					"name": "page",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 20,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"implementationOf": {
+						"type": "reference",
+						"name": "PaginationInputDto.page"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						6
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						8,
+						9
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 9,
+					"character": 13
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "PaginationInputDto",
+					"qualifiedName": "PaginationInputDto",
+					"package": "@cenk1cenk2/nestjs-utils"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "PaginationArgs",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Input arguments for doing a pagination on multiple entries."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 11,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 12,
+							"name": "new PaginationArgs",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 10,
+								"name": "PaginationArgs"
+							}
+						}
+					]
+				},
+				{
+					"id": 13,
+					"name": "pagination",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 31,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 5,
+						"name": "PaginationArgsInput"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						11
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						13
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 27,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "PaginationOutput",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 15,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 16,
+							"name": "new PaginationOutput",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 14,
+								"name": "PaginationOutput"
+							}
+						}
+					]
+				},
+				{
+					"id": 17,
+					"name": "limit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 37,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"implementationOf": {
+						"type": "reference",
+						"name": "PaginationOutputDto.limit"
+					}
+				},
+				{
+					"id": 18,
+					"name": "page",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 40,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"implementationOf": {
+						"type": "reference",
+						"name": "PaginationOutputDto.page"
+					}
+				},
+				{
+					"id": 19,
+					"name": "total",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 43,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"implementationOf": {
+						"type": "reference",
+						"name": "PaginationOutputDto.total"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						15
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 35,
+					"character": 13
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "PaginationOutputDto",
+					"qualifiedName": "PaginationOutputDto",
+					"package": "@cenk1cenk2/nestjs-utils"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Paginated",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 50,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "Paginated",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Paginate given output interface for graphql."
+							}
+						]
+					},
+					"typeParameter": [
+						{
+							"id": 3,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 4,
+							"name": "classRef",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 3,
+										"name": "T"
+									}
+								],
+								"name": "Type",
+								"qualifiedName": "Type",
+								"package": "@nestjs/common"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				5,
+				10,
+				14
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				1
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
 }

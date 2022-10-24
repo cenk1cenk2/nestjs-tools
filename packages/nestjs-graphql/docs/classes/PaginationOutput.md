@@ -24,7 +24,7 @@ PaginationOutputDto.limit
 
 interfaces/pagination.interface.ts:37
 
----
+___
 
 ### page
 
@@ -38,7 +38,7 @@ PaginationOutputDto.page
 
 interfaces/pagination.interface.ts:40
 
----
+___
 
 ### total
 
