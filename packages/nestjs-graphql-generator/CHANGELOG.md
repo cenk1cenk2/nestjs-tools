@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-generator [2.0.17](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@2.0.16...@cenk1cenk2/nestjs-graphql-generator@2.0.17) (2022-10-24)
+
+
+### Bug Fixes
+
+* update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
+
 ## @cenk1cenk2/nestjs-graphql-generator [2.0.16](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@2.0.15...@cenk1cenk2/nestjs-graphql-generator@2.0.16) (2022-10-24)
 
 ### Bug Fixes
