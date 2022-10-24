@@ -5,9 +5,9 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-| `R`  |
+| :------ |
+| `T` |
+| `R` |
 
 #### Type declaration
 
@@ -17,10 +17,10 @@ A singular transaction.
 
 ##### Parameters
 
-| Name       | Type            |
-| :--------- | :-------------- |
-| `manager`  | `EntityManager` |
-| `results?` | `T`             |
+| Name | Type |
+| :------ | :------ |
+| `manager` | `EntityManager` |
+| `results?` | `T` |
 
 ##### Returns
 

@@ -4,10 +4,10 @@ A condition to run this transaction.
 
 ## Type parameters
 
-| Name | Type                                      |
-| :--- | :---------------------------------------- |
-| `E`  | extends `string`                          |
-| `M`  | extends `Partial`<`Record`<`E`, `any`\>\> |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `string` |
+| `M` | extends `Partial`<`Record`<`E`, `any`\>\> |
 
 ## Hierarchy
 
@@ -23,7 +23,7 @@ A condition to run this transaction.
 
 ### condition
 
-• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string` }\>
+• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string`  }\>
 
 #### Defined in
 

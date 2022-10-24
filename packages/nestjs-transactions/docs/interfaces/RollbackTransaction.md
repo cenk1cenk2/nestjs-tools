@@ -10,10 +10,10 @@ RollbackTransactions
 
 ## Type parameters
 
-| Name | Type                                      |
-| :--- | :---------------------------------------- |
-| `E`  | extends `string`                          |
-| `M`  | extends `Partial`<`Record`<`E`, `any`\>\> |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `string` |
+| `M` | extends `Partial`<`Record`<`E`, `any`\>\> |
 
 ## Hierarchy
 
@@ -25,7 +25,7 @@ RollbackTransactions
 
 ### condition
 
-• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string` }\>
+• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string`  }\>
 
 #### Inherited from
 
@@ -35,7 +35,7 @@ RollbackTransactions
 
 transactions-manager.interface.ts:27
 
----
+___
 
 ### rollback
 

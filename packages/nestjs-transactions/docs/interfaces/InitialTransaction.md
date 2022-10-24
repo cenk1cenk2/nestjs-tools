@@ -4,10 +4,10 @@ A type of initial transaction, which will run first and can return a result.
 
 ## Type parameters
 
-| Name | Type                                      |
-| :--- | :---------------------------------------- |
-| `E`  | extends `string`                          |
-| `M`  | extends `Partial`<`Record`<`E`, `any`\>\> |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `string` |
+| `M` | extends `Partial`<`Record`<`E`, `any`\>\> |
 
 ## Hierarchy
 
@@ -19,7 +19,7 @@ A type of initial transaction, which will run first and can return a result.
 
 ### condition
 
-• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string` }\>
+• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string`  }\>
 
 #### Inherited from
 
@@ -29,7 +29,7 @@ A type of initial transaction, which will run first and can return a result.
 
 transactions-manager.interface.ts:27
 
----
+___
 
 ### token
 
@@ -39,7 +39,7 @@ transactions-manager.interface.ts:27
 
 transactions-manager.interface.ts:41
 
----
+___
 
 ### transaction
 
@@ -49,7 +49,7 @@ transactions-manager.interface.ts:41
 
 transactions-manager.interface.ts:42
 
----
+___
 
 ### dependsOn
 

@@ -5,9 +5,9 @@
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
-| `R`  |
+| :------ |
+| `T` |
+| `R` |
 
 #### Type declaration
 
@@ -17,9 +17,9 @@ A singular rollback.
 
 ##### Parameters
 
-| Name       | Type |
-| :--------- | :--- |
-| `results?` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `results?` | `T` |
 
 ##### Returns
 

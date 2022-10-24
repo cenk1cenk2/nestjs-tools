@@ -4,10 +4,10 @@ The type of parallel transactions which will be run after.
 
 ## Type parameters
 
-| Name | Type                                      |
-| :--- | :---------------------------------------- |
-| `E`  | extends `string`                          |
-| `M`  | extends `Partial`<`Record`<`E`, `any`\>\> |
+| Name | Type |
+| :------ | :------ |
+| `E` | extends `string` |
+| `M` | extends `Partial`<`Record`<`E`, `any`\>\> |
 
 ## Hierarchy
 
@@ -19,7 +19,7 @@ The type of parallel transactions which will be run after.
 
 ### condition
 
-• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string` }\>
+• `Optional` **condition**: [`Transaction`](../types/Transaction.md)<[`GetTransactionType`](../types/GetTransactionType.md)<`E`, `M`\>, `boolean` \| { `condition`: `boolean` ; `message`: `string`  }\>
 
 #### Inherited from
 
@@ -29,7 +29,7 @@ The type of parallel transactions which will be run after.
 
 transactions-manager.interface.ts:27
 
----
+___
 
 ### transaction
 
