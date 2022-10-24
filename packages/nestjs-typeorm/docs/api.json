@@ -1,439 +1,450 @@
 {
-  "id": 0,
-  "name": "@cenk1cenk2/nestjs-typeorm",
-  "kind": 1,
-  "kindString": "Project",
-  "flags": {},
-  "originalName": "",
-  "children": [
-    {
-      "id": 1,
-      "name": "PaginatedResult",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "comment": {
-        "summary": [
-          {
-            "kind": "text",
-            "text": "Pagination result for typing the functions."
-          }
-        ]
-      },
-      "children": [
-        {
-          "id": 2,
-          "name": "result",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 7,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "array",
-            "elementType": {
-              "type": "reference",
-              "id": 4,
-              "name": "T"
-            }
-          }
-        },
-        {
-          "id": 3,
-          "name": "pagination",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "interfaces/pagination.interface.ts",
-              "line": 8,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "PaginationOutputDto",
-            "qualifiedName": "PaginationOutputDto",
-            "package": "@cenk1cenk2/nestjs-utils"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [2, 3]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "interfaces/pagination.interface.ts",
-          "line": 6,
-          "character": 17
-        }
-      ],
-      "typeParameters": [
-        {
-          "id": 4,
-          "name": "T",
-          "kind": 131072,
-          "kindString": "Type parameter",
-          "flags": {}
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "findPaginatedResult",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "utils/pagination.util.ts",
-          "line": 10,
-          "character": 22
-        }
-      ],
-      "signatures": [
-        {
-          "id": 6,
-          "name": "findPaginatedResult",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "Find a paginated result via typeorm with find and count."
-              }
-            ]
-          },
-          "typeParameter": [
-            {
-              "id": 7,
-              "name": "T",
-              "kind": 131072,
-              "kindString": "Type parameter",
-              "flags": {}
-            }
-          ],
-          "parameters": [
-            {
-              "id": 8,
-              "name": "repository",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 7,
-                    "name": "T"
-                  }
-                ],
-                "name": "Repository",
-                "qualifiedName": "Repository",
-                "package": "typeorm"
-              }
-            },
-            {
-              "id": 9,
-              "name": "__namedParameters",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "name": "PaginationInputDto",
-                "qualifiedName": "PaginationInputDto",
-                "package": "@cenk1cenk2/nestjs-utils"
-              }
-            },
-            {
-              "id": 10,
-              "name": "options",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {
-                "isOptional": true
-              },
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 7,
-                    "name": "T"
-                  }
-                ],
-                "name": "FindManyOptions",
-                "qualifiedName": "FindManyOptions",
-                "package": "typeorm"
-              }
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "reference",
-                "id": 1,
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 7,
-                    "name": "T"
-                  }
-                ],
-                "name": "PaginatedResult"
-              }
-            ],
-            "name": "Promise",
-            "qualifiedName": "Promise",
-            "package": "typescript"
-          }
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "getManyPaginatedResult",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "utils/pagination.util.ts",
-          "line": 28,
-          "character": 22
-        }
-      ],
-      "signatures": [
-        {
-          "id": 12,
-          "name": "getManyPaginatedResult",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "Find a paginated result via typeorm with get many and count."
-              }
-            ]
-          },
-          "typeParameter": [
-            {
-              "id": 13,
-              "name": "T",
-              "kind": 131072,
-              "kindString": "Type parameter",
-              "flags": {}
-            }
-          ],
-          "parameters": [
-            {
-              "id": 14,
-              "name": "queryBuilder",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 13,
-                    "name": "T"
-                  }
-                ],
-                "name": "SelectQueryBuilder",
-                "qualifiedName": "SelectQueryBuilder",
-                "package": "typeorm"
-              }
-            },
-            {
-              "id": 15,
-              "name": "__namedParameters",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "name": "PaginationInputDto",
-                "qualifiedName": "PaginationInputDto",
-                "package": "@cenk1cenk2/nestjs-utils"
-              }
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "reference",
-                "id": 1,
-                "typeArguments": [
-                  {
-                    "type": "reference",
-                    "id": 13,
-                    "name": "T"
-                  }
-                ],
-                "name": "PaginatedResult"
-              }
-            ],
-            "name": "Promise",
-            "qualifiedName": "Promise",
-            "package": "typescript"
-          }
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "paginateResult",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "utils/pagination.util.ts",
-          "line": 45,
-          "character": 16
-        }
-      ],
-      "signatures": [
-        {
-          "id": 17,
-          "name": "paginateResult",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "Paginate an existing result."
-              }
-            ]
-          },
-          "typeParameter": [
-            {
-              "id": 18,
-              "name": "T",
-              "kind": 131072,
-              "kindString": "Type parameter",
-              "flags": {}
-            }
-          ],
-          "parameters": [
-            {
-              "id": 19,
-              "name": "__namedParameters",
-              "kind": 32768,
-              "kindString": "Parameter",
-              "flags": {},
-              "type": {
-                "type": "intersection",
-                "types": [
-                  {
-                    "type": "reference",
-                    "name": "PaginationOutputDto",
-                    "qualifiedName": "PaginationOutputDto",
-                    "package": "@cenk1cenk2/nestjs-utils"
-                  },
-                  {
-                    "type": "reflection",
-                    "declaration": {
-                      "id": 20,
-                      "name": "__type",
-                      "kind": 65536,
-                      "kindString": "Type literal",
-                      "flags": {},
-                      "children": [
-                        {
-                          "id": 21,
-                          "name": "result",
-                          "kind": 1024,
-                          "kindString": "Property",
-                          "flags": {},
-                          "sources": [
-                            {
-                              "fileName": "utils/pagination.util.ts",
-                              "line": 45,
-                              "character": 91
-                            }
-                          ],
-                          "type": {
-                            "type": "array",
-                            "elementType": {
-                              "type": "reference",
-                              "id": 18,
-                              "name": "T"
-                            }
-                          }
-                        }
-                      ],
-                      "groups": [
-                        {
-                          "title": "Properties",
-                          "children": [21]
-                        }
-                      ],
-                      "sources": [
-                        {
-                          "fileName": "utils/pagination.util.ts",
-                          "line": 45,
-                          "character": 89
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "id": 1,
-            "typeArguments": [
-              {
-                "type": "reference",
-                "id": 18,
-                "name": "T"
-              }
-            ],
-            "name": "PaginatedResult"
-          }
-        }
-      ]
-    }
-  ],
-  "groups": [
-    {
-      "title": "Interfaces",
-      "children": [1]
-    },
-    {
-      "title": "Functions",
-      "children": [5, 11, 16]
-    }
-  ],
-  "sources": [
-    {
-      "fileName": "index.ts",
-      "line": 1,
-      "character": 0
-    }
-  ]
+	"id": 0,
+	"name": "@cenk1cenk2/nestjs-typeorm",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "PaginatedResult",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Pagination result for typing the functions."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "result",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 7,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 4,
+							"name": "T"
+						}
+					}
+				},
+				{
+					"id": 3,
+					"name": "pagination",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 8,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "PaginationOutputDto",
+						"qualifiedName": "PaginationOutputDto",
+						"package": "@cenk1cenk2/nestjs-utils"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						2,
+						3
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 6,
+					"character": 17
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 4,
+					"name": "T",
+					"kind": 131072,
+					"kindString": "Type parameter",
+					"flags": {}
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "findPaginatedResult",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "utils/pagination.util.ts",
+					"line": 10,
+					"character": 22
+				}
+			],
+			"signatures": [
+				{
+					"id": 6,
+					"name": "findPaginatedResult",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Find a paginated result via typeorm with find and count."
+							}
+						]
+					},
+					"typeParameter": [
+						{
+							"id": 7,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 8,
+							"name": "repository",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 7,
+										"name": "T"
+									}
+								],
+								"name": "Repository",
+								"qualifiedName": "Repository",
+								"package": "typeorm"
+							}
+						},
+						{
+							"id": 9,
+							"name": "__namedParameters",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "PaginationInputDto",
+								"qualifiedName": "PaginationInputDto",
+								"package": "@cenk1cenk2/nestjs-utils"
+							}
+						},
+						{
+							"id": 10,
+							"name": "options",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 7,
+										"name": "T"
+									}
+								],
+								"name": "FindManyOptions",
+								"qualifiedName": "FindManyOptions",
+								"package": "typeorm"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 7,
+										"name": "T"
+									}
+								],
+								"name": "PaginatedResult"
+							}
+						],
+						"name": "Promise",
+						"qualifiedName": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "getManyPaginatedResult",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "utils/pagination.util.ts",
+					"line": 28,
+					"character": 22
+				}
+			],
+			"signatures": [
+				{
+					"id": 12,
+					"name": "getManyPaginatedResult",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Find a paginated result via typeorm with get many and count."
+							}
+						]
+					},
+					"typeParameter": [
+						{
+							"id": 13,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 14,
+							"name": "queryBuilder",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 13,
+										"name": "T"
+									}
+								],
+								"name": "SelectQueryBuilder",
+								"qualifiedName": "SelectQueryBuilder",
+								"package": "typeorm"
+							}
+						},
+						{
+							"id": 15,
+							"name": "__namedParameters",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "PaginationInputDto",
+								"qualifiedName": "PaginationInputDto",
+								"package": "@cenk1cenk2/nestjs-utils"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 1,
+								"typeArguments": [
+									{
+										"type": "reference",
+										"id": 13,
+										"name": "T"
+									}
+								],
+								"name": "PaginatedResult"
+							}
+						],
+						"name": "Promise",
+						"qualifiedName": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 16,
+			"name": "paginateResult",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "utils/pagination.util.ts",
+					"line": 45,
+					"character": 16
+				}
+			],
+			"signatures": [
+				{
+					"id": 17,
+					"name": "paginateResult",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Paginate an existing result."
+							}
+						]
+					},
+					"typeParameter": [
+						{
+							"id": 18,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 19,
+							"name": "__namedParameters",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intersection",
+								"types": [
+									{
+										"type": "reference",
+										"name": "PaginationOutputDto",
+										"qualifiedName": "PaginationOutputDto",
+										"package": "@cenk1cenk2/nestjs-utils"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 20,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 21,
+													"name": "result",
+													"kind": 1024,
+													"kindString": "Property",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "utils/pagination.util.ts",
+															"line": 45,
+															"character": 91
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "reference",
+															"id": 18,
+															"name": "T"
+														}
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Properties",
+													"children": [
+														21
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "utils/pagination.util.ts",
+													"line": 45,
+													"character": 89
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 1,
+						"typeArguments": [
+							{
+								"type": "reference",
+								"id": 18,
+								"name": "T"
+							}
+						],
+						"name": "PaginatedResult"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				1
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				5,
+				11,
+				16
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
 }

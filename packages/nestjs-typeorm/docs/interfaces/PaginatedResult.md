@@ -5,8 +5,8 @@ Pagination result for typing the functions.
 ## Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 ## Properties
 
@@ -18,7 +18,7 @@ Pagination result for typing the functions.
 
 interfaces/pagination.interface.ts:7
 
----
+___
 
 ### pagination
 
