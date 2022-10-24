@@ -10,7 +10,7 @@
 
 redis-cache-manager.interface.ts:6
 
----
+___
 
 ### options
 

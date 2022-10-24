@@ -14,7 +14,7 @@
 
 redis-cache-manager.interceptor.ts:15
 
----
+___
 
 ### cache
 
@@ -24,7 +24,7 @@ redis-cache-manager.interceptor.ts:15
 
 redis-cache-manager.interceptor.ts:17
 
----
+___
 
 ### reflector
 
@@ -42,10 +42,10 @@ redis-cache-manager.interceptor.ts:17
 
 #### Parameters
 
-| Name        | Type                                                                 |
-| :---------- | :------------------------------------------------------------------- |
-| `cache`     | [`RedisCacheManagerProvider`](../types/RedisCacheManagerProvider.md) |
-| `reflector` | `Reflector`                                                          |
+| Name | Type |
+| :------ | :------ |
+| `cache` | [`RedisCacheManagerProvider`](../types/RedisCacheManagerProvider.md) |
+| `reflector` | `Reflector` |
 
 #### Defined in
 
@@ -59,10 +59,10 @@ redis-cache-manager.interceptor.ts:17
 
 #### Parameters
 
-| Name      | Type                  |
-| :-------- | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `context` | `GqlExecutionContext` |
-| `next`    | `CallHandler`<`any`\> |
+| `next` | `CallHandler`<`any`\> |
 
 #### Returns
 
@@ -76,7 +76,7 @@ NestInterceptor.intercept
 
 redis-cache-manager.interceptor.ts:19
 
----
+___
 
 ### createTopic
 
@@ -84,9 +84,9 @@ redis-cache-manager.interceptor.ts:19
 
 #### Parameters
 
-| Name         | Type                   |
-| :----------- | :--------------------- |
-| `pattern`    | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `pattern` | `string` |
 | `extensions` | `string` \| `string`[] |
 
 #### Returns

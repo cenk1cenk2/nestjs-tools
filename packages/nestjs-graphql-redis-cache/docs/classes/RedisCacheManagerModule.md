@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name      | Type                                                                    |
-| :-------- | :---------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisCacheManagerOptions`](../interfaces/RedisCacheManagerOptions.md) |
 
 #### Returns
