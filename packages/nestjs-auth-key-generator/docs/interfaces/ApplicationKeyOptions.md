@@ -10,7 +10,7 @@
 
 key.interface.ts:7
 
----
+___
 
 ### dir
 
@@ -20,7 +20,7 @@ key.interface.ts:7
 
 key.interface.ts:8
 
----
+___
 
 ### files
 
@@ -30,7 +30,7 @@ key.interface.ts:8
 
 key.interface.ts:9
 
----
+___
 
 ### attributes
 
@@ -40,7 +40,7 @@ key.interface.ts:9
 
 key.interface.ts:10
 
----
+___
 
 ### options
 
@@ -50,7 +50,7 @@ key.interface.ts:10
 
 key.interface.ts:11
 
----
+___
 
 ### exitOnError
 
@@ -60,7 +60,7 @@ key.interface.ts:11
 
 key.interface.ts:12
 
----
+___
 
 ### logger
 
@@ -72,8 +72,8 @@ key.interface.ts:12
 
 ##### Parameters
 
-| Name      | Type    |
-| :-------- | :------ |
+| Name | Type |
+| :------ | :------ |
 | `...args` | `any`[] |
 
 #### Defined in

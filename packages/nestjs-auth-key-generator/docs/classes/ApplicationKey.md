@@ -10,7 +10,7 @@
 
 key.ts:11
 
----
+___
 
 ### keys
 
@@ -20,7 +20,7 @@ key.ts:11
 
 key.ts:12
 
----
+___
 
 ### logger
 
@@ -30,7 +30,7 @@ key.ts:12
 
 key.ts:13
 
----
+___
 
 ### options
 
@@ -48,8 +48,8 @@ key.ts:15
 
 #### Parameters
 
-| Name       | Type                                                                          |
-| :--------- | :---------------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\> |
 
 #### Defined in
