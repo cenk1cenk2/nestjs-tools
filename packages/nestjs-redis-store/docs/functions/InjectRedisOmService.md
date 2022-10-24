@@ -1,6 +1,6 @@
-# Function: InjectRedisStoreService
+# Function: InjectRedisOmService
 
-▸ **InjectRedisStoreService**(): (`target`: `Record`<`string`, `unknown`\>, `key`: `string` \| `symbol`, `index?`: `number`) => `void`
+▸ **InjectRedisOmService**(): (`target`: `Record`<`string`, `unknown`\>, `key`: `string` \| `symbol`, `index?`: `number`) => `void`
 
 #### Returns
 
@@ -22,4 +22,4 @@
 
 #### Defined in
 
-store/decorator/inject.decorator.ts:5
+om/decorator/inject.decorator.ts:4

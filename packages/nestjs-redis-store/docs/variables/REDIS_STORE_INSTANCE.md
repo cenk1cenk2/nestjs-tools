@@ -4,4 +4,4 @@
 
 #### Defined in
 
-redis-store.constants.ts:1
+store/redis-store.constants.ts:1

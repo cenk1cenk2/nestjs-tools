@@ -8,9 +8,9 @@
 
 #### Parameters
 
-| Name       | Type                                                                    |
-| :--------- | :---------------------------------------------------------------------- |
-| `options?` | [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md) |
+| Name       | Type                                                                  |
+| :--------- | :-------------------------------------------------------------------- |
+| `options?` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Returns
 
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-redis-store.module.ts:25
+store/redis-store.module.ts:25
 
 ## Constructors
 

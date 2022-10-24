@@ -12,13 +12,17 @@
 
 #### Defined in
 
-redis-store.service.ts:10
+store/redis-store.service.ts:10
 
 ---
 
 ### options
 
-• **options**: [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md)
+• **options**: [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md)
+
+#### Defined in
+
+store/redis-store.service.ts:12
 
 ## Constructors
 
@@ -28,13 +32,13 @@ redis-store.service.ts:10
 
 #### Parameters
 
-| Name      | Type                                                                    |
-| :-------- | :---------------------------------------------------------------------- |
-| `options` | [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md) |
+| Name      | Type                                                                  |
+| :-------- | :-------------------------------------------------------------------- |
+| `options` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Defined in
 
-redis-store.service.ts:12
+store/redis-store.service.ts:12
 
 ## Methods
 
@@ -52,7 +56,7 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-redis-store.service.ts:14
+store/redis-store.service.ts:14
 
 ---
 
@@ -66,7 +70,7 @@ redis-store.service.ts:14
 
 #### Defined in
 
-redis-store.service.ts:18
+store/redis-store.service.ts:18
 
 ---
 
@@ -87,4 +91,4 @@ redis-store.service.ts:18
 
 #### Defined in
 
-redis-store.service.ts:26
+store/redis-store.service.ts:26
