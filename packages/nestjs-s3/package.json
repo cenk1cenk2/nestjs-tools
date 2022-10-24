@@ -22,19 +22,18 @@
     "dev:start": "tsup-node --watch --silent",
     "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
-    "lint:staged": "lint-staged",
     "docs:toc": "markdown-toc README.md --bullets='-' -i",
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1 < 10",
-    "aws-sdk": ">= 2",
-    "@webundsoehne/nestjs-util": ">= 5"
+    "@webundsoehne/nestjs-util": ">= 5",
+    "aws-sdk": ">= 2"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.1.5",
-    "aws-sdk": "^2.1238.0",
-    "@webundsoehne/nestjs-util": "^6.0.1"
+    "@nestjs/common": "^9.1.6",
+    "@webundsoehne/nestjs-util": "^6.0.1",
+    "aws-sdk": "^2.1238.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

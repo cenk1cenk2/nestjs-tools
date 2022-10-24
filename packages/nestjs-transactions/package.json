@@ -22,7 +22,6 @@
     "dev:start": "tsup-node --watch --silent",
     "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
-    "lint:staged": "lint-staged",
     "docs:toc": "markdown-toc README.md --bullets='-' -i",
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
@@ -32,7 +31,7 @@
     "typeorm": ">= 0.2.29 < 1"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.1.5",
+    "@nestjs/common": "^9.1.6",
     "@nestjs/typeorm": "^9.0.1",
     "typeorm": "^0.3.10"
   },

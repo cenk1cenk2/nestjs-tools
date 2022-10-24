@@ -3,7 +3,7 @@ import { esbuildDecorators } from '@anatine/esbuild-decorators'
 import { defineConfig } from 'tsup'
 
 export default defineConfig((options) => ({
-  name: !options.watch && 'production',
+  name: !options.watch ? 'production' : undefined,
 
   entry: [ 'src/index.ts' ],
   tsconfig: options.watch ? 'tsconfig.json' : 'tsconfig.build.json',
@@ -14,7 +14,7 @@ export default defineConfig((options) => ({
 
   target: [ 'es2021' ],
 
-  sourcemap: options.watch && true,
+  sourcemap: options.watch ? true : false,
 
   splitting: false,
   clean: true,
