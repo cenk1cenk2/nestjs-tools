@@ -15,7 +15,7 @@
 
 om/redis-om.service.ts:9
 
----
+___
 
 ### options
 
@@ -33,8 +33,8 @@ om/redis-om.service.ts:11
 
 #### Parameters
 
-| Name      | Type                                                            |
-| :-------- | :-------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisOmModuleOptions`](../interfaces/RedisOmModuleOptions.md) |
 
 #### Defined in
@@ -59,7 +59,7 @@ OnModuleInit.onModuleInit
 
 om/redis-om.service.ts:13
 
----
+___
 
 ### onModuleDestroy
 

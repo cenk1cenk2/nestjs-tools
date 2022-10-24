@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name       | Type                                                            |
-| :--------- | :-------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | [`RedisOmModuleOptions`](../interfaces/RedisOmModuleOptions.md) |
 
 #### Returns

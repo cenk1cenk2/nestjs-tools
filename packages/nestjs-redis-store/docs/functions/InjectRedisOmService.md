@@ -10,11 +10,11 @@
 
 ##### Parameters
 
-| Name     | Type                           |
-| :------- | :----------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `target` | `Record`<`string`, `unknown`\> |
-| `key`    | `string` \| `symbol`           |
-| `index?` | `number`                       |
+| `key` | `string` \| `symbol` |
+| `index?` | `number` |
 
 ##### Returns
 
@@ -22,4 +22,4 @@
 
 #### Defined in
 
-om/decorator/inject.decorator.ts:4
+om/decorator/inject.decorator.ts:5

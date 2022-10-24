@@ -1,6 +1,6 @@
-# Variable: REDIS_STORE_DELIMITER
+# Variable: REDIS\_STORE\_DELIMITER
 
-• `Const` **REDIS_STORE_DELIMITER**: `":"`
+• `Const` **REDIS\_STORE\_DELIMITER**: ``":"``
 
 #### Defined in
 

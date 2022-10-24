@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name       | Type                                                                  |
-| :--------- | :-------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Returns

@@ -14,7 +14,7 @@
 
 store/redis-store.service.ts:10
 
----
+___
 
 ### options
 
@@ -32,8 +32,8 @@ store/redis-store.service.ts:12
 
 #### Parameters
 
-| Name      | Type                                                                  |
-| :-------- | :-------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Defined in
@@ -58,7 +58,7 @@ OnModuleInit.onModuleInit
 
 store/redis-store.service.ts:14
 
----
+___
 
 ### createChild
 
@@ -72,7 +72,7 @@ store/redis-store.service.ts:14
 
 store/redis-store.service.ts:18
 
----
+___
 
 ### createTopic
 
@@ -80,9 +80,9 @@ store/redis-store.service.ts:18
 
 #### Parameters
 
-| Name            | Type       |
-| :-------------- | :--------- |
-| `topic`         | `string`   |
+| Name | Type |
+| :------ | :------ |
+| `topic` | `string` |
 | `...extensions` | `string`[] |
 
 #### Returns

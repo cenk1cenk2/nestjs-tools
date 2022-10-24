@@ -10,7 +10,7 @@
 
 store/redis-store.interface.ts:4
 
----
+___
 
 ### options
 
@@ -20,7 +20,7 @@ store/redis-store.interface.ts:4
 
 store/redis-store.interface.ts:5
 
----
+___
 
 ### delimiter
 
