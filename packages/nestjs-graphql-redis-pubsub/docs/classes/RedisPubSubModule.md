@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name       | Type                                                                    |
-| :--------- | :---------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options?` | [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md) |
 
 #### Returns

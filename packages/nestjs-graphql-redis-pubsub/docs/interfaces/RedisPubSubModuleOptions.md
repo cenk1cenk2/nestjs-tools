@@ -10,7 +10,7 @@
 
 redis-pubsub.interface.ts:7
 
----
+___
 
 ### options
 
@@ -20,7 +20,7 @@ redis-pubsub.interface.ts:7
 
 redis-pubsub.interface.ts:8
 
----
+___
 
 ### delimiter
 

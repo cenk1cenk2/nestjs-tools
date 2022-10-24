@@ -6,10 +6,10 @@
 
 ## Variables
 
-- [REDIS_PUBSUB_INSTANCE](variables/REDIS_PUBSUB_INSTANCE.md)
-- [REDIS_PUBSUB_DELIMITER](variables/REDIS_PUBSUB_DELIMITER.md)
+- [REDIS\_PUBSUB\_INSTANCE](variables/REDIS_PUBSUB_INSTANCE.md)
+- [REDIS\_PUBSUB\_DELIMITER](variables/REDIS_PUBSUB_DELIMITER.md)
 
-## Type aliases
+## Type Aliases
 
 - [RedisPubSubProvider](types/RedisPubSubProvider.md)
 

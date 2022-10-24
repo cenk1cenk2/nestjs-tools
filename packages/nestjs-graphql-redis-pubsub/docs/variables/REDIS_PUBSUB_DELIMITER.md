@@ -1,6 +1,6 @@
-# Variable: REDIS_PUBSUB_DELIMITER
+# Variable: REDIS\_PUBSUB\_DELIMITER
 
-• `Const` **REDIS_PUBSUB_DELIMITER**: `":"`
+• `Const` **REDIS\_PUBSUB\_DELIMITER**: ``":"``
 
 #### Defined in
 

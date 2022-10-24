@@ -2,10 +2,10 @@
 
 ## Type parameters
 
-| Name                | Type                                                  |
-| :------------------ | :---------------------------------------------------- |
-| `RedisPubSubTopics` | extends `string` = `string`                           |
-| `RedisPubSubMap`    | extends `Record`<`RedisPubSubTopics`, `any`\> = `any` |
+| Name | Type |
+| :------ | :------ |
+| `RedisPubSubTopics` | extends `string` = `string` |
+| `RedisPubSubMap` | extends `Record`<`RedisPubSubTopics`, `any`\> = `any` |
 
 ## Implements
 
@@ -21,6 +21,16 @@
 
 redis-pubsub.service.ts:10
 
+___
+
+### options
+
+• `Private` **options**: [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md)
+
+#### Defined in
+
+redis-pubsub.service.ts:12
+
 ## Constructors
 
 ### constructor
@@ -29,15 +39,15 @@ redis-pubsub.service.ts:10
 
 #### Type parameters
 
-| Name                | Type                                                  |
-| :------------------ | :---------------------------------------------------- |
-| `RedisPubSubTopics` | extends `string` = `string`                           |
-| `RedisPubSubMap`    | extends `Record`<`RedisPubSubTopics`, `any`\> = `any` |
+| Name | Type |
+| :------ | :------ |
+| `RedisPubSubTopics` | extends `string` = `string` |
+| `RedisPubSubMap` | extends `Record`<`RedisPubSubTopics`, `any`\> = `any` |
 
 #### Parameters
 
-| Name      | Type                                                                    |
-| :-------- | :---------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisPubSubModuleOptions`](../interfaces/RedisPubSubModuleOptions.md) |
 
 #### Defined in
@@ -62,7 +72,7 @@ OnApplicationBootstrap.onApplicationBootstrap
 
 redis-pubsub.service.ts:14
 
----
+___
 
 ### publish
 
@@ -70,18 +80,18 @@ redis-pubsub.service.ts:14
 
 #### Type parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Pattern` | extends `string` |
-| `Data`    | extends `any`    |
+| `Data` | extends `any` |
 
 #### Parameters
 
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
-| `payload`    | `Data`                 | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `pattern` | `Pattern` | `undefined` |
+| `extensions` | `string` \| `string`[] | `[]` |
+| `payload` | `Data` | `undefined` |
 
 #### Returns
 
@@ -91,7 +101,7 @@ redis-pubsub.service.ts:14
 
 redis-pubsub.service.ts:18
 
----
+___
 
 ### subscribe
 
@@ -99,18 +109,18 @@ redis-pubsub.service.ts:18
 
 #### Type parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Pattern` | extends `string` |
-| `Data`    | extends `any`    |
+| `Data` | extends `any` |
 
 #### Parameters
 
-| Name         | Type                          | Default value |
-| :----------- | :---------------------------- | :------------ |
-| `pattern`    | `Pattern`                     | `undefined`   |
-| `extensions` | `string` \| `string`[]        | `[]`          |
-| `onMessage`  | (`message`: `Data`) => `void` | `undefined`   |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `pattern` | `Pattern` | `undefined` |
+| `extensions` | `string` \| `string`[] | `[]` |
+| `onMessage` | (`message`: `Data`) => `void` | `undefined` |
 
 #### Returns
 
@@ -120,7 +130,7 @@ redis-pubsub.service.ts:18
 
 redis-pubsub.service.ts:22
 
----
+___
 
 ### unsubscribe
 
@@ -128,8 +138,8 @@ redis-pubsub.service.ts:22
 
 #### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `id` | `number` |
 
 #### Returns
@@ -140,7 +150,7 @@ redis-pubsub.service.ts:22
 
 redis-pubsub.service.ts:30
 
----
+___
 
 ### getClient
 
@@ -154,7 +164,7 @@ redis-pubsub.service.ts:30
 
 redis-pubsub.service.ts:34
 
----
+___
 
 ### iterator
 
@@ -162,16 +172,16 @@ redis-pubsub.service.ts:34
 
 #### Type parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Pattern` | extends `string` |
 
 #### Parameters
 
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `pattern` | `Pattern` | `undefined` |
+| `extensions` | `string` \| `string`[] | `[]` |
 
 #### Returns
 
@@ -181,7 +191,7 @@ redis-pubsub.service.ts:34
 
 redis-pubsub.service.ts:38
 
----
+___
 
 ### getSubscriberCount
 
@@ -189,16 +199,16 @@ redis-pubsub.service.ts:38
 
 #### Type parameters
 
-| Name      | Type             |
-| :-------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Pattern` | extends `string` |
 
 #### Parameters
 
-| Name         | Type                   | Default value |
-| :----------- | :--------------------- | :------------ |
-| `pattern`    | `Pattern`              | `undefined`   |
-| `extensions` | `string` \| `string`[] | `[]`          |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `pattern` | `Pattern` | `undefined` |
+| `extensions` | `string` \| `string`[] | `[]` |
 
 #### Returns
 
@@ -208,7 +218,7 @@ redis-pubsub.service.ts:38
 
 redis-pubsub.service.ts:42
 
----
+___
 
 ### createTopic
 
@@ -216,9 +226,9 @@ redis-pubsub.service.ts:42
 
 #### Parameters
 
-| Name         | Type                   |
-| :----------- | :--------------------- |
-| `pattern`    | `string`               |
+| Name | Type |
+| :------ | :------ |
+| `pattern` | `string` |
 | `extensions` | `string` \| `string`[] |
 
 #### Returns

@@ -10,11 +10,11 @@
 
 ##### Parameters
 
-| Name     | Type                           |
-| :------- | :----------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `target` | `Record`<`string`, `unknown`\> |
-| `key`    | `string` \| `symbol`           |
-| `index?` | `number`                       |
+| `key` | `string` \| `symbol` |
+| `index?` | `number` |
 
 ##### Returns
 
