@@ -7,14 +7,14 @@
   "originalName": "",
   "children": [
     {
-      "id": 10,
+      "id": 11,
       "name": "ApplicationKeyOptions",
       "kind": 256,
       "kindString": "Interface",
       "flags": {},
       "children": [
         {
-          "id": 11,
+          "id": 12,
           "name": "configKey",
           "kind": 1024,
           "kindString": "Property",
@@ -24,25 +24,7 @@
           "sources": [
             {
               "fileName": "key.interface.ts",
-              "line": 5,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 12,
-          "name": "dir",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "key.interface.ts",
-              "line": 6,
+              "line": 7,
               "character": 2
             }
           ],
@@ -53,31 +35,10 @@
         },
         {
           "id": 13,
-          "name": "files",
+          "name": "dir",
           "kind": 1024,
           "kindString": "Property",
           "flags": {},
-          "sources": [
-            {
-              "fileName": "key.interface.ts",
-              "line": 7,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "id": 29,
-            "name": "KeypairResults"
-          }
-        },
-        {
-          "id": 14,
-          "name": "attributes",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
           "sources": [
             {
               "fileName": "key.interface.ts",
@@ -86,30 +47,16 @@
             }
           ],
           "type": {
-            "type": "reference",
-            "typeArguments": [
-              {
-                "type": "intrinsic",
-                "name": "string"
-              },
-              {
-                "type": "intrinsic",
-                "name": "any"
-              }
-            ],
-            "name": "Record",
-            "qualifiedName": "Record",
-            "package": "typescript"
+            "type": "intrinsic",
+            "name": "string"
           }
         },
         {
-          "id": 15,
-          "name": "options",
+          "id": 14,
+          "name": "files",
           "kind": 1024,
           "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
+          "flags": {},
           "sources": [
             {
               "fileName": "key.interface.ts",
@@ -122,8 +69,9 @@
             "typeArguments": [
               {
                 "type": "reference",
-                "id": 21,
-                "name": "KeypairOptions"
+                "name": "GenerateResult",
+                "qualifiedName": "GenerateResult",
+                "package": "selfsigned"
               }
             ],
             "name": "Partial",
@@ -132,8 +80,8 @@
           }
         },
         {
-          "id": 16,
-          "name": "exitOnError",
+          "id": 15,
+          "name": "attributes",
           "kind": 1024,
           "kindString": "Property",
           "flags": {
@@ -147,13 +95,16 @@
             }
           ],
           "type": {
-            "type": "intrinsic",
-            "name": "boolean"
+            "type": "array",
+            "elementType": {
+              "type": "reference",
+              "name": "CertificateField"
+            }
           }
         },
         {
-          "id": 17,
-          "name": "logger",
+          "id": 16,
+          "name": "options",
           "kind": 1024,
           "kindString": "Property",
           "flags": {
@@ -167,9 +118,59 @@
             }
           ],
           "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "name": "SelfsignedOptions",
+                "qualifiedName": "SelfsignedOptions",
+                "package": "selfsigned"
+              }
+            ],
+            "name": "Partial",
+            "qualifiedName": "Partial",
+            "package": "typescript"
+          }
+        },
+        {
+          "id": 17,
+          "name": "exitOnError",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 12,
+              "character": 2
+            }
+          ],
+          "type": {
+            "type": "intrinsic",
+            "name": "boolean"
+          }
+        },
+        {
+          "id": 18,
+          "name": "logger",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.interface.ts",
+              "line": 13,
+              "character": 2
+            }
+          ],
+          "type": {
             "type": "reflection",
             "declaration": {
-              "id": 18,
+              "id": 19,
               "name": "__type",
               "kind": 512,
               "kindString": "Constructor",
@@ -177,20 +178,20 @@
               "sources": [
                 {
                   "fileName": "key.interface.ts",
-                  "line": 11,
+                  "line": 13,
                   "character": 11
                 }
               ],
               "signatures": [
                 {
-                  "id": 19,
+                  "id": 20,
                   "name": "new ApplicationKeyOptions",
                   "kind": 16384,
                   "kindString": "Constructor signature",
                   "flags": {},
                   "parameters": [
                     {
-                      "id": 20,
+                      "id": 21,
                       "name": "args",
                       "kind": 32768,
                       "kindString": "Parameter",
@@ -221,13 +222,13 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [11, 12, 13, 14, 15, 16, 17]
+          "children": [12, 13, 14, 15, 16, 17, 18]
         }
       ],
       "sources": [
         {
           "fileName": "key.interface.ts",
-          "line": 4,
+          "line": 6,
           "character": 17
         }
       ]
@@ -277,8 +278,9 @@
           ],
           "type": {
             "type": "reference",
-            "id": 29,
-            "name": "KeypairResults"
+            "name": "GenerateResult",
+            "qualifiedName": "GenerateResult",
+            "package": "selfsigned"
           }
         },
         {
@@ -337,7 +339,7 @@
                     "typeArguments": [
                       {
                         "type": "reference",
-                        "id": 10,
+                        "id": 11,
                         "name": "ApplicationKeyOptions"
                       }
                     ],
@@ -357,6 +359,36 @@
         },
         {
           "id": 8,
+          "name": "options",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true,
+            "isOptional": true
+          },
+          "sources": [
+            {
+              "fileName": "key.ts",
+              "line": 15,
+              "character": 23
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 11,
+                "name": "ApplicationKeyOptions"
+              }
+            ],
+            "name": "Partial",
+            "qualifiedName": "Partial",
+            "package": "typescript"
+          }
+        },
+        {
+          "id": 9,
           "name": "generateKeys",
           "kind": 2048,
           "kindString": "Method",
@@ -372,7 +404,7 @@
           ],
           "signatures": [
             {
-              "id": 9,
+              "id": 10,
               "name": "generateKeys",
               "kind": 4096,
               "kindString": "Call signature",
@@ -388,7 +420,7 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [2, 6, 7]
+          "children": [2, 6, 7, 8]
         },
         {
           "title": "Constructors",
@@ -396,7 +428,7 @@
         },
         {
           "title": "Methods",
-          "children": [8]
+          "children": [9]
         }
       ],
       "sources": [
@@ -406,317 +438,12 @@
           "character": 13
         }
       ]
-    },
-    {
-      "id": 21,
-      "name": "KeypairOptions",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "children": [
-        {
-          "id": 22,
-          "name": "keySize",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 2,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          }
-        },
-        {
-          "id": 23,
-          "name": "days",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 3,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          }
-        },
-        {
-          "id": 24,
-          "name": "algorithm",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 4,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 25,
-          "name": "extensions",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 5,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "array",
-            "elementType": {
-              "type": "reference",
-              "typeArguments": [
-                {
-                  "type": "intrinsic",
-                  "name": "string"
-                },
-                {
-                  "type": "intrinsic",
-                  "name": "any"
-                }
-              ],
-              "name": "Record",
-              "qualifiedName": "Record",
-              "package": "typescript"
-            }
-          }
-        },
-        {
-          "id": 26,
-          "name": "pkcs7",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 6,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "boolean"
-          }
-        },
-        {
-          "id": 27,
-          "name": "clientCertificate",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 7,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "boolean"
-          }
-        },
-        {
-          "id": 28,
-          "name": "clientCertificateCN",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 8,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "literal",
-            "value": "Cenk Kilic <cenk@kilic.dev>"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [22, 23, 24, 25, 26, 27, 28]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "keypair.interface.ts",
-          "line": 1,
-          "character": 17
-        }
-      ]
-    },
-    {
-      "id": 29,
-      "name": "KeypairResults",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "children": [
-        {
-          "id": 30,
-          "name": "public",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 12,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 31,
-          "name": "private",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 13,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 32,
-          "name": "cert",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 14,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 33,
-          "name": "clientpublic",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 15,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 34,
-          "name": "clientprivate",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 16,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 35,
-          "name": "clientcert",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "keypair.interface.ts",
-              "line": 17,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [30, 31, 32, 33, 34, 35]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "keypair.interface.ts",
-          "line": 11,
-          "character": 17
-        }
-      ]
     }
   ],
   "groups": [
     {
       "title": "Interfaces",
-      "children": [10, 21, 29]
+      "children": [11]
     },
     {
       "title": "Classes",

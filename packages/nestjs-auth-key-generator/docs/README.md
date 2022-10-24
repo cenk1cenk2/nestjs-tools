@@ -3,8 +3,6 @@
 ## Interfaces
 
 - [ApplicationKeyOptions](interfaces/ApplicationKeyOptions.md)
-- [KeypairOptions](interfaces/KeypairOptions.md)
-- [KeypairResults](interfaces/KeypairResults.md)
 
 ## Classes
 

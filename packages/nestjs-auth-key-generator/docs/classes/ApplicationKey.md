@@ -14,7 +14,7 @@ key.ts:11
 
 ### keys
 
-• **keys**: [`KeypairResults`](../interfaces/KeypairResults.md)
+• **keys**: `GenerateResult`
 
 #### Defined in
 
@@ -30,6 +30,16 @@ key.ts:12
 
 key.ts:13
 
+---
+
+### options
+
+• `Private` `Optional` **options**: `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\>
+
+#### Defined in
+
+key.ts:15
+
 ## Constructors
 
 ### constructor
@@ -42,6 +52,10 @@ key.ts:13
 | :--------- | :---------------------------------------------------------------------------- |
 | `options?` | `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\> |
 
+#### Defined in
+
+key.ts:15
+
 ## Methods
 
 ### generateKeys
@@ -51,3 +65,7 @@ key.ts:13
 #### Returns
 
 `void`
+
+#### Defined in
+
+key.ts:49

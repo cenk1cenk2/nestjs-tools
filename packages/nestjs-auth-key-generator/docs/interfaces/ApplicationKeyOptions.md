@@ -8,7 +8,7 @@
 
 #### Defined in
 
-key.interface.ts:5
+key.interface.ts:7
 
 ---
 
@@ -18,37 +18,37 @@ key.interface.ts:5
 
 #### Defined in
 
-key.interface.ts:6
+key.interface.ts:8
 
 ---
 
 ### files
 
-• **files**: [`KeypairResults`](KeypairResults.md)
+• **files**: `Partial`<`GenerateResult`\>
 
 #### Defined in
 
-key.interface.ts:7
+key.interface.ts:9
 
 ---
 
 ### attributes
 
-• `Optional` **attributes**: `Record`<`string`, `any`\>
+• `Optional` **attributes**: `CertificateField`[]
 
 #### Defined in
 
-key.interface.ts:8
+key.interface.ts:10
 
 ---
 
 ### options
 
-• `Optional` **options**: `Partial`<[`KeypairOptions`](KeypairOptions.md)\>
+• `Optional` **options**: `Partial`<`SelfsignedOptions`\>
 
 #### Defined in
 
-key.interface.ts:9
+key.interface.ts:11
 
 ---
 
@@ -58,7 +58,7 @@ key.interface.ts:9
 
 #### Defined in
 
-key.interface.ts:10
+key.interface.ts:12
 
 ---
 
@@ -78,4 +78,4 @@ key.interface.ts:10
 
 #### Defined in
 
-key.interface.ts:11
+key.interface.ts:13
