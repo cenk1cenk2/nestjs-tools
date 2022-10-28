@@ -8,6 +8,7 @@ import { RedisOmModuleOptions } from './redis-om.interface'
 export class RedisOmService implements OnModuleInit, OnModuleDestroy {
   public client = new Client()
   private logger = new Logger(this.constructor.name)
+  private keepAliveRef: NodeJS.Timer
 
   constructor (public options: RedisOmModuleOptions) {
     this.options = {
@@ -19,7 +20,7 @@ export class RedisOmService implements OnModuleInit, OnModuleDestroy {
   public async onModuleInit (): Promise<void> {
     await this.open()
 
-    setInterval(async () => {
+    this.keepAliveRef = setInterval(async () => {
       if (!this.client.isOpen()) {
         this.logger.warn('Connection to Redis was closed, reinitiating it.')
 
@@ -33,6 +34,8 @@ export class RedisOmService implements OnModuleInit, OnModuleDestroy {
   }
 
   public async onModuleDestroy (): Promise<void> {
+    clearInterval(this.keepAliveRef)
+
     await this.client.close()
   }
 }
