@@ -1,9 +1,14 @@
-## @cenk1cenk2/nestjs-redis-store [4.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@4.0.0...@cenk1cenk2/nestjs-redis-store@4.0.1) (2022-10-24)
+# @cenk1cenk2/nestjs-redis-store [4.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@4.0.1...@cenk1cenk2/nestjs-redis-store@4.1.0) (2022-10-28)
 
+### Features
+
+- add healthcheck to redis instance ([f7bbfbe](https://github.com/cenk1cenk2/nestjs-tools/commit/f7bbfbe22f2873409867666f438447446d71203c))
+
+## @cenk1cenk2/nestjs-redis-store [4.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@4.0.0...@cenk1cenk2/nestjs-redis-store@4.0.1) (2022-10-24)
 
 ### Bug Fixes
 
-* update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
+- update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
 
 # @cenk1cenk2/nestjs-redis-store [4.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@3.0.1...@cenk1cenk2/nestjs-redis-store@4.0.0) (2022-10-24)
 

@@ -15,7 +15,17 @@
 
 om/redis-om.service.ts:9
 
-___
+---
+
+### logger
+
+• `Private` **logger**: `Logger`
+
+#### Defined in
+
+om/redis-om.service.ts:10
+
+---
 
 ### options
 
@@ -23,7 +33,7 @@ ___
 
 #### Defined in
 
-om/redis-om.service.ts:11
+om/redis-om.service.ts:12
 
 ## Constructors
 
@@ -33,13 +43,13 @@ om/redis-om.service.ts:11
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                                            |
+| :-------- | :-------------------------------------------------------------- |
 | `options` | [`RedisOmModuleOptions`](../interfaces/RedisOmModuleOptions.md) |
 
 #### Defined in
 
-om/redis-om.service.ts:11
+om/redis-om.service.ts:12
 
 ## Methods
 
@@ -57,9 +67,23 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-om/redis-om.service.ts:13
+om/redis-om.service.ts:19
 
-___
+---
+
+### open
+
+▸ **open**(): `Promise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+om/redis-om.service.ts:31
+
+---
 
 ### onModuleDestroy
 
@@ -75,4 +99,4 @@ OnModuleDestroy.onModuleDestroy
 
 #### Defined in
 
-om/redis-om.service.ts:17
+om/redis-om.service.ts:35
