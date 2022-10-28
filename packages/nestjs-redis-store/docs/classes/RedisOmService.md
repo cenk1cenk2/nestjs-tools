@@ -27,13 +27,23 @@ om/redis-om.service.ts:10
 
 ---
 
+### keepAliveRef
+
+• `Private` **keepAliveRef**: `Timer`
+
+#### Defined in
+
+om/redis-om.service.ts:11
+
+---
+
 ### options
 
 • **options**: [`RedisOmModuleOptions`](../interfaces/RedisOmModuleOptions.md)
 
 #### Defined in
 
-om/redis-om.service.ts:12
+om/redis-om.service.ts:13
 
 ## Constructors
 
@@ -49,7 +59,7 @@ om/redis-om.service.ts:12
 
 #### Defined in
 
-om/redis-om.service.ts:12
+om/redis-om.service.ts:13
 
 ## Methods
 
@@ -67,7 +77,7 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-om/redis-om.service.ts:19
+om/redis-om.service.ts:20
 
 ---
 
@@ -81,7 +91,7 @@ om/redis-om.service.ts:19
 
 #### Defined in
 
-om/redis-om.service.ts:31
+om/redis-om.service.ts:32
 
 ---
 
@@ -99,4 +109,4 @@ OnModuleDestroy.onModuleDestroy
 
 #### Defined in
 
-om/redis-om.service.ts:35
+om/redis-om.service.ts:36

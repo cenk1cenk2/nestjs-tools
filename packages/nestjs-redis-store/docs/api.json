@@ -389,6 +389,28 @@
           "defaultValue": "..."
         },
         {
+          "id": 25,
+          "name": "keepAliveRef",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true
+          },
+          "sources": [
+            {
+              "fileName": "om/redis-om.service.ts",
+              "line": 11,
+              "character": 10
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "name": "Timer",
+            "qualifiedName": "global.NodeJS.Timer",
+            "package": "@types/node"
+          }
+        },
+        {
           "id": 20,
           "name": "constructor",
           "kind": 512,
@@ -397,7 +419,7 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 12,
+              "line": 13,
               "character": 2
             }
           ],
@@ -431,7 +453,7 @@
           ]
         },
         {
-          "id": 25,
+          "id": 26,
           "name": "options",
           "kind": 1024,
           "kindString": "Property",
@@ -441,7 +463,7 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 12,
+              "line": 13,
               "character": 22
             }
           ],
@@ -452,7 +474,7 @@
           }
         },
         {
-          "id": 26,
+          "id": 27,
           "name": "onModuleInit",
           "kind": 2048,
           "kindString": "Method",
@@ -462,13 +484,13 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 19,
+              "line": 20,
               "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 27,
+              "id": 28,
               "name": "onModuleInit",
               "kind": 4096,
               "kindString": "Call signature",
@@ -497,7 +519,7 @@
           }
         },
         {
-          "id": 28,
+          "id": 29,
           "name": "open",
           "kind": 2048,
           "kindString": "Method",
@@ -507,13 +529,13 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 31,
+              "line": 32,
               "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 29,
+              "id": 30,
               "name": "open",
               "kind": 4096,
               "kindString": "Call signature",
@@ -534,7 +556,7 @@
           ]
         },
         {
-          "id": 30,
+          "id": 31,
           "name": "onModuleDestroy",
           "kind": 2048,
           "kindString": "Method",
@@ -544,13 +566,13 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 35,
+              "line": 36,
               "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 31,
+              "id": 32,
               "name": "onModuleDestroy",
               "kind": 4096,
               "kindString": "Call signature",
@@ -582,7 +604,7 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [23, 24, 25]
+          "children": [23, 24, 25, 26]
         },
         {
           "title": "Constructors",
@@ -590,7 +612,7 @@
         },
         {
           "title": "Methods",
-          "children": [26, 28, 30]
+          "children": [27, 29, 31]
         }
       ],
       "sources": [
@@ -616,7 +638,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": 33,
       "name": "InjectRedisStoreService",
       "kind": 64,
       "kindString": "Function",
@@ -630,7 +652,7 @@
       ],
       "signatures": [
         {
-          "id": 33,
+          "id": 34,
           "name": "InjectRedisStoreService",
           "kind": 4096,
           "kindString": "Call signature",
@@ -638,7 +660,7 @@
           "type": {
             "type": "reflection",
             "declaration": {
-              "id": 34,
+              "id": 35,
               "name": "__type",
               "kind": 65536,
               "kindString": "Type literal",
@@ -652,14 +674,14 @@
               ],
               "signatures": [
                 {
-                  "id": 35,
+                  "id": 36,
                   "name": "__type",
                   "kind": 4096,
                   "kindString": "Call signature",
                   "flags": {},
                   "parameters": [
                     {
-                      "id": 36,
+                      "id": 37,
                       "name": "target",
                       "kind": 32768,
                       "kindString": "Parameter",
@@ -682,7 +704,7 @@
                       }
                     },
                     {
-                      "id": 37,
+                      "id": 38,
                       "name": "key",
                       "kind": 32768,
                       "kindString": "Parameter",
@@ -702,7 +724,7 @@
                       }
                     },
                     {
-                      "id": 38,
+                      "id": 39,
                       "name": "index",
                       "kind": 32768,
                       "kindString": "Parameter",
@@ -727,7 +749,7 @@
       ]
     },
     {
-      "id": 39,
+      "id": 40,
       "name": "REDIS_STORE_INSTANCE",
       "kind": 32,
       "kindString": "Variable",
@@ -745,14 +767,14 @@
         "type": "query",
         "queryType": {
           "type": "reference",
-          "id": 39,
+          "id": 40,
           "name": "REDIS_STORE_INSTANCE"
         }
       },
       "defaultValue": "..."
     },
     {
-      "id": 40,
+      "id": 41,
       "name": "REDIS_STORE_DELIMITER",
       "kind": 32,
       "kindString": "Variable",
@@ -773,14 +795,14 @@
       "defaultValue": "':'"
     },
     {
-      "id": 41,
+      "id": 42,
       "name": "RedisStoreModuleOptions",
       "kind": 256,
       "kindString": "Interface",
       "flags": {},
       "children": [
         {
-          "id": 42,
+          "id": 43,
           "name": "global",
           "kind": 1024,
           "kindString": "Property",
@@ -800,7 +822,7 @@
           }
         },
         {
-          "id": 43,
+          "id": 44,
           "name": "options",
           "kind": 1024,
           "kindString": "Property",
@@ -822,7 +844,7 @@
           }
         },
         {
-          "id": 44,
+          "id": 45,
           "name": "delimiter",
           "kind": 1024,
           "kindString": "Property",
@@ -845,7 +867,7 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [42, 43, 44]
+          "children": [43, 44, 45]
         }
       ],
       "sources": [
@@ -857,14 +879,14 @@
       ]
     },
     {
-      "id": 45,
+      "id": 46,
       "name": "RedisStoreModule",
       "kind": 128,
       "kindString": "Class",
       "flags": {},
       "children": [
         {
-          "id": 46,
+          "id": 47,
           "name": "forRoot",
           "kind": 2048,
           "kindString": "Method",
@@ -881,14 +903,14 @@
           ],
           "signatures": [
             {
-              "id": 47,
+              "id": 48,
               "name": "forRoot",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 48,
+                  "id": 49,
                   "name": "options",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -897,7 +919,7 @@
                   },
                   "type": {
                     "type": "reference",
-                    "id": 41,
+                    "id": 42,
                     "name": "RedisStoreModuleOptions"
                   }
                 }
@@ -912,21 +934,21 @@
           ]
         },
         {
-          "id": 49,
+          "id": 50,
           "name": "constructor",
           "kind": 512,
           "kindString": "Constructor",
           "flags": {},
           "signatures": [
             {
-              "id": 50,
+              "id": 51,
               "name": "new RedisStoreModule",
               "kind": 16384,
               "kindString": "Constructor signature",
               "flags": {},
               "type": {
                 "type": "reference",
-                "id": 45,
+                "id": 46,
                 "name": "RedisStoreModule"
               }
             }
@@ -936,11 +958,11 @@
       "groups": [
         {
           "title": "Methods",
-          "children": [46]
+          "children": [47]
         },
         {
           "title": "Constructors",
-          "children": [49]
+          "children": [50]
         }
       ],
       "sources": [
@@ -952,14 +974,14 @@
       ]
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "RedisStoreService",
       "kind": 128,
       "kindString": "Class",
       "flags": {},
       "children": [
         {
-          "id": 55,
+          "id": 56,
           "name": "client",
           "kind": 1024,
           "kindString": "Property",
@@ -981,7 +1003,7 @@
           }
         },
         {
-          "id": 52,
+          "id": 53,
           "name": "constructor",
           "kind": 512,
           "kindString": "Constructor",
@@ -995,35 +1017,35 @@
           ],
           "signatures": [
             {
-              "id": 53,
+              "id": 54,
               "name": "new RedisStoreService",
               "kind": 16384,
               "kindString": "Constructor signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 54,
+                  "id": 55,
                   "name": "options",
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
                   "type": {
                     "type": "reference",
-                    "id": 41,
+                    "id": 42,
                     "name": "RedisStoreModuleOptions"
                   }
                 }
               ],
               "type": {
                 "type": "reference",
-                "id": 51,
+                "id": 52,
                 "name": "RedisStoreService"
               }
             }
           ]
         },
         {
-          "id": 56,
+          "id": 57,
           "name": "options",
           "kind": 1024,
           "kindString": "Property",
@@ -1039,12 +1061,12 @@
           ],
           "type": {
             "type": "reference",
-            "id": 41,
+            "id": 42,
             "name": "RedisStoreModuleOptions"
           }
         },
         {
-          "id": 57,
+          "id": 58,
           "name": "onModuleInit",
           "kind": 2048,
           "kindString": "Method",
@@ -1060,7 +1082,7 @@
           ],
           "signatures": [
             {
-              "id": 58,
+              "id": 59,
               "name": "onModuleInit",
               "kind": 4096,
               "kindString": "Call signature",
@@ -1081,7 +1103,7 @@
           }
         },
         {
-          "id": 59,
+          "id": 60,
           "name": "createChild",
           "kind": 2048,
           "kindString": "Method",
@@ -1097,21 +1119,21 @@
           ],
           "signatures": [
             {
-              "id": 60,
+              "id": 61,
               "name": "createChild",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "type": {
                 "type": "reference",
-                "id": 51,
+                "id": 52,
                 "name": "RedisStoreService"
               }
             }
           ]
         },
         {
-          "id": 61,
+          "id": 62,
           "name": "createTopic",
           "kind": 2048,
           "kindString": "Method",
@@ -1127,14 +1149,14 @@
           ],
           "signatures": [
             {
-              "id": 62,
+              "id": 63,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 63,
+                  "id": 64,
                   "name": "topic",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1145,7 +1167,7 @@
                   }
                 },
                 {
-                  "id": 64,
+                  "id": 65,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1172,15 +1194,15 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [55, 56]
+          "children": [56, 57]
         },
         {
           "title": "Constructors",
-          "children": [52]
+          "children": [53]
         },
         {
           "title": "Methods",
-          "children": [57, 59, 61]
+          "children": [58, 60, 62]
         }
       ],
       "sources": [
@@ -1203,19 +1225,19 @@
   "groups": [
     {
       "title": "Functions",
-      "children": [1, 32]
+      "children": [1, 33]
     },
     {
       "title": "Variables",
-      "children": [8, 39, 40]
+      "children": [8, 40, 41]
     },
     {
       "title": "Interfaces",
-      "children": [9, 41]
+      "children": [9, 42]
     },
     {
       "title": "Classes",
-      "children": [13, 19, 45, 51]
+      "children": [13, 19, 46, 52]
     }
   ],
   "sources": [

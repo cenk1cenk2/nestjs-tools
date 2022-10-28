@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-redis-store [4.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@4.1.0...@cenk1cenk2/nestjs-redis-store@4.1.1) (2022-10-28)
+
+### Bug Fixes
+
+- clear interval while application is dismantling ([3adacf5](https://github.com/cenk1cenk2/nestjs-tools/commit/3adacf5b4925de1c0f0214899ed513dea64b8275))
+
 # @cenk1cenk2/nestjs-redis-store [4.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@4.0.1...@cenk1cenk2/nestjs-redis-store@4.1.0) (2022-10-28)
 
 ### Features
