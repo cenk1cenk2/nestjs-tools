@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nestjs/common": "^9.1.6",
     "@webundsoehne/nestjs-util": "^6.0.2",
-    "aws-sdk": "^2.1244.0"
+    "aws-sdk": "^2.1245.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
