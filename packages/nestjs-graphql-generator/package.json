@@ -30,9 +30,9 @@
     "graphql": ">= 15.4.0"
   },
   "dependencies": {
-    "@graphql-codegen/cli": "^2.13.8",
-    "@graphql-codegen/plugin-helpers": "^2.7.1",
-    "@graphql-codegen/typescript": "^2.8.0",
+    "@graphql-codegen/cli": "^2.13.10",
+    "@graphql-codegen/plugin-helpers": "^2.7.2",
+    "@graphql-codegen/typescript": "^2.8.1",
     "delay": "^5.0.0"
   },
   "devDependencies": {
