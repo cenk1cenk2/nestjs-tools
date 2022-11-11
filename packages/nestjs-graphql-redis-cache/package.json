@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "tsup-node",
-    "dev:start": "tsup-node --watch --silent",
+    "dev:start": "tsup-node --watch",
     "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
     "docs:toc": "markdown-toc README.md --bullets='-' -i",
