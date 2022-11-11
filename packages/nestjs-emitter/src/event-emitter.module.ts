@@ -4,6 +4,7 @@ import { DiscoveryModule } from '@nestjs/core'
 import type { EventEmitterModuleOptions } from '@nestjs/event-emitter/dist/interfaces/event-emitter-options.interface'
 import { EventEmitter2 } from 'eventemitter2'
 
+import { EventManager } from './event-manager.service'
 import { EventMetadataAccessor } from './event-metadata.accessor'
 import { EventSubscribersLoader } from './event-subscribers.loader'
 
@@ -15,6 +16,7 @@ export class EventEmitterModule {
       module: EventEmitterModule,
       imports: [ DiscoveryModule ],
       providers: [
+        EventManager,
         EventSubscribersLoader,
         EventMetadataAccessor,
         {
