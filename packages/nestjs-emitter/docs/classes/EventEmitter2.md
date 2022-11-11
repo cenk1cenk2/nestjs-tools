@@ -8,13 +8,13 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                 |
+| :--------- | :------------------- |
 | `options?` | `ConstructorOptions` |
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:118
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:118
 
 ## Methods
 
@@ -24,10 +24,10 @@ node_modules/eventemitter2/eventemitter2.d.ts:118
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `...values` | `any`[] |
+| Name        | Type                              |
+| :---------- | :-------------------------------- |
+| `event`     | `string` \| `symbol` \| `event`[] |
+| `...values` | `any`[]                           |
 
 #### Returns
 
@@ -35,9 +35,9 @@ node_modules/eventemitter2/eventemitter2.d.ts:118
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:119
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:119
 
-___
+---
 
 ### emitAsync
 
@@ -45,10 +45,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `...values` | `any`[] |
+| Name        | Type                              |
+| :---------- | :-------------------------------- |
+| `event`     | `string` \| `symbol` \| `event`[] |
+| `...values` | `any`[]                           |
 
 #### Returns
 
@@ -56,9 +56,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:120
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:120
 
-___
+---
 
 ### addListener
 
@@ -66,10 +66,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
 
 #### Returns
 
@@ -77,9 +77,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:121
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:121
 
-___
+---
 
 ### on
 
@@ -87,11 +87,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
-| `options?` | `boolean` \| `OnOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
+| `options?` | `boolean` \| `OnOptions`          |
 
 #### Returns
 
@@ -99,9 +99,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:122
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:122
 
-___
+---
 
 ### prependListener
 
@@ -109,11 +109,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
-| `options?` | `boolean` \| `OnOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
+| `options?` | `boolean` \| `OnOptions`          |
 
 #### Returns
 
@@ -121,9 +121,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:123
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:123
 
-___
+---
 
 ### once
 
@@ -131,11 +131,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
-| `options?` | ``true`` \| `OnOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
+| `options?` | `true` \| `OnOptions`             |
 
 #### Returns
 
@@ -143,9 +143,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:124
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:124
 
-___
+---
 
 ### prependOnceListener
 
@@ -153,11 +153,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
-| `options?` | `boolean` \| `OnOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
+| `options?` | `boolean` \| `OnOptions`          |
 
 #### Returns
 
@@ -165,9 +165,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:125
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:125
 
-___
+---
 
 ### many
 
@@ -175,12 +175,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `timesToListen` | `number` |
-| `listener` | `ListenerFn` |
-| `options?` | `boolean` \| `OnOptions` |
+| Name            | Type                              |
+| :-------------- | :-------------------------------- |
+| `event`         | `string` \| `symbol` \| `event`[] |
+| `timesToListen` | `number`                          |
+| `listener`      | `ListenerFn`                      |
+| `options?`      | `boolean` \| `OnOptions`          |
 
 #### Returns
 
@@ -188,9 +188,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:126
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:126
 
-___
+---
 
 ### prependMany
 
@@ -198,12 +198,12 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `timesToListen` | `number` |
-| `listener` | `ListenerFn` |
-| `options?` | `boolean` \| `OnOptions` |
+| Name            | Type                              |
+| :-------------- | :-------------------------------- |
+| `event`         | `string` \| `symbol` \| `event`[] |
+| `timesToListen` | `number`                          |
+| `listener`      | `ListenerFn`                      |
+| `options?`      | `boolean` \| `OnOptions`          |
 
 #### Returns
 
@@ -211,9 +211,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:127
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:127
 
-___
+---
 
 ### onAny
 
@@ -221,8 +221,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type               |
+| :--------- | :----------------- |
 | `listener` | `EventAndListener` |
 
 #### Returns
@@ -231,9 +231,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:128
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:128
 
-___
+---
 
 ### prependAny
 
@@ -241,8 +241,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type               |
+| :--------- | :----------------- |
 | `listener` | `EventAndListener` |
 
 #### Returns
@@ -251,9 +251,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:129
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:129
 
-___
+---
 
 ### offAny
 
@@ -261,8 +261,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type         |
+| :--------- | :----------- |
 | `listener` | `ListenerFn` |
 
 #### Returns
@@ -271,9 +271,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:130
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:130
 
-___
+---
 
 ### removeListener
 
@@ -281,10 +281,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
 
 #### Returns
 
@@ -292,9 +292,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:131
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:131
 
-___
+---
 
 ### off
 
@@ -302,10 +302,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `listener` | `ListenerFn` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `listener` | `ListenerFn`                      |
 
 #### Returns
 
@@ -313,9 +313,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:132
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:132
 
-___
+---
 
 ### removeAllListeners
 
@@ -323,8 +323,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                              |
+| :------- | :-------------------------------- |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -333,9 +333,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:133
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:133
 
-___
+---
 
 ### setMaxListeners
 
@@ -343,9 +343,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `n` | `number` |
+| Name | Type     |
+| :--- | :------- |
+| `n`  | `number` |
 
 #### Returns
 
@@ -353,9 +353,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:134
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:134
 
-___
+---
 
 ### getMaxListeners
 
@@ -367,9 +367,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:135
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:135
 
-___
+---
 
 ### eventNames
 
@@ -377,8 +377,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type      |
+| :----------- | :-------- |
 | `nsAsArray?` | `boolean` |
 
 #### Returns
@@ -387,9 +387,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:136
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:136
 
-___
+---
 
 ### listenerCount
 
@@ -397,8 +397,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                              |
+| :------- | :-------------------------------- |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -407,9 +407,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:137
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:137
 
-___
+---
 
 ### listeners
 
@@ -417,8 +417,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                              |
+| :------- | :-------------------------------- |
 | `event?` | `string` \| `symbol` \| `event`[] |
 
 #### Returns
@@ -427,9 +427,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:138
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:138
 
-___
+---
 
 ### listenersAny
 
@@ -441,9 +441,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:139
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:139
 
-___
+---
 
 ### waitFor
 
@@ -451,10 +451,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `timeout?` | `number` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `timeout?` | `number`                          |
 
 #### Returns
 
@@ -462,16 +462,16 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:140
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:140
 
 ▸ **waitFor**(`event`, `filter?`): `CancelablePromise`<`any`[]\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `filter?` | `WaitForFilter` |
+| Name      | Type                              |
+| :-------- | :-------------------------------- |
+| `event`   | `string` \| `symbol` \| `event`[] |
+| `filter?` | `WaitForFilter`                   |
 
 #### Returns
 
@@ -479,16 +479,16 @@ node_modules/eventemitter2/eventemitter2.d.ts:140
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:141
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:141
 
 ▸ **waitFor**(`event`, `options?`): `CancelablePromise`<`any`[]\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `options?` | `WaitForOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `event`    | `string` \| `symbol` \| `event`[] |
+| `options?` | `WaitForOptions`                  |
 
 #### Returns
 
@@ -496,9 +496,9 @@ node_modules/eventemitter2/eventemitter2.d.ts:141
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:142
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:142
 
-___
+---
 
 ### listenTo
 
@@ -506,11 +506,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `target` | `GeneralEventEmitter` |
-| `events` | `string` \| `symbol` \| `event`[] |
-| `options?` | `ListenToOptions` |
+| Name       | Type                              |
+| :--------- | :-------------------------------- |
+| `target`   | `GeneralEventEmitter`             |
+| `events`   | `string` \| `symbol` \| `event`[] |
+| `options?` | `ListenToOptions`                 |
 
 #### Returns
 
@@ -518,17 +518,17 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:143
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:143
 
 ▸ **listenTo**(`target`, `events`, `options?`): [`EventEmitter2`](EventEmitter2.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `target` | `GeneralEventEmitter` |
-| `events` | `event`[] |
-| `options?` | `ListenToOptions` |
+| Name       | Type                  |
+| :--------- | :-------------------- |
+| `target`   | `GeneralEventEmitter` |
+| `events`   | `event`[]             |
+| `options?` | `ListenToOptions`     |
 
 #### Returns
 
@@ -536,17 +536,17 @@ node_modules/eventemitter2/eventemitter2.d.ts:143
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:144
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:144
 
 ▸ **listenTo**(`target`, `events`, `options?`): [`EventEmitter2`](EventEmitter2.md)
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `target` | `GeneralEventEmitter` |
-| `events` | `Object` |
-| `options?` | `ListenToOptions` |
+| Name       | Type                  |
+| :--------- | :-------------------- |
+| `target`   | `GeneralEventEmitter` |
+| `events`   | `Object`              |
+| `options?` | `ListenToOptions`     |
 
 #### Returns
 
@@ -554,9 +554,9 @@ node_modules/eventemitter2/eventemitter2.d.ts:144
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:145
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:145
 
-___
+---
 
 ### stopListeningTo
 
@@ -564,10 +564,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `target?` | `GeneralEventEmitter` |
-| `event?` | `string` \| `symbol` \| `event`[] |
+| Name      | Type                              |
+| :-------- | :-------------------------------- |
+| `target?` | `GeneralEventEmitter`             |
+| `event?`  | `string` \| `symbol` \| `event`[] |
 
 #### Returns
 
@@ -575,9 +575,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:146
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:146
 
-___
+---
 
 ### hasListeners
 
@@ -585,8 +585,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type     |
+| :------- | :------- |
 | `event?` | `String` |
 
 #### Returns
@@ -595,9 +595,9 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:147
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:147
 
-___
+---
 
 ### once
 
@@ -605,11 +605,11 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `emitter` | [`EventEmitter2`](EventEmitter2.md) |
-| `event` | `string` \| `symbol` \| `event`[] |
-| `options?` | `OnceOptions` |
+| Name       | Type                                |
+| :--------- | :---------------------------------- |
+| `emitter`  | [`EventEmitter2`](EventEmitter2.md) |
+| `event`    | `string` \| `symbol` \| `event`[]   |
+| `options?` | `OnceOptions`                       |
 
 #### Returns
 
@@ -617,7 +617,7 @@ ___
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:148
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:148
 
 ## Properties
 
@@ -627,4 +627,4 @@ node_modules/eventemitter2/eventemitter2.d.ts:148
 
 #### Defined in
 
-node_modules/eventemitter2/eventemitter2.d.ts:149
+node_modules/@nestjs/event-emitter/node_modules/eventemitter2/eventemitter2.d.ts:149

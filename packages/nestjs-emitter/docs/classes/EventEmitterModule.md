@@ -8,8 +8,8 @@
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name       | Type                        |
+| :--------- | :-------------------------- |
 | `options?` | `EventEmitterModuleOptions` |
 
 #### Returns
@@ -18,7 +18,7 @@
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-emitter.module.ts:13
+packages/nestjs-emitter/src/event-emitter.module.ts:14
 
 ## Constructors
 

@@ -15,12 +15,3 @@
 
 - [EventEmitter2](classes/EventEmitter2.md)
 - [EventEmitterModule](classes/EventEmitterModule.md)
-- [BaseEventMap](classes/BaseEventMap.md)
-- [EventManager](classes/EventManager.md)
-
-## Type Aliases
-
-- [EventDefinition](types/EventDefinition.md)
-- [EventRequest](types/EventRequest.md)
-- [EventResponse](types/EventResponse.md)
-- [EventMap](types/EventMap.md)
