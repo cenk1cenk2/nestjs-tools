@@ -1,3 +1,15 @@
+# @cenk1cenk2/nestjs-emitter [5.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.1.0...@cenk1cenk2/nestjs-emitter@5.0.0) (2022-11-11)
+
+
+### Performance Improvements
+
+* **event-emitter:** combine event manager and event emitter modules because of singleton issues ([be97e24](https://github.com/cenk1cenk2/nestjs-tools/commit/be97e24156801aae448166730c07b939bca6557d))
+
+
+### BREAKING CHANGES
+
+* **event-emitter:** - event-manager module does not exists anymore.
+
 # @cenk1cenk2/nestjs-emitter [4.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.5...@cenk1cenk2/nestjs-emitter@4.1.0) (2022-11-11)
 
 ### Bug Fixes

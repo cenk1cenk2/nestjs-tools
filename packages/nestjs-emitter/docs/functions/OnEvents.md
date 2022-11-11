@@ -18,4 +18,4 @@ Subscribes to events based on the specified name(s).
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts:26
+packages/nestjs-emitter/src/decorators/on-events.decorator.ts:26

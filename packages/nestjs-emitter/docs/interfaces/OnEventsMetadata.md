@@ -12,7 +12,7 @@ Event (name or pattern) to subscribe to.
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts:13
+packages/nestjs-emitter/src/decorators/on-events.decorator.ts:13
 
 ___
 
@@ -24,4 +24,4 @@ Subscription options.
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-emitter/decorators/on-events.decorator.ts:17
+packages/nestjs-emitter/src/decorators/on-events.decorator.ts:17

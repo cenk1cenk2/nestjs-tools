@@ -8,6 +8,7 @@
 ## Functions
 
 - [OnEvent](functions/OnEvent.md)
+- [InjectEventManagerService](functions/InjectEventManagerService.md)
 - [OnEvents](functions/OnEvents.md)
 
 ## Classes
@@ -15,7 +16,6 @@
 - [EventEmitter2](classes/EventEmitter2.md)
 - [EventEmitterModule](classes/EventEmitterModule.md)
 - [BaseEventMap](classes/BaseEventMap.md)
-- [EventManagerModule](classes/EventManagerModule.md)
 - [EventManager](classes/EventManager.md)
 
 ## Type Aliases

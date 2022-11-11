@@ -6,10 +6,10 @@ For fast typing the event map.
 
 #### Type parameters
 
-| Name     | Type             |
-| :------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Events` | extends `string` |
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-manager/event-manager.interface.ts:41
+packages/nestjs-emitter/src/event-manager.interface.ts:41
