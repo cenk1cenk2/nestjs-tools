@@ -1,9 +1,18 @@
-## @cenk1cenk2/nestjs-emitter [4.0.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.4...@cenk1cenk2/nestjs-emitter@4.0.5) (2022-10-24)
-
+# @cenk1cenk2/nestjs-emitter [4.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.5...@cenk1cenk2/nestjs-emitter@4.1.0) (2022-11-11)
 
 ### Bug Fixes
 
-* update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
+- update event emitter injection ([beaa6a9](https://github.com/cenk1cenk2/nestjs-tools/commit/beaa6a9f952b72a946fe919039625c07950aeb7a))
+
+### Features
+
+- **emitter:** add function input for request-response types ([310d8e1](https://github.com/cenk1cenk2/nestjs-tools/commit/310d8e1b961756db92864ab4f6dc84d96a860601))
+
+## @cenk1cenk2/nestjs-emitter [4.0.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.4...@cenk1cenk2/nestjs-emitter@4.0.5) (2022-10-24)
+
+### Bug Fixes
+
+- update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
 
 ## @cenk1cenk2/nestjs-emitter [4.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@4.0.3...@cenk1cenk2/nestjs-emitter@4.0.4) (2022-08-12)
 

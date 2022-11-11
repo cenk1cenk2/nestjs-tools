@@ -4,7 +4,6 @@
 
 - [OnEventMetadata](interfaces/OnEventMetadata.md)
 - [OnEventsMetadata](interfaces/OnEventsMetadata.md)
-- [EventDefinition](interfaces/EventDefinition.md)
 
 ## Functions
 
@@ -21,6 +20,7 @@
 
 ## Type Aliases
 
+- [EventDefinition](types/EventDefinition.md)
 - [EventRequest](types/EventRequest.md)
 - [EventResponse](types/EventResponse.md)
 - [EventMap](types/EventMap.md)
