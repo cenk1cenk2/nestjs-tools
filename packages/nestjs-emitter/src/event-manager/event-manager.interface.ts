@@ -1,19 +1,25 @@
 /**
  * A definition of a event with response-request map.
  */
-export interface EventDefinition {
-  response?: any
-  request?: any
-}
+export type EventDefinition =
+  | {
+    request?: any
+    response?: any
+  }
+  | ((request?: any) => any)
 
 /**
  * Request type of an event.
  */
 // this is a partial of any object since we want to make properties optional if we dont do this it will go mad
 export type EventRequest<Event extends string, Map extends Record<string, EventDefinition>> = Event extends keyof Map
-  ? 'request' extends keyof Map[Event]
-    ? Map[Event]['request']
-    : never
+  ? Map[Event] extends (request?: any) => any
+    ? Map[Event] extends (request?: infer P) => any
+      ? P
+      : never
+    : 'request' extends keyof Map[Event]
+      ? Map[Event]['request']
+      : never
   : never
 
 /**
@@ -21,11 +27,14 @@ export type EventRequest<Event extends string, Map extends Record<string, EventD
  */
 // this is a partial of any object since we want to make properties optional if we dont do this it will go mad
 export type EventResponse<Event extends string, Map extends Record<string, EventDefinition>> = Event extends keyof Map
-  ? 'response' extends keyof Map[Event]
-    ? Map[Event]['response']
-    : void
+  ? Map[Event] extends (request?: any) => any
+    ? Map[Event] extends (request?: any) => infer P
+      ? P
+      : never
+    : 'response' extends keyof Map[Event]
+      ? Map[Event]['response']
+      : never
   : never
-
 /**
  * For fast typing the event map.
  */

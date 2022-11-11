@@ -12,7 +12,7 @@
     "scripts:unlink": "./scripts/link-packages.sh unlink",
     "scripts:workspace:link": "./scripts/link-packages-to-workspace.sh link",
     "scripts:workspace:unlink": "./scripts/link-packages-to-workspace.sh unlink",
-    "lint": "yarn exec lint-staged",
+    "lint": "yarn command lint --concurrency 1",
     "lint:check": "yarn command lint:check",
     "build": "yarn command build --include-dependencies",
     "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc",
@@ -22,7 +22,7 @@
     "packages/*"
   ],
   "simple-git-hooks": {
-    "pre-commit": "yarn run lint",
+    "pre-commit": "yarn exec lint-staged",
     "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   },
   "devDependencies": {
