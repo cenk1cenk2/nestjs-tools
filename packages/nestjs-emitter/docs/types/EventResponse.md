@@ -1,6 +1,6 @@
 # Type alias: EventResponse<Event, Map\>
 
-Ƭ **EventResponse**<`Event`, `Map`\>: `Event` extends keyof `Map` ? `Map`[`Event`] extends (`request?`: `any`) => `any` ? `Map`[`Event`] extends (`request?`: `any`) => infer P ? `P` : `undefined` : `"response"` extends keyof `Map`[`Event`] ? `Map`[`Event`][``"response"``] : `undefined` : `never`
+Ƭ **EventResponse**<`Event`, `Map`\>: `Event` extends keyof `Map` ? `Map`[`Event`] extends (`request?`: `any`) => `any` ? `Map`[`Event`] extends (`request?`: `any`) => infer P ? `P` : `any` : `"response"` extends keyof `Map`[`Event`] ? `Map`[`Event`][``"response"``] : `any` : `never`
 
 Response type of an event.
 

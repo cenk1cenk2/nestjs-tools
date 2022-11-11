@@ -1,6 +1,6 @@
 # Type alias: EventRequest<Event, Map\>
 
-Ƭ **EventRequest**<`Event`, `Map`\>: `Event` extends keyof `Map` ? `Map`[`Event`] extends (`request?`: `any`) => `any` ? `Map`[`Event`] extends (`request?`: infer P) => `any` ? `P` : `undefined` : `"request"` extends keyof `Map`[`Event`] ? `Map`[`Event`][``"request"``] : `undefined` : `never`
+Ƭ **EventRequest**<`Event`, `Map`\>: `Event` extends keyof `Map` ? `Map`[`Event`] extends (`request?`: `any`) => `any` ? `Map`[`Event`] extends (`request?`: infer P) => `any` ? `P` : `any` : `"request"` extends keyof `Map`[`Event`] ? `Map`[`Event`][``"request"``] : `any` : `never`
 
 Request type of an event.
 

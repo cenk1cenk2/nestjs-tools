@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-emitter [5.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.2...@cenk1cenk2/nestjs-emitter@5.0.3) (2022-11-11)
+
+### Bug Fixes
+
+- **event-emitter:** import error ([6756512](https://github.com/cenk1cenk2/nestjs-tools/commit/6756512599bb3547dd7d3fac36cbd26f39eecdd4))
+- **event-emitter:** let manager export itself ([927d924](https://github.com/cenk1cenk2/nestjs-tools/commit/927d9241b872caf43ff99609ff41b9c4bb42de06))
+
 ## @cenk1cenk2/nestjs-emitter [5.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.1...@cenk1cenk2/nestjs-emitter@5.0.2) (2022-11-11)
 
 ### Bug Fixes

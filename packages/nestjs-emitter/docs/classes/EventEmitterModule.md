@@ -18,7 +18,7 @@
 
 #### Defined in
 
-packages/nestjs-emitter/src/event-emitter.module.ts:14
+packages/nestjs-emitter/src/event-emitter.module.ts:13
 
 ## Constructors
 

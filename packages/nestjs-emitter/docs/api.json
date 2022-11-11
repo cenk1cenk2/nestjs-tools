@@ -2720,117 +2720,6 @@
       ]
     },
     {
-      "id": 135,
-      "name": "InjectEventManagerService",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "packages/nestjs-emitter/src/decorators/inject.decorator.ts",
-          "line": 5,
-          "character": 16
-        }
-      ],
-      "signatures": [
-        {
-          "id": 136,
-          "name": "InjectEventManagerService",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "type": {
-            "type": "reflection",
-            "declaration": {
-              "id": 137,
-              "name": "__type",
-              "kind": 65536,
-              "kindString": "Type literal",
-              "flags": {},
-              "sources": [
-                {
-                  "fileName": "packages/nestjs-emitter/src/decorators/inject.decorator.ts",
-                  "line": 5,
-                  "character": 46
-                }
-              ],
-              "signatures": [
-                {
-                  "id": 138,
-                  "name": "__type",
-                  "kind": 4096,
-                  "kindString": "Call signature",
-                  "flags": {},
-                  "parameters": [
-                    {
-                      "id": 139,
-                      "name": "target",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "reference",
-                        "typeArguments": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "unknown"
-                          }
-                        ],
-                        "name": "Record",
-                        "qualifiedName": "Record",
-                        "package": "typescript"
-                      }
-                    },
-                    {
-                      "id": 140,
-                      "name": "key",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "union",
-                        "types": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "symbol"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": 141,
-                      "name": "index",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {
-                        "isOptional": true
-                      },
-                      "type": {
-                        "type": "intrinsic",
-                        "name": "number"
-                      }
-                    }
-                  ],
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": 128,
       "name": "OnEventsMetadata",
       "kind": 256,
@@ -3026,14 +2915,14 @@
       ]
     },
     {
-      "id": 142,
+      "id": 135,
       "name": "EventEmitterModule",
       "kind": 128,
       "kindString": "Class",
       "flags": {},
       "children": [
         {
-          "id": 143,
+          "id": 136,
           "name": "forRoot",
           "kind": 2048,
           "kindString": "Method",
@@ -3044,20 +2933,20 @@
           "sources": [
             {
               "fileName": "packages/nestjs-emitter/src/event-emitter.module.ts",
-              "line": 14,
+              "line": 13,
               "character": 16
             }
           ],
           "signatures": [
             {
-              "id": 144,
+              "id": 137,
               "name": "forRoot",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 145,
+                  "id": 138,
                   "name": "options",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -3082,21 +2971,21 @@
           ]
         },
         {
-          "id": 146,
+          "id": 139,
           "name": "constructor",
           "kind": 512,
           "kindString": "Constructor",
           "flags": {},
           "signatures": [
             {
-              "id": 147,
+              "id": 140,
               "name": "new EventEmitterModule",
               "kind": 16384,
               "kindString": "Constructor signature",
               "flags": {},
               "type": {
                 "type": "reference",
-                "id": 142,
+                "id": 135,
                 "name": "EventEmitterModule"
               }
             }
@@ -3106,18 +2995,129 @@
       "groups": [
         {
           "title": "Methods",
-          "children": [143]
+          "children": [136]
         },
         {
           "title": "Constructors",
-          "children": [146]
+          "children": [139]
         }
       ],
       "sources": [
         {
           "fileName": "packages/nestjs-emitter/src/event-emitter.module.ts",
-          "line": 13,
+          "line": 12,
           "character": 13
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "name": "InjectEventManagerService",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {},
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/decorators/inject.decorator.ts",
+          "line": 5,
+          "character": 16
+        }
+      ],
+      "signatures": [
+        {
+          "id": 142,
+          "name": "InjectEventManagerService",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "type": {
+            "type": "reflection",
+            "declaration": {
+              "id": 143,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "packages/nestjs-emitter/src/event-manager/decorators/inject.decorator.ts",
+                  "line": 5,
+                  "character": 46
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 144,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 145,
+                      "name": "target",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "unknown"
+                          }
+                        ],
+                        "name": "Record",
+                        "qualifiedName": "Record",
+                        "package": "typescript"
+                      }
+                    },
+                    {
+                      "id": 146,
+                      "name": "key",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "union",
+                        "types": [
+                          {
+                            "type": "intrinsic",
+                            "name": "string"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "symbol"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": 147,
+                      "name": "index",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "number"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     },
@@ -3458,7 +3458,7 @@
             },
             "falseType": {
               "type": "intrinsic",
-              "name": "undefined"
+              "name": "any"
             }
           },
           "falseType": {
@@ -3506,7 +3506,7 @@
             },
             "falseType": {
               "type": "intrinsic",
-              "name": "undefined"
+              "name": "any"
             }
           }
         },
@@ -3716,7 +3716,7 @@
             },
             "falseType": {
               "type": "intrinsic",
-              "name": "undefined"
+              "name": "any"
             }
           },
           "falseType": {
@@ -3764,7 +3764,7 @@
             },
             "falseType": {
               "type": "intrinsic",
-              "name": "undefined"
+              "name": "any"
             }
           }
         },
@@ -4386,11 +4386,11 @@
     },
     {
       "title": "Functions",
-      "children": [124, 135, 131]
+      "children": [124, 131, 141]
     },
     {
       "title": "Classes",
-      "children": [1, 142, 175, 180]
+      "children": [1, 135, 175, 180]
     },
     {
       "title": "Type Aliases",

@@ -8,8 +8,8 @@
 ## Functions
 
 - [OnEvent](functions/OnEvent.md)
-- [InjectEventManagerService](functions/InjectEventManagerService.md)
 - [OnEvents](functions/OnEvents.md)
+- [InjectEventManagerService](functions/InjectEventManagerService.md)
 
 ## Classes
 
