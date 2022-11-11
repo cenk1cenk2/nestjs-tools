@@ -16,10 +16,10 @@ export type EventRequest<Event extends string, Map extends Record<string, EventD
   ? Map[Event] extends (request?: any) => any
     ? Map[Event] extends (request?: infer P) => any
       ? P
-      : undefined
+      : any
     : 'request' extends keyof Map[Event]
       ? Map[Event]['request']
-      : undefined
+      : any
   : never
 
 /**
@@ -30,10 +30,10 @@ export type EventResponse<Event extends string, Map extends Record<string, Event
   ? Map[Event] extends (request?: any) => any
     ? Map[Event] extends (request?: any) => infer P
       ? P
-      : undefined
+      : any
     : 'response' extends keyof Map[Event]
       ? Map[Event]['response']
-      : undefined
+      : any
   : never
 /**
  * For fast typing the event map.

@@ -5,7 +5,6 @@ import { EventEmitter2 } from '@nestjs/event-emitter'
 import type { EventEmitterModuleOptions } from '@nestjs/event-emitter/dist/interfaces/event-emitter-options.interface'
 
 import { EventManagerModule } from './event-manager/event-manager.module'
-import { EventManager } from './event-manager/event-manager.service'
 import { EventMetadataAccessor } from './event-metadata.accessor'
 import { EventSubscribersLoader } from './event-subscribers.loader'
 
@@ -24,7 +23,7 @@ export class EventEmitterModule {
           useValue: new EventEmitter2(options)
         }
       ],
-      exports: [ EventEmitter2, EventManager ]
+      exports: [ EventEmitter2 ]
     }
   }
 }

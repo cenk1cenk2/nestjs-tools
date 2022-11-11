@@ -2,4 +2,3 @@ export type { OnEventMetadata } from '@nestjs/event-emitter/dist/decorators/on-e
 export { OnEvent } from '@nestjs/event-emitter/dist/decorators/on-event.decorator'
 
 export * from './on-events.decorator'
-export * from './inject.decorator'
