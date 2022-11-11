@@ -2,7 +2,7 @@ import type { OnApplicationBootstrap, OnApplicationShutdown } from '@nestjs/comm
 import { Injectable } from '@nestjs/common'
 import { DiscoveryService, MetadataScanner } from '@nestjs/core'
 import type { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper'
-import { EventEmitter2 } from 'eventemitter2'
+import { EventEmitter2 } from '@nestjs/event-emitter'
 
 import { EventMetadataAccessor } from './event-metadata.accessor'
 

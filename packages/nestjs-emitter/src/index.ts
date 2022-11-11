@@ -1,4 +1,4 @@
-export { EventEmitter2 } from 'eventemitter2'
+export { EventEmitter2 } from '@nestjs/event-emitter'
 
 export * from './decorators'
 export * from './event-emitter.module'
