@@ -22,7 +22,7 @@ include:
 
 typedoc:
   stage: docs
-  image: $CI_REGISTRY/devops/pipes/gitlab-pipes-node:${NODE_VERSION}
+  image: cenk1cenk2/pipe-node:${NODE_VERSION}
   script:
     - pipe run docs:api
   artifacts:
