@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-emitter [5.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.1...@cenk1cenk2/nestjs-emitter@5.0.2) (2022-11-11)
+
+### Bug Fixes
+
+- **event-emitter:** issues with exports matching the old api ([ea8d0be](https://github.com/cenk1cenk2/nestjs-tools/commit/ea8d0becf54b7845657401f2de4d54bd4dc6bceb))
+
 ## @cenk1cenk2/nestjs-emitter [5.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.0...@cenk1cenk2/nestjs-emitter@5.0.1) (2022-11-11)
 
 ### Bug Fixes

@@ -3120,6 +3120,1263 @@
           "character": 13
         }
       ]
+    },
+    {
+      "id": 148,
+      "name": "EventDefinition",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "summary": [
+          {
+            "kind": "text",
+            "text": "A definition of a event with response-request map."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 4,
+          "character": 12
+        }
+      ],
+      "type": {
+        "type": "union",
+        "types": [
+          {
+            "type": "reflection",
+            "declaration": {
+              "id": 149,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "children": [
+                {
+                  "id": 150,
+                  "name": "request",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                      "line": 6,
+                      "character": 4
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                },
+                {
+                  "id": 151,
+                  "name": "response",
+                  "kind": 1024,
+                  "kindString": "Property",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "sources": [
+                    {
+                      "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                      "line": 7,
+                      "character": 4
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ],
+              "groups": [
+                {
+                  "title": "Properties",
+                  "children": [150, 151]
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                  "line": 5,
+                  "character": 4
+                }
+              ]
+            }
+          },
+          {
+            "type": "reflection",
+            "declaration": {
+              "id": 152,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                  "line": 9,
+                  "character": 5
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 153,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 154,
+                      "name": "request",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 155,
+      "name": "EventRequest",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Request type of an event."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 15,
+          "character": 12
+        }
+      ],
+      "typeParameters": [
+        {
+          "id": 162,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 163,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "reference",
+                "id": 148,
+                "name": "EventDefinition"
+              }
+            ],
+            "name": "Record",
+            "qualifiedName": "Record",
+            "package": "typescript"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 162,
+          "name": "Event"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 163,
+            "name": "Map"
+          }
+        },
+        "trueType": {
+          "type": "conditional",
+          "checkType": {
+            "type": "indexedAccess",
+            "indexType": {
+              "type": "reference",
+              "id": 162,
+              "name": "Event"
+            },
+            "objectType": {
+              "type": "reference",
+              "id": 163,
+              "name": "Map"
+            }
+          },
+          "extendsType": {
+            "type": "reflection",
+            "declaration": {
+              "id": 156,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                  "line": 16,
+                  "character": 23
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 157,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 158,
+                      "name": "request",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ]
+            }
+          },
+          "trueType": {
+            "type": "conditional",
+            "checkType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 162,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 163,
+                "name": "Map"
+              }
+            },
+            "extendsType": {
+              "type": "reflection",
+              "declaration": {
+                "id": 159,
+                "name": "__type",
+                "kind": 65536,
+                "kindString": "Type literal",
+                "flags": {},
+                "sources": [
+                  {
+                    "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                    "line": 17,
+                    "character": 25
+                  }
+                ],
+                "signatures": [
+                  {
+                    "id": 160,
+                    "name": "__type",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "parameters": [
+                      {
+                        "id": 161,
+                        "name": "request",
+                        "kind": 32768,
+                        "kindString": "Parameter",
+                        "flags": {
+                          "isOptional": true
+                        },
+                        "type": {
+                          "type": "inferred",
+                          "name": "P"
+                        }
+                      }
+                    ],
+                    "type": {
+                      "type": "intrinsic",
+                      "name": "any"
+                    }
+                  }
+                ]
+              }
+            },
+            "trueType": {
+              "type": "reference",
+              "name": "P"
+            },
+            "falseType": {
+              "type": "intrinsic",
+              "name": "undefined"
+            }
+          },
+          "falseType": {
+            "type": "conditional",
+            "checkType": {
+              "type": "literal",
+              "value": "request"
+            },
+            "extendsType": {
+              "type": "typeOperator",
+              "operator": "keyof",
+              "target": {
+                "type": "indexedAccess",
+                "indexType": {
+                  "type": "reference",
+                  "id": 162,
+                  "name": "Event"
+                },
+                "objectType": {
+                  "type": "reference",
+                  "id": 163,
+                  "name": "Map"
+                }
+              }
+            },
+            "trueType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "literal",
+                "value": "request"
+              },
+              "objectType": {
+                "type": "indexedAccess",
+                "indexType": {
+                  "type": "reference",
+                  "id": 162,
+                  "name": "Event"
+                },
+                "objectType": {
+                  "type": "reference",
+                  "id": 163,
+                  "name": "Map"
+                }
+              }
+            },
+            "falseType": {
+              "type": "intrinsic",
+              "name": "undefined"
+            }
+          }
+        },
+        "falseType": {
+          "type": "intrinsic",
+          "name": "never"
+        }
+      }
+    },
+    {
+      "id": 164,
+      "name": "EventResponse",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Response type of an event."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 29,
+          "character": 12
+        }
+      ],
+      "typeParameters": [
+        {
+          "id": 171,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 172,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "intrinsic",
+                "name": "string"
+              },
+              {
+                "type": "reference",
+                "id": 148,
+                "name": "EventDefinition"
+              }
+            ],
+            "name": "Record",
+            "qualifiedName": "Record",
+            "package": "typescript"
+          }
+        }
+      ],
+      "type": {
+        "type": "conditional",
+        "checkType": {
+          "type": "reference",
+          "id": 171,
+          "name": "Event"
+        },
+        "extendsType": {
+          "type": "typeOperator",
+          "operator": "keyof",
+          "target": {
+            "type": "reference",
+            "id": 172,
+            "name": "Map"
+          }
+        },
+        "trueType": {
+          "type": "conditional",
+          "checkType": {
+            "type": "indexedAccess",
+            "indexType": {
+              "type": "reference",
+              "id": 171,
+              "name": "Event"
+            },
+            "objectType": {
+              "type": "reference",
+              "id": 172,
+              "name": "Map"
+            }
+          },
+          "extendsType": {
+            "type": "reflection",
+            "declaration": {
+              "id": 165,
+              "name": "__type",
+              "kind": 65536,
+              "kindString": "Type literal",
+              "flags": {},
+              "sources": [
+                {
+                  "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                  "line": 30,
+                  "character": 23
+                }
+              ],
+              "signatures": [
+                {
+                  "id": 166,
+                  "name": "__type",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "parameters": [
+                    {
+                      "id": 167,
+                      "name": "request",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {
+                        "isOptional": true
+                      },
+                      "type": {
+                        "type": "intrinsic",
+                        "name": "any"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                }
+              ]
+            }
+          },
+          "trueType": {
+            "type": "conditional",
+            "checkType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "reference",
+                "id": 171,
+                "name": "Event"
+              },
+              "objectType": {
+                "type": "reference",
+                "id": 172,
+                "name": "Map"
+              }
+            },
+            "extendsType": {
+              "type": "reflection",
+              "declaration": {
+                "id": 168,
+                "name": "__type",
+                "kind": 65536,
+                "kindString": "Type literal",
+                "flags": {},
+                "sources": [
+                  {
+                    "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+                    "line": 31,
+                    "character": 25
+                  }
+                ],
+                "signatures": [
+                  {
+                    "id": 169,
+                    "name": "__type",
+                    "kind": 4096,
+                    "kindString": "Call signature",
+                    "flags": {},
+                    "parameters": [
+                      {
+                        "id": 170,
+                        "name": "request",
+                        "kind": 32768,
+                        "kindString": "Parameter",
+                        "flags": {
+                          "isOptional": true
+                        },
+                        "type": {
+                          "type": "intrinsic",
+                          "name": "any"
+                        }
+                      }
+                    ],
+                    "type": {
+                      "type": "inferred",
+                      "name": "P"
+                    }
+                  }
+                ]
+              }
+            },
+            "trueType": {
+              "type": "reference",
+              "name": "P"
+            },
+            "falseType": {
+              "type": "intrinsic",
+              "name": "undefined"
+            }
+          },
+          "falseType": {
+            "type": "conditional",
+            "checkType": {
+              "type": "literal",
+              "value": "response"
+            },
+            "extendsType": {
+              "type": "typeOperator",
+              "operator": "keyof",
+              "target": {
+                "type": "indexedAccess",
+                "indexType": {
+                  "type": "reference",
+                  "id": 171,
+                  "name": "Event"
+                },
+                "objectType": {
+                  "type": "reference",
+                  "id": 172,
+                  "name": "Map"
+                }
+              }
+            },
+            "trueType": {
+              "type": "indexedAccess",
+              "indexType": {
+                "type": "literal",
+                "value": "response"
+              },
+              "objectType": {
+                "type": "indexedAccess",
+                "indexType": {
+                  "type": "reference",
+                  "id": 171,
+                  "name": "Event"
+                },
+                "objectType": {
+                  "type": "reference",
+                  "id": 172,
+                  "name": "Map"
+                }
+              }
+            },
+            "falseType": {
+              "type": "intrinsic",
+              "name": "undefined"
+            }
+          }
+        },
+        "falseType": {
+          "type": "intrinsic",
+          "name": "never"
+        }
+      }
+    },
+    {
+      "id": 173,
+      "name": "EventMap",
+      "kind": 4194304,
+      "kindString": "Type alias",
+      "flags": {},
+      "comment": {
+        "summary": [
+          {
+            "kind": "text",
+            "text": "For fast typing the event map."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 41,
+          "character": 12
+        }
+      ],
+      "typeParameters": [
+        {
+          "id": 174,
+          "name": "Events",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        }
+      ],
+      "type": {
+        "type": "reference",
+        "typeArguments": [
+          {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "id": 174,
+                "name": "Events"
+              },
+              {
+                "type": "reference",
+                "id": 148,
+                "name": "EventDefinition"
+              }
+            ],
+            "name": "Record",
+            "qualifiedName": "Record",
+            "package": "typescript"
+          }
+        ],
+        "name": "Partial",
+        "qualifiedName": "Partial",
+        "package": "typescript"
+      }
+    },
+    {
+      "id": 175,
+      "name": "BaseEventMap",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "comment": {
+        "summary": [
+          {
+            "kind": "text",
+            "text": "Give event map a set of indexes to not make it go crazy when some events are missing from it.\nThey are optional after all."
+          }
+        ]
+      },
+      "children": [
+        {
+          "id": 176,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "signatures": [
+            {
+              "id": 177,
+              "name": "new BaseEventMap",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 175,
+                "name": "BaseEventMap"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "children": [176]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.interface.ts",
+          "line": 47,
+          "character": 13
+        }
+      ],
+      "indexSignature": {
+        "id": 178,
+        "name": "__index",
+        "kind": 8192,
+        "kindString": "Index signature",
+        "flags": {},
+        "parameters": [
+          {
+            "id": 179,
+            "name": "k",
+            "kind": 32768,
+            "flags": {},
+            "type": {
+              "type": "intrinsic",
+              "name": "string"
+            }
+          }
+        ],
+        "type": {
+          "type": "reference",
+          "id": 148,
+          "name": "EventDefinition"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "name": "EventManager",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {},
+      "children": [
+        {
+          "id": 181,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {},
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+              "line": 8,
+              "character": 2
+            }
+          ],
+          "signatures": [
+            {
+              "id": 182,
+              "name": "new EventManager",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 183,
+                  "name": "Event",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  }
+                },
+                {
+                  "id": 184,
+                  "name": "Map",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 183,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 148,
+                            "name": "EventDefinition"
+                          }
+                        ],
+                        "name": "Record",
+                        "qualifiedName": "Record",
+                        "package": "typescript"
+                      }
+                    ],
+                    "name": "Partial",
+                    "qualifiedName": "Partial",
+                    "package": "typescript"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 183,
+                            "name": "Event"
+                          },
+                          {
+                            "type": "intrinsic",
+                            "name": "any"
+                          }
+                        ],
+                        "name": "Record",
+                        "qualifiedName": "Record",
+                        "package": "typescript"
+                      }
+                    ],
+                    "name": "Partial",
+                    "qualifiedName": "Partial",
+                    "package": "typescript"
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 185,
+                  "name": "emitter",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 1,
+                    "name": "EventEmitter2",
+                    "qualifiedName": "EventEmitter2",
+                    "package": "eventemitter2"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "id": 180,
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 183,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 184,
+                    "name": "Map"
+                  }
+                ],
+                "name": "EventManager"
+              }
+            }
+          ]
+        },
+        {
+          "id": 186,
+          "name": "emitter",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPrivate": true,
+            "isReadonly": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+              "line": 8,
+              "character": 32
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "id": 1,
+            "name": "EventEmitter2",
+            "qualifiedName": "EventEmitter2",
+            "package": "eventemitter2"
+          }
+        },
+        {
+          "id": 187,
+          "name": "emit",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+              "line": 10,
+              "character": 15
+            }
+          ],
+          "signatures": [
+            {
+              "id": 188,
+              "name": "emit",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "typeParameter": [
+                {
+                  "id": 189,
+                  "name": "E",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "string"
+                  },
+                  "default": {
+                    "type": "reference",
+                    "id": 183,
+                    "name": "Event"
+                  }
+                },
+                {
+                  "id": 190,
+                  "name": "MultipleResult",
+                  "kind": 131072,
+                  "kindString": "Type parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "boolean"
+                  },
+                  "default": {
+                    "type": "literal",
+                    "value": false
+                  }
+                }
+              ],
+              "parameters": [
+                {
+                  "id": 191,
+                  "name": "dispatch",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 189,
+                    "name": "E"
+                  }
+                },
+                {
+                  "id": 192,
+                  "name": "args",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "reference",
+                    "id": 155,
+                    "typeArguments": [
+                      {
+                        "type": "reference",
+                        "id": 189,
+                        "name": "E"
+                      },
+                      {
+                        "type": "reference",
+                        "id": 184,
+                        "name": "Map"
+                      }
+                    ],
+                    "name": "EventRequest"
+                  }
+                },
+                {
+                  "id": 193,
+                  "name": "options",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {
+                    "isOptional": true
+                  },
+                  "type": {
+                    "type": "reflection",
+                    "declaration": {
+                      "id": 194,
+                      "name": "__type",
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "flags": {},
+                      "children": [
+                        {
+                          "id": 195,
+                          "name": "multiple",
+                          "kind": 1024,
+                          "kindString": "Property",
+                          "flags": {
+                            "isOptional": true
+                          },
+                          "sources": [
+                            {
+                              "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+                              "line": 14,
+                              "character": 16
+                            }
+                          ],
+                          "type": {
+                            "type": "reference",
+                            "id": 190,
+                            "name": "MultipleResult"
+                          }
+                        }
+                      ],
+                      "groups": [
+                        {
+                          "title": "Properties",
+                          "children": [195]
+                        }
+                      ],
+                      "sources": [
+                        {
+                          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+                          "line": 14,
+                          "character": 14
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "conditional",
+                    "checkType": {
+                      "type": "reference",
+                      "id": 190,
+                      "name": "MultipleResult"
+                    },
+                    "extendsType": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "trueType": {
+                      "type": "array",
+                      "elementType": {
+                        "type": "reference",
+                        "id": 164,
+                        "typeArguments": [
+                          {
+                            "type": "reference",
+                            "id": 189,
+                            "name": "E"
+                          },
+                          {
+                            "type": "reference",
+                            "id": 184,
+                            "name": "Map"
+                          }
+                        ],
+                        "name": "EventResponse"
+                      }
+                    },
+                    "falseType": {
+                      "type": "reference",
+                      "id": 164,
+                      "typeArguments": [
+                        {
+                          "type": "reference",
+                          "id": 189,
+                          "name": "E"
+                        },
+                        {
+                          "type": "reference",
+                          "id": 184,
+                          "name": "Map"
+                        }
+                      ],
+                      "name": "EventResponse"
+                    }
+                  }
+                ],
+                "name": "Promise",
+                "qualifiedName": "Promise",
+                "package": "typescript"
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "children": [181]
+        },
+        {
+          "title": "Properties",
+          "children": [186]
+        },
+        {
+          "title": "Methods",
+          "children": [187]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "packages/nestjs-emitter/src/event-manager/event-manager.service.ts",
+          "line": 7,
+          "character": 13
+        }
+      ],
+      "typeParameters": [
+        {
+          "id": 196,
+          "name": "Event",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "intrinsic",
+            "name": "string"
+          },
+          "default": {
+            "type": "intrinsic",
+            "name": "string"
+          }
+        },
+        {
+          "id": 197,
+          "name": "Map",
+          "kind": 131072,
+          "kindString": "Type parameter",
+          "flags": {},
+          "type": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 183,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "reference",
+                    "id": 148,
+                    "name": "EventDefinition"
+                  }
+                ],
+                "name": "Record",
+                "qualifiedName": "Record",
+                "package": "typescript"
+              }
+            ],
+            "name": "Partial",
+            "qualifiedName": "Partial",
+            "package": "typescript"
+          },
+          "default": {
+            "type": "reference",
+            "typeArguments": [
+              {
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "reference",
+                    "id": 183,
+                    "name": "Event"
+                  },
+                  {
+                    "type": "intrinsic",
+                    "name": "any"
+                  }
+                ],
+                "name": "Record",
+                "qualifiedName": "Record",
+                "package": "typescript"
+              }
+            ],
+            "name": "Partial",
+            "qualifiedName": "Partial",
+            "package": "typescript"
+          }
+        }
+      ]
     }
   ],
   "groups": [
@@ -3133,7 +4390,11 @@
     },
     {
       "title": "Classes",
-      "children": [1, 142]
+      "children": [1, 142, 175, 180]
+    },
+    {
+      "title": "Type Aliases",
+      "children": [148, 155, 164, 173]
     }
   ],
   "sources": [
