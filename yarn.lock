@@ -1064,11 +1064,11 @@
     tslib "^2.4.0"
 
 "@graphql-tools/prisma-loader@^7.2.7":
-  version "7.2.37"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/prisma-loader/-/prisma-loader-7.2.37.tgz#79bbfea8e5f09cd24bd5d9c686e6367af53aafd1"
-  integrity sha512-6O18hT/LRAUMhWh28MjHzvZB6Ad8SGWhmQlgKlQUJGo8MR2uhk14m/VelZBdsiDcN7F84+leZE9XvCERncqvSQ==
+  version "7.2.39"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/prisma-loader/-/prisma-loader-7.2.39.tgz#056c97751fb89787cba30bb2d0cc0ceccce297de"
+  integrity sha512-WcLOFFDmLjxcE3Lp0qdX7vD0KkJqAh3af1sVQnpFQLptWLoRHru44AbhECGs3XigICMBKrHO9MV+qtg7FAzhvA==
   dependencies:
-    "@graphql-tools/url-loader" "7.16.17"
+    "@graphql-tools/url-loader" "7.16.19"
     "@graphql-tools/utils" "9.1.1"
     "@types/js-yaml" "^4.0.0"
     "@types/json-stable-stringify" "^1.0.32"
@@ -1127,10 +1127,10 @@
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/url-loader@7.16.17", "@graphql-tools/url-loader@^7.13.2", "@graphql-tools/url-loader@^7.9.7":
-  version "7.16.17"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.17.tgz#73edd2881101f1367ef24a0d5e3593345cb45e62"
-  integrity sha512-foI9ZKG2ILN2Aj308Sx54+QMYCr1MkP5CNpBFzYzrizWq/MbG3rEycIy+Q+BrxF+cU/Ms4hGcT9+0Gy9oi6Fow==
+"@graphql-tools/url-loader@7.16.19", "@graphql-tools/url-loader@^7.13.2", "@graphql-tools/url-loader@^7.9.7":
+  version "7.16.19"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.19.tgz#4e95443bcaf8ec66e72118caa48252180bedf37d"
+  integrity sha512-vFHstaANoojDCXUb/a25mTubteTUV8b7XVLHbbSvAQvwGUne6d+Upg5MeGrKBeHl2Wpn240cJnaa4A1mrwivWA==
   dependencies:
     "@ardatan/sync-fetch" "0.0.1"
     "@graphql-tools/delegate" "9.0.17"
@@ -1138,7 +1138,7 @@
     "@graphql-tools/executor-http" "0.0.3"
     "@graphql-tools/executor-legacy-ws" "0.0.3"
     "@graphql-tools/utils" "9.1.1"
-    "@graphql-tools/wrap" "9.2.14"
+    "@graphql-tools/wrap" "9.2.16"
     "@types/ws" "^8.0.0"
     "@whatwg-node/fetch" "^0.5.0"
     isomorphic-ws "5.0.0"
@@ -1174,10 +1174,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/wrap@9.2.14":
-  version "9.2.14"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.14.tgz#4d25820496d5d1a218fc901b6b150f1e8a901893"
-  integrity sha512-aAHZpCiYD87GckVK+WAxI6ZTru3D+zxv/EI9TU/wSg6FAgdAPvT/z/oGTDNOPOT0MrYDqVGCIrk0vU4QWiFRJA==
+"@graphql-tools/wrap@9.2.16":
+  version "9.2.16"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.16.tgz#ec7696101a34cacd1bfefb86ccb631f55651c8fa"
+  integrity sha512-fWTvGytllPq0IVrRcEAc6VuVUInfCEpOUhSAo1ocsSe0HZMoyrQkS1ST0jmCpEWeGWuUd/S2zBLS2yjH8fYfhA==
   dependencies:
     "@graphql-tools/delegate" "9.0.17"
     "@graphql-tools/schema" "9.0.10"
@@ -2189,17 +2189,17 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@15.1.1":
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.1.1.tgz#9648732aaa7157ae4f833fe5994f47f5dc283ef6"
-  integrity sha512-rfpIi/zWpL6YyW7Z10oc65FwePvFP0uo7L1f32wMtC25dHh12YD3OS24VniCOrFYWjHNIu7X7hdHx2lcDXPRBg==
+"@nrwl/cli@15.2.0":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.2.0.tgz#22d48ca942640e9d1bd336c20792cc876352caf4"
+  integrity sha512-tbl8iTEOuNWTs7HnwFqXXyu4jhR8OYyelECicwB7RkcVqihokhBvlvMdWaVlUYNgiOLWWy/elCEfZs4e7QLBZw==
   dependencies:
-    nx "15.1.1"
+    nx "15.2.0"
 
 "@nrwl/devkit@>=14.8.6 < 16":
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.1.1.tgz#b8748796e1dc401ebea5df933aeccaa421d4208e"
-  integrity sha512-Dh26LjMh/BMmoOja2WSSVSAaVDI59qIg46dZmfU7fcu+Y4FFMor3PMAAo5QVbfLasbx4HG6vrvQlhuwWnXm4hw==
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.2.0.tgz#bb62f65947457012e570583b1b645f196533e50b"
+  integrity sha512-njvwu5gWvV1GLlnLs50CIfKQ7piSw81DmlAtnHI/UD9DwzOrQwasd189X5dMrPMDwlif/WObvzcbdMS8M9wm/w==
   dependencies:
     "@phenomnomnominal/tsquery" "4.1.1"
     ejs "^3.1.7"
@@ -2207,12 +2207,12 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/tao@15.1.1":
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.1.1.tgz#b35f320402fefa66e58c8329134a1c9541762a45"
-  integrity sha512-FCmR9Rq+Nza7G5lXYPzYgVfYz2nI/7yDhTaenwBOyoxYixppfWTEx25mpsPtF38x996b/wp6gREuC4OPov7NWQ==
+"@nrwl/tao@15.2.0":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.2.0.tgz#96c6beac91f808855638283d52236df315cb8e50"
+  integrity sha512-Z8oRlO7JO/MfxahglZhD/XgQdvSZo3AzfLfdzQDDHQeL7F8sjwoQvNinsUDH5Vqa2/mAcbBsnp+8JubwdbAJSw==
   dependencies:
-    nx "15.1.1"
+    nx "15.2.0"
 
 "@nuxtjs/opencollective@0.3.2":
   version "0.3.2"
@@ -5334,9 +5334,9 @@ globals@^11.1.0:
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
 globals@^13.15.0:
-  version "13.17.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-13.17.0.tgz#902eb1e680a41da93945adbdcb5a9f361ba69bd4"
-  integrity sha512-1C+6nQRb1GwGMKm2dH/E7enFAMxGTmGI7/dEdhy/DNelv85w9B72t3uc5frtMNXIbzrarJJ/lTCjcaZwbLJmyw==
+  version "13.18.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-13.18.0.tgz#fb224daeeb2bb7d254cd2c640f003528b8d0c1dc"
+  integrity sha512-/mR4KI8Ps2spmoc0Ulu9L7agOF0du1CZNQ3dke8yItYlyKNmGrkONemBbd6V8UTc1Wgcqn21t3WYB7dbRmh6/A==
   dependencies:
     type-fest "^0.20.2"
 
@@ -7395,13 +7395,13 @@ nullthrows@^1.1.1:
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
 
-nx@15.1.1, "nx@>=14.8.6 < 16":
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-15.1.1.tgz#fbbc9cba25bdff42e890c0fe7d67f9f6858dd01d"
-  integrity sha512-afwLiY25+wCK7NR1lGVn2nIJRSqOmcJqJxWsz1A2FJJaHXogF4ja0USgjDksxXQGfKsbOyOq4Wvzel1YhtuaoQ==
+nx@15.2.0, "nx@>=14.8.6 < 16":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-15.2.0.tgz#f3ca1953aee7bd24e4606a5fd6ac322e19155fd4"
+  integrity sha512-lNoI37FYsN11LiR/XiO0GJqlZDH/ANe/UR1cw2VDipJqbae9rWfi/Td6zjMlymSEraullsiB+Ur7kavId/904w==
   dependencies:
-    "@nrwl/cli" "15.1.1"
-    "@nrwl/tao" "15.1.1"
+    "@nrwl/cli" "15.2.0"
+    "@nrwl/tao" "15.2.0"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
@@ -8222,9 +8222,9 @@ reflect-metadata@^0.1.13:
   integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
 
 regenerator-runtime@^0.13.10:
-  version "0.13.10"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
-  integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regexp.prototype.flags@^1.4.3:
   version "1.4.3"
