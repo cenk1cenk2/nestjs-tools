@@ -5,9 +5,8 @@ stages:
   - publish
 
 variables:
-  RUN_MULTI: 'true'
+  SEMANTIC_RELEASE_WORKSPACE: 'true'
   NODE_VERSION: 16-alpine
-  TYPEDOC_PATTERNS: 'packages/*/'
   MARKDOWN_TOC_PATTERNS: 'README.md,./packages/*/README.md'
 
 include:
