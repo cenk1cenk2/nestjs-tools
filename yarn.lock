@@ -776,10 +776,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@graphql-codegen/cli@^2.14.0":
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-2.14.0.tgz#2087c9c05d45f482c53e67ef8e9c0c1f9a98b160"
-  integrity sha512-tiG8iJd2jklazcAkPC1yZ4THQZOBazHi4L8qtH212PydFfpZ3G+PQyilf9sOMqT6Fq/b6yirHvVi6Jy2b1smEw==
+"@graphql-codegen/cli@^2.14.1":
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-2.14.1.tgz#6a44d37a5d6275d3416077736ecbd30c77e7d437"
+  integrity sha512-Z9EiX8yJ5xtNdw/1ApV8uKx6UjCNl/D28zTHU8Fa7BcCdi3ilGOKSiWCNZaH1mpwKr5EfX18kme2bIqKmohv/w==
   dependencies:
     "@babel/generator" "^7.18.13"
     "@babel/template" "^7.18.10"
@@ -810,7 +810,6 @@
     json-to-pretty-yaml "^1.2.2"
     listr2 "^4.0.5"
     log-symbols "^4.0.0"
-    mkdirp "^1.0.4"
     shell-quote "^1.7.3"
     string-env-interpolation "^1.0.1"
     ts-log "^2.2.3"
