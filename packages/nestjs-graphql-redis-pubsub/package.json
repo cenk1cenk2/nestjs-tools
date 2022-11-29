@@ -33,7 +33,7 @@
     "ioredis": ">= 4.27.9"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.2.0",
+    "@nestjs/common": "^9.2.1",
     "@types/ioredis": "^4.28.10",
     "@webundsoehne/nestjs-util": "^6.0.6",
     "graphql-redis-subscriptions": "^2.5.0",
