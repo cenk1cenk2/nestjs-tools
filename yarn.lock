@@ -639,10 +639,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.4.tgz#2c5345aae54fcda75f5c3f2e2038eea18fd3732f"
-  integrity sha512-gpGXFOH5s9e+pphX0GF7PYXpuSgoARLY+SmZXQ3PY7TKNHbOik1pYjcnHdeI3XscYhsGYYaHZjqrwanTZD9a2w==
+"@cenk1cenk2/cz-cc@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.5.tgz#52208dd21dd2cc84501bffe12c5104c722908ebf"
+  integrity sha512-ZSC6JQX0nYV7vprr0/FZxvE5IRhF/JCucJL17Yrk2JKMhQr32dDWdwG0hh9AuKfycElCK6WkgURtnrnEEABVFg==
   dependencies:
     colorette "^2.0.19"
     commitizen "^4.2.4"
@@ -650,11 +650,11 @@
     enquirer "^2.3.6"
     enquirer-editor "^1.0.0"
     find-git-root "^1.0.4"
-    listr2 "^5.0.5"
+    listr2 "^5.0.6"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
-    "@commitlint/load" "^17.1.2"
+    "@commitlint/load" "^17.3.0"
 
 "@cenk1cenk2/eslint-config@^2.5.37":
   version "2.5.37"
@@ -691,7 +691,7 @@
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-17.0.0.tgz#186e9261fd36733922ae617497888c4bdb6e5c92"
   integrity sha512-nVjL/w/zuqjCqSJm8UfpNaw66V9WzuJtQvEnCrK4jDw6qKTmZB+1JQ8m6BQVZbNBcwfYdDNKnhIhqI0Rk7lgpQ==
 
-"@commitlint/load@>6.1.1", "@commitlint/load@^17.1.2":
+"@commitlint/load@>6.1.1", "@commitlint/load@^17.3.0":
   version "17.3.0"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-17.3.0.tgz#ebfec0198dd1627627e32a2b2ae4744d297599a8"
   integrity sha512-u/pV6rCAJrCUN+HylBHLzZ4qj1Ew3+eN9GBPhNi9otGxtOfA8b+8nJSxaNbcC23Ins/kcpjGf9zPSVW7628Umw==
@@ -6592,6 +6592,20 @@ listr2@^5.0.5:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
+listr2@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-5.0.6.tgz#3c61153383869ffaad08a8908d63edfde481dff8"
+  integrity sha512-u60KxKBy1BR2uLJNTWNptzWQ1ob/gjMzIJPZffAENzpZqbMZ/5PrXXOomDcevIS/+IB7s1mmCEtSlT2qHWMqag==
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^2.0.19"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rfdc "^1.3.0"
+    rxjs "^7.5.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
 load-json-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
@@ -8467,7 +8481,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^7.5.5, rxjs@^7.5.6:
+rxjs@^7.5.5, rxjs@^7.5.6, rxjs@^7.5.7:
   version "7.5.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.7.tgz#2ec0d57fdc89ece220d2e702730ae8f1e49def39"
   integrity sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==
