@@ -12,9 +12,19 @@
 
 #### Defined in
 
+store/redis-store.service.ts:9
+
+---
+
+### adapter
+
+• **adapter**: typeof `Redis`
+
+#### Defined in
+
 store/redis-store.service.ts:10
 
-___
+---
 
 ### options
 
@@ -32,8 +42,8 @@ store/redis-store.service.ts:12
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name      | Type                                                                  |
+| :-------- | :-------------------------------------------------------------------- |
 | `options` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Defined in
@@ -44,11 +54,11 @@ store/redis-store.service.ts:12
 
 ### onModuleInit
 
-▸ **onModuleInit**(): `void`
+▸ **onModuleInit**(): `Promise`<`void`\>
 
 #### Returns
 
-`void`
+`Promise`<`void`\>
 
 #### Implementation of
 
@@ -58,7 +68,27 @@ OnModuleInit.onModuleInit
 
 store/redis-store.service.ts:14
 
-___
+---
+
+### initClient
+
+▸ **initClient**(`adapter?`): `void`
+
+#### Parameters
+
+| Name      | Type           |
+| :-------- | :------------- |
+| `adapter` | typeof `Redis` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+store/redis-store.service.ts:22
+
+---
 
 ### createChild
 
@@ -70,9 +100,9 @@ ___
 
 #### Defined in
 
-store/redis-store.service.ts:18
+store/redis-store.service.ts:26
 
-___
+---
 
 ### createTopic
 
@@ -80,9 +110,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `topic` | `string` |
+| Name            | Type       |
+| :-------------- | :--------- |
+| `topic`         | `string`   |
 | `...extensions` | `string`[] |
 
 #### Returns
@@ -91,4 +121,4 @@ ___
 
 #### Defined in
 
-store/redis-store.service.ts:26
+store/redis-store.service.ts:36

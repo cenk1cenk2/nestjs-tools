@@ -91,7 +91,7 @@ om/redis-om.service.ts:20
 
 #### Defined in
 
-om/redis-om.service.ts:32
+om/redis-om.service.ts:36
 
 ---
 
@@ -109,4 +109,4 @@ OnModuleDestroy.onModuleDestroy
 
 #### Defined in
 
-om/redis-om.service.ts:36
+om/redis-om.service.ts:40

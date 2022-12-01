@@ -362,8 +362,7 @@
             "name": "Client",
             "qualifiedName": "Client",
             "package": "redis-om"
-          },
-          "defaultValue": "..."
+          }
         },
         {
           "id": 24,
@@ -529,7 +528,7 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 32,
+              "line": 36,
               "character": 15
             }
           ],
@@ -566,7 +565,7 @@
           "sources": [
             {
               "fileName": "om/redis-om.service.ts",
-              "line": 36,
+              "line": 40,
               "character": 15
             }
           ],
@@ -991,7 +990,7 @@
           "sources": [
             {
               "fileName": "store/redis-store.service.ts",
-              "line": 10,
+              "line": 9,
               "character": 9
             }
           ],
@@ -1000,6 +999,31 @@
             "name": "Redis",
             "qualifiedName": "Redis",
             "package": "ioredis"
+          }
+        },
+        {
+          "id": 57,
+          "name": "adapter",
+          "kind": 1024,
+          "kindString": "Property",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "store/redis-store.service.ts",
+              "line": 10,
+              "character": 9
+            }
+          ],
+          "type": {
+            "type": "query",
+            "queryType": {
+              "type": "reference",
+              "name": "Redis",
+              "qualifiedName": "Redis",
+              "package": "ioredis"
+            }
           }
         },
         {
@@ -1045,7 +1069,7 @@
           ]
         },
         {
-          "id": 57,
+          "id": 58,
           "name": "options",
           "kind": 1024,
           "kindString": "Property",
@@ -1066,7 +1090,7 @@
           }
         },
         {
-          "id": 58,
+          "id": 59,
           "name": "onModuleInit",
           "kind": 2048,
           "kindString": "Method",
@@ -1077,19 +1101,27 @@
             {
               "fileName": "store/redis-store.service.ts",
               "line": 14,
-              "character": 9
+              "character": 15
             }
           ],
           "signatures": [
             {
-              "id": 59,
+              "id": 60,
               "name": "onModuleInit",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "type": {
-                "type": "intrinsic",
-                "name": "void"
+                "type": "reference",
+                "typeArguments": [
+                  {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                ],
+                "name": "Promise",
+                "qualifiedName": "Promise",
+                "package": "typescript"
               },
               "implementationOf": {
                 "type": "reference",
@@ -1103,8 +1135,8 @@
           }
         },
         {
-          "id": 60,
-          "name": "createChild",
+          "id": 61,
+          "name": "initClient",
           "kind": 2048,
           "kindString": "Method",
           "flags": {
@@ -1113,28 +1145,46 @@
           "sources": [
             {
               "fileName": "store/redis-store.service.ts",
-              "line": 18,
+              "line": 22,
               "character": 9
             }
           ],
           "signatures": [
             {
-              "id": 61,
-              "name": "createChild",
+              "id": 62,
+              "name": "initClient",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
+              "parameters": [
+                {
+                  "id": 63,
+                  "name": "adapter",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "query",
+                    "queryType": {
+                      "type": "reference",
+                      "name": "Redis",
+                      "qualifiedName": "Redis",
+                      "package": "ioredis"
+                    }
+                  },
+                  "defaultValue": "..."
+                }
+              ],
               "type": {
-                "type": "reference",
-                "id": 52,
-                "name": "RedisStoreService"
+                "type": "intrinsic",
+                "name": "void"
               }
             }
           ]
         },
         {
-          "id": 62,
-          "name": "createTopic",
+          "id": 64,
+          "name": "createChild",
           "kind": 2048,
           "kindString": "Method",
           "flags": {
@@ -1149,14 +1199,44 @@
           ],
           "signatures": [
             {
-              "id": 63,
+              "id": 65,
+              "name": "createChild",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "id": 52,
+                "name": "RedisStoreService"
+              }
+            }
+          ]
+        },
+        {
+          "id": 66,
+          "name": "createTopic",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isPublic": true
+          },
+          "sources": [
+            {
+              "fileName": "store/redis-store.service.ts",
+              "line": 36,
+              "character": 9
+            }
+          ],
+          "signatures": [
+            {
+              "id": 67,
               "name": "createTopic",
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
               "parameters": [
                 {
-                  "id": 64,
+                  "id": 68,
                   "name": "topic",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1167,7 +1247,7 @@
                   }
                 },
                 {
-                  "id": 65,
+                  "id": 69,
                   "name": "extensions",
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -1194,7 +1274,7 @@
       "groups": [
         {
           "title": "Properties",
-          "children": [56, 57]
+          "children": [56, 57, 58]
         },
         {
           "title": "Constructors",
@@ -1202,13 +1282,13 @@
         },
         {
           "title": "Methods",
-          "children": [58, 60, 62]
+          "children": [59, 61, 64, 66]
         }
       ],
       "sources": [
         {
           "fileName": "store/redis-store.service.ts",
-          "line": 9,
+          "line": 8,
           "character": 13
         }
       ],
