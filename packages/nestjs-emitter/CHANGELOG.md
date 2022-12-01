@@ -1,3 +1,9 @@
+## @cenk1cenk2/nestjs-emitter [5.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.3...@cenk1cenk2/nestjs-emitter@5.0.4) (2022-12-01)
+
+### Bug Fixes
+
+- move redis adapter initiation to be lazy loaded ([bbb35f5](https://github.com/cenk1cenk2/nestjs-tools/commit/bbb35f50c8b7e42d7b3d08d611188f3ca1f9e696))
+
 ## @cenk1cenk2/nestjs-emitter [5.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@5.0.2...@cenk1cenk2/nestjs-emitter@5.0.3) (2022-11-11)
 
 ### Bug Fixes
