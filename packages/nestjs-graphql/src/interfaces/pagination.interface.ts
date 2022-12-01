@@ -1,8 +1,8 @@
-import type { Type } from '@nestjs/common/interfaces/type.interface'
+import type{ Type } from '@nestjs/common/interfaces/type.interface'
 import { ArgsType, Field, InputType, Int, ObjectType } from '@nestjs/graphql'
 import { IsNumber, IsObject, IsOptional, IsPositive } from 'class-validator'
 
-import type { PaginationInputDto, PaginationOutputDto } from '@cenk1cenk2/nestjs-utils'
+import type{ PaginationInputDto, PaginationOutputDto } from '@cenk1cenk2/nestjs-utils'
 
 // arguments to take as input
 @InputType()

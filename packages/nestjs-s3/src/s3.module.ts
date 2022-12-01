@@ -1,10 +1,10 @@
-import type { DynamicModule } from '@nestjs/common'
+import type{ DynamicModule } from '@nestjs/common'
 import { Global, Module } from '@nestjs/common'
 import { ConfigService } from '@webundsoehne/nestjs-util'
 import { S3 } from 'aws-sdk'
 
 import { S3_INSTANCE } from './s3.constants'
-import type { S3ModuleOptions } from './s3.interface'
+import type{ S3ModuleOptions } from './s3.interface'
 
 @Global()
 @Module({

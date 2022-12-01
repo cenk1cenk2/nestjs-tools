@@ -1,5 +1,5 @@
 import { SetMetadata } from '@nestjs/common'
-import type { OnOptions } from 'eventemitter2'
+import type{ OnOptions } from 'eventemitter2'
 
 import { EVENT_LISTENER_METADATA_MULTIPLE } from '../constants'
 

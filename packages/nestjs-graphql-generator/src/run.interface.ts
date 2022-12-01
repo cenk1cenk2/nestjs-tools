@@ -1,4 +1,4 @@
-import type { Types } from '@graphql-codegen/plugin-helpers'
+import type{ Types } from '@graphql-codegen/plugin-helpers'
 
 export interface Config {
   schema: ConfigSchema[]

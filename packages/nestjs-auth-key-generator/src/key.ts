@@ -1,8 +1,8 @@
 import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
 import * as fs from 'fs-extra'
-import type { ApplicationKeyOptions } from 'key.interface'
+import type{ ApplicationKeyOptions } from 'key.interface'
 import { join } from 'path'
-import type { GenerateResult } from 'selfsigned'
+import type{ GenerateResult } from 'selfsigned'
 import selfsigned from 'selfsigned'
 
 import { LoggerService } from '@cenk1cenk2/nestjs-utils/dist/utils/logger/logger.service'

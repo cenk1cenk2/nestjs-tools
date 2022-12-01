@@ -1,7 +1,7 @@
-import type { pki } from 'node-forge'
-import type { GenerateResult, SelfsignedOptions } from 'selfsigned'
+import type{ pki } from 'node-forge'
+import type{ GenerateResult, SelfsignedOptions } from 'selfsigned'
 
-import type { LoggerService } from '@cenk1cenk2/nestjs-utils'
+import type{ LoggerService } from '@cenk1cenk2/nestjs-utils'
 
 export interface ApplicationKeyOptions {
   configKey?: string

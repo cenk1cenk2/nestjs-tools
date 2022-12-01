@@ -1,9 +1,9 @@
-import type { DynamicModule } from '@nestjs/common'
+import type{ DynamicModule } from '@nestjs/common'
 import { Global, Module } from '@nestjs/common'
 import { ConfigService } from '@webundsoehne/nestjs-util'
 
 import { REDIS_OM_INSTANCE } from './redis-om.constants'
-import type { RedisOmModuleOptions } from './redis-om.interface'
+import type{ RedisOmModuleOptions } from './redis-om.interface'
 import { RedisOmService } from './redis-om.service'
 
 @Global()

@@ -1,12 +1,12 @@
-import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common'
+import type{ OnModuleDestroy, OnModuleInit } from '@nestjs/common'
 import { Logger, Injectable } from '@nestjs/common'
-import { Client } from 'redis-om'
+import type{ Client } from 'redis-om'
 
 import { RedisOmModuleOptions } from './redis-om.interface'
 
 @Injectable()
 export class RedisOmService implements OnModuleInit, OnModuleDestroy {
-  public client = new Client()
+  public client: Client
   private logger = new Logger(this.constructor.name)
   private keepAliveRef: NodeJS.Timer
 
@@ -18,6 +18,10 @@ export class RedisOmService implements OnModuleInit, OnModuleDestroy {
   }
 
   public async onModuleInit (): Promise<void> {
+    const { Client } = await import('redis-om')
+
+    this.client = new Client()
+
     await this.open()
 
     this.keepAliveRef = setInterval(async () => {

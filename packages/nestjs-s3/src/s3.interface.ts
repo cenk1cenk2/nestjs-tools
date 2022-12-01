@@ -1,4 +1,4 @@
-import type { S3 } from 'aws-sdk'
+import type{ S3 } from 'aws-sdk'
 
 export type S3Provider = S3
 
