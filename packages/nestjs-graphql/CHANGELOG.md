@@ -1,17 +1,22 @@
-## @cenk1cenk2/nestjs-graphql [3.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.2...@cenk1cenk2/nestjs-graphql@3.0.3) (2022-10-24)
-
+## @cenk1cenk2/nestjs-graphql [3.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.3...@cenk1cenk2/nestjs-graphql@3.0.4) (2022-12-01)
 
 ### Bug Fixes
 
-* update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
-
-
-
-
+- move redis adapter initiation to be lazy loaded ([bbb35f5](https://github.com/cenk1cenk2/nestjs-tools/commit/bbb35f50c8b7e42d7b3d08d611188f3ca1f9e696))
 
 ### Dependencies
 
-* **@cenk1cenk2/nestjs-utils:** upgraded to 2.0.2
+- **@cenk1cenk2/nestjs-utils:** upgraded to 2.0.3
+
+## @cenk1cenk2/nestjs-graphql [3.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.2...@cenk1cenk2/nestjs-graphql@3.0.3) (2022-10-24)
+
+### Bug Fixes
+
+- update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
+
+### Dependencies
+
+- **@cenk1cenk2/nestjs-utils:** upgraded to 2.0.2
 
 ## @cenk1cenk2/nestjs-graphql [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql@3.0.1...@cenk1cenk2/nestjs-graphql@3.0.2) (2022-07-02)
 
