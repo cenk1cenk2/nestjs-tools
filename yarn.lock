@@ -2220,17 +2220,17 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@15.4.4":
-  version "15.4.4"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.4.4.tgz#1a0bf08adee8a748ad25c62f84fccdf25b378dde"
-  integrity sha512-29f1No6eJAZczwVsJTjujyE40Lav6iwkfwTxnoiTUWaHHw9S95a8dMXelUB/BT2Tyf7OOFpwWZMXtDcRktrgGA==
+"@nrwl/cli@15.4.5":
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.4.5.tgz#2a8f663e5265379812ba83c0577abdc94dcdba8f"
+  integrity sha512-f13s0/hzS9jsV1+QPr1Lp3Um+3dOHD8gEP2h7uw17rEPrtJ5ggRKMj/HcZ9dkT9zDM9EmPtVTb6k38ON+NWcUw==
   dependencies:
-    nx "15.4.4"
+    nx "15.4.5"
 
 "@nrwl/devkit@>=15.4.2 < 16":
-  version "15.4.4"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.4.4.tgz#6c062bc5834df839a79a7f5cb2a384a9a16b6a23"
-  integrity sha512-/kDPYyiwRfvtJReE7DrzK/hMtbuhUpO4HQm+TeJvMuxMwCeqSJQP930GUipRqGUfH5aVkbSBkEaa50F7dLE+kg==
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.4.5.tgz#22b7aa16bc14c171f061f770060d9af480d5f1cb"
+  integrity sha512-oag+wJgusKz+rwvgcVy9i8bNtTo7ikbjVVtSOmyVBE0ZrgN1CMFjugBj4FEjKGtd73djjpvW9Mm36uJRujrc2w==
   dependencies:
     "@phenomnomnominal/tsquery" "4.1.1"
     ejs "^3.1.7"
@@ -2238,12 +2238,12 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/tao@15.4.4":
-  version "15.4.4"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.4.4.tgz#d618f03d8697da0626717a29084210c11e7b64ee"
-  integrity sha512-ekPYVpz1y3XlCPu6UkQfcpwyNHQ0SsXMN8omB4MPTSknvEhKmcVOPG3Kr4W9fk1UjmBr58ItAGmtx2sjVMH7XQ==
+"@nrwl/tao@15.4.5":
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.4.5.tgz#d07f6d06cecb6acb84259e0654cfc59fcc5edd53"
+  integrity sha512-UMtxXxTWqbyZOdyD9Zt2IsDY/JVXIFZtY6pO4jPha7+UIHWf2Zi8Dszs6UoUTS4mqpNMIkKymwpZGtkDTfiAJA==
   dependencies:
-    nx "15.4.4"
+    nx "15.4.5"
 
 "@nuxtjs/opencollective@0.3.2":
   version "0.3.2"
@@ -7485,13 +7485,13 @@ nullthrows@^1.1.1:
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
 
-nx@15.4.4, "nx@>=14.8.6 < 16", "nx@>=15.4.2 < 16":
-  version "15.4.4"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-15.4.4.tgz#4cb3d3861972c6fc75df50dd526a2c7e1a26410c"
-  integrity sha512-JWYeGcKsQVHR6nlk7XSL1/dAuSo2eyW+ahmMmK3j3vSnqRlZiN0q53ALZ4nD8VemAwtZCJ3CiOi4D/HExi5wbw==
+nx@15.4.5, "nx@>=14.8.6 < 16", "nx@>=15.4.2 < 16":
+  version "15.4.5"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-15.4.5.tgz#12daa740256fa29ba634fbc4f3f87b6d078c2990"
+  integrity sha512-1spZL6sgOV8JJJuN8W5CLtJYwTOnlyaV32jPXfidavU0QMS8MP+rW3+NUQ9Uzc1UYhOu8llZWtnen93neVGQRw==
   dependencies:
-    "@nrwl/cli" "15.4.4"
-    "@nrwl/tao" "15.4.4"
+    "@nrwl/cli" "15.4.5"
+    "@nrwl/tao" "15.4.5"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
