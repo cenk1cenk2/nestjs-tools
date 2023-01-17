@@ -660,14 +660,14 @@
   optionalDependencies:
     "@commitlint/load" "^17.3.0"
 
-"@cenk1cenk2/eslint-config@^2.5.44":
-  version "2.5.44"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.44.tgz#5b1e8479658ddc9d0810b059bb518358213668ff"
-  integrity sha512-pRAS04v7N16f6ebB1dmhQB7FUDQJo7hFhhf9i2MxGyve0o2PLEGgbqytBI8sLG//lM35iT3PDrf4gpHcfprwNg==
+"@cenk1cenk2/eslint-config@^2.5.45":
+  version "2.5.45"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.45.tgz#f47d8eae1b6e151713b1373fd466e36e94297e38"
+  integrity sha512-r8I0vDomF7/QKxwH+kX9v8ki560ZE4TOwFKd7umkQEIcZclPRQcY+XQpijbgUZdjZhn+hAOhEhhAkLL2cK5fDA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.48.1"
     "@typescript-eslint/parser" "^5.48.1"
-    eslint-plugin-import "^2.27.0"
+    eslint-plugin-import "^2.27.5"
     load-tsconfig "^0.2.3"
 
 "@cenk1cenk2/nestjs-utils@1.1.7":
@@ -4605,7 +4605,7 @@ eslint-module-utils@^2.7.4:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-import@^2.27.0:
+eslint-plugin-import@^2.27.5:
   version "2.27.5"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.27.5.tgz#876a6d03f52608a3e5bb439c2550588e51dd6c65"
   integrity sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==
