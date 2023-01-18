@@ -643,10 +643,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.5.6":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.6.tgz#aa4db0756d03f418ba6ac06654f7dab2b5b681e2"
-  integrity sha512-lH7RHbho94NFYOW7WQAyKW88bwBB1oURiuGfuUya/DF5PLxA7DUKQ8h9aUbSkYyiiz2IHX+1EbOkjLU5Ozkqwg==
+"@cenk1cenk2/cz-cc@^1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.7.tgz#ff6cb1b79c14771c8fd223ebb292a54d8266c965"
+  integrity sha512-pxQ/bfF5rPHlBq45+PDz0+bBnsQ1M/z2be4RX1vEDUnbOq3Z+HVMYjY7+7ZSGyfnm4Ul/iqhW5J1IJ5HV4+SSA==
   dependencies:
     colorette "^2.0.19"
     commitizen "^4.2.6"
@@ -654,7 +654,7 @@
     enquirer "^2.3.6"
     enquirer-editor "^1.0.0"
     find-git-root "^1.0.4"
-    listr2 "^5.0.6"
+    listr2 "^5.0.7"
     lodash.map "^4.6.0"
     word-wrap "^1.2.3"
   optionalDependencies:
@@ -6599,7 +6599,7 @@ listr2@^4.0.5:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-listr2@^5.0.5, listr2@^5.0.6:
+listr2@^5.0.5:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-5.0.6.tgz#3c61153383869ffaad08a8908d63edfde481dff8"
   integrity sha512-u60KxKBy1BR2uLJNTWNptzWQ1ob/gjMzIJPZffAENzpZqbMZ/5PrXXOomDcevIS/+IB7s1mmCEtSlT2qHWMqag==
@@ -6610,6 +6610,20 @@ listr2@^5.0.5, listr2@^5.0.6:
     p-map "^4.0.0"
     rfdc "^1.3.0"
     rxjs "^7.5.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-5.0.7.tgz#de69ccc4caf6bea7da03c74f7a2ffecf3904bd53"
+  integrity sha512-MD+qXHPmtivrHIDRwPYdfNkrzqDiuaKU/rfBcec3WMyMF3xylQj3jMq344OtvQxz7zaCFViRAeqlr2AFhPvXHw==
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^2.0.19"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rfdc "^1.3.0"
+    rxjs "^7.8.0"
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
@@ -8474,7 +8488,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^7.5.5, rxjs@^7.5.7:
+rxjs@^7.5.5, rxjs@^7.5.7, rxjs@^7.8.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
   integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==
