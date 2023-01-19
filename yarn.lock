@@ -3109,10 +3109,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-sdk@^2.1297.0:
-  version "2.1297.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1297.0.tgz#ee9c2d1841a86521c98e8d9899b8f9c50d7e625d"
-  integrity sha512-hZbG8tfluU2ijCCBQnQzCiPbArFtaWqAUFAWAGZ0+Df7OzTm7ya9fLYV3j3L6p2PacAyAuxXaeMbgMHlHi/D3w==
+aws-sdk@^2.1298.0:
+  version "2.1298.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1298.0.tgz#cc11aaaf18c7b9b6c37bc060e0646d7abdc8f0af"
+  integrity sha512-UMaQe1Rohqguwl4V8e47SHrerboP5QpD7bx6mVZIoV2+AQ5xf8CyXjYXB95u5yvPyjIvpoRxiPKKOtnHL77q4A==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3758,6 +3758,26 @@ commitizen@^4.0.3, commitizen@^4.2.6:
     is-utf8 "^0.2.1"
     lodash "4.17.21"
     minimist "1.2.6"
+    strip-bom "4.0.0"
+    strip-json-comments "3.1.1"
+
+commitizen@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.3.0.tgz#0d056c542a2d2b1f9b9aba981aa32575b2849924"
+  integrity sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==
+  dependencies:
+    cachedir "2.3.0"
+    cz-conventional-changelog "3.3.0"
+    dedent "0.7.0"
+    detect-indent "6.1.0"
+    find-node-modules "^2.1.2"
+    find-root "1.1.0"
+    fs-extra "9.1.0"
+    glob "7.2.3"
+    inquirer "8.2.5"
+    is-utf8 "^0.2.1"
+    lodash "4.17.21"
+    minimist "1.2.7"
     strip-bom "4.0.0"
     strip-json-comments "3.1.1"
 
@@ -5788,7 +5808,7 @@ inquirer@8.2.4:
     through "^2.3.6"
     wrap-ansi "^7.0.0"
 
-inquirer@^8.0.0, inquirer@^8.2.4:
+inquirer@8.2.5, inquirer@^8.0.0, inquirer@^8.2.4:
   version "8.2.5"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-8.2.5.tgz#d8654a7542c35a9b9e069d27e2df4858784d54f8"
   integrity sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==
@@ -7052,7 +7072,7 @@ minimist@1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
   integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
-minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
+minimist@1.2.7, minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.7.tgz#daa1c4d91f507390437c6a8bc01078e7000c4d18"
   integrity sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==
