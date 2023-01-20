@@ -643,13 +643,13 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/cz-cc@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.7.tgz#ff6cb1b79c14771c8fd223ebb292a54d8266c965"
-  integrity sha512-pxQ/bfF5rPHlBq45+PDz0+bBnsQ1M/z2be4RX1vEDUnbOq3Z+HVMYjY7+7ZSGyfnm4Ul/iqhW5J1IJ5HV4+SSA==
+"@cenk1cenk2/cz-cc@^1.5.8":
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/cz-cc/-/cz-cc-1.5.8.tgz#b46add628a16e65793edf9567942e95c6cb3aa1a"
+  integrity sha512-3rLxhh61CdUxy/5IEN/FdebrMtVxISnh9agwFijppim1jB9sf3Syovn2nfGp8dmRM7VbL99s9IW4iMXgHgxtLA==
   dependencies:
     colorette "^2.0.19"
-    commitizen "^4.2.6"
+    commitizen "^4.3.0"
     conventional-commit-types "^3.0.0"
     enquirer "^2.3.6"
     enquirer-editor "^1.0.0"
@@ -3741,7 +3741,7 @@ commander@^9.4.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
   integrity sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==
 
-commitizen@^4.0.3, commitizen@^4.2.6, commitizen@^4.3.0:
+commitizen@^4.0.3, commitizen@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.3.0.tgz#0d056c542a2d2b1f9b9aba981aa32575b2849924"
   integrity sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==
