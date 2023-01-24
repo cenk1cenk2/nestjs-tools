@@ -1241,12 +1241,12 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@jest/schemas@^29.0.0":
-  version "29.0.0"
-  resolved "https://registry.yarnpkg.com/@jest/schemas/-/schemas-29.0.0.tgz#5f47f5994dd4ef067fb7b4188ceac45f77fe952a"
-  integrity sha512-3Ab5HgYIIAnS0HjqJHQYZS+zXc4tUmTmBH3z83ajI6afXp8X3ZtdLX+nXx+I7LNkJD7uN9LAVhgnjDgZa2z0kA==
+"@jest/schemas@^29.4.0":
+  version "29.4.0"
+  resolved "https://registry.yarnpkg.com/@jest/schemas/-/schemas-29.4.0.tgz#0d6ad358f295cc1deca0b643e6b4c86ebd539f17"
+  integrity sha512-0E01f/gOZeNTG76i5eWWSupvSHaIINrTie7vCyjiYFKgzNdyEGd12BUv4oNBFHOqlHDbtoJi3HrQ38KCC90NsQ==
   dependencies:
-    "@sinclair/typebox" "^0.24.1"
+    "@sinclair/typebox" "^0.25.16"
 
 "@josephg/resolvable@^1.0.1":
   version "1.0.1"
@@ -2209,17 +2209,17 @@
     read-package-json-fast "^2.0.3"
     which "^2.0.2"
 
-"@nrwl/cli@15.5.3":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.5.3.tgz#13277e5a0e8ba713850bcf13fa76717ea747a2bb"
-  integrity sha512-NWf9CWswvdYM6YzXuweaZPAZ2erMtQrrHZdgFbUGeojZBZ+b4TCGzLWNodZj4yQOa/eTwlyPMYO2LEw9CoapDQ==
+"@nrwl/cli@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-15.6.2.tgz#20fe95dd897cee0c0b2a80f52def2a33c95a1a93"
+  integrity sha512-7U9hYVTwXqPZSqRxYTDO+wCudASuknqTAY6151RrpT4HDK5BpkMxC96HW/wvhrzaLf+7dLHAimr2b+vR2xnqRA==
   dependencies:
-    nx "15.5.3"
+    nx "15.6.2"
 
 "@nrwl/devkit@>=15.4.2 < 16":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.5.3.tgz#16fac0147c2ab6ebba7b5357b2b959ad46b6eb26"
-  integrity sha512-GGNLLGXDGWflrpaLimnE6hChfZfq3+XWZ0LJWL0IuCnchngPbNzuyh8S8KPgNKKgq4Nv0hglWefIwMg2UhHysA==
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-15.6.2.tgz#954b0dab1639011bbc872e421917ce7140f201a4"
+  integrity sha512-RcPwjr1btr16wz/ZTnLeKMLu4zATWoh5E94qrFxw3n8hXbC5cIW0Hs/D3ho7cuJQCtQmItTD21M7akjvgHsniA==
   dependencies:
     "@phenomnomnominal/tsquery" "4.1.1"
     ejs "^3.1.7"
@@ -2227,12 +2227,12 @@
     semver "7.3.4"
     tslib "^2.3.0"
 
-"@nrwl/tao@15.5.3":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.5.3.tgz#08c05715d2ecb108ed8b2c5381b9017cf1448b4a"
-  integrity sha512-vgPLIW9IoBfQ4IkHRT5RC4LqNwFBK5jmHYmFIRgbIeFRudFBbnpmOaKRME0OwN7qJ6964PVVbzahAPvYVD02xw==
+"@nrwl/tao@15.6.2":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.6.2.tgz#d13b2ac6d9876c373b017544dbca08778209e8c7"
+  integrity sha512-jG8Csd43uyFf1XUc02k1XoK89n3FsvXM9EXdFadKLbiw5/7c0dZ0AYK8+JFgRpk67/7T0qaxtw8YlKdkuf/uJg==
   dependencies:
-    nx "15.5.3"
+    nx "15.6.2"
 
 "@nuxtjs/opencollective@0.3.2":
   version "0.3.2"
@@ -2488,10 +2488,10 @@
   resolved "https://registry.yarnpkg.com/@repeaterjs/repeater/-/repeater-3.0.4.tgz#a04d63f4d1bf5540a41b01a921c9a7fddc3bd1ca"
   integrity sha512-AW8PKd6iX3vAZ0vA43nOUOnbq/X5ihgU+mSXXqunMkeQADGiqw/PY0JNeYtD5sr0PAy51YPgAPbDoeapv9r8WA==
 
-"@sinclair/typebox@^0.24.1":
-  version "0.24.51"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.51.tgz#645f33fe4e02defe26f2f5c0410e1c094eac7f5f"
-  integrity sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==
+"@sinclair/typebox@^0.25.16":
+  version "0.25.21"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.25.21.tgz#763b05a4b472c93a8db29b2c3e359d55b29ce272"
+  integrity sha512-gFukHN4t8K4+wVC+ECqeqwzBDeFeTzBXroBTqE6vcWrQGbEUpHO7LYdG0f4xnvYq4VOEwITSlHlp0JBAIFMS/g==
 
 "@sqltools/formatter@^1.2.2":
   version "1.2.5"
@@ -2654,9 +2654,9 @@
   integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@types/validator@^13.7.10":
-  version "13.7.10"
-  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.10.tgz#f9763dc0933f8324920afa9c0790308eedf55ca7"
-  integrity sha512-t1yxFAR2n0+VO6hd/FJ9F2uezAZVWHLmpmlJzm1eX03+H7+HsuTAp7L8QJs+2pQCfWkP1+EXsGK9Z9v7o/qPVQ==
+  version "13.7.11"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-13.7.11.tgz#96f158d89c16375189a7aa42adbdbe3adc971dbe"
+  integrity sha512-WqTos+CnAKN64YwyBMhgUYhb5VsTNKwUY6AuzG5qu9/pFZJar/RJFMZBXwX7VS+uzYi+lIAr3WkvuWqEI9F2eg==
 
 "@types/ws@^8.0.0":
   version "8.5.4"
@@ -3126,9 +3126,9 @@ aws-sdk@^2.1301.0:
     xml2js "0.4.19"
 
 axios@^1.0.0:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.3.tgz#31a3d824c0ebf754a004b585e5f04a5f87e6c4ff"
-  integrity sha512-pdDkMYJeuXLZ6Xj/Q5J3Phpe+jbGdsSzlQaFVkMQzRUL05+6+tetX8TV3p4HrU4kzuO9bt+io/yGQxuyxA/xcw==
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.2.4.tgz#6555dd955d2efa9b8f4cb4cb0b3371b7b243537a"
+  integrity sha512-lIQuCfBJvZB/Bv7+RWUqEJqNShGOVpk9v7P0ZWx5Ip0qY6u7JBAU6dzQPMLasU9vHL2uD8av/1FDJXj7n6c39w==
   dependencies:
     follow-redirects "^1.15.0"
     form-data "^4.0.0"
@@ -7444,13 +7444,13 @@ nullthrows@^1.1.1:
   resolved "https://registry.yarnpkg.com/nullthrows/-/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
   integrity sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==
 
-nx@15.5.3, "nx@>=15.4.2 < 16":
-  version "15.5.3"
-  resolved "https://registry.yarnpkg.com/nx/-/nx-15.5.3.tgz#bf6252e7d9e17121dd82dec4f6fce319b9e005fa"
-  integrity sha512-PHB8VbiBLP108xb+yR8IGEsYWr7OcmDDOjHL+73oP4lVjyPgT8wdTMe6tI5LdBgv+KZ+0kiThK3ckvcPsfgvLQ==
+nx@15.6.2, "nx@>=15.4.2 < 16":
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-15.6.2.tgz#365f5f6f7cff2820e1f211293d5d71baf29fc4f7"
+  integrity sha512-F6O2mRf6fWVVpkekvmN2erlJZ8jFVRO+PlAKxHBd8pFGtqkh53VXtU0r7/93qgRjC1zz9VVd8BKEB+xuQ2FbDQ==
   dependencies:
-    "@nrwl/cli" "15.5.3"
-    "@nrwl/tao" "15.5.3"
+    "@nrwl/cli" "15.6.2"
+    "@nrwl/tao" "15.6.2"
     "@parcel/watcher" "2.0.4"
     "@yarnpkg/lockfile" "^1.1.0"
     "@yarnpkg/parsers" "^3.0.0-rc.18"
@@ -7981,11 +7981,11 @@ prettier@^2.8.3:
   integrity sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==
 
 pretty-format@^29.0.0:
-  version "29.3.1"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.3.1.tgz#1841cac822b02b4da8971dacb03e8a871b4722da"
-  integrity sha512-FyLnmb1cYJV8biEIiRyzRFvs2lry7PPIvOqKVe1GCUEYg4YGmlx1qG9EJNMxArYm7piII4qb8UV1Pncq5dxmcg==
+  version "29.4.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-29.4.0.tgz#766f071bb1c53f1ef8000c105bbeb649e86eb993"
+  integrity sha512-J+EVUPXIBHCdWAbvGBwXs0mk3ljGppoh/076g1S8qYS8nVG4u/yrhMvyTFHYYYKWnDdgRLExx0vA7pzxVGdlNw==
   dependencies:
-    "@jest/schemas" "^29.0.0"
+    "@jest/schemas" "^29.4.0"
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
