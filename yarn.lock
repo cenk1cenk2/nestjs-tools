@@ -5836,10 +5836,10 @@ ioredis@^5.2.4:
     redis-parser "^3.0.0"
     standard-as-callback "^2.1.0"
 
-ioredis@^5.2.6:
-  version "5.2.6"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.2.6.tgz#d55f21396698d68dc4646fa6dc680ee44916a383"
-  integrity sha512-F1xO+kYIz+TCOccvhThs2pem6sc9uTl9JsZybWpqe4FeCFDmf04XwbLQUGIqi2UWaDUuR61w2dhxx6NJEFehOA==
+ioredis@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-5.3.0.tgz#b5469f0fd374648ef074840c00c1d8eed42fca3f"
+  integrity sha512-Id9jKHhsILuIZpHc61QkagfVdUj2Rag5GzG1TGEvRNeM7dtTOjICgjC+tvqYxi//PuX2wjQ+Xjva2ONBuf92Pw==
   dependencies:
     "@ioredis/commands" "^1.1.1"
     cluster-key-slot "^1.1.0"
