@@ -1,6 +1,6 @@
 # Type alias: EventDefinition
 
-Ƭ **EventDefinition**: { `request?`: `any` ; `response?`: `any` } \| (`request?`: `any`) => `any`
+Ƭ **EventDefinition**: { `request?`: `any` ; `response?`: `any`  } \| (`request?`: `any`) => `any`
 
 A definition of a event with response-request map.
 

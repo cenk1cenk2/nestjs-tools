@@ -6,8 +6,8 @@ For fast typing the event map.
 
 #### Type parameters
 
-| Name     | Type             |
-| :------- | :--------------- |
+| Name | Type |
+| :------ | :------ |
 | `Events` | extends `string` |
 
 #### Defined in

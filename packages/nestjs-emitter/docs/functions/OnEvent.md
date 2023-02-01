@@ -6,7 +6,7 @@
 
 | Name | Type |
 | :------ | :------ |
-| `event` | `string` \| `symbol` \| (`string` \| `symbol`)[] |
+| `event` | `OnEventType` |
 | `options?` | `OnEventOptions` |
 
 #### Returns
@@ -15,4 +15,4 @@
 
 #### Defined in
 
-node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts:6
+node_modules/@nestjs/event-emitter/dist/decorators/on-event.decorator.d.ts:7
