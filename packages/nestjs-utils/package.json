@@ -31,8 +31,8 @@
     "winston": ">= 3.3.3 < 4"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.3.3",
-    "@webundsoehne/nestjs-util": "^6.0.7",
+    "@nestjs/common": "^9.3.5",
+    "@webundsoehne/nestjs-util": "^6.0.8",
     "winston": "^3.8.2"
   },
   "lint-staged": {
