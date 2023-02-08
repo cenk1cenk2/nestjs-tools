@@ -2033,19 +2033,19 @@
   resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.0.1.tgz#625e93a0edb2c830e3c52ce2d67b9d53377c6a66"
   integrity sha512-uSvJdwQU5nK+Vdf6zxcWAY2A8r7uqe+gePwLWzJ+fsQehq18pc0I2hJKwypZ2aLM90+Er9u1xn4iLJPZ+xlL4g==
 
-"@nestjs/common@^9.3.6":
-  version "9.3.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.3.6.tgz#be61508710c0aaf613e19c84e064797a7918171b"
-  integrity sha512-pPZwSEfLkMDUun6TXVmfAaohUEXLDbvOQPoIuj4n5Dc/L0czKmgfbK22XLVo5pJaEW1my9ifBTEo1bUgSrWBxw==
+"@nestjs/common@^9.3.7":
+  version "9.3.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.3.7.tgz#83096f292ff16aadf1982077b44ad20cb2e7372d"
+  integrity sha512-7hwY2lIkmB+K8wPSP9T8auzKPSlO15Gzujl3/ZxLX9SBt6B7N5Niv5E+5AzOcfL+h2X8JGysMG620hiGbUsT9A==
   dependencies:
     uid "2.0.1"
     iterare "1.2.1"
     tslib "2.5.0"
 
-"@nestjs/core@^9.3.6":
-  version "9.3.6"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.6.tgz#e7a0cc6cc4ae00c9b4d650758cc624ba5457dea8"
-  integrity sha512-vWwgc8QaEGu5csSEnD5LiAXNKgeVR/rOvOev7BzSodAqvhOw4cmlr5UI1LijVgYDSr8hJjJmQUXkx8IU2m2gWw==
+"@nestjs/core@^9.3.7":
+  version "9.3.7"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.7.tgz#381856108cfbf69ec37dc8a77ec38ebf690815f3"
+  integrity sha512-FXGVivZiujZl1aJF6jdPpg1XnLKp7kDhVGhWhJtnpv2IW/cz/YQHD2uMz/o+GZ9TCZxsGlxg79jbcuJITG11iQ==
   dependencies:
     uid "2.0.1"
     "@nuxtjs/opencollective" "0.3.2"
