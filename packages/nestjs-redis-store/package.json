@@ -43,7 +43,7 @@
     "@nestjs/common": "^9.3.8",
     "@types/ioredis": "^4.28.10",
     "@webundsoehne/nestjs-util": "^6.0.9",
-    "ioredis": "^5.3.0",
+    "ioredis": "^5.3.1",
     "redis-om": "^0.3.6"
   },
   "lint-staged": {
