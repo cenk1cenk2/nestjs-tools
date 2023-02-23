@@ -2634,9 +2634,9 @@ aws-sdk@^2.1321.0:
     xml2js "0.4.19"
 
 axios@^1.0.0:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.3.3.tgz#e7011384ba839b885007c9c9fae1ff23dceb295b"
-  integrity sha512-eYq77dYIFS77AQlhzEL937yUBSepBfPIe8FcgEDN35vMNZKMrs81pgnyrQpwfy4NF4b4XWX1Zgx7yX+25w8QJA==
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.3.4.tgz#f5760cefd9cfb51fd2481acf88c05f67c4523024"
+  integrity sha512-toYm+Bsyl6VC5wSkfkbbNB6ROv7KY93PEBBL6xyDczaIHasAiv4wPqQ/c4RjoQzipxRD2W5g21cOqQulZ7rHwQ==
   dependencies:
     follow-redirects "^1.15.0"
     form-data "^4.0.0"
@@ -3796,9 +3796,9 @@ ejs@^3.1.7:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.305"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.305.tgz#e4dfe3e06ab783f33171f9bde9e8ed092510fcd0"
-  integrity sha512-WETy6tG0CT5gm1O+xCbyapWNsCcmIvrn4NHViIGYo2AT8FV2qUCXdaB+WqYxSv/vS5mFqhBYnfZAAkVArjBmUg==
+  version "1.4.307"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.307.tgz#0301d9a87d95f47591550124a985a3eea6074a6f"
+  integrity sha512-n54V0t4LyHM2oQiAOmD3qC2peB+orUktXORSnWxqtv3uEMSoUcsq+hoMpU08VEJCNbfgBtzy169P0TcrLuq53A==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -6271,9 +6271,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.13.1, lru-cache@^7.14.0, lru-cache@^7.14.1, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.16.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.16.2.tgz#df096ce4374d0cf9d34f29a35832c80534af54b6"
-  integrity sha512-t6D6OM05Y3f+61zNnXh/+0D69kAgJKVEWLuWL1r38CIHRPTWpNjwpR7S+nmiQlG5GmUB1BDiiMjU1Ihs4YBLlg==
+  version "7.17.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.17.0.tgz#00c7ba5919e5ea7c69ff94ddabbf32cb09ab805c"
+  integrity sha512-zSxlVVwOabhVyTi6E8gYv2cr6bXK+8ifYz5/uyJb9feXX6NACVDwY4p5Ut3WC3Ivo/QhpARHU3iujx2xGAYHbQ==
 
 lunr@^2.3.9:
   version "2.3.9"
@@ -6588,9 +6588,9 @@ minipass@^3.0.0, minipass@^3.1.1, minipass@^3.1.6:
     yallist "^4.0.0"
 
 minipass@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.0.3.tgz#00bfbaf1e16e35e804f4aa31a7c1f6b8d9f0ee72"
-  integrity sha512-OW2r4sQ0sI+z5ckEt5c1Tri4xTgZwYDxpE54eqWlQloQRoWtXjqt9udJ5Z4dSv7wK+nfFI7FRXyCpBSft+gpFw==
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.2.0.tgz#4bf124d8c87c14e99846f9a27c3219d956998c0e"
+  integrity sha512-ExlilAIS7zJ2EWUMaVXi14H+FnZ18kr17kFkGemMqBx6jW0m8P6XfqwYVPEG53ENlgsED+alVP9ZxC3JzkK23Q==
 
 minizlib@^2.1.1, minizlib@^2.1.2:
   version "2.1.2"
