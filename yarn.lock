@@ -2886,13 +2886,13 @@ cache-manager-ioredis@^2.1.0:
   dependencies:
     ioredis "^4.14.1"
 
-cache-manager@^5.1.6:
-  version "5.1.6"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-5.1.6.tgz#e0a97f29c1f9970b11ff4acceba70eca6c5592e8"
-  integrity sha512-Q1A8ESC9sPgjSebfJl7DWUjcm3Sf5E4b5D9dspy0XCNYLMhcMOrPyTDVTYDDtpVk9JRt3uercpWZAlCsfhlDYQ==
+cache-manager@^5.1.7:
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-5.1.7.tgz#07946574567877bcc4224a3010f592d2443d0ba0"
+  integrity sha512-2W43F4ruaYb7dSiCOqkKtpnmn51/3DqxbKMMTxHfLa6qtj1letd8rr17/P/c7D7wYViqQLa+LetLCoKSVwBN1w==
   dependencies:
     lodash.clonedeep "^4.5.0"
-    lru-cache "^7.14.0"
+    lru-cache "^7.17.0"
 
 cachedir@2.3.0:
   version "2.3.0"
@@ -6270,7 +6270,7 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lru-cache@^7.13.1, lru-cache@^7.14.0, lru-cache@^7.14.1, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
+lru-cache@^7.13.1, lru-cache@^7.14.1, lru-cache@^7.17.0, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
   version "7.17.0"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.17.0.tgz#00c7ba5919e5ea7c69ff94ddabbf32cb09ab805c"
   integrity sha512-zSxlVVwOabhVyTi6E8gYv2cr6bXK+8ifYz5/uyJb9feXX6NACVDwY4p5Ut3WC3Ivo/QhpARHU3iujx2xGAYHbQ==
