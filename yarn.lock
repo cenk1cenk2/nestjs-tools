@@ -3470,7 +3470,7 @@ cosmiconfig@7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-cosmiconfig@8.0.0, cosmiconfig@^8.0.0:
+cosmiconfig@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.0.0.tgz#e9feae014eab580f858f8a0288f38997a7bebe97"
   integrity sha512-da1EafcpH6b/TD8vDRaWV7xFINlHlF6zKsGwS1TsuVJTZRkquaS5HTMq7uq6h31619QjbsYl21gVDOm32KM1vQ==
@@ -3490,6 +3490,16 @@ cosmiconfig@^7.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
+
+cosmiconfig@^8.0.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.1.0.tgz#947e174c796483ccf0a48476c24e4fefb7e1aea8"
+  integrity sha512-0tLZ9URlPGU7JsKq0DQOQ3FoRsYX8xDZ7xMiATQfaiGMz7EHowNkbU9u1coAOmnh9p/1ySpm0RB3JNWRXM5GCg==
+  dependencies:
+    import-fresh "^3.2.1"
+    js-yaml "^4.1.0"
+    parse-json "^5.0.0"
+    path-type "^4.0.0"
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -3797,9 +3807,9 @@ ejs@^3.1.7:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.309"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.309.tgz#82158606da135ffffc16a2e1eb853fa0a10955e7"
-  integrity sha512-U7DTiKe4h+irqBG6h4EZ0XXaZuJj4md3xIXXaGSYhwiumPZ4BSc6rgf9UD0hVUMaeP/jB0q5pKWCPxvhO8fvZA==
+  version "1.4.311"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.311.tgz#953bc9a4767f5ce8ec125f9a1ad8e00e8f67e479"
+  integrity sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -6589,9 +6599,9 @@ minipass@^3.0.0, minipass@^3.1.1, minipass@^3.1.6:
     yallist "^4.0.0"
 
 minipass@^4.0.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.2.0.tgz#4bf124d8c87c14e99846f9a27c3219d956998c0e"
-  integrity sha512-ExlilAIS7zJ2EWUMaVXi14H+FnZ18kr17kFkGemMqBx6jW0m8P6XfqwYVPEG53ENlgsED+alVP9ZxC3JzkK23Q==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-4.2.1.tgz#084031141113657662d40f66f9c2329036892128"
+  integrity sha512-KS4CHIsDfOZetnT+u6fwxyFADXLamtkPxkGScmmtTW//MlRrImV+LtbmbJpLQ86Hw7km/utbfEfndhGBrfwvlA==
 
 minizlib@^2.1.1, minizlib@^2.1.2:
   version "2.1.2"
