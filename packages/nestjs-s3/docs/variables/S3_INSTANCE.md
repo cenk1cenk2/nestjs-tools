@@ -4,4 +4,4 @@
 
 #### Defined in
 
-s3.constants.ts:1
+packages/nestjs-s3/src/s3.constants.ts:1

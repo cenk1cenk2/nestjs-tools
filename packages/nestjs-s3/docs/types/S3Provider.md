@@ -1,7 +1,7 @@
 # Type alias: S3Provider
 
-Ƭ **S3Provider**: `S3`
+Ƭ **S3Provider**: `S3Client`
 
 #### Defined in
 
-s3.interface.ts:3
+packages/nestjs-s3/src/s3.interface.ts:3

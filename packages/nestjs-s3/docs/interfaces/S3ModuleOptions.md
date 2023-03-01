@@ -8,14 +8,14 @@
 
 #### Defined in
 
-s3.interface.ts:6
+packages/nestjs-s3/src/s3.interface.ts:6
 
 ___
 
 ### options
 
-• `Optional` **options**: `ClientConfiguration`
+• `Optional` **options**: `S3ClientConfig`
 
 #### Defined in
 
-s3.interface.ts:7
+packages/nestjs-s3/src/s3.interface.ts:7

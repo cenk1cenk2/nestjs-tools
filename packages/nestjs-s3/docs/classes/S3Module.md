@@ -18,7 +18,7 @@
 
 #### Defined in
 
-s3.module.ts:20
+packages/nestjs-s3/src/s3.module.ts:12
 
 ## Constructors
 

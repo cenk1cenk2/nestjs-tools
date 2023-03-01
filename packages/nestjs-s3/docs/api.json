@@ -14,9 +14,9 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "decorator/s3.decorator.ts",
+					"fileName": "packages/nestjs-s3/src/decorator/s3.decorator.ts",
 					"line": 5,
-					"character": 16
+					"character": 13
 				}
 			],
 			"signatures": [
@@ -26,54 +26,140 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+							},
+							{
+								"kind": "code",
+								"text": "`@Global()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`@Injectable()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Providers](https://docs.nestjs.com/providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									}
+								]
+							},
+							{
+								"tag": "@publicApi",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 3,
+							"name": "token",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
+									}
+								]
+							},
+							"type": {
+								"type": "query",
+								"queryType": {
+									"type": "reference",
+									"id": 9,
+									"name": "S3_INSTANCE"
+								}
+							}
+						}
+					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 3,
+							"id": 4,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "decorator/s3.decorator.ts",
-									"line": 5,
-									"character": 36
+									"fileName": "node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts",
+									"line": 30,
+									"character": 52
 								}
 							],
 							"signatures": [
 								{
-									"id": 4,
+									"id": 5,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 5,
+											"id": 6,
 											"name": "target",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
 											"type": {
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "string"
-													},
-													{
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												],
-												"name": "Record",
-												"qualifiedName": "Record",
-												"package": "typescript"
+												"type": "intrinsic",
+												"name": "object"
 											}
 										},
 										{
-											"id": 6,
+											"id": 7,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -88,12 +174,16 @@
 													{
 														"type": "intrinsic",
 														"name": "symbol"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
 													}
 												]
 											}
 										},
 										{
-											"id": 7,
+											"id": 8,
 											"name": "index",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -118,7 +208,7 @@
 			]
 		},
 		{
-			"id": 8,
+			"id": 9,
 			"name": "S3_INSTANCE",
 			"kind": 32,
 			"kindString": "Variable",
@@ -127,7 +217,7 @@
 			},
 			"sources": [
 				{
-					"fileName": "s3.constants.ts",
+					"fileName": "packages/nestjs-s3/src/s3.constants.ts",
 					"line": 1,
 					"character": 13
 				}
@@ -136,41 +226,41 @@
 				"type": "query",
 				"queryType": {
 					"type": "reference",
-					"id": 8,
+					"id": 9,
 					"name": "S3_INSTANCE"
 				}
 			},
 			"defaultValue": "..."
 		},
 		{
-			"id": 9,
+			"id": 10,
 			"name": "S3Provider",
 			"kind": 4194304,
 			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "s3.interface.ts",
+					"fileName": "packages/nestjs-s3/src/s3.interface.ts",
 					"line": 3,
 					"character": 12
 				}
 			],
 			"type": {
 				"type": "reference",
-				"name": "S3",
-				"qualifiedName": "S3",
-				"package": "aws-sdk"
+				"name": "S3Client",
+				"qualifiedName": "S3Client",
+				"package": "@aws-sdk/client-s3"
 			}
 		},
 		{
-			"id": 10,
+			"id": 11,
 			"name": "S3ModuleOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 11,
+					"id": 12,
 					"name": "global",
 					"kind": 1024,
 					"kindString": "Property",
@@ -179,7 +269,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "s3.interface.ts",
+							"fileName": "packages/nestjs-s3/src/s3.interface.ts",
 							"line": 6,
 							"character": 2
 						}
@@ -190,7 +280,7 @@
 					}
 				},
 				{
-					"id": 12,
+					"id": 13,
 					"name": "options",
 					"kind": 1024,
 					"kindString": "Property",
@@ -199,16 +289,16 @@
 					},
 					"sources": [
 						{
-							"fileName": "s3.interface.ts",
+							"fileName": "packages/nestjs-s3/src/s3.interface.ts",
 							"line": 7,
 							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "ClientConfiguration",
-						"qualifiedName": "S3.ClientConfiguration",
-						"package": "aws-sdk"
+						"name": "S3ClientConfig",
+						"qualifiedName": "S3ClientConfig",
+						"package": "@aws-sdk/client-s3"
 					}
 				}
 			],
@@ -216,28 +306,28 @@
 				{
 					"title": "Properties",
 					"children": [
-						11,
-						12
+						12,
+						13
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "s3.interface.ts",
+					"fileName": "packages/nestjs-s3/src/s3.interface.ts",
 					"line": 5,
 					"character": 17
 				}
 			]
 		},
 		{
-			"id": 13,
+			"id": 14,
 			"name": "S3Module",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 14,
+					"id": 15,
 					"name": "forRoot",
 					"kind": 2048,
 					"kindString": "Method",
@@ -247,21 +337,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "s3.module.ts",
-							"line": 20,
+							"fileName": "packages/nestjs-s3/src/s3.module.ts",
+							"line": 12,
 							"character": 16
 						}
 					],
 					"signatures": [
 						{
-							"id": 15,
+							"id": 16,
 							"name": "forRoot",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 16,
+									"id": 17,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -270,7 +360,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 10,
+										"id": 11,
 										"name": "S3ModuleOptions"
 									}
 								}
@@ -285,21 +375,21 @@
 					]
 				},
 				{
-					"id": 17,
+					"id": 18,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 18,
+							"id": 19,
 							"name": "new S3Module",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 13,
+								"id": 14,
 								"name": "S3Module"
 							}
 						}
@@ -310,20 +400,20 @@
 				{
 					"title": "Methods",
 					"children": [
-						14
+						15
 					]
 				},
 				{
 					"title": "Constructors",
 					"children": [
-						17
+						18
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "s3.module.ts",
-					"line": 19,
+					"fileName": "packages/nestjs-s3/src/s3.module.ts",
+					"line": 11,
 					"character": 13
 				}
 			]
@@ -339,31 +429,31 @@
 		{
 			"title": "Variables",
 			"children": [
-				8
+				9
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				9
+				10
 			]
 		},
 		{
 			"title": "Interfaces",
 			"children": [
-				10
+				11
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				13
+				14
 			]
 		}
 	],
 	"sources": [
 		{
-			"fileName": "index.ts",
+			"fileName": "packages/nestjs-s3/src/index.ts",
 			"line": 1,
 			"character": 0
 		}
