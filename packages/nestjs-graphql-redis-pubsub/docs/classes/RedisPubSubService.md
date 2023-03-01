@@ -19,7 +19,7 @@
 
 #### Defined in
 
-redis-pubsub.service.ts:10
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:10
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:12
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:12
 
 ## Constructors
 
@@ -52,7 +52,7 @@ redis-pubsub.service.ts:12
 
 #### Defined in
 
-redis-pubsub.service.ts:12
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:12
 
 ## Methods
 
@@ -70,7 +70,7 @@ OnApplicationBootstrap.onApplicationBootstrap
 
 #### Defined in
 
-redis-pubsub.service.ts:14
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:14
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:18
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:18
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:22
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:22
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:30
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:30
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:34
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:34
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:38
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:38
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:42
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:42
 
 ___
 
@@ -237,4 +237,4 @@ ___
 
 #### Defined in
 
-redis-pubsub.service.ts:53
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts:53

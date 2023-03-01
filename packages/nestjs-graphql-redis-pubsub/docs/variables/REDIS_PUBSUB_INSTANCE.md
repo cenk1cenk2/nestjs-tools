@@ -4,4 +4,4 @@
 
 #### Defined in
 
-redis-pubsub.constants.ts:1
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.constants.ts:1

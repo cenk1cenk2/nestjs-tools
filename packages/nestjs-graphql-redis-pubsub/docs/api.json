@@ -14,9 +14,9 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "decorator/inject.decorator.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/decorator/inject.decorator.ts",
 					"line": 5,
-					"character": 16
+					"character": 13
 				}
 			],
 			"signatures": [
@@ -26,54 +26,140 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+							},
+							{
+								"kind": "code",
+								"text": "`@Global()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`@Injectable()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Providers](https://docs.nestjs.com/providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									}
+								]
+							},
+							{
+								"tag": "@publicApi",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 3,
+							"name": "token",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
+									}
+								]
+							},
+							"type": {
+								"type": "query",
+								"queryType": {
+									"type": "reference",
+									"id": 9,
+									"name": "REDIS_PUBSUB_INSTANCE"
+								}
+							}
+						}
+					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 3,
+							"id": 4,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "decorator/inject.decorator.ts",
-									"line": 5,
-									"character": 45
+									"fileName": "node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts",
+									"line": 30,
+									"character": 52
 								}
 							],
 							"signatures": [
 								{
-									"id": 4,
+									"id": 5,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 5,
+											"id": 6,
 											"name": "target",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
 											"type": {
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "string"
-													},
-													{
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												],
-												"name": "Record",
-												"qualifiedName": "Record",
-												"package": "typescript"
+												"type": "intrinsic",
+												"name": "object"
 											}
 										},
 										{
-											"id": 6,
+											"id": 7,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -88,12 +174,16 @@
 													{
 														"type": "intrinsic",
 														"name": "symbol"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
 													}
 												]
 											}
 										},
 										{
-											"id": 7,
+											"id": 8,
 											"name": "index",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -118,7 +208,7 @@
 			]
 		},
 		{
-			"id": 8,
+			"id": 9,
 			"name": "REDIS_PUBSUB_INSTANCE",
 			"kind": 32,
 			"kindString": "Variable",
@@ -127,7 +217,7 @@
 			},
 			"sources": [
 				{
-					"fileName": "redis-pubsub.constants.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.constants.ts",
 					"line": 1,
 					"character": 13
 				}
@@ -136,14 +226,14 @@
 				"type": "query",
 				"queryType": {
 					"type": "reference",
-					"id": 8,
+					"id": 9,
 					"name": "REDIS_PUBSUB_INSTANCE"
 				}
 			},
 			"defaultValue": "..."
 		},
 		{
-			"id": 9,
+			"id": 10,
 			"name": "REDIS_PUBSUB_DELIMITER",
 			"kind": 32,
 			"kindString": "Variable",
@@ -152,7 +242,7 @@
 			},
 			"sources": [
 				{
-					"fileName": "redis-pubsub.constants.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.constants.ts",
 					"line": 3,
 					"character": 13
 				}
@@ -164,14 +254,14 @@
 			"defaultValue": "':'"
 		},
 		{
-			"id": 10,
+			"id": 11,
 			"name": "RedisPubSubProvider",
 			"kind": 4194304,
 			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "redis-pubsub.interface.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts",
 					"line": 4,
 					"character": 12
 				}
@@ -184,14 +274,14 @@
 			}
 		},
 		{
-			"id": 11,
+			"id": 12,
 			"name": "RedisPubSubModuleOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 12,
+					"id": 13,
 					"name": "global",
 					"kind": 1024,
 					"kindString": "Property",
@@ -200,7 +290,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.interface.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts",
 							"line": 7,
 							"character": 2
 						}
@@ -211,7 +301,7 @@
 					}
 				},
 				{
-					"id": 13,
+					"id": 14,
 					"name": "options",
 					"kind": 1024,
 					"kindString": "Property",
@@ -220,7 +310,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.interface.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts",
 							"line": 8,
 							"character": 2
 						}
@@ -233,7 +323,7 @@
 					}
 				},
 				{
-					"id": 14,
+					"id": 15,
 					"name": "delimiter",
 					"kind": 1024,
 					"kindString": "Property",
@@ -242,7 +332,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.interface.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts",
 							"line": 9,
 							"character": 2
 						}
@@ -257,29 +347,29 @@
 				{
 					"title": "Properties",
 					"children": [
-						12,
 						13,
-						14
+						14,
+						15
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-pubsub.interface.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts",
 					"line": 6,
 					"character": 17
 				}
 			]
 		},
 		{
-			"id": 15,
+			"id": 16,
 			"name": "RedisPubSubModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 16,
+					"id": 17,
 					"name": "forRoot",
 					"kind": 2048,
 					"kindString": "Method",
@@ -289,21 +379,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.module.ts",
-							"line": 27,
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.module.ts",
+							"line": 11,
 							"character": 16
 						}
 					],
 					"signatures": [
 						{
-							"id": 17,
+							"id": 18,
 							"name": "forRoot",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 18,
+									"id": 19,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -312,7 +402,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 11,
+										"id": 12,
 										"name": "RedisPubSubModuleOptions"
 									}
 								}
@@ -327,21 +417,21 @@
 					]
 				},
 				{
-					"id": 19,
+					"id": 20,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 20,
+							"id": 21,
 							"name": "new RedisPubSubModule",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 15,
+								"id": 16,
 								"name": "RedisPubSubModule"
 							}
 						}
@@ -352,33 +442,33 @@
 				{
 					"title": "Methods",
 					"children": [
-						16
+						17
 					]
 				},
 				{
 					"title": "Constructors",
 					"children": [
-						19
+						20
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-pubsub.module.ts",
-					"line": 26,
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.module.ts",
+					"line": 10,
 					"character": 13
 				}
 			]
 		},
 		{
-			"id": 21,
+			"id": 22,
 			"name": "RedisPubSubService",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 27,
+					"id": 28,
 					"name": "pubSub",
 					"kind": 1024,
 					"kindString": "Property",
@@ -387,7 +477,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 10,
 							"character": 10
 						}
@@ -400,28 +490,28 @@
 					}
 				},
 				{
-					"id": 22,
+					"id": 23,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 12,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 23,
+							"id": 24,
 							"name": "new RedisPubSubService",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 24,
+									"id": 25,
 									"name": "RedisPubSubTopics",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -436,7 +526,7 @@
 									}
 								},
 								{
-									"id": 25,
+									"id": 26,
 									"name": "RedisPubSubMap",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -446,7 +536,7 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 24,
+												"id": 25,
 												"name": "RedisPubSubTopics"
 											},
 											{
@@ -466,30 +556,30 @@
 							],
 							"parameters": [
 								{
-									"id": 26,
+									"id": 27,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 11,
+										"id": 12,
 										"name": "RedisPubSubModuleOptions"
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
-								"id": 21,
+								"id": 22,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 24,
+										"id": 25,
 										"name": "RedisPubSubTopics"
 									},
 									{
 										"type": "reference",
-										"id": 25,
+										"id": 26,
 										"name": "RedisPubSubMap"
 									}
 								],
@@ -499,7 +589,7 @@
 					]
 				},
 				{
-					"id": 28,
+					"id": 29,
 					"name": "options",
 					"kind": 1024,
 					"kindString": "Property",
@@ -508,19 +598,19 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 12,
 							"character": 23
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 11,
+						"id": 12,
 						"name": "RedisPubSubModuleOptions"
 					}
 				},
 				{
-					"id": 29,
+					"id": 30,
 					"name": "onApplicationBootstrap",
 					"kind": 2048,
 					"kindString": "Method",
@@ -529,14 +619,14 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 14,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 30,
+							"id": 31,
 							"name": "onApplicationBootstrap",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -557,7 +647,7 @@
 					}
 				},
 				{
-					"id": 31,
+					"id": 32,
 					"name": "publish",
 					"kind": 2048,
 					"kindString": "Method",
@@ -566,21 +656,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 18,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 32,
+							"id": 33,
 							"name": "publish",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 33,
+									"id": 34,
 									"name": "Pattern",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -591,7 +681,7 @@
 									}
 								},
 								{
-									"id": 34,
+									"id": 35,
 									"name": "Data",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -604,19 +694,19 @@
 							],
 							"parameters": [
 								{
-									"id": 35,
+									"id": 36,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 33,
+										"id": 34,
 										"name": "Pattern"
 									}
 								},
 								{
-									"id": 36,
+									"id": 37,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -640,14 +730,14 @@
 									"defaultValue": "[]"
 								},
 								{
-									"id": 37,
+									"id": 38,
 									"name": "payload",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 34,
+										"id": 35,
 										"name": "Data"
 									}
 								}
@@ -668,7 +758,7 @@
 					]
 				},
 				{
-					"id": 38,
+					"id": 39,
 					"name": "subscribe",
 					"kind": 2048,
 					"kindString": "Method",
@@ -677,21 +767,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 22,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 39,
+							"id": 40,
 							"name": "subscribe",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 40,
+									"id": 41,
 									"name": "Pattern",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -702,7 +792,7 @@
 									}
 								},
 								{
-									"id": 41,
+									"id": 42,
 									"name": "Data",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -715,19 +805,19 @@
 							],
 							"parameters": [
 								{
-									"id": 42,
+									"id": 43,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 40,
+										"id": 41,
 										"name": "Pattern"
 									}
 								},
 								{
-									"id": 43,
+									"id": 44,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -751,7 +841,7 @@
 									"defaultValue": "[]"
 								},
 								{
-									"id": 44,
+									"id": 45,
 									"name": "onMessage",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -759,35 +849,35 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 45,
+											"id": 46,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"sources": [
 												{
-													"fileName": "redis-pubsub.service.ts",
+													"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 													"line": 25,
 													"character": 15
 												}
 											],
 											"signatures": [
 												{
-													"id": 46,
+													"id": 47,
 													"name": "__type",
 													"kind": 4096,
 													"kindString": "Call signature",
 													"flags": {},
 													"parameters": [
 														{
-															"id": 47,
+															"id": 48,
 															"name": "message",
 															"kind": 32768,
 															"kindString": "Parameter",
 															"flags": {},
 															"type": {
 																"type": "reference",
-																"id": 41,
+																"id": 42,
 																"name": "Data"
 															}
 														}
@@ -818,7 +908,7 @@
 					]
 				},
 				{
-					"id": 48,
+					"id": 49,
 					"name": "unsubscribe",
 					"kind": 2048,
 					"kindString": "Method",
@@ -827,21 +917,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 30,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 49,
+							"id": 50,
 							"name": "unsubscribe",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 50,
+									"id": 51,
 									"name": "id",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -860,7 +950,7 @@
 					]
 				},
 				{
-					"id": 51,
+					"id": 52,
 					"name": "getClient",
 					"kind": 2048,
 					"kindString": "Method",
@@ -869,14 +959,14 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 34,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 52,
+							"id": 53,
 							"name": "getClient",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -891,7 +981,7 @@
 					]
 				},
 				{
-					"id": 53,
+					"id": 54,
 					"name": "iterator",
 					"kind": 2048,
 					"kindString": "Method",
@@ -900,21 +990,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 38,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 54,
+							"id": 55,
 							"name": "iterator",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 55,
+									"id": 56,
 									"name": "Pattern",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -927,19 +1017,19 @@
 							],
 							"parameters": [
 								{
-									"id": 56,
+									"id": 57,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 55,
+										"id": 56,
 										"name": "Pattern"
 									}
 								},
 								{
-									"id": 57,
+									"id": 58,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -987,7 +1077,7 @@
 					]
 				},
 				{
-					"id": 58,
+					"id": 59,
 					"name": "getSubscriberCount",
 					"kind": 2048,
 					"kindString": "Method",
@@ -996,21 +1086,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 42,
 							"character": 15
 						}
 					],
 					"signatures": [
 						{
-							"id": 59,
+							"id": 60,
 							"name": "getSubscriberCount",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 60,
+									"id": 61,
 									"name": "Pattern",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -1023,19 +1113,19 @@
 							],
 							"parameters": [
 								{
-									"id": 61,
+									"id": 62,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 60,
+										"id": 61,
 										"name": "Pattern"
 									}
 								},
 								{
-									"id": 62,
+									"id": 63,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1075,7 +1165,7 @@
 					]
 				},
 				{
-					"id": 63,
+					"id": 64,
 					"name": "createTopic",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1084,21 +1174,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-pubsub.service.ts",
+							"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 							"line": 53,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 64,
+							"id": 65,
 							"name": "createTopic",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 65,
+									"id": 66,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1109,7 +1199,7 @@
 									}
 								},
 								{
-									"id": 66,
+									"id": 67,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1144,40 +1234,40 @@
 				{
 					"title": "Properties",
 					"children": [
-						27,
-						28
+						28,
+						29
 					]
 				},
 				{
 					"title": "Constructors",
 					"children": [
-						22
+						23
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						29,
-						31,
-						38,
-						48,
-						51,
-						53,
-						58,
-						63
+						30,
+						32,
+						39,
+						49,
+						52,
+						54,
+						59,
+						64
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-pubsub.service.ts",
+					"fileName": "packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.service.ts",
 					"line": 9,
 					"character": 13
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 67,
+					"id": 68,
 					"name": "RedisPubSubTopics",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -1192,7 +1282,7 @@
 					}
 				},
 				{
-					"id": 68,
+					"id": 69,
 					"name": "RedisPubSubMap",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -1202,7 +1292,7 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 24,
+								"id": 25,
 								"name": "RedisPubSubTopics"
 							},
 							{
@@ -1240,33 +1330,33 @@
 		{
 			"title": "Variables",
 			"children": [
-				8,
-				9
+				9,
+				10
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				10
+				11
 			]
 		},
 		{
 			"title": "Interfaces",
 			"children": [
-				11
+				12
 			]
 		},
 		{
 			"title": "Classes",
 			"children": [
-				15,
-				21
+				16,
+				22
 			]
 		}
 	],
 	"sources": [
 		{
-			"fileName": "index.ts",
+			"fileName": "packages/nestjs-graphql-redis-pubsub/src/index.ts",
 			"line": 1,
 			"character": 0
 		}

@@ -18,7 +18,7 @@
 
 #### Defined in
 
-redis-pubsub.module.ts:27
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.module.ts:11
 
 ## Constructors
 

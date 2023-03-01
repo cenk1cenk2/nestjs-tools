@@ -8,7 +8,7 @@
 
 #### Defined in
 
-redis-pubsub.interface.ts:7
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts:7
 
 ___
 
@@ -18,7 +18,7 @@ ___
 
 #### Defined in
 
-redis-pubsub.interface.ts:8
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts:8
 
 ___
 
@@ -28,4 +28,4 @@ ___
 
 #### Defined in
 
-redis-pubsub.interface.ts:9
+packages/nestjs-graphql-redis-pubsub/src/redis-pubsub.interface.ts:9
