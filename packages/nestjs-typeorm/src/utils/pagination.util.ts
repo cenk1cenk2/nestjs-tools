@@ -1,8 +1,7 @@
-import type{ FindManyOptions, Repository } from 'typeorm'
-import type{ SelectQueryBuilder } from 'typeorm/query-builder/SelectQueryBuilder'
+import type { FindManyOptions, Repository } from 'typeorm'
+import type { SelectQueryBuilder } from 'typeorm/query-builder/SelectQueryBuilder'
 
-import type{ PaginationInputDto, PaginationOutputDto } from '@cenk1cenk2/nestjs-utils'
-import type{ PaginatedResult } from '@interfaces'
+import type { PaginatedResult, PaginationInputDto, PaginationOutputDto } from '@interfaces'
 
 /**
  * Find a paginated result via typeorm with find and count.

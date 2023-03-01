@@ -2,6 +2,6 @@ import { Inject } from '@nestjs/common'
 
 import { REDIS_STORE_INSTANCE } from '../redis-store.constants'
 
-export function InjectRedisStoreService (): (target: Record<string, unknown>, key: string | symbol, index?: number) => void {
+export const InjectRedisStoreService: typeof Inject<typeof REDIS_STORE_INSTANCE> = () => {
   return Inject(REDIS_STORE_INSTANCE)
 }

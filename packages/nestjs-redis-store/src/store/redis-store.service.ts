@@ -1,6 +1,6 @@
-import type{ OnModuleInit } from '@nestjs/common'
+import type { OnModuleInit } from '@nestjs/common'
 import { Injectable } from '@nestjs/common'
-import type{ Redis } from 'ioredis'
+import type { Redis } from 'ioredis'
 
 import { RedisStoreModuleOptions } from './redis-store.interface'
 

@@ -1,4 +1,4 @@
-import type{ RedisOptions } from 'ioredis'
+import type { RedisOptions } from 'ioredis'
 
 export interface RedisStoreModuleOptions {
   global?: boolean

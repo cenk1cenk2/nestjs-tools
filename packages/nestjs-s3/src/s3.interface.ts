@@ -1,8 +1,8 @@
-import type{ S3 } from 'aws-sdk'
+import type { S3Client, S3ClientConfig } from '@aws-sdk/client-s3'
 
-export type S3Provider = S3
+export type S3Provider = S3Client
 
 export interface S3ModuleOptions {
   global?: boolean
-  options?: S3.Types.ClientConfiguration
+  options?: S3ClientConfig
 }

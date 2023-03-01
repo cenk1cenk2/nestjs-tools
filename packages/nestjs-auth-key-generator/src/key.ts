@@ -1,28 +1,24 @@
-import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
+import { Logger } from '@nestjs/common'
 import * as fs from 'fs-extra'
-import type{ ApplicationKeyOptions } from 'key.interface'
+import type { ApplicationKeyOptions } from 'key.interface'
 import { join } from 'path'
-import type{ GenerateResult } from 'selfsigned'
+import type { GenerateResult } from 'selfsigned'
 import selfsigned from 'selfsigned'
-
-import { LoggerService } from '@cenk1cenk2/nestjs-utils/dist/utils/logger/logger.service'
 
 export class ApplicationKey {
   static instance: ApplicationKey
   public keys: GenerateResult
-  private logger: LoggerService
+  private logger = new Logger(this.constructor.name)
 
-  constructor (private options?: Partial<ApplicationKeyOptions>) {
+  constructor (private options?: ApplicationKeyOptions) {
     if (!ApplicationKey.instance) {
       const configKey = options?.configKey ?? 'keys'
-      const dir = join(process.cwd(), ConfigService.get<string>(`${configKey}.dir`, 'volumes/keys'))
 
       this.options = {
-        dir,
         files: {
-          public: join(dir, ConfigService.get<string>(`${configKey}.files.public`, 'pubcert.pem')),
-          private: join(dir, ConfigService.get<string>(`${configKey}.files.private`, 'privkey.pem')),
-          cert: join(dir, ConfigService.get<string>(`${configKey}.files.cert`, 'cert.pem'))
+          public: join(options.dir, 'pubcert.pem'),
+          private: join(options.dir, 'privkey.pem'),
+          cert: join(options.dir, 'cert.pem')
         },
         attributes: undefined,
         options: {
@@ -32,11 +28,8 @@ export class ApplicationKey {
         },
         configKey,
         exitOnError: false,
-        logger: LoggerService,
         ...options
       }
-
-      this.logger = new this.options.logger('ApplicationKey')
 
       this.generateKeys()
 

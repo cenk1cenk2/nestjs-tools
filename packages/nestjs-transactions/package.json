@@ -26,9 +26,9 @@
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
   "peerDependencies": {
-    "@nestjs/common": ">= 7.6.1 < 10",
-    "@nestjs/typeorm": ">= 7.1.5 < 10",
-    "typeorm": ">= 0.2.29 < 1"
+    "@nestjs/common": ">= 7.6.1",
+    "@nestjs/typeorm": ">= 7.1.5",
+    "typeorm": ">= 0.2.29"
   },
   "devDependencies": {
     "@nestjs/common": "^9.3.9",

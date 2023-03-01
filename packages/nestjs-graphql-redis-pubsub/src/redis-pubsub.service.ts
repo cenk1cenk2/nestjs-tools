@@ -1,7 +1,7 @@
-import type{ OnApplicationBootstrap } from '@nestjs/common'
+import type { OnApplicationBootstrap } from '@nestjs/common'
 import { Injectable } from '@nestjs/common'
 import { RedisPubSub } from 'graphql-redis-subscriptions'
-import type{ Redis } from 'ioredis'
+import type { Redis } from 'ioredis'
 
 import { RedisPubSubModuleOptions } from './redis-pubsub.interface'
 

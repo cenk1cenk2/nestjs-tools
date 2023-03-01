@@ -1,7 +1,5 @@
-import type{ pki } from 'node-forge'
-import type{ GenerateResult, SelfsignedOptions } from 'selfsigned'
-
-import type{ LoggerService } from '@cenk1cenk2/nestjs-utils'
+import type { pki } from 'node-forge'
+import type { GenerateResult, SelfsignedOptions } from 'selfsigned'
 
 export interface ApplicationKeyOptions {
   configKey?: string
@@ -10,5 +8,4 @@ export interface ApplicationKeyOptions {
   attributes?: pki.CertificateField[]
   options?: Partial<SelfsignedOptions>
   exitOnError?: boolean
-  logger?: new (...args: any[]) => LoggerService
 }

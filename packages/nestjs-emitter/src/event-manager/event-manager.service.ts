@@ -1,7 +1,7 @@
 import { Injectable, Scope } from '@nestjs/common'
 import { EventEmitter2 } from '@nestjs/event-emitter'
 
-import type{ EventRequest, EventResponse, EventDefinition } from './event-manager.interface'
+import type { EventRequest, EventResponse, EventDefinition } from './event-manager.interface'
 
 @Injectable({ scope: Scope.DEFAULT })
 export class EventManager<Event extends string = string, Map extends Partial<Record<Event, EventDefinition>> = Partial<Record<Event, any>>> {

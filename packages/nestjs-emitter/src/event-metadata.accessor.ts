@@ -1,9 +1,9 @@
-import type{ Type } from '@nestjs/common'
+import type { Type } from '@nestjs/common'
 import { Injectable } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
 
 import { EVENT_LISTENER_METADATA, EVENT_LISTENER_METADATA_MULTIPLE } from './constants'
-import type{ OnEventMetadata, OnEventsMetadata } from './decorators'
+import type { OnEventMetadata, OnEventsMetadata } from './decorators'
 
 @Injectable()
 export class EventMetadataAccessor {

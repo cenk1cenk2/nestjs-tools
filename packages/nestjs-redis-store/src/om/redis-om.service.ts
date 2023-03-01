@@ -1,6 +1,6 @@
-import type{ OnModuleDestroy, OnModuleInit } from '@nestjs/common'
+import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common'
 import { Logger, Injectable } from '@nestjs/common'
-import type{ Client } from 'redis-om'
+import type { Client } from 'redis-om'
 
 import { RedisOmModuleOptions } from './redis-om.interface'
 

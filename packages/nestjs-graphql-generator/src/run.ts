@@ -4,7 +4,7 @@ import config from 'config'
 import delay from 'delay'
 import { join } from 'path'
 
-import type{ ConfigOptions, ConfigSchema, Status } from './run.interface'
+import type { ConfigOptions, ConfigSchema, Status } from './run.interface'
 import { getStatus } from './util'
 
 export async function runGenerator (): Promise<unknown[]> {

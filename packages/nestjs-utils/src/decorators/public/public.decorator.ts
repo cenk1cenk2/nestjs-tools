@@ -1,4 +1,4 @@
-import type{ CustomDecorator } from '@nestjs/common'
+import type { CustomDecorator } from '@nestjs/common'
 import { SetMetadata } from '@nestjs/common'
 
 export const PublicDecorator = Symbol('isPublic')

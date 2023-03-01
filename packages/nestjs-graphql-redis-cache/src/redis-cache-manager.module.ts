@@ -1,20 +1,11 @@
-import type{ DynamicModule, CacheModuleOptions, CacheStore } from '@nestjs/common'
+import type { CacheStore, DynamicModule } from '@nestjs/common'
 import { CacheModule, CACHE_MANAGER, Global, Module } from '@nestjs/common'
-import { ConfigService } from '@webundsoehne/nestjs-util/dist/provider/config/config.service'
 import * as redisStore from 'cache-manager-ioredis'
 
-import type{ RedisCacheManagerOptions } from './redis-cache-manager.interface'
+import type { RedisCacheManagerOptions } from './redis-cache-manager.interface'
 
 @Global()
-@Module({
-  imports: [
-    CacheModule.register({
-      ...ConfigService.get<CacheModuleOptions>('redisCacheManager'),
-      store: redisStore as unknown as CacheStore
-    })
-  ],
-  exports: [ CacheModule ]
-})
+@Module({})
 export class RedisCacheManagerModule {
   public static forRoot (options: RedisCacheManagerOptions): DynamicModule {
     return {
@@ -25,9 +16,7 @@ export class RedisCacheManagerModule {
           provide: CACHE_MANAGER,
           useFactory: (): CacheModule =>
             CacheModule.register({
-              ...options?.options ?? {
-                ...ConfigService.get<CacheModuleOptions>('redisCacheManager')
-              },
+              ...options?.options,
               store: redisStore as unknown as CacheStore
             })
         }
