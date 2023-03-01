@@ -6,7 +6,7 @@ stages:
 
 variables:
   SEMANTIC_RELEASE_WORKSPACE: 'true'
-  NODE_VERSION: 16-alpine
+  NODE_VERSION: 18-alpine
   MARKDOWN_TOC_PATTERNS: 'README.md,./packages/*/README.md'
 
 include:
