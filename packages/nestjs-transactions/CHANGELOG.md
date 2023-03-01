@@ -1,3 +1,18 @@
+# @cenk1cenk2/nestjs-transactions [5.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@4.0.3...@cenk1cenk2/nestjs-transactions@5.0.0) (2023-03-01)
+
+
+### Performance Improvements
+
+* drops the dependency and defaults for modules using the configservice ([85d2f90](https://github.com/cenk1cenk2/nestjs-tools/commit/85d2f90e65ed18dd24947dc7c9623594d22da4dd))
+
+
+### BREAKING CHANGES
+
+* Will break the older versions that uses the config service as the
+initiation dependency.
+
+S3 library is swapped with the smaller one.
+
 ## @cenk1cenk2/nestjs-transactions [4.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@4.0.2...@cenk1cenk2/nestjs-transactions@4.0.3) (2022-12-01)
 
 ### Bug Fixes
