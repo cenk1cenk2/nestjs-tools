@@ -24,7 +24,7 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 7,
+							"line": 5,
 							"character": 2
 						}
 					],
@@ -42,7 +42,7 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 8,
+							"line": 6,
 							"character": 2
 						}
 					],
@@ -60,7 +60,7 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 9,
+							"line": 7,
 							"character": 2
 						}
 					],
@@ -90,7 +90,7 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 10,
+							"line": 8,
 							"character": 2
 						}
 					],
@@ -113,7 +113,7 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 11,
+							"line": 9,
 							"character": 2
 						}
 					],
@@ -143,79 +143,13 @@
 					"sources": [
 						{
 							"fileName": "key.interface.ts",
-							"line": 12,
+							"line": 10,
 							"character": 2
 						}
 					],
 					"type": {
 						"type": "intrinsic",
 						"name": "boolean"
-					}
-				},
-				{
-					"id": 18,
-					"name": "logger",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "key.interface.ts",
-							"line": 13,
-							"character": 2
-						}
-					],
-					"type": {
-						"type": "reflection",
-						"declaration": {
-							"id": 19,
-							"name": "__type",
-							"kind": 512,
-							"kindString": "Constructor",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "key.interface.ts",
-									"line": 13,
-									"character": 11
-								}
-							],
-							"signatures": [
-								{
-									"id": 20,
-									"name": "new ApplicationKeyOptions",
-									"kind": 16384,
-									"kindString": "Constructor signature",
-									"flags": {},
-									"parameters": [
-										{
-											"id": 21,
-											"name": "args",
-											"kind": 32768,
-											"kindString": "Parameter",
-											"flags": {
-												"isRest": true
-											},
-											"type": {
-												"type": "array",
-												"elementType": {
-													"type": "intrinsic",
-													"name": "any"
-												}
-											}
-										}
-									],
-									"type": {
-										"type": "reference",
-										"name": "LoggerService",
-										"qualifiedName": "LoggerService",
-										"package": "@cenk1cenk2/nestjs-utils"
-									}
-								}
-							]
-						}
 					}
 				}
 			],
@@ -228,15 +162,14 @@
 						14,
 						15,
 						16,
-						17,
-						18
+						17
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "key.interface.ts",
-					"line": 6,
+					"line": 4,
 					"character": 17
 				}
 			]
@@ -259,7 +192,7 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 11,
+							"line": 9,
 							"character": 9
 						}
 					],
@@ -280,7 +213,7 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 12,
+							"line": 10,
 							"character": 9
 						}
 					],
@@ -302,16 +235,17 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 13,
+							"line": 11,
 							"character": 10
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "LoggerService",
-						"qualifiedName": "LoggerService",
-						"package": "@cenk1cenk2/nestjs-utils"
-					}
+						"name": "Logger",
+						"qualifiedName": "Logger",
+						"package": "@nestjs/common"
+					},
+					"defaultValue": "..."
 				},
 				{
 					"id": 3,
@@ -322,7 +256,7 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 15,
+							"line": 13,
 							"character": 2
 						}
 					],
@@ -344,16 +278,8 @@
 									},
 									"type": {
 										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 11,
-												"name": "ApplicationKeyOptions"
-											}
-										],
-										"name": "Partial",
-										"qualifiedName": "Partial",
-										"package": "typescript"
+										"id": 11,
+										"name": "ApplicationKeyOptions"
 									}
 								}
 							],
@@ -377,22 +303,14 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 15,
+							"line": 13,
 							"character": 23
 						}
 					],
 					"type": {
 						"type": "reference",
-						"typeArguments": [
-							{
-								"type": "reference",
-								"id": 11,
-								"name": "ApplicationKeyOptions"
-							}
-						],
-						"name": "Partial",
-						"qualifiedName": "Partial",
-						"package": "typescript"
+						"id": 11,
+						"name": "ApplicationKeyOptions"
 					}
 				},
 				{
@@ -406,7 +324,7 @@
 					"sources": [
 						{
 							"fileName": "key.ts",
-							"line": 49,
+							"line": 42,
 							"character": 10
 						}
 					],
@@ -451,7 +369,7 @@
 			"sources": [
 				{
 					"fileName": "key.ts",
-					"line": 10,
+					"line": 8,
 					"character": 13
 				}
 			]

@@ -8,7 +8,7 @@
 
 #### Defined in
 
-key.interface.ts:7
+key.interface.ts:5
 
 ___
 
@@ -18,7 +18,7 @@ ___
 
 #### Defined in
 
-key.interface.ts:8
+key.interface.ts:6
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-key.interface.ts:9
+key.interface.ts:7
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-key.interface.ts:10
+key.interface.ts:8
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-key.interface.ts:11
+key.interface.ts:9
 
 ___
 
@@ -58,24 +58,4 @@ ___
 
 #### Defined in
 
-key.interface.ts:12
-
-___
-
-### logger
-
-• `Optional` **logger**: (...`args`: `any`[]) => `LoggerService`
-
-#### Type declaration
-
-• **new ApplicationKeyOptions**(...`args`)
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...args` | `any`[] |
-
-#### Defined in
-
-key.interface.ts:13
+key.interface.ts:10

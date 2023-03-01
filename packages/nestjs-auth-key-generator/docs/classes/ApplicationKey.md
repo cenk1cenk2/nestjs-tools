@@ -8,7 +8,7 @@
 
 #### Defined in
 
-key.ts:11
+key.ts:9
 
 ___
 
@@ -18,27 +18,27 @@ ___
 
 #### Defined in
 
-key.ts:12
+key.ts:10
 
 ___
 
 ### logger
 
-• `Private` **logger**: `LoggerService`
+• `Private` **logger**: `Logger`
 
 #### Defined in
 
-key.ts:13
+key.ts:11
 
 ___
 
 ### options
 
-• `Private` `Optional` **options**: `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\>
+• `Private` `Optional` **options**: [`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)
 
 #### Defined in
 
-key.ts:15
+key.ts:13
 
 ## Constructors
 
@@ -50,11 +50,11 @@ key.ts:15
 
 | Name | Type |
 | :------ | :------ |
-| `options?` | `Partial`<[`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md)\> |
+| `options?` | [`ApplicationKeyOptions`](../interfaces/ApplicationKeyOptions.md) |
 
 #### Defined in
 
-key.ts:15
+key.ts:13
 
 ## Methods
 
@@ -68,4 +68,4 @@ key.ts:15
 
 #### Defined in
 
-key.ts:49
+key.ts:42
