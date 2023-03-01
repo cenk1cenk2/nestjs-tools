@@ -191,18 +191,18 @@ ___
 
 ### logMessage
 
-▸ `Private` **logMessage**(`__namedParameters`): `void`
+▸ `Private` **logMessage**(`«destructured»`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `__namedParameters` | `Object` |
-| `__namedParameters.type` | `string` |
-| `__namedParameters.message` | `string` \| `string`[] |
-| `__namedParameters.context?` | `string` |
-| `__namedParameters.trace?` | `any` |
-| `__namedParameters.ms?` | `string` |
+| `«destructured»` | `Object` |
+| › `type` | `string` |
+| › `message` | `string` \| `string`[] |
+| › `context?` | `string` |
+| › `trace?` | `any` |
+| › `ms?` | `string` |
 
 #### Returns
 
