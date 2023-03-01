@@ -8,9 +8,9 @@
 
 #### Defined in
 
-om/redis-om.interface.ts:2
+packages/nestjs-redis-store/src/om/redis-om.interface.ts:2
 
----
+___
 
 ### url
 
@@ -20,9 +20,9 @@ connection url to redis instance
 
 #### Defined in
 
-om/redis-om.interface.ts:4
+packages/nestjs-redis-store/src/om/redis-om.interface.ts:4
 
----
+___
 
 ### healthCheckInterval
 
@@ -32,4 +32,4 @@ interval to check whether the connection is open
 
 #### Defined in
 
-om/redis-om.interface.ts:6
+packages/nestjs-redis-store/src/om/redis-om.interface.ts:6

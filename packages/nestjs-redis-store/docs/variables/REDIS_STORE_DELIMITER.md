@@ -4,4 +4,4 @@
 
 #### Defined in
 
-store/redis-store.constants.ts:3
+packages/nestjs-redis-store/src/store/redis-store.constants.ts:3

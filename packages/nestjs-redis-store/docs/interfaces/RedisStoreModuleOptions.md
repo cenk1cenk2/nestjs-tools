@@ -8,7 +8,7 @@
 
 #### Defined in
 
-store/redis-store.interface.ts:4
+packages/nestjs-redis-store/src/store/redis-store.interface.ts:4
 
 ___
 
@@ -18,7 +18,7 @@ ___
 
 #### Defined in
 
-store/redis-store.interface.ts:5
+packages/nestjs-redis-store/src/store/redis-store.interface.ts:5
 
 ___
 
@@ -28,4 +28,4 @@ ___
 
 #### Defined in
 
-store/redis-store.interface.ts:6
+packages/nestjs-redis-store/src/store/redis-store.interface.ts:6

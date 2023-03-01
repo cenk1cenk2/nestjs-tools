@@ -4,4 +4,4 @@
 
 #### Defined in
 
-om/redis-om.constants.ts:1
+packages/nestjs-redis-store/src/om/redis-om.constants.ts:1

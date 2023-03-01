@@ -12,9 +12,9 @@
 
 #### Defined in
 
-store/redis-store.service.ts:9
+packages/nestjs-redis-store/src/store/redis-store.service.ts:9
 
----
+___
 
 ### adapter
 
@@ -22,9 +22,9 @@ store/redis-store.service.ts:9
 
 #### Defined in
 
-store/redis-store.service.ts:10
+packages/nestjs-redis-store/src/store/redis-store.service.ts:10
 
----
+___
 
 ### options
 
@@ -32,7 +32,7 @@ store/redis-store.service.ts:10
 
 #### Defined in
 
-store/redis-store.service.ts:12
+packages/nestjs-redis-store/src/store/redis-store.service.ts:12
 
 ## Constructors
 
@@ -42,13 +42,13 @@ store/redis-store.service.ts:12
 
 #### Parameters
 
-| Name      | Type                                                                  |
-| :-------- | :-------------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisStoreModuleOptions`](../interfaces/RedisStoreModuleOptions.md) |
 
 #### Defined in
 
-store/redis-store.service.ts:12
+packages/nestjs-redis-store/src/store/redis-store.service.ts:12
 
 ## Methods
 
@@ -66,9 +66,9 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-store/redis-store.service.ts:14
+packages/nestjs-redis-store/src/store/redis-store.service.ts:14
 
----
+___
 
 ### initClient
 
@@ -76,8 +76,8 @@ store/redis-store.service.ts:14
 
 #### Parameters
 
-| Name      | Type           |
-| :-------- | :------------- |
+| Name | Type |
+| :------ | :------ |
 | `adapter` | typeof `Redis` |
 
 #### Returns
@@ -86,9 +86,9 @@ store/redis-store.service.ts:14
 
 #### Defined in
 
-store/redis-store.service.ts:22
+packages/nestjs-redis-store/src/store/redis-store.service.ts:22
 
----
+___
 
 ### createChild
 
@@ -100,19 +100,19 @@ store/redis-store.service.ts:22
 
 #### Defined in
 
-store/redis-store.service.ts:26
+packages/nestjs-redis-store/src/store/redis-store.service.ts:26
 
----
+___
 
 ### createTopic
 
-▸ **createTopic**(`topic`, ...`extensions`): `string`
+▸ **createTopic**(`topic`, `...extensions`): `string`
 
 #### Parameters
 
-| Name            | Type       |
-| :-------------- | :--------- |
-| `topic`         | `string`   |
+| Name | Type |
+| :------ | :------ |
+| `topic` | `string` |
 | `...extensions` | `string`[] |
 
 #### Returns
@@ -121,4 +121,4 @@ store/redis-store.service.ts:26
 
 #### Defined in
 
-store/redis-store.service.ts:36
+packages/nestjs-redis-store/src/store/redis-store.service.ts:36

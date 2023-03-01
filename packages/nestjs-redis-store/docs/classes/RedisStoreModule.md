@@ -18,7 +18,7 @@
 
 #### Defined in
 
-store/redis-store.module.ts:25
+packages/nestjs-redis-store/src/store/redis-store.module.ts:11
 
 ## Constructors
 

@@ -1,1330 +1,1563 @@
 {
-  "id": 0,
-  "name": "@cenk1cenk2/nestjs-redis-store",
-  "kind": 1,
-  "kindString": "Project",
-  "flags": {},
-  "originalName": "",
-  "children": [
-    {
-      "id": 1,
-      "name": "InjectRedisOmService",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "om/decorator/inject.decorator.ts",
-          "line": 5,
-          "character": 16
-        }
-      ],
-      "signatures": [
-        {
-          "id": 2,
-          "name": "InjectRedisOmService",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "type": {
-            "type": "reflection",
-            "declaration": {
-              "id": 3,
-              "name": "__type",
-              "kind": 65536,
-              "kindString": "Type literal",
-              "flags": {},
-              "sources": [
-                {
-                  "fileName": "om/decorator/inject.decorator.ts",
-                  "line": 5,
-                  "character": 41
-                }
-              ],
-              "signatures": [
-                {
-                  "id": 4,
-                  "name": "__type",
-                  "kind": 4096,
-                  "kindString": "Call signature",
-                  "flags": {},
-                  "parameters": [
-                    {
-                      "id": 5,
-                      "name": "target",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "reference",
-                        "typeArguments": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "unknown"
-                          }
-                        ],
-                        "name": "Record",
-                        "qualifiedName": "Record",
-                        "package": "typescript"
-                      }
-                    },
-                    {
-                      "id": 6,
-                      "name": "key",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "union",
-                        "types": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "symbol"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": 7,
-                      "name": "index",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {
-                        "isOptional": true
-                      },
-                      "type": {
-                        "type": "intrinsic",
-                        "name": "number"
-                      }
-                    }
-                  ],
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "REDIS_OM_INSTANCE",
-      "kind": 32,
-      "kindString": "Variable",
-      "flags": {
-        "isConst": true
-      },
-      "sources": [
-        {
-          "fileName": "om/redis-om.constants.ts",
-          "line": 1,
-          "character": 13
-        }
-      ],
-      "type": {
-        "type": "query",
-        "queryType": {
-          "type": "reference",
-          "id": 8,
-          "name": "REDIS_OM_INSTANCE"
-        }
-      },
-      "defaultValue": "..."
-    },
-    {
-      "id": 9,
-      "name": "RedisOmModuleOptions",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "children": [
-        {
-          "id": 10,
-          "name": "global",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.interface.ts",
-              "line": 2,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "boolean"
-          }
-        },
-        {
-          "id": 11,
-          "name": "url",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "connection url to redis instance"
-              }
-            ]
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.interface.ts",
-              "line": 4,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        },
-        {
-          "id": 12,
-          "name": "healthCheckInterval",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "comment": {
-            "summary": [
-              {
-                "kind": "text",
-                "text": "interval to check whether the connection is open"
-              }
-            ]
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.interface.ts",
-              "line": 6,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "number"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [10, 11, 12]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "om/redis-om.interface.ts",
-          "line": 1,
-          "character": 17
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "RedisOmModule",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 14,
-          "name": "forRoot",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true,
-            "isStatic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.module.ts",
-              "line": 20,
-              "character": 16
-            }
-          ],
-          "signatures": [
-            {
-              "id": 15,
-              "name": "forRoot",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 16,
-                  "name": "options",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {
-                    "isOptional": true
-                  },
-                  "type": {
-                    "type": "reference",
-                    "id": 9,
-                    "name": "RedisOmModuleOptions"
-                  }
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "name": "DynamicModule",
-                "qualifiedName": "DynamicModule",
-                "package": "@nestjs/common"
-              }
-            }
-          ]
-        },
-        {
-          "id": 17,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "signatures": [
-            {
-              "id": 18,
-              "name": "new RedisOmModule",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 13,
-                "name": "RedisOmModule"
-              }
-            }
-          ]
-        }
-      ],
-      "groups": [
-        {
-          "title": "Methods",
-          "children": [14]
-        },
-        {
-          "title": "Constructors",
-          "children": [17]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "om/redis-om.module.ts",
-          "line": 19,
-          "character": 13
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "RedisOmService",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 23,
-          "name": "client",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 9,
-              "character": 9
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "Client",
-            "qualifiedName": "Client",
-            "package": "redis-om"
-          }
-        },
-        {
-          "id": 24,
-          "name": "logger",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPrivate": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 10,
-              "character": 10
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "Logger",
-            "qualifiedName": "Logger",
-            "package": "@nestjs/common"
-          },
-          "defaultValue": "..."
-        },
-        {
-          "id": 25,
-          "name": "keepAliveRef",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPrivate": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 11,
-              "character": 10
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "Timer",
-            "qualifiedName": "global.NodeJS.Timer",
-            "package": "@types/node"
-          }
-        },
-        {
-          "id": 20,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 13,
-              "character": 2
-            }
-          ],
-          "signatures": [
-            {
-              "id": 21,
-              "name": "new RedisOmService",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 22,
-                  "name": "options",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 9,
-                    "name": "RedisOmModuleOptions"
-                  }
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "id": 19,
-                "name": "RedisOmService"
-              }
-            }
-          ]
-        },
-        {
-          "id": 26,
-          "name": "options",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 13,
-              "character": 22
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "id": 9,
-            "name": "RedisOmModuleOptions"
-          }
-        },
-        {
-          "id": 27,
-          "name": "onModuleInit",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 20,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 28,
-              "name": "onModuleInit",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "name": "Promise",
-                "qualifiedName": "Promise",
-                "package": "typescript"
-              },
-              "implementationOf": {
-                "type": "reference",
-                "name": "OnModuleInit.onModuleInit"
-              }
-            }
-          ],
-          "implementationOf": {
-            "type": "reference",
-            "name": "OnModuleInit.onModuleInit"
-          }
-        },
-        {
-          "id": 29,
-          "name": "open",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 36,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 30,
-              "name": "open",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "name": "Promise",
-                "qualifiedName": "Promise",
-                "package": "typescript"
-              }
-            }
-          ]
-        },
-        {
-          "id": 31,
-          "name": "onModuleDestroy",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "om/redis-om.service.ts",
-              "line": 40,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 32,
-              "name": "onModuleDestroy",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "name": "Promise",
-                "qualifiedName": "Promise",
-                "package": "typescript"
-              },
-              "implementationOf": {
-                "type": "reference",
-                "name": "OnModuleDestroy.onModuleDestroy"
-              }
-            }
-          ],
-          "implementationOf": {
-            "type": "reference",
-            "name": "OnModuleDestroy.onModuleDestroy"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [23, 24, 25, 26]
-        },
-        {
-          "title": "Constructors",
-          "children": [20]
-        },
-        {
-          "title": "Methods",
-          "children": [27, 29, 31]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "om/redis-om.service.ts",
-          "line": 8,
-          "character": 13
-        }
-      ],
-      "implementedTypes": [
-        {
-          "type": "reference",
-          "name": "OnModuleInit",
-          "qualifiedName": "OnModuleInit",
-          "package": "@nestjs/common"
-        },
-        {
-          "type": "reference",
-          "name": "OnModuleDestroy",
-          "qualifiedName": "OnModuleDestroy",
-          "package": "@nestjs/common"
-        }
-      ]
-    },
-    {
-      "id": 33,
-      "name": "InjectRedisStoreService",
-      "kind": 64,
-      "kindString": "Function",
-      "flags": {},
-      "sources": [
-        {
-          "fileName": "store/decorator/inject.decorator.ts",
-          "line": 5,
-          "character": 16
-        }
-      ],
-      "signatures": [
-        {
-          "id": 34,
-          "name": "InjectRedisStoreService",
-          "kind": 4096,
-          "kindString": "Call signature",
-          "flags": {},
-          "type": {
-            "type": "reflection",
-            "declaration": {
-              "id": 35,
-              "name": "__type",
-              "kind": 65536,
-              "kindString": "Type literal",
-              "flags": {},
-              "sources": [
-                {
-                  "fileName": "store/decorator/inject.decorator.ts",
-                  "line": 5,
-                  "character": 44
-                }
-              ],
-              "signatures": [
-                {
-                  "id": 36,
-                  "name": "__type",
-                  "kind": 4096,
-                  "kindString": "Call signature",
-                  "flags": {},
-                  "parameters": [
-                    {
-                      "id": 37,
-                      "name": "target",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "reference",
-                        "typeArguments": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "unknown"
-                          }
-                        ],
-                        "name": "Record",
-                        "qualifiedName": "Record",
-                        "package": "typescript"
-                      }
-                    },
-                    {
-                      "id": 38,
-                      "name": "key",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {},
-                      "type": {
-                        "type": "union",
-                        "types": [
-                          {
-                            "type": "intrinsic",
-                            "name": "string"
-                          },
-                          {
-                            "type": "intrinsic",
-                            "name": "symbol"
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": 39,
-                      "name": "index",
-                      "kind": 32768,
-                      "kindString": "Parameter",
-                      "flags": {
-                        "isOptional": true
-                      },
-                      "type": {
-                        "type": "intrinsic",
-                        "name": "number"
-                      }
-                    }
-                  ],
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": 40,
-      "name": "REDIS_STORE_INSTANCE",
-      "kind": 32,
-      "kindString": "Variable",
-      "flags": {
-        "isConst": true
-      },
-      "sources": [
-        {
-          "fileName": "store/redis-store.constants.ts",
-          "line": 1,
-          "character": 13
-        }
-      ],
-      "type": {
-        "type": "query",
-        "queryType": {
-          "type": "reference",
-          "id": 40,
-          "name": "REDIS_STORE_INSTANCE"
-        }
-      },
-      "defaultValue": "..."
-    },
-    {
-      "id": 41,
-      "name": "REDIS_STORE_DELIMITER",
-      "kind": 32,
-      "kindString": "Variable",
-      "flags": {
-        "isConst": true
-      },
-      "sources": [
-        {
-          "fileName": "store/redis-store.constants.ts",
-          "line": 3,
-          "character": 13
-        }
-      ],
-      "type": {
-        "type": "literal",
-        "value": ":"
-      },
-      "defaultValue": "':'"
-    },
-    {
-      "id": 42,
-      "name": "RedisStoreModuleOptions",
-      "kind": 256,
-      "kindString": "Interface",
-      "flags": {},
-      "children": [
-        {
-          "id": 43,
-          "name": "global",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.interface.ts",
-              "line": 4,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "boolean"
-          }
-        },
-        {
-          "id": 44,
-          "name": "options",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.interface.ts",
-              "line": 5,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "RedisOptions",
-            "qualifiedName": "RedisOptions",
-            "package": "ioredis"
-          }
-        },
-        {
-          "id": 45,
-          "name": "delimiter",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isOptional": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.interface.ts",
-              "line": 6,
-              "character": 2
-            }
-          ],
-          "type": {
-            "type": "intrinsic",
-            "name": "string"
-          }
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [43, 44, 45]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "store/redis-store.interface.ts",
-          "line": 3,
-          "character": 17
-        }
-      ]
-    },
-    {
-      "id": 46,
-      "name": "RedisStoreModule",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 47,
-          "name": "forRoot",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true,
-            "isStatic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.module.ts",
-              "line": 25,
-              "character": 16
-            }
-          ],
-          "signatures": [
-            {
-              "id": 48,
-              "name": "forRoot",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 49,
-                  "name": "options",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {
-                    "isOptional": true
-                  },
-                  "type": {
-                    "type": "reference",
-                    "id": 42,
-                    "name": "RedisStoreModuleOptions"
-                  }
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "name": "DynamicModule",
-                "qualifiedName": "DynamicModule",
-                "package": "@nestjs/common"
-              }
-            }
-          ]
-        },
-        {
-          "id": 50,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "signatures": [
-            {
-              "id": 51,
-              "name": "new RedisStoreModule",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 46,
-                "name": "RedisStoreModule"
-              }
-            }
-          ]
-        }
-      ],
-      "groups": [
-        {
-          "title": "Methods",
-          "children": [47]
-        },
-        {
-          "title": "Constructors",
-          "children": [50]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "store/redis-store.module.ts",
-          "line": 24,
-          "character": 13
-        }
-      ]
-    },
-    {
-      "id": 52,
-      "name": "RedisStoreService",
-      "kind": 128,
-      "kindString": "Class",
-      "flags": {},
-      "children": [
-        {
-          "id": 56,
-          "name": "client",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 9,
-              "character": 9
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "name": "Redis",
-            "qualifiedName": "Redis",
-            "package": "ioredis"
-          }
-        },
-        {
-          "id": 57,
-          "name": "adapter",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 10,
-              "character": 9
-            }
-          ],
-          "type": {
-            "type": "query",
-            "queryType": {
-              "type": "reference",
-              "name": "Redis",
-              "qualifiedName": "Redis",
-              "package": "ioredis"
-            }
-          }
-        },
-        {
-          "id": 53,
-          "name": "constructor",
-          "kind": 512,
-          "kindString": "Constructor",
-          "flags": {},
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 12,
-              "character": 2
-            }
-          ],
-          "signatures": [
-            {
-              "id": 54,
-              "name": "new RedisStoreService",
-              "kind": 16384,
-              "kindString": "Constructor signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 55,
-                  "name": "options",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "reference",
-                    "id": 42,
-                    "name": "RedisStoreModuleOptions"
-                  }
-                }
-              ],
-              "type": {
-                "type": "reference",
-                "id": 52,
-                "name": "RedisStoreService"
-              }
-            }
-          ]
-        },
-        {
-          "id": 58,
-          "name": "options",
-          "kind": 1024,
-          "kindString": "Property",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 12,
-              "character": 22
-            }
-          ],
-          "type": {
-            "type": "reference",
-            "id": 42,
-            "name": "RedisStoreModuleOptions"
-          }
-        },
-        {
-          "id": 59,
-          "name": "onModuleInit",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 14,
-              "character": 15
-            }
-          ],
-          "signatures": [
-            {
-              "id": 60,
-              "name": "onModuleInit",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "typeArguments": [
-                  {
-                    "type": "intrinsic",
-                    "name": "void"
-                  }
-                ],
-                "name": "Promise",
-                "qualifiedName": "Promise",
-                "package": "typescript"
-              },
-              "implementationOf": {
-                "type": "reference",
-                "name": "OnModuleInit.onModuleInit"
-              }
-            }
-          ],
-          "implementationOf": {
-            "type": "reference",
-            "name": "OnModuleInit.onModuleInit"
-          }
-        },
-        {
-          "id": 61,
-          "name": "initClient",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 22,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 62,
-              "name": "initClient",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 63,
-                  "name": "adapter",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "query",
-                    "queryType": {
-                      "type": "reference",
-                      "name": "Redis",
-                      "qualifiedName": "Redis",
-                      "package": "ioredis"
-                    }
-                  },
-                  "defaultValue": "..."
-                }
-              ],
-              "type": {
-                "type": "intrinsic",
-                "name": "void"
-              }
-            }
-          ]
-        },
-        {
-          "id": 64,
-          "name": "createChild",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 26,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 65,
-              "name": "createChild",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "type": {
-                "type": "reference",
-                "id": 52,
-                "name": "RedisStoreService"
-              }
-            }
-          ]
-        },
-        {
-          "id": 66,
-          "name": "createTopic",
-          "kind": 2048,
-          "kindString": "Method",
-          "flags": {
-            "isPublic": true
-          },
-          "sources": [
-            {
-              "fileName": "store/redis-store.service.ts",
-              "line": 36,
-              "character": 9
-            }
-          ],
-          "signatures": [
-            {
-              "id": 67,
-              "name": "createTopic",
-              "kind": 4096,
-              "kindString": "Call signature",
-              "flags": {},
-              "parameters": [
-                {
-                  "id": 68,
-                  "name": "topic",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {},
-                  "type": {
-                    "type": "intrinsic",
-                    "name": "string"
-                  }
-                },
-                {
-                  "id": 69,
-                  "name": "extensions",
-                  "kind": 32768,
-                  "kindString": "Parameter",
-                  "flags": {
-                    "isRest": true
-                  },
-                  "type": {
-                    "type": "array",
-                    "elementType": {
-                      "type": "intrinsic",
-                      "name": "string"
-                    }
-                  }
-                }
-              ],
-              "type": {
-                "type": "intrinsic",
-                "name": "string"
-              }
-            }
-          ]
-        }
-      ],
-      "groups": [
-        {
-          "title": "Properties",
-          "children": [56, 57, 58]
-        },
-        {
-          "title": "Constructors",
-          "children": [53]
-        },
-        {
-          "title": "Methods",
-          "children": [59, 61, 64, 66]
-        }
-      ],
-      "sources": [
-        {
-          "fileName": "store/redis-store.service.ts",
-          "line": 8,
-          "character": 13
-        }
-      ],
-      "implementedTypes": [
-        {
-          "type": "reference",
-          "name": "OnModuleInit",
-          "qualifiedName": "OnModuleInit",
-          "package": "@nestjs/common"
-        }
-      ]
-    }
-  ],
-  "groups": [
-    {
-      "title": "Functions",
-      "children": [1, 33]
-    },
-    {
-      "title": "Variables",
-      "children": [8, 40, 41]
-    },
-    {
-      "title": "Interfaces",
-      "children": [9, 42]
-    },
-    {
-      "title": "Classes",
-      "children": [13, 19, 46, 52]
-    }
-  ],
-  "sources": [
-    {
-      "fileName": "index.ts",
-      "line": 1,
-      "character": 0
-    }
-  ]
+	"id": 0,
+	"name": "@cenk1cenk2/nestjs-redis-store",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "InjectRedisOmService",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/om/decorator/inject.decorator.ts",
+					"line": 5,
+					"character": 13
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "InjectRedisOmService",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+							},
+							{
+								"kind": "code",
+								"text": "`@Global()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`@Injectable()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Providers](https://docs.nestjs.com/providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									}
+								]
+							},
+							{
+								"tag": "@publicApi",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 3,
+							"name": "token",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
+									}
+								]
+							},
+							"type": {
+								"type": "query",
+								"queryType": {
+									"type": "reference",
+									"id": 9,
+									"name": "REDIS_OM_INSTANCE"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 4,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts",
+									"line": 30,
+									"character": 52
+								}
+							],
+							"signatures": [
+								{
+									"id": 5,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 6,
+											"name": "target",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "object"
+											}
+										},
+										{
+											"id": 7,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												]
+											}
+										},
+										{
+											"id": 8,
+											"name": "index",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "REDIS_OM_INSTANCE",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/om/redis-om.constants.ts",
+					"line": 1,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "query",
+				"queryType": {
+					"type": "reference",
+					"id": 9,
+					"name": "REDIS_OM_INSTANCE"
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 10,
+			"name": "RedisOmModuleOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 11,
+					"name": "global",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.interface.ts",
+							"line": 2,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 12,
+					"name": "url",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "connection url to redis instance"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.interface.ts",
+							"line": 4,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 13,
+					"name": "healthCheckInterval",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "interval to check whether the connection is open"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.interface.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/om/redis-om.interface.ts",
+					"line": 1,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "RedisOmModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 15,
+					"name": "forRoot",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.module.ts",
+							"line": 11,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 16,
+							"name": "forRoot",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 17,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 10,
+										"name": "RedisOmModuleOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DynamicModule",
+								"qualifiedName": "DynamicModule",
+								"package": "@nestjs/common"
+							}
+						}
+					]
+				},
+				{
+					"id": 18,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 19,
+							"name": "new RedisOmModule",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 14,
+								"name": "RedisOmModule"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						15
+					]
+				},
+				{
+					"title": "Constructors",
+					"children": [
+						18
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/om/redis-om.module.ts",
+					"line": 10,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "RedisOmService",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 24,
+					"name": "client",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 9,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Client",
+						"qualifiedName": "Client",
+						"package": "redis-om"
+					}
+				},
+				{
+					"id": 25,
+					"name": "logger",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 10,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Logger",
+						"qualifiedName": "Logger",
+						"package": "@nestjs/common"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 26,
+					"name": "keepAliveRef",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 11,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Timer",
+						"qualifiedName": "global.NodeJS.Timer",
+						"package": "@types/node"
+					}
+				},
+				{
+					"id": 21,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 13,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 22,
+							"name": "new RedisOmService",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 23,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 10,
+										"name": "RedisOmModuleOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "RedisOmService"
+							}
+						}
+					]
+				},
+				{
+					"id": 27,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 13,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 10,
+						"name": "RedisOmModuleOptions"
+					}
+				},
+				{
+					"id": 28,
+					"name": "onModuleInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 20,
+							"character": 15
+						}
+					],
+					"signatures": [
+						{
+							"id": 29,
+							"name": "onModuleInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"name": "OnModuleInit.onModuleInit"
+							}
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"name": "OnModuleInit.onModuleInit"
+					}
+				},
+				{
+					"id": 30,
+					"name": "open",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 36,
+							"character": 15
+						}
+					],
+					"signatures": [
+						{
+							"id": 31,
+							"name": "open",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 32,
+					"name": "onModuleDestroy",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+							"line": 40,
+							"character": 15
+						}
+					],
+					"signatures": [
+						{
+							"id": 33,
+							"name": "onModuleDestroy",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"name": "OnModuleDestroy.onModuleDestroy"
+							}
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"name": "OnModuleDestroy.onModuleDestroy"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						24,
+						25,
+						26,
+						27
+					]
+				},
+				{
+					"title": "Constructors",
+					"children": [
+						21
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						28,
+						30,
+						32
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/om/redis-om.service.ts",
+					"line": 8,
+					"character": 13
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnModuleInit",
+					"qualifiedName": "OnModuleInit",
+					"package": "@nestjs/common"
+				},
+				{
+					"type": "reference",
+					"name": "OnModuleDestroy",
+					"qualifiedName": "OnModuleDestroy",
+					"package": "@nestjs/common"
+				}
+			]
+		},
+		{
+			"id": 34,
+			"name": "InjectRedisStoreService",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/decorator/inject.decorator.ts",
+					"line": 5,
+					"character": 13
+				}
+			],
+			"signatures": [
+				{
+					"id": 35,
+					"name": "InjectRedisStoreService",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+							},
+							{
+								"kind": "code",
+								"text": "`@Global()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`@Injectable()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Providers](https://docs.nestjs.com/providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									}
+								]
+							},
+							{
+								"tag": "@publicApi",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 36,
+							"name": "token",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
+									}
+								]
+							},
+							"type": {
+								"type": "query",
+								"queryType": {
+									"type": "reference",
+									"id": 42,
+									"name": "REDIS_STORE_INSTANCE"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 37,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts",
+									"line": 30,
+									"character": 52
+								}
+							],
+							"signatures": [
+								{
+									"id": 38,
+									"name": "__type",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 39,
+											"name": "target",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "object"
+											}
+										},
+										{
+											"id": 40,
+											"name": "key",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "symbol"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													}
+												]
+											}
+										},
+										{
+											"id": 41,
+											"name": "index",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isOptional": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": 42,
+			"name": "REDIS_STORE_INSTANCE",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/redis-store.constants.ts",
+					"line": 1,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "query",
+				"queryType": {
+					"type": "reference",
+					"id": 42,
+					"name": "REDIS_STORE_INSTANCE"
+				}
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 43,
+			"name": "REDIS_STORE_DELIMITER",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/redis-store.constants.ts",
+					"line": 3,
+					"character": 13
+				}
+			],
+			"type": {
+				"type": "literal",
+				"value": ":"
+			},
+			"defaultValue": "':'"
+		},
+		{
+			"id": 44,
+			"name": "RedisStoreModuleOptions",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 45,
+					"name": "global",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.interface.ts",
+							"line": 4,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 46,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.interface.ts",
+							"line": 5,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "RedisOptions",
+						"qualifiedName": "RedisOptions",
+						"package": "ioredis"
+					}
+				},
+				{
+					"id": 47,
+					"name": "delimiter",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.interface.ts",
+							"line": 6,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						45,
+						46,
+						47
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/redis-store.interface.ts",
+					"line": 3,
+					"character": 17
+				}
+			]
+		},
+		{
+			"id": 48,
+			"name": "RedisStoreModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 49,
+					"name": "forRoot",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isStatic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.module.ts",
+							"line": 11,
+							"character": 16
+						}
+					],
+					"signatures": [
+						{
+							"id": 50,
+							"name": "forRoot",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 51,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isOptional": true
+									},
+									"type": {
+										"type": "reference",
+										"id": 44,
+										"name": "RedisStoreModuleOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "DynamicModule",
+								"qualifiedName": "DynamicModule",
+								"package": "@nestjs/common"
+							}
+						}
+					]
+				},
+				{
+					"id": 52,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"signatures": [
+						{
+							"id": 53,
+							"name": "new RedisStoreModule",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 48,
+								"name": "RedisStoreModule"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Methods",
+					"children": [
+						49
+					]
+				},
+				{
+					"title": "Constructors",
+					"children": [
+						52
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/redis-store.module.ts",
+					"line": 10,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 54,
+			"name": "RedisStoreService",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {},
+			"children": [
+				{
+					"id": 58,
+					"name": "client",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 9,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Redis",
+						"qualifiedName": "Redis",
+						"package": "ioredis"
+					}
+				},
+				{
+					"id": 59,
+					"name": "adapter",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 10,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "query",
+						"queryType": {
+							"type": "reference",
+							"name": "Redis",
+							"qualifiedName": "Redis",
+							"package": "ioredis"
+						}
+					}
+				},
+				{
+					"id": 55,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 12,
+							"character": 2
+						}
+					],
+					"signatures": [
+						{
+							"id": 56,
+							"name": "new RedisStoreService",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 57,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"id": 44,
+										"name": "RedisStoreModuleOptions"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "RedisStoreService"
+							}
+						}
+					]
+				},
+				{
+					"id": 60,
+					"name": "options",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 12,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 44,
+						"name": "RedisStoreModuleOptions"
+					}
+				},
+				{
+					"id": 61,
+					"name": "onModuleInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 14,
+							"character": 15
+						}
+					],
+					"signatures": [
+						{
+							"id": 62,
+							"name": "onModuleInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"qualifiedName": "Promise",
+								"package": "typescript"
+							},
+							"implementationOf": {
+								"type": "reference",
+								"name": "OnModuleInit.onModuleInit"
+							}
+						}
+					],
+					"implementationOf": {
+						"type": "reference",
+						"name": "OnModuleInit.onModuleInit"
+					}
+				},
+				{
+					"id": 63,
+					"name": "initClient",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 22,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 64,
+							"name": "initClient",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 65,
+									"name": "adapter",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "query",
+										"queryType": {
+											"type": "reference",
+											"name": "Redis",
+											"qualifiedName": "Redis",
+											"package": "ioredis"
+										}
+									},
+									"defaultValue": "..."
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 66,
+					"name": "createChild",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 26,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 67,
+							"name": "createChild",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 54,
+								"name": "RedisStoreService"
+							}
+						}
+					]
+				},
+				{
+					"id": 68,
+					"name": "createTopic",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+							"line": 36,
+							"character": 9
+						}
+					],
+					"signatures": [
+						{
+							"id": 69,
+							"name": "createTopic",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 70,
+									"name": "topic",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 71,
+									"name": "extensions",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isRest": true
+									},
+									"type": {
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						58,
+						59,
+						60
+					]
+				},
+				{
+					"title": "Constructors",
+					"children": [
+						55
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						61,
+						63,
+						66,
+						68
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "packages/nestjs-redis-store/src/store/redis-store.service.ts",
+					"line": 8,
+					"character": 13
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnModuleInit",
+					"qualifiedName": "OnModuleInit",
+					"package": "@nestjs/common"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Functions",
+			"children": [
+				1,
+				34
+			]
+		},
+		{
+			"title": "Variables",
+			"children": [
+				9,
+				42,
+				43
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				10,
+				44
+			]
+		},
+		{
+			"title": "Classes",
+			"children": [
+				14,
+				20,
+				48,
+				54
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "packages/nestjs-redis-store/src/index.ts",
+			"line": 1,
+			"character": 0
+		}
+	]
 }

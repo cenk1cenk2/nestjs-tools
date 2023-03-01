@@ -18,7 +18,7 @@
 
 #### Defined in
 
-om/redis-om.module.ts:20
+packages/nestjs-redis-store/src/om/redis-om.module.ts:11
 
 ## Constructors
 

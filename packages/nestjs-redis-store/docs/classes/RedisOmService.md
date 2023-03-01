@@ -13,9 +13,9 @@
 
 #### Defined in
 
-om/redis-om.service.ts:9
+packages/nestjs-redis-store/src/om/redis-om.service.ts:9
 
----
+___
 
 ### logger
 
@@ -23,9 +23,9 @@ om/redis-om.service.ts:9
 
 #### Defined in
 
-om/redis-om.service.ts:10
+packages/nestjs-redis-store/src/om/redis-om.service.ts:10
 
----
+___
 
 ### keepAliveRef
 
@@ -33,9 +33,9 @@ om/redis-om.service.ts:10
 
 #### Defined in
 
-om/redis-om.service.ts:11
+packages/nestjs-redis-store/src/om/redis-om.service.ts:11
 
----
+___
 
 ### options
 
@@ -43,7 +43,7 @@ om/redis-om.service.ts:11
 
 #### Defined in
 
-om/redis-om.service.ts:13
+packages/nestjs-redis-store/src/om/redis-om.service.ts:13
 
 ## Constructors
 
@@ -53,13 +53,13 @@ om/redis-om.service.ts:13
 
 #### Parameters
 
-| Name      | Type                                                            |
-| :-------- | :-------------------------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `options` | [`RedisOmModuleOptions`](../interfaces/RedisOmModuleOptions.md) |
 
 #### Defined in
 
-om/redis-om.service.ts:13
+packages/nestjs-redis-store/src/om/redis-om.service.ts:13
 
 ## Methods
 
@@ -77,9 +77,9 @@ OnModuleInit.onModuleInit
 
 #### Defined in
 
-om/redis-om.service.ts:20
+packages/nestjs-redis-store/src/om/redis-om.service.ts:20
 
----
+___
 
 ### open
 
@@ -91,9 +91,9 @@ om/redis-om.service.ts:20
 
 #### Defined in
 
-om/redis-om.service.ts:36
+packages/nestjs-redis-store/src/om/redis-om.service.ts:36
 
----
+___
 
 ### onModuleDestroy
 
@@ -109,4 +109,4 @@ OnModuleDestroy.onModuleDestroy
 
 #### Defined in
 
-om/redis-om.service.ts:40
+packages/nestjs-redis-store/src/om/redis-om.service.ts:40
