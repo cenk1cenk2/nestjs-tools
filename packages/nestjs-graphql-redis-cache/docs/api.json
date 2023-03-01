@@ -14,9 +14,9 @@
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "decorator/inject.decorator.ts",
+					"fileName": "packages/nestjs-graphql-redis-cache/src/decorator/inject.decorator.ts",
 					"line": 3,
-					"character": 16
+					"character": 13
 				}
 			],
 			"signatures": [
@@ -26,54 +26,136 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+							},
+							{
+								"kind": "code",
+								"text": "`@Global()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`@Injectable()`"
+							},
+							{
+								"kind": "text",
+								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Providers](https://docs.nestjs.com/providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									},
+									{
+										"kind": "text",
+										"text": " - "
+									},
+									{
+										"kind": "text",
+										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+									},
+									{
+										"kind": "text",
+										"text": "\n"
+									}
+								]
+							},
+							{
+								"tag": "@publicApi",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 3,
+							"name": "token",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
+									}
+								]
+							},
+							"type": {
+								"type": "literal",
+								"value": "CACHE_MANAGER"
+							}
+						}
+					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 3,
+							"id": 4,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"sources": [
 								{
-									"fileName": "decorator/inject.decorator.ts",
-									"line": 3,
-									"character": 44
+									"fileName": "node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts",
+									"line": 30,
+									"character": 52
 								}
 							],
 							"signatures": [
 								{
-									"id": 4,
+									"id": 5,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 5,
+											"id": 6,
 											"name": "target",
 											"kind": 32768,
 											"kindString": "Parameter",
 											"flags": {},
 											"type": {
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "string"
-													},
-													{
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												],
-												"name": "Record",
-												"qualifiedName": "Record",
-												"package": "typescript"
+												"type": "intrinsic",
+												"name": "object"
 											}
 										},
 										{
-											"id": 6,
+											"id": 7,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -88,12 +170,16 @@
 													{
 														"type": "intrinsic",
 														"name": "symbol"
+													},
+													{
+														"type": "intrinsic",
+														"name": "undefined"
 													}
 												]
 											}
 										},
 										{
-											"id": 7,
+											"id": 8,
 											"name": "index",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -118,14 +204,14 @@
 			]
 		},
 		{
-			"id": 18,
+			"id": 19,
 			"name": "RedisCacheManagerGraphlQLInterceptor",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 23,
+					"id": 24,
 					"name": "logger",
 					"kind": 1024,
 					"kindString": "Property",
@@ -134,7 +220,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 15,
 							"character": 10
 						}
@@ -148,40 +234,40 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 19,
+					"id": 20,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 17,
 							"character": 2
 						}
 					],
 					"signatures": [
 						{
-							"id": 20,
+							"id": 21,
 							"name": "new RedisCacheManagerGraphlQLInterceptor",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 21,
+									"id": 22,
 									"name": "cache",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 14,
+										"id": 15,
 										"name": "RedisCacheManagerProvider"
 									}
 								},
 								{
-									"id": 22,
+									"id": 23,
 									"name": "reflector",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -196,14 +282,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 18,
+								"id": 19,
 								"name": "RedisCacheManagerGraphlQLInterceptor"
 							}
 						}
 					]
 				},
 				{
-					"id": 24,
+					"id": 25,
 					"name": "cache",
 					"kind": 1024,
 					"kindString": "Property",
@@ -212,19 +298,19 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 17,
 							"character": 50
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 14,
+						"id": 15,
 						"name": "RedisCacheManagerProvider"
 					}
 				},
 				{
-					"id": 25,
+					"id": 26,
 					"name": "reflector",
 					"kind": 1024,
 					"kindString": "Property",
@@ -234,7 +320,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 17,
 							"character": 103
 						}
@@ -247,7 +333,7 @@
 					}
 				},
 				{
-					"id": 26,
+					"id": 27,
 					"name": "intercept",
 					"kind": 2048,
 					"kindString": "Method",
@@ -256,21 +342,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 19,
 							"character": 15
 						}
 					],
 					"signatures": [
 						{
-							"id": 27,
+							"id": 28,
 							"name": "intercept",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 28,
+									"id": 29,
 									"name": "context",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -283,7 +369,7 @@
 									}
 								},
 								{
-									"id": 29,
+									"id": 30,
 									"name": "next",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -334,7 +420,7 @@
 					}
 				},
 				{
-					"id": 30,
+					"id": 31,
 					"name": "createTopic",
 					"kind": 2048,
 					"kindString": "Method",
@@ -343,21 +429,21 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interceptor.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 							"line": 40,
 							"character": 9
 						}
 					],
 					"signatures": [
 						{
-							"id": 31,
+							"id": 32,
 							"name": "createTopic",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 32,
+									"id": 33,
 									"name": "pattern",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -368,7 +454,7 @@
 									}
 								},
 								{
-									"id": 33,
+									"id": 34,
 									"name": "extensions",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -403,28 +489,28 @@
 				{
 					"title": "Properties",
 					"children": [
-						23,
 						24,
-						25
+						25,
+						26
 					]
 				},
 				{
 					"title": "Constructors",
 					"children": [
-						19
+						20
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						26,
-						30
+						27,
+						31
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-cache-manager.interceptor.ts",
+					"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts",
 					"line": 14,
 					"character": 13
 				}
@@ -439,14 +525,14 @@
 			]
 		},
 		{
-			"id": 14,
+			"id": 15,
 			"name": "RedisCacheManagerProvider",
 			"kind": 4194304,
 			"kindString": "Type alias",
 			"flags": {},
 			"sources": [
 				{
-					"fileName": "redis-cache-manager.interface.ts",
+					"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts",
 					"line": 3,
 					"character": 12
 				}
@@ -459,14 +545,14 @@
 			}
 		},
 		{
-			"id": 15,
+			"id": 16,
 			"name": "RedisCacheManagerOptions",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 16,
+					"id": 17,
 					"name": "global",
 					"kind": 1024,
 					"kindString": "Property",
@@ -475,7 +561,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interface.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts",
 							"line": 6,
 							"character": 2
 						}
@@ -486,7 +572,7 @@
 					}
 				},
 				{
-					"id": 17,
+					"id": 18,
 					"name": "options",
 					"kind": 1024,
 					"kindString": "Property",
@@ -495,7 +581,7 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.interface.ts",
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts",
 							"line": 7,
 							"character": 2
 						}
@@ -512,28 +598,28 @@
 				{
 					"title": "Properties",
 					"children": [
-						16,
-						17
+						17,
+						18
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-cache-manager.interface.ts",
+					"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts",
 					"line": 5,
 					"character": 17
 				}
 			]
 		},
 		{
-			"id": 8,
+			"id": 9,
 			"name": "RedisCacheManagerModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 9,
+					"id": 10,
 					"name": "forRoot",
 					"kind": 2048,
 					"kindString": "Method",
@@ -543,28 +629,28 @@
 					},
 					"sources": [
 						{
-							"fileName": "redis-cache-manager.module.ts",
-							"line": 19,
+							"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.module.ts",
+							"line": 10,
 							"character": 16
 						}
 					],
 					"signatures": [
 						{
-							"id": 10,
+							"id": 11,
 							"name": "forRoot",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 11,
+									"id": 12,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 15,
+										"id": 16,
 										"name": "RedisCacheManagerOptions"
 									}
 								}
@@ -579,21 +665,21 @@
 					]
 				},
 				{
-					"id": 12,
+					"id": 13,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 13,
+							"id": 14,
 							"name": "new RedisCacheManagerModule",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 8,
+								"id": 9,
 								"name": "RedisCacheManagerModule"
 							}
 						}
@@ -604,20 +690,20 @@
 				{
 					"title": "Methods",
 					"children": [
-						9
+						10
 					]
 				},
 				{
 					"title": "Constructors",
 					"children": [
-						12
+						13
 					]
 				}
 			],
 			"sources": [
 				{
-					"fileName": "redis-cache-manager.module.ts",
-					"line": 18,
+					"fileName": "packages/nestjs-graphql-redis-cache/src/redis-cache-manager.module.ts",
+					"line": 9,
 					"character": 13
 				}
 			]
@@ -633,26 +719,26 @@
 		{
 			"title": "Classes",
 			"children": [
-				18,
-				8
+				19,
+				9
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				14
+				15
 			]
 		},
 		{
 			"title": "Interfaces",
 			"children": [
-				15
+				16
 			]
 		}
 	],
 	"sources": [
 		{
-			"fileName": "index.ts",
+			"fileName": "packages/nestjs-graphql-redis-cache/src/index.ts",
 			"line": 1,
 			"character": 0
 		}

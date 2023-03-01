@@ -8,7 +8,7 @@
 
 #### Defined in
 
-redis-cache-manager.interface.ts:6
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts:6
 
 ___
 
@@ -18,4 +18,4 @@ ___
 
 #### Defined in
 
-redis-cache-manager.interface.ts:7
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts:7

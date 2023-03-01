@@ -12,7 +12,7 @@
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:15
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:15
 
 ___
 
@@ -22,7 +22,7 @@ ___
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:17
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:17
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:17
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:17
 
 ## Constructors
 
@@ -49,7 +49,7 @@ redis-cache-manager.interceptor.ts:17
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:17
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:17
 
 ## Methods
 
@@ -74,7 +74,7 @@ NestInterceptor.intercept
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:19
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:19
 
 ___
 
@@ -95,4 +95,4 @@ ___
 
 #### Defined in
 
-redis-cache-manager.interceptor.ts:40
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interceptor.ts:40

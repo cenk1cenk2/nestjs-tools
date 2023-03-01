@@ -4,4 +4,4 @@
 
 #### Defined in
 
-redis-cache-manager.interface.ts:3
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.interface.ts:3

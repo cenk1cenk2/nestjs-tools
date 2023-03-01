@@ -18,7 +18,7 @@
 
 #### Defined in
 
-redis-cache-manager.module.ts:19
+packages/nestjs-graphql-redis-cache/src/redis-cache-manager.module.ts:10
 
 ## Constructors
 
