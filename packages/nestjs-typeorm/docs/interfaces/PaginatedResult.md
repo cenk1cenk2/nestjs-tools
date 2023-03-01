@@ -16,14 +16,14 @@ Pagination result for typing the functions.
 
 #### Defined in
 
-interfaces/pagination.interface.ts:7
+interfaces/pagination.interface.ts:31
 
 ___
 
 ### pagination
 
-• **pagination**: `PaginationOutputDto`
+• **pagination**: [`PaginationOutputDto`](PaginationOutputDto.md)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:8
+interfaces/pagination.interface.ts:32

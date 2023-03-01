@@ -8,6 +8,257 @@
 	"children": [
 		{
 			"id": 1,
+			"name": "PaginationOutputDto",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Output type for pagination."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@export",
+						"content": []
+					},
+					{
+						"tag": "@interface",
+						"content": [
+							{
+								"kind": "text",
+								"text": "PaginationOutputDto"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "total",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Total number of items"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 10,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 3,
+					"name": "limit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Limit the number of items per page."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 21,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 6,
+						"name": "PaginationInputDto.limit"
+					}
+				},
+				{
+					"id": 4,
+					"name": "page",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get page number"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 24,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"id": 7,
+						"name": "PaginationInputDto.page"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 8,
+					"character": 17
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"id": 5,
+					"name": "PaginationInputDto"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "PaginationInputDto",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Input type for pagination."
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@export",
+						"content": []
+					},
+					{
+						"tag": "@interface",
+						"content": [
+							{
+								"kind": "text",
+								"text": "PaginationInputDto"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 6,
+					"name": "limit",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Limit the number of items per page."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 21,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 7,
+					"name": "page",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Get page number"
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "interfaces/pagination.interface.ts",
+							"line": 24,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						6,
+						7
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "interfaces/pagination.interface.ts",
+					"line": 19,
+					"character": 17
+				}
+			],
+			"extendedBy": [
+				{
+					"type": "reference",
+					"id": 1,
+					"name": "PaginationOutputDto"
+				}
+			]
+		},
+		{
+			"id": 8,
 			"name": "PaginatedResult",
 			"kind": 256,
 			"kindString": "Interface",
@@ -22,7 +273,7 @@
 			},
 			"children": [
 				{
-					"id": 2,
+					"id": 9,
 					"name": "result",
 					"kind": 1024,
 					"kindString": "Property",
@@ -30,7 +281,7 @@
 					"sources": [
 						{
 							"fileName": "interfaces/pagination.interface.ts",
-							"line": 7,
+							"line": 31,
 							"character": 2
 						}
 					],
@@ -38,13 +289,13 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 4,
+							"id": 11,
 							"name": "T"
 						}
 					}
 				},
 				{
-					"id": 3,
+					"id": 10,
 					"name": "pagination",
 					"kind": 1024,
 					"kindString": "Property",
@@ -52,15 +303,14 @@
 					"sources": [
 						{
 							"fileName": "interfaces/pagination.interface.ts",
-							"line": 8,
+							"line": 32,
 							"character": 2
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "PaginationOutputDto",
-						"qualifiedName": "PaginationOutputDto",
-						"package": "@cenk1cenk2/nestjs-utils"
+						"id": 1,
+						"name": "PaginationOutputDto"
 					}
 				}
 			],
@@ -68,21 +318,21 @@
 				{
 					"title": "Properties",
 					"children": [
-						2,
-						3
+						9,
+						10
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "interfaces/pagination.interface.ts",
-					"line": 6,
+					"line": 30,
 					"character": 17
 				}
 			],
 			"typeParameters": [
 				{
-					"id": 4,
+					"id": 11,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -91,7 +341,7 @@
 			]
 		},
 		{
-			"id": 5,
+			"id": 12,
 			"name": "findPaginatedResult",
 			"kind": 64,
 			"kindString": "Function",
@@ -99,13 +349,13 @@
 			"sources": [
 				{
 					"fileName": "utils/pagination.util.ts",
-					"line": 10,
+					"line": 9,
 					"character": 22
 				}
 			],
 			"signatures": [
 				{
-					"id": 6,
+					"id": 13,
 					"name": "findPaginatedResult",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -120,7 +370,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 7,
+							"id": 14,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -129,7 +379,7 @@
 					],
 					"parameters": [
 						{
-							"id": 8,
+							"id": 15,
 							"name": "repository",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -139,7 +389,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 7,
+										"id": 14,
 										"name": "T"
 									}
 								],
@@ -149,20 +399,19 @@
 							}
 						},
 						{
-							"id": 9,
+							"id": 16,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"name": "PaginationInputDto",
-								"qualifiedName": "PaginationInputDto",
-								"package": "@cenk1cenk2/nestjs-utils"
+								"id": 5,
+								"name": "PaginationInputDto"
 							}
 						},
 						{
-							"id": 10,
+							"id": 17,
 							"name": "options",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -174,7 +423,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 7,
+										"id": 14,
 										"name": "T"
 									}
 								],
@@ -189,11 +438,11 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 1,
+								"id": 8,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 7,
+										"id": 14,
 										"name": "T"
 									}
 								],
@@ -208,7 +457,7 @@
 			]
 		},
 		{
-			"id": 11,
+			"id": 18,
 			"name": "getManyPaginatedResult",
 			"kind": 64,
 			"kindString": "Function",
@@ -216,13 +465,13 @@
 			"sources": [
 				{
 					"fileName": "utils/pagination.util.ts",
-					"line": 28,
+					"line": 27,
 					"character": 22
 				}
 			],
 			"signatures": [
 				{
-					"id": 12,
+					"id": 19,
 					"name": "getManyPaginatedResult",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -237,7 +486,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 13,
+							"id": 20,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -246,7 +495,7 @@
 					],
 					"parameters": [
 						{
-							"id": 14,
+							"id": 21,
 							"name": "queryBuilder",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -256,7 +505,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 13,
+										"id": 20,
 										"name": "T"
 									}
 								],
@@ -266,16 +515,15 @@
 							}
 						},
 						{
-							"id": 15,
+							"id": 22,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"name": "PaginationInputDto",
-								"qualifiedName": "PaginationInputDto",
-								"package": "@cenk1cenk2/nestjs-utils"
+								"id": 5,
+								"name": "PaginationInputDto"
 							}
 						}
 					],
@@ -284,11 +532,11 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 1,
+								"id": 8,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 13,
+										"id": 20,
 										"name": "T"
 									}
 								],
@@ -303,7 +551,7 @@
 			]
 		},
 		{
-			"id": 16,
+			"id": 23,
 			"name": "paginateResult",
 			"kind": 64,
 			"kindString": "Function",
@@ -311,13 +559,13 @@
 			"sources": [
 				{
 					"fileName": "utils/pagination.util.ts",
-					"line": 45,
+					"line": 44,
 					"character": 16
 				}
 			],
 			"signatures": [
 				{
-					"id": 17,
+					"id": 24,
 					"name": "paginateResult",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -332,7 +580,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 18,
+							"id": 25,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -341,7 +589,7 @@
 					],
 					"parameters": [
 						{
-							"id": 19,
+							"id": 26,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -351,21 +599,20 @@
 								"types": [
 									{
 										"type": "reference",
-										"name": "PaginationOutputDto",
-										"qualifiedName": "PaginationOutputDto",
-										"package": "@cenk1cenk2/nestjs-utils"
+										"id": 1,
+										"name": "PaginationOutputDto"
 									},
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 20,
+											"id": 27,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 21,
+													"id": 28,
 													"name": "result",
 													"kind": 1024,
 													"kindString": "Property",
@@ -373,7 +620,7 @@
 													"sources": [
 														{
 															"fileName": "utils/pagination.util.ts",
-															"line": 45,
+															"line": 44,
 															"character": 91
 														}
 													],
@@ -381,7 +628,7 @@
 														"type": "array",
 														"elementType": {
 															"type": "reference",
-															"id": 18,
+															"id": 25,
 															"name": "T"
 														}
 													}
@@ -391,14 +638,14 @@
 												{
 													"title": "Properties",
 													"children": [
-														21
+														28
 													]
 												}
 											],
 											"sources": [
 												{
 													"fileName": "utils/pagination.util.ts",
-													"line": 45,
+													"line": 44,
 													"character": 89
 												}
 											]
@@ -410,11 +657,11 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1,
+						"id": 8,
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 18,
+								"id": 25,
 								"name": "T"
 							}
 						],
@@ -428,15 +675,17 @@
 		{
 			"title": "Interfaces",
 			"children": [
-				1
+				1,
+				5,
+				8
 			]
 		},
 		{
 			"title": "Functions",
 			"children": [
-				5,
-				11,
-				16
+				12,
+				18,
+				23
 			]
 		}
 	],

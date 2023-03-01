@@ -1,6 +1,6 @@
 # Function: getManyPaginatedResult
 
-▸ **getManyPaginatedResult**<`T`\>(`queryBuilder`, `__namedParameters`): `Promise`<[`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>\>
+▸ **getManyPaginatedResult**<`T`\>(`queryBuilder`, `«destructured»`): `Promise`<[`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>\>
 
 Find a paginated result via typeorm with get many and count.
 
@@ -15,7 +15,7 @@ Find a paginated result via typeorm with get many and count.
 | Name | Type |
 | :------ | :------ |
 | `queryBuilder` | `SelectQueryBuilder`<`T`\> |
-| `__namedParameters` | `PaginationInputDto` |
+| `«destructured»` | [`PaginationInputDto`](../interfaces/PaginationInputDto.md) |
 
 #### Returns
 
@@ -23,4 +23,4 @@ Find a paginated result via typeorm with get many and count.
 
 #### Defined in
 
-utils/pagination.util.ts:28
+utils/pagination.util.ts:27

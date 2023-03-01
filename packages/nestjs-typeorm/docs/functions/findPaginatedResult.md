@@ -1,6 +1,6 @@
 # Function: findPaginatedResult
 
-▸ **findPaginatedResult**<`T`\>(`repository`, `__namedParameters`, `options?`): `Promise`<[`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>\>
+▸ **findPaginatedResult**<`T`\>(`repository`, `«destructured»`, `options?`): `Promise`<[`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>\>
 
 Find a paginated result via typeorm with find and count.
 
@@ -15,7 +15,7 @@ Find a paginated result via typeorm with find and count.
 | Name | Type |
 | :------ | :------ |
 | `repository` | `Repository`<`T`\> |
-| `__namedParameters` | `PaginationInputDto` |
+| `«destructured»` | [`PaginationInputDto`](../interfaces/PaginationInputDto.md) |
 | `options?` | `FindManyOptions`<`T`\> |
 
 #### Returns
@@ -24,4 +24,4 @@ Find a paginated result via typeorm with find and count.
 
 #### Defined in
 
-utils/pagination.util.ts:10
+utils/pagination.util.ts:9

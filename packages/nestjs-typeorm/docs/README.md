@@ -2,6 +2,8 @@
 
 ## Interfaces
 
+- [PaginationOutputDto](interfaces/PaginationOutputDto.md)
+- [PaginationInputDto](interfaces/PaginationInputDto.md)
 - [PaginatedResult](interfaces/PaginatedResult.md)
 
 ## Functions

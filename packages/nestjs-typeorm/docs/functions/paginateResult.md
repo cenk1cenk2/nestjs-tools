@@ -1,6 +1,6 @@
 # Function: paginateResult
 
-▸ **paginateResult**<`T`\>(`__namedParameters`): [`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>
+▸ **paginateResult**<`T`\>(`«destructured»`): [`PaginatedResult`](../interfaces/PaginatedResult.md)<`T`\>
 
 Paginate an existing result.
 
@@ -14,7 +14,7 @@ Paginate an existing result.
 
 | Name | Type |
 | :------ | :------ |
-| `__namedParameters` | `PaginationOutputDto` & { `result`: `T`[]  } |
+| `«destructured»` | [`PaginationOutputDto`](../interfaces/PaginationOutputDto.md) & { `result`: `T`[]  } |
 
 #### Returns
 
@@ -22,4 +22,4 @@ Paginate an existing result.
 
 #### Defined in
 
-utils/pagination.util.ts:45
+utils/pagination.util.ts:44
