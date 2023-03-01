@@ -1,8 +1,16 @@
 # Class: PaginationArgsInput
 
+Input type for pagination.
+
+**`Export`**
+
+**`Interface`**
+
+PaginationInputDto
+
 ## Implements
 
-- `PaginationInputDto`
+- [`PaginationInputDto`](../interfaces/PaginationInputDto.md)
 
 ## Constructors
 
@@ -16,13 +24,15 @@
 
 • **limit**: `number`
 
+Limit the number of items per page.
+
 #### Implementation of
 
-PaginationInputDto.limit
+[PaginationInputDto](../interfaces/PaginationInputDto.md).[limit](../interfaces/PaginationInputDto.md#limit)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:14
+interfaces/pagination.interface.ts:46
 
 ___
 
@@ -30,10 +40,12 @@ ___
 
 • **page**: `number`
 
+Get page number
+
 #### Implementation of
 
-PaginationInputDto.page
+[PaginationInputDto](../interfaces/PaginationInputDto.md).[page](../interfaces/PaginationInputDto.md#page)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:20
+interfaces/pagination.interface.ts:52

@@ -22,4 +22,4 @@ Paginate given output interface for graphql.
 
 #### Defined in
 
-interfaces/pagination.interface.ts:50
+interfaces/pagination.interface.ts:82

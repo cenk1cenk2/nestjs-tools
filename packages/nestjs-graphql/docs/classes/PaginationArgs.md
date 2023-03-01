@@ -16,4 +16,4 @@ Input arguments for doing a pagination on multiple entries.
 
 #### Defined in
 
-interfaces/pagination.interface.ts:31
+interfaces/pagination.interface.ts:63

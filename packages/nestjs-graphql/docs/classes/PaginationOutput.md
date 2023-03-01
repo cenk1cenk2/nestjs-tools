@@ -1,8 +1,16 @@
 # Class: PaginationOutput
 
+Output type for pagination.
+
+**`Export`**
+
+**`Interface`**
+
+PaginationOutputDto
+
 ## Implements
 
-- `PaginationOutputDto`
+- [`PaginationOutputDto`](../interfaces/PaginationOutputDto.md)
 
 ## Constructors
 
@@ -16,13 +24,15 @@
 
 • **limit**: `number`
 
+Limit the number of items per page.
+
 #### Implementation of
 
-PaginationOutputDto.limit
+[PaginationOutputDto](../interfaces/PaginationOutputDto.md).[limit](../interfaces/PaginationOutputDto.md#limit)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:37
+interfaces/pagination.interface.ts:69
 
 ___
 
@@ -30,13 +40,15 @@ ___
 
 • **page**: `number`
 
+Get page number
+
 #### Implementation of
 
-PaginationOutputDto.page
+[PaginationOutputDto](../interfaces/PaginationOutputDto.md).[page](../interfaces/PaginationOutputDto.md#page)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:40
+interfaces/pagination.interface.ts:72
 
 ___
 
@@ -44,10 +56,12 @@ ___
 
 • **total**: `number`
 
+Total number of items
+
 #### Implementation of
 
-PaginationOutputDto.total
+[PaginationOutputDto](../interfaces/PaginationOutputDto.md).[total](../interfaces/PaginationOutputDto.md#total)
 
 #### Defined in
 
-interfaces/pagination.interface.ts:43
+interfaces/pagination.interface.ts:75
