@@ -1,3 +1,11 @@
+## @cenk1cenk2/nestjs-graphql-redis-pubsub [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.0...@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* fix issues with esbuild ([87ab352](https://github.com/cenk1cenk2/nestjs-tools/commit/87ab3520bd52a3d870f940f2c42f619dcba92ac0))
+* infer types ([f58e9d9](https://github.com/cenk1cenk2/nestjs-tools/commit/f58e9d9bbb84a4ae9ea7d1487d71ba5bb1e7968f))
+
 # @cenk1cenk2/nestjs-graphql-redis-pubsub [3.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@2.0.3...@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.0) (2023-03-01)
 
 
