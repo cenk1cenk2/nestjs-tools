@@ -2,6 +2,6 @@ import { Inject } from '@nestjs/common'
 
 import { EventManager } from '../event-manager.service'
 
-export const InjectEventManagerService: typeof Inject<typeof EventManager> = () => {
+export function InjectEventManagerService (): PropertyDecorator {
   return Inject(EventManager)
 }
