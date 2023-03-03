@@ -1,6 +1,12 @@
 # Function: InjectEventManagerService
 
-▸ **InjectEventManagerService**(`token?`): (`target`: `object`, `key`: `string` \| `symbol` \| `undefined`, `index?`: `number`) => `void`
+▸ **InjectEventManagerService**(): (`target`: `object`, `key`: `string` \| `symbol`, `index?`: `number`) => `void`
+
+#### Returns
+
+`fn`
+
+▸ (`target`, `key`, `index?`): `void`
 
 Decorator that marks a constructor parameter as a target for
 [Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).
@@ -29,24 +35,12 @@ or symbols as the injection token.
 
 **`Public Api`**
 
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `token?` | typeof [`EventManager`](../classes/EventManager.md) | lookup key for the provider to be injected (assigned to the constructor parameter). |
-
-#### Returns
-
-`fn`
-
-▸ (`target`, `key`, `index?`): `void`
-
 ##### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `target` | `object` |
-| `key` | `string` \| `symbol` \| `undefined` |
+| `key` | `string` \| `symbol` |
 | `index?` | `number` |
 
 ##### Returns
@@ -55,4 +49,4 @@ or symbols as the injection token.
 
 #### Defined in
 
-node_modules/@nestjs/common/decorators/core/inject.decorator.d.ts:30
+packages/nestjs-emitter/src/event-manager/decorators/inject.decorator.ts:6

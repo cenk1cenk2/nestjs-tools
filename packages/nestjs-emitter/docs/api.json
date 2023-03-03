@@ -3037,8 +3037,8 @@
 			"sources": [
 				{
 					"fileName": "packages/nestjs-emitter/src/event-manager/decorators/inject.decorator.ts",
-					"line": 5,
-					"character": 13
+					"line": 6,
+					"character": 16
 				}
 			],
 			"signatures": [
@@ -3048,108 +3048,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
-					"comment": {
-						"summary": [
-							{
-								"kind": "text",
-								"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
-							},
-							{
-								"kind": "code",
-								"text": "`@Global()`"
-							},
-							{
-								"kind": "text",
-								"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
-							},
-							{
-								"kind": "code",
-								"text": "`@Injectable()`"
-							},
-							{
-								"kind": "text",
-								"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
-							}
-						],
-						"blockTags": [
-							{
-								"tag": "@see",
-								"content": [
-									{
-										"kind": "text",
-										"text": " - "
-									},
-									{
-										"kind": "text",
-										"text": "[Providers](https://docs.nestjs.com/providers)"
-									},
-									{
-										"kind": "text",
-										"text": "\n"
-									},
-									{
-										"kind": "text",
-										"text": " - "
-									},
-									{
-										"kind": "text",
-										"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
-									},
-									{
-										"kind": "text",
-										"text": "\n"
-									},
-									{
-										"kind": "text",
-										"text": " - "
-									},
-									{
-										"kind": "text",
-										"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
-									},
-									{
-										"kind": "text",
-										"text": "\n"
-									}
-								]
-							},
-							{
-								"tag": "@publicApi",
-								"content": []
-							}
-						]
-					},
-					"parameters": [
-						{
-							"id": 143,
-							"name": "token",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isOptional": true
-							},
-							"comment": {
-								"summary": [
-									{
-										"kind": "text",
-										"text": "lookup key for the provider to be injected (assigned to the constructor\nparameter)."
-									}
-								]
-							},
-							"type": {
-								"type": "query",
-								"queryType": {
-									"type": "reference",
-									"id": 181,
-									"name": "EventManager"
-								}
-							}
-						}
-					],
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 144,
+							"id": 143,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3163,14 +3065,85 @@
 							],
 							"signatures": [
 								{
-									"id": 145,
+									"id": 144,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "Decorator that marks a constructor parameter as a target for\n[Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection).\n\nAny injected provider must be visible within the module scope (loosely\nspeaking, the containing module) of the class it is being injected into. This\ncan be done by:\n\n- defining the provider in the same module scope\n- exporting the provider from one module scope and importing that module into the\n  module scope of the class being injected into\n- exporting the provider from a module that is marked as global using the\n  "
+											},
+											{
+												"kind": "code",
+												"text": "`@Global()`"
+											},
+											{
+												"kind": "text",
+												"text": " decorator\n\n#### Injection tokens\nCan be *types* (class names), *strings* or *symbols*. This depends on how the\nprovider with which it is associated was defined. Providers defined with the\n"
+											},
+											{
+												"kind": "code",
+												"text": "`@Injectable()`"
+											},
+											{
+												"kind": "text",
+												"text": " decorator use the class name. Custom Providers may use strings\nor symbols as the injection token."
+											}
+										],
+										"blockTags": [
+											{
+												"tag": "@see",
+												"content": [
+													{
+														"kind": "text",
+														"text": " - "
+													},
+													{
+														"kind": "text",
+														"text": "[Providers](https://docs.nestjs.com/providers)"
+													},
+													{
+														"kind": "text",
+														"text": "\n"
+													},
+													{
+														"kind": "text",
+														"text": " - "
+													},
+													{
+														"kind": "text",
+														"text": "[Custom Providers](https://docs.nestjs.com/fundamentals/custom-providers)"
+													},
+													{
+														"kind": "text",
+														"text": "\n"
+													},
+													{
+														"kind": "text",
+														"text": " - "
+													},
+													{
+														"kind": "text",
+														"text": "[Injection Scopes](https://docs.nestjs.com/fundamentals/injection-scopes)"
+													},
+													{
+														"kind": "text",
+														"text": "\n"
+													}
+												]
+											},
+											{
+												"tag": "@publicApi",
+												"content": []
+											}
+										]
+									},
 									"parameters": [
 										{
-											"id": 146,
+											"id": 145,
 											"name": "target",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3181,7 +3154,7 @@
 											}
 										},
 										{
-											"id": 147,
+											"id": 146,
 											"name": "key",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3196,16 +3169,12 @@
 													{
 														"type": "intrinsic",
 														"name": "symbol"
-													},
-													{
-														"type": "intrinsic",
-														"name": "undefined"
 													}
 												]
 											}
 										},
 										{
-											"id": 148,
+											"id": 147,
 											"name": "index",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3230,7 +3199,7 @@
 			]
 		},
 		{
-			"id": 149,
+			"id": 148,
 			"name": "EventDefinition",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3256,14 +3225,14 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 150,
+							"id": 149,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"children": [
 								{
-									"id": 151,
+									"id": 150,
 									"name": "request",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3283,7 +3252,7 @@
 									}
 								},
 								{
-									"id": 152,
+									"id": 151,
 									"name": "response",
 									"kind": 1024,
 									"kindString": "Property",
@@ -3307,8 +3276,8 @@
 								{
 									"title": "Properties",
 									"children": [
-										151,
-										152
+										150,
+										151
 									]
 								}
 							],
@@ -3324,7 +3293,7 @@
 					{
 						"type": "reflection",
 						"declaration": {
-							"id": 153,
+							"id": 152,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3338,14 +3307,14 @@
 							],
 							"signatures": [
 								{
-									"id": 154,
+									"id": 153,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 155,
+											"id": 154,
 											"name": "request",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3370,7 +3339,7 @@
 			}
 		},
 		{
-			"id": 156,
+			"id": 155,
 			"name": "EventRequest",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3392,7 +3361,7 @@
 			],
 			"typeParameters": [
 				{
-					"id": 163,
+					"id": 162,
 					"name": "Event",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -3403,7 +3372,7 @@
 					}
 				},
 				{
-					"id": 164,
+					"id": 163,
 					"name": "Map",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -3417,7 +3386,7 @@
 							},
 							{
 								"type": "reference",
-								"id": 149,
+								"id": 148,
 								"name": "EventDefinition"
 							}
 						],
@@ -3431,7 +3400,7 @@
 				"type": "conditional",
 				"checkType": {
 					"type": "reference",
-					"id": 163,
+					"id": 162,
 					"name": "Event"
 				},
 				"extendsType": {
@@ -3439,7 +3408,7 @@
 					"operator": "keyof",
 					"target": {
 						"type": "reference",
-						"id": 164,
+						"id": 163,
 						"name": "Map"
 					}
 				},
@@ -3449,19 +3418,19 @@
 						"type": "indexedAccess",
 						"indexType": {
 							"type": "reference",
-							"id": 163,
+							"id": 162,
 							"name": "Event"
 						},
 						"objectType": {
 							"type": "reference",
-							"id": 164,
+							"id": 163,
 							"name": "Map"
 						}
 					},
 					"extendsType": {
 						"type": "reflection",
 						"declaration": {
-							"id": 157,
+							"id": 156,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3475,14 +3444,14 @@
 							],
 							"signatures": [
 								{
-									"id": 158,
+									"id": 157,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 159,
+											"id": 158,
 											"name": "request",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3509,19 +3478,19 @@
 							"type": "indexedAccess",
 							"indexType": {
 								"type": "reference",
-								"id": 163,
+								"id": 162,
 								"name": "Event"
 							},
 							"objectType": {
 								"type": "reference",
-								"id": 164,
+								"id": 163,
 								"name": "Map"
 							}
 						},
 						"extendsType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 160,
+								"id": 159,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
@@ -3535,14 +3504,14 @@
 								],
 								"signatures": [
 									{
-										"id": 161,
+										"id": 160,
 										"name": "__type",
 										"kind": 4096,
 										"kindString": "Call signature",
 										"flags": {},
 										"parameters": [
 											{
-												"id": 162,
+												"id": 161,
 												"name": "request",
 												"kind": 32768,
 												"kindString": "Parameter",
@@ -3585,12 +3554,12 @@
 								"type": "indexedAccess",
 								"indexType": {
 									"type": "reference",
-									"id": 163,
+									"id": 162,
 									"name": "Event"
 								},
 								"objectType": {
 									"type": "reference",
-									"id": 164,
+									"id": 163,
 									"name": "Map"
 								}
 							}
@@ -3605,12 +3574,12 @@
 								"type": "indexedAccess",
 								"indexType": {
 									"type": "reference",
-									"id": 163,
+									"id": 162,
 									"name": "Event"
 								},
 								"objectType": {
 									"type": "reference",
-									"id": 164,
+									"id": 163,
 									"name": "Map"
 								}
 							}
@@ -3628,7 +3597,7 @@
 			}
 		},
 		{
-			"id": 165,
+			"id": 164,
 			"name": "EventResponse",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3650,7 +3619,7 @@
 			],
 			"typeParameters": [
 				{
-					"id": 172,
+					"id": 171,
 					"name": "Event",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -3661,7 +3630,7 @@
 					}
 				},
 				{
-					"id": 173,
+					"id": 172,
 					"name": "Map",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -3675,7 +3644,7 @@
 							},
 							{
 								"type": "reference",
-								"id": 149,
+								"id": 148,
 								"name": "EventDefinition"
 							}
 						],
@@ -3689,7 +3658,7 @@
 				"type": "conditional",
 				"checkType": {
 					"type": "reference",
-					"id": 172,
+					"id": 171,
 					"name": "Event"
 				},
 				"extendsType": {
@@ -3697,7 +3666,7 @@
 					"operator": "keyof",
 					"target": {
 						"type": "reference",
-						"id": 173,
+						"id": 172,
 						"name": "Map"
 					}
 				},
@@ -3707,19 +3676,19 @@
 						"type": "indexedAccess",
 						"indexType": {
 							"type": "reference",
-							"id": 172,
+							"id": 171,
 							"name": "Event"
 						},
 						"objectType": {
 							"type": "reference",
-							"id": 173,
+							"id": 172,
 							"name": "Map"
 						}
 					},
 					"extendsType": {
 						"type": "reflection",
 						"declaration": {
-							"id": 166,
+							"id": 165,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
@@ -3733,14 +3702,14 @@
 							],
 							"signatures": [
 								{
-									"id": 167,
+									"id": 166,
 									"name": "__type",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 168,
+											"id": 167,
 											"name": "request",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -3767,19 +3736,19 @@
 							"type": "indexedAccess",
 							"indexType": {
 								"type": "reference",
-								"id": 172,
+								"id": 171,
 								"name": "Event"
 							},
 							"objectType": {
 								"type": "reference",
-								"id": 173,
+								"id": 172,
 								"name": "Map"
 							}
 						},
 						"extendsType": {
 							"type": "reflection",
 							"declaration": {
-								"id": 169,
+								"id": 168,
 								"name": "__type",
 								"kind": 65536,
 								"kindString": "Type literal",
@@ -3793,14 +3762,14 @@
 								],
 								"signatures": [
 									{
-										"id": 170,
+										"id": 169,
 										"name": "__type",
 										"kind": 4096,
 										"kindString": "Call signature",
 										"flags": {},
 										"parameters": [
 											{
-												"id": 171,
+												"id": 170,
 												"name": "request",
 												"kind": 32768,
 												"kindString": "Parameter",
@@ -3843,12 +3812,12 @@
 								"type": "indexedAccess",
 								"indexType": {
 									"type": "reference",
-									"id": 172,
+									"id": 171,
 									"name": "Event"
 								},
 								"objectType": {
 									"type": "reference",
-									"id": 173,
+									"id": 172,
 									"name": "Map"
 								}
 							}
@@ -3863,12 +3832,12 @@
 								"type": "indexedAccess",
 								"indexType": {
 									"type": "reference",
-									"id": 172,
+									"id": 171,
 									"name": "Event"
 								},
 								"objectType": {
 									"type": "reference",
-									"id": 173,
+									"id": 172,
 									"name": "Map"
 								}
 							}
@@ -3886,7 +3855,7 @@
 			}
 		},
 		{
-			"id": 174,
+			"id": 173,
 			"name": "EventMap",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -3908,7 +3877,7 @@
 			],
 			"typeParameters": [
 				{
-					"id": 175,
+					"id": 174,
 					"name": "Events",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -3927,12 +3896,12 @@
 						"typeArguments": [
 							{
 								"type": "reference",
-								"id": 175,
+								"id": 174,
 								"name": "Events"
 							},
 							{
 								"type": "reference",
-								"id": 149,
+								"id": 148,
 								"name": "EventDefinition"
 							}
 						],
@@ -3947,7 +3916,7 @@
 			}
 		},
 		{
-			"id": 176,
+			"id": 175,
 			"name": "BaseEventMap",
 			"kind": 128,
 			"kindString": "Class",
@@ -3962,21 +3931,21 @@
 			},
 			"children": [
 				{
-					"id": 177,
+					"id": 176,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 178,
+							"id": 177,
 							"name": "new BaseEventMap",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 176,
+								"id": 175,
 								"name": "BaseEventMap"
 							}
 						}
@@ -3987,7 +3956,7 @@
 				{
 					"title": "Constructors",
 					"children": [
-						177
+						176
 					]
 				}
 			],
@@ -3999,14 +3968,14 @@
 				}
 			],
 			"indexSignature": {
-				"id": 179,
+				"id": 178,
 				"name": "__index",
 				"kind": 8192,
 				"kindString": "Index signature",
 				"flags": {},
 				"parameters": [
 					{
-						"id": 180,
+						"id": 179,
 						"name": "k",
 						"kind": 32768,
 						"flags": {},
@@ -4018,20 +3987,20 @@
 				],
 				"type": {
 					"type": "reference",
-					"id": 149,
+					"id": 148,
 					"name": "EventDefinition"
 				}
 			}
 		},
 		{
-			"id": 181,
+			"id": 180,
 			"name": "EventManager",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 182,
+					"id": 181,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4045,14 +4014,14 @@
 					],
 					"signatures": [
 						{
-							"id": 183,
+							"id": 182,
 							"name": "new EventManager",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 184,
+									"id": 183,
 									"name": "Event",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -4067,7 +4036,7 @@
 									}
 								},
 								{
-									"id": 185,
+									"id": 184,
 									"name": "Map",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -4080,12 +4049,12 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 184,
+														"id": 183,
 														"name": "Event"
 													},
 													{
 														"type": "reference",
-														"id": 149,
+														"id": 148,
 														"name": "EventDefinition"
 													}
 												],
@@ -4106,7 +4075,7 @@
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 184,
+														"id": 183,
 														"name": "Event"
 													},
 													{
@@ -4127,7 +4096,7 @@
 							],
 							"parameters": [
 								{
-									"id": 186,
+									"id": 185,
 									"name": "emitter",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4143,16 +4112,16 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 181,
+								"id": 180,
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 184,
+										"id": 183,
 										"name": "Event"
 									},
 									{
 										"type": "reference",
-										"id": 185,
+										"id": 184,
 										"name": "Map"
 									}
 								],
@@ -4162,7 +4131,7 @@
 					]
 				},
 				{
-					"id": 187,
+					"id": 186,
 					"name": "emitter",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4186,7 +4155,7 @@
 					}
 				},
 				{
-					"id": 188,
+					"id": 187,
 					"name": "emit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4202,14 +4171,14 @@
 					],
 					"signatures": [
 						{
-							"id": 189,
+							"id": 188,
 							"name": "emit",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"typeParameter": [
 								{
-									"id": 190,
+									"id": 189,
 									"name": "E",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -4220,12 +4189,12 @@
 									},
 									"default": {
 										"type": "reference",
-										"id": 184,
+										"id": 183,
 										"name": "Event"
 									}
 								},
 								{
-									"id": 191,
+									"id": 190,
 									"name": "MultipleResult",
 									"kind": 131072,
 									"kindString": "Type parameter",
@@ -4242,35 +4211,35 @@
 							],
 							"parameters": [
 								{
-									"id": 192,
+									"id": 191,
 									"name": "dispatch",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 190,
+										"id": 189,
 										"name": "E"
 									}
 								},
 								{
-									"id": 193,
+									"id": 192,
 									"name": "args",
 									"kind": 32768,
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"id": 156,
+										"id": 155,
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 190,
+												"id": 189,
 												"name": "E"
 											},
 											{
 												"type": "reference",
-												"id": 185,
+												"id": 184,
 												"name": "Map"
 											}
 										],
@@ -4278,7 +4247,7 @@
 									}
 								},
 								{
-									"id": 194,
+									"id": 193,
 									"name": "options",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4288,14 +4257,14 @@
 									"type": {
 										"type": "reflection",
 										"declaration": {
-											"id": 195,
+											"id": 194,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 196,
+													"id": 195,
 													"name": "multiple",
 													"kind": 1024,
 													"kindString": "Property",
@@ -4311,7 +4280,7 @@
 													],
 													"type": {
 														"type": "reference",
-														"id": 191,
+														"id": 190,
 														"name": "MultipleResult"
 													}
 												}
@@ -4320,7 +4289,7 @@
 												{
 													"title": "Properties",
 													"children": [
-														196
+														195
 													]
 												}
 											],
@@ -4342,7 +4311,7 @@
 										"type": "conditional",
 										"checkType": {
 											"type": "reference",
-											"id": 191,
+											"id": 190,
 											"name": "MultipleResult"
 										},
 										"extendsType": {
@@ -4353,16 +4322,16 @@
 											"type": "array",
 											"elementType": {
 												"type": "reference",
-												"id": 165,
+												"id": 164,
 												"typeArguments": [
 													{
 														"type": "reference",
-														"id": 190,
+														"id": 189,
 														"name": "E"
 													},
 													{
 														"type": "reference",
-														"id": 185,
+														"id": 184,
 														"name": "Map"
 													}
 												],
@@ -4371,16 +4340,16 @@
 										},
 										"falseType": {
 											"type": "reference",
-											"id": 165,
+											"id": 164,
 											"typeArguments": [
 												{
 													"type": "reference",
-													"id": 190,
+													"id": 189,
 													"name": "E"
 												},
 												{
 													"type": "reference",
-													"id": 185,
+													"id": 184,
 													"name": "Map"
 												}
 											],
@@ -4400,19 +4369,19 @@
 				{
 					"title": "Constructors",
 					"children": [
-						182
+						181
 					]
 				},
 				{
 					"title": "Properties",
 					"children": [
-						187
+						186
 					]
 				},
 				{
 					"title": "Methods",
 					"children": [
-						188
+						187
 					]
 				}
 			],
@@ -4425,7 +4394,7 @@
 			],
 			"typeParameters": [
 				{
-					"id": 197,
+					"id": 196,
 					"name": "Event",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -4440,7 +4409,7 @@
 					}
 				},
 				{
-					"id": 198,
+					"id": 197,
 					"name": "Map",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -4453,12 +4422,12 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 184,
+										"id": 183,
 										"name": "Event"
 									},
 									{
 										"type": "reference",
-										"id": 149,
+										"id": 148,
 										"name": "EventDefinition"
 									}
 								],
@@ -4479,7 +4448,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 184,
+										"id": 183,
 										"name": "Event"
 									},
 									{
@@ -4521,17 +4490,17 @@
 			"children": [
 				1,
 				135,
-				176,
-				181
+				175,
+				180
 			]
 		},
 		{
 			"title": "Type Aliases",
 			"children": [
-				149,
-				156,
-				165,
-				174
+				148,
+				155,
+				164,
+				173
 			]
 		}
 	],
