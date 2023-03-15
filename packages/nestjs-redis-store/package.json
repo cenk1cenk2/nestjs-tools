@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "@nestjs/common": "^9.3.9",
+    "@nestjs/common": "^9.3.10",
     "@types/ioredis": "^5.0.0",
     "ioredis": "^5.3.1",
     "redis-om": "^0.3.6"
