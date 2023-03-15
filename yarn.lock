@@ -927,17 +927,10 @@
     "@aws-sdk/types" "3.292.0"
     tslib "^2.3.1"
 
-"@aws-sdk/types@3.292.0":
+"@aws-sdk/types@3.292.0", "@aws-sdk/types@^3.222.0":
   version "3.292.0"
   resolved "https://registry.yarnpkg.com/@aws-sdk/types/-/types-3.292.0.tgz#54aa7347123116ac368f08df5e02954207328c63"
   integrity sha512-1teYAY2M73UXZxMAxqZxVS2qwXjQh0OWtt7qyLfha0TtIk/fZ1hRwFgxbDCHUFcdNBSOSbKH/ESor90KROXLCQ==
-  dependencies:
-    tslib "^2.3.1"
-
-"@aws-sdk/types@^3.222.0":
-  version "3.290.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/types/-/types-3.290.0.tgz#06a14cf61c2e93d8d789665d2034260229a4de8f"
-  integrity sha512-uQLD9tLv8Q87CwrSB/taUoQ8wkGeFb1Gygc+kt5oClfMFP9HYzu944kW/1R7/J5LtBLT1QFYccd4gz6eOUNlsw==
   dependencies:
     tslib "^2.3.1"
 
@@ -1032,9 +1025,9 @@
     tslib "^2.3.1"
 
 "@aws-sdk/util-locate-window@^3.0.0":
-  version "3.208.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/util-locate-window/-/util-locate-window-3.208.0.tgz#0f598fc238a1256e4bcb64d01459f03a922dd4c3"
-  integrity sha512-iua1A2+P7JJEDHVgvXrRJSvsnzG7stYSGQnBVphIUlemwl6nN5D+QrgbjECtrbxRz8asYFHSzhdhECqN+tFiBg==
+  version "3.292.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/util-locate-window/-/util-locate-window-3.292.0.tgz#cba0911be4fdf1db31a0b379cc6229a5a0ba1ae0"
+  integrity sha512-6xnFJXZI9pKw5lQCDvuWA5PnOaUtNRKWwdxvGkkLx5orboFaoVMS6zowjSQxwVNRjW82u6dYNkhmj9mZ8VSjWg==
   dependencies:
     tslib "^2.3.1"
 
@@ -6711,9 +6704,9 @@ jiti@1.17.1:
   integrity sha512-NZIITw8uZQFuzQimqjUxIrIcEdxYDFIe/0xYfIlVXTkiBjjyBEvgasj5bb0/cHtPRD/NziPbT312sFrkI5ALpw==
 
 jiti@^1.17.1:
-  version "1.17.2"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.17.2.tgz#9e193d171c76b1c518a46c243c410c0462fe22d1"
-  integrity sha512-Xf0nU8+8wuiQpLcqdb2HRyHqYwGk2Pd+F7kstyp20ZuqTyCmB9dqpX2NxaxFc1kovraa2bG6c1RL3W7XfapiZg==
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.18.2.tgz#80c3ef3d486ebf2450d9335122b32d121f2a83cd"
+  integrity sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==
 
 jose@^4.11.4:
   version "4.13.1"
@@ -6992,9 +6985,9 @@ libnpmpublish@6.0.4:
     ssri "^9.0.0"
 
 libphonenumber-js@^1.10.14:
-  version "1.10.21"
-  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.21.tgz#860312cbec1389e36e28389161025c7817a3ae32"
-  integrity sha512-/udZhx49av2r2gZR/+xXSrwcR8smX/sDNrVpOFrvW+CA26TfYTVZfwb3MIDvmwAYMLs7pXuJjZX0VxxGpqPhsA==
+  version "1.10.24"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.24.tgz#a1744cf29df86d5a587562ea28dde12320eb6ab6"
+  integrity sha512-3Dk8f5AmrcWqg+oHhmm9hwSTqpWHBdSqsHmjCJGroULFubi0+x7JEIGmRZCuL3TI8Tx39xaKqfnhsDQ4ALa/Nw==
 
 lilconfig@2.1.0, lilconfig@^2.0.5:
   version "2.1.0"
