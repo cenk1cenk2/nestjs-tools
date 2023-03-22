@@ -30,7 +30,7 @@
     "@aws-sdk/client-s3": ">= 3"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.3.11",
+    "@nestjs/common": "^9.3.12",
     "@aws-sdk/client-s3": "^3.296.0"
   },
   "lint-staged": {
