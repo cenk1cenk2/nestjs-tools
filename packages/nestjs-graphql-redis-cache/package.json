@@ -20,8 +20,8 @@
   "scripts": {
     "build": "tsup-node",
     "dev:start": "tsup-node --watch",
-    "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
-    "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
+    "format": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
+    "lint": "eslint --ext .ts,.js,.tsx,.jsx src/",
     "docs:toc": "markdown-toc README.md --bullets='-' -i",
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
@@ -32,16 +32,17 @@
     "cache-manager": ">= 3.4.4",
     "cache-manager-ioredis": ">= 2.0.0",
     "ioredis": ">= 4.27.9",
-    "rxjs": ">= 7.3.1"
+    "rxjs": ">= 7.3.1",
+    "@nestjs/cache-manager": ">= 1.0.0"
   },
   "devDependencies": {
     "@nestjs/common": "^9.4.0",
     "@types/cache-manager": "^4.0.2",
     "@types/cache-manager-ioredis": "^2.0.3",
-    "@types/ioredis": "^5.0.0",
     "cache-manager": "^5.2.0",
     "cache-manager-ioredis": "^2.1.0",
-    "ioredis": "^5.3.1"
+    "ioredis": "^5.3.1",
+    "@nestjs/cache-manager": "^1.0.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

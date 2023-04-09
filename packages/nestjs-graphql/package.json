@@ -20,8 +20,8 @@
   "scripts": {
     "build": "tsup-node",
     "dev:start": "tsup-node --watch",
-    "lint": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
-    "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/",
+    "format": "prettier --write src/ --loglevel warn && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
+    "lint": "eslint --ext .ts,.js,.tsx,.jsx src/",
     "docs:toc": "markdown-toc README.md --bullets='-' -i",
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
@@ -36,9 +36,8 @@
     "@apollo/gateway": ">= 2.4.1",
     "@cenk1cenk2/nestjs-utils": "*",
     "@nestjs/core": "^9.4.0",
-    "@nestjs/graphql": "^10.2.0",
-    "class-validator": "^0.14.0",
-    "ts-morph": "^17.0.1"
+    "@nestjs/graphql": "^11.0.4",
+    "class-validator": "^0.14.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

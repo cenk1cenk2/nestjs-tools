@@ -5,33 +5,12 @@ stages:
   - publish
 
 variables:
-  SEMANTIC_RELEASE_WORKSPACE: 'true'
   NODE_VERSION: 18-alpine
-  MARKDOWN_TOC_PATTERNS: 'README.md,./packages/*/README.md'
+  SEMANTIC_RELEASE_WORKSPACE: 'true'
 
 include:
   - project: devops/pipes
     file: /templates/node.gitlab-ci.yml
 
   - project: devops/pipes
-    file: /templates/markdown-toc.gitlab-ci.yml
-
-  - project: devops/pipes
     file: /templates/semantic-release.gitlab-ci.yml
-
-typedoc:
-  stage: docs
-  image: cenk1cenk2/pipe-node:${NODE_VERSION}
-  script:
-    - pipe run docs:api
-  artifacts:
-    paths:
-      - docs/
-      - 'packages/*/docs/'
-  only:
-    refs:
-      - master
-      - main
-  tags:
-    - docker
-    - amd64

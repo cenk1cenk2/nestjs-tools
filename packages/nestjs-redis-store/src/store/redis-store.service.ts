@@ -2,7 +2,7 @@ import type { OnModuleInit } from '@nestjs/common'
 import { Injectable } from '@nestjs/common'
 import type { Redis } from 'ioredis'
 
-import { RedisStoreModuleOptions } from './redis-store.interface'
+import { type RedisStoreModuleOptions } from './redis-store.interface'
 
 @Injectable()
 export class RedisStoreService implements OnModuleInit {

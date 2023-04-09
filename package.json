@@ -4,44 +4,41 @@
   "repository": "https://github.com/cenk1cenk2/nestjs-tools",
   "type": "module",
   "scripts": {
-    "ls": "lerna la",
-    "clean": "lerna clean -y && rimraf node_modules yarn.lock",
-    "exec": "lerna exec --stream",
-    "command": "lerna run --stream",
+    "clean": "rimraf node_modules pnpm-lock.yaml",
     "scripts:link": "./scripts/link-packages.sh link",
     "scripts:unlink": "./scripts/link-packages.sh unlink",
     "scripts:workspace:link": "./scripts/link-packages-to-workspace.sh link",
     "scripts:workspace:unlink": "./scripts/link-packages-to-workspace.sh unlink",
-    "lint": "yarn command lint --concurrency 1",
-    "lint:check": "yarn command lint:check",
-    "build": "yarn command build --include-dependencies",
-    "docs:toc": "markdown-toc README.md --bullets='-' -i && yarn command --no-bail docs:toc",
-    "docs:api": "yarn command --no-bail docs:api"
+    "format": "turbo format",
+    "lint": "turbo lint",
+    "build": "turbo build"
   },
   "workspaces": [
     "packages/*"
   ],
   "simple-git-hooks": {
-    "pre-commit": "yarn exec lint-staged",
+    "pre-commit": "pnpm exec lint-staged",
     "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   },
   "devDependencies": {
     "@cenk1cenk2/cz-cc": "^1.6.0",
     "@cenk1cenk2/eslint-config": "^2.6.4",
     "@swc/core": "^1.3.46",
+    "@types/node": "^18.15.11",
     "commitizen": "^4.3.0",
-    "eslint": "^8.37.0",
-    "lerna": "^6.6.1",
-    "lint-staged": "^13.2.0",
+    "eslint": "^8.38.0",
+    "lint-staged": "^13.2.1",
     "markdown-toc": "^1.2.0",
     "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
     "simple-git-hooks": "^2.8.1",
     "tsc-watch": "^6.0.0",
     "tsconfig-replace-paths": "^0.0.14",
     "tsup": "^6.7.0",
+    "turbo": "^1.8.8",
     "typedoc": "^0.24.1",
     "typedoc-plugin-markdown": "^3.14.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.4"
   },
   "config": {
     "commitizen": {

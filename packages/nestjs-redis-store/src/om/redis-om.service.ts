@@ -2,7 +2,7 @@ import type { OnModuleDestroy, OnModuleInit } from '@nestjs/common'
 import { Logger, Injectable } from '@nestjs/common'
 import type { Client } from 'redis-om'
 
-import { RedisOmModuleOptions } from './redis-om.interface'
+import { type RedisOmModuleOptions } from './redis-om.interface'
 
 @Injectable()
 export class RedisOmService implements OnModuleInit, OnModuleDestroy {

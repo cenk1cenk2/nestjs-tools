@@ -8,7 +8,7 @@ import { tap } from 'rxjs/operators'
 
 import { InjectRedisCacheManager } from './decorator/inject.decorator'
 import { REDIS_CACHE_MANAGER_DELIMITER } from './redis-cache-manager.constants'
-import { RedisCacheManagerProvider } from './redis-cache-manager.interface'
+import { type RedisCacheManagerProvider } from './redis-cache-manager.interface'
 
 @Injectable()
 export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {

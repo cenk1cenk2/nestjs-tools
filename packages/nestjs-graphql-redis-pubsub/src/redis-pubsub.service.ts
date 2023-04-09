@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common'
 import { RedisPubSub } from 'graphql-redis-subscriptions'
 import type { Redis } from 'ioredis'
 
-import { RedisPubSubModuleOptions } from './redis-pubsub.interface'
+import { type RedisPubSubModuleOptions } from './redis-pubsub.interface'
 
 @Injectable()
 export class RedisPubSubService<RedisPubSubTopics extends string = string, RedisPubSubMap extends Record<RedisPubSubTopics, any> = any> implements OnApplicationBootstrap {
