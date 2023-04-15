@@ -178,8 +178,8 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0
       ioredis:
-        specifier: ^5.3.1
-        version: 5.3.1
+        specifier: ^5.3.2
+        version: 5.3.2
 
   packages/nestjs-graphql-redis-pubsub:
     devDependencies:
@@ -193,8 +193,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(graphql@16.6.0)
       ioredis:
-        specifier: ^5.3.1
-        version: 5.3.1
+        specifier: ^5.3.2
+        version: 5.3.2
 
   packages/nestjs-redis-store:
     devDependencies:
@@ -202,8 +202,8 @@ importers:
         specifier: ^9.4.0
         version: 9.4.0(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
       ioredis:
-        specifier: ^5.3.1
-        version: 5.3.1
+        specifier: ^5.3.2
+        version: 5.3.2
       redis-om:
         specifier: ^0.3.6
         version: 0.3.6
@@ -224,10 +224,10 @@ importers:
         version: 9.4.0(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
       '@nestjs/typeorm':
         specifier: ^9.0.1
-        version: 9.0.1(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)(typeorm@0.3.14)
+        version: 9.0.1(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)(typeorm@0.3.15)
       typeorm:
-        specifier: ^0.3.14
-        version: 0.3.14(ts-node@10.9.1)
+        specifier: ^0.3.15
+        version: 0.3.15(ts-node@10.9.1)
 
   packages/nestjs-typeorm:
     devDependencies:
@@ -235,8 +235,8 @@ importers:
         specifier: '*'
         version: link:../nestjs-utils
       typeorm:
-        specifier: ^0.3.14
-        version: 0.3.14(ts-node@10.9.1)
+        specifier: ^0.3.15
+        version: 0.3.15(ts-node@10.9.1)
 
   packages/nestjs-utils:
     dependencies:
@@ -3123,7 +3123,7 @@ packages:
       rxjs: 7.8.0
       tslib: 2.5.0
 
-  /@nestjs/typeorm@9.0.1(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)(typeorm@0.3.14):
+  /@nestjs/typeorm@9.0.1(@nestjs/common@9.4.0)(@nestjs/core@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)(typeorm@0.3.15):
     resolution: {integrity: sha512-A2BgLIPsMtmMI0bPKEf4bmzgFPsnvHqNBx3KkvaJ7hJrBQy0OqYOb+Rr06ifblKWDWS2tUPNrAFQbZjtk3PI+g==}
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0
@@ -3136,7 +3136,7 @@ packages:
       '@nestjs/core': 9.4.0(@nestjs/common@9.4.0)(@nestjs/microservices@9.4.0)(reflect-metadata@0.1.13)(rxjs@7.8.0)
       reflect-metadata: 0.1.13
       rxjs: 7.8.0
-      typeorm: 0.3.14(ts-node@10.9.1)
+      typeorm: 0.3.15(ts-node@10.9.1)
       uuid: 8.3.2
     dev: true
 
@@ -5869,7 +5869,7 @@ packages:
     dependencies:
       graphql-subscriptions: 2.0.0(graphql@16.6.0)
     optionalDependencies:
-      ioredis: 5.3.1
+      ioredis: 5.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6173,8 +6173,8 @@ packages:
       - supports-color
     dev: true
 
-  /ioredis@5.3.1:
-    resolution: {integrity: sha512-C+IBcMysM6v52pTLItYMeV4Hz7uriGtoJdz7SSBDX6u+zwSYGirLdQh3L7t/OItWITcw3gTFMjJReYUwS4zihg==}
+  /ioredis@5.3.2:
+    resolution: {integrity: sha512-1DKMMzlIHM02eBBVOFQ1+AolGjs6+xEcM4PDL7NqOS6szq7H9jSaEkIUH6/a5Hl241LzW6JLSiAbNvTQjUupUA==}
     engines: {node: '>=12.22.0'}
     dependencies:
       '@ioredis/commands': 1.2.0
@@ -8813,8 +8813,8 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /typeorm@0.3.14(ts-node@10.9.1):
-    resolution: {integrity: sha512-tEPEN8qmA2a2wmjkaDcWBZ6LsECHofJW2vaCQMklYs+4JRJMAJ5FfbPIWMbhJ3ANJGMtLAmU1GfC8rLFIpbWsg==}
+  /typeorm@0.3.15(ts-node@10.9.1):
+    resolution: {integrity: sha512-R4JSw8QjDP1W+ypeRz/XrCXIqubrLSnNAzJAp9EQSQIPHTv+YmUHZis8g08lOwFpuhqL9m8jkPSz8GWEKlU/ow==}
     engines: {node: '>= 12.9.0'}
     hasBin: true
     peerDependencies:
@@ -8823,7 +8823,7 @@ packages:
       better-sqlite3: ^7.1.2 || ^8.0.0
       hdb-pool: ^0.1.6
       ioredis: ^5.0.4
-      mongodb: ^3.6.0
+      mongodb: ^5.2.0
       mssql: ^9.1.1
       mysql2: ^2.2.5 || ^3.0.1
       oracledb: ^5.1.0
