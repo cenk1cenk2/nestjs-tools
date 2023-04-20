@@ -347,7 +347,7 @@ packages:
       '@apollo/federation-internals': 2.4.2(graphql@16.6.0)
       deep-equal: 2.2.0
       graphql: 16.6.0
-      ts-graphviz: 1.5.5
+      ts-graphviz: 1.6.0
       uuid: 9.0.0
     dev: true
 
@@ -2727,7 +2727,7 @@ packages:
       graphql-request: 6.0.0(graphql@16.6.0)
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
-      jose: 4.14.0
+      jose: 4.14.1
       js-yaml: 4.1.0
       json-stable-stringify: 1.0.2
       lodash: 4.17.21
@@ -6512,8 +6512,8 @@ packages:
     hasBin: true
     dev: false
 
-  /jose@4.14.0:
-    resolution: {integrity: sha512-LSA/XenLPwqk6e2L+PSUNuuY9G4NGsvjRWz6sJcUBmzTLEPJqQh46FHSUxnAQ64AWOkRO6bSXpy3yXuEKZkbIA==}
+  /jose@4.14.1:
+    resolution: {integrity: sha512-SgjXLpP7jhQkUNKL6RpowoR/IF4QKE+WjLDMpNnh2vmhiFs67NftrNpvFtgbwpvRdtueFliahYYWz9E+XZZQlg==}
     dev: false
 
   /joycon@3.1.1:
@@ -8554,8 +8554,8 @@ packages:
     resolution: {integrity: sha512-XrHUvV5HpdLmIj4uVMxHggLbFSZYIn7HEWsqePZcI50pco+MPqJ50wMGY794X7AOOhxOBAjbkqfAbEe/QMp2Lw==}
     dev: true
 
-  /ts-graphviz@1.5.5:
-    resolution: {integrity: sha512-abon0Tlcgvxcqr8x+p8QH1fTbR2R4cEXKGZfT4OJONZWah2YfqkmERb6hrr82omAc1IHwk5PlF8g4BS/ECYvwQ==}
+  /ts-graphviz@1.6.0:
+    resolution: {integrity: sha512-N9KtG1+g7MZCh6/w8z18omFzP3L8bMWI2CosylkUGw5UiD16pLJyGBeFiB6zHB8ACrjkFKNdQ83+8Ivh9K70Sg==}
     engines: {node: '>=14.16'}
     dev: true
 
