@@ -53,8 +53,8 @@ importers:
         specifier: ^0.24.4
         version: 0.24.4(typescript@5.0.4)
       typedoc-plugin-markdown:
-        specifier: ^3.15.1
-        version: 3.15.1(typedoc@0.24.4)
+        specifier: ^3.15.2
+        version: 3.15.2(typedoc@0.24.4)
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
@@ -8790,12 +8790,21 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: true
 
-  /typedoc-plugin-markdown@3.15.1(typedoc@0.24.4):
-    resolution: {integrity: sha512-TaXE8gc8s5YepU1Ogyqfkh+khPE1/n4rV5vaoZCNyXvSLv62jWmHf443lHiQh7r07qAimUOKAndaaufAeIUSiQ==}
+  /typedoc-plugin-markdown@3.15.2(typedoc@0.24.4):
+    resolution: {integrity: sha512-OPXAL9hhdoVJzH/UaKAz6CBS/s8KlYyLWwnxF7ap0fQCuaMMWShA1JBq4n1SXbiGjx+7DOhOfTKQ5OzwryN3Vw==}
     peerDependencies:
       typedoc: '>=0.24.0'
     dependencies:
       handlebars: 4.7.7
+      typedoc: 0.24.4(typescript@5.0.4)
+      typedoc-plugin-mdn-links: 3.0.3(typedoc@0.24.4)
+    dev: true
+
+  /typedoc-plugin-mdn-links@3.0.3(typedoc@0.24.4):
+    resolution: {integrity: sha512-NXhIpwQnsg7BcyMCHVqj3tUK+DL4g3Bt96JbFl4APzTGFkA+iM6GfZ/fn3TAqJ8O0CXG5R9BfWxolw1m1omNuQ==}
+    peerDependencies:
+      typedoc: '>= 0.23.14 || 0.24.x'
+    dependencies:
       typedoc: 0.24.4(typescript@5.0.4)
     dev: true
 
