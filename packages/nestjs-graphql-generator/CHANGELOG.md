@@ -1,10 +1,15 @@
-## @cenk1cenk2/nestjs-graphql-generator [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.1...@cenk1cenk2/nestjs-graphql-generator@3.0.2) (2023-04-09)
-
+## @cenk1cenk2/nestjs-graphql-generator [3.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.2...@cenk1cenk2/nestjs-graphql-generator@3.0.3) (2023-04-29)
 
 ### Bug Fixes
 
-* **deps:** update all minor dependency updates ([cbeb95e](https://github.com/cenk1cenk2/nestjs-tools/commit/cbeb95eaf66446f510de18e645d0a9f80887d635))
-* fix build errors, update deps convert to turbo and pnpm ([5acd4b2](https://github.com/cenk1cenk2/nestjs-tools/commit/5acd4b2c5d35b192e0d6154ad66b51cb1279183e))
+- **deps:** update all minor dependency updates ([4f1a678](https://github.com/cenk1cenk2/nestjs-tools/commit/4f1a678320873050e2adc9f5cf5686f51e063939))
+
+## @cenk1cenk2/nestjs-graphql-generator [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.1...@cenk1cenk2/nestjs-graphql-generator@3.0.2) (2023-04-09)
+
+### Bug Fixes
+
+- **deps:** update all minor dependency updates ([cbeb95e](https://github.com/cenk1cenk2/nestjs-tools/commit/cbeb95eaf66446f510de18e645d0a9f80887d635))
+- fix build errors, update deps convert to turbo and pnpm ([5acd4b2](https://github.com/cenk1cenk2/nestjs-tools/commit/5acd4b2c5d35b192e0d6154ad66b51cb1279183e))
 
 ## @cenk1cenk2/nestjs-graphql-generator [3.0.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.0...@cenk1cenk2/nestjs-graphql-generator@3.0.1) (2023-03-07)
 
