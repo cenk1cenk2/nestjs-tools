@@ -1,3 +1,13 @@
+## @cenk1cenk2/nestjs-auth-key-generator [5.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@5.0.2...@cenk1cenk2/nestjs-auth-key-generator@5.0.3) (2023-05-06)
+
+
+
+
+
+### Dependencies
+
+* **@cenk1cenk2/nestjs-utils:** upgraded to 3.0.2
+
 ## @cenk1cenk2/nestjs-auth-key-generator [5.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-auth-key-generator@5.0.1...@cenk1cenk2/nestjs-auth-key-generator@5.0.2) (2023-04-29)
 
 ### Dependencies
