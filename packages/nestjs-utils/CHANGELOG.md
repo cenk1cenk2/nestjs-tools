@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-utils [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@3.0.1...@cenk1cenk2/nestjs-utils@3.0.2) (2023-05-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency colorette to ^2.0.20 ([564d640](https://github.com/cenk1cenk2/nestjs-tools/commit/564d6405361f0214097b6b0e4d272cc642d542a2))
+
 ## @cenk1cenk2/nestjs-utils [3.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-utils@3.0.1...@cenk1cenk2/nestjs-utils@3.0.2) (2023-04-29)
 
 ### Bug Fixes
