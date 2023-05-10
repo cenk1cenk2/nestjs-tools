@@ -4156,7 +4156,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001486
-      electron-to-chromium: 1.4.388
+      electron-to-chromium: 1.4.391
       node-releases: 2.0.10
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
     dev: false
@@ -4217,7 +4217,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.2
-      glob: 10.2.2
+      glob: 10.2.3
       lru-cache: 7.18.3
       minipass: 5.0.0
       minipass-collect: 1.0.2
@@ -4913,8 +4913,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.388:
-    resolution: {integrity: sha512-xZ0y4zjWZgp65okzwwt00f2rYibkFPHUv9qBz+Vzn8cB9UXIo9Zc6Dw81LJYhhNt0G/vR1OJEfStZ49NKl0YxQ==}
+  /electron-to-chromium@1.4.391:
+    resolution: {integrity: sha512-GqydVV1+kUWY5qlEzaw34/hyWTApuQrHiGrcGA2Kk/56nEK44i+YUW45VH43JuZT0Oo7uY8aVtpPhBBZXEWtSA==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -5598,7 +5598,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       cross-spawn: 7.0.3
-      signal-exit: 4.0.1
+      signal-exit: 4.0.2
     dev: true
 
   /form-data@3.0.1:
@@ -5742,8 +5742,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.2.2:
-    resolution: {integrity: sha512-Xsa0BcxIC6th9UwNjZkhrMtNo/MnyRL8jGCP+uEwhA5oFOCY1f2s1/oNKY47xQ0Bg5nkjsfAEIej1VeH62bDDQ==}
+  /glob@10.2.3:
+    resolution: {integrity: sha512-Kb4rfmBVE3eQTAimgmeqc2LwSnN0wIOkkUL6HmxEFxNJ4fHghYHVbFba/HcGcRjE6s9KoMNK3rSOwkL4PioZjg==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
@@ -5751,7 +5751,7 @@ packages:
       jackspeak: 2.2.0
       minimatch: 9.0.0
       minipass: 5.0.0
-      path-scurry: 1.7.0
+      path-scurry: 1.8.0
     dev: true
 
   /glob@7.1.6:
@@ -7611,8 +7611,8 @@ packages:
       path-root-regex: 0.1.2
     dev: false
 
-  /path-scurry@1.7.0:
-    resolution: {integrity: sha512-UkZUeDjczjYRE495+9thsgcVgsaCPkaw80slmfVFgllxY+IO8ubTsOpFVjDPROBqJdHfVPUFRHPBV/WciOVfWg==}
+  /path-scurry@1.8.0:
+    resolution: {integrity: sha512-IjTrKseM404/UAWA8bBbL3Qp6O2wXkanuIE3seCxBH7ctRuvH1QRawy1N3nVDHGkdeZsjOsSe/8AQBL/VQCy2g==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 9.1.1
@@ -7992,7 +7992,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.2.2
+      glob: 10.2.3
     dev: true
 
   /rollup@3.21.6:
@@ -8172,8 +8172,8 @@ packages:
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
 
-  /signal-exit@4.0.1:
-    resolution: {integrity: sha512-uUWsN4aOxJAS8KOuf3QMyFtgm1pkb6I+KRZbRF/ghdf5T7sM+B1lLLzPDxswUjkmHyxQAVzEgG35E3NzDM9GVw==}
+  /signal-exit@4.0.2:
+    resolution: {integrity: sha512-MY2/qGx4enyjprQnFaZsHib3Yadh3IXyV2C321GY0pjGfVBu4un0uDJkwgdxqO+Rdx8JMT8IfJIRwbYVz3Ob3Q==}
     engines: {node: '>=14'}
     dev: true
 
