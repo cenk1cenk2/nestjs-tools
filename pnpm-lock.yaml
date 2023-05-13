@@ -5,8 +5,8 @@ importers:
   .:
     devDependencies:
       '@cenk1cenk2/cz-cc':
-        specifier: ^1.6.4
-        version: 1.6.4(@swc/core@1.3.57)
+        specifier: ^1.6.5
+        version: 1.6.5(@swc/core@1.3.57)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.4
         version: 2.7.4(eslint@8.40.0)(typescript@5.0.4)
@@ -1967,8 +1967,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@cenk1cenk2/cz-cc@1.6.4(@swc/core@1.3.57):
-    resolution: {integrity: sha512-Wp8me0WaEYxXO9I3E6pTjPyRVJQkNq/w3wxjT6VBQrY9sf2LGs62ZOnul5K6Ys5GpDEh81bD/dgh4Vf7aQoBZQ==}
+  /@cenk1cenk2/cz-cc@1.6.5(@swc/core@1.3.57):
+    resolution: {integrity: sha512-/ZY2Dh2UQe7MDGat51wi/HlVbUJ1qZSnViB44DCBjocxELxEhperCgk/0Losstho+8C/09IBSbCqiZ/AxknRgQ==}
     engines: {node: '>= 16'}
     dependencies:
       commitizen: 4.3.0(@swc/core@1.3.57)
