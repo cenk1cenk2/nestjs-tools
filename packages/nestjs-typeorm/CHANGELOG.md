@@ -1,3 +1,35 @@
+# @cenk1cenk2/nestjs-typeorm 1.0.0 (2023-05-15)
+
+
+### Bug Fixes
+
+* compile to more legacy apps node 12 es15 ([f271708](https://github.com/cenk1cenk2/nestjs-tools/commit/f27170886addb0eae7837816a45b2267fc658abe))
+* drop dead package, add to new packages for coding schol present ([a512b69](https://github.com/cenk1cenk2/nestjs-tools/commit/a512b69aed6dcaeb91113bba1d45933da5fd665c))
+* fix build errors, update deps convert to turbo and pnpm ([5acd4b2](https://github.com/cenk1cenk2/nestjs-tools/commit/5acd4b2c5d35b192e0d6154ad66b51cb1279183e))
+* move redis adapter initiation to be lazy loaded ([bbb35f5](https://github.com/cenk1cenk2/nestjs-tools/commit/bbb35f50c8b7e42d7b3d08d611188f3ca1f9e696))
+* update dependencies and fix import problem with redis-om ([a5c4d05](https://github.com/cenk1cenk2/nestjs-tools/commit/a5c4d05c836dadaeef4106ce19ac7c10d1dfbb12))
+* update dependency versions ([5a2822f](https://github.com/cenk1cenk2/nestjs-tools/commit/5a2822f08ccd02d55e3db562f009eada826b0521))
+
+
+### Features
+
+* added new packages for pagination and stuff ([fa3b3ce](https://github.com/cenk1cenk2/nestjs-tools/commit/fa3b3ce8aa301e791b7131ed3cd6ee6280ef0ff0))
+
+
+### Performance Improvements
+
+* drops the dependency and defaults for modules using the configservice ([85d2f90](https://github.com/cenk1cenk2/nestjs-tools/commit/85d2f90e65ed18dd24947dc7c9623594d22da4dd))
+* update build system ([ebb7357](https://github.com/cenk1cenk2/nestjs-tools/commit/ebb7357b5cc3f6043e5171c8e3a883d723c294d8))
+
+
+### BREAKING CHANGES
+
+* Will break the older versions that uses the config service as the
+initiation dependency.
+
+S3 library is swapped with the smaller one.
+* does not support versions older then node16
+
 ## @cenk1cenk2/nestjs-typeorm [3.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-typeorm@3.0.2...@cenk1cenk2/nestjs-typeorm@3.0.3) (2023-05-06)
 
 
