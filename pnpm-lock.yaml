@@ -267,6 +267,7 @@ packages:
   /@apollo/composition@2.4.4(graphql@16.6.0):
     resolution: {integrity: sha512-bFILcSndtx9LIjRi1nWN1CC8j1u6DhzudQUfL29IAwcrYpii4+amPMtOpfsbpiqM2fOJtiK2dZZJDO6ZfmC3fg==}
     engines: {node: '>=14.15.0'}
+    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -278,6 +279,7 @@ packages:
   /@apollo/federation-internals@2.4.4(graphql@16.6.0):
     resolution: {integrity: sha512-HxyneKeXJF7ZaJWnlEwhSORyoibsL4uiIXcwFB0wK3KBodyw4XzCfN/JLdCfZJ2DHDzf+YaDY3iKsw/ypxCTig==}
     engines: {node: '>=14.15.0'}
+    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -291,6 +293,7 @@ packages:
   /@apollo/gateway@2.4.4(graphql@16.6.0):
     resolution: {integrity: sha512-V0DuIqWjZ7ZPdyfXpXGl9BFnZsCs0aHpua1ygUy7dcKub3V95c2puIiaPvfOKlhY5eS1Ac18Ubuh91klzVpujw==}
     engines: {node: '>=14.15.0'}
+    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -340,6 +343,7 @@ packages:
   /@apollo/query-graphs@2.4.4(graphql@16.6.0):
     resolution: {integrity: sha512-rTWxgo3Uxlk8kMriWT1AwAv6k28bVPsBCopE6wFkwYMSQBNs6N60w52ww8XBwsup/o5mYY9S86T++oW/J5j+BA==}
     engines: {node: '>=14.15.0'}
+    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -353,6 +357,7 @@ packages:
   /@apollo/query-planner@2.4.4(graphql@16.6.0):
     resolution: {integrity: sha512-/9QYi9UcNPmmXaPosAgzWeB8DgOJmOW2P3pztUNnduMZPq4DKWngXOP5aO+nL/9nYKUsxEmwO37438QBtcfLUA==}
     engines: {node: '>=14.15.0'}
+    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -4166,8 +4171,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001487
-      electron-to-chromium: 1.4.397
+      caniuse-lite: 1.0.30001488
+      electron-to-chromium: 1.4.398
       node-releases: 2.0.10
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
     dev: false
@@ -4236,7 +4241,7 @@ packages:
       minipass-pipeline: 1.2.4
       p-map: 4.0.0
       ssri: 10.0.4
-      tar: 6.1.14
+      tar: 6.1.15
       unique-filename: 3.0.0
     dev: true
 
@@ -4284,8 +4289,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite@1.0.30001487:
-    resolution: {integrity: sha512-83564Z3yWGqXsh2vaH/mhXfEM0wX+NlBCm1jYHOb97TrTWJEmPTccZgeLTPBUUb0PNVo+oomb7wkimZBIERClA==}
+  /caniuse-lite@1.0.30001488:
+    resolution: {integrity: sha512-NORIQuuL4xGpIy6iCCQGN4iFjlBXtfKWIenlUuyZJumLRIindLb7wXM+GO8erEhb7vXfcnf4BAg2PrSDN5TNLQ==}
     dev: false
 
   /capital-case@1.0.4:
@@ -4924,8 +4929,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.397:
-    resolution: {integrity: sha512-jwnPxhh350Q/aMatQia31KAIQdhEsYS0fFZ0BQQlN9tfvOEwShu6ZNwI4kL/xBabjcB/nTy6lSt17kNIluJZ8Q==}
+  /electron-to-chromium@1.4.398:
+    resolution: {integrity: sha512-tT90Lmieb+Y4jX5Awub8BsvuFM/ICKr01oZFBR9Cy6pxCf+rAmwcpRl4xfXb66DzTXc4qSMPqlqLDoghm27utQ==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -5762,8 +5767,8 @@ packages:
       foreground-child: 3.1.1
       jackspeak: 2.2.0
       minimatch: 9.0.0
-      minipass: 5.0.0
-      path-scurry: 1.9.1
+      minipass: 6.0.2
+      path-scurry: 1.9.2
     dev: true
 
   /glob@7.1.6:
@@ -7231,8 +7236,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /minipass@6.0.1:
-    resolution: {integrity: sha512-Tenl5QPpgozlOGBiveNYHg2f6y+VpxsXRoIHFUVJuSmTonXRAE6q9b8Mp/O46762/2AlW4ye4Nkyvx0fgWDKbw==}
+  /minipass@6.0.2:
+    resolution: {integrity: sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==}
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
@@ -7638,12 +7643,12 @@ packages:
       path-root-regex: 0.1.2
     dev: false
 
-  /path-scurry@1.9.1:
-    resolution: {integrity: sha512-UgmoiySyjFxP6tscZDgWGEAgsW5ok8W3F5CJDnnH2pozwSTGE6eH7vwTotMwATWA2r5xqdkKdxYPkwlJjAI/3g==}
+  /path-scurry@1.9.2:
+    resolution: {integrity: sha512-qSDLy2aGFPm8i4rsbHd4MNyTcrzHFsLQykrtbuGRknZZCBBVXSv2tSCDN2Cg6Rt/GFRw8GoW9y9Ecw5rIPG1sg==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 9.1.1
-      minipass: 6.0.1
+      minipass: 6.0.2
     dev: true
 
   /path-to-regexp@0.1.7:
@@ -8022,8 +8027,8 @@ packages:
       glob: 10.2.5
     dev: true
 
-  /rollup@3.21.8:
-    resolution: {integrity: sha512-SSFV2T2fWtQ/vvBip85u2Nr0GNKireabH9d7nXswBg+XSH+jbVDSYptRAEbCEsquhs503rpPA9POYAp0/Jhasw==}
+  /rollup@3.22.0:
+    resolution: {integrity: sha512-imsigcWor5Y/dC0rz2q0bBt9PabcL3TORry2hAa6O6BuMvY71bqHyfReAz5qyAqiQATD1m70qdntqBfBQjVWpQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -8511,8 +8516,8 @@ packages:
     resolution: {integrity: sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==}
     engines: {node: '>=0.10.0'}
 
-  /tar@6.1.14:
-    resolution: {integrity: sha512-piERznXu0U7/pW7cdSn7hjqySIVTYT6F76icmFk7ptU7dDYlXTm5r9A6K04R2vU3olYgoKeo1Cg3eeu5nhftAw==}
+  /tar@6.1.15:
+    resolution: {integrity: sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A==}
     engines: {node: '>=10'}
     dependencies:
       chownr: 2.0.0
@@ -8725,7 +8730,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4(ts-node@10.9.1)
       resolve-from: 5.0.0
-      rollup: 3.21.8
+      rollup: 3.22.0
       source-map: 0.8.0-beta.0
       sucrase: 3.32.0
       tree-kill: 1.2.2
