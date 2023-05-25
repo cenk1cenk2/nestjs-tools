@@ -107,8 +107,8 @@ importers:
         version: 9.4.2(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
     devDependencies:
       '@apollo/gateway':
-        specifier: '>= 2.4.4'
-        version: 2.4.4(graphql@16.6.0)
+        specifier: '>= 2.4.6'
+        version: 2.4.6(graphql@16.6.0)
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
         version: link:../nestjs-utils
@@ -264,22 +264,20 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: false
 
-  /@apollo/composition@2.4.4(graphql@16.6.0):
-    resolution: {integrity: sha512-bFILcSndtx9LIjRi1nWN1CC8j1u6DhzudQUfL29IAwcrYpii4+amPMtOpfsbpiqM2fOJtiK2dZZJDO6ZfmC3fg==}
+  /@apollo/composition@2.4.6(graphql@16.6.0):
+    resolution: {integrity: sha512-8dZxGPuXsv9Jhergndt4zUKQZeKvmdvSlDP9Te22ablgP/oAt2x0y4BKa23hlkwlNgMYsLkmFYDu0sFY9+WiqQ==}
     engines: {node: '>=14.15.0'}
-    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.4.4(graphql@16.6.0)
-      '@apollo/query-graphs': 2.4.4(graphql@16.6.0)
+      '@apollo/federation-internals': 2.4.6(graphql@16.6.0)
+      '@apollo/query-graphs': 2.4.6(graphql@16.6.0)
       graphql: 16.6.0
     dev: true
 
-  /@apollo/federation-internals@2.4.4(graphql@16.6.0):
-    resolution: {integrity: sha512-HxyneKeXJF7ZaJWnlEwhSORyoibsL4uiIXcwFB0wK3KBodyw4XzCfN/JLdCfZJ2DHDzf+YaDY3iKsw/ypxCTig==}
+  /@apollo/federation-internals@2.4.6(graphql@16.6.0):
+    resolution: {integrity: sha512-CqNoUfSdGnz+GBK5gf73RihrHNPywGCNMNfBGWun/EJRsk1uIsa0LisfF6+qqo/5c8wV7u5QzLkYOPyf6Zk6dQ==}
     engines: {node: '>=14.15.0'}
-    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
@@ -290,16 +288,15 @@ packages:
       uuid: 9.0.0
     dev: true
 
-  /@apollo/gateway@2.4.4(graphql@16.6.0):
-    resolution: {integrity: sha512-V0DuIqWjZ7ZPdyfXpXGl9BFnZsCs0aHpua1ygUy7dcKub3V95c2puIiaPvfOKlhY5eS1Ac18Ubuh91klzVpujw==}
+  /@apollo/gateway@2.4.6(graphql@16.6.0):
+    resolution: {integrity: sha512-/BkhFvvgV84itVjtEni2ULABalhlI9MjaWSJVvxIqt7gnn1sf5N+HVq6RVEaraCTbj+eMBvGdmO67Ur+Q5Ubyg==}
     engines: {node: '>=14.15.0'}
-    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/composition': 2.4.4(graphql@16.6.0)
-      '@apollo/federation-internals': 2.4.4(graphql@16.6.0)
-      '@apollo/query-planner': 2.4.4(graphql@16.6.0)
+      '@apollo/composition': 2.4.6(graphql@16.6.0)
+      '@apollo/federation-internals': 2.4.6(graphql@16.6.0)
+      '@apollo/query-planner': 2.4.6(graphql@16.6.0)
       '@apollo/server-gateway-interface': 1.1.0(graphql@16.6.0)
       '@apollo/usage-reporting-protobuf': 4.1.0
       '@apollo/utils.createhash': 2.0.1
@@ -340,29 +337,27 @@ packages:
       long: 4.0.0
     dev: true
 
-  /@apollo/query-graphs@2.4.4(graphql@16.6.0):
-    resolution: {integrity: sha512-rTWxgo3Uxlk8kMriWT1AwAv6k28bVPsBCopE6wFkwYMSQBNs6N60w52ww8XBwsup/o5mYY9S86T++oW/J5j+BA==}
+  /@apollo/query-graphs@2.4.6(graphql@16.6.0):
+    resolution: {integrity: sha512-muHjY57I+OARnXjAMWPGUoBv2QbWvnqXLbF+eoGtfncnQi/GRTB3dJigKLWEUjjxhoAT0PDFYqBxTUIMy9gzSQ==}
     engines: {node: '>=14.15.0'}
-    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.4.4(graphql@16.6.0)
+      '@apollo/federation-internals': 2.4.6(graphql@16.6.0)
       deep-equal: 2.2.1
       graphql: 16.6.0
       ts-graphviz: 1.7.0
       uuid: 9.0.0
     dev: true
 
-  /@apollo/query-planner@2.4.4(graphql@16.6.0):
-    resolution: {integrity: sha512-/9QYi9UcNPmmXaPosAgzWeB8DgOJmOW2P3pztUNnduMZPq4DKWngXOP5aO+nL/9nYKUsxEmwO37438QBtcfLUA==}
+  /@apollo/query-planner@2.4.6(graphql@16.6.0):
+    resolution: {integrity: sha512-LdLRu88kNxpILG3862qDqIz4bS0loCM8/Rjk0eIQuunusbvTR/vOCI4zp79hbHJqpbeUeMBpl6rdtEJcYBTBSg==}
     engines: {node: '>=14.15.0'}
-    deprecated: This patch involved a publishing failure. Please use version 2.4.5 instead.
     peerDependencies:
       graphql: ^16.5.0
     dependencies:
-      '@apollo/federation-internals': 2.4.4(graphql@16.6.0)
-      '@apollo/query-graphs': 2.4.4(graphql@16.6.0)
+      '@apollo/federation-internals': 2.4.6(graphql@16.6.0)
+      '@apollo/query-graphs': 2.4.6(graphql@16.6.0)
       '@apollo/utils.keyvaluecache': 2.1.1
       chalk: 4.1.2
       deep-equal: 2.2.1
