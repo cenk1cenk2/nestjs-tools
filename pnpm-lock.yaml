@@ -2737,7 +2737,7 @@ packages:
       '@whatwg-node/fetch': 0.8.8
       chalk: 4.1.2
       debug: 4.3.4
-      dotenv: 16.1.0
+      dotenv: 16.1.3
       graphql: 16.6.0
       graphql-request: 6.1.0(graphql@16.6.0)
       http-proxy-agent: 6.1.1
@@ -3307,16 +3307,16 @@ packages:
     resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: true
 
-  /@redis/bloom@1.2.0(@redis/client@1.5.7):
+  /@redis/bloom@1.2.0(@redis/client@1.5.8):
     resolution: {integrity: sha512-HG2DFjYKbpNmVXsa0keLHp/3leGJz1mjh09f2RLGGLQZzSHpkmZWuwJbAvo3QcRY8p80m5+ZdXZdYOSBLlp7Cg==}
     peerDependencies:
       '@redis/client': ^1.0.0
     dependencies:
-      '@redis/client': 1.5.7
+      '@redis/client': 1.5.8
     dev: true
 
-  /@redis/client@1.5.7:
-    resolution: {integrity: sha512-gaOBOuJPjK5fGtxSseaKgSvjiZXQCdLlGg9WYQst+/GRUjmXaiB5kVkeQMRtPc7Q2t93XZcJfBMSwzs/XS9UZw==}
+  /@redis/client@1.5.8:
+    resolution: {integrity: sha512-xzElwHIO6rBAqzPeVnCzgvrnBEcFL1P0w8P65VNLRkdVW8rOE58f52hdj0BDgmsdOm4f1EoXPZtH4Fh7M/qUpw==}
     engines: {node: '>=14'}
     dependencies:
       cluster-key-slot: 1.1.2
@@ -3324,36 +3324,36 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /@redis/graph@1.1.0(@redis/client@1.5.7):
+  /@redis/graph@1.1.0(@redis/client@1.5.8):
     resolution: {integrity: sha512-16yZWngxyXPd+MJxeSr0dqh2AIOi8j9yXKcKCwVaKDbH3HTuETpDVPcLujhFYVPtYrngSco31BUcSa9TH31Gqg==}
     peerDependencies:
       '@redis/client': ^1.0.0
     dependencies:
-      '@redis/client': 1.5.7
+      '@redis/client': 1.5.8
     dev: true
 
-  /@redis/json@1.0.4(@redis/client@1.5.7):
+  /@redis/json@1.0.4(@redis/client@1.5.8):
     resolution: {integrity: sha512-LUZE2Gdrhg0Rx7AN+cZkb1e6HjoSKaeeW8rYnt89Tly13GBI5eP4CwDVr+MY8BAYfCg4/N15OUrtLoona9uSgw==}
     peerDependencies:
       '@redis/client': ^1.0.0
     dependencies:
-      '@redis/client': 1.5.7
+      '@redis/client': 1.5.8
     dev: true
 
-  /@redis/search@1.1.2(@redis/client@1.5.7):
-    resolution: {integrity: sha512-/cMfstG/fOh/SsE+4/BQGeuH/JJloeWuH+qJzM8dbxuWvdWibWAOAHHCZTMPhV3xIlH4/cUEIA8OV5QnYpaVoA==}
+  /@redis/search@1.1.3(@redis/client@1.5.8):
+    resolution: {integrity: sha512-4Dg1JjvCevdiCBTZqjhKkGoC5/BcB7k9j99kdMnaXFXg8x4eyOIVg9487CMv7/BUVkFLZCaIh8ead9mU15DNng==}
     peerDependencies:
       '@redis/client': ^1.0.0
     dependencies:
-      '@redis/client': 1.5.7
+      '@redis/client': 1.5.8
     dev: true
 
-  /@redis/time-series@1.0.4(@redis/client@1.5.7):
+  /@redis/time-series@1.0.4(@redis/client@1.5.8):
     resolution: {integrity: sha512-ThUIgo2U/g7cCuZavucQTQzA9g9JbDDY2f64u3AbAoz/8vE2lt2U37LamDUVChhaDA3IRT9R6VvJwqnUfTJzng==}
     peerDependencies:
       '@redis/client': ^1.0.0
     dependencies:
-      '@redis/client': 1.5.7
+      '@redis/client': 1.5.8
     dev: true
 
   /@repeaterjs/repeater@3.0.4:
@@ -4203,8 +4203,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001491
-      electron-to-chromium: 1.4.414
+      caniuse-lite: 1.0.30001492
+      electron-to-chromium: 1.4.415
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.7)
     dev: false
@@ -4321,8 +4321,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite@1.0.30001491:
-    resolution: {integrity: sha512-17EYIi4TLnPiTzVKMveIxU5ETlxbSO3B6iPvMbprqnKh4qJsQGk5Nh1Lp4jIMAE0XfrujsJuWZAM3oJdMHaKBA==}
+  /caniuse-lite@1.0.30001492:
+    resolution: {integrity: sha512-2efF8SAZwgAX1FJr87KWhvuJxnGJKOnctQa8xLOskAXNXq8oiuqgl6u1kk3fFpsp3GgvzlRjiK1sl63hNtFADw==}
     dev: false
 
   /capital-case@1.0.4:
@@ -4940,8 +4940,8 @@ packages:
       tslib: 2.5.2
     dev: false
 
-  /dotenv@16.1.0:
-    resolution: {integrity: sha512-XiwP/4cqatBNLEnKe169vPZCrovUmYngyVA4DgZ3uIVLJfZaBgr4uT0EF2TrEQqgWDDlekGo0muEYme5SR78Ww==}
+  /dotenv@16.1.3:
+    resolution: {integrity: sha512-FYssxsmCTtKL72fGBSvb1K9dRz0/VZeWqFme/vSb7r7323x4CRaHu4LvQ5JG3+s6yt2YPbBrkpiEODktfyjI9A==}
     engines: {node: '>=12'}
 
   /dset@3.1.2:
@@ -4961,8 +4961,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.414:
-    resolution: {integrity: sha512-RRuCvP6ekngVh2SAJaOKT/hxqc9JAsK+Pe0hP5tGQIfonU2Zy9gMGdJ+mBdyl/vNucMG6gkXYtuM4H/1giws5w==}
+  /electron-to-chromium@1.4.415:
+    resolution: {integrity: sha512-3meOxxvyUOJVwa7cem6O2/MRPZ+FTzblSPSpG7biZoF9yOVrhCaS2l9C4jjW6YTm8uuEpmApuP0xQJSmUglfdg==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -7895,7 +7895,7 @@ packages:
     resolution: {integrity: sha512-WRmrAm1n1EQIQbEwbfqpceuxHgr7LKOZ471c/KGxyOTVFFm53E0S7vFSZA7a1Jnga7aHTOYqLhhMWE0lKKdsNw==}
     engines: {node: '>= 14'}
     dependencies:
-      redis: 4.6.6
+      redis: 4.6.7
       ulid: 2.3.0
     dev: true
 
@@ -7906,15 +7906,15 @@ packages:
       redis-errors: 1.2.0
     dev: true
 
-  /redis@4.6.6:
-    resolution: {integrity: sha512-aLs2fuBFV/VJ28oLBqYykfnhGGkFxvx0HdCEBYdJ99FFbSEMZ7c1nVKwR6ZRv+7bb7JnC0mmCzaqu8frgOYhpA==}
+  /redis@4.6.7:
+    resolution: {integrity: sha512-KrkuNJNpCwRm5vFJh0tteMxW8SaUzkm5fBH7eL5hd/D0fAkzvapxbfGPP/r+4JAXdQuX7nebsBkBqA2RHB7Usw==}
     dependencies:
-      '@redis/bloom': 1.2.0(@redis/client@1.5.7)
-      '@redis/client': 1.5.7
-      '@redis/graph': 1.1.0(@redis/client@1.5.7)
-      '@redis/json': 1.0.4(@redis/client@1.5.7)
-      '@redis/search': 1.1.2(@redis/client@1.5.7)
-      '@redis/time-series': 1.0.4(@redis/client@1.5.7)
+      '@redis/bloom': 1.2.0(@redis/client@1.5.8)
+      '@redis/client': 1.5.8
+      '@redis/graph': 1.1.0(@redis/client@1.5.8)
+      '@redis/json': 1.0.4(@redis/client@1.5.8)
+      '@redis/search': 1.1.3(@redis/client@1.5.8)
+      '@redis/time-series': 1.0.4(@redis/client@1.5.8)
     dev: true
 
   /reflect-metadata@0.1.13:
@@ -8980,7 +8980,7 @@ packages:
       cli-highlight: 2.1.11
       date-fns: 2.30.0
       debug: 4.3.4
-      dotenv: 16.1.0
+      dotenv: 16.1.3
       glob: 8.1.0
       mkdirp: 2.1.6
       reflect-metadata: 0.1.13
