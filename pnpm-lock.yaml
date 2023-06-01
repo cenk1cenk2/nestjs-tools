@@ -433,7 +433,7 @@ packages:
       babel-preset-fbjs: 3.4.0(@babel/core@7.22.1)
       chalk: 4.1.2
       fb-watchman: 2.0.2
-      fbjs: 3.0.4
+      fbjs: 3.0.5
       glob: 7.2.3
       graphql: 16.6.0
       immutable: 3.7.6
@@ -2861,8 +2861,8 @@ packages:
     dependencies:
       graphql: 16.6.0
 
-  /@humanwhocodes/config-array@0.11.8:
-    resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
+  /@humanwhocodes/config-array@0.11.10:
+    resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
@@ -4204,7 +4204,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001492
-      electron-to-chromium: 1.4.415
+      electron-to-chromium: 1.4.417
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.7)
     dev: false
@@ -4290,7 +4290,7 @@ packages:
     resolution: {integrity: sha512-qYHx0DlM0mepUqXkpDg83K1dYEXOinq9+sYdHxs1c5LQjR1MPgm34im+JVtsy9+uoeE2T1JLzJSAB+nV4IH5dQ==}
     dependencies:
       lodash.clonedeep: 4.5.0
-      lru-cache: 9.1.1
+      lru-cache: 9.1.2
     dev: true
 
   /cachedir@2.3.0:
@@ -4961,8 +4961,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.415:
-    resolution: {integrity: sha512-3meOxxvyUOJVwa7cem6O2/MRPZ+FTzblSPSpG7biZoF9yOVrhCaS2l9C4jjW6YTm8uuEpmApuP0xQJSmUglfdg==}
+  /electron-to-chromium@1.4.417:
+    resolution: {integrity: sha512-8rY8HdCxuSVY8wku3i/eDac4g1b4cSbruzocenrqBlzqruAZYHjQCHIjC66dLR9DXhEHTojsC4EjhZ8KmzwXqA==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -5232,7 +5232,7 @@ packages:
       '@eslint-community/regexpp': 4.5.1
       '@eslint/eslintrc': 2.0.3
       '@eslint/js': 8.41.0
-      '@humanwhocodes/config-array': 0.11.8
+      '@humanwhocodes/config-array': 0.11.10
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       ajv: 6.12.6
@@ -5509,8 +5509,8 @@ packages:
     resolution: {integrity: sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==}
     dev: false
 
-  /fbjs@3.0.4:
-    resolution: {integrity: sha512-ucV0tDODnGV3JCnnkmoszb5lf4bNpzjv80K41wd4k798Etq+UYD0y0TIfalLjZoKgjive6/adkRnszwapiDgBQ==}
+  /fbjs@3.0.5:
+    resolution: {integrity: sha512-ztsSx77JBtkuMrEypfhgc3cI0+0h+svqeie7xHbh1k/IKdcydnvadp/mUaGgjAOXQmQSxsqgaRhS3q9fy+1kxg==}
     dependencies:
       cross-fetch: 3.1.6
       fbjs-css-vars: 1.0.2
@@ -5518,7 +5518,7 @@ packages:
       object-assign: 4.1.1
       promise: 7.3.1
       setimmediate: 1.0.5
-      ua-parser-js: 0.7.35
+      ua-parser-js: 1.0.35
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -7040,8 +7040,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /lru-cache@9.1.1:
-    resolution: {integrity: sha512-65/Jky17UwSb0BuB9V+MyDpsOtXKmYwzhyl+cOa9XUiI4uV2Ouy/2voFP3+al0BjZbJgMBD8FojMpAf+Z+qn4A==}
+  /lru-cache@9.1.2:
+    resolution: {integrity: sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==}
     engines: {node: 14 || >=16.14}
     dev: true
 
@@ -7687,7 +7687,7 @@ packages:
     resolution: {integrity: sha512-qSDLy2aGFPm8i4rsbHd4MNyTcrzHFsLQykrtbuGRknZZCBBVXSv2tSCDN2Cg6Rt/GFRw8GoW9y9Ecw5rIPG1sg==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      lru-cache: 9.1.1
+      lru-cache: 9.1.2
       minipass: 6.0.2
     dev: true
 
@@ -7936,7 +7936,7 @@ packages:
     resolution: {integrity: sha512-QU6JKr1tMsry22DXNy9Whsq5rmvwr3LSZiiWV/9+DFpuTWvp+WFhobWMc8TC4OjKFfNhEZy7mOiqUAn5atQtug==}
     dependencies:
       '@babel/runtime': 7.22.3
-      fbjs: 3.0.4
+      fbjs: 3.0.5
       invariant: 2.2.4
     transitivePeerDependencies:
       - encoding
@@ -8999,8 +8999,8 @@ packages:
     hasBin: true
     dev: true
 
-  /ua-parser-js@0.7.35:
-    resolution: {integrity: sha512-veRf7dawaj9xaWEu9HoTVn5Pggtc/qj+kqTOFvNiN1l0YdxwC1kvel57UCjThjGa3BHBihE8/UJAHI+uQHmd/g==}
+  /ua-parser-js@1.0.35:
+    resolution: {integrity: sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==}
     dev: false
 
   /uglify-js@3.17.4:
