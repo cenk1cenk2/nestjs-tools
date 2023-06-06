@@ -350,7 +350,7 @@ packages:
       '@apollo/federation-internals': 2.4.7(graphql@16.6.0)
       deep-equal: 2.2.1
       graphql: 16.6.0
-      ts-graphviz: 1.7.0
+      ts-graphviz: 1.8.0
       uuid: 9.0.0
     dev: true
 
@@ -4327,7 +4327,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001495
-      electron-to-chromium: 1.4.421
+      electron-to-chromium: 1.4.422
       node-releases: 2.0.12
       update-browserslist-db: 1.0.11(browserslist@4.21.7)
     dev: false
@@ -4388,7 +4388,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.2
-      glob: 10.2.6
+      glob: 10.2.7
       lru-cache: 7.18.3
       minipass: 5.0.0
       minipass-collect: 1.0.2
@@ -5083,8 +5083,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.421:
-    resolution: {integrity: sha512-wZOyn3s/aQOtLGAwXMZfteQPN68kgls2wDAnYOA8kCjBvKVrW5RwmWVspxJYTqrcN7Y263XJVsC66VCIGzDO3g==}
+  /electron-to-chromium@1.4.422:
+    resolution: {integrity: sha512-OQMid0IRbJv27BhlPiBK8CfGzjeq4ZCBSmpwNi1abyS8w17/BajOUu7hBI49ptDTBCz9NRFbORhWvt41dF7dwg==}
     dev: false
 
   /emoji-regex@8.0.0:
@@ -5912,8 +5912,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.2.6:
-    resolution: {integrity: sha512-U/rnDpXJGF414QQQZv5uVsabTVxMSwzS5CH0p3DRCIV6ownl4f7PzGnkGmvlum2wB+9RlJWJZ6ACU1INnBqiPA==}
+  /glob@10.2.7:
+    resolution: {integrity: sha512-jTKehsravOJo8IJxUGfZILnkvVJM/MOfHRs8QcXolVef2zNI9Tqyy5+SeuOAZd3upViEZQLyFpQhYiHLrMUNmA==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
@@ -8184,7 +8184,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.2.6
+      glob: 10.2.7
     dev: true
 
   /rollup@3.23.1:
@@ -8776,8 +8776,8 @@ packages:
     resolution: {integrity: sha512-XrHUvV5HpdLmIj4uVMxHggLbFSZYIn7HEWsqePZcI50pco+MPqJ50wMGY794X7AOOhxOBAjbkqfAbEe/QMp2Lw==}
     dev: true
 
-  /ts-graphviz@1.7.0:
-    resolution: {integrity: sha512-QOQI0L4J+n5e3yxSyd/lF4teI78o+p72i+jM8whdLNW/UZYlhlBoac9indtHAFW6O/7xBpve1S/yK1qWeVttkw==}
+  /ts-graphviz@1.8.0:
+    resolution: {integrity: sha512-ykZ1YvmAHtpn88CDOLto4Tk6Qph708uTt7yYuajVZKjmcTZLj2oVIU1+Uv2tJ9XgRyA4yTKhzPE/cMUf9hW10Q==}
     engines: {node: '>=14.16'}
     dev: true
 
