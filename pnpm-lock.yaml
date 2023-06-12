@@ -94,8 +94,8 @@ importers:
         specifier: '>= 8.3.1'
         version: 9.4.2(@nestjs/common@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/event-emitter':
-        specifier: ^1.4.1
-        version: 1.4.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.2)(reflect-metadata@0.1.13)
+        specifier: ^1.4.2
+        version: 1.4.2(@nestjs/common@9.4.3)(@nestjs/core@9.4.2)(reflect-metadata@0.1.13)
       eventemitter2:
         specifier: ^6.4.9
         version: 6.4.9
@@ -3192,8 +3192,8 @@ packages:
       - encoding
     dev: true
 
-  /@nestjs/event-emitter@1.4.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.2)(reflect-metadata@0.1.13):
-    resolution: {integrity: sha512-PmLpzMYgEKJNxOUrRjb6kNSm2PC6J+BeLTuF/bkYViGM/mVGvYOgU5jq8DQnXmiSmDmyWN+tO2cHSnR7odJJRA==}
+  /@nestjs/event-emitter@1.4.2(@nestjs/common@9.4.3)(@nestjs/core@9.4.2)(reflect-metadata@0.1.13):
+    resolution: {integrity: sha512-5mskPMS4KVH6LghC+NynfdmGiMCOOv9CdgVpuWGipLrJECv5KWc7vaW5o/9BYrcqPkN7Ted6CJ+O4AfsTiRlgw==}
     peerDependencies:
       '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0
       '@nestjs/core': ^7.0.0 || ^8.0.0 || ^9.0.0
