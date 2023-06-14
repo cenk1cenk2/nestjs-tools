@@ -165,10 +165,10 @@ importers:
     devDependencies:
       '@nestjs/cache-manager':
         specifier: ^1.0.0
-        version: 1.0.0(@nestjs/common@9.4.3)(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+        version: 1.0.0(@nestjs/common@9.4.3)(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       '@nestjs/common':
         specifier: ^9.4.3
-        version: 9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+        version: 9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       '@types/cache-manager':
         specifier: ^4.0.2
         version: 4.0.2
@@ -176,8 +176,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
       cache-manager:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.2.3
+        version: 5.2.3
       cache-manager-ioredis:
         specifier: ^2.1.0
         version: 2.1.0
@@ -2952,7 +2952,7 @@ packages:
     resolution: {integrity: sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==}
     engines: {node: '>=8'}
 
-  /@nestjs/cache-manager@1.0.0(@nestjs/common@9.4.3)(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1):
+  /@nestjs/cache-manager@1.0.0(@nestjs/common@9.4.3)(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1):
     resolution: {integrity: sha512-XMNdgsj3H+Ng/SYwFl13vRGNFA3e5Obk8LNwIuHLVSocnK2exReAWtscxEjQhoBc4FW4jAYOgU/U+mt18Q9T0g==}
     peerDependencies:
       '@nestjs/common': ^9.0.0
@@ -2960,13 +2960,13 @@ packages:
       reflect-metadata: ^0.1.12
       rxjs: ^7.0.0
     dependencies:
-      '@nestjs/common': 9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
-      cache-manager: 5.2.2
+      '@nestjs/common': 9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+      cache-manager: 5.2.3
       reflect-metadata: 0.1.13
       rxjs: 7.3.1
     dev: true
 
-  /@nestjs/common@9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1):
+  /@nestjs/common@9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1):
     resolution: {integrity: sha512-Gd6D4IaYj01o14Bwv81ukidn4w3bPHCblMUq+SmUmWLyosK+XQmInCS09SbDDZyL8jy86PngtBLTdhJ2bXSUig==}
     peerDependencies:
       cache-manager: <=5
@@ -2982,7 +2982,7 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      cache-manager: 5.2.2
+      cache-manager: 5.2.3
       iterare: 1.2.1
       reflect-metadata: 0.1.13
       rxjs: 7.3.1
@@ -3062,7 +3062,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+      '@nestjs/common': 9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -3187,7 +3187,7 @@ packages:
       '@graphql-tools/merge': 9.0.0(graphql@16.6.0)
       '@graphql-tools/schema': 10.0.0(graphql@16.6.0)
       '@graphql-tools/utils': 10.0.0(graphql@16.6.0)
-      '@nestjs/common': 9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+      '@nestjs/common': 9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       '@nestjs/core': 9.4.3(@nestjs/common@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       '@nestjs/mapped-types': 1.2.2(@nestjs/common@9.4.3)(reflect-metadata@0.1.13)
       chokidar: 3.5.3
@@ -3238,7 +3238,7 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.3(cache-manager@5.2.2)(reflect-metadata@0.1.13)(rxjs@7.3.1)
+      '@nestjs/common': 9.4.3(cache-manager@5.2.3)(reflect-metadata@0.1.13)(rxjs@7.3.1)
       reflect-metadata: 0.1.13
     dev: false
 
@@ -4409,8 +4409,8 @@ packages:
       - supports-color
     dev: true
 
-  /cache-manager@5.2.2:
-    resolution: {integrity: sha512-QYEct/rVt5HfNvyWpHQurOa1IgpjP9V0X3E5O8rdEmuKcucpnMs7CwK0bHvv92svxZXlN2w5hgMFdrbiYoHeIQ==}
+  /cache-manager@5.2.3:
+    resolution: {integrity: sha512-9OErI8fksFkxAMJ8Mco0aiZSdphyd90HcKiOMJQncSlU1yq/9lHHxrT8PDayxrmr9IIIZPOAEfXuGSD7g29uog==}
     dependencies:
       lodash.clonedeep: 4.5.0
       lru-cache: 9.1.2
