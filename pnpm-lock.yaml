@@ -92,7 +92,7 @@ importers:
     dependencies:
       '@nestjs/core':
         specifier: '>= 8.3.1'
-        version: 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+        version: 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/event-emitter':
         specifier: ^1.4.2
         version: 1.4.2(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)
@@ -118,7 +118,7 @@ importers:
         version: link:../nestjs-utils
       '@nestjs/core':
         specifier: ^9.4.3
-        version: 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+        version: 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nestjs/graphql':
         specifier: ^11.0.6
         version: 11.0.6(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(class-validator@0.14.0)(graphql@16.6.0)(reflect-metadata@0.1.13)
@@ -253,7 +253,7 @@ importers:
         version: 9.4.3(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@webundsoehne/nestjs-util':
         specifier: ^7.1.4
-        version: 7.1.4(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(@nestjs/microservices@10.0.0)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
+        version: 7.1.4(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(@nestjs/microservices@10.0.1)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
       winston:
         specifier: ^3.9.0
         version: 3.9.0
@@ -2737,7 +2737,7 @@ packages:
       '@whatwg-node/fetch': 0.8.8
       chalk: 4.1.2
       debug: 4.3.4
-      dotenv: 16.3.0
+      dotenv: 16.3.1
       graphql: 16.6.0
       graphql-request: 6.1.0(graphql@16.6.0)
       http-proxy-agent: 6.1.1
@@ -3013,7 +3013,7 @@ packages:
       tslib: 2.5.3
       uid: 2.0.2
 
-  /@nestjs/core@9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1):
+  /@nestjs/core@9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.1)(reflect-metadata@0.1.13)(rxjs@7.8.1):
     resolution: {integrity: sha512-Qi63+wi55Jh4sDyaj5Hhx2jOpKqT386aeo+VOKsxnd+Ql9VvkO/FjmuwBGUyzkJt29ENYc+P0Sx/k5LtstNpPQ==}
     requiresBuild: true
     peerDependencies:
@@ -3032,7 +3032,7 @@ packages:
         optional: true
     dependencies:
       '@nestjs/common': 9.4.3(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/microservices': 10.0.0(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.0.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -3242,8 +3242,8 @@ packages:
       reflect-metadata: 0.1.13
     dev: false
 
-  /@nestjs/microservices@10.0.0(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1):
-    resolution: {integrity: sha512-ZXMny2nUFPLWaFxlkwUlEYHmDWUFilkscMHaDbCMdYLVvRsNPm3nM2dBuunu/K+dqQIgUdNq+Yqo3C3tUyeAIA==}
+  /@nestjs/microservices@10.0.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1):
+    resolution: {integrity: sha512-viQXNK9KBMzVaewpWGUInP0Ashk9p04FQMyLbjaEDb0w7ArFVIbRFjCJiNkD89NJGfQIWZu1dCx+79sLnzh+aw==}
     peerDependencies:
       '@grpc/grpc-js': '*'
       '@nestjs/common': ^10.0.0
@@ -3279,7 +3279,7 @@ packages:
         optional: true
     dependencies:
       '@nestjs/common': 9.4.3(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/core': 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/core': 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       iterare: 1.2.1
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
@@ -3882,7 +3882,7 @@ packages:
       deepmerge: 4.3.1
     dev: true
 
-  /@webundsoehne/nestjs-util@7.1.4(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(@nestjs/microservices@10.0.0)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2):
+  /@webundsoehne/nestjs-util@7.1.4(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(@nestjs/microservices@10.0.1)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2):
     resolution: {integrity: sha512-5i/vAXjT4QBjYR/8JQ2iwKxS56MrVIcMKf42jvEYK6DTbcaq5n5jNJH9bAiuranlGEh3Aj5hyYBxPo/RehMCTA==}
     engines: {node: '>= 16'}
     peerDependencies:
@@ -3904,8 +3904,8 @@ packages:
         optional: true
     dependencies:
       '@nestjs/common': 9.4.3(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/core': 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/microservices': 10.0.0(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/core': 9.4.3(@nestjs/common@9.4.3)(@nestjs/microservices@10.0.1)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.0.1(@nestjs/common@9.4.3)(@nestjs/core@9.4.3)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@webundsoehne/deep-merge': 4.0.0
       class-transformer: 0.5.1
       class-validator: 0.14.0
@@ -5062,8 +5062,8 @@ packages:
       tslib: 2.5.3
     dev: false
 
-  /dotenv@16.3.0:
-    resolution: {integrity: sha512-tHB+hmf8MRCkT3VVivGiG8kq9HiGTmQ3FzOKgztfpJQH1IWuZTOvKSJmHNnQPowecAmkCJhLrxdPhOr06LLqIQ==}
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
 
   /dset@3.1.2:
@@ -9103,7 +9103,7 @@ packages:
       cli-highlight: 2.1.11
       date-fns: 2.30.0
       debug: 4.3.4
-      dotenv: 16.3.0
+      dotenv: 16.3.1
       glob: 8.1.0
       mkdirp: 2.1.6
       reflect-metadata: 0.1.13
