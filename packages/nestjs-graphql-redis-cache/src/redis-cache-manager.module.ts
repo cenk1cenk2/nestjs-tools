@@ -1,5 +1,5 @@
-import { CacheModule, CACHE_MANAGER } from '@nestjs/cache-manager'
-import type { CacheStore, DynamicModule } from '@nestjs/common'
+import { CACHE_MANAGER, CacheModule } from '@nestjs/cache-manager'
+import type { DynamicModule } from '@nestjs/common'
 import { Global, Module } from '@nestjs/common'
 import * as redisStore from 'cache-manager-ioredis'
 
@@ -18,7 +18,7 @@ export class RedisCacheManagerModule {
           useFactory: (): CacheModule =>
             CacheModule.register({
               ...options?.options,
-              store: redisStore as unknown as CacheStore
+              store: redisStore
             })
         }
       ],

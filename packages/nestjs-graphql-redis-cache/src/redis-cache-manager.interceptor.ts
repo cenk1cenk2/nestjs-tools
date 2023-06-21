@@ -1,7 +1,7 @@
-import type { CallHandler, NestInterceptor } from '@nestjs/common'
-import { CACHE_TTL_METADATA, Injectable, Logger } from '@nestjs/common'
+import { CACHE_TTL_METADATA } from '@nestjs/cache-manager'
+import type { CallHandler, ExecutionContext, NestInterceptor } from '@nestjs/common'
+import { Injectable, Logger } from '@nestjs/common'
 import { Reflector } from '@nestjs/core'
-import type { GraphQLExecutionContext } from '@nestjs/graphql'
 import type { Observable } from 'rxjs'
 import { of } from 'rxjs'
 import { tap } from 'rxjs/operators'
@@ -16,7 +16,7 @@ export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {
 
   constructor (@InjectRedisCacheManager() private cache: RedisCacheManagerProvider, protected readonly reflector: Reflector) {}
 
-  public async intercept (context: GraphQLExecutionContext, next: CallHandler): Promise<Observable<any>> {
+  public async intercept (context: ExecutionContext, next: CallHandler): Promise<Observable<any>> {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/naming-convention
     const [ _u, args, _s, field ] = context.getArgs()
 

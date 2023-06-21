@@ -26,12 +26,12 @@
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
   "peerDependencies": {
-    "@nestjs/common": ">= 7.6.1 < 11",
-    "@aws-sdk/client-s3": ">= 3"
+    "@aws-sdk/client-s3": ">= 3",
+    "@nestjs/common": ">= 7.6.1"
   },
   "devDependencies": {
-    "@nestjs/common": "^9.4.3",
-    "@aws-sdk/client-s3": "^3.354.0"
+    "@aws-sdk/client-s3": "^3.354.0",
+    "@nestjs/common": "^10.0.3"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [

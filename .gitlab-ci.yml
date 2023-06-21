@@ -5,7 +5,7 @@ stages:
   - publish
 
 variables:
-  NODE_VERSION: 18-alpine
+  NODE_VERSION: 20-alpine
   SEMANTIC_RELEASE_WORKSPACE: 'true'
 
 include:
