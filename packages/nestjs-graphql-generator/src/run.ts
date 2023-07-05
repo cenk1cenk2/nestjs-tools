@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import config from 'config'
-import { join } from 'path'
 
 import type { ConfigOptions, ConfigSchema, Status } from './run.interface'
 import { getStatus } from './util'
@@ -36,7 +35,7 @@ export async function runGenerator (): Promise<unknown[]> {
           watch: true,
           schema: s.from,
           generates: {
-            [join('src', s.to)]: {
+            [s.to]: {
               plugins: [ 'typescript' ],
               hooks: {
                 afterOneFileWrite: [ 'prettier --write', 'eslint --fix' ]
