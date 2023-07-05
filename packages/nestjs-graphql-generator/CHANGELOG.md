@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-generator [3.0.6](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.5...@cenk1cenk2/nestjs-graphql-generator@3.0.6) (2023-07-05)
+
+
+### Bug Fixes
+
+* remove unnessary package ([f0fd15b](https://github.com/cenk1cenk2/nestjs-tools/commit/f0fd15b2caa498fbc0a1d1acd3b9008c590c97fd))
+
 ## @cenk1cenk2/nestjs-graphql-generator [3.0.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.4...@cenk1cenk2/nestjs-graphql-generator@3.0.5) (2023-07-05)
 
 
