@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import config from 'config'
-import delay from 'delay'
 import { join } from 'path'
 
 import type { ConfigOptions, ConfigSchema, Status } from './run.interface'
@@ -25,7 +24,7 @@ export async function runGenerator (): Promise<unknown[]> {
         .map((s) => s.from)
         .join(', ')}`
     )
-    await delay(5000)
+    await new Promise((resolve) => setTimeout(resolve, 5000))
     status = getStatus(schema)
   }
 
