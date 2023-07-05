@@ -5,7 +5,7 @@ import type { ConfigOptions, ConfigSchema, Status } from './run.interface'
 import { getStatus } from './util'
 
 export async function runGenerator (): Promise<unknown[]> {
-  const { generate } = await import('@graphql-codegen/cli')
+  const { generate, CodegenContext } = await import('@graphql-codegen/cli')
   const schema = config.get<ConfigSchema[]>('schema') ?? []
   const options = config.get<ConfigOptions>('options') ?? {}
 
@@ -27,23 +27,27 @@ export async function runGenerator (): Promise<unknown[]> {
     status = getStatus(schema)
   }
 
+  // https://github.com/dotansimha/graphql-code-generator/issues/9490
   return Promise.all(
     schema.map((s) =>
       generate(
-        {
-          ...options,
-          watch: true,
-          schema: s.from,
-          generates: {
-            [s.to]: {
-              plugins: [ 'typescript' ],
-              hooks: {
-                afterOneFileWrite: [ 'prettier --write', 'eslint --fix' ]
-              },
-              ...s.options ?? {}
+        new CodegenContext({
+          config: {
+            watch: true,
+            ...options,
+            schema: s.from,
+            generates: {
+              [s.to]: {
+                plugins: [ 'typescript' ],
+                hooks: {
+                  afterOneFileWrite: [ 'prettier --write', 'eslint --fix' ]
+                },
+                ...s.options ?? {}
+              }
             }
-          }
-        },
+          },
+          filepath: s.to
+        }),
         true
       )
     )
