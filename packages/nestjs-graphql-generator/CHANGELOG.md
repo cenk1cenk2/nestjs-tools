@@ -1,3 +1,15 @@
+# @cenk1cenk2/nestjs-graphql-generator [4.0.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.6...@cenk1cenk2/nestjs-graphql-generator@4.0.0) (2023-07-05)
+
+
+### Performance Improvements
+
+* update typescript plugin for dum ([21e83e9](https://github.com/cenk1cenk2/nestjs-tools/commit/21e83e9ae64962df39c2aca59c1b6c42f7a7f421))
+
+
+### BREAKING CHANGES
+
+* removes src from the default name
+
 ## @cenk1cenk2/nestjs-graphql-generator [3.0.6](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.5...@cenk1cenk2/nestjs-graphql-generator@3.0.6) (2023-07-05)
 
 
