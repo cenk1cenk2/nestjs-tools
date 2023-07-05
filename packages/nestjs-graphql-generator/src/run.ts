@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-import { generate } from '@graphql-codegen/cli'
 import config from 'config'
 import delay from 'delay'
 import { join } from 'path'
@@ -8,6 +7,7 @@ import type { ConfigOptions, ConfigSchema, Status } from './run.interface'
 import { getStatus } from './util'
 
 export async function runGenerator (): Promise<unknown[]> {
+  const { generate } = await import('@graphql-codegen/cli')
   const schema = config.get<ConfigSchema[]>('schema') ?? []
   const options = config.get<ConfigOptions>('options') ?? {}
 
