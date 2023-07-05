@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-generator [3.0.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.4...@cenk1cenk2/nestjs-graphql-generator@3.0.5) (2023-07-05)
+
+
+### Bug Fixes
+
+* esm library for ddc ([d4759e0](https://github.com/cenk1cenk2/nestjs-tools/commit/d4759e0b1c607fe77ff4952050305393708a38f7))
+
 ## @cenk1cenk2/nestjs-graphql-generator [3.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-generator@3.0.3...@cenk1cenk2/nestjs-graphql-generator@3.0.4) (2023-06-21)
 
 
