@@ -209,8 +209,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       redis-om:
-        specifier: ^0.3.6
-        version: 0.3.6
+        specifier: ^0.4.0
+        version: 0.4.0
 
   packages/nestjs-s3:
     devDependencies:
@@ -6991,6 +6991,15 @@ packages:
     resolution: {integrity: sha512-2/Ki0GcmuqSrgFyelQq9M05y7PS0mEwuIzrf3f1fPqkVDVRvZrPZtVSMHxdgo8Aq0sxAOb/cr2aqqA3LeWHVPg==}
     dev: false
 
+  /jsonpath-plus@7.2.0:
+    resolution: {integrity: sha512-zBfiUPM5nD0YZSBT/o/fbCUlCcepMIdP0CJZxM1+KgA4f2T206f6VAg9e7mX35+KlMaIc5qXW34f3BnwJ3w+RA==}
+    engines: {node: '>=12.0.0'}
+    dev: true
+
+  /just-clone@6.2.0:
+    resolution: {integrity: sha512-1IynUYEc/HAwxhi3WDpIpxJbZpMCvvrrmZVqvj9EhpvbH8lls7HhdhiByjL7DkAaWlLIzpC0Xc/VPvy/UxLNjA==}
+    dev: true
+
   /kind-of@3.2.2:
     resolution: {integrity: sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==}
     engines: {node: '>=0.10.0'}
@@ -8144,10 +8153,12 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /redis-om@0.3.6:
-    resolution: {integrity: sha512-WRmrAm1n1EQIQbEwbfqpceuxHgr7LKOZ471c/KGxyOTVFFm53E0S7vFSZA7a1Jnga7aHTOYqLhhMWE0lKKdsNw==}
+  /redis-om@0.4.0:
+    resolution: {integrity: sha512-FWSw8YUrOn/cp+AjqPu8yLx73pBYf7NISHOuez/5v0I2mDp88YUcbMLxVwpWu9Gg8lJ29z1SrQX1fShWgtkJiw==}
     engines: {node: '>= 14'}
     dependencies:
+      jsonpath-plus: 7.2.0
+      just-clone: 6.2.0
       redis: 4.6.7
       ulid: 2.3.0
     dev: true
