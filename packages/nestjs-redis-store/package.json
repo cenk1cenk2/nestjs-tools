@@ -41,7 +41,7 @@
   "devDependencies": {
     "@nestjs/common": "^10.1.2",
     "ioredis": "^5.3.2",
-    "redis-om": "^0.4.0"
+    "redis-om": "^0.4.1"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
