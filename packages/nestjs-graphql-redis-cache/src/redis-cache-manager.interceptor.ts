@@ -14,7 +14,10 @@ import { type RedisCacheManagerProvider } from './redis-cache-manager.interface'
 export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {
   private logger = new Logger()
 
-  constructor (@InjectRedisCacheManager() private cache: RedisCacheManagerProvider, protected readonly reflector: Reflector) {}
+  constructor (
+    @InjectRedisCacheManager() private cache: RedisCacheManagerProvider,
+    protected readonly reflector: Reflector
+  ) {}
 
   public async intercept (context: ExecutionContext, next: CallHandler): Promise<Observable<any>> {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/naming-convention
@@ -37,7 +40,7 @@ export class RedisCacheManagerGraphlQLInterceptor implements NestInterceptor {
     return next.handle().pipe(tap((data) => this.cache.set(key, data, ttl)))
   }
 
-  public createTopic (pattern: string, extensions: string | string[]): string {
-    return [ pattern, ...extensions ].join(REDIS_CACHE_MANAGER_DELIMITER)
+  public createTopic (...pattern: string[]): string {
+    return pattern.join(REDIS_CACHE_MANAGER_DELIMITER)
   }
 }

@@ -33,7 +33,7 @@ export class RedisStoreService implements OnModuleInit {
     return service
   }
 
-  public createTopic (topic: string, ...extensions: string[]): string {
-    return [ topic, ...extensions ?? [] ].join(this.options.delimiter)
+  public createTopic (...topic: string[]): string {
+    return topic.join(this.options.delimiter)
   }
 }

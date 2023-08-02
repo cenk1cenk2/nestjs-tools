@@ -16,7 +16,11 @@ export class RedisPubSubService<RedisPubSubTopics extends string = string, Redis
   }
 
   public publish<Pattern extends RedisPubSubTopics, Data extends RedisPubSubMap[Pattern]>(pattern: Pattern, extensions: string | string[] = [], payload: Data): Promise<void> {
-    return this.pubSub.publish(this.createTopic(pattern, extensions), payload)
+    if (!Array.isArray(extensions)) {
+      extensions = [ extensions ]
+    }
+
+    return this.pubSub.publish(this.createTopic(pattern, ...extensions), payload)
   }
 
   public subscribe<Pattern extends RedisPubSubTopics, Data extends RedisPubSubMap[Pattern]>(
@@ -24,7 +28,11 @@ export class RedisPubSubService<RedisPubSubTopics extends string = string, Redis
     extensions: string | string[] = [],
     onMessage: (message: Data) => void
   ): Promise<number> {
-    return this.pubSub.subscribe(this.createTopic(pattern, extensions), onMessage)
+    if (!Array.isArray(extensions)) {
+      extensions = [ extensions ]
+    }
+
+    return this.pubSub.subscribe(this.createTopic(pattern, ...extensions), onMessage)
   }
 
   public unsubscribe (id: number): void {
@@ -36,11 +44,19 @@ export class RedisPubSubService<RedisPubSubTopics extends string = string, Redis
   }
 
   public iterator<Pattern extends RedisPubSubTopics | string>(pattern: Pattern, extensions: string | string[] = []): AsyncIterator<any> {
-    return this.pubSub.asyncIterator(this.createTopic(pattern, extensions))
+    if (!Array.isArray(extensions)) {
+      extensions = [ extensions ]
+    }
+
+    return this.pubSub.asyncIterator(this.createTopic(pattern, ...extensions))
   }
 
   public async getSubscriberCount<Pattern extends RedisPubSubTopics>(pattern: Pattern, extensions: string | string[] = []): Promise<number> {
-    const topic = this.createTopic(pattern, extensions)
+    if (!Array.isArray(extensions)) {
+      extensions = [ extensions ]
+    }
+
+    const topic = this.createTopic(pattern, ...extensions)
     const numberOfSubs = await this.getClient().call('PUBSUB', [ 'NUMSUB', topic ])
 
     if (Array.isArray(numberOfSubs) && numberOfSubs?.[1]) {
@@ -50,7 +66,7 @@ export class RedisPubSubService<RedisPubSubTopics extends string = string, Redis
     }
   }
 
-  public createTopic (pattern: string, extensions: string | string[]): string {
-    return [ pattern, ...extensions ].join(this.options.delimiter)
+  public createTopic (...pattern: string[]): string {
+    return pattern.join(this.options.delimiter)
   }
 }
