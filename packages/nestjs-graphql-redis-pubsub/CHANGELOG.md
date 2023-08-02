@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-graphql-redis-pubsub [3.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.3...@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.4) (2023-08-02)
+
+
+### Bug Fixes
+
+* how an topic is created ([57c0529](https://github.com/cenk1cenk2/nestjs-tools/commit/57c0529f9d881875706607dc3690f53b60638fb1))
+
 ## @cenk1cenk2/nestjs-graphql-redis-pubsub [3.0.3](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.2...@cenk1cenk2/nestjs-graphql-redis-pubsub@3.0.3) (2023-06-21)
 
 
