@@ -215,8 +215,8 @@ importers:
   packages/nestjs-s3:
     devDependencies:
       '@aws-sdk/client-s3':
-        specifier: ^3.398.0
-        version: 3.398.0
+        specifier: ^3.400.0
+        version: 3.400.0
       '@nestjs/common':
         specifier: ^10.2.1
         version: 10.2.1(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -530,8 +530,8 @@ packages:
       tslib: 1.14.1
     dev: true
 
-  /@aws-sdk/client-s3@3.398.0:
-    resolution: {integrity: sha512-inuMB8Hu7X+ZI6AwirYfQoc5rUs3Es0DGSU90j/GSR5ZIe7umChmSTiJtfDlfj64EHOrmOXOQ6QzTf25EZaiHw==}
+  /@aws-sdk/client-s3@3.400.0:
+    resolution: {integrity: sha512-lnv0pb79Czl8fCMs/z7yM56LvoKTri1I4jX/V33trHMFKPQDoy8i24wxG8+TZl3MUmnUyoQS7tlukh7IFkii1Q==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/sha1-browser': 3.0.0
@@ -541,7 +541,7 @@ packages:
       '@aws-sdk/credential-provider-node': 3.398.0
       '@aws-sdk/middleware-bucket-endpoint': 3.398.0
       '@aws-sdk/middleware-expect-continue': 3.398.0
-      '@aws-sdk/middleware-flexible-checksums': 3.398.0
+      '@aws-sdk/middleware-flexible-checksums': 3.400.0
       '@aws-sdk/middleware-host-header': 3.398.0
       '@aws-sdk/middleware-location-constraint': 3.398.0
       '@aws-sdk/middleware-logger': 3.398.0
@@ -784,8 +784,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@aws-sdk/middleware-flexible-checksums@3.398.0:
-    resolution: {integrity: sha512-tuUPJEC8hUEhNmJvzk3S8/7Tdm+tsupaQkdOPHEYS1sB0J/lU8jfb8QbzEmZQoXpbfZKo9CQdY0q50nH3/yenw==}
+  /@aws-sdk/middleware-flexible-checksums@3.400.0:
+    resolution: {integrity: sha512-lpsumd5/G+eAMTr61h/cJQZ8+i+xzC6OG3bvUcbRHqcjN49XgeNLcPfYcr6Rzf0QHxmuCN4te/4XGU3Fif2YVA==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@aws-crypto/crc32': 3.0.0
@@ -4467,7 +4467,7 @@ packages:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /camelcase@5.3.1:
@@ -4483,7 +4483,7 @@ packages:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
       upper-case-first: 2.0.2
     dev: false
 
@@ -4789,7 +4789,7 @@ packages:
     resolution: {integrity: sha512-I2hSBi7Vvs7BEuJDr5dDHfzb/Ruj3FyvFyh7KLilAjNQw3Be+xgqUBA2W6scVEcL0hL1dwPRtIqEPVUCKkSsyQ==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
       upper-case: 2.0.2
     dev: false
 
@@ -5072,7 +5072,7 @@ packages:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /dotenv@16.3.1:
@@ -6221,7 +6221,7 @@ packages:
     resolution: {integrity: sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==}
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /highlight.js@10.7.3:
@@ -7490,7 +7490,7 @@ packages:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /node-abort-controller@3.1.1:
@@ -7727,7 +7727,7 @@ packages:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /parent-module@1.0.1:
@@ -7782,14 +7782,14 @@ packages:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /path-case@3.0.4:
     resolution: {integrity: sha512-qO4qCFjXqVTrcbPt/hQfhTQ+VhFsqNKOPtytgNKkKxSoEp3XPUQ8ObFuePylOIok5gjn69ry8XiULxCwot3Wfg==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /path-exists@4.0.0:
@@ -8322,7 +8322,7 @@ packages:
     resolution: {integrity: sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
       upper-case-first: 2.0.2
     dev: false
 
@@ -8461,7 +8461,7 @@ packages:
     resolution: {integrity: sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==}
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /socks-proxy-agent@7.0.0:
