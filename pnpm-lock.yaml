@@ -13,7 +13,7 @@ importers:
         version: 1.6.7(@swc/core@1.3.80)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.16
-        version: 2.7.16(eslint@8.48.0)(typescript@5.2.2)
+        version: 2.7.17(eslint@8.48.0)(typescript@5.2.2)
       '@swc/core':
         specifier: ^1.3.80
         version: 1.3.80
@@ -1583,8 +1583,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.7.16(eslint@8.48.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-0ZtyaL4lA9icOdK4pnsM76h/m01YRsoGWwpeRA7hUhI31JQgnEmeCGx0yi+2Ha5ig8vaYe6KAgcK4Vg1fdlwsA==}
+  /@cenk1cenk2/eslint-config@2.7.17(eslint@8.48.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-ZYu0RfmZxJCU0Yv2bWcVsuLkXaWTKjWR3rhVb8LYKRsQ72foQO4cZDyykBHfspSITZ2mNpkM+Q7RnaM+oJbSzA==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
@@ -4229,7 +4229,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001523
+      caniuse-lite: 1.0.30001524
       electron-to-chromium: 1.4.503
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
@@ -4347,8 +4347,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite@1.0.30001523:
-    resolution: {integrity: sha512-I5q5cisATTPZ1mc588Z//pj/Ox80ERYDfR71YnvY7raS/NOk8xXlZcB0sF7JdqaV//kOaa6aus7lRfpdnt1eBA==}
+  /caniuse-lite@1.0.30001524:
+    resolution: {integrity: sha512-Jj917pJtYg9HSJBF95HVX3Cdr89JUyLT4IZ8SvM5aDRni95swKgYi3TgYLH5hnGfPE/U1dg6IfZ50UsIlLkwSA==}
     dev: false
 
   /capital-case@1.0.4:
