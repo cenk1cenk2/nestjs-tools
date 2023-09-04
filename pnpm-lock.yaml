@@ -170,11 +170,11 @@ importers:
         specifier: ^10.2.4
         version: 10.2.4(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@types/cache-manager':
-        specifier: ^4.0.2
-        version: 4.0.2
+        specifier: ^4.0.3
+        version: 4.0.3
       '@types/cache-manager-ioredis':
-        specifier: ^2.0.3
-        version: 2.0.3
+        specifier: ^2.0.4
+        version: 2.0.4
       cache-manager:
         specifier: ^5.2.3
         version: 5.2.3
@@ -3496,15 +3496,15 @@ packages:
     requiresBuild: true
     dev: true
 
-  /@types/cache-manager-ioredis@2.0.3:
-    resolution: {integrity: sha512-IIwKdlUSztH0TMk1ikRes2CDr2vV4UrSMKhdZ6fBN1++PdgAl/JsxHKRzaSThGqjDUb0UzcWo7dZF4RPPMInMA==}
+  /@types/cache-manager-ioredis@2.0.4:
+    resolution: {integrity: sha512-xrt97qa3is86EoKtp7M4C1Hpcn7FWmgVvqLHKwskmVwYDKQ1O7kg2PtGOdCxSc0yLZ4zVJv/4VQHAvLbU7YRvQ==}
     dependencies:
-      '@types/cache-manager': 4.0.2
+      '@types/cache-manager': 4.0.3
       '@types/ioredis': 4.28.10
     dev: true
 
-  /@types/cache-manager@4.0.2:
-    resolution: {integrity: sha512-fT5FMdzsiSX0AbgnS5gDvHl2Nco0h5zYyjwDQy4yPC7Ww6DeGMVKPRqIZtg9HOXDV2kkc18SL1B0N8f0BecrCA==}
+  /@types/cache-manager@4.0.3:
+    resolution: {integrity: sha512-tPo2eUsvPVk/i2AU7BKy2ekSoKFOkST918GF7Qvc4IMNTRHyekEWJtWS9sBdi+DaF/4saiBkgWji5HqH3X7W8g==}
     dev: true
 
   /@types/config@3.3.0:
