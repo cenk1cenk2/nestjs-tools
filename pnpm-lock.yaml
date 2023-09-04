@@ -142,8 +142,8 @@ importers:
         version: 6.0.0
     devDependencies:
       '@types/config':
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.3.1
+        version: 3.3.1
       config:
         specifier: ^3.3.9
         version: 3.3.9
@@ -3507,8 +3507,8 @@ packages:
     resolution: {integrity: sha512-tPo2eUsvPVk/i2AU7BKy2ekSoKFOkST918GF7Qvc4IMNTRHyekEWJtWS9sBdi+DaF/4saiBkgWji5HqH3X7W8g==}
     dev: true
 
-  /@types/config@3.3.0:
-    resolution: {integrity: sha512-9kZSbl3/X3TVNowLCu5HFQdQmD+4287Om55avknEYkuo6R2dDrsp/EXEHUFvfYeG7m1eJ0WYGj+cbcUIhARJAQ==}
+  /@types/config@3.3.1:
+    resolution: {integrity: sha512-ZhBk8IVIbc3cuES10j2I+xa3L68rpl1X35FdsNce/AiE7yJnhQaA7tvO5MRZblqpBny4OIddJ+WQL04I1933Zg==}
     dev: true
 
   /@types/fs-extra@11.0.1:
