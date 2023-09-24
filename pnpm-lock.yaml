@@ -13,7 +13,7 @@ importers:
         version: 1.7.1(@swc/core@1.3.88)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.20
-        version: 2.7.20(eslint@8.50.0)(typescript@5.2.2)
+        version: 2.7.21(eslint@8.50.0)(typescript@5.2.2)
       '@swc/core':
         specifier: ^1.3.88
         version: 1.3.88
@@ -1596,8 +1596,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.7.20(eslint@8.50.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-VRyHeaDGRClQRu02k4/ACg1QrDBj2d2jcEIlax85/TCLmMqYwhWDkRx5kl/crs9eQHjjLTM/NxsLKtTr09br/Q==}
+  /@cenk1cenk2/eslint-config@2.7.21(eslint@8.50.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-Y9eCpeCzyB4i6ZDqylzjGXZD4kd13yxgki3Kj6N3eJwzCw7Iuvsg+M375nsu3CsFhFNZ2qhHkBMg/MSyXErYzQ==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
@@ -3538,7 +3538,7 @@ packages:
     resolution: {integrity: sha512-c0hrgAOVYr21EX8J0jBMXGLMgJqVf/v6yxi0dLaJboW9aQPh16Id+z6w2Tx1hm+piJOLv8xPfVKZCLfjPw/IMQ==}
     dependencies:
       '@types/jsonfile': 6.1.2
-      '@types/node': 20.6.4
+      '@types/node': 20.6.5
     dev: true
 
   /@types/glob@7.2.0:
@@ -3594,7 +3594,7 @@ packages:
   /@types/node-forge@1.3.6:
     resolution: {integrity: sha512-rOLL54+BcPO1BV0ogdKCtfmohdL3WW3ODCbnh8gA8ZWPYfHM0aVFyXQljme5DoICH29/2JZOXqgkS9CEd/NmSQ==}
     dependencies:
-      '@types/node': 20.6.4
+      '@types/node': 20.6.5
     dev: true
 
   /@types/node@20.4.7:
@@ -3602,10 +3602,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@types/node@20.6.4:
-    resolution: {integrity: sha512-nU6d9MPY0NBUMiE/nXd2IIoC4OLvsLpwAjheoAeuzgvDZA1Cb10QYg+91AF6zQiKWRN5i1m07x6sMe0niBznoQ==}
-    dev: true
 
   /@types/node@20.6.5:
     resolution: {integrity: sha512-2qGq5LAOTh9izcc0+F+dToFigBWiK1phKPt7rNhOqJSr35y8rlIBjDwGtFSgAI6MGIhjwOVNSQZVdJsZJ2uR1w==}
@@ -4321,7 +4317,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.3
-      glob: 10.3.6
+      glob: 10.3.7
       lru-cache: 7.18.3
       minipass: 7.0.3
       minipass-collect: 1.0.2
@@ -5835,8 +5831,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.6:
-    resolution: {integrity: sha512-mEfImdc/fiYHEcF6pHFfD2b/KrdFB1qH9mRe5vI5HROF8G51SWxQJ2V56Ezl6ZL9y86gsxQ1Lgo2S746KGUPSQ==}
+  /glob@10.3.7:
+    resolution: {integrity: sha512-wCMbE1m9Nx5yD9LYtgsVWq5VhHlk5WzJirw594qZR6AIvQYuHrdDtIktUVjQItalD53y7dqoedu9xP0u0WaxIQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
@@ -8150,11 +8146,11 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.3.6
+      glob: 10.3.7
     dev: true
 
-  /rollup@3.29.2:
-    resolution: {integrity: sha512-CJouHoZ27v6siztc21eEQGo0kIcE5D1gVPA571ez0mMYb25LGYGKnVNXpEj5MGlepmDWGXNjDB5q7uNiPHC11A==}
+  /rollup@3.29.3:
+    resolution: {integrity: sha512-T7du6Hum8jOkSWetjRgbwpM6Sy0nECYrYRSmZjayFcOddtKJWU4d17AC3HNUk7HRuqy4p+G7aEZclSHytqUmEg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -8884,7 +8880,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 4.0.1(ts-node@10.9.1)
       resolve-from: 5.0.0
-      rollup: 3.29.2
+      rollup: 3.29.3
       source-map: 0.8.0-beta.0
       sucrase: 3.34.0
       tree-kill: 1.2.2
