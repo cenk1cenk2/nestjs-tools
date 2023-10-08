@@ -13,7 +13,7 @@ importers:
         version: 1.7.1(@swc/core@1.3.92)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.22
-        version: 2.7.22(eslint@8.51.0)(typescript@5.2.2)
+        version: 2.7.23(eslint@8.51.0)(typescript@5.2.2)
       '@swc/core':
         specifier: ^1.3.92
         version: 1.3.92
@@ -1597,8 +1597,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.7.22(eslint@8.51.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-/vtaJyfkqDKGcPYMlhlA44YkH+CuiR0KpYiggbI9KiXiGp3AAfZaLt6Xo2xgYcTe74FWxZ7BBhF4gvePyHamUg==}
+  /@cenk1cenk2/eslint-config@2.7.23(eslint@8.51.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-zcQIGxm89h1ZbiPh/FE2/N3Xp+Vrz3+F09LwtGbjphm0uU4aTKd45raGTo+8M0extvDXfqx10c+Kg8eEM7chMQ==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
@@ -4366,7 +4366,6 @@ packages:
   /callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
-    requiresBuild: true
 
   /camel-case@4.1.2:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
@@ -7677,7 +7676,6 @@ packages:
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dependencies:
       callsites: 3.1.0
 
@@ -8089,7 +8087,6 @@ packages:
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
-    requiresBuild: true
 
   /resolve-from@5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
