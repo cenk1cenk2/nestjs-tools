@@ -1,3 +1,15 @@
+# @cenk1cenk2/nestjs-redis-store [5.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@5.0.4...@cenk1cenk2/nestjs-redis-store@5.1.0) (2023-10-12)
+
+
+### Bug Fixes
+
+* type-error ([d1054b1](https://github.com/cenk1cenk2/nestjs-tools/commit/d1054b127304e595b9a963889677d71b8ebce114))
+
+
+### Features
+
+* add ability to add token for rudi ([8c6fec6](https://github.com/cenk1cenk2/nestjs-tools/commit/8c6fec693d504b486df0792cb64b5d840d96b5a4))
+
 ## @cenk1cenk2/nestjs-redis-store [5.0.4](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-redis-store@5.0.3...@cenk1cenk2/nestjs-redis-store@5.0.4) (2023-08-02)
 
 
