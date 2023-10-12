@@ -1,3 +1,10 @@
+# @cenk1cenk2/nestjs-transactions [5.1.0](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@5.0.2...@cenk1cenk2/nestjs-transactions@5.1.0) (2023-10-12)
+
+
+### Features
+
+* add ability to add token for rudi ([8c6fec6](https://github.com/cenk1cenk2/nestjs-tools/commit/8c6fec693d504b486df0792cb64b5d840d96b5a4))
+
 ## @cenk1cenk2/nestjs-transactions [5.0.2](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-transactions@5.0.1...@cenk1cenk2/nestjs-transactions@5.0.2) (2023-06-21)
 
 
