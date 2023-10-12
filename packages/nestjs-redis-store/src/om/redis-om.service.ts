@@ -8,7 +8,7 @@ import { type RedisOmModuleOptions } from './redis-om.interface'
 export class RedisOmService implements OnModuleInit, OnModuleDestroy {
   public client: Client
   private logger = new Logger(this.constructor.name)
-  private keepAliveRef: NodeJS.Timer
+  private keepAliveRef: NodeJS.Timeout
 
   constructor (public options: RedisOmModuleOptions) {
     this.options = {
