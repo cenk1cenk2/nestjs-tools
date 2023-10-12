@@ -74,7 +74,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.6)(winston@3.11.0)
+        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.7)(winston@3.11.0)
       '@nestjs/common':
         specifier: ^10.2.7
         version: 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -115,7 +115,7 @@ importers:
         version: 2.5.5(graphql@16.8.1)
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.6)(winston@3.11.0)
+        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.7)(winston@3.11.0)
       '@nestjs/core':
         specifier: ^10.2.7
         version: 10.2.7(@nestjs/common@10.2.7)(@nestjs/microservices@10.2.7)(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.6)(winston@3.11.0)
+        version: 3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.7)(winston@3.11.0)
       typeorm:
         specifier: ^0.3.17
         version: 0.3.17(ts-node@10.9.1)
@@ -252,8 +252,8 @@ importers:
         specifier: ^10.2.7
         version: 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@webundsoehne/nestjs-util':
-        specifier: ^7.1.6
-        version: 7.1.6(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
+        specifier: ^7.1.7
+        version: 7.1.7(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
       winston:
         specifier: ^3.11.0
         version: 3.11.0
@@ -1633,7 +1633,7 @@ packages:
       - typescript
     dev: true
 
-  /@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.6)(winston@3.11.0):
+  /@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.2.7)(@webundsoehne/nestjs-util@7.1.7)(winston@3.11.0):
     resolution: {integrity: sha512-o3Q/ESSMM+lwF7117Xmf8AcidVgA5TxWcNa00WYZbu8aZnb99L2w/Hb78PchPUws3KqKxSym41hlwuH/UnOp1A==}
     engines: {node: '>= 16'}
     peerDependencies:
@@ -1642,7 +1642,7 @@ packages:
       winston: '>= 3.3.3'
     dependencies:
       '@nestjs/common': 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@webundsoehne/nestjs-util': 7.1.6(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
+      '@webundsoehne/nestjs-util': 7.1.7(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2)
       colorette: 2.0.20
       winston: 3.11.0
     dev: true
@@ -3786,8 +3786,8 @@ packages:
       deepmerge: 4.3.1
     dev: true
 
-  /@webundsoehne/nestjs-util@7.1.6(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2):
-    resolution: {integrity: sha512-x153vktRlhjVNtCO4M+ZITEPSTbrKCB2VNJ8P6GYJe5Athr+j7a1aWfyLEWX9vshC5F9OhrL9ZZH0H/gSV8xAA==}
+  /@webundsoehne/nestjs-util@7.1.7(@nestjs/common@10.2.7)(@nestjs/core@10.2.7)(@nestjs/graphql@12.0.9)(@nestjs/microservices@10.2.7)(class-transformer@0.5.1)(class-validator@0.14.0)(express@4.18.2):
+    resolution: {integrity: sha512-TwZ8Wiz+RGUcChuiX9C2zl3ZHoj4XtrtTQ6UN8lY3v18c7pjTHxgWzDfH9DrkUdG1DESU69Z64Z9OdVB0JDO0w==}
     engines: {node: '>= 16'}
     peerDependencies:
       '@nestjs/common': '>= 8'
