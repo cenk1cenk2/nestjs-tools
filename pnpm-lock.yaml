@@ -3817,7 +3817,7 @@ packages:
       moment: 2.29.4
       reflect-metadata: 0.1.13
       winston: 3.11.0
-      winston-transport: 4.5.0
+      winston-transport: 4.6.0
     dev: true
 
   /@whatwg-node/events@0.0.3:
@@ -9384,9 +9384,9 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /winston-transport@4.5.0:
-    resolution: {integrity: sha512-YpZzcUzBedhlTAfJg6vJDlyEai/IFMIVcaEZZyl3UXIl4gmqRpU7AE89AHLkbzLUsv0NVmw7ts+iztqKxxPW1Q==}
-    engines: {node: '>= 6.4.0'}
+  /winston-transport@4.6.0:
+    resolution: {integrity: sha512-wbBA9PbPAHxKiygo7ub7BYRiKxms0tpfU2ljtWzb3SjRjv5yl6Ozuy/TkXf00HTAt+Uylo3gSkNwzc4ME0wiIg==}
+    engines: {node: '>= 12.0.0'}
     dependencies:
       logform: 2.6.0
       readable-stream: 3.6.2
@@ -9407,7 +9407,7 @@ packages:
       safe-stable-stringify: 2.4.3
       stack-trace: 0.0.10
       triple-beam: 1.4.1
-      winston-transport: 4.5.0
+      winston-transport: 4.6.0
     dev: true
 
   /word-wrap@1.2.5:
