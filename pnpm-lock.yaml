@@ -79,8 +79,8 @@ importers:
         specifier: ^10.2.7
         version: 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@types/fs-extra':
-        specifier: ^11.0.2
-        version: 11.0.2
+        specifier: ^11.0.3
+        version: 11.0.3
       '@types/node-forge':
         specifier: ^1.3.8
         version: 1.3.8
@@ -142,8 +142,8 @@ importers:
         version: 6.0.0
     devDependencies:
       '@types/config':
-        specifier: ^3.3.1
-        version: 3.3.1
+        specifier: ^3.3.2
+        version: 3.3.2
       config:
         specifier: ^3.3.9
         version: 3.3.9
@@ -3544,12 +3544,12 @@ packages:
     resolution: {integrity: sha512-Kyk9uF54w5/JQWLDKr5378euWUPvebknZut6UpsKhO3R7vE5a5o71QxTR2uev1niBgVAoXAR+BCNMU1lipjxWQ==}
     dev: true
 
-  /@types/config@3.3.1:
-    resolution: {integrity: sha512-ZhBk8IVIbc3cuES10j2I+xa3L68rpl1X35FdsNce/AiE7yJnhQaA7tvO5MRZblqpBny4OIddJ+WQL04I1933Zg==}
+  /@types/config@3.3.2:
+    resolution: {integrity: sha512-NAxsgr73BakGnfpHq5eKmtba/x+JyPcZmSa0DzCTdR4JCxeSC+KpwSQuOMGvACs7axkjGqi44/zYRkhiX7aDew==}
     dev: true
 
-  /@types/fs-extra@11.0.2:
-    resolution: {integrity: sha512-c0hrgAOVYr21EX8J0jBMXGLMgJqVf/v6yxi0dLaJboW9aQPh16Id+z6w2Tx1hm+piJOLv8xPfVKZCLfjPw/IMQ==}
+  /@types/fs-extra@11.0.3:
+    resolution: {integrity: sha512-sF59BlXtUdzEAL1u0MSvuzWd7PdZvZEtnaVkzX5mjpdWTJ8brG0jUqve3jPCzSzvAKKMHTG8F8o/WMQLtleZdQ==}
     dependencies:
       '@types/jsonfile': 6.1.2
       '@types/node': 20.8.6
