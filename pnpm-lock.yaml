@@ -209,8 +209,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       redis-om:
-        specifier: ^0.4.2
-        version: 0.4.2
+        specifier: ^0.4.3
+        version: 0.4.3
 
   packages/nestjs-s3:
     devDependencies:
@@ -8096,8 +8096,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /redis-om@0.4.2:
-    resolution: {integrity: sha512-sBah+ljGQY4Zm1f9/+l7HjtIuTQH/rzIX3JSLizymbr6VlTZ2ibt+U3xYKNjIA0tv/D9toEMF7HFXHMtT+l+1A==}
+  /redis-om@0.4.3:
+    resolution: {integrity: sha512-OQ2ydJYm8j5YMWj3K2ieQdUcfu2gP1nW2XsdaFLbHkaSlYqj1Kfu8X+T44vPuesY3cKdVj6tv9bHEmI9oqwHgA==}
     engines: {node: '>= 14'}
     dependencies:
       jsonpath-plus: 7.2.0
