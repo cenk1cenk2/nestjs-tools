@@ -18,13 +18,13 @@ importers:
         specifier: ^1.3.96
         version: 1.3.96
       '@types/node':
-        specifier: ^20.8.9
+        specifier: ^20.8.10
         version: 20.8.10
       commitizen:
         specifier: ^4.3.0
         version: 4.3.0(typescript@5.2.2)
       eslint:
-        specifier: ^8.52.0
+        specifier: ^8.53.0
         version: 8.53.0
       lint-staged:
         specifier: ^14.0.1
