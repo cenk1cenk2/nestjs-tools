@@ -1,3 +1,10 @@
+## @cenk1cenk2/nestjs-emitter [6.1.1](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@6.1.0...@cenk1cenk2/nestjs-emitter@6.1.1) (2023-11-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nestjs/event-emitter to ^2.0.3 ([527aab9](https://github.com/cenk1cenk2/nestjs-tools/commit/527aab9bb0701e8fc0c29d4376c9511e66fd895d))
+
 ## @cenk1cenk2/nestjs-emitter [6.0.5](https://github.com/cenk1cenk2/nestjs-tools/compare/@cenk1cenk2/nestjs-emitter@6.0.4...@cenk1cenk2/nestjs-emitter@6.0.5) (2023-10-12)
 
 
