@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nestjs/common": "^10.3.0",
     "@nestjs/typeorm": "^10.0.1",
-    "typeorm": "^0.3.18"
+    "typeorm": "^0.3.19"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
