@@ -145,8 +145,8 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       config:
-        specifier: ^3.3.9
-        version: 3.3.9
+        specifier: ^3.3.10
+        version: 3.3.10
       graphql:
         specifier: ^16.8.1
         version: 16.8.1
@@ -3966,7 +3966,7 @@ packages:
       class-transformer: 0.5.1
       class-validator: 0.14.0
       colorette: 2.0.20
-      config: 3.3.9
+      config: 3.3.10
       express: 4.18.2
       fs-extra: 10.1.0
       js-yaml: 4.1.0
@@ -4835,8 +4835,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /config@3.3.9:
-    resolution: {integrity: sha512-G17nfe+cY7kR0wVpc49NCYvNtelm/pPy8czHoFkAgtV1lkmcp7DHtWCdDu+C9Z7gb2WVqa9Tm3uF9aKaPbCfhg==}
+  /config@3.3.10:
+    resolution: {integrity: sha512-9Kl3LpQ6zj93KaqgfIMTcpwTpgozFOqNl/Dk7mjras1BgGIOlqxWkyIGeU1my+sRuskRYwrCATgCk1RjAnRPGA==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       json5: 2.2.3
