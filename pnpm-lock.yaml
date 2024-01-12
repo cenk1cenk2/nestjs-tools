@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@cenk1cenk2/cz-cc':
-        specifier: ^1.7.3
-        version: 1.7.3(@types/node@20.11.0)(typescript@5.3.3)
+        specifier: ^1.7.4
+        version: 1.7.4(@types/node@20.11.0)(typescript@5.3.3)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.35
         version: 2.7.35(eslint@8.56.0)(typescript@5.3.3)
@@ -1599,8 +1599,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@cenk1cenk2/cz-cc@1.7.3(@types/node@20.11.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-VDPPwR8F9Likq5cJ5pPZAENiIJpddgrMh6pTb9WnWug8HR7E6j30UIRhstIqu1ktvpuXGqO2cpv07BSAEiaPaw==}
+  /@cenk1cenk2/cz-cc@1.7.4(@types/node@20.11.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-J7ci2O2v8YE8KWxMWG2vZmnSeybTKO90kdqRP6Io1SmSJXRe8e1qblHrxpu41wkpTO0nte627+lqUXOa8wzkbQ==}
     engines: {node: '>= 16'}
     dependencies:
       '@listr2/prompt-adapter-enquirer': 2.0.1(enquirer@2.4.1)
