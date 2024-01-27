@@ -1603,13 +1603,13 @@ packages:
     resolution: {integrity: sha512-J7ci2O2v8YE8KWxMWG2vZmnSeybTKO90kdqRP6Io1SmSJXRe8e1qblHrxpu41wkpTO0nte627+lqUXOa8wzkbQ==}
     engines: {node: '>= 16'}
     dependencies:
-      '@listr2/prompt-adapter-enquirer': 2.0.1(enquirer@2.4.1)
+      '@listr2/prompt-adapter-enquirer': 2.0.2(enquirer@2.4.1)
       commitizen: 4.3.0(@types/node@20.11.8)(typescript@5.3.3)
       conventional-commit-types: 3.0.0
       enquirer: 2.4.1
       external-editor: 3.1.0
       find-git-root: 1.0.4
-      listr2: 8.0.1
+      listr2: 8.0.2
     optionalDependencies:
       '@commitlint/load': 18.6.0(@types/node@20.11.8)(typescript@5.3.3)
     transitivePeerDependencies:
@@ -2602,8 +2602,8 @@ packages:
     resolution: {integrity: sha512-gbkePEBupNydxCelHCESvFSFM8XPh1Zs/OAVRW/rKpEqPAl5PbOM90Si8mv9bvnR53uPD2s/FiRxdvSejpRJew==}
     dev: false
 
-  /@listr2/prompt-adapter-enquirer@2.0.1(enquirer@2.4.1):
-    resolution: {integrity: sha512-vRAa2raxKfpcUkh4ihszcb6vNb931sfz7af85zQn7oyJxQOffqr2QRwk0T2nBmKAk3dRD48b8nl3v0qoZ4sbyA==}
+  /@listr2/prompt-adapter-enquirer@2.0.2(enquirer@2.4.1):
+    resolution: {integrity: sha512-rQVcPV9iwvRXrITFl+RPZcLjxZasXV2npg8CPvVGCoAMwEyw6+VC0YPpeBthR7MKBf5jrpIBY9OPRPFL9/Dilg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
@@ -3707,7 +3707,7 @@ packages:
     resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.11.7
+      '@types/node': 20.11.8
     dev: true
 
   /@types/glob@7.2.0:
@@ -3763,12 +3763,7 @@ packages:
   /@types/node-forge@1.3.11:
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
     dependencies:
-      '@types/node': 20.11.7
-
-  /@types/node@20.11.7:
-    resolution: {integrity: sha512-GPmeN1C3XAyV5uybAf4cMLWT9fDWcmQhZVtMFu7OR32WjrqGG+Wnk2V1d0bmtUyE/Zy1QJ9BxyiTih9z8Oks8A==}
-    dependencies:
-      undici-types: 5.26.5
+      '@types/node': 20.11.8
 
   /@types/node@20.11.8:
     resolution: {integrity: sha512-i7omyekpPTNdv4Jb/Rgqg0RU8YqLcNsI12quKSDkRXNfx7Wxdm6HhK1awT3xTgEkgxPn3bvnSpiEAc7a7Lpyow==}
@@ -7065,8 +7060,8 @@ packages:
       wrap-ansi: 9.0.0
     dev: true
 
-  /listr2@8.0.1:
-    resolution: {integrity: sha512-ovJXBXkKGfq+CwmKTjluEqFi3p4h8xvkxGQQAQan22YCgef4KZ1mKGjzfGh6PL6AW5Csw0QiQPNuQyH+6Xk3hA==}
+  /listr2@8.0.2:
+    resolution: {integrity: sha512-v5jEMOeEJUpRjSXSB4U3w5A3YPmURYMUO/86f1PA4GGYcdbUQYpkbvKYT7Xaq1iu4Zjn51Rv1UeD1zsBXRijiQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
       cli-truncate: 4.0.0
