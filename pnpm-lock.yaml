@@ -142,8 +142,8 @@ importers:
         version: 6.0.0
     devDependencies:
       '@types/config':
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.3.4
+        version: 3.3.4
       config:
         specifier: ^3.3.11
         version: 3.3.11
@@ -3896,8 +3896,8 @@ packages:
     resolution: {integrity: sha512-8qL93MF05/xrzFm/LSPtzNEOE1eQF3VwGHAcQEylgp5hDSTe41jtFwbSYAPfyYcVa28y1vYSjIt0c1fLLUiC/Q==}
     dev: true
 
-  /@types/config@3.3.3:
-    resolution: {integrity: sha512-BB8DBAud88EgiAKlz8WQStzI771Kb6F3j4dioRJ4GD+tP4tzcZyMlz86aXuZT4s9hyesFORehMQE6eqtA5O+Vg==}
+  /@types/config@3.3.4:
+    resolution: {integrity: sha512-qFiTLnWy+TdPSMIXFHP+87lFXFRM4SXjRS+CSB66+56TrpLNw003y1sh7DGaaC1NGesxgKoT5FDy6dyA1Xju/g==}
     dev: true
 
   /@types/conventional-commits-parser@5.0.0:
