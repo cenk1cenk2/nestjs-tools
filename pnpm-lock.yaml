@@ -74,7 +74,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.12.0)
+        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.13.0)
       '@nestjs/common':
         specifier: ^10.3.5
         version: 10.3.5(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.1)(rxjs@7.8.1)
@@ -115,7 +115,7 @@ importers:
         version: 2.7.2(graphql@16.8.1)
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.12.0)
+        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.13.0)
       '@nestjs/core':
         specifier: ^10.3.5
         version: 10.3.5(@nestjs/common@10.3.5)(@nestjs/microservices@10.3.5)(reflect-metadata@0.2.1)(rxjs@7.8.1)
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.12.0)
+        version: 3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.13.0)
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20
@@ -255,8 +255,8 @@ importers:
         specifier: ^7.1.7
         version: 7.1.7(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(@nestjs/graphql@12.1.1)(@nestjs/microservices@10.3.5)(class-transformer@0.5.1)(class-validator@0.14.1)(express@4.19.1)
       winston:
-        specifier: ^3.12.0
-        version: 3.12.0
+        specifier: ^3.13.0
+        version: 3.13.0
 
 packages:
 
@@ -1699,7 +1699,7 @@ packages:
       - typescript
     dev: true
 
-  /@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.12.0):
+  /@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.3.5)(@webundsoehne/nestjs-util@7.1.7)(winston@3.13.0):
     resolution: {integrity: sha512-o3Q/ESSMM+lwF7117Xmf8AcidVgA5TxWcNa00WYZbu8aZnb99L2w/Hb78PchPUws3KqKxSym41hlwuH/UnOp1A==}
     engines: {node: '>= 16'}
     peerDependencies:
@@ -1710,7 +1710,7 @@ packages:
       '@nestjs/common': 10.3.5(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.1)(rxjs@7.8.1)
       '@webundsoehne/nestjs-util': 7.1.7(@nestjs/common@10.3.5)(@nestjs/core@10.3.5)(@nestjs/graphql@12.1.1)(@nestjs/microservices@10.3.5)(class-transformer@0.5.1)(class-validator@0.14.1)(express@4.19.1)
       colorette: 2.0.20
-      winston: 3.12.0
+      winston: 3.13.0
     dev: true
 
   /@colors/colors@1.6.0:
@@ -4178,7 +4178,7 @@ packages:
       js-yaml: 4.1.0
       moment: 2.30.1
       reflect-metadata: 0.1.14
-      winston: 3.12.0
+      winston: 3.13.0
       winston-transport: 4.7.0
     dev: true
 
@@ -4737,6 +4737,7 @@ packages:
   /callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+    requiresBuild: true
 
   /camel-case@4.1.2:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
@@ -8151,6 +8152,7 @@ packages:
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
       callsites: 3.1.0
 
@@ -8576,6 +8578,7 @@ packages:
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
+    requiresBuild: true
 
   /resolve-from@5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
@@ -9895,8 +9898,8 @@ packages:
       triple-beam: 1.4.1
     dev: true
 
-  /winston@3.12.0:
-    resolution: {integrity: sha512-OwbxKaOlESDi01mC9rkM0dQqQt2I8DAUMRLZ/HpbwvDXm85IryEHgoogy5fziQy38PntgZsLlhAYHz//UPHZ5w==}
+  /winston@3.13.0:
+    resolution: {integrity: sha512-rwidmA1w3SE4j0E5MuIufFhyJPBDG7Nu71RkZor1p2+qHvJSZ9GYDA81AyleQcZbh/+V6HjeBdfnTZJm9rSeQQ==}
     engines: {node: '>= 12.0.0'}
     dependencies:
       '@colors/colors': 1.6.0
