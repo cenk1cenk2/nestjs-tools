@@ -42,8 +42,8 @@ importers:
         specifier: ^2.11.1
         version: 2.11.1
       tsc-watch:
-        specifier: ^6.0.5
-        version: 6.0.5(typescript@5.4.3)
+        specifier: ^6.1.0
+        version: 6.1.0(typescript@5.4.3)
       tsconfig-replace-paths:
         specifier: ^0.0.14
         version: 0.0.14
@@ -9604,8 +9604,8 @@ packages:
     resolution: {integrity: sha512-PGcnJoTBnVGy6yYNFxWVNkdcAuAMstvutN9MgDJIV6L0oG8fB+ZNNy1T+wJzah8RPGor1mZuPQkVfXNDpy9eHA==}
     dev: false
 
-  /tsc-watch@6.0.5(typescript@5.4.3):
-    resolution: {integrity: sha512-6pcEFEHJPsuJIzKBT/h/sX3CUmrFDJjHamCjtuQRWqb02rYX3eEnRTdL8nwDYIng8Y1AD/NHn4iLCi8a5MEKRg==}
+  /tsc-watch@6.1.0(typescript@5.4.3):
+    resolution: {integrity: sha512-bNjUt25O/qZb4Yb+PyrnKnJzu4rpCtGHGb0HE737mGnfxrRDbILxsUM1321o87Bl00BETZ0Ry+wDEJbYzcxRTA==}
     engines: {node: '>=12.12.0'}
     hasBin: true
     peerDependencies:
