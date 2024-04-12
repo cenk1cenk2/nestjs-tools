@@ -23,7 +23,7 @@
   "devDependencies": {
     "@cenk1cenk2/cz-cc": "^1.7.6",
     "@cenk1cenk2/eslint-config": "^2.7.42",
-    "@swc/core": "^1.4.12",
+    "@swc/core": "^1.4.13",
     "@types/node": "^20.12.4",
     "commitizen": "^4.3.0",
     "eslint": "^8.57.0",
@@ -38,7 +38,7 @@
     "turbo": "^1.13.2",
     "typedoc": "^0.25.12",
     "typedoc-plugin-markdown": "^3.17.1",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   },
   "config": {
     "commitizen": {
