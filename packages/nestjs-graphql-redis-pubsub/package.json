@@ -35,7 +35,7 @@
     "@nestjs/common": "^10.3.7",
     "graphql-redis-subscriptions": "^2.6.0",
     "graphql-subscriptions": "^2.0.0",
-    "ioredis": "^5.4.0"
+    "ioredis": "^5.4.1"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
