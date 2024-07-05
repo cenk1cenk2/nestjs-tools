@@ -74,7 +74,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(bnktmn5xodwzztmfnuawmsmhli))(winston@3.13.0)
+        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(bnlejsg4kwync2lmhvrpchqhwe))(winston@3.13.0)
       '@nestjs/common':
         specifier: ^10.3.10
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -95,7 +95,7 @@ importers:
         version: 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/event-emitter':
         specifier: ^2.0.4
-        version: 2.0.4(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))
+        version: 2.0.4(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))
       eventemitter2:
         specifier: ^6.4.9
         version: 6.4.9
@@ -165,7 +165,7 @@ importers:
     devDependencies:
       '@nestjs/cache-manager':
         specifier: ^2.2.2
-        version: 2.2.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.1)(rxjs@7.8.1)
+        version: 2.2.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.1)(rxjs@7.8.1)
       '@nestjs/common':
         specifier: ^10.3.10
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -228,7 +228,7 @@ importers:
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/typeorm':
         specifier: ^10.0.2
-        version: 10.0.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))
+        version: 10.0.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20(ioredis@5.4.1)(redis@4.6.15)
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(bnktmn5xodwzztmfnuawmsmhli))(winston@3.13.0)
+        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(bnlejsg4kwync2lmhvrpchqhwe))(winston@3.13.0)
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20(ioredis@5.4.1)(redis@4.6.15)
@@ -253,7 +253,7 @@ importers:
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@webundsoehne/nestjs-util':
         specifier: ^7.1.7
-        version: 7.1.7(bnktmn5xodwzztmfnuawmsmhli)
+        version: 7.1.7(bnlejsg4kwync2lmhvrpchqhwe)
       winston:
         specifier: ^3.13.0
         version: 3.13.0
@@ -1097,20 +1097,20 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/executor-graphql-ws@1.1.2':
-    resolution: {integrity: sha512-+9ZK0rychTH1LUv4iZqJ4ESbmULJMTsv3XlFooPUngpxZkk00q6LqHKJRrsLErmQrVaC7cwQCaRBJa0teK17Lg==}
+  '@graphql-tools/executor-graphql-ws@1.2.0':
+    resolution: {integrity: sha512-tSYC1QdrabWexLrYV0UI3uRGbde9WCY/bRhq6Jc+VXMZcfq6ea6pP5NEAVTfwbhUQ4xZvJABVVbKXtKb9uTg1w==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/executor-http@1.0.9':
-    resolution: {integrity: sha512-+NXaZd2MWbbrWHqU4EhXcrDbogeiCDmEbrAN+rMn4Nu2okDjn2MTFDbTIab87oEubQCH4Te1wDkWPKrzXup7+Q==}
+  '@graphql-tools/executor-http@1.1.2':
+    resolution: {integrity: sha512-Yssoh2+GBcoPcL6Jf9X+G+cp8RhiKz6m5R/BLLN0mdg6t02TYANYZV76dMBRPX93xaoIpjl94JkttC6O6ejwWg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/executor-legacy-ws@1.0.6':
-    resolution: {integrity: sha512-lDSxz9VyyquOrvSuCCnld3256Hmd+QI2lkmkEv7d4mdzkxkK4ddAWW1geQiWrQvWmdsmcnGGlZ7gDGbhEExwqg==}
+  '@graphql-tools/executor-legacy-ws@1.1.0':
+    resolution: {integrity: sha512-k+6ZyiaAd8SmwuzbEOfA/LVkuI1nqidhoMw+CJ7c41QGOjSMzc0VS0UZbJyeitI0n7a+uP/Meln1wjzJ2ReDtQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -1201,6 +1201,12 @@ packages:
 
   '@graphql-tools/utils@10.2.3':
     resolution: {integrity: sha512-j7x0sO0VtWVhD3FubyY42abx+g61/at5W5Y3DSOckPkBo7yVjkcnAsXoB4jiUnznhGme/o+uX5VgA8HrjyR5ZQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+
+  '@graphql-tools/utils@10.3.1':
+    resolution: {integrity: sha512-Yhk1F0MNk4/ctgl3d0DKq++ZPovvZuh1ixWuUEVAxrFloYOAVwJ+rvGI1lsopArdJly8QXClT9lkvOxQszMw/w==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -1917,9 +1923,6 @@ packages:
 
   '@types/node@20.14.10':
     resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
-
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
 
   '@types/triple-beam@1.3.5':
     resolution: {integrity: sha512-6WaYesThRMCl19iryMYP7/x2OVgCtbIVflDGFpWnb9irXI3UjYE4AzmYuiUKY1AJstGijoY+MgUszMgRxIYTYw==}
@@ -2689,8 +2692,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.816:
-    resolution: {integrity: sha512-EKH5X5oqC6hLmiS7/vYtZHZFTNdhsYG5NVPRN6Yn0kQHNBlT59+xSM8HBy66P5fxWpKgZbPqb+diC64ng295Jw==}
+  electron-to-chromium@1.4.817:
+    resolution: {integrity: sha512-3znu+lZMIbTe8ZOs360OMJvVroVF2NpNI8T5jfLnDetVvj0uNmIucZzQVYMSJfsu9f47Ssox1Gt46PR+R+1JUg==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -6284,6 +6287,13 @@ snapshots:
       colorette: 2.0.20
       winston: 3.13.0
 
+  '@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(bnlejsg4kwync2lmhvrpchqhwe))(winston@3.13.0)':
+    dependencies:
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@webundsoehne/nestjs-util': 7.1.7(bnlejsg4kwync2lmhvrpchqhwe)
+      colorette: 2.0.20
+      winston: 3.13.0
+
   '@colors/colors@1.6.0': {}
 
   '@commitlint/config-validator@19.0.3':
@@ -6449,7 +6459,7 @@ snapshots:
       '@graphql-tools/load': 8.0.2(graphql@16.9.0)
       '@graphql-tools/prisma-loader': 8.0.4(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)
       '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@whatwg-node/fetch': 0.8.8
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.5.3)
@@ -6492,7 +6502,7 @@ snapshots:
       '@graphql-codegen/typescript-operations': 4.2.3(encoding@0.1.13)(graphql@16.9.0)
       '@graphql-codegen/visitor-plugin-common': 5.3.1(encoding@0.1.13)(graphql@16.9.0)
       '@graphql-tools/documents': 1.0.1(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6504,7 +6514,7 @@ snapshots:
     dependencies:
       '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
       '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
 
@@ -6512,7 +6522,7 @@ snapshots:
     dependencies:
       '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
       '@graphql-codegen/visitor-plugin-common': 5.3.1(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       auto-bind: 4.0.0
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6522,7 +6532,7 @@ snapshots:
 
   '@graphql-codegen/plugin-helpers@5.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       change-case-all: 1.0.15
       common-tags: 1.8.2
       graphql: 16.9.0
@@ -6533,7 +6543,7 @@ snapshots:
   '@graphql-codegen/schema-ast@4.1.0(graphql@16.9.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
 
@@ -6578,7 +6588,7 @@ snapshots:
       '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
       '@graphql-tools/optimize': 2.0.0(graphql@16.9.0)
       '@graphql-tools/relay-operation-optimizer': 7.0.1(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
       dependency-graph: 0.11.0
@@ -6593,7 +6603,7 @@ snapshots:
   '@graphql-tools/apollo-engine-loader@8.0.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@whatwg-node/fetch': 0.9.18
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6602,7 +6612,7 @@ snapshots:
 
   '@graphql-tools/batch-execute@9.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       dataloader: 2.2.2
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6611,7 +6621,7 @@ snapshots:
   '@graphql-tools/code-file-loader@8.1.2(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       globby: 11.1.0
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6624,7 +6634,7 @@ snapshots:
       '@graphql-tools/batch-execute': 9.0.4(graphql@16.9.0)
       '@graphql-tools/executor': 1.2.8(graphql@16.9.0)
       '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       dataloader: 2.2.2
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6635,9 +6645,9 @@ snapshots:
       lodash.sortby: 4.7.0
       tslib: 2.6.3
 
-  '@graphql-tools/executor-graphql-ws@1.1.2(graphql@16.9.0)':
+  '@graphql-tools/executor-graphql-ws@1.2.0(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@types/ws': 8.5.10
       graphql: 16.9.0
       graphql-ws: 5.16.0(graphql@16.9.0)
@@ -6648,9 +6658,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@graphql-tools/executor-http@1.0.9(@types/node@20.14.10)(graphql@16.9.0)':
+  '@graphql-tools/executor-http@1.1.2(@types/node@20.14.10)(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@repeaterjs/repeater': 3.0.6
       '@whatwg-node/fetch': 0.9.18
       extract-files: 11.0.0
@@ -6661,9 +6671,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@graphql-tools/executor-legacy-ws@1.0.6(graphql@16.9.0)':
+  '@graphql-tools/executor-legacy-ws@1.1.0(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@types/ws': 8.5.10
       graphql: 16.9.0
       isomorphic-ws: 5.0.0(ws@8.18.0)
@@ -6675,7 +6685,7 @@ snapshots:
 
   '@graphql-tools/executor@1.2.8(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       '@repeaterjs/repeater': 3.0.6
       graphql: 16.9.0
@@ -6685,7 +6695,7 @@ snapshots:
   '@graphql-tools/git-loader@8.0.6(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       is-glob: 4.0.3
       micromatch: 4.0.7
@@ -6697,9 +6707,9 @@ snapshots:
   '@graphql-tools/github-loader@8.0.1(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.10)(graphql@16.9.0)
+      '@graphql-tools/executor-http': 1.1.2(@types/node@20.14.10)(graphql@16.9.0)
       '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@whatwg-node/fetch': 0.9.18
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6712,7 +6722,7 @@ snapshots:
   '@graphql-tools/graphql-file-loader@8.0.1(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/import': 7.0.1(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       globby: 11.1.0
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6725,7 +6735,7 @@ snapshots:
       '@babel/plugin-syntax-import-assertions': 7.24.7(@babel/core@7.24.7)
       '@babel/traverse': 7.24.7
       '@babel/types': 7.24.7
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
@@ -6733,14 +6743,14 @@ snapshots:
 
   '@graphql-tools/import@7.0.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       resolve-from: 5.0.0
       tslib: 2.6.3
 
   '@graphql-tools/json-file-loader@8.0.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       globby: 11.1.0
       graphql: 16.9.0
       tslib: 2.6.3
@@ -6749,7 +6759,7 @@ snapshots:
   '@graphql-tools/load@8.0.2(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       p-limit: 3.1.0
       tslib: 2.6.3
@@ -6768,7 +6778,7 @@ snapshots:
   '@graphql-tools/prisma-loader@8.0.4(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@types/js-yaml': 4.0.9
       '@whatwg-node/fetch': 0.9.18
       chalk: 4.1.2
@@ -6794,7 +6804,7 @@ snapshots:
   '@graphql-tools/relay-operation-optimizer@7.0.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
@@ -6813,10 +6823,10 @@ snapshots:
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
       '@graphql-tools/delegate': 10.0.13(graphql@16.9.0)
-      '@graphql-tools/executor-graphql-ws': 1.1.2(graphql@16.9.0)
-      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.10)(graphql@16.9.0)
-      '@graphql-tools/executor-legacy-ws': 1.0.6(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/executor-graphql-ws': 1.2.0(graphql@16.9.0)
+      '@graphql-tools/executor-http': 1.1.2(@types/node@20.14.10)(graphql@16.9.0)
+      '@graphql-tools/executor-legacy-ws': 1.1.0(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       '@graphql-tools/wrap': 10.0.5(graphql@16.9.0)
       '@types/ws': 8.5.10
       '@whatwg-node/fetch': 0.9.18
@@ -6839,11 +6849,19 @@ snapshots:
       graphql: 16.9.0
       tslib: 2.6.3
 
+  '@graphql-tools/utils@10.3.1(graphql@16.9.0)':
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      cross-inspect: 1.0.0
+      dset: 3.1.3
+      graphql: 16.9.0
+      tslib: 2.6.3
+
   '@graphql-tools/wrap@10.0.5(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/delegate': 10.0.13(graphql@16.9.0)
       '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
@@ -6906,7 +6924,7 @@ snapshots:
 
   '@lukeed/csprng@1.1.0': {}
 
-  '@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.1)(rxjs@7.8.1)':
+  '@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.1)(rxjs@7.8.1)':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -6940,7 +6958,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@nestjs/event-emitter@2.0.4(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
+  '@nestjs/event-emitter@2.0.4(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -6973,6 +6991,33 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  '@nestjs/graphql@12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)':
+    dependencies:
+      '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/mapped-types': 2.0.5(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
+      chokidar: 3.6.0
+      fast-glob: 3.3.2
+      graphql-tag: 2.12.6(graphql@16.9.0)
+      graphql-ws: 5.16.0(graphql@16.9.0)
+      lodash: 4.17.21
+      normalize-path: 3.0.0
+      reflect-metadata: 0.2.2
+      subscriptions-transport-ws: 0.11.0(graphql@16.9.0)
+      tslib: 2.6.3
+      uuid: 9.0.1
+      ws: 8.17.1
+    optionalDependencies:
+      class-transformer: 0.5.1
+      class-validator: 0.14.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    optional: true
+
   '@nestjs/mapped-types@2.0.5(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -6993,7 +7038,7 @@ snapshots:
       cache-manager: 5.7.1
       ioredis: 5.4.1
 
-  '@nestjs/typeorm@10.0.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))':
+  '@nestjs/typeorm@10.0.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -7555,7 +7600,7 @@ snapshots:
   '@types/fs-extra@11.0.4':
     dependencies:
       '@types/jsonfile': 6.1.4
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
 
   '@types/glob@7.2.0':
     dependencies:
@@ -7585,13 +7630,9 @@ snapshots:
 
   '@types/node-forge@1.3.11':
     dependencies:
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
 
   '@types/node@20.14.10':
-    dependencies:
-      undici-types: 5.26.5
-
-  '@types/node@20.14.9':
     dependencies:
       undici-types: 5.26.5
 
@@ -7711,6 +7752,26 @@ snapshots:
       winston-transport: 4.7.0
     optionalDependencies:
       '@nestjs/graphql': 12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(graphql@16.9.0)(reflect-metadata@0.2.2)
+
+  '@webundsoehne/nestjs-util@7.1.7(bnlejsg4kwync2lmhvrpchqhwe)':
+    dependencies:
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10)(cache-manager@5.7.1)(ioredis@5.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@webundsoehne/deep-merge': 4.0.0
+      class-transformer: 0.5.1
+      class-validator: 0.14.1
+      colorette: 2.0.20
+      config: 3.3.12
+      express: 4.19.2
+      fs-extra: 10.1.0
+      js-yaml: 4.1.0
+      moment: 2.30.1
+      reflect-metadata: 0.1.14
+      winston: 3.13.0
+      winston-transport: 4.7.0
+    optionalDependencies:
+      '@nestjs/graphql': 12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
 
   '@whatwg-node/events@0.0.3': {}
 
@@ -8003,7 +8064,7 @@ snapshots:
   browserslist@4.23.1:
     dependencies:
       caniuse-lite: 1.0.30001640
-      electron-to-chromium: 1.4.816
+      electron-to-chromium: 1.4.817
       node-releases: 2.0.14
       update-browserslist-db: 1.1.0(browserslist@4.23.1)
 
@@ -8500,7 +8561,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.816: {}
+  electron-to-chromium@1.4.817: {}
 
   emoji-regex@10.3.0: {}
 
@@ -9172,7 +9233,7 @@ snapshots:
       '@graphql-tools/load': 8.0.2(graphql@16.9.0)
       '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
       '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.10)(encoding@0.1.13)(graphql@16.9.0)
-      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@graphql-tools/utils': 10.3.1(graphql@16.9.0)
       cosmiconfig: 8.3.6(typescript@5.5.3)
       graphql: 16.9.0
       jiti: 1.21.6
