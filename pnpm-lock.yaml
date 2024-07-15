@@ -209,8 +209,8 @@ importers:
         specifier: ^5.4.1
         version: 5.4.1
       redis-om:
-        specifier: ^0.4.3
-        version: 0.4.3
+        specifier: ^0.4.4
+        version: 0.4.4
 
   packages/nestjs-s3:
     devDependencies:
@@ -4342,8 +4342,8 @@ packages:
     resolution: {integrity: sha512-1qny3OExCf0UvUV/5wpYKf2YwPcOqXzkwKKSmKHiE6ZMQs5heeE/c8eXK+PNllPvmjgAbfnsbpkGZWy8cBpn9w==}
     engines: {node: '>=4'}
 
-  redis-om@0.4.3:
-    resolution: {integrity: sha512-OQ2ydJYm8j5YMWj3K2ieQdUcfu2gP1nW2XsdaFLbHkaSlYqj1Kfu8X+T44vPuesY3cKdVj6tv9bHEmI9oqwHgA==}
+  redis-om@0.4.4:
+    resolution: {integrity: sha512-pdcWC6VxYUWL0twKUDgaoNbFeZIa/3bpH55CGdyDUNu5ilzUIDTuo5uE55UJ+HD2FCIdmiiuyw4jRP+j9VoROw==}
     engines: {node: '>= 14'}
 
   redis-parser@3.0.0:
@@ -10370,7 +10370,7 @@ snapshots:
 
   redis-errors@1.2.0: {}
 
-  redis-om@0.4.3:
+  redis-om@0.4.4:
     dependencies:
       jsonpath-plus: 7.2.0
       just-clone: 6.2.0
