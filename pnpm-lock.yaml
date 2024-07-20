@@ -74,7 +74,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(6vojp3wdv6577z5notjkisiioy))(winston@3.13.1)
+        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(f5modkqskmvbuzxwnqy2etvchi))(winston@3.13.1)
       '@nestjs/common':
         specifier: ^10.3.10
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -95,7 +95,7 @@ importers:
         version: 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/event-emitter':
         specifier: ^2.0.4
-        version: 2.0.4(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))
+        version: 2.0.4(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))
       eventemitter2:
         specifier: ^6.4.9
         version: 6.4.9
@@ -165,7 +165,7 @@ importers:
     devDependencies:
       '@nestjs/cache-manager':
         specifier: ^2.2.2
-        version: 2.2.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.3)(rxjs@7.8.1)
+        version: 2.2.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.3)(rxjs@7.8.1)
       '@nestjs/common':
         specifier: ^10.3.10
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -228,7 +228,7 @@ importers:
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/typeorm':
         specifier: ^10.0.2
-        version: 10.0.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))
+        version: 10.0.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20(ioredis@5.4.1)(redis@4.6.15)
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
-        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(6vojp3wdv6577z5notjkisiioy))(winston@3.13.1)
+        version: 3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(f5modkqskmvbuzxwnqy2etvchi))(winston@3.13.1)
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20(ioredis@5.4.1)(redis@4.6.15)
@@ -253,7 +253,7 @@ importers:
         version: 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@webundsoehne/nestjs-util':
         specifier: ^7.1.7
-        version: 7.1.7(6vojp3wdv6577z5notjkisiioy)
+        version: 7.1.7(f5modkqskmvbuzxwnqy2etvchi)
       winston:
         specifier: ^3.13.1
         version: 3.13.1
@@ -1511,83 +1511,83 @@ packages:
   '@repeaterjs/repeater@3.0.6':
     resolution: {integrity: sha512-Javneu5lsuhwNCryN+pXH93VPQ8g0dBX7wItHFgYiwQmzE1sVdg5tWHiOgHywzL2W21XQopa7IwIEnNbmeUJYA==}
 
-  '@rollup/rollup-android-arm-eabi@4.18.1':
-    resolution: {integrity: sha512-lncuC4aHicncmbORnx+dUaAgzee9cm/PbIqgWz1PpXuwc+sa1Ct83tnqUDy/GFKleLiN7ZIeytM6KJ4cAn1SxA==}
+  '@rollup/rollup-android-arm-eabi@4.19.0':
+    resolution: {integrity: sha512-JlPfZ/C7yn5S5p0yKk7uhHTTnFlvTgLetl2VxqE518QgyM7C9bSfFTYvB/Q/ftkq0RIPY4ySxTz+/wKJ/dXC0w==}
     cpu: [arm]
     os: [android]
 
-  '@rollup/rollup-android-arm64@4.18.1':
-    resolution: {integrity: sha512-F/tkdw0WSs4ojqz5Ovrw5r9odqzFjb5LIgHdHZG65dFI1lWTWRVy32KDJLKRISHgJvqUeUhdIvy43fX41znyDg==}
+  '@rollup/rollup-android-arm64@4.19.0':
+    resolution: {integrity: sha512-RDxUSY8D1tWYfn00DDi5myxKgOk6RvWPxhmWexcICt/MEC6yEMr4HNCu1sXXYLw8iAsg0D44NuU+qNq7zVWCrw==}
     cpu: [arm64]
     os: [android]
 
-  '@rollup/rollup-darwin-arm64@4.18.1':
-    resolution: {integrity: sha512-vk+ma8iC1ebje/ahpxpnrfVQJibTMyHdWpOGZ3JpQ7Mgn/3QNHmPq7YwjZbIE7km73dH5M1e6MRRsnEBW7v5CQ==}
+  '@rollup/rollup-darwin-arm64@4.19.0':
+    resolution: {integrity: sha512-emvKHL4B15x6nlNTBMtIaC9tLPRpeA5jMvRLXVbl/W9Ie7HhkrE7KQjvgS9uxgatL1HmHWDXk5TTS4IaNJxbAA==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rollup/rollup-darwin-x64@4.18.1':
-    resolution: {integrity: sha512-IgpzXKauRe1Tafcej9STjSSuG0Ghu/xGYH+qG6JwsAUxXrnkvNHcq/NL6nz1+jzvWAnQkuAJ4uIwGB48K9OCGA==}
+  '@rollup/rollup-darwin-x64@4.19.0':
+    resolution: {integrity: sha512-fO28cWA1dC57qCd+D0rfLC4VPbh6EOJXrreBmFLWPGI9dpMlER2YwSPZzSGfq11XgcEpPukPTfEVFtw2q2nYJg==}
     cpu: [x64]
     os: [darwin]
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.18.1':
-    resolution: {integrity: sha512-P9bSiAUnSSM7EmyRK+e5wgpqai86QOSv8BwvkGjLwYuOpaeomiZWifEos517CwbG+aZl1T4clSE1YqqH2JRs+g==}
+  '@rollup/rollup-linux-arm-gnueabihf@4.19.0':
+    resolution: {integrity: sha512-2Rn36Ubxdv32NUcfm0wB1tgKqkQuft00PtM23VqLuCUR4N5jcNWDoV5iBC9jeGdgS38WK66ElncprqgMUOyomw==}
     cpu: [arm]
     os: [linux]
 
-  '@rollup/rollup-linux-arm-musleabihf@4.18.1':
-    resolution: {integrity: sha512-5RnjpACoxtS+aWOI1dURKno11d7krfpGDEn19jI8BuWmSBbUC4ytIADfROM1FZrFhQPSoP+KEa3NlEScznBTyQ==}
+  '@rollup/rollup-linux-arm-musleabihf@4.19.0':
+    resolution: {integrity: sha512-gJuzIVdq/X1ZA2bHeCGCISe0VWqCoNT8BvkQ+BfsixXwTOndhtLUpOg0A1Fcx/+eA6ei6rMBzlOz4JzmiDw7JQ==}
     cpu: [arm]
     os: [linux]
 
-  '@rollup/rollup-linux-arm64-gnu@4.18.1':
-    resolution: {integrity: sha512-8mwmGD668m8WaGbthrEYZ9CBmPug2QPGWxhJxh/vCgBjro5o96gL04WLlg5BA233OCWLqERy4YUzX3bJGXaJgQ==}
+  '@rollup/rollup-linux-arm64-gnu@4.19.0':
+    resolution: {integrity: sha512-0EkX2HYPkSADo9cfeGFoQ7R0/wTKb7q6DdwI4Yn/ULFE1wuRRCHybxpl2goQrx4c/yzK3I8OlgtBu4xvted0ug==}
     cpu: [arm64]
     os: [linux]
 
-  '@rollup/rollup-linux-arm64-musl@4.18.1':
-    resolution: {integrity: sha512-dJX9u4r4bqInMGOAQoGYdwDP8lQiisWb9et+T84l2WXk41yEej8v2iGKodmdKimT8cTAYt0jFb+UEBxnPkbXEQ==}
+  '@rollup/rollup-linux-arm64-musl@4.19.0':
+    resolution: {integrity: sha512-GlIQRj9px52ISomIOEUq/IojLZqzkvRpdP3cLgIE1wUWaiU5Takwlzpz002q0Nxxr1y2ZgxC2obWxjr13lvxNQ==}
     cpu: [arm64]
     os: [linux]
 
-  '@rollup/rollup-linux-powerpc64le-gnu@4.18.1':
-    resolution: {integrity: sha512-V72cXdTl4EI0x6FNmho4D502sy7ed+LuVW6Ym8aI6DRQ9hQZdp5sj0a2usYOlqvFBNKQnLQGwmYnujo2HvjCxQ==}
+  '@rollup/rollup-linux-powerpc64le-gnu@4.19.0':
+    resolution: {integrity: sha512-N6cFJzssruDLUOKfEKeovCKiHcdwVYOT1Hs6dovDQ61+Y9n3Ek4zXvtghPPelt6U0AH4aDGnDLb83uiJMkWYzQ==}
     cpu: [ppc64]
     os: [linux]
 
-  '@rollup/rollup-linux-riscv64-gnu@4.18.1':
-    resolution: {integrity: sha512-f+pJih7sxoKmbjghrM2RkWo2WHUW8UbfxIQiWo5yeCaCM0TveMEuAzKJte4QskBp1TIinpnRcxkquY+4WuY/tg==}
+  '@rollup/rollup-linux-riscv64-gnu@4.19.0':
+    resolution: {integrity: sha512-2DnD3mkS2uuam/alF+I7M84koGwvn3ZVD7uG+LEWpyzo/bq8+kKnus2EVCkcvh6PlNB8QPNFOz6fWd5N8o1CYg==}
     cpu: [riscv64]
     os: [linux]
 
-  '@rollup/rollup-linux-s390x-gnu@4.18.1':
-    resolution: {integrity: sha512-qb1hMMT3Fr/Qz1OKovCuUM11MUNLUuHeBC2DPPAWUYYUAOFWaxInaTwTQmc7Fl5La7DShTEpmYwgdt2hG+4TEg==}
+  '@rollup/rollup-linux-s390x-gnu@4.19.0':
+    resolution: {integrity: sha512-D6pkaF7OpE7lzlTOFCB2m3Ngzu2ykw40Nka9WmKGUOTS3xcIieHe82slQlNq69sVB04ch73thKYIWz/Ian8DUA==}
     cpu: [s390x]
     os: [linux]
 
-  '@rollup/rollup-linux-x64-gnu@4.18.1':
-    resolution: {integrity: sha512-7O5u/p6oKUFYjRbZkL2FLbwsyoJAjyeXHCU3O4ndvzg2OFO2GinFPSJFGbiwFDaCFc+k7gs9CF243PwdPQFh5g==}
+  '@rollup/rollup-linux-x64-gnu@4.19.0':
+    resolution: {integrity: sha512-HBndjQLP8OsdJNSxpNIN0einbDmRFg9+UQeZV1eiYupIRuZsDEoeGU43NQsS34Pp166DtwQOnpcbV/zQxM+rWA==}
     cpu: [x64]
     os: [linux]
 
-  '@rollup/rollup-linux-x64-musl@4.18.1':
-    resolution: {integrity: sha512-pDLkYITdYrH/9Cv/Vlj8HppDuLMDUBmgsM0+N+xLtFd18aXgM9Nyqupb/Uw+HeidhfYg2lD6CXvz6CjoVOaKjQ==}
+  '@rollup/rollup-linux-x64-musl@4.19.0':
+    resolution: {integrity: sha512-HxfbvfCKJe/RMYJJn0a12eiOI9OOtAUF4G6ozrFUK95BNyoJaSiBjIOHjZskTUffUrB84IPKkFG9H9nEvJGW6A==}
     cpu: [x64]
     os: [linux]
 
-  '@rollup/rollup-win32-arm64-msvc@4.18.1':
-    resolution: {integrity: sha512-W2ZNI323O/8pJdBGil1oCauuCzmVd9lDmWBBqxYZcOqWD6aWqJtVBQ1dFrF4dYpZPks6F+xCZHfzG5hYlSHZ6g==}
+  '@rollup/rollup-win32-arm64-msvc@4.19.0':
+    resolution: {integrity: sha512-HxDMKIhmcguGTiP5TsLNolwBUK3nGGUEoV/BO9ldUBoMLBssvh4J0X8pf11i1fTV7WShWItB1bKAKjX4RQeYmg==}
     cpu: [arm64]
     os: [win32]
 
-  '@rollup/rollup-win32-ia32-msvc@4.18.1':
-    resolution: {integrity: sha512-ELfEX1/+eGZYMaCIbK4jqLxO1gyTSOIlZr6pbC4SRYFaSIDVKOnZNMdoZ+ON0mrFDp4+H5MhwNC1H/AhE3zQLg==}
+  '@rollup/rollup-win32-ia32-msvc@4.19.0':
+    resolution: {integrity: sha512-xItlIAZZaiG/u0wooGzRsx11rokP4qyc/79LkAOdznGRAbOFc+SfEdfUOszG1odsHNgwippUJavag/+W/Etc6Q==}
     cpu: [ia32]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-msvc@4.18.1':
-    resolution: {integrity: sha512-yjk2MAkQmoaPYCSu35RLJ62+dz358nE83VfTePJRp8CG7aMg25mEJYpXFiD+NcevhX8LxD5OP5tktPXnXN7GDw==}
+  '@rollup/rollup-win32-x64-msvc@4.19.0':
+    resolution: {integrity: sha512-xNo5fV5ycvCCKqiZcpB65VMR11NJB+StnxHz20jdqRAktfdfzhgjTiJ2doTDQE/7dqGaV5I7ZGqKpgph6lCIag==}
     cpu: [x64]
     os: [win32]
 
@@ -1875,8 +1875,8 @@ packages:
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
-  '@swc/types@0.1.9':
-    resolution: {integrity: sha512-qKnCno++jzcJ4lM4NTfYifm1EFSCeIfKiAHAfkENZAV5Kl9PjJIyd2yeeVv6c/2CckuLyv2NmRC5pv6pm2WQBg==}
+  '@swc/types@0.1.10':
+    resolution: {integrity: sha512-jIar7JjM8pwwOo/IpOmR1aYOAZmXKwyk0qhl5jbIMReAocmBCcyGaTWVemDbsJ6zNrcFE+d7Vy3aNWx6z7CIbw==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -2051,8 +2051,8 @@ packages:
   '@whatwg-node/node-fetch@0.3.6':
     resolution: {integrity: sha512-w9wKgDO4C95qnXZRwZTfCmLWqyRnooGjcIwG0wADWjw9/HN0p7dtvtgSvItZtUyNteEvgTrd8QojNEqV6DAGTA==}
 
-  '@whatwg-node/node-fetch@0.5.11':
-    resolution: {integrity: sha512-LS8tSomZa3YHnntpWt3PP43iFEEl6YeIsvDakczHBKlay5LdkXFr8w7v8H6akpG5nRrzydyB0k1iE2eoL6aKIQ==}
+  '@whatwg-node/node-fetch@0.5.12':
+    resolution: {integrity: sha512-3wBgVdAOlS5jnITT6fbzQPfRs+rgYhyjwEeALlXfgg/0GvokNK5rPuh60iraS/x5UQXNcHSI3Vb+37B9RPSjrA==}
     engines: {node: '>=16.0.0'}
 
   accepts@1.3.8:
@@ -2708,8 +2708,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.831:
-    resolution: {integrity: sha512-6cKy9msoQGWhBF30n6y5ck80BdunKdwMRugM1lr74DMMXhjDRxSwMvrD1ncPP+n1PjF+KKmZZydvEF29skNZ1Q==}
+  electron-to-chromium@1.4.832:
+    resolution: {integrity: sha512-cTen3SB0H2SGU7x467NRe1eVcQgcuS6jckKfWJHia2eo0cHIGOqHoAxevIYZD4eRHcWjkvFzo93bi3vJ9W+1lA==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -4479,8 +4479,8 @@ packages:
     engines: {node: 14 >=14.20 || 16 >=16.20 || >=18}
     hasBin: true
 
-  rollup@4.18.1:
-    resolution: {integrity: sha512-Elx2UT8lzxxOXMpy5HWQGZqkrQOtrVDDa/bm9l10+U4rQnVzbL/LgZ4NOM1MPIDyHk69W4InuYDF5dzRh4Kw1A==}
+  rollup@4.19.0:
+    resolution: {integrity: sha512-5r7EYSQIowHsK4eTZ0Y81qpZuJz+MUuYeqmmYmRMl1nwhdmbiYqt5jwzf6u7wyOzJgYqtCRMtVRKOtHANBz7rA==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -6323,6 +6323,13 @@ snapshots:
       colorette: 2.0.20
       winston: 3.13.1
 
+  '@cenk1cenk2/nestjs-utils@3.0.3(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(f5modkqskmvbuzxwnqy2etvchi))(winston@3.13.1)':
+    dependencies:
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@webundsoehne/nestjs-util': 7.1.7(f5modkqskmvbuzxwnqy2etvchi)
+      colorette: 2.0.20
+      winston: 3.13.1
+
   '@colors/colors@1.6.0': {}
 
   '@commitlint/config-validator@19.0.3':
@@ -6956,7 +6963,7 @@ snapshots:
 
   '@lukeed/csprng@1.1.0': {}
 
-  '@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.3)(rxjs@7.8.1)':
+  '@nestjs/cache-manager@2.2.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(cache-manager@5.7.3)(rxjs@7.8.1)':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -6990,7 +6997,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@nestjs/event-emitter@2.0.4(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
+  '@nestjs/event-emitter@2.0.4(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -7023,6 +7030,33 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  '@nestjs/graphql@12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)':
+    dependencies:
+      '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.3(graphql@16.9.0)
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/mapped-types': 2.0.5(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
+      chokidar: 3.6.0
+      fast-glob: 3.3.2
+      graphql-tag: 2.12.6(graphql@16.9.0)
+      graphql-ws: 5.16.0(graphql@16.9.0)
+      lodash: 4.17.21
+      normalize-path: 3.0.0
+      reflect-metadata: 0.2.2
+      subscriptions-transport-ws: 0.11.0(graphql@16.9.0)
+      tslib: 2.6.3
+      uuid: 9.0.1
+      ws: 8.17.1
+    optionalDependencies:
+      class-transformer: 0.5.1
+      class-validator: 0.14.1
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    optional: true
+
   '@nestjs/mapped-types@2.0.5(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -7043,7 +7077,7 @@ snapshots:
       cache-manager: 5.7.3
       ioredis: 5.4.1
 
-  '@nestjs/typeorm@10.0.2(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))':
+  '@nestjs/typeorm@10.0.2(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1)(typeorm@0.3.20(ioredis@5.4.1)(redis@4.6.15))':
     dependencies:
       '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
@@ -7150,52 +7184,52 @@ snapshots:
 
   '@repeaterjs/repeater@3.0.6': {}
 
-  '@rollup/rollup-android-arm-eabi@4.18.1':
+  '@rollup/rollup-android-arm-eabi@4.19.0':
     optional: true
 
-  '@rollup/rollup-android-arm64@4.18.1':
+  '@rollup/rollup-android-arm64@4.19.0':
     optional: true
 
-  '@rollup/rollup-darwin-arm64@4.18.1':
+  '@rollup/rollup-darwin-arm64@4.19.0':
     optional: true
 
-  '@rollup/rollup-darwin-x64@4.18.1':
+  '@rollup/rollup-darwin-x64@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.18.1':
+  '@rollup/rollup-linux-arm-gnueabihf@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-arm-musleabihf@4.18.1':
+  '@rollup/rollup-linux-arm-musleabihf@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-arm64-gnu@4.18.1':
+  '@rollup/rollup-linux-arm64-gnu@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-arm64-musl@4.18.1':
+  '@rollup/rollup-linux-arm64-musl@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-powerpc64le-gnu@4.18.1':
+  '@rollup/rollup-linux-powerpc64le-gnu@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-gnu@4.18.1':
+  '@rollup/rollup-linux-riscv64-gnu@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-s390x-gnu@4.18.1':
+  '@rollup/rollup-linux-s390x-gnu@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.18.1':
+  '@rollup/rollup-linux-x64-gnu@4.19.0':
     optional: true
 
-  '@rollup/rollup-linux-x64-musl@4.18.1':
+  '@rollup/rollup-linux-x64-musl@4.19.0':
     optional: true
 
-  '@rollup/rollup-win32-arm64-msvc@4.18.1':
+  '@rollup/rollup-win32-arm64-msvc@4.19.0':
     optional: true
 
-  '@rollup/rollup-win32-ia32-msvc@4.18.1':
+  '@rollup/rollup-win32-ia32-msvc@4.19.0':
     optional: true
 
-  '@rollup/rollup-win32-x64-msvc@4.18.1':
+  '@rollup/rollup-win32-x64-msvc@4.19.0':
     optional: true
 
   '@shikijs/core@1.10.3':
@@ -7567,7 +7601,7 @@ snapshots:
   '@swc/core@1.7.0':
     dependencies:
       '@swc/counter': 0.1.3
-      '@swc/types': 0.1.9
+      '@swc/types': 0.1.10
     optionalDependencies:
       '@swc/core-darwin-arm64': 1.7.0
       '@swc/core-darwin-x64': 1.7.0
@@ -7582,7 +7616,7 @@ snapshots:
 
   '@swc/counter@0.1.3': {}
 
-  '@swc/types@0.1.9':
+  '@swc/types@0.1.10':
     dependencies:
       '@swc/counter': 0.1.3
 
@@ -7766,6 +7800,26 @@ snapshots:
     optionalDependencies:
       '@nestjs/graphql': 12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(graphql@16.9.0)(reflect-metadata@0.2.2)
 
+  '@webundsoehne/nestjs-util@7.1.7(f5modkqskmvbuzxwnqy2etvchi)':
+    dependencies:
+      '@nestjs/common': 10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/core': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@nestjs/microservices': 10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10)(cache-manager@5.7.3)(ioredis@5.4.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
+      '@webundsoehne/deep-merge': 4.0.0
+      class-transformer: 0.5.1
+      class-validator: 0.14.1
+      colorette: 2.0.20
+      config: 3.3.12
+      express: 4.19.2
+      fs-extra: 10.1.0
+      js-yaml: 4.1.0
+      moment: 2.30.1
+      reflect-metadata: 0.1.14
+      winston: 3.13.1
+      winston-transport: 4.7.1
+    optionalDependencies:
+      '@nestjs/graphql': 12.2.0(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.3.10(@nestjs/common@10.3.10(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/microservices@10.3.10)(encoding@0.1.13)(reflect-metadata@0.2.2)(rxjs@7.8.1))(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)
+
   '@whatwg-node/events@0.0.3': {}
 
   '@whatwg-node/events@0.1.1': {}
@@ -7780,7 +7834,7 @@ snapshots:
 
   '@whatwg-node/fetch@0.9.18':
     dependencies:
-      '@whatwg-node/node-fetch': 0.5.11
+      '@whatwg-node/node-fetch': 0.5.12
       urlpattern-polyfill: 10.0.0
 
   '@whatwg-node/node-fetch@0.3.6':
@@ -7791,7 +7845,7 @@ snapshots:
       fast-url-parser: 1.1.3
       tslib: 2.6.3
 
-  '@whatwg-node/node-fetch@0.5.11':
+  '@whatwg-node/node-fetch@0.5.12':
     dependencies:
       '@kamilkisiela/fast-url-parser': 1.1.4
       '@whatwg-node/events': 0.1.1
@@ -8057,7 +8111,7 @@ snapshots:
   browserslist@4.23.2:
     dependencies:
       caniuse-lite: 1.0.30001642
-      electron-to-chromium: 1.4.831
+      electron-to-chromium: 1.4.832
       node-releases: 2.0.17
       update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
@@ -8556,7 +8610,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.831: {}
+  electron-to-chromium@1.4.832: {}
 
   emoji-regex@10.3.0: {}
 
@@ -10518,26 +10572,26 @@ snapshots:
     dependencies:
       glob: 10.4.5
 
-  rollup@4.18.1:
+  rollup@4.19.0:
     dependencies:
       '@types/estree': 1.0.5
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.18.1
-      '@rollup/rollup-android-arm64': 4.18.1
-      '@rollup/rollup-darwin-arm64': 4.18.1
-      '@rollup/rollup-darwin-x64': 4.18.1
-      '@rollup/rollup-linux-arm-gnueabihf': 4.18.1
-      '@rollup/rollup-linux-arm-musleabihf': 4.18.1
-      '@rollup/rollup-linux-arm64-gnu': 4.18.1
-      '@rollup/rollup-linux-arm64-musl': 4.18.1
-      '@rollup/rollup-linux-powerpc64le-gnu': 4.18.1
-      '@rollup/rollup-linux-riscv64-gnu': 4.18.1
-      '@rollup/rollup-linux-s390x-gnu': 4.18.1
-      '@rollup/rollup-linux-x64-gnu': 4.18.1
-      '@rollup/rollup-linux-x64-musl': 4.18.1
-      '@rollup/rollup-win32-arm64-msvc': 4.18.1
-      '@rollup/rollup-win32-ia32-msvc': 4.18.1
-      '@rollup/rollup-win32-x64-msvc': 4.18.1
+      '@rollup/rollup-android-arm-eabi': 4.19.0
+      '@rollup/rollup-android-arm64': 4.19.0
+      '@rollup/rollup-darwin-arm64': 4.19.0
+      '@rollup/rollup-darwin-x64': 4.19.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.19.0
+      '@rollup/rollup-linux-arm-musleabihf': 4.19.0
+      '@rollup/rollup-linux-arm64-gnu': 4.19.0
+      '@rollup/rollup-linux-arm64-musl': 4.19.0
+      '@rollup/rollup-linux-powerpc64le-gnu': 4.19.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.19.0
+      '@rollup/rollup-linux-s390x-gnu': 4.19.0
+      '@rollup/rollup-linux-x64-gnu': 4.19.0
+      '@rollup/rollup-linux-x64-musl': 4.19.0
+      '@rollup/rollup-win32-arm64-msvc': 4.19.0
+      '@rollup/rollup-win32-ia32-msvc': 4.19.0
+      '@rollup/rollup-win32-x64-msvc': 4.19.0
       fsevents: 2.3.3
 
   run-async@2.4.1: {}
@@ -10977,7 +11031,7 @@ snapshots:
       picomatch: 4.0.2
       postcss-load-config: 6.0.1(jiti@1.21.6)(yaml@2.4.5)
       resolve-from: 5.0.0
-      rollup: 4.18.1
+      rollup: 4.19.0
       source-map: 0.8.0-beta.0
       sucrase: 3.35.0
       tree-kill: 1.2.2
