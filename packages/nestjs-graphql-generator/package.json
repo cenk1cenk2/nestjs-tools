@@ -26,7 +26,7 @@
     "docs:api": "typedoc --options .typedoc.json --hideInPageTOC --hideBreadcrumbs"
   },
   "peerDependencies": {
-    "config": ">= 3.3.3",
+    "config": ">= 3.3.12",
     "graphql": ">= 15.4.0"
   },
   "dependencies": {
