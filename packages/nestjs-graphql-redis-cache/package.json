@@ -32,7 +32,7 @@
     "@nestjs/graphql": ">= 8",
     "cache-manager": ">= 3.4.4",
     "cache-manager-ioredis": ">= 2.0.0",
-    "ioredis": ">= 4.27.9",
+    "ioredis": ">= 4.28.5",
     "rxjs": ">= 7.3.1"
   },
   "devDependencies": {

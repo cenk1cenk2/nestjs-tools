@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1",
-    "ioredis": ">= 4.27.9",
+    "ioredis": ">= 4.28.5",
     "redis-om": ">= 0.3.0"
   },
   "peerDependenciesMeta": {
