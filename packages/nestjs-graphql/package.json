@@ -28,8 +28,8 @@
   "peerDependencies": {
     "@apollo/gateway": ">= 0.24.4",
     "@cenk1cenk2/nestjs-utils": ">= 1",
-    "@nestjs/common": ">= 7",
-    "@nestjs/core": ">= 7.6.0",
+    "@nestjs/common": ">= 7.6.18",
+    "@nestjs/core": ">= 7.6.18",
     "class-validator": ">= 0.12.0"
   },
   "devDependencies": {

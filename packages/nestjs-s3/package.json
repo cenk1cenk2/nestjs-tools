@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@aws-sdk/client-s3": ">= 3",
-    "@nestjs/common": ">= 7.6.1"
+    "@nestjs/common": ">= 7.6.18"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.617.0",

@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@cenk1cenk2/nestjs-utils": "> 1",
-    "@nestjs/common": ">= 7.6.1",
+    "@nestjs/common": ">= 7.6.18",
     "fs-extra": ">= 10.0.0"
   },
   "dependencies": {
