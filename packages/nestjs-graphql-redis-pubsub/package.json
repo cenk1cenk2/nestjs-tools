@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1",
-    "graphql-redis-subscriptions": ">= 2.4.0",
+    "graphql-redis-subscriptions": ">= 2.6.1",
     "graphql-subscriptions": ">= 2.0.0",
     "ioredis": ">= 4.27.9"
   },
