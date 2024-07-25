@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">= 7.6.1",
-    "@nestjs/typeorm": ">= 7.1.5",
+    "@nestjs/typeorm": ">= 10.0.2",
     "typeorm": ">= 0.2.29"
   },
   "devDependencies": {
