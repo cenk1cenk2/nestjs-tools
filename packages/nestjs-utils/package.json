@@ -33,7 +33,7 @@
   "devDependencies": {
     "@nestjs/common": "^10.3.10",
     "@webundsoehne/nestjs-util": "^7.1.7",
-    "winston": "^3.13.1"
+    "winston": "^3.14.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
