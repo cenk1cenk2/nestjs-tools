@@ -3170,8 +3170,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  graphql-config@5.1.1:
-    resolution: {integrity: sha512-5FZUkX6A+q/gDSTDMeUbODwPnR+8nRNlI5z/ohtEmaD+XFeAalkB0KrWZ6cI7rcYUG05g43dPe+BRNZccQ5rKQ==}
+  graphql-config@5.1.2:
+    resolution: {integrity: sha512-kVwUuFz1h9u7B0nDPtnLFWN+x018niaH3zi1ChFCNfbunhDVJ911Z3YcglK5EfDfySeeH+zCa1aGxd1wMgNd7g==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
       cosmiconfig-toml-loader: ^1.0.0
@@ -6480,7 +6480,7 @@ snapshots:
       debounce: 1.2.1
       detect-indent: 6.1.0
       graphql: 16.9.0
-      graphql-config: 5.1.1(@types/node@20.16.1)(encoding@0.1.13)(graphql@16.9.0)(typescript@5.5.4)
+      graphql-config: 5.1.2(@types/node@20.16.1)(encoding@0.1.13)(graphql@16.9.0)(typescript@5.5.4)
       inquirer: 8.2.6
       is-glob: 4.0.3
       jiti: 1.21.6
@@ -9237,7 +9237,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-config@5.1.1(@types/node@20.16.1)(encoding@0.1.13)(graphql@16.9.0)(typescript@5.5.4):
+  graphql-config@5.1.2(@types/node@20.16.1)(encoding@0.1.13)(graphql@16.9.0)(typescript@5.5.4):
     dependencies:
       '@graphql-tools/graphql-file-loader': 8.0.1(graphql@16.9.0)
       '@graphql-tools/json-file-loader': 8.0.1(graphql@16.9.0)
@@ -9248,7 +9248,7 @@ snapshots:
       cosmiconfig: 9.0.0(typescript@5.5.4)
       graphql: 16.9.0
       jiti: 1.21.6
-      minimatch: 10.0.1
+      minimatch: 9.0.5
       string-env-interpolation: 1.0.1
       tslib: 2.6.3
     transitivePeerDependencies:
