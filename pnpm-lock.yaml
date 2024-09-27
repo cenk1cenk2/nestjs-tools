@@ -21,8 +21,8 @@ importers:
         specifier: ^20.16.9
         version: 20.16.9
       commitizen:
-        specifier: ^4.3.0
-        version: 4.3.0(@types/node@20.16.9)(typescript@5.6.2)
+        specifier: ^4.3.1
+        version: 4.3.1(@types/node@20.16.9)(typescript@5.6.2)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -111,8 +111,8 @@ importers:
         version: 10.4.4(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
     devDependencies:
       '@apollo/gateway':
-        specifier: '>= 2.9.1'
-        version: 2.9.1(encoding@0.1.13)(graphql@16.9.0)
+        specifier: '>= 2.9.2'
+        version: 2.9.2(encoding@0.1.13)(graphql@16.9.0)
       '@cenk1cenk2/nestjs-utils':
         specifier: '*'
         version: 3.0.3(@nestjs/common@10.4.4(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1))(@webundsoehne/nestjs-util@7.1.7(a4ksnb45re6zaar2o6g4ctm5dy))(winston@3.14.2)
@@ -264,20 +264,20 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@apollo/composition@2.9.1':
-    resolution: {integrity: sha512-+Xzh0FRcjsOBqvf8tDz7lhpagjGe0OuHVJTIF6bDIhdinFeiXgvT2+f/VXBhgRmnqHmDvgPY/xVLgX2wFkNLTQ==}
+  '@apollo/composition@2.9.2':
+    resolution: {integrity: sha512-hO07cfu+ezfCEyAg1ZC1FXBCt7gELR0ZsOXb4RRpDv/wpoIstoI/25ogxGNti2yOjX3tfBp4ewMBsIiDR2go/g==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
 
-  '@apollo/federation-internals@2.9.1':
-    resolution: {integrity: sha512-UWTInasu/equZa95jJixeRgstK8cf+mh6MG23eoIpNHpekG26/HBGI+mMAYCWO8969k+IiyN0RPcRlhIVYy86A==}
+  '@apollo/federation-internals@2.9.2':
+    resolution: {integrity: sha512-61+8ynN49ptKNi7Wid4V9acvk8VBt6TqmwUvLdsp3uH8y+FSQCpdaSs5be6vdy/L7O+7IIcydh+Ns2JqlLrwSA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
 
-  '@apollo/gateway@2.9.1':
-    resolution: {integrity: sha512-a/Geu1qTSJTkqaFUh92WL6DxeJDP4m+Re72rPMdEX1zr0G6G7X5cH5X8bu5LDexnbZ2beFWc7PD/sB0+MjBbjw==}
+  '@apollo/gateway@2.9.2':
+    resolution: {integrity: sha512-FjklUhVNEaIvZ+IRCY8YJLsKFfRUehUNI9QhqQw8ID+G6peSg5IPPsXo/9mtWq/TF7JRNmaL/nhjwjt+fGDUOg==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
@@ -286,14 +286,14 @@ packages:
     resolution: {integrity: sha512-Lahx5zntHPZia35myYDBRuF58tlwPskwHc5CWBZC/4bMKB6siTBWwtMrkqXcsNwQiFSzSx5hKdRPUmemrEp3Gg==}
     hasBin: true
 
-  '@apollo/query-graphs@2.9.1':
-    resolution: {integrity: sha512-Iq4esyt3ck6pYfwoukZJ3cmMCatOw27xfeK3R0us4TMNHiaXWGu1TO5Jnl/u9W25LGwe0nnVk+jYSlOCICsB6w==}
+  '@apollo/query-graphs@2.9.2':
+    resolution: {integrity: sha512-/3Wl7GukCCYPDtqNO36qH61ytBMgUhS5R7O44xXRDkErZzXuhno4Cds+SXYdqYmnatEnB0IxyrVtduaMr6uotQ==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
 
-  '@apollo/query-planner@2.9.1':
-    resolution: {integrity: sha512-LFi7IbShCeyFPfiX5FerUx3PNlBeFOW2z6/mNlFcFJeI9kTj+FG8gb9mrBkN9rY6VfLs3Myw4V8pmNXqXxzxpQ==}
+  '@apollo/query-planner@2.9.2':
+    resolution: {integrity: sha512-sqs3jA0o+LMRsiyEHAVdsFFt6ChN7ihGePdbuXNANb3+mV0WPBWYmnGjQ9FvrM5WynH4CtWekRHxsrQOYnr90A==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       graphql: ^16.5.0
@@ -2481,8 +2481,8 @@ packages:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
 
-  commitizen@4.3.0:
-    resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
+  commitizen@4.3.1:
+    resolution: {integrity: sha512-gwAPAVTy/j5YcOOebcCRIijn+mSjWJC+IYKivTu6aG8Ei/scoXgfsMRnuAk6b0GRste2J4NGxVdMN3ZpfNaVaw==}
     engines: {node: '>= 12'}
     hasBin: true
 
@@ -5439,13 +5439,13 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@apollo/composition@2.9.1(graphql@16.9.0)':
+  '@apollo/composition@2.9.2(graphql@16.9.0)':
     dependencies:
-      '@apollo/federation-internals': 2.9.1(graphql@16.9.0)
-      '@apollo/query-graphs': 2.9.1(graphql@16.9.0)
+      '@apollo/federation-internals': 2.9.2(graphql@16.9.0)
+      '@apollo/query-graphs': 2.9.2(graphql@16.9.0)
       graphql: 16.9.0
 
-  '@apollo/federation-internals@2.9.1(graphql@16.9.0)':
+  '@apollo/federation-internals@2.9.2(graphql@16.9.0)':
     dependencies:
       '@types/uuid': 9.0.8
       chalk: 4.1.2
@@ -5453,11 +5453,11 @@ snapshots:
       js-levenshtein: 1.1.6
       uuid: 9.0.1
 
-  '@apollo/gateway@2.9.1(encoding@0.1.13)(graphql@16.9.0)':
+  '@apollo/gateway@2.9.2(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@apollo/composition': 2.9.1(graphql@16.9.0)
-      '@apollo/federation-internals': 2.9.1(graphql@16.9.0)
-      '@apollo/query-planner': 2.9.1(graphql@16.9.0)
+      '@apollo/composition': 2.9.2(graphql@16.9.0)
+      '@apollo/federation-internals': 2.9.2(graphql@16.9.0)
+      '@apollo/query-planner': 2.9.2(graphql@16.9.0)
       '@apollo/server-gateway-interface': 1.1.1(graphql@16.9.0)
       '@apollo/usage-reporting-protobuf': 4.1.1
       '@apollo/utils.createhash': 2.0.1
@@ -5493,18 +5493,18 @@ snapshots:
       '@types/long': 4.0.2
       long: 4.0.0
 
-  '@apollo/query-graphs@2.9.1(graphql@16.9.0)':
+  '@apollo/query-graphs@2.9.2(graphql@16.9.0)':
     dependencies:
-      '@apollo/federation-internals': 2.9.1(graphql@16.9.0)
+      '@apollo/federation-internals': 2.9.2(graphql@16.9.0)
       deep-equal: 2.2.3
       graphql: 16.9.0
       ts-graphviz: 1.8.2
       uuid: 9.0.1
 
-  '@apollo/query-planner@2.9.1(graphql@16.9.0)':
+  '@apollo/query-planner@2.9.2(graphql@16.9.0)':
     dependencies:
-      '@apollo/federation-internals': 2.9.1(graphql@16.9.0)
-      '@apollo/query-graphs': 2.9.1(graphql@16.9.0)
+      '@apollo/federation-internals': 2.9.2(graphql@16.9.0)
+      '@apollo/query-graphs': 2.9.2(graphql@16.9.0)
       '@apollo/utils.keyvaluecache': 2.1.1
       chalk: 4.1.2
       deep-equal: 2.2.3
@@ -6402,7 +6402,7 @@ snapshots:
   '@cenk1cenk2/cz-cc@1.7.10(@types/node@20.16.9)(typescript@5.6.2)':
     dependencies:
       '@listr2/prompt-adapter-enquirer': 2.0.11(enquirer@2.4.1)
-      commitizen: 4.3.0(@types/node@20.16.9)(typescript@5.6.2)
+      commitizen: 4.3.1(@types/node@20.16.9)(typescript@5.6.2)
       conventional-commit-types: 3.0.0
       enquirer: 2.4.1
       external-editor: 3.1.0
@@ -8471,7 +8471,7 @@ snapshots:
 
   commander@4.1.1: {}
 
-  commitizen@4.3.0(@types/node@20.16.9)(typescript@5.6.2):
+  commitizen@4.3.1(@types/node@20.16.9)(typescript@5.6.2):
     dependencies:
       cachedir: 2.3.0
       cz-conventional-changelog: 3.3.0(@types/node@20.16.9)(typescript@5.6.2)
@@ -8585,7 +8585,7 @@ snapshots:
   cz-conventional-changelog@3.3.0(@types/node@20.16.9)(typescript@5.6.2):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.0(@types/node@20.16.9)(typescript@5.6.2)
+      commitizen: 4.3.1(@types/node@20.16.9)(typescript@5.6.2)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
