@@ -15,7 +15,7 @@ importers:
         specifier: ^2.7.59
         version: 2.7.59(eslint@8.57.1)(typescript@5.6.3)
       '@swc/core':
-        specifier: ^1.7.28
+        specifier: ^1.7.35
         version: 1.7.35
       '@types/node':
         specifier: ^20.16.11
@@ -60,7 +60,7 @@ importers:
         specifier: ^4.2.9
         version: 4.2.9(typedoc@0.26.8(typescript@5.6.3))
       typescript:
-        specifier: ^5.6.2
+        specifier: ^5.6.3
         version: 5.6.3
 
   packages/nestjs-auth-key-generator:
