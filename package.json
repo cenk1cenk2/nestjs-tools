@@ -23,7 +23,7 @@
   "devDependencies": {
     "@cenk1cenk2/cz-cc": "^1.7.12",
     "@cenk1cenk2/eslint-config": "^2.7.59",
-    "@swc/core": "^1.7.39",
+    "@swc/core": "^1.9.1",
     "@types/node": "^20.17.6",
     "commitizen": "^4.3.1",
     "eslint": "^8.57.1",
@@ -34,7 +34,7 @@
     "simple-git-hooks": "^2.11.1",
     "tsc-watch": "^6.2.0",
     "tsconfig-replace-paths": "^0.0.14",
-    "tsup": "^8.3.4",
+    "tsup": "^8.3.5",
     "turbo": "^1.13.4",
     "typedoc": "^0.26.10",
     "typedoc-plugin-markdown": "^4.2.9",
