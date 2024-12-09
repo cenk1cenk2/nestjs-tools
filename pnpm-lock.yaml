@@ -54,10 +54,10 @@ importers:
         specifier: ^1.13.4
         version: 1.13.4
       typedoc:
-        specifier: ^0.27.2
+        specifier: ^0.27.4
         version: 0.27.4(typescript@5.7.2)
       typedoc-plugin-markdown:
-        specifier: ^4.3.0
+        specifier: ^4.3.2
         version: 4.3.2(typedoc@0.27.4(typescript@5.7.2))
       typescript:
         specifier: ^5.7.2
