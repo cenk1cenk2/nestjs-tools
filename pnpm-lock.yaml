@@ -191,8 +191,8 @@ importers:
         specifier: ^10.4.15
         version: 10.4.15(class-transformer@0.5.1)(class-validator@0.14.1)(reflect-metadata@0.2.2)(rxjs@7.8.1)
       graphql-redis-subscriptions:
-        specifier: ^2.6.1
-        version: 2.6.1(graphql-subscriptions@2.0.0(graphql@16.9.0))
+        specifier: ^2.7.0
+        version: 2.7.0(graphql-subscriptions@2.0.0(graphql@16.9.0))
       graphql-subscriptions:
         specifier: ^2.0.0
         version: 2.0.0(graphql@16.9.0)
@@ -3214,10 +3214,10 @@ packages:
       cosmiconfig-toml-loader:
         optional: true
 
-  graphql-redis-subscriptions@2.6.1:
-    resolution: {integrity: sha512-ssTviFZFB4P7nvZEPpIsP0gvBMJe5IcgR80Mjit/UFUk0snbkxG/gtNZoglQGtN+kvDx8H6MfALBSG0bm11KCA==}
+  graphql-redis-subscriptions@2.7.0:
+    resolution: {integrity: sha512-IK4uCKx1UNhkcnG9lIqFWz9PpltSbuM8RygwGoB/e1HZMuKpAGeqqfHFeLKkQjjubvk4tAdUdx48AUkTAXJ17Q==}
     peerDependencies:
-      graphql-subscriptions: ^1.0.0 || ^2.0.0
+      graphql-subscriptions: ^1.0.0 || ^2.0.0 || ^3.0.0
 
   graphql-request@6.1.0:
     resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
@@ -9305,7 +9305,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  graphql-redis-subscriptions@2.6.1(graphql-subscriptions@2.0.0(graphql@16.9.0)):
+  graphql-redis-subscriptions@2.7.0(graphql-subscriptions@2.0.0(graphql@16.9.0)):
     dependencies:
       graphql-subscriptions: 2.0.0(graphql@16.9.0)
     optionalDependencies:
