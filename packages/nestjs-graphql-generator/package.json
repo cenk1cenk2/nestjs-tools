@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/config": "^3.3.5",
     "config": "^3.3.12",
-    "graphql": "^16.9.0"
+    "graphql": "^16.10.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
