@@ -15,7 +15,7 @@ importers:
         specifier: ^2.7.60
         version: 2.7.60(eslint@8.57.1)(typescript@5.7.2)
       '@swc/core':
-        specifier: ^1.9.3
+        specifier: ^1.10.4
         version: 1.10.4
       '@types/node':
         specifier: ^20.17.11
@@ -33,7 +33,7 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0
       prettier:
-        specifier: ^3.4.0
+        specifier: ^3.4.2
         version: 3.4.2
       rimraf:
         specifier: ^6.0.1
