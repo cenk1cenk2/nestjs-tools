@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/cz-cc':
         specifier: ^1.8.0
-        version: 1.8.0(@types/node@20.17.11)(typescript@5.7.2)
+        version: 1.8.0(@types/node@20.17.12)(typescript@5.7.2)
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.60
         version: 2.7.60(eslint@8.57.1)(typescript@5.7.2)
@@ -18,11 +18,11 @@ importers:
         specifier: ^1.10.4
         version: 1.10.4
       '@types/node':
-        specifier: ^20.17.11
-        version: 20.17.11
+        specifier: ^20.17.12
+        version: 20.17.12
       commitizen:
         specifier: ^4.3.1
-        version: 4.3.1(@types/node@20.17.11)(typescript@5.7.2)
+        version: 4.3.1(@types/node@20.17.12)(typescript@5.7.2)
       eslint:
         specifier: ^8.57.1
         version: 8.57.1
@@ -130,7 +130,7 @@ importers:
     dependencies:
       '@graphql-codegen/cli':
         specifier: ^5.0.3
-        version: 5.0.3(@types/node@20.17.11)(encoding@0.1.13)(enquirer@2.4.1)(graphql@16.10.0)(typescript@5.7.2)
+        version: 5.0.3(@types/node@20.17.12)(encoding@0.1.13)(enquirer@2.4.1)(graphql@16.10.0)(typescript@5.7.2)
       '@graphql-codegen/plugin-helpers':
         specifier: ^5.1.0
         version: 5.1.0(graphql@16.10.0)
@@ -1988,6 +1988,9 @@ packages:
 
   '@types/node@20.17.11':
     resolution: {integrity: sha512-Ept5glCK35R8yeyIeYlRIZtX6SLRyqMhOFTgj5SOkMpLTdw3SEHI9fHx60xaUZ+V1aJxQJODE+7/j5ocZydYTg==}
+
+  '@types/node@20.17.12':
+    resolution: {integrity: sha512-vo/wmBgMIiEA23A/knMfn/cf37VnuF52nZh5ZoW0GWt4e4sxNquibrMRJ7UQsA06+MBx9r/H1jsI9grYjQCQlw==}
 
   '@types/triple-beam@1.3.5':
     resolution: {integrity: sha512-6WaYesThRMCl19iryMYP7/x2OVgCtbIVflDGFpWnb9irXI3UjYE4AzmYuiUKY1AJstGijoY+MgUszMgRxIYTYw==}
@@ -6367,10 +6370,10 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@cenk1cenk2/cz-cc@1.8.0(@types/node@20.17.11)(typescript@5.7.2)':
+  '@cenk1cenk2/cz-cc@1.8.0(@types/node@20.17.12)(typescript@5.7.2)':
     dependencies:
       '@listr2/prompt-adapter-enquirer': 2.0.12(enquirer@2.4.1)
-      commitizen: 4.3.1(@types/node@20.17.11)(typescript@5.7.2)
+      commitizen: 4.3.1(@types/node@20.17.12)(typescript@5.7.2)
       conventional-commit-types: 3.0.0
       enquirer: 2.4.1
       external-editor: 3.1.0
@@ -6413,7 +6416,7 @@ snapshots:
   '@commitlint/execute-rule@19.5.0':
     optional: true
 
-  '@commitlint/load@19.6.1(@types/node@20.17.11)(typescript@5.7.2)':
+  '@commitlint/load@19.6.1(@types/node@20.17.12)(typescript@5.7.2)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -6421,7 +6424,7 @@ snapshots:
       '@commitlint/types': 19.5.0
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.7.2)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@20.17.11)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@20.17.12)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -6573,7 +6576,7 @@ snapshots:
       graphql: 16.10.0
       tslib: 2.6.3
 
-  '@graphql-codegen/cli@5.0.3(@types/node@20.17.11)(encoding@0.1.13)(enquirer@2.4.1)(graphql@16.10.0)(typescript@5.7.2)':
+  '@graphql-codegen/cli@5.0.3(@types/node@20.17.12)(encoding@0.1.13)(enquirer@2.4.1)(graphql@16.10.0)(typescript@5.7.2)':
     dependencies:
       '@babel/generator': 7.26.3
       '@babel/template': 7.25.9
@@ -6584,12 +6587,12 @@ snapshots:
       '@graphql-tools/apollo-engine-loader': 8.0.11(encoding@0.1.13)(graphql@16.10.0)
       '@graphql-tools/code-file-loader': 8.1.12(graphql@16.10.0)
       '@graphql-tools/git-loader': 8.0.16(graphql@16.10.0)
-      '@graphql-tools/github-loader': 8.0.11(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)
+      '@graphql-tools/github-loader': 8.0.11(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)
       '@graphql-tools/graphql-file-loader': 8.0.10(graphql@16.10.0)
       '@graphql-tools/json-file-loader': 8.0.10(graphql@16.10.0)
       '@graphql-tools/load': 8.0.11(graphql@16.10.0)
-      '@graphql-tools/prisma-loader': 8.0.17(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)
-      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)
+      '@graphql-tools/prisma-loader': 8.0.17(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)
+      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)
       '@graphql-tools/utils': 10.7.1(graphql@16.10.0)
       '@whatwg-node/fetch': 0.9.23
       chalk: 4.1.2
@@ -6597,7 +6600,7 @@ snapshots:
       debounce: 1.2.1
       detect-indent: 6.1.0
       graphql: 16.10.0
-      graphql-config: 5.1.3(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)(typescript@5.7.2)
+      graphql-config: 5.1.3(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)(typescript@5.7.2)
       inquirer: 8.2.6
       is-glob: 4.0.3
       jiti: 1.21.7
@@ -6803,7 +6806,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@graphql-tools/executor-http@1.2.4(@types/node@20.17.11)(graphql@16.10.0)':
+  '@graphql-tools/executor-http@1.2.4(@types/node@20.17.12)(graphql@16.10.0)':
     dependencies:
       '@graphql-hive/gateway-abort-signal-any': 0.0.3(graphql@16.10.0)
       '@graphql-tools/executor-common': 0.0.1(graphql@16.10.0)
@@ -6813,7 +6816,7 @@ snapshots:
       '@whatwg-node/fetch': 0.10.1
       extract-files: 11.0.0
       graphql: 16.10.0
-      meros: 1.3.0(@types/node@20.17.11)
+      meros: 1.3.0(@types/node@20.17.12)
       tslib: 2.8.1
       value-or-promise: 1.0.12
     transitivePeerDependencies:
@@ -6853,10 +6856,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@graphql-tools/github-loader@8.0.11(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)':
+  '@graphql-tools/github-loader@8.0.11(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/executor-http': 1.2.4(@types/node@20.17.11)(graphql@16.10.0)
+      '@graphql-tools/executor-http': 1.2.4(@types/node@20.17.12)(graphql@16.10.0)
       '@graphql-tools/graphql-tag-pluck': 8.3.11(graphql@16.10.0)
       '@graphql-tools/utils': 10.7.1(graphql@16.10.0)
       '@whatwg-node/fetch': 0.10.1
@@ -6930,9 +6933,9 @@ snapshots:
       graphql: 16.10.0
       tslib: 2.6.3
 
-  '@graphql-tools/prisma-loader@8.0.17(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)':
+  '@graphql-tools/prisma-loader@8.0.17(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)':
     dependencies:
-      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)
+      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)
       '@graphql-tools/utils': 10.7.1(graphql@16.10.0)
       '@types/js-yaml': 4.0.9
       '@whatwg-node/fetch': 0.10.1
@@ -6982,11 +6985,11 @@ snapshots:
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/url-loader@8.0.22(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)':
+  '@graphql-tools/url-loader@8.0.22(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
       '@graphql-tools/executor-graphql-ws': 1.3.7(graphql@16.10.0)
-      '@graphql-tools/executor-http': 1.2.4(@types/node@20.17.11)(graphql@16.10.0)
+      '@graphql-tools/executor-http': 1.2.4(@types/node@20.17.12)(graphql@16.10.0)
       '@graphql-tools/executor-legacy-ws': 1.1.9(graphql@16.10.0)
       '@graphql-tools/utils': 10.7.1(graphql@16.10.0)
       '@graphql-tools/wrap': 10.0.27(graphql@16.10.0)
@@ -7752,7 +7755,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
     optional: true
 
   '@types/estree@1.0.6': {}
@@ -7765,7 +7768,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
 
   '@types/hast@3.0.4':
     dependencies:
@@ -7773,7 +7776,7 @@ snapshots:
 
   '@types/ioredis@4.28.10':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
 
   '@types/js-yaml@4.0.9': {}
 
@@ -7781,7 +7784,7 @@ snapshots:
 
   '@types/jsonfile@6.1.4':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
 
   '@types/long@4.0.2': {}
 
@@ -7789,7 +7792,7 @@ snapshots:
 
   '@types/node-fetch@2.6.12':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
       form-data: 4.0.1
 
   '@types/node-forge@1.3.11':
@@ -7797,6 +7800,10 @@ snapshots:
       '@types/node': 20.17.11
 
   '@types/node@20.17.11':
+    dependencies:
+      undici-types: 6.19.8
+
+  '@types/node@20.17.12':
     dependencies:
       undici-types: 6.19.8
 
@@ -7810,7 +7817,7 @@ snapshots:
 
   '@types/ws@8.5.13':
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
 
   '@typescript-eslint/eslint-plugin@8.19.0(@typescript-eslint/parser@8.19.0(eslint@8.57.1)(typescript@5.7.2))(eslint@8.57.1)(typescript@5.7.2)':
     dependencies:
@@ -8438,10 +8445,10 @@ snapshots:
 
   commander@4.1.1: {}
 
-  commitizen@4.3.1(@types/node@20.17.11)(typescript@5.7.2):
+  commitizen@4.3.1(@types/node@20.17.12)(typescript@5.7.2):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@20.17.11)(typescript@5.7.2)
+      cz-conventional-changelog: 3.3.0(@types/node@20.17.12)(typescript@5.7.2)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -8503,9 +8510,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@20.17.11)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@20.17.12)(cosmiconfig@9.0.0(typescript@5.7.2))(typescript@5.7.2):
     dependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
       cosmiconfig: 9.0.0(typescript@5.7.2)
       jiti: 2.4.2
       typescript: 5.7.2
@@ -8546,16 +8553,16 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cz-conventional-changelog@3.3.0(@types/node@20.17.11)(typescript@5.7.2):
+  cz-conventional-changelog@3.3.0(@types/node@20.17.12)(typescript@5.7.2):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.1(@types/node@20.17.11)(typescript@5.7.2)
+      commitizen: 4.3.1(@types/node@20.17.12)(typescript@5.7.2)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.6.1(@types/node@20.17.11)(typescript@5.7.2)
+      '@commitlint/load': 19.6.1(@types/node@20.17.12)(typescript@5.7.2)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -9389,13 +9396,13 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-config@5.1.3(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)(typescript@5.7.2):
+  graphql-config@5.1.3(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)(typescript@5.7.2):
     dependencies:
       '@graphql-tools/graphql-file-loader': 8.0.10(graphql@16.10.0)
       '@graphql-tools/json-file-loader': 8.0.10(graphql@16.10.0)
       '@graphql-tools/load': 8.0.11(graphql@16.10.0)
       '@graphql-tools/merge': 9.0.16(graphql@16.10.0)
-      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.11)(encoding@0.1.13)(graphql@16.10.0)
+      '@graphql-tools/url-loader': 8.0.22(@types/node@20.17.12)(encoding@0.1.13)(graphql@16.10.0)
       '@graphql-tools/utils': 10.7.1(graphql@16.10.0)
       cosmiconfig: 8.3.6(typescript@5.7.2)
       graphql: 16.10.0
@@ -10175,9 +10182,9 @@ snapshots:
 
   merge@2.1.1: {}
 
-  meros@1.3.0(@types/node@20.17.11):
+  meros@1.3.0(@types/node@20.17.12):
     optionalDependencies:
-      '@types/node': 20.17.11
+      '@types/node': 20.17.12
 
   methods@1.1.2: {}
 
