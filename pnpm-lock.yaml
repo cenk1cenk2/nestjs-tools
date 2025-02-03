@@ -173,8 +173,8 @@ importers:
         specifier: ^4.0.6
         version: 4.0.6
       '@types/cache-manager-ioredis':
-        specifier: ^2.0.6
-        version: 2.0.6
+        specifier: ^2.0.7
+        version: 2.0.7
       cache-manager:
         specifier: ^5.7.6
         version: 5.7.6
@@ -1928,8 +1928,11 @@ packages:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
 
-  '@types/cache-manager-ioredis@2.0.6':
-    resolution: {integrity: sha512-MNJLj/I8hqXQEv+erzrJE2vnZIMbkgbZspaJDwWKk8b4smFkxSLnvienBrILxw7O/xZKtPcIW0Ml7RBXTseJGQ==}
+  '@types/cache-manager-ioredis@2.0.7':
+    resolution: {integrity: sha512-DPqce7/qEbKiK5s0A2aexlKwkThhbRzX+yFpSsM+RYnMS2+T1AjGjYg8fyT8xoAA4GKD+Z+ZnAiWuu1Z8aXaiw==}
+
+  '@types/cache-manager@2.10.3':
+    resolution: {integrity: sha512-PbaxAeU8SZhbVd6+IuepvyWN7KAjEThsrkdvITDxKAlN6/abIr3NW3WPzNLjJekqbVijg4YUYsyrVc84xXUHQw==}
 
   '@types/cache-manager@4.0.6':
     resolution: {integrity: sha512-8qL93MF05/xrzFm/LSPtzNEOE1eQF3VwGHAcQEylgp5hDSTe41jtFwbSYAPfyYcVa28y1vYSjIt0c1fLLUiC/Q==}
@@ -7652,10 +7655,12 @@ snapshots:
 
   '@tootallnate/once@2.0.0': {}
 
-  '@types/cache-manager-ioredis@2.0.6':
+  '@types/cache-manager-ioredis@2.0.7':
     dependencies:
-      '@types/cache-manager': 4.0.6
+      '@types/cache-manager': 2.10.3
       '@types/ioredis': 4.28.10
+
+  '@types/cache-manager@2.10.3': {}
 
   '@types/cache-manager@4.0.6': {}
 
