@@ -42,7 +42,7 @@
     "@types/cache-manager-ioredis": "^2.0.7",
     "cache-manager": "^5.7.6",
     "cache-manager-ioredis": "^2.1.0",
-    "ioredis": "^5.4.2"
+    "ioredis": "^5.5.0"
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
