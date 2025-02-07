@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@nestjs/common": "^10.4.15",
-    "ioredis": "^5.4.2",
+    "ioredis": "^5.5.0",
     "redis-om": "^0.4.7"
   },
   "lint-staged": {
