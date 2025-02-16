@@ -129,7 +129,7 @@ importers:
   packages/nestjs-graphql-generator:
     dependencies:
       '@graphql-codegen/cli':
-        specifier: ^5.0.4
+        specifier: ^5.0.5
         version: 5.0.5(@types/node@20.17.19)(encoding@0.1.13)(enquirer@2.4.1)(graphql@16.10.0)(typescript@5.7.3)
       '@graphql-codegen/plugin-helpers':
         specifier: ^5.1.0
