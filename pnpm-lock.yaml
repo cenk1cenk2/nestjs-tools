@@ -58,7 +58,7 @@ importers:
         version: 0.27.9(typescript@5.8.2)
       typedoc-plugin-markdown:
         specifier: ^4.4.1
-        version: 4.4.2(typedoc@0.27.9(typescript@5.8.2))
+        version: 4.5.0(typedoc@0.27.9(typescript@5.8.2))
       typescript:
         specifier: ^5.7.3
         version: 5.8.2
@@ -4861,11 +4861,11 @@ packages:
   typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
 
-  typedoc-plugin-markdown@4.4.2:
-    resolution: {integrity: sha512-kJVkU2Wd+AXQpyL6DlYXXRrfNrHrEIUgiABWH8Z+2Lz5Sq6an4dQ/hfvP75bbokjNDUskOdFlEEm/0fSVyC7eg==}
+  typedoc-plugin-markdown@4.5.0:
+    resolution: {integrity: sha512-SZ3Nhkl8WE46W2/9OrjHIkXeSi4ZuceQeGxw2kGHyaaooRHYiiHlOWJx6SM0WKjqRUTfhz9T7wSwm3zwPEZndA==}
     engines: {node: '>= 18'}
     peerDependencies:
-      typedoc: 0.27.x
+      typedoc: 0.28.x
 
   typedoc@0.27.9:
     resolution: {integrity: sha512-/z585740YHURLl9DN2jCWe6OW7zKYm6VoQ93H0sxZ1cwHQEQrUn5BJrEnkWhfzUdyO+BLGjnKUZ9iz9hKloFDw==}
@@ -4949,8 +4949,8 @@ packages:
     resolution: {integrity: sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g==}
     engines: {node: '>=8'}
 
-  ulid@2.3.0:
-    resolution: {integrity: sha512-keqHubrlpvT6G2wH0OEfSW4mquYRcbe/J8NMmveoQOjUqmo+hXtO+ORCpWhdbZ7k72UtY61BL7haGxW6enBnjw==}
+  ulid@2.4.0:
+    resolution: {integrity: sha512-fIRiVTJNcSRmXKPZtGzFQv9WRrZ3M9eoptl/teFJvjOzmpU+/K/JH6HZ8deBfb5vMEpicJcLn7JmvdknlMq7Zg==}
     hasBin: true
 
   unbox-primitive@1.1.0:
@@ -10185,7 +10185,7 @@ snapshots:
       jsonpath-plus: 10.3.0
       just-clone: 6.2.0
       redis: 4.7.0
-      ulid: 2.3.0
+      ulid: 2.4.0
 
   redis-parser@3.0.0:
     dependencies:
@@ -10891,7 +10891,7 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typedoc-plugin-markdown@4.4.2(typedoc@0.27.9(typescript@5.8.2)):
+  typedoc-plugin-markdown@4.5.0(typedoc@0.27.9(typescript@5.8.2)):
     dependencies:
       typedoc: 0.27.9(typescript@5.8.2)
 
@@ -10936,7 +10936,7 @@ snapshots:
     dependencies:
       '@lukeed/csprng': 1.1.0
 
-  ulid@2.3.0: {}
+  ulid@2.4.0: {}
 
   unbox-primitive@1.1.0:
     dependencies:
