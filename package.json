@@ -23,22 +23,22 @@
   "devDependencies": {
     "@cenk1cenk2/cz-cc": "^1.8.0",
     "@cenk1cenk2/eslint-config": "^2.7.60",
-    "@swc/core": "^1.10.12",
+    "@swc/core": "^1.11.18",
     "@types/node": "^20.17.30",
     "commitizen": "^4.3.1",
     "eslint": "^8.57.1",
     "lint-staged": "^15.5.0",
     "markdown-toc": "^1.2.0",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.12.1",
     "tsc-watch": "^6.2.1",
     "tsconfig-replace-paths": "^0.0.14",
-    "tsup": "^8.3.6",
+    "tsup": "^8.4.0",
     "turbo": "^1.13.4",
     "typedoc": "^0.28.0",
     "typedoc-plugin-markdown": "^4.5.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.3"
   },
   "config": {
     "commitizen": {
