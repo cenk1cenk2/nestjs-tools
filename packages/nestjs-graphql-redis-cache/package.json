@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@nestjs/cache-manager": "^2.3.0",
-    "@nestjs/common": "^10.4.17",
+    "@nestjs/common": "^11.0.20",
     "@types/cache-manager": "^4.0.6",
     "@types/cache-manager-ioredis": "^2.0.7",
     "cache-manager": "^5.7.6",
