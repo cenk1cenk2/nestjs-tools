@@ -1,2 +1,14 @@
 packages:
   - packages/*
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@cenk1cenk2/*'
+
+allowBuilds:
+  '@apollo/protobufjs': false
+  '@nestjs/core': false
+  '@swc/core': true
+  esbuild: false
+  simple-git-hooks: true
